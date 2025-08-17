@@ -141,8 +141,8 @@ blockquote.important-title {
   }
 }
 
-p.new,
-blockquote.new {
+p.example,
+blockquote.example {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
@@ -150,7 +150,7 @@ blockquote.new {
 
   &::before {
     color: $green-300;
-    content: "New";
+    content: "Example";
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -158,7 +158,7 @@ blockquote.new {
     padding-bottom: 0.125rem;
   }
 
-  > .new-title {
+  > .example-title {
     color: $green-300;
     display: block;
     font-weight: bold;
@@ -168,8 +168,8 @@ blockquote.new {
   }
 }
 
-p.new-title,
-blockquote.new-title {
+p.example-title,
+blockquote.example-title {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
@@ -187,7 +187,7 @@ blockquote.new-title {
   }
 }
 
-blockquote.new {
+blockquote.example {
   margin-left: 0;
   margin-right: 0;
 
@@ -200,7 +200,7 @@ blockquote.new {
   }
 }
 
-blockquote.new-title {
+blockquote.example-title {
   margin-left: 0;
   margin-right: 0;
 
