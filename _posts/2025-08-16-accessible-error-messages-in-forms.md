@@ -30,23 +30,22 @@ No one enjoys filling out forms, and all the help you can give is useful. Keep t
 
 ## What do I really need to know?
 
-Handling errors starts with the questions you ask. Some questions are difficult to answer. Is it really essential to know whether someone is male or female? Do you only want to be contacted by WhatsApp? Perhaps the user wants to provide a different answer or doesn't want to answer, can’t choose an option and then gives up.
+Handling errors starts with the questions you ask. Some questions are difficult to answer. Is it really essential to know whether someone is male or female? Do you only want to contact them by phone? Perhaps the user wants to provide a different answer or doesn't want to answer, can’t choose an option and then gives up.
 
 Only ask for information you truly need in order to process the request. The fewer questions you ask, the lower the barrier for filling out the form.
 
-Be very clear about why you need sensitive personal information, such as a citizen service number, race, religion or medical data. Check your local legislation if you are allowed to request such personal information in an online form.
+Be very clear about why you need sensitive personal information, such as a citizen service number, race, religion or medical data. Check your local legislation if you are allowed to request such private information in an open online form.
 
-{: .example }
-In the Netherlands there are strict rules about [when to use a citizen service number](https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)).
+{: .note }
+In the Netherlands there are strict rules about [when to ask for a citizen service number](https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)).
 
 
 ## How will I ask for this information?
 
-Will you design new custom input fields or use recognizable, familiar patterns? Please don’t reinvent the web for something as essential as form fields. As Heydon Pickering explains in his talk [*Get Your Priorities Straight*](https://www.youtube.com/watch?v=ediHVy0869c):
-*“Real people aren't looking to be delighted. People want to get the task done and get on with their lives.”*
+Will you design new custom input fields or use recognizable, familiar patterns? Please don’t reinvent the web for something as essential as form fields. As Heydon Pickering explains in his talk [Get Your Priorities Straight](https://www.youtube.com/watch?v=ediHVy0869c): “Real people aren't looking to be delighted. People want to get the task done and get on with their lives".
 
 {: .example }
-For example: users recognize radio buttons as circles and checkboxes as squares. They know from experience they can choose one option from the radio buttons but multiple options from the checkboxes. Also, the [keyboard interaction](https://webaim.org/techniques/keyboard/#testing) for radiobuttons and checkboxes differs form each other. 
+For example: users recognize radio buttons as circles and checkboxes as squares. They know from experience they can choose one option from the radio buttons but multiple options from the checkboxes. Also, the [keyboard interaction](https://webaim.org/techniques/keyboard/#testing) for radiobuttons and checkboxes differs from each other. 
 
 Some field types are better avoided due to poor usability, such as multi-selects. Using date pickers? Check the experience for keyboard- or screen reader users.
 
@@ -62,7 +61,7 @@ This success criterion is added in [WCAG 2.2: 3.3.7 Redundant Entry](https://www
 
 ## What information can I provide in advance to help the user?
 
-We’ve all been there: you enter a new password, click submit, and *then* you’re told what the password requirements are. You yell at the screen: “Tell me that beforehand!”
+We’ve all been there: you enter a new password, click submit, and *then* you’re told what the password requirements are. You yell at the screen: “Tell me that beforehand!”.
 
 The blog post [*Blind people don't visit my website*](https://www.a11y-collective.com/blog/blind-people-dont-visit-my-website/) lists frustrations from web users, such as:
 *"Error messages that come afterwards and eventually don't explain what you need to change."*
@@ -92,7 +91,7 @@ Whatever you choose, be consistent within the form and across all forms on your 
 For example: "Please complete all fields. If a field is not required, it will be labeled (Not required)".
 
 {: .note }
-Please note: for **screenreaders** is necessary to always add the attributes [`aria-required`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-required) and [`aria-invalid`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-invalid) for required form field.
+Please note: for **screen readers** is necessary to always add the attributes [`aria-required`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-required) and [`aria-invalid`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-invalid) for required form field.
 
 ## When should I check for errors?
 
@@ -131,11 +130,11 @@ This is far more helpful than a vague generic message.
 
 You click "Send" and… nothing happens. Or you're redirected to the homepage. Was the form actually sent? How to know?
 
-Give users clear confirmation that their form has been submitted and what will happen next.  You can also include this messsage in a confirmation email.
+Give users clear confirmation that their form has been submitted and what will happen next. You can also include this messsage in a confirmation email.
 
 {: .example }
 A confirmation text could be:  
-Thank you for your registration for our workshop "Knitting socks". A confirmation email has been sent to user@example.com with the time and location of the workshop. If you haven't received an email, [please contact us](#).
+Thank you for your registration for our workshop "Knitting socks". A confirmation email has been sent to user@example.com with the time and location of the workshop. If you haven't received an email? [Please contact us](#).
 
 ## How can I offer help if a user sets stuck?
 
@@ -145,14 +144,14 @@ Don’t hide contact details at the very bottom of the form — place a short se
 
 {: .example }
 A help text could be:  
-Do you need help filling out this form or have questions? [Please contact us](#).
+Do you need help filling out this form or do you have questions? [Please contact us](#).
 
 ## Summary
 
 Help your users as much as possible when filling out a form. Don’t ask unnecessary questions, just for your statistics. Provide the right input options. Make it clear how to fill out a field. Use clear, timely error messages. And make sure it’s easy to ask for help when needed.
 
-Remember: people want to get through a form quickly and move on with their lives. Make that task as easy as you can.
+Remember: people want to get through a form quickly and move on with their lives. Make that task as easy as possible.
 
 ## Credits
-This article was first published in Dutch on the [NL Design Systems blog](https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/). The text has been updated for a global audience.
+This article was first published in Dutch on the [NL Design Systems blog](https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/) and is used with permission. The text has been modified for a global audience.
 
