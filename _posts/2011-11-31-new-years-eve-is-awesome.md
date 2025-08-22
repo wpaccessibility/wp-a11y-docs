@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "It would be so nice if something made sense for a change"
-permalink: /articles/2023/sense/
+permalink: /blog/2023/sense/
 date:   2023-11-31
 parent: Articles
 author: Rian Rietveld

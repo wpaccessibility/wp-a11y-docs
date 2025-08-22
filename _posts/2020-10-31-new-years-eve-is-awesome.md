@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Not all who wander are lost"
-permalink: /articles/2020/wander/
+permalink: /blog/2020/wander/
 date:   2020-10-31
 parent: Articles
 author: Rian Rietveld
