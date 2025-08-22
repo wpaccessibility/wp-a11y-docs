@@ -47,6 +47,9 @@ jobs:
     if: github.event.action == 'closed'
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+          
       - name: Cleanup PR Preview
         uses: rossjrw/pr-preview-action@v1
         with:
