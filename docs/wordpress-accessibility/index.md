@@ -1,8 +1,8 @@
 ---
 title: WP and Accessibility
 layout: default
-description: "What is WordPress"
-nav_order: 6
+description: "WordPress and Accessibility"
+nav_order: 8
 has_video: true
 ---
 
