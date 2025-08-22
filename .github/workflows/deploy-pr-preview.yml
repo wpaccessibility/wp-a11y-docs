@@ -40,12 +40,16 @@ jobs:
           source-dir: ./_site
           preview-branch: gh-pages
           umbrella-dir: pr-preview
+          pages-base-url: wpaccessibility.org
           action: deploy
 
   cleanup-preview:
     if: github.event.action == 'closed'
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+          
       - name: Cleanup PR Preview
         uses: rossjrw/pr-preview-action@v1
         with:
