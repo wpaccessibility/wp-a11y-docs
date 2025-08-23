@@ -14,6 +14,12 @@ Did we miss a topic? Did you find an error or have a great idea? Create an issue
 
 We would like to [invite you to contribute](/docs/contribute/) to this Knowledge Base.
 
+## Pull Request Previews
+
+When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging.
+
+Preview URLs follow the format: `https://wpaccessibility.org/pr-preview/pr-{number}/`
+
 ## Local install of the website
 
 WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content.
