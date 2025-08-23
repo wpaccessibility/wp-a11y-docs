@@ -1,0 +1,302 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+
+
+<title>How to contribute, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <a href="/" class="site-title lh-tight">
+      WP Accessibility Knowledge Base</a>
+    <button id="menu-button" class="site-button btn-reset" aria-expanded="false">
+      <span>Menu</span>
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+        <use xlink:href="#svg-menu"></use>
+      </svg>
+    </button>
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+
+    <h2 class="screen-reader-text">Menu</h2>
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/articles/" class="nav-list-link">Articles</a></li><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/" class="nav-list-link">Example main topic</a><button class="nav-list-expander btn-reset" aria-label="Example main topic submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/subpage/" class="nav-list-link">Subpage of the main topic</a></li><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/anothersubpage/" class="nav-list-link">Another subpage</a></li><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/subtopic/" class="nav-list-link">Example sub topic</a><button class="nav-list-expander btn-reset" aria-label="Example sub topic submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/subtopic/anothersubpage/" class="nav-list-link">Another subsubpage</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/contribute/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/wordpress-accessibility/" class="nav-list-link">WP and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WP and Accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/wordpress-accessibility/wp-a11y-team/" class="nav-list-link">WP Accessibility Team</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/docs/about/" class="nav-list-link">About this website</a><button class="nav-list-expander btn-reset" aria-label="About this website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/docs/about/theme/" class="nav-list-link">Theme of this website</a></li><li class="nav-list-item">
+
+          <a href="/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    
+<div class="search">
+  <form class="search-input-wrap" role="search">
+    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search WP Accessibility Knowledge Base" autocomplete="off">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg>
+    </label>
+  </form>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li><li class="breadcrumb-nav-list-item" aria-current="page">How to contribute</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1 id="how-to-contribute-to-the-knowledge-base">How to contribute to the Knowledge Base</h1>
+
+<p>Do you want to help maintain and extend this website?</p>
+
+<p class="note">Please note: we use GitHub to maintain and extend the content of the knowledge base. A <a href="https://github.com">GitHub account</a> is free.</p>
+
+<h2 id="write-or-review-content-for-the-knowledge-base">Write or review content for the knowledge base</h2>
+
+<p>Starting August 22nd, ‘25 we will publish topics to be written for the knowledge base <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Adocumentation">labeled documentation</a> in our GitHub repository.</p>
+
+<p>There are several ways you can contribute to the documentation:</p>
+<ul>
+  <li>Create a new <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues">issue on GitHub</a> and share your ideas.</li>
+  <li>Pick an issue on the <a href="https://github.com/orgs/wpaccessibility/projects/3">WP A11y Docs project board</a> from the <strong>Todo</strong> column.</li>
+  <li>Add a comment with a GitHub issue you have an opinion about.</li>
+  <li>Join the Accessibility table at a WordCamp contributor day and share your ideas.</li>
+  <li>Share a comment in the <a href="https://wordpress.slack.com/archives/C6PK2QCTY">Make WordPress #accessibility-docs Slack channel</a>.</li>
+  <li>Create a <a href="/docs/contribute/pull-requests">GitHub pull request</a>.</li>
+</ul>
+
+<p>If you need help, feel free to reach out to us by <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues">opening an issue</a> with your question.</p>
+
+<p>Please respect our <a href="/docs/contribute/CODE_OF_CONDUCT/">Code of Conduct</a>.</p>
+
+<h2 id="audit-the-accessibility-of-this-website">Audit the accessibility of this website</h2>
+
+<p>A website about accessibility (a11y) must be accessible itself. That’s a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We’d love to have an independent <a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM audit</a>, that results in a <a href="https://www.w3.org/WAI/eval/report-tool/">WCAG-EM report</a>. Your name or your company name will be added to the <a href="/docs/contributors/">contributors list</a>.</p>
+
+<p>We then will add that information in our <a href="/docs/about/accessibility-statement/">accessibility statement</a> and fix the issues found. See the GitHub issue: <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/4">Audit the website for accessibility WCAG 2.2 AA</a>.</p>
+
+<p>Did you notice an a11y-issue on this website? Please inform us by opening an <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues">issue on GitHub</a>.</p>
+
+<p class="note">Please note: this is only for accessibility issues in <strong>this website</strong> and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a <a href="https://core.trac.wordpress.org/newticket">new ticket on Make WordPress Core</a> and give it the focus “accessibility”.</p>
+
+<h3 id="contribute-with-regular-accessibility-audits">Contribute with regular accessibility audits</h3>
+
+<p>We would value a full <a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG-EM audit</a> and <a href="https://www.w3.org/WAI/eval/report-tool/">WCAG-EM report</a> for WCAG 2.2 AA to start and a yearly update for the new content and functionality.</p>
+
+<p>Your name or your company name will be added to the sponsor list. <a href="https://rianrietveld.com/contact-rian-rietveld/">Contact Rian Rietveld</a> if you want to sponsor this project with regular WCAG-EM audits of wpaccessibility.org.</p>
+
+<h2 id="improve-this-website">Improve this website</h2>
+
+<p>WPaccessibility.org is written in <a href="https://jekyllrb.com">Jekyll</a>, a static site generator in Ruby using <a href="https://www.markdownguide.org/">markdown</a> for content. The theme is based on the Jekyll theme <a href="https://just-the-docs.com/">Just the Docs</a>. For the changes made in Just the Docs, please read the <a href="/CHANGELOG/#release-v01">Changelog for Release v0.1</a>.</p>
+
+<p>A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Awebsite">labeled website</a>. Read how to do a local install in the page <a href="/docs/contribute/pull-requests/">GitHub pull requests for the Knowledge Base</a></p>
+
+
+
+          
+            <hr>
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+<ul>
+  
+  <li>
+    <a href="/docs/contribute/pull-requests/">Pull requests</a>
+  </li>
+  
+  <li>
+    <a href="/docs/contribute/CODE_OF_CONDUCT/">Code of Conduct</a>
+  </li>
+  
+</ul>
+          
+
+          
+            
+<div class="d-flex mt-2">
+    
+
+    
+    <p class="text-small text-grey-dk-000 mb-0">
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contribute/index.md" id="edit-this-page">View this page on GitHub</a>
+    </p>
+    
+
+</div>
+
+
+          
+        </main>
+
+        
+  <footer>
+
+    <p class="mb-0">The work on the WP Accessibility Knowledge Base is sponsored by <a href="https://kinsta.com/">Kinsta</a>, <a href="https://humanmade.com/">Human Made</a>, <a href="https://aiwos.com/">Aiwos</a> and <a href="https://lamper-design.nl/">Lamper Design</a>.</p>
+
+    <p>
+      <a href="#top" id="back-to-top" class="back-to-top">
+        <span aria-hidden="true">&#x2191;</span> Back to top
+      </a>
+    </p>
+
+  </footer>
+
+
+      </div>
+    </div>
+  </div>
+<div id="screen-reader-feedback" role="status"></div>
+</body>
+</html>
+

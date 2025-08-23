@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+
+
+<title>Pull requests, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <a href="/" class="site-title lh-tight">
+      WP Accessibility Knowledge Base</a>
+    <button id="menu-button" class="site-button btn-reset" aria-expanded="false">
+      <span>Menu</span>
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+        <use xlink:href="#svg-menu"></use>
+      </svg>
+    </button>
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+
+    <h2 class="screen-reader-text">Menu</h2>
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/articles/" class="nav-list-link">Articles</a></li><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/" class="nav-list-link">Example main topic</a><button class="nav-list-expander btn-reset" aria-label="Example main topic submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/subpage/" class="nav-list-link">Subpage of the main topic</a></li><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/anothersubpage/" class="nav-list-link">Another subpage</a></li><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/subtopic/" class="nav-list-link">Example sub topic</a><button class="nav-list-expander btn-reset" aria-label="Example sub topic submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/exampletopic/subtopic/anothersubpage/" class="nav-list-link">Another subsubpage</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/contribute/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/wordpress-accessibility/" class="nav-list-link">WP and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WP and Accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/wordpress-accessibility/wp-a11y-team/" class="nav-list-link">WP Accessibility Team</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/docs/about/" class="nav-list-link">About this website</a><button class="nav-list-expander btn-reset" aria-label="About this website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/docs/about/theme/" class="nav-list-link">Theme of this website</a></li><li class="nav-list-item">
+
+          <a href="/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    
+<div class="search">
+  <form class="search-input-wrap" role="search">
+    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search WP Accessibility Knowledge Base" autocomplete="off">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg>
+    </label>
+  </form>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/docs/contribute/'>How to contribute</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Pull requests</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1 id="github-pull-requests-for-the-knowledge-base">GitHub pull requests for the Knowledge Base</h1>
+
+<p>First, create a new issue on GitHub or find an issue you want to help with on in our <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Adocumentation">GitHub repository labeled “documentation”</a>. Also check if there isn’t already an open issue about what you want to add or change.</p>
+
+<h2 id="how-to-make-a-good-pull-request">How to make a good pull request</h2>
+
+<p>Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to.</p>
+
+<p>All Knowledge Base files live in the <code class="language-plaintext highlighter-rouge">/docs/</code> directory. For Markdown, we use the <a href="https://developer.wordpress.org/coding-standards/styleguide/">Markdown Style Guide</a>.</p>
+
+<p>Please check for grammer and spelling errors before submitting the PR.</p>
+
+<h2 id="create-a-pull-request-from-a-fork-on-github-with-your-text">Create a pull request from a fork on GitHub with your text.</h2>
+
+<p>GitHub offers good documentation on how to create a pull request using a fork on: <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">Creating a pull request from a fork</a>.</p>
+
+<h2 id="create-a-pull-request-from-a-fork-using-a-local-install">Create a pull request from a fork using a local install</h2>
+
+<p>WPaccessibility.org is written in <a href="https://jekyllrb.com">Jekyll</a>, a static site generator in Ruby using <a href="https://www.markdownguide.org/">markdown</a> for content. 
+Please read the <a href="https://jekyllrb.com/docs/installation/#requirements">Guide and requirements for Jekyll</a>.</p>
+
+<p>Then, in the terminal, install Jekyll:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
+</code></pre></div></div>
+
+<p>Clone the wp-a11y-docs repository into your preferred directory and in that directory run:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
+bundle
+bundle exec jekyll serve 
+</code></pre></div></div>
+
+<p>Open <code class="language-plaintext highlighter-rouge">http://127.0.0.1:4000/</code> or <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> in your favourite browser.</p>
+
+<p>Before making a commit or pull request, run the linters with: <code class="language-plaintext highlighter-rouge">npm run test</code>.</p>
+
+<p>If you made changes to the <code class="language-plaintext highlighter-rouge">_config.yml</code> file, run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> again to apply the changes to the site.</p>
+
+<p>Documentation about Jekyll itself is on <a href="https://jekyllrb.com/docs/">jekyllrb.com</a>. The theme is based on the Jekyll theme <a href="https://just-the-docs.com/">Just the Docs</a>. The changes made in Just the Docs are documented in the <a href="/CHANGELOG/#release-v01">Changelog for Release v0.1</a>.</p>
+
+
+          
+            
+          
+
+          
+            
+<div class="d-flex mt-2">
+    
+
+    
+    <p class="text-small text-grey-dk-000 mb-0">
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contribute/pull-requests.md" id="edit-this-page">View this page on GitHub</a>
+    </p>
+    
+
+</div>
+
+
+          
+        </main>
+
+        
+  <footer>
+
+    <p class="mb-0">The work on the WP Accessibility Knowledge Base is sponsored by <a href="https://kinsta.com/">Kinsta</a>, <a href="https://humanmade.com/">Human Made</a>, <a href="https://aiwos.com/">Aiwos</a> and <a href="https://lamper-design.nl/">Lamper Design</a>.</p>
+
+    <p>
+      <a href="#top" id="back-to-top" class="back-to-top">
+        <span aria-hidden="true">&#x2191;</span> Back to top
+      </a>
+    </p>
+
+  </footer>
+
+
+      </div>
+    </div>
+  </div>
+<div id="screen-reader-feedback" role="status"></div>
+</body>
+</html>
+
