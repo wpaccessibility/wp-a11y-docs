@@ -1,7 +1,7 @@
 ---
 title: How to contribute
 layout: default
-nav_order: 4
+nav_order: 11
 ---
 
 # How to contribute to the Knowledge Base

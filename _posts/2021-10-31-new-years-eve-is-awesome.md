@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The proper order of things is often a mystery to me"
-permalink: /articles/2021/welcome-to-jekyll/
+permalink: /blog/2021/welcome-to-jekyll/
 date:   2021-10-31
 parent: Articles
 author: Rian Rietveld

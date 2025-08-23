@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "No wise fish would go anywhere without a porpoise."
-permalink: /articles/2013/fish/
+permalink: /blog/2013/fish/
 date:   2013-12-31
 parent: Articles
 author: Rian Rietveld

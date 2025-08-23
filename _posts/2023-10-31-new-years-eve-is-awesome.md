@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "No, no!” said the Queen. “Sentence first—verdict afterwards"
-permalink: /articles/2023/queen/
+permalink: /blog/2023/queen/
 date:   2023-09-31
 parent: Articles
 author: Rian Rietveld

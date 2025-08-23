@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Who in the world am I? Ah, that’s the great puzzle."
-permalink: /articles/2024/puzzle/
+permalink: /blog/2024/puzzle/
 canonical_url: 
 date:   2024-10-31
 author: Rian Rietveld

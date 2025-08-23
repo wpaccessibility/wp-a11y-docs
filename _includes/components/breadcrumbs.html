@@ -28,10 +28,10 @@
 
 {% endif %}
 
-{% if page.url contains "/articles/page" %}
+{% if page.url contains "/blog/page" %}
 
     {% capture link %}
-    <li class='breadcrumb-nav-list-item'><a href='{{ "/articles" | relative_url }}'>{{page.title}}</a></li>
+    <li class='breadcrumb-nav-list-item'><a href='{{ "/blog" | relative_url }}'>{{page.title}}</a></li>
     {% endcapture %}
     {% assign parentLinks  = parentLinks  |
     split: ',' |

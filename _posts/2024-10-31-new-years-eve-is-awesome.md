@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is the use of a book without pictures or conversations?"
-permalink: /articles/2024/welcome-to-jekyll/
+permalink: /blog/2024/welcome-to-jekyll/
 date:   2024-08-31
 author: Rian Rietveld
 parent: Articles

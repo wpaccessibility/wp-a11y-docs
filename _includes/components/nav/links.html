@@ -12,7 +12,7 @@
 
   {%- for node in include.pages -%}
 
-  {% unless node.url contains "/articles/page" %}
+  {% unless node.url contains "/blog/page" %}
 
 
     {%- if include.all == true or node.nav_exclude != true -%}

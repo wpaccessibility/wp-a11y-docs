@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Alice had begun to think that very few things indeed were really impossible"
-permalink: /articles/2023/welcome-to-jekyll/
+permalink: /blog/2023/welcome-to-jekyll/
 date:   2023-12-31
 parent: Articles
 author: Rian Rietveld

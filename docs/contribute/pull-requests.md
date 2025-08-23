@@ -2,7 +2,7 @@
 title: Pull requests
 layout: default
 parent: How to contribute
-nav_order: 2
+nav_order: 3
 ---
 
 # GitHub pull requests for the Knowledge Base
