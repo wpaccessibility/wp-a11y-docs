@@ -131,8 +131,8 @@ callouts:
   important:
     title: Important
     color: blue
-  new:
-    title: New
+  example:
+    title: Example
     color: green
   note:
     title: Note
