@@ -23,25 +23,9 @@ GitHub offers good documentation on how to create a pull request using a fork on
 
 ## Create a pull request from a fork using a local install
 
-WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content. 
-Please read the [Guide and requirements for Jekyll](https://jekyllrb.com/docs/installation/#requirements).
+WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content. Please read [Local install of the website](https://github.com/wpaccessibility/wp-a11y-docs?tab=readme-ov-file#local-install-of-the-website) in wp-a11y-docs/README.md.
 
-Then, in the terminal, install Jekyll:
-```
-gem install jekyll
-```
+## Pull Request Previews
+When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging.
 
-Clone the wp-a11y-docs repository into your preferred directory and in that directory run:
-```
-npm install
-bundle
-bundle exec jekyll serve 
-```
-
-Open `http://127.0.0.1:4000/` or `http://localhost:4000` in your favourite browser.
-
-Before making a commit or pull request, run the linters with: `npm run test`.
-
-If you made changes to the `_config.yml` file, run `bundle exec jekyll serve` again to apply the changes to the site.
-
-Documentation about Jekyll itself is on [jekyllrb.com](https://jekyllrb.com/docs/). The theme is based on the Jekyll theme [Just the Docs](https://just-the-docs.com/). The changes made in Just the Docs are documented in the [Changelog for Release v0.1](/CHANGELOG/#release-v01).
+Preview URLs follow the format: `https://wpaccessibility.org/pr-preview/pr-{number}/`.
