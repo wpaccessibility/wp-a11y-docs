@@ -8,7 +8,7 @@ nav_order: 4
 
 Do you want to help maintain and extend this website? 
 
-{: .note }
+{: .info }
 Please note: we use GitHub to maintain and extend the content of the knowledge base. A [GitHub account](https://github.com) is free.
 
 ## Write or review content for the knowledge base
@@ -35,7 +35,7 @@ We then will add that information in our [accessibility statement](/docs/about/a
 
 Did you notice an a11y-issue on this website? Please inform us by opening an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues).
 
-{: .note }
+{: .info }
 Please note: this is only for accessibility issues in **this website** and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a [new ticket on Make WordPress Core](https://core.trac.wordpress.org/newticket) and give it the focus “accessibility”.
 
 ### Contribute with regular accessibility audits
