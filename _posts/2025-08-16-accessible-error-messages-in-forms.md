@@ -45,7 +45,7 @@ In the Netherlands there are strict rules about [when to ask for a citizen servi
 Will you design new custom input fields or use recognizable, familiar patterns? Please don’t reinvent the web for something as essential as form fields. As Heydon Pickering explains in his talk [Get Your Priorities Straight](https://www.youtube.com/watch?v=ediHVy0869c): “Real people aren't looking to be delighted. People want to get the task done and get on with their lives".
 
 {: .example }
-For example: users recognize radio buttons as circles and checkboxes as squares. They know from experience they can choose one option from the radio buttons but multiple options from the checkboxes. Also, the [keyboard interaction](https://webaim.org/techniques/keyboard/#testing) for radiobuttons and checkboxes differs from each other. 
+For example: users recognize radio buttons as circles and checkboxes as squares. They know from experience they can choose one option from the radio buttons and multiple options from the checkboxes. Also, the [keyboard interaction](https://webaim.org/techniques/keyboard/#testing) for radiobuttons and checkboxes differs from each other. 
 
 Some field types are better avoided due to poor usability, such as multi-selects. Using date pickers? Check the experience for keyboard- or screen reader users.
 
@@ -76,7 +76,7 @@ If you only ask what's really needed, all fields could technically be required �
 
 Many websites use indicators like “required”, “optional”, or an asterisk (\*). But which is clearest? 
 
-Do user research for your language. For example in Dutch the word "optioneel" (optional) hard for people with low literacy, and "niet verplicht" (not required) is a better choice. This may be different for your language.
+Do user research for your language. For example in Dutch the word "optioneel" (optional) is hard to understand for people with low literacy, and "niet verplicht" (not required) is a better choice. This may be different for your language.
 
 Prefer **“required”** over an asterisk, because an asterisk assumes prior knowledge of the meaning of that icon. If you do use an asterisk, explain its meaning above the form.
 
@@ -84,20 +84,21 @@ Prefer **“required”** over an asterisk, because an asterisk assumes prior kn
 
 Which is better — indicate required or non-required fields? It depends. Your choice should be based on the form’s function, your CMS or plugin, and user research.
 
-An option could be: when most fields are required, mark the *non-required* ones. If most fields are not required, mark the *required* ones.
+An option could be: when most fields are required, mark the *optional* ones. If most fields are not required, mark the *required* ones.
+
+{: .example }
+For example: "Please complete all fields. If a field is not required, it will be labeled "(Optional)".
 
 Whatever you choose, be consistent within the form and across all forms on your website. Inform users above the form how field requirements are indicated.
-
-For example: "Please complete all fields. If a field is not required, it will be labeled (Not required)".
 
 {: .note }
 Please note: for **screen readers** is necessary to always add the attributes [`aria-required`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-required) and [`aria-invalid`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-invalid) for required form field.
 
 ## When should I check for errors?
 
-Websites can check for errors while typing, after a field is exited, or after the form is submitted. Which approach is most user-friendly?
+Websites can check for errors while typing, after the focus moves out of a field, or after the form is submitted. Which approach is most user-friendly?
 
-Checking during typing can be confusing. Imagine typing an email address and seeing “Invalid email address” after the first letter. Of course, it’s invalid — you haven’t finished yet!
+Checking during typing can be confusing. Imagine typing an email address and seeing “Invalid email address” after the first letter. Of course, it’s invalid — you haven’t finished yet! 
 
 That leaves two options: check after leaving a field, or after submission. These can be combined. For certain fields — like dates that must be in the future — immediate checking is helpful. But checking after submission is always necessary.
 
@@ -106,10 +107,10 @@ HTML5 form validation is not accessible at this moment. The W3C summarizes the o
 
 ## How do I indicate that an answer is incomplete or filled out incorrectly?
 
-Use more than colour alone to indicate errors. A user with visual impairments or colour blindness may not notice a red outline.  Colour is helpful — but always include a written error message too.
+Use more than colour alone to indicate errors. A user with visual impairments or colour blindness may not notice a red outline.  Colour is helpful — but always include an error message in text too.
 
 * Clearly state whether a field is required.
-* Show errors with more than just colour.
+* Show errors with more than just colour or an icon.
 * Write out the error in text above the form field.
 * Add a summary of all errors above the form  helps the user quickly see what needs to be corrected.
 
@@ -120,7 +121,7 @@ Messages like “This field is required” or “Invalid value” don’t offer 
 
 {: .example }
 “Enter your first name”  
-“Your chosen password is too short. It must be at least 8 characters.”  
+“Your chosen password is too short. It must be at least 8 characters long.”  
 “The expiration date must be in the future.”
 
 This is far more helpful than a vague generic message.
@@ -138,9 +139,9 @@ Thank you for your registration for our workshop "Knitting socks". A confirmatio
 
 ## How can I offer help if a user sets stuck?
 
-If a user gets stuck on a complex form, they should be able to easily request help.
+If a user gets stuck filling out a complex form, they should be able to easily request help.
 
-Don’t hide contact details at the very bottom of the form — place a short sentence near the top. The footer is also a good place to include contact info. Always offer multiple ways to get in touch on your contact page — not everyone can make a phone call.
+Don’t hide contact details at the very bottom of the form — place a short sentence near the top. The footer is also a good place to additionally include contact info. Always offer multiple ways to get in touch on your contact page — not everyone can make a phone call.
 
 {: .example }
 A help text could be:  
@@ -148,7 +149,7 @@ Do you need help filling out this form or do you have questions? [Please contact
 
 ## Summary
 
-Help your users as much as possible when filling out a form. Don’t ask unnecessary questions, just for your statistics. Provide the right input options. Make it clear how to fill out a field. Use clear, timely error messages. And make sure it’s easy to ask for help when needed.
+Help your users as much as possible when filling out a form. Don’t ask unnecessary questions, just for your statistics. Provide the right input options. Make it clear whis is requited and how to fill out a field. Use clear, timely error messages. And make sure it’s easy to ask for help when needed.
 
 Remember: people want to get through a form quickly and move on with their lives. Make that task as easy as possible.
 
