@@ -14,31 +14,33 @@ Did we miss a topic? Did you find an error or have a great idea? Create an issue
 
 We would like to [invite you to contribute](/docs/contribute/) to this Knowledge Base.
 
+## Pull Request Previews
+
+When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging.
+
+Preview URLs follow the format: `https://wpaccessibility.org/pr-preview/pr-{number}/`
+
 ## Local install of the website
 
-Please read the [Guide and requirements for Jekyll](https://jekyllrb.com/docs/installation/#requirements) first. You will need to have NPM, Ruby, Ruby Gems, GCC and Make installed.
+WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content.
+Please read the [Guide and requirements for Jekyll](https://jekyllrb.com/docs/installation/#requirements).
 
-Install Jekyll:
+Then, in the terminal, install Jekyll:
 ```
 gem install jekyll
 ```
 
-Install the website:
-
+Clone the wp-a11y-docs repository into your preferred directory and in that directory run:
 ```
-git clone git@github.com:wpaccessibility/wp-a11y-docs.git
-cd wp-a11y-docs
 npm install
 bundle
 bundle exec jekyll serve 
 ```
 
-Open http://127.0.0.1:4000/ in your favourite browser.
+Open `http://127.0.0.1:4000/` or `http://localhost:4000` in your favourite browser.
 
-All Knowledge Base files live in the /docs/ directory.
+Before making a commit or pull request, run the linters with: `npm run test`.
 
-Before commit use the linters: `npm run lint`
+If you made changes to the `_config.yml` file, run `bundle exec jekyll serve` again to apply the changes to the site.
 
-If you made changed to the `_config.yml` file, run `bundle exec jekyll serve` again to apply the changes to the site.
-
-Documentation about Jekyll itself is on [jekyllrb.com](https://jekyllrb.com/docs/). The theme is based on the Jekyll theme [Just the docs](https://just-the-docs.github.io/just-the-docs/). The changes made in Just the Docs are documented in the [Changelog for Release v0.1](/CHANGELOG/release-v01).
+Documentation about Jekyll itself is on [jekyllrb.com](https://jekyllrb.com/docs/). The theme is based on the Jekyll theme [Just the Docs](https://just-the-docs.com/). The changes made in Just the Docs are documented in the [Changelog for Release v0.1](/CHANGELOG/#release-v01).

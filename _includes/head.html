@@ -15,5 +15,11 @@
   <script src="https://unpkg.com/lunr/lunr.js"></script>
   <script src="{{ '/assets/js/wp-a11y-docs.js' | relative_url }}"></script>
 
+  {% if page.has_video %}
+  <link rel="stylesheet" href="{{ '/assets/css/ableplayer.min.css' | relative_url }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script src="{{ '/assets/js/ableplayer.min.js' | relative_url }}"></script>
+  {% endif %}
 
 </head>
