@@ -7,150 +7,15 @@ div.opaque {
   background-color: $body-background-color;
 }
 
-p.highlight,
+p.tutorial,
 blockquote.highlight {
-  background: rgba($yellow-000, 0.1);
-  border-left: $border-radius solid $yellow-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > .highlight-title {
-    color: $yellow-300;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.highlight-title,
-blockquote.highlight-title {
-  background: rgba($yellow-000, 0.1);
-  border-left: $border-radius solid $yellow-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $yellow-300;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    padding-bottom: 0.125rem;
-  }
-}
-
-blockquote.highlight {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:first-child {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-blockquote.highlight-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:nth-child(2) {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p.important,
-blockquote.important {
-  background: rgba($blue-000, 0.1);
-  border-left: $border-radius solid $blue-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  &::before {
-    color: $blue-300;
-    content: "Important";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    padding-bottom: 0.125rem;
-  }
-
-  > .important-title {
-    color: $blue-300;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.important-title,
-blockquote.important-title {
-  background: rgba($blue-000, 0.1);
-  border-left: $border-radius solid $blue-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $blue-300;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    padding-bottom: 0.125rem;
-  }
-}
-
-blockquote.important {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:first-child {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-blockquote.important-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:nth-child(2) {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p.new,
-blockquote.new {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
-    color: $green-300;
-    content: "New";
+    content: "Example";
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -158,8 +23,7 @@ blockquote.new {
     padding-bottom: 0.125rem;
   }
 
-  > .new-title {
-    color: $green-300;
+  > .tutorial-title {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -168,8 +32,138 @@ blockquote.new {
   }
 }
 
-p.new-title,
-blockquote.new-title {
+p.tutorial-title,
+blockquote.tutorial-title {
+  background: rgba($green-000, 0.1);
+  border-left: $border-radius solid $green-300;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+
+}
+
+blockquote.tutorial {
+  margin-left: 0;
+  margin-right: 0;
+
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+blockquote.tutorial-title {
+  margin-left: 0;
+  margin-right: 0;
+
+  > p:nth-child(2) {
+    margin-top: 0;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p.alert,
+blockquote.alert {
+  background: rgba($yellow-000, 0.1);
+  border-left: $border-radius solid $yellow-300;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+  &::before {
+    content: "Alert";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+
+  > .alert-title {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+}
+
+p.alert-title,
+blockquote.alert-title {
+  background: rgba($yellow-000, 0.1);
+  border-left: $border-radius solid $yellow-300;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+  > p:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+}
+
+blockquote.alert {
+  margin-left: 0;
+  margin-right: 0;
+
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+blockquote.alert-title {
+  margin-left: 0;
+  margin-right: 0;
+
+  > p:nth-child(2) {
+    margin-top: 0;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p.tip,
+blockquote.tip {
+  background: rgba($green-000, 0.1);
+  border-left: $border-radius solid $green-300;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+  &::before {
+    content: "Tip";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+
+  > .tip-title {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+}
+
+p.tip-title,
+blockquote.tip-title {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
@@ -178,7 +172,6 @@ blockquote.new-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    color: $green-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -187,7 +180,7 @@ blockquote.new-title {
   }
 }
 
-blockquote.new {
+blockquote.tip {
   margin-left: 0;
   margin-right: 0;
 
@@ -200,7 +193,7 @@ blockquote.new {
   }
 }
 
-blockquote.new-title {
+blockquote.tip-title {
   margin-left: 0;
   margin-right: 0;
 
@@ -213,16 +206,15 @@ blockquote.new-title {
   }
 }
 
-p.note,
-blockquote.note {
+p.info,
+blockquote.info {
   background: rgba($purple-000, 0.1);
   border-left: $border-radius solid $purple-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
-    color: $purple-300;
-    content: "Note";
+    content: "Info";
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -230,8 +222,7 @@ blockquote.note {
     padding-bottom: 0.125rem;
   }
 
-  > .note-title {
-    color: $purple-300;
+  > .info-title {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -240,8 +231,8 @@ blockquote.note {
   }
 }
 
-p.note-title,
-blockquote.note-title {
+p.info-title,
+blockquote.info-title {
   background: rgba($purple-000, 0.1);
   border-left: $border-radius solid $purple-300;
   border-radius: $border-radius;
@@ -250,7 +241,6 @@ blockquote.note-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    color: $purple-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -259,7 +249,7 @@ blockquote.note-title {
   }
 }
 
-blockquote.note {
+blockquote.info {
   margin-left: 0;
   margin-right: 0;
 
@@ -272,7 +262,7 @@ blockquote.note {
   }
 }
 
-blockquote.note-title {
+blockquote.info-title {
   margin-left: 0;
   margin-right: 0;
 
@@ -293,7 +283,6 @@ blockquote.warning {
   padding: 0.8rem;
 
   &::before {
-    color: $red-300;
     content: "Warning";
     display: block;
     font-weight: bold;
@@ -303,7 +292,6 @@ blockquote.warning {
   }
 
   > .warning-title {
-    color: $red-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -322,7 +310,6 @@ blockquote.warning-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    color: $red-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
