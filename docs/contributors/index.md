@@ -7,19 +7,17 @@ nav_order: 12
 
 #  Contributors of WP Accessibility Knowledge Base
 
-## Project leads
-- <a href="https://joedolson.com">Joe Dolson</a>
-- <a href="https://rianrietveld.com">Rian Rietveld</a>
+## Props for code, reviews, content and discussion
 
-## Code and content
-- <a href="https://github.com/yoren">Yoren Chang</a>
-
-
-## Brainstorm session about the content structure
 - <a href="https://wbvb.nl/">Paul van Buuren</a>
+- <a href="https://github.com/yoren">Yoren Chang</a>
+- <a href="https://github.com/GaryJones">Gary Jones</a>
 - <a href="https://wendiehuisintveld.nl/">Wendie Huis in't Veld</a>
 - <a href="https://www.linkedin.com/in/johanhuijkman/">Johan Huijkman</a>
 - <a href="https://www.caitlinderooij.com/">Caitlin de Rooij</a>
 - Savi Sinnema
-- <a href="https://www.adviesvanannelies.nl/">Annelies Verhelst</a>
+- <a href="https://linkedin.com/in/anneliesverhelst">Annelies Verhelst</a>
 
+### Project leads
+- <a href="https://joedolson.com">Joe Dolson</a>
+- <a href="https://rianrietveld.com">Rian Rietveld</a>
