@@ -1,0 +1,8 @@
+# See https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# The Documentation Team own all of the things.
+# They will be asked to review changes to any code in the "main" branch.
+* @wpaccessibility/documentation-team
+
+# ... except this file; this is kept separate to avoid the above being changed so easily.
+/.github/CODEOWNERS @rianrietveld @GaryJones
