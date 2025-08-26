@@ -59,286 +59,292 @@
     "url": "/docs/about/accessibility-statement/#known-accessibility-issues",
     "relUrl": "/docs/about/accessibility-statement/#known-accessibility-issues"
   },"10": {
-    "doc": "Another subsubpage",
-    "title": "Subpage of the main topic example",
-    "content": "First a “too long didn’t read paragraph” summarizing what the topic is about. For example all about form accessibility. To make the text bigger add {: .fs-6 .fw-300 } at the end of the first paragraph. Create a name.md file in the directory /docs/name. Name is the slug of the main topic. The pages are written in markdown. At the top of the page add . --- title: The title of the subtopic layout: default description: \"A short description of the subtopic\" parent: The title of the parent page nav_order: add a number, the location in the main menu, for example 1 --- . Then add a heading and text about the subtopic. ",
-    "url": "/docs/exampletopic/subtopic/anothersubpage/#subpage-of-the-main-topic-example",
-    "relUrl": "/docs/exampletopic/subtopic/anothersubpage/#subpage-of-the-main-topic-example"
+    "doc": "Blog",
+    "title": "Blog",
+    "content": " ",
+    "url": "/blog/",
+    "relUrl": "/blog/"
   },"11": {
-    "doc": "Another subsubpage",
-    "title": "Another subsubpage",
-    "content": " ",
-    "url": "/docs/exampletopic/subtopic/anothersubpage/",
-    "relUrl": "/docs/exampletopic/subtopic/anothersubpage/"
-  },"12": {
-    "doc": "Another subpage",
-    "title": "Subpage of the main topic example",
-    "content": "First a “too long didn’t read paragraph” summarizing what the topic is about. For example all about form accessibility. To make the text bigger add {: .fs-6 .fw-300 } at the end of the first paragraph. Create a name.md file in the directory /docs/name. Name is the slug of the main topic. The pages are written in markdown. At the top of the page add . --- title: The title of the subtopic layout: default description: \"A short description of the subtopic\" parent: The title of the parent page nav_order: add a number, the location in the main menu, for example 1 --- . Then add a heading and text about the subtopic. ",
-    "url": "/docs/exampletopic/anothersubpage/#subpage-of-the-main-topic-example",
-    "relUrl": "/docs/exampletopic/anothersubpage/#subpage-of-the-main-topic-example"
-  },"13": {
-    "doc": "Another subpage",
-    "title": "Another subpage",
-    "content": " ",
-    "url": "/docs/exampletopic/anothersubpage/",
-    "relUrl": "/docs/exampletopic/anothersubpage/"
-  },"14": {
-    "doc": "Contributors",
-    "title": "Contributors of WP Accessibility Knowledge Base",
-    "content": " ",
-    "url": "/docs/contributors/#contributors-of-wp-accessibility-knowledge-base",
-    "relUrl": "/docs/contributors/#contributors-of-wp-accessibility-knowledge-base"
-  },"15": {
-    "doc": "Contributors",
-    "title": "Credits and thanks go to:",
-    "content": ". | Paul van Buuren | Joe Dolson | Rian Rietveld | Caitlin de Rooij | Annelies Verhelst | . ",
-    "url": "/docs/contributors/#credits-and-thanks-go-to",
-    "relUrl": "/docs/contributors/#credits-and-thanks-go-to"
-  },"16": {
-    "doc": "Contributors",
-    "title": "Contributors",
-    "content": " ",
-    "url": "/docs/contributors/",
-    "relUrl": "/docs/contributors/"
-  },"17": {
-    "doc": "Articles",
-    "title": "Articles",
-    "content": " ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"18": {
-    "doc": "Articles",
+    "doc": "Blog",
     "title": "\n          \n            Well, I never heard it before, but it sounds uncommon nonsense\n          \n        ",
     "content": "March 3, 2025 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"19": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"12": {
+    "doc": "Blog",
     "title": "\n          \n            Who in the world am I? Ah, that’s the great puzzle.\n          \n        ",
     "content": "October 31, 2024 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"20": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"13": {
+    "doc": "Blog",
     "title": "\n          \n            What is the use of a book without pictures or conversations?\n          \n        ",
     "content": "August 31, 2024 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"21": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"14": {
+    "doc": "Blog",
     "title": "\n          \n            Alice had begun to think that very few things indeed were really impossible\n          \n        ",
     "content": "December 31, 2023 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"22": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"15": {
+    "doc": "Blog",
     "title": "\n          \n            It would be so nice if something made sense for a change\n          \n        ",
     "content": "December 1, 2023 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"23": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"16": {
+    "doc": "Blog",
     "title": "\n          \n            No, no!” said the Queen. “Sentence first—verdict afterwards\n          \n        ",
     "content": "October 1, 2023 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"24": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"17": {
+    "doc": "Blog",
     "title": "\n          \n            The proper order of things is often a mystery to me\n          \n        ",
     "content": "October 31, 2021 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"25": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"18": {
+    "doc": "Blog",
     "title": "\n          \n            Not all who wander are lost\n          \n        ",
     "content": "October 31, 2020 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"26": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"19": {
+    "doc": "Blog",
     "title": "\n          \n            No wise fish would go anywhere without a porpoise.\n          \n        ",
     "content": "December 31, 2013 by Rian Rietveld . You’ll find this post in your `_posts` directory. ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"27": {
-    "doc": "Articles",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"20": {
+    "doc": "Blog",
     "title": "\n          \n            Imagination is the only weapon in the war with reality.\n          \n        ",
     "content": "October 10, 2011 by Rian Rietveld . You’ll find this post in your `_posts` directory. | Page 1 | Page 2 | Next page &raquo; | . ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"28": {
-    "doc": "Articles",
-    "title": "Articles",
-    "content": "Articles, WP Accessibility Knowledge Base ",
-    "url": "/articles/",
-    "relUrl": "/articles/"
-  },"29": {
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"21": {
+    "doc": "Blog",
+    "title": "Blog",
+    "content": "Blog, WP Accessibility Knowledge Base ",
+    "url": "/blog/",
+    "relUrl": "/blog/"
+  },"22": {
+    "doc": "Testing",
+    "title": "Accessibility testing",
+    "content": "Content follows. ",
+    "url": "/docs/testing/#accessibility-testing",
+    "relUrl": "/docs/testing/#accessibility-testing"
+  },"23": {
+    "doc": "Testing",
+    "title": "Testing",
+    "content": " ",
+    "url": "/docs/testing/",
+    "relUrl": "/docs/testing/"
+  },"24": {
     "doc": "WP and Accessibility",
     "title": "WordPress and Accessibility",
     "content": "What is WordPress and why this site. Answer questions like does WP have an a11y statement of an ATAG etc. ",
     "url": "/docs/wordpress-accessibility/#wordpress-and-accessibility",
     "relUrl": "/docs/wordpress-accessibility/#wordpress-and-accessibility"
-  },"30": {
+  },"25": {
     "doc": "WP and Accessibility",
     "title": "WP and Accessibility",
     "content": " ",
     "url": "/docs/wordpress-accessibility/",
     "relUrl": "/docs/wordpress-accessibility/"
-  },"31": {
+  },"26": {
     "doc": "How to contribute",
     "title": "How to contribute to the Knowledge Base",
     "content": "Do you want to help maintain and extend this website? . Please note: we use GitHub to maintain and extend the content of the knowledge base. A GitHub account is free. ",
     "url": "/docs/contribute/#how-to-contribute-to-the-knowledge-base",
     "relUrl": "/docs/contribute/#how-to-contribute-to-the-knowledge-base"
-  },"32": {
+  },"27": {
     "doc": "How to contribute",
     "title": "Write or review content for the knowledge base",
     "content": "Starting August 22nd, ‘25 we will publish topics to be written for the knowledge base labeled documentation in our GitHub repository. There are several ways you can contribute to the documentation: . | Create a new issue on GitHub and share your ideas. | Pick an issue on the WP A11y Docs project board from the Todo column. | Add a comment with a GitHub issue you have an opinion about. | Join the Accessibility table at a WordCamp contributor day and share your ideas. | Share a comment in the Make WordPress #accessibility-docs Slack channel. | Create a GitHub pull request. | . If you need help, feel free to reach out to us by opening an issue with your question. Please respect our Code of Conduct. ",
     "url": "/docs/contribute/#write-or-review-content-for-the-knowledge-base",
     "relUrl": "/docs/contribute/#write-or-review-content-for-the-knowledge-base"
-  },"33": {
+  },"28": {
     "doc": "How to contribute",
     "title": "Audit the accessibility of this website",
     "content": "A website about accessibility (a11y) must be accessible itself. That’s a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We’d love to have an independent WCAG-EM audit, that results in a WCAG-EM report. Your name or your company name will be added to the contributors list. We then will add that information in our accessibility statement and fix the issues found. See the GitHub issue: Audit the website for accessibility WCAG 2.2 AA. Did you notice an a11y-issue on this website? Please inform us by opening an issue on GitHub. Please note: this is only for accessibility issues in this website and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. Contribute with regular accessibility audits . We would value a full WCAG-EM audit and WCAG-EM report for WCAG 2.2 AA to start and a yearly update for the new content and functionality. Your name or your company name will be added to the sponsor list. Contact Rian Rietveld if you want to sponsor this project with regular WCAG-EM audits of wpaccessibility.org. ",
     "url": "/docs/contribute/#audit-the-accessibility-of-this-website",
     "relUrl": "/docs/contribute/#audit-the-accessibility-of-this-website"
-  },"34": {
+  },"29": {
     "doc": "How to contribute",
     "title": "Improve this website",
     "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. The theme is based on the Jekyll theme Just the Docs. For the changes made in Just the Docs, please read the Changelog for Release v0.1. A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub labeled website. Read how to do a local install in the page GitHub pull requests for the Knowledge Base . ",
     "url": "/docs/contribute/#improve-this-website",
     "relUrl": "/docs/contribute/#improve-this-website"
-  },"35": {
+  },"30": {
     "doc": "How to contribute",
     "title": "How to contribute",
     "content": " ",
     "url": "/docs/contribute/",
     "relUrl": "/docs/contribute/"
-  },"36": {
-    "doc": "Example sub topic",
-    "title": "Example main topic",
-    "content": "First a “too long didn’t read paragraph” summarizing what the topic is about. For example all about form accessibility. To make the text bigger add {: .fs-6 .fw-300 } at the end of the first paragraph. Create an index.md file in the directory /docs/name. Name is the name of the topicThe pages are written in markdown. At the top of the page add . --- title: The title of the topic layout: default description: \"A short description of the topic\" nav_order: add a number, the location in the main menu, for example 3 --- . Then add a heading and text about the topic, as this is the main topic page, only describe the topic itself and what is important for accessibility. Details will be added to the subpages. The links to the subpages in the “”, are added automatically by the software. ",
-    "url": "/docs/exampletopic/subtopic/#example-main-topic",
-    "relUrl": "/docs/exampletopic/subtopic/#example-main-topic"
-  },"37": {
-    "doc": "Example sub topic",
-    "title": "Example sub topic",
+  },"31": {
+    "doc": "Reading guide",
+    "title": "Reading guide",
+    "content": "Content follows. ",
+    "url": "/docs/guide/",
+    "relUrl": "/docs/guide/"
+  },"32": {
+    "doc": "Standards and best practice",
+    "title": "Standards and best practice",
+    "content": "Content follows. ",
+    "url": "/docs/topics/",
+    "relUrl": "/docs/topics/"
+  },"33": {
+    "doc": "Start with accessibility",
+    "title": "Start with accessibility",
+    "content": "Content follows. ",
+    "url": "/docs/start/",
+    "relUrl": "/docs/start/"
+  },"34": {
+    "doc": "Sponsors",
+    "title": "Sponsors",
+    "content": "Content follows. ",
+    "url": "/docs/sponsors/",
+    "relUrl": "/docs/sponsors/"
+  },"35": {
+    "doc": "Contributors",
+    "title": "Contributors of WP Accessibility Knowledge Base",
     "content": " ",
-    "url": "/docs/exampletopic/subtopic/",
-    "relUrl": "/docs/exampletopic/subtopic/"
+    "url": "/docs/contributors/#contributors-of-wp-accessibility-knowledge-base",
+    "relUrl": "/docs/contributors/#contributors-of-wp-accessibility-knowledge-base"
+  },"36": {
+    "doc": "Contributors",
+    "title": "Props for code, reviews, content and discussion",
+    "content": ". | Paul van Buuren | Yoren Chang | Gary Jones | Wendie Huis in’t Veld | Johan Huijkman | Caitlin de Rooij | Savi Sinnema | Annelies Verhelst | . Project leads . | Joe Dolson | Rian Rietveld | . ",
+    "url": "/docs/contributors/#props-for-code-reviews-content-and-discussion",
+    "relUrl": "/docs/contributors/#props-for-code-reviews-content-and-discussion"
+  },"37": {
+    "doc": "Contributors",
+    "title": "Contributors",
+    "content": " ",
+    "url": "/docs/contributors/",
+    "relUrl": "/docs/contributors/"
   },"38": {
-    "doc": "Example main topic",
-    "title": "Example main topic",
-    "content": "First a “too long didn’t read paragraph” summarizing what the topic is about. For example all about form accessibility. To make the text bigger add {: .fs-6 .fw-300 } at the end of the first paragraph. Create an index.md file in the directory /docs/name. Name is the name of the topicThe pages are written in markdown. At the top of the page add . --- title: The title of the topic layout: default description: \"A short description of the topic\" nav_order: add a number, the location in the main menu, for example 3 --- . Then add a heading and text about the topic, as this is the main topic page, only describe the topic itself and what is important for accessibility. Details will be added to the subpages. The links to the subpages in the “”, are added automatically by the software. ",
-    "url": "/docs/exampletopic/",
-    "relUrl": "/docs/exampletopic/"
+    "doc": "Team and process",
+    "title": "Team and process",
+    "content": "Content follows. ",
+    "url": "/docs/team-process/",
+    "relUrl": "/docs/team-process/"
   },"39": {
+    "doc": "Resources",
+    "title": "Resources on accessibility",
+    "content": "Content follows. ",
+    "url": "/docs/resources/#resources-on-accessibility",
+    "relUrl": "/docs/resources/#resources-on-accessibility"
+  },"40": {
+    "doc": "Resources",
+    "title": "Resources",
+    "content": " ",
+    "url": "/docs/resources/",
+    "relUrl": "/docs/resources/"
+  },"41": {
+    "doc": "Legislation",
+    "title": "Legislation",
+    "content": "Content follows. ",
+    "url": "/docs/legislation/",
+    "relUrl": "/docs/legislation/"
+  },"42": {
     "doc": "About this website",
     "title": "About this website",
     "content": " ",
     "url": "/docs/about/",
     "relUrl": "/docs/about/"
-  },"40": {
+  },"43": {
     "doc": "Home",
     "title": "[work in progress] WP Accessibility Knowledge Base demo website",
     "content": "Documentation about accessibility for WordPress users and creators. For the community, by the community. Please note: this website is a work in progress and is still in the setup phase. This knowledge base has no content yet and the site needs an accessibility audit. Please visit, for now, the documentation on the Make WordPress Accessible Handbook. This website aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation? . We’ll provide documentation, effective examples (both what to do and what to avoid) and reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples. We aim to meet WCAG 2.2 AA. Did we miss a topic? Did you find an error or have a great idea? Create an issue on our GitHub repository wpaccessibility/wp-a11y-docs. We would like to invite you to contribute to this Knowledge Base. Let’s make the web for everyone. ",
     "url": "/#work-in-progress-wp-accessibility-knowledge-base-demo-website",
     "relUrl": "/#work-in-progress-wp-accessibility-knowledge-base-demo-website"
-  },"41": {
+  },"44": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/",
     "relUrl": "/"
-  },"42": {
+  },"45": {
     "doc": "Licences",
     "title": "Licenses",
     "content": "The text of the documentation is created by the WordPress and Accessibility community worldwide. This documentation is licenced as Creative Commons Zero 1.0 Universal (CC0-1.0). The licence under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. Theme of this website is based on the Just The Docs Jekyll theme. Just the Docs is distributed by an MIT license. Copyright (c) 2016 Patrick Marsceill . ",
     "url": "/docs/about/licence/#licenses",
     "relUrl": "/docs/about/licence/#licenses"
-  },"43": {
+  },"46": {
     "doc": "Licences",
     "title": "Licences",
     "content": " ",
     "url": "/docs/about/licence/",
     "relUrl": "/docs/about/licence/"
-  },"44": {
+  },"47": {
     "doc": "Pull requests",
     "title": "GitHub pull requests for the Knowledge Base",
     "content": "First, create a new issue on GitHub or find an issue you want to help with on in our GitHub repository labeled “documentation”. Also check if there isn’t already an open issue about what you want to add or change. ",
     "url": "/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base",
     "relUrl": "/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base"
-  },"45": {
+  },"48": {
     "doc": "Pull requests",
     "title": "How to make a good pull request",
     "content": "Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to. All Knowledge Base files live in the /docs/ directory. For Markdown, we use the Markdown Style Guide. Please check for grammer and spelling errors before submitting the PR. ",
     "url": "/docs/contribute/pull-requests/#how-to-make-a-good-pull-request",
     "relUrl": "/docs/contribute/pull-requests/#how-to-make-a-good-pull-request"
-  },"46": {
+  },"49": {
     "doc": "Pull requests",
     "title": "Create a pull request from a fork on GitHub with your text.",
     "content": "GitHub offers good documentation on how to create a pull request using a fork on: Creating a pull request from a fork. ",
     "url": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text",
     "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text"
-  },"47": {
+  },"50": {
     "doc": "Pull requests",
     "title": "Create a pull request from a fork using a local install",
     "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. Please read the Guide and requirements for Jekyll. Then, in the terminal, install Jekyll: . gem install jekyll . Clone the wp-a11y-docs repository into your preferred directory and in that directory run: . npm install bundle bundle exec jekyll serve . Open http://127.0.0.1:4000/ or http://localhost:4000 in your favourite browser. Before making a commit or pull request, run the linters with: npm run test. If you made changes to the _config.yml file, run bundle exec jekyll serve again to apply the changes to the site. Documentation about Jekyll itself is on jekyllrb.com. The theme is based on the Jekyll theme Just the Docs. The changes made in Just the Docs are documented in the Changelog for Release v0.1. ",
     "url": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install",
     "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install"
-  },"48": {
+  },"51": {
     "doc": "Pull requests",
     "title": "Pull requests",
     "content": " ",
     "url": "/docs/contribute/pull-requests/",
     "relUrl": "/docs/contribute/pull-requests/"
-  },"49": {
-    "doc": "Subpage of the main topic",
-    "title": "Subpage of the main topic example",
-    "content": "First a “too long didn’t read paragraph” summarizing what the topic is about. For example all about form accessibility. To make the text bigger add {: .fs-6 .fw-300 } at the end of the first paragraph. Create a name.md file in the directory /docs/name. Name is the slug of the main topic. The pages are written in markdown. At the top of the page add . --- title: The title of the subtopic layout: default description: \"A short description of the subtopic\" parent: The title of the parent page nav_order: add a number, the location in the main menu, for example 1 --- . Then add a heading and text about the subtopic. ",
-    "url": "/docs/exampletopic/subpage/#subpage-of-the-main-topic-example",
-    "relUrl": "/docs/exampletopic/subpage/#subpage-of-the-main-topic-example"
-  },"50": {
-    "doc": "Subpage of the main topic",
-    "title": "Subpage of the main topic",
-    "content": " ",
-    "url": "/docs/exampletopic/subpage/",
-    "relUrl": "/docs/exampletopic/subpage/"
-  },"51": {
+  },"52": {
     "doc": "Theme of this website",
     "title": "Theme of this website",
     "content": "This website is powered by Jekyll and based on the theme Just the Docs. Just the ddocs: Copyright© 2017-2020 Patrick Marsceill. Distributed by an MIT licence. ",
     "url": "/docs/about/theme/",
     "relUrl": "/docs/about/theme/"
-  },"52": {
+  },"53": {
     "doc": "WP Accessibility Team",
     "title": "Info about the WordPress Accessibility Team",
     "content": "Info and links. ",
     "url": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team",
     "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team"
-  },"53": {
+  },"54": {
     "doc": "WP Accessibility Team",
     "title": "WP Accessibility Team",
     "content": " ",
     "url": "/docs/wordpress-accessibility/wp-a11y-team/",
     "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/"
-  },"54": {
-    "doc": "Articles",
+  },"55": {
+    "doc": "Blog",
     "title": "{{ extendedTitle }}",
     "content": "{%- if site.page_size != nil %} {% assign posts = paginator.posts %} {% else %} {% assign posts = site.posts %} {% endif %} {%- if posts.size > 0 -%} {%- assign date_format = site.date_format | default: '%B %-d, %Y' -%} {%- for post in posts -%} ",
-    "url": "/articles/page2/",
-    "relUrl": "/articles/page2/"
-  },"55": {
-    "doc": "Articles",
+    "url": "/blog/page2/",
+    "relUrl": "/blog/page2/"
+  },"56": {
+    "doc": "Blog",
     "title": "\n          \n            {{ post.title | escape }}\n          \n        ",
     "content": "{{ post.date | date: date_format }} {% if post.author %} by {{post.author}}{% endif %} . {{ post.excerpt | default: post.description }} . {%- endfor -%} {% if paginator.total_pages > 1 %} . {% if paginator.previous_page %} | &laquo; Previous page | {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %} | Page {{ page }} | {% elsif page == 1 %} | Page {{ page }} | {% else %} {% assign page_one_link = '/' | append: site.paginate_page | append: '1' | append: '/' %} | Page {{ page }} | {% endif %} {% endfor %} {% if paginator.next_page %} | Next page &raquo; | {% endif %} . {% endif %} {%- endif -%} ",
-    "url": "/articles/page2/",
-    "relUrl": "/articles/page2/"
-  },"56": {
-    "doc": "Articles",
-    "title": "Articles",
+    "url": "/blog/page2/",
+    "relUrl": "/blog/page2/"
+  },"57": {
+    "doc": "Blog",
+    "title": "Blog",
     "content": "{%- include components/title.html -%} ",
-    "url": "/articles/page2/",
-    "relUrl": "/articles/page2/"
+    "url": "/blog/page2/",
+    "relUrl": "/blog/page2/"
   }
 }
