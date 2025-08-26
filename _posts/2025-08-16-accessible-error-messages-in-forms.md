@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Accessible error messages in forms"
-permalink: /articles/2025/accessible-error-messages-forms/
+permalink: /blog/2025/accessible-error-messages-forms/
 author: Rian Rietveld
 categories: forms
 parent: Articles
