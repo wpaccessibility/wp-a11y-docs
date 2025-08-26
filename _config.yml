@@ -38,7 +38,7 @@ defaults:
       layout: "default"
 
 paginate: 5
-paginate_path: "/articles/page:num/"
+paginate_path: "/blog/page:num/"
 
 exclude:
   # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
@@ -160,4 +160,3 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
-

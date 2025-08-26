@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Imagination is the only weapon in the war with reality."
-permalink: /articles/2011/imagination/
+permalink: /blog/2011/imagination/
 date:   2011-10-10
 author: Rian Rietveld
 categories: aap, noot, mies
