@@ -216,143 +216,131 @@
     "relUrl": "/docs/contributors/#contributors-of-wp-accessibility-knowledge-base"
   },"36": {
     "doc": "Contributors",
-    "title": "Project leads",
-    "content": ". | Joe Dolson | Rian Rietveld | . ",
-    "url": "/pr-preview/pr-37/docs/contributors/#project-leads",
-    "relUrl": "/docs/contributors/#project-leads"
+    "title": "Props for code, reviews, content and discussion",
+    "content": ". | Paul van Buuren | Yoren Chang | Gary Jones | Wendie Huis in’t Veld | Johan Huijkman | Caitlin de Rooij | Savi Sinnema | Annelies Verhelst | . Project leads . | Joe Dolson | Rian Rietveld | . ",
+    "url": "/pr-preview/pr-37/docs/contributors/#props-for-code-reviews-content-and-discussion",
+    "relUrl": "/docs/contributors/#props-for-code-reviews-content-and-discussion"
   },"37": {
-    "doc": "Contributors",
-    "title": "Code and content",
-    "content": ". | Yoren Chang | . ",
-    "url": "/pr-preview/pr-37/docs/contributors/#code-and-content",
-    "relUrl": "/docs/contributors/#code-and-content"
-  },"38": {
-    "doc": "Contributors",
-    "title": "Brainstorm session about the content structure",
-    "content": ". | Paul van Buuren | Wendie Huis in’t Veld | Johan Huijkman | Caitlin de Rooij | Savi Sinnema | Annelies Verhelst | . ",
-    "url": "/pr-preview/pr-37/docs/contributors/#brainstorm-session-about-the-content-structure",
-    "relUrl": "/docs/contributors/#brainstorm-session-about-the-content-structure"
-  },"39": {
     "doc": "Contributors",
     "title": "Contributors",
     "content": " ",
     "url": "/pr-preview/pr-37/docs/contributors/",
     "relUrl": "/docs/contributors/"
-  },"40": {
+  },"38": {
     "doc": "Team and process",
     "title": "Team and process",
     "content": "Content follows. ",
     "url": "/pr-preview/pr-37/docs/team-process/",
     "relUrl": "/docs/team-process/"
-  },"41": {
+  },"39": {
     "doc": "Resources",
     "title": "Resources on accessibility",
     "content": "Content follows. ",
     "url": "/pr-preview/pr-37/docs/resources/#resources-on-accessibility",
     "relUrl": "/docs/resources/#resources-on-accessibility"
-  },"42": {
+  },"40": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
     "url": "/pr-preview/pr-37/docs/resources/",
     "relUrl": "/docs/resources/"
-  },"43": {
+  },"41": {
     "doc": "Legislation",
     "title": "Legislation",
     "content": "Content follows. ",
     "url": "/pr-preview/pr-37/docs/legislation/",
     "relUrl": "/docs/legislation/"
-  },"44": {
+  },"42": {
     "doc": "About this website",
     "title": "About this website",
     "content": " ",
     "url": "/pr-preview/pr-37/docs/about/",
     "relUrl": "/docs/about/"
-  },"45": {
+  },"43": {
     "doc": "Home",
     "title": "[work in progress] WP Accessibility Knowledge Base demo website",
     "content": "Documentation about accessibility for WordPress users and creators. For the community, by the community. Please note: this website is a work in progress and is still in the setup phase. This knowledge base has no content yet and the site needs an accessibility audit. Please visit, for now, the documentation on the Make WordPress Accessible Handbook. This website aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation? . We’ll provide documentation, effective examples (both what to do and what to avoid) and reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples. We aim to meet WCAG 2.2 AA. Did we miss a topic? Did you find an error or have a great idea? Create an issue on our GitHub repository wpaccessibility/wp-a11y-docs. We would like to invite you to contribute to this Knowledge Base. Let’s make the web for everyone. ",
     "url": "/pr-preview/pr-37/#work-in-progress-wp-accessibility-knowledge-base-demo-website",
     "relUrl": "/#work-in-progress-wp-accessibility-knowledge-base-demo-website"
-  },"46": {
+  },"44": {
     "doc": "Home",
     "title": "Home",
     "content": " ",
     "url": "/pr-preview/pr-37/",
     "relUrl": "/"
-  },"47": {
+  },"45": {
     "doc": "Licences",
     "title": "Licenses",
     "content": "The text of the documentation is created by the WordPress and Accessibility community worldwide. This documentation is licenced as Creative Commons Zero 1.0 Universal (CC0-1.0). The licence under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. Theme of this website is based on the Just The Docs Jekyll theme. Just the Docs is distributed by an MIT license. Copyright (c) 2016 Patrick Marsceill . ",
     "url": "/pr-preview/pr-37/docs/about/licence/#licenses",
     "relUrl": "/docs/about/licence/#licenses"
-  },"48": {
+  },"46": {
     "doc": "Licences",
     "title": "Licences",
     "content": " ",
     "url": "/pr-preview/pr-37/docs/about/licence/",
     "relUrl": "/docs/about/licence/"
-  },"49": {
+  },"47": {
     "doc": "Pull requests",
     "title": "GitHub pull requests for the Knowledge Base",
     "content": "First, create a new issue on GitHub or find an issue you want to help with on in our GitHub repository labeled “documentation”. Also check if there isn’t already an open issue about what you want to add or change. ",
     "url": "/pr-preview/pr-37/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base",
     "relUrl": "/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base"
-  },"50": {
+  },"48": {
     "doc": "Pull requests",
     "title": "How to make a good pull request",
     "content": "Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to. All Knowledge Base files live in the /docs/ directory. For Markdown, we use the Markdown Style Guide. Please check for grammer and spelling errors before submitting the PR. ",
     "url": "/pr-preview/pr-37/docs/contribute/pull-requests/#how-to-make-a-good-pull-request",
     "relUrl": "/docs/contribute/pull-requests/#how-to-make-a-good-pull-request"
-  },"51": {
+  },"49": {
     "doc": "Pull requests",
     "title": "Create a pull request from a fork on GitHub with your text.",
     "content": "GitHub offers good documentation on how to create a pull request using a fork on: Creating a pull request from a fork. ",
     "url": "/pr-preview/pr-37/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text",
     "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text"
-  },"52": {
+  },"50": {
     "doc": "Pull requests",
     "title": "Create a pull request from a fork using a local install",
     "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. Please read the Guide and requirements for Jekyll. Then, in the terminal, install Jekyll: . gem install jekyll . Clone the wp-a11y-docs repository into your preferred directory and in that directory run: . npm install bundle bundle exec jekyll serve . Open http://127.0.0.1:4000/ or http://localhost:4000 in your favourite browser. Before making a commit or pull request, run the linters with: npm run test. If you made changes to the _config.yml file, run bundle exec jekyll serve again to apply the changes to the site. Documentation about Jekyll itself is on jekyllrb.com. The theme is based on the Jekyll theme Just the Docs. The changes made in Just the Docs are documented in the Changelog for Release v0.1. ",
     "url": "/pr-preview/pr-37/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install",
     "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install"
-  },"53": {
+  },"51": {
     "doc": "Pull requests",
     "title": "Pull requests",
     "content": " ",
     "url": "/pr-preview/pr-37/docs/contribute/pull-requests/",
     "relUrl": "/docs/contribute/pull-requests/"
-  },"54": {
+  },"52": {
     "doc": "Theme of this website",
     "title": "Theme of this website",
     "content": "This website is powered by Jekyll and based on the theme Just the Docs. Just the ddocs: Copyright© 2017-2020 Patrick Marsceill. Distributed by an MIT licence. ",
     "url": "/pr-preview/pr-37/docs/about/theme/",
     "relUrl": "/docs/about/theme/"
-  },"55": {
+  },"53": {
     "doc": "WP Accessibility Team",
     "title": "Info about the WordPress Accessibility Team",
     "content": "Info and links. ",
     "url": "/pr-preview/pr-37/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team",
     "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team"
-  },"56": {
+  },"54": {
     "doc": "WP Accessibility Team",
     "title": "WP Accessibility Team",
     "content": " ",
     "url": "/pr-preview/pr-37/docs/wordpress-accessibility/wp-a11y-team/",
     "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/"
-  },"57": {
+  },"55": {
     "doc": "Blog",
     "title": "{{ extendedTitle }}",
     "content": "{%- if site.page_size != nil %} {% assign posts = paginator.posts %} {% else %} {% assign posts = site.posts %} {% endif %} {%- if posts.size > 0 -%} {%- assign date_format = site.date_format | default: '%B %-d, %Y' -%} {%- for post in posts -%} ",
     "url": "/pr-preview/pr-37/blog/page2/",
     "relUrl": "/blog/page2/"
-  },"58": {
+  },"56": {
     "doc": "Blog",
     "title": "\n          \n            {{ post.title | escape }}\n          \n        ",
     "content": "{{ post.date | date: date_format }} {% if post.author %} by {{post.author}}{% endif %} . {{ post.excerpt | default: post.description }} . {%- endfor -%} {% if paginator.total_pages > 1 %} . {% if paginator.previous_page %} | &laquo; Previous page | {% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %} | Page {{ page }} | {% elsif page == 1 %} | Page {{ page }} | {% else %} {% assign page_one_link = '/' | append: site.paginate_page | append: '1' | append: '/' %} | Page {{ page }} | {% endif %} {% endfor %} {% if paginator.next_page %} | Next page &raquo; | {% endif %} . {% endif %} {%- endif -%} ",
     "url": "/pr-preview/pr-37/blog/page2/",
     "relUrl": "/blog/page2/"
-  },"59": {
+  },"57": {
     "doc": "Blog",
     "title": "Blog",
     "content": "{%- include components/title.html -%} ",
