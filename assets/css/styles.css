@@ -1249,24 +1249,26 @@ blockquote.alert-title > p:last-child {
   margin-bottom: 0;
 }
 
-p.tip,
-blockquote.tip {
+p.example,
+blockquote.example {
   background: rgba(65, 214, 147, 0.1);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.tip::before,
-blockquote.tip::before {
-  content: "Tip";
+p.example::before,
+blockquote.example::before {
+  color: #026e57;
+  content: "Example";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.tip > .tip-title,
-blockquote.tip > .tip-title {
+p.example > .example-title,
+blockquote.example > .example-title {
+  color: #026e57;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1274,15 +1276,15 @@ blockquote.tip > .tip-title {
   padding-bottom: 0.125rem;
 }
 
-p.tip-title,
-blockquote.tip-title {
+p.example-title,
+blockquote.example-title {
   background: rgba(65, 214, 147, 0.1);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.tip-title > p:first-child,
-blockquote.tip-title > p:first-child {
+p.example-title > p:first-child,
+blockquote.example-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
@@ -1292,25 +1294,25 @@ blockquote.tip-title > p:first-child {
   padding-bottom: 0.125rem;
 }
 
-blockquote.tip {
+blockquote.example {
   margin-left: 0;
   margin-right: 0;
 }
-blockquote.tip > p:first-child {
+blockquote.example > p:first-child {
   margin-top: 0;
 }
-blockquote.tip > p:last-child {
+blockquote.example > p:last-child {
   margin-bottom: 0;
 }
 
-blockquote.tip-title {
+blockquote.example-title {
   margin-left: 0;
   margin-right: 0;
 }
-blockquote.tip-title > p:nth-child(2) {
+blockquote.example-title > p:nth-child(2) {
   margin-top: 0;
 }
-blockquote.tip-title > p:last-child {
+blockquote.example-title > p:last-child {
   margin-bottom: 0;
 }
 
