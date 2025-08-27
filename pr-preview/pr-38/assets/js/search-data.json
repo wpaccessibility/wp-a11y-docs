@@ -67,7 +67,7 @@
   },"11": {
     "doc": "Add a blog post",
     "title": "The variables at the top of the file for a blog post",
-    "content": "For example: . --- layout: post title: \"The Able Player is now available for videos\" permalink: /blog/2025/able-player-available-for-videos/ author: Joe Dolson categories: video parent: Blog excerpt: \"Able player is now available for YouTube videos in the WP Accessibility Knowledge Base.\" date: 2025-08-16 --- . The layout must be post, the parent Blog, use for the permalink the structure /blog/YYYY/name/. The date, author and excerpt will show up below the title on the Blog archive page and below the title on the blog post itself. The date can be in the future, the post will show up from that date and not before. The option for listings of categories hasn’t been implemented yet, but please use it already. ",
+    "content": "For example: . --- layout: post title: \"The Able Player is now available for videos\" permalink: /blog/2025/able-player-available-for-videos/ author: Joe Dolson categories: video parent: Blog excerpt: \"Able Player is now available for YouTube videos in the WP Accessibility Knowledge Base.\" date: 2025-08-16 --- . The layout must be post, the parent Blog, use for the permalink the structure /blog/YYYY/name/. The date, author and excerpt will show up below the title on the Blog archive page and below the title on the blog post itself. The date can be in the future, the post will show up from that date and not before. The option for listings of categories hasn’t been implemented yet, but please use it already. ",
     "url": "/pr-preview/pr-38/docs/contribute/blog-post/#the-variables-at-the-top-of-the-file-for-a-blog-post",
     "relUrl": "/docs/contribute/blog-post/#the-variables-at-the-top-of-the-file-for-a-blog-post"
   },"12": {
@@ -115,7 +115,7 @@
   },"19": {
     "doc": "Content kitchen sink",
     "title": "Videos",
-    "content": "This site uses the accessible media player Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able media player. Please read the Able Player documentation for the settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . ",
+    "content": "This site uses the accessible media player Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able media player. Please read the Able Player documentation for information on all available settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . ",
     "url": "/pr-preview/pr-38/docs/contribute/content-kitchen-sink/#videos",
     "relUrl": "/docs/contribute/content-kitchen-sink/#videos"
   },"20": {
