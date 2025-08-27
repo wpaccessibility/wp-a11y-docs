@@ -126,10 +126,10 @@
     "relUrl": "/docs/contribute/content-kitchen-sink/#code-examples-in-the-text"
   },"21": {
     "doc": "Content kitchen sink",
-    "title": "Langauge switch in the content text",
+    "title": "Language switch in the content text",
     "content": "Only use the lang attribute for 4 words and more. For a part of sentence write, use a span in your Markdown text: . This text is in English and &lt;span lang=\"nl\"&gt;deze tekst is in het Nederlands&lt;/span&gt; and now we continue in English. In link texts . [&lt;span lang=\"de\"&gt;Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland&lt;/span&gt;](https://www.deutscher-behindertenrat.de/ID255536). For larger pieces of content, you can add to a &lt;p&gt;, &lt;div&gt;or even a landmark, depending on what you need. For example: . &lt;p lang=\"de\"&gt; [...] &lt;/p&gt; . ",
-    "url": "/pr-preview/pr-38/docs/contribute/content-kitchen-sink/#langauge-switch-in-the-content-text",
-    "relUrl": "/docs/contribute/content-kitchen-sink/#langauge-switch-in-the-content-text"
+    "url": "/pr-preview/pr-38/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text"
   },"22": {
     "doc": "Content kitchen sink",
     "title": "Callouts",
