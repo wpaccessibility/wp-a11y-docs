@@ -2,13 +2,12 @@
 title: Code of Conduct
 layout: default
 parent: How to contribute
-nav_order: 3
+nav_order: 6
 ---
 
 # Contributor Covenant Code of Conduct
 
-The WordPress Accessibility Team believes our community should be truly open for everyone. As such, we are committed to providing a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
+The WordPress Accessibility Team believes our community should be truly open for everyone. As such, we are committed to providing a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender
 identity and expression, level of experience, education, socio-economic status,
 nationality, personal appearance, race, caste, color, religion, or sexual
 identity and orientation.

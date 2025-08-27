@@ -50,6 +50,7 @@ For this the following changes were made:
 
 - Removed Google Analytics Tracking settings.
 - Removed most variable because this is a static site.
+- Changed names and colours of the callouts to match those used in [WordPress documentation style guide](https://make.wordpress.org/docs/handbook/documentation-team-handbook/handbooks-style-and-formatting-guide/)
 
 ### Accessibility improvements
 
