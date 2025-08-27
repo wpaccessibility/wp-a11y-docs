@@ -70,7 +70,7 @@ Don’t make users guess — offer clear help in plain language, at the right mo
 
 ## How do I show which fields are required?
 
-If you only ask what's really needed, all fields could technically be required — but that’s not always the case.
+If you only ask what's really needed, all fields could technically be required — but that’s not always the case. Different types of forms have different needs. For example, if you're creating content in the admin of a website, all of the content fields you might use need to be available; but most of them won't be required. 
 
 ### What’s the best way to indicate required?
 
