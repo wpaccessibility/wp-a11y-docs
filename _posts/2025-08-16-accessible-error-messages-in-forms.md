@@ -42,7 +42,7 @@ In the Netherlands there are strict rules about [when to ask for a citizen servi
 
 ## How will I ask for this information?
 
-Will you design new custom input fields or use recognizable, familiar patterns? Please don’t reinvent the web for something as essential as form fields. As Heydon Pickering explains in his talk [Get Your Priorities Straight](https://www.youtube.com/watch?v=ediHVy0869c): “Real people aren't looking to be delighted. People want to get the task done and get on with their lives".
+The input mechanism you use to ask for information has a profound impact on your users. Should you design new custom input fields or use recognizable, familiar patterns? Please don’t reinvent the web for something as essential as form fields. As Heydon Pickering explains in his talk [Get Your Priorities Straight](https://www.youtube.com/watch?v=ediHVy0869c): “Real people aren't looking to be delighted. People want to get the task done and get on with their lives".
 
 {: .example }
 For example: users recognize radio buttons as circles and checkboxes as squares. They know from experience they can choose one option from the radio buttons and multiple options from the checkboxes. Also, the [keyboard interaction](https://webaim.org/techniques/keyboard/#testing) for radio buttons and checkboxes differs from each other. 
@@ -84,7 +84,9 @@ Prefer **“required”** over an asterisk, because an asterisk assumes prior kn
 
 Which is better? Indicate required or non-required fields? It depends. Your choice should be based on the form’s function, your CMS or plugin, and user research.
 
-An option could be: when most fields are required, mark the *optional* ones. If most fields are not required, mark the *required* ones.
+One option could be that when most fields are required, mark the *optional* ones. If most fields are not required, mark the *required* ones.
+
+But, keep the way you indicate required/non-required fields consistent with all forms in your site.
 
 {: .example }
 For example: "Please complete all fields. If a field is not required, it will be labeled "(Optional)".
@@ -96,7 +98,7 @@ Please note: for **screen readers** is necessary to always add the attributes [`
 
 ## When should I check for errors?
 
-Websites can check for errors while typing, after the focus moves out of a field, or after the form is submitted. Which approach is most user-friendly?
+Websites commonly check for errors while typing, after the focus moves out of a field, or after the form is submitted. Which approach is most user-friendly?
 
 Checking during typing can be confusing. Imagine typing an email address and seeing “Invalid email address” after the first letter. Of course, it’s invalid, you haven’t finished yet! 
 
