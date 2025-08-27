@@ -4,7 +4,7 @@ title: "Accessible error messages in forms"
 permalink: /blog/2025/accessible-error-messages-forms/
 author: Rian Rietveld
 categories: forms
-parent: Articles
+parent: Blog
 excerpt: "When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form."
 date: 2025-08-16
 ---
@@ -12,17 +12,17 @@ date: 2025-08-16
 When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
 {: .fs-6 .fw-300 }
 
-In this article, we’ll walk step-by-step through how to prevent errors, indicate them clearly, and offer help with error messages in forms for different types of users.
+In this post, we’ll walk step-by-step through how to prevent errors, indicate them clearly, and offer help with error messages in forms for different types of users.
 
-Ask yourself the following questions:
+When designing a form, ask yourself the following questions:
 
 * What do I really need to know?
-* How will I ask for this information?
+* How will I ask for this in formation?
 * What information can I provide in advance to help the user?
-* How to show which fields are required?
+* How do I show which fields are required?
 * When do I check for errors?
 * How do I indicate that an answer is incomplete or filled out incorrectly?
-* What makes for a helpful error message?
+* What makes a helpful error message?
 * How do I confirm that a form has been submitted successfully?
 * How can I offer help when a user gets stuck?
 
@@ -30,11 +30,11 @@ No one enjoys filling out forms, and all the help you can give is useful. Keep t
 
 ## What do I really need to know?
 
-Handling errors starts with the questions you ask. Some questions are difficult to answer. Is it really essential to know whether someone is male or female? Do you only want to contact them by phone? Perhaps the user wants to provide a different answer or doesn't want to answer, can’t choose an option and then gives up.
+Handling errors starts with the questions you ask. Some questions are difficult to answer. Is it really essential to know whether someone is male or female? Do you only want to contact them by phone? What if a user's answer to a question isn't an available option, or they don't want to answer a question? They may just give up.
 
 Only ask for information you truly need in order to process the request. The fewer questions you ask, the lower the barrier for filling out the form.
 
-Be very clear about why you need sensitive personal information, such as a citizen service number, race, religion or medical data. Check your local legislation if you are allowed to request such private information in an open online form.
+Be clear about why you need sensitive personal information, such as an identification number, race, religion or medical data. Check your local legislation to see if you are allowed to request such private information in an open online form.
 
 {: .note }
 In the Netherlands there are strict rules about [when to ask for a citizen service number](https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)).
@@ -68,7 +68,7 @@ The blog post [*Blind people don't visit my website*](https://www.a11y-collectiv
 
 Don’t make users guess — offer clear help in plain language, at the right moment. Tell users in advance which documents they'll need, and which fields are or aren't required. Add descriptions to fields where necessary.
 
-## How to show which fields are required?
+## How do I show which fields are required?
 
 If you only ask what's really needed, all fields could technically be required — but that’s not always the case.
 
@@ -115,7 +115,7 @@ Use more than colour alone to indicate errors. A user with visual impairments or
 * Add a summary of all errors above the form  helps the user quickly see what needs to be corrected.
 
 
-## What makes a good error message?
+## What makes a helpful error message?
 
 Messages like “This field is required” or “Invalid value” don’t offer much help. Write clear error messages that explain what’s missing or needs changing.
 
@@ -129,7 +129,7 @@ This is far more helpful than a vague generic message.
 
 ## How do I confirm a form was successfully submitted?
 
-You click "Send" and… nothing happens. Or you're redirected to the homepage. Was the form actually sent? How to know?
+You click "Send" and… nothing happens. Or you're redirected to the homepage. Was the form actually sent? How do you know?
 
 Give users clear confirmation that their form has been submitted and what will happen next. You can also include this messsage in a confirmation email.
 
@@ -137,11 +137,13 @@ Give users clear confirmation that their form has been submitted and what will h
 A confirmation text could be:  
 Thank you for your registration for our workshop "Knitting socks". A confirmation email has been sent to user@example.com with the time and location of the workshop. If you haven't received an email? [Please contact us](#).
 
-## How can I offer help if a user sets stuck?
+## How can I offer help if a user gets stuck?
 
-If a user gets stuck filling out a complex form, they should be able to easily request help.
+If a user gets stuck filling out a complex form, they need to be able to easily request help.
 
-Don’t hide contact details at the very bottom of the form — place a short sentence near the top. The footer is also a good place to additionally include contact info. Always offer multiple ways to get in touch on your contact page — not everyone can make a phone call.
+Don't hide contact details. They shouldn't be buried at the bottom of the form, or isolated on just one page of your site. Include a short sentence at the top of your form, and place contact information in predictable places in your site design. The footer is a common place to include additional contact information. 
+
+Always offer multiple ways to get in touch on your contact page — not everyone can make a phone call.
 
 {: .example }
 A help text could be:  
@@ -149,10 +151,10 @@ Do you need help filling out this form or do you have questions? [Please contact
 
 ## Summary
 
-Help your users as much as possible when filling out a form. Don’t ask unnecessary questions, just for your statistics. Provide the right input options. Make it clear whis is requited and how to fill out a field. Use clear, timely error messages. And make sure it’s easy to ask for help when needed.
+Help your users as much as possible when filling out a form. Don't ask unnecessary questions just to collect for your statistics. Use standard input form fields wherever possible. Make it clear what is required and how to fill out a field. Use clear, timely error messages. And make sure it’s easy to ask for help when needed.
 
 Remember: people want to get through a form quickly and move on with their lives. Make that task as easy as possible.
 
 ## Credits
-This article was first published in Dutch on the [NL Design Systems blog](https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/) and is used with permission. The text has been modified for a global audience.
+This post was first published in Dutch on the [NL Design Systems blog](https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/) and is used with permission. The text has been modified for a global audience.
 
