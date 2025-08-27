@@ -109,7 +109,7 @@ HTML5 form validation is not accessible at this moment. The W3C summarizes the o
 
 ## How do I indicate that an answer is incomplete or filled out incorrectly?
 
-Use more than colour alone to indicate errors. A user with visual impairments or colour blindness may not notice a red outline. Colour is helpful but always include an error message in text too.
+Use more than color alone to indicate errors. A user with visual impairments or color blindness may not notice a red outline. Color is helpful but always include an error message in text too.
 
 * Clearly state whether a field is required.
 * Show errors with more than just colour or an icon.
