@@ -10,7 +10,7 @@
 
 
 
-<title>Changelog website, WP Accessibility Knowledge Base</title>
+<title>Contact, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-25/assets/css/styles.css">
@@ -195,28 +195,11 @@
       
         
 
-        
-
-        
-            
-            
-            
-        
-
-    
-
-        
-
-        
-            
-
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
-        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-25/docs/about/'>About this website</a></li>
-            <li class="breadcrumb-nav-list-item" aria-current="page">Changelog website</li>
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li><li class="breadcrumb-nav-list-item" aria-current="page">Contact</li>
     </ol>
 </nav>
 
@@ -225,74 +208,16 @@
 
         <main>
 
-          <h1 id="changelog">Changelog</h1>
+          <h1 id="contact-the-wp-accessibility-docs-team">Contact the WP Accessibility Docs Team</h1>
 
-<p>All notable user-facing changes to this project are documented in this file.</p>
-
-<h2 id="release-v01">Release v0.1</h2>
-
-<p>This Jekyll theme WP A11y Docs is based on Just the Docs by
-Just The Docs is licenced as MIT.</p>
-
-<p>In this initial release the theme is renamed into WP A11y Docs.</p>
-
-<p>The URL for the GitHib pages is wpaccessibility.org.</p>
-
-<h3 id="file-organisation">File organisation</h3>
-<p>This will be a one design theme only, so all the changes will be done directly in the files itself. This simplifies the code and makes the theme better maintainable.</p>
-
-<p>For this the following changes were made:</p>
+<p>There are several ways to contact us:</p>
 <ul>
-  <li>Removed custom files and their references.</li>
-  <li>Removed redundant include files.</li>
-  <li>Removed the nav-footer: took up too much space and added a second <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code>.</li>
-  <li>Added option for posts and post pagination.</li>
-  <li>Refactored the breadcrumbs for the posts.</li>
-  <li>Removed Just the Docs info pages and create placeholder text to match the actual site structure.</li>
-  <li>Set Ruby to 3.3.6.</li>
-  <li>Added option to add a canonical URL.</li>
+  <li><a href="https://github.com/wpaccessibility/wp-a11y-docs/issues">Open an issue</a> on GitHub with your question.</li>
+  <li>Fill out the <a href="https://make.wordpress.org/accessibility/accessibility-knowledge-base-contact/">contact form on make.wordpress.org</a>. You don’t need to log-in for this.</li>
+  <li>Share a comment in the <a href="https://wordpress.slack.com/archives/C6PK2QCTY">Make WordPress #accessibility-docs Slack channel</a>.</li>
 </ul>
 
-<h3 id="scss">SCSS</h3>
-
-<ul>
-  <li>Refactoring directory structure.</li>
-  <li>Removed the dark theme for now, that will be restored when the theme is finished and stable.</li>
-  <li>Replaced <code class="language-plaintext highlighter-rouge">@import</code> for <code class="language-plaintext highlighter-rouge">@use</code>, for compatibility with Dart Sass 3.0.0.</li>
-  <li>Replaced <code class="language-plaintext highlighter-rouge">darken</code> by <code class="language-plaintext highlighter-rouge">color.scale</code> and <code class="language-plaintext highlighter-rouge">color.adjust</code>, for compatibility with Dart Sass 3.0.0.</li>
-  <li>Replaced deprecated global built-in functions by Sass values (sass:map, sass:color, sass:list etc.).</li>
-</ul>
-
-<h3 id="css-color-contrast-issue">CSS color contrast issue</h3>
-<ul>
-  <li>Placeholder: fixt color contrast and opacity.</li>
-  <li>Fixed color contrast issues for text and non-text meaningful elements.</li>
-</ul>
-
-<h3 id="search-at-the-top-of-the-page">Search at the top of the page</h3>
-<ul>
-  <li>Refactored the HTML of the form to make the HTML valid.</li>
-  <li>Added screen reader feedback to announce number of search results.</li>
-</ul>
-
-<h3 id="_configyml">_config.yml</h3>
-
-<ul>
-  <li>Removed Google Analytics Tracking settings.</li>
-  <li>Removed most variable because this is a static site.</li>
-  <li>Changed names and colours of the callouts to match those used in <a href="https://make.wordpress.org/docs/handbook/documentation-team-handbook/handbooks-style-and-formatting-guide/">WordPress documentation style guide</a></li>
-</ul>
-
-<h3 id="accessibility-improvements">Accessibility improvements</h3>
-
-<ul>
-  <li>Moved the button to expand the submenus to after the submenu link, so the tab order is meaningful.</li>
-  <li>Changed aria-pressed by aria-expanded, see also issue <a href="https://github.com/just-the-docs/just-the-docs/issues/1680">Change aria-pressed into aria-expanded for buttons connected to expandable content</a>.</li>
-  <li>Added <code class="language-plaintext highlighter-rouge">aria-current="page"</code> to links to the current page.</li>
-  <li>Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. Maybe we find an accessible way later on.</li>
-  <li>Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screenreader feedback.</li>
-  <li>The code blocks now have a tabindex=”0”.</li>
-</ul>
+<p><a href="https://rianrietveld.com/contact-rian-rietveld/">Contact Rian Rietveld</a> if you want to sponsor this project. We still need a few sponsors to cover our time and costs.</p>
 
 
           
@@ -306,7 +231,7 @@ Just The Docs is licenced as MIT.</p>
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/CHANGELOG.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contact/index.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 

@@ -1129,16 +1129,79 @@ div.opaque {
   background-color: #fff;
 }
 
-p.highlight,
+p.tutorial,
 blockquote.highlight {
+  background: rgba(65, 214, 147, 0.1);
+  border-left: 4px solid #026e57;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+p.tutorial::before,
+blockquote.highlight::before {
+  content: "Example";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+p.tutorial > .tutorial-title,
+blockquote.highlight > .tutorial-title {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+
+p.tutorial-title,
+blockquote.tutorial-title {
+  background: rgba(65, 214, 147, 0.1);
+  border-left: 4px solid #026e57;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+
+blockquote.tutorial {
+  margin-left: 0;
+  margin-right: 0;
+}
+blockquote.tutorial > p:first-child {
+  margin-top: 0;
+}
+blockquote.tutorial > p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote.tutorial-title {
+  margin-left: 0;
+  margin-right: 0;
+}
+blockquote.tutorial-title > p:nth-child(2) {
+  margin-top: 0;
+}
+blockquote.tutorial-title > p:last-child {
+  margin-bottom: 0;
+}
+
+p.alert,
+blockquote.alert {
   background: rgba(255, 235, 130, 0.1);
   border-left: 4px solid #e7af06;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.highlight > .highlight-title,
-blockquote.highlight > .highlight-title {
-  color: #e7af06;
+p.alert::before,
+blockquote.alert::before {
+  content: "Alert";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+p.alert > .alert-title,
+blockquote.alert > .alert-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1146,18 +1209,17 @@ blockquote.highlight > .highlight-title {
   padding-bottom: 0.125rem;
 }
 
-p.highlight-title,
-blockquote.highlight-title {
+p.alert-title,
+blockquote.alert-title {
   background: rgba(255, 235, 130, 0.1);
   border-left: 4px solid #e7af06;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.highlight-title > p:first-child,
-blockquote.highlight-title > p:first-child {
+p.alert-title > p:first-child,
+blockquote.alert-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #e7af06;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1165,93 +1227,25 @@ blockquote.highlight-title > p:first-child {
   padding-bottom: 0.125rem;
 }
 
-blockquote.highlight {
+blockquote.alert {
   margin-left: 0;
   margin-right: 0;
 }
-blockquote.highlight > p:first-child {
+blockquote.alert > p:first-child {
   margin-top: 0;
 }
-blockquote.highlight > p:last-child {
+blockquote.alert > p:last-child {
   margin-bottom: 0;
 }
 
-blockquote.highlight-title {
+blockquote.alert-title {
   margin-left: 0;
   margin-right: 0;
 }
-blockquote.highlight-title > p:nth-child(2) {
+blockquote.alert-title > p:nth-child(2) {
   margin-top: 0;
 }
-blockquote.highlight-title > p:last-child {
-  margin-bottom: 0;
-}
-
-p.important,
-blockquote.important {
-  background: rgba(44, 132, 250, 0.1);
-  border-left: 4px solid #183385;
-  border-radius: 4px;
-  padding: 0.8rem;
-}
-p.important::before,
-blockquote.important::before {
-  color: #183385;
-  content: "Important";
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  padding-bottom: 0.125rem;
-}
-p.important > .important-title,
-blockquote.important > .important-title {
-  color: #183385;
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  padding-bottom: 0.125rem;
-}
-
-p.important-title,
-blockquote.important-title {
-  background: rgba(44, 132, 250, 0.1);
-  border-left: 4px solid #183385;
-  border-radius: 4px;
-  padding: 0.8rem;
-}
-p.important-title > p:first-child,
-blockquote.important-title > p:first-child {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #183385;
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  padding-bottom: 0.125rem;
-}
-
-blockquote.important {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.important > p:first-child {
-  margin-top: 0;
-}
-blockquote.important > p:last-child {
-  margin-bottom: 0;
-}
-
-blockquote.important-title {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.important-title > p:nth-child(2) {
-  margin-top: 0;
-}
-blockquote.important-title > p:last-child {
+blockquote.alert-title > p:last-child {
   margin-bottom: 0;
 }
 
@@ -1293,7 +1287,6 @@ p.example-title > p:first-child,
 blockquote.example-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #026e57;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1323,26 +1316,24 @@ blockquote.example-title > p:last-child {
   margin-bottom: 0;
 }
 
-p.note,
-blockquote.note {
+p.info,
+blockquote.info {
   background: rgba(114, 83, 237, 0.1);
   border-left: 4px solid #381885;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.note::before,
-blockquote.note::before {
-  color: #381885;
-  content: "Note";
+p.info::before,
+blockquote.info::before {
+  content: "Info";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.note > .note-title,
-blockquote.note > .note-title {
-  color: #381885;
+p.info > .info-title,
+blockquote.info > .info-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1350,18 +1341,17 @@ blockquote.note > .note-title {
   padding-bottom: 0.125rem;
 }
 
-p.note-title,
-blockquote.note-title {
+p.info-title,
+blockquote.info-title {
   background: rgba(114, 83, 237, 0.1);
   border-left: 4px solid #381885;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.note-title > p:first-child,
-blockquote.note-title > p:first-child {
+p.info-title > p:first-child,
+blockquote.info-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #381885;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1369,25 +1359,25 @@ blockquote.note-title > p:first-child {
   padding-bottom: 0.125rem;
 }
 
-blockquote.note {
+blockquote.info {
   margin-left: 0;
   margin-right: 0;
 }
-blockquote.note > p:first-child {
+blockquote.info > p:first-child {
   margin-top: 0;
 }
-blockquote.note > p:last-child {
+blockquote.info > p:last-child {
   margin-bottom: 0;
 }
 
-blockquote.note-title {
+blockquote.info-title {
   margin-left: 0;
   margin-right: 0;
 }
-blockquote.note-title > p:nth-child(2) {
+blockquote.info-title > p:nth-child(2) {
   margin-top: 0;
 }
-blockquote.note-title > p:last-child {
+blockquote.info-title > p:last-child {
   margin-bottom: 0;
 }
 
@@ -1400,7 +1390,6 @@ blockquote.warning {
 }
 p.warning::before,
 blockquote.warning::before {
-  color: #b62424;
   content: "Warning";
   display: block;
   font-weight: bold;
@@ -1410,7 +1399,6 @@ blockquote.warning::before {
 }
 p.warning > .warning-title,
 blockquote.warning > .warning-title {
-  color: #b62424;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1429,7 +1417,6 @@ p.warning-title > p:first-child,
 blockquote.warning-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
-  color: #b62424;
   display: block;
   font-weight: bold;
   text-transform: uppercase;

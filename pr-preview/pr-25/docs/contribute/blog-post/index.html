@@ -10,7 +10,7 @@
 
 
 
-<title>Changelog website, WP Accessibility Knowledge Base</title>
+<title>Add a blog post, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-25/assets/css/styles.css">
@@ -215,8 +215,8 @@
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-25/docs/about/'>About this website</a></li>
-            <li class="breadcrumb-nav-list-item" aria-current="page">Changelog website</li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-25/docs/contribute/'>How to contribute</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Add a blog post</li>
     </ol>
 </nav>
 
@@ -225,74 +225,50 @@
 
         <main>
 
-          <h1 id="changelog">Changelog</h1>
+          <h1 id="add-or-change-blog-post">Add or change blog post.</h1>
 
-<p>All notable user-facing changes to this project are documented in this file.</p>
+<p class="fs-6 fw-300">Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add post for this website.</p>
 
-<h2 id="release-v01">Release v0.1</h2>
+<p>Each blog post file has the same setup.  First a set of variables like the title and the parent. Then the content using Markdown.</p>
 
-<p>This Jekyll theme WP A11y Docs is based on Just the Docs by
-Just The Docs is licenced as MIT.</p>
+<p>The blog post live in the directory <code class="language-plaintext highlighter-rouge">/_posts/</code> and are named <code class="language-plaintext highlighter-rouge">yyyy-mm-dd-title.md</code>.
+For example <code class="language-plaintext highlighter-rouge">2025-08-16-able-player-now-available.md</code>.</p>
 
-<p>In this initial release the theme is renamed into WP A11y Docs.</p>
+<h2 id="the-variables-at-the-top-of-the-file-for-a-blog-post">The variables at the top of the file for a blog post</h2>
 
-<p>The URL for the GitHib pages is wpaccessibility.org.</p>
+<p>For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: "The Able Player is now available for videos"
+permalink: /blog/2025/able-player-available-for-videos/
+author: Joe Dolson
+categories: video
+parent: Blog
+excerpt: "Able Player is now available for YouTube videos in the WP Accessibility Knowledge Base."
+date: 2025-08-16
+---
+</code></pre></div></div>
 
-<h3 id="file-organisation">File organisation</h3>
-<p>This will be a one design theme only, so all the changes will be done directly in the files itself. This simplifies the code and makes the theme better maintainable.</p>
+<p>The layout must be <code class="language-plaintext highlighter-rouge">post</code>, the parent <code class="language-plaintext highlighter-rouge">Blog</code>,  use for the <code class="language-plaintext highlighter-rouge">permalink</code> the structure <code class="language-plaintext highlighter-rouge">/blog/YYYY/name/</code>.</p>
 
-<p>For this the following changes were made:</p>
-<ul>
-  <li>Removed custom files and their references.</li>
-  <li>Removed redundant include files.</li>
-  <li>Removed the nav-footer: took up too much space and added a second <code class="language-plaintext highlighter-rouge">&lt;footer&gt;</code>.</li>
-  <li>Added option for posts and post pagination.</li>
-  <li>Refactored the breadcrumbs for the posts.</li>
-  <li>Removed Just the Docs info pages and create placeholder text to match the actual site structure.</li>
-  <li>Set Ruby to 3.3.6.</li>
-  <li>Added option to add a canonical URL.</li>
-</ul>
+<p>The <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">author</code> and <code class="language-plaintext highlighter-rouge">excerpt</code> will show up below the title on the <a href="/blog/">Blog archive page</a> and below the title on the blog post itself.
+The <code class="language-plaintext highlighter-rouge">date</code> can be in the future, the post will show up from that date and not before.</p>
 
-<h3 id="scss">SCSS</h3>
+<p>The option for listings of <code class="language-plaintext highlighter-rouge">categories</code> hasn’t been implemented yet, but please use it already.</p>
 
-<ul>
-  <li>Refactoring directory structure.</li>
-  <li>Removed the dark theme for now, that will be restored when the theme is finished and stable.</li>
-  <li>Replaced <code class="language-plaintext highlighter-rouge">@import</code> for <code class="language-plaintext highlighter-rouge">@use</code>, for compatibility with Dart Sass 3.0.0.</li>
-  <li>Replaced <code class="language-plaintext highlighter-rouge">darken</code> by <code class="language-plaintext highlighter-rouge">color.scale</code> and <code class="language-plaintext highlighter-rouge">color.adjust</code>, for compatibility with Dart Sass 3.0.0.</li>
-  <li>Replaced deprecated global built-in functions by Sass values (sass:map, sass:color, sass:list etc.).</li>
-</ul>
+<h2 id="the-content-of-post">The content of post</h2>
 
-<h3 id="css-color-contrast-issue">CSS color contrast issue</h3>
-<ul>
-  <li>Placeholder: fixt color contrast and opacity.</li>
-  <li>Fixed color contrast issues for text and non-text meaningful elements.</li>
-</ul>
+<p>The theme inserts your title, author, and the date of publication for you, so you should not include these in the content of your post.</p>
 
-<h3 id="search-at-the-top-of-the-page">Search at the top of the page</h3>
-<ul>
-  <li>Refactored the HTML of the form to make the HTML valid.</li>
-  <li>Added screen reader feedback to announce number of search results.</li>
-</ul>
+<p>The page <a href="/docs/contribute/content-kitchen-sink/">Content kitchen sink</a> describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text.</p>
 
-<h3 id="_configyml">_config.yml</h3>
+<h2 id="how-to-start">How to start</h2>
 
-<ul>
-  <li>Removed Google Analytics Tracking settings.</li>
-  <li>Removed most variable because this is a static site.</li>
-  <li>Changed names and colours of the callouts to match those used in <a href="https://make.wordpress.org/docs/handbook/documentation-team-handbook/handbooks-style-and-formatting-guide/">WordPress documentation style guide</a></li>
-</ul>
+<p>If you have an idea for a blog post, please open an <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues">issue on GitHub</a> and share your idea first.
+If you want to work on a blog post (yay!) please let us know by adding a comment with the issue.</p>
 
-<h3 id="accessibility-improvements">Accessibility improvements</h3>
+<p>Need help? Feel free to <a href="/docs/contact/">contact us</a>.</p>
 
-<ul>
-  <li>Moved the button to expand the submenus to after the submenu link, so the tab order is meaningful.</li>
-  <li>Changed aria-pressed by aria-expanded, see also issue <a href="https://github.com/just-the-docs/just-the-docs/issues/1680">Change aria-pressed into aria-expanded for buttons connected to expandable content</a>.</li>
-  <li>Added <code class="language-plaintext highlighter-rouge">aria-current="page"</code> to links to the current page.</li>
-  <li>Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. Maybe we find an accessible way later on.</li>
-  <li>Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screenreader feedback.</li>
-  <li>The code blocks now have a tabindex=”0”.</li>
-</ul>
 
 
           
@@ -306,7 +282,7 @@ Just The Docs is licenced as MIT.</p>
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/CHANGELOG.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contribute/blog-post.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
