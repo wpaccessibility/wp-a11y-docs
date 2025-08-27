@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Well, I never heard it before, but it sounds uncommon nonsense"
-permalink: /articles/2025/uncommon/
+permalink: /blog/2025/uncommon/
 date:   2025-02-31
 parent: Articles
 author: Rian Rietveld
