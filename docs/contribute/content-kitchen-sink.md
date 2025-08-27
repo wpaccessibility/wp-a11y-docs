@@ -18,10 +18,10 @@ WordPress.org provides a lot of style guides for documentation: [WordPress Style
 ```markdown
 #  This is an H1 heading
 ## This is an H2 heading
-### This is an H2 heading
-#### This is an H2 heading
-##### This is an H2 heading
-###### This is an H2 heading
+### This is an H3 heading
+#### This is an H4 heading
+##### This is an H5 heading
+###### This is an H6 heading
 ```
 
 {: .alert }
