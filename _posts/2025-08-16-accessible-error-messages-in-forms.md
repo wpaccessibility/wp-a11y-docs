@@ -126,7 +126,7 @@ Messages like “This field is required” or “Invalid value” don’t offer 
 “Your chosen password is too short. It must be at least 12 characters long.”  
 “The expiration date must be in the future.”
 
-This is far more helpful than a vague generic message.
+This is far more helpful than a generic message.
 
 
 ## How do I confirm a form was successfully submitted?
