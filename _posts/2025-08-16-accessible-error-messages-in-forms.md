@@ -114,7 +114,7 @@ Use more than color alone to indicate errors. A user with visual impairments or 
 * Clearly state whether a field is required.
 * Show errors with more than just color or an icon.
 * Write out the error in text above the form field.
-* Add a summary of all errors above the form  helps the user quickly see what needs to be corrected.
+* Add a summary of all errors above the form to help the user quickly see what needs to be corrected.
 
 
 ## What makes a helpful error message?
