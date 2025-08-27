@@ -94,7 +94,7 @@ For example: "Please complete all fields. If a field is not required, it will be
 Whatever you choose, be consistent within the form and across all forms on your website. Inform users above the form how field requirements are indicated.
 
 {: .note }
-Please note: for **screen readers** is necessary to always add the attributes [`aria-required`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-required) and [`aria-invalid`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-invalid) for required form field.
+Please note: for **screen readers** is is  always necessary to add the attributes [`aria-required`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-required) and [`aria-invalid`](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-invalid) for required form field.
 
 ## When should I check for errors?
 
