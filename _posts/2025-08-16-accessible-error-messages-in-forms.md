@@ -80,7 +80,7 @@ Do user research for your language. For example in Dutch the word "optioneel" (o
 
 Prefer **“required”** over an asterisk, because an asterisk assumes prior knowledge of the meaning of that icon. If you do use an asterisk, explain its meaning above the form.
 
-### Mark required or non-required fields?
+### Should I mark required or non-required fields?
 
 Which is better? Indicate required or non-required fields? It depends. Your choice should be based on the form’s function, your CMS or plugin, and user research.
 
