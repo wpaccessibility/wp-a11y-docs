@@ -57,7 +57,7 @@ For a deep dive into asking for dates in forms, see the GOV.UK Design System pat
 Don't force the user to enter information (like an email address) more than once, or expect them to remember entries entered on previous screens, like in a multistep form.
 
 {: .note }
-This success criterion is added in [WCAG 2.2: 3.3.7 Redundant Entry](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html).
+This success criterion was added in [WCAG 2.2: 3.3.7 Redundant Entry](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html).
 
 ## What information can I provide in advance to help the user?
 
