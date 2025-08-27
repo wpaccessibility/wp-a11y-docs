@@ -123,7 +123,7 @@ Messages like “This field is required” or “Invalid value” don’t offer 
 
 {: .example }
 “Enter your first name”  
-“Your chosen password is too short. It must be at least 8 characters long.”  
+“Your chosen password is too short. It must be at least 12 characters long.”  
 “The expiration date must be in the future.”
 
 This is far more helpful than a vague generic message.
