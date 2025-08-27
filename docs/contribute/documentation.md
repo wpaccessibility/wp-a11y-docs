@@ -40,7 +40,7 @@ The `nav_order` determines the location of the topic in the menu.
 
 ## The content of the post
 
-The page [Content kitchen sink](/docs/contribute/content-kitchen-sink/) describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different langauge in the text.
+The page [Content kitchen sink](/docs/contribute/content-kitchen-sink/) describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text.
 
 ## How to start
 
