@@ -66,7 +66,7 @@ for example: ![Library](/assets/images/small-image.jpg)
 For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos
-This site uses the accessible video player Able Player.
+This site uses the accessible videoplayer Able Player.
 
 Add to the variables at the top of the page:
 ```
@@ -129,7 +129,7 @@ For a part of sentence write, use a span in your Markdown text:
 This text is in English and <span lang="nl">deze tekst is in het Nederlands</span> and now we continue in English.
 ```
 
-In link texts
+In linktexts
 ```markdown
 [<span lang="de">Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland</span>](https://www.deutscher-behindertenrat.de/ID255536).
 ```
