@@ -5,7 +5,11 @@ nav_order: 4
 has_video: true
 ---
 
-# Kitchen sink: all options available for content
+# Kitchen sink: options available for content
+
+
+This page lists the options and code available for creating content on this website.
+{: .fs-6 .fw-300 }
 
 {: .info }
 WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
@@ -20,6 +24,21 @@ WordPress.org provides a lot of style guides for documentation: [WordPress Style
 ###### This is an H2 heading
 ```
 
+{: .alert }
+In blog posts the H1 is added by the template: [Add a blog post](/docs/contribute/blog-post/).
+
+## Summary in a larger text font.
+
+End the paragraph with the code `{: .fs-6 .fw-300 }`.
+
+```markdown
+When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
+{: .fs-6 .fw-300 }
+```
+
+When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
+{: .fs-6 .fw-300 }
+
 ## Text
 ```markdown
 This is a paragraph.
@@ -27,9 +46,9 @@ This is a paragraph.
 This is a paragraph.
 
 ```markdown
-This **bold text** and this is _italic text_.
+This is **bold text** and this is _italic text_.
 ```
-This **bold text** and this is _italic text_.
+This is **bold text** and this is _italic text_.
 
 ```markdown
 A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days.
@@ -47,20 +66,21 @@ for example: ![Library](/assets/images/small-image.jpg)
 For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos
-This site uses the accessible video player [Able Player](https://ableplayer.github.io/ableplayer/).
+This site uses the accessible video player Able Player.
 
 Add to the variables at the top of the page:
 ```
 has_video: true
 ```
-This loads the CSS and Javascript for the Able videoplayer.
+This loads the CSS and Javascript for the Able videoplayer. 
+Please read the [Able Player documentation](https://ableplayer.github.io/ableplayer/) for the settings and how to add caption and subtitle tracks.  
 
 Add the video itself in the page with:
 
 ```markdown
-<video data-able-player data-youtube-nocookie="true" data-youtube-id="1QjSYMd_pVk" data-heading-level="0"></video>
+<video data-able-player data-youtube-nocookie="true" data-youtube-id="Xj1P0Z6I2Wk" data-heading-level="0"></video>
 ```
-<video data-able-player data-youtube-nocookie="true" data-youtube-id="1QjSYMd_pVk" data-heading-level="0"></video>
+<video data-able-player data-youtube-nocookie="true" data-youtube-id="Xj1P0Z6I2Wk" data-heading-level="0"></video>
 
 ## Code examples in the text
 
@@ -114,49 +134,47 @@ In link texts
 [<span lang="de">Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland</span>](https://www.deutscher-behindertenrat.de/ID255536).
 ```
 
-For a larger piece of content for can add to a `<p>`, `<div>`or even a landmark, depending on what you need, for example:
+For larger pieces of content, you can add to a `<p>`, `<div>`or even a landmark, depending on what you need. For example:
 ```markdown
-<main lang="de">
+<p lang="de">
 [...]
-</main>
+</p>
 ```
 
-
-## Shortcodes
-
+## Callouts
  
 ```markdown
 {: .info }
-This is an informational message and uses the “info” short code.
+This is an informational message and uses the “info” callout.
 
 {: .tip }
-Use the “tip” short code to highlight tips.
+Use the “tip” callout to highlight tips.
 
 {: .alert }
-The “alert” short code is for alerting readers to important messages.
+The “alert” callout is for alerting readers to important messages.
 
 {: .warning }
-When something is particularly precarious, use the “warning” short code.
+When something is particularly precarious, use the “warning” callout.
 
 {: .tutorial }
-Give an example with the "tutorial" short code. 
+Give an example with the "tutorial" callout. 
 The title of the callout will be "Example".
 ```
 
 {: .info }
-This is an informational message and uses the “info” short code.
+This is an informational message and uses the “info” callout.
 
 {: .tip }
-Use the “tip” short code to highlight tips.
+Use the “tip” callout to highlight tips.
 
 {: .alert }
-The “alert” short code is for alerting readers to important messages.
+The “alert” callout is for alerting readers to important messages.
 
 {: .warning }
-When something is particularly precarious, use the “warning” short code.
+When something is particularly precarious, use the “warning” callout.
 
 {: .tutorial }
-Give an example with the "tutorial" short code. The title of the callout will be "Example"
+Give an example with the "tutorial" callout. The title of the callout will be "Example".
 
 ### Labels
 
