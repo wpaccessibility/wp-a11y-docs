@@ -112,7 +112,7 @@ HTML5 form validation is not accessible at this moment. The W3C summarizes the o
 Use more than color alone to indicate errors. A user with visual impairments or color blindness may not notice a red outline. Color is helpful but always include an error message in text too.
 
 * Clearly state whether a field is required.
-* Show errors with more than just colour or an icon.
+* Show errors with more than just color or an icon.
 * Write out the error in text above the form field.
 * Add a summary of all errors above the form  helps the user quickly see what needs to be corrected.
 
