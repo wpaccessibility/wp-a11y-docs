@@ -97,7 +97,7 @@
   },"16": {
     "doc": "Content kitchen sink",
     "title": "Headings",
-    "content": "# This is an H1 heading ## This is an H2 heading ### This is an H2 heading #### This is an H2 heading ##### This is an H2 heading ###### This is an H2 heading . In blog posts the H1 is added by the template: Add a blog post. ",
+    "content": "# This is an H1 heading ## This is an H2 heading ### This is an H3 heading #### This is an H4 heading ##### This is an H5 heading ###### This is an H6 heading . In blog posts the H1 is added by the template: Add a blog post. ",
     "url": "/pr-preview/pr-38/docs/contribute/content-kitchen-sink/#headings",
     "relUrl": "/docs/contribute/content-kitchen-sink/#headings"
   },"17": {
