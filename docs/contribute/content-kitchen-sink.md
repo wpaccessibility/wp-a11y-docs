@@ -66,13 +66,14 @@ for example: ![Library](/assets/images/small-image.jpg)
 For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos
-This site uses the accessible videoplayer Able Player.
+This site uses the accessible media player Able Player.
 
 Add to the variables at the top of the page:
 ```
 has_video: true
 ```
-This loads the CSS and Javascript for the Able videoplayer. 
+
+This loads the CSS and Javascript for the Able media player. 
 Please read the [Able Player documentation](https://ableplayer.github.io/ableplayer/) for the settings and how to add caption and subtitle tracks.  
 
 Add the video itself in the page with:
