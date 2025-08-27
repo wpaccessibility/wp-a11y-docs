@@ -115,7 +115,7 @@
   },"19": {
     "doc": "Content kitchen sink",
     "title": "Videos",
-    "content": "This site uses the accessible video player Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able videoplayer. Please read the Able Player documentation for the settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . ",
+    "content": "This site uses the accessible videoplayer Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able videoplayer. Please read the Able Player documentation for the settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . ",
     "url": "/pr-preview/pr-38/docs/contribute/content-kitchen-sink/#videos",
     "relUrl": "/docs/contribute/content-kitchen-sink/#videos"
   },"20": {
@@ -127,7 +127,7 @@
   },"21": {
     "doc": "Content kitchen sink",
     "title": "Language switch in the content text",
-    "content": "Only use the lang attribute for 4 words and more. For a part of sentence write, use a span in your Markdown text: . This text is in English and &lt;span lang=\"nl\"&gt;deze tekst is in het Nederlands&lt;/span&gt; and now we continue in English. In link texts . [&lt;span lang=\"de\"&gt;Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland&lt;/span&gt;](https://www.deutscher-behindertenrat.de/ID255536). For larger pieces of content, you can add to a &lt;p&gt;, &lt;div&gt;or even a landmark, depending on what you need. For example: . &lt;p lang=\"de\"&gt; [...] &lt;/p&gt; . ",
+    "content": "Only use the lang attribute for 4 words and more. For a part of sentence write, use a span in your Markdown text: . This text is in English and &lt;span lang=\"nl\"&gt;deze tekst is in het Nederlands&lt;/span&gt; and now we continue in English. In linktexts . [&lt;span lang=\"de\"&gt;Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland&lt;/span&gt;](https://www.deutscher-behindertenrat.de/ID255536). For larger pieces of content, you can add to a &lt;p&gt;, &lt;div&gt;or even a landmark, depending on what you need. For example: . &lt;p lang=\"de\"&gt; [...] &lt;/p&gt; . ",
     "url": "/pr-preview/pr-38/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text",
     "relUrl": "/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text"
   },"22": {
