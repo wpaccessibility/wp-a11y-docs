@@ -135,15 +135,16 @@ blockquote.alert-title {
   }
 }
 
-p.tip,
-blockquote.tip {
+p.example,
+blockquote.example {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
-    content: "Tip";
+    color: $green-300;
+    content: "Example";
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -151,7 +152,8 @@ blockquote.tip {
     padding-bottom: 0.125rem;
   }
 
-  > .tip-title {
+  > .example-title {
+    color: $green-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -160,8 +162,8 @@ blockquote.tip {
   }
 }
 
-p.tip-title,
-blockquote.tip-title {
+p.example-title,
+blockquote.example-title {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
@@ -178,7 +180,7 @@ blockquote.tip-title {
   }
 }
 
-blockquote.tip {
+blockquote.example {
   margin-left: 0;
   margin-right: 0;
 
@@ -191,7 +193,7 @@ blockquote.tip {
   }
 }
 
-blockquote.tip-title {
+blockquote.example-title {
   margin-left: 0;
   margin-right: 0;
 

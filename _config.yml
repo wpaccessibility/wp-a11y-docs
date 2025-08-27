@@ -134,8 +134,8 @@ callouts:
   info:
     title: Info
     color: blue
-  tip:
-    title: Tip
+  example:
+    title: Example
     color: green
   warning:
     title: Warning
