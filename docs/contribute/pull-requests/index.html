@@ -118,15 +118,15 @@
 
           <a href="/docs/testing/" class="nav-list-link">Testing</a></li><li class="nav-list-item">
 
-          <a href="/docs/team-process/" class="nav-list-link">Team and process</a></li><li class="nav-list-item">
-
-          <a href="/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
-
           <a href="/docs/wordpress-accessibility/" class="nav-list-link">WP and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WP and Accessibility submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
           <a href="/docs/wordpress-accessibility/wp-a11y-team/" class="nav-list-link">WP Accessibility Team</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/team-process/" class="nav-list-link">Team and process</a></li><li class="nav-list-item">
+
+          <a href="/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
 
           <a href="/docs/resources/" class="nav-list-link">Resources</a></li><li class="nav-list-item">
 
@@ -136,9 +136,15 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li><li class="nav-list-item">
+          <a href="/docs/contribute/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
 
-          <a href="/docs/contribute/pull-requests/" class="nav-list-link">Pull requests</a></li></ul></li><li class="nav-list-item">
+          <a href="/docs/contribute/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li><li class="nav-list-item">
+
+          <a href="/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
 
           <a href="/docs/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
 
@@ -154,7 +160,9 @@
 
           <a href="/docs/about/theme/" class="nav-list-link">Theme of this website</a></li><li class="nav-list-item">
 
-          <a href="/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li></ul>
+          <a href="/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/contact/" class="nav-list-link">Contact</a></li></ul>
     
 
 </nav>
@@ -235,26 +243,12 @@
 
 <h2 id="create-a-pull-request-from-a-fork-using-a-local-install">Create a pull request from a fork using a local install</h2>
 
-<p>WPaccessibility.org is written in <a href="https://jekyllrb.com">Jekyll</a>, a static site generator in Ruby using <a href="https://www.markdownguide.org/">markdown</a> for content. 
-Please read the <a href="https://jekyllrb.com/docs/installation/#requirements">Guide and requirements for Jekyll</a>.</p>
+<p>WPaccessibility.org is written in <a href="https://jekyllrb.com">Jekyll</a>, a static site generator in Ruby using <a href="https://www.markdownguide.org/">markdown</a> for content. Please read <a href="https://github.com/wpaccessibility/wp-a11y-docs?tab=readme-ov-file#local-install-of-the-website">Local install of the website</a> in wp-a11y-docs/README.md.</p>
 
-<p>Then, in the terminal, install Jekyll:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll
-</code></pre></div></div>
+<h2 id="pull-request-previews">Pull Request Previews</h2>
+<p>When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging.</p>
 
-<p>Clone the wp-a11y-docs repository into your preferred directory and in that directory run:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install
-bundle
-bundle exec jekyll serve 
-</code></pre></div></div>
-
-<p>Open <code class="language-plaintext highlighter-rouge">http://127.0.0.1:4000/</code> or <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> in your favourite browser.</p>
-
-<p>Before making a commit or pull request, run the linters with: <code class="language-plaintext highlighter-rouge">npm run test</code>.</p>
-
-<p>If you made changes to the <code class="language-plaintext highlighter-rouge">_config.yml</code> file, run <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> again to apply the changes to the site.</p>
-
-<p>Documentation about Jekyll itself is on <a href="https://jekyllrb.com/docs/">jekyllrb.com</a>. The theme is based on the Jekyll theme <a href="https://just-the-docs.com/">Just the Docs</a>. The changes made in Just the Docs are documented in the <a href="/CHANGELOG/#release-v01">Changelog for Release v0.1</a>.</p>
+<p>Preview URLs follow the format: <code class="language-plaintext highlighter-rouge">https://wpaccessibility.org/pr-preview/pr-{number}/</code>.</p>
 
 
           

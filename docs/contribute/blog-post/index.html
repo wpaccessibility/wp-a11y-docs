@@ -10,7 +10,7 @@
 
 
 
-<title>Well, I never heard it before, but it sounds uncommon nonsense, WP Accessibility Knowledge Base</title>
+<title>Add a blog post, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -199,12 +199,24 @@
 
         
             
+            
+            
+        
+
+    
+
+        
+
+        
+            
 
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
-        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li><li class="breadcrumb-nav-list-item" aria-current="page">Well, I never heard it before, but it sounds uncommon nonsense</li>
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/docs/contribute/'>How to contribute</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Add a blog post</li>
     </ol>
 </nav>
 
@@ -213,30 +225,49 @@
 
         <main>
 
-          <h1> Well, I never heard it before, but it sounds uncommon nonsense </h1>
+          <h1 id="add-or-change-blog-post">Add or change blog post.</h1>
 
-<p class="post-meta">Published on March 3, 2025
-     by Rian Rietveld
-</p>
+<p class="fs-6 fw-300">Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add post for this website.</p>
 
-<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>Each blog post file has the same setup.  First a set of variables like the title and the parent. Then the content using Markdown.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<p>The blog post live in the directory <code class="language-plaintext highlighter-rouge">/_posts/</code> and are named <code class="language-plaintext highlighter-rouge">yyyy-mm-dd-title.md</code>.
+For example <code class="language-plaintext highlighter-rouge">2025-08-16-able-player-now-available.md</code>.</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<h2 id="the-variables-at-the-top-of-the-file-for-a-blog-post">The variables at the top of the file for a blog post</h2>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<p>For example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title: "The Able Player is now available for videos"
+permalink: /blog/2025/able-player-available-for-videos/
+author: Joe Dolson
+categories: video
+parent: Blog
+excerpt: "Able Player is now available for YouTube videos in the WP Accessibility Knowledge Base."
+date: 2025-08-16
+---
+</code></pre></div></div>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<p>The layout must be <code class="language-plaintext highlighter-rouge">post</code>, the parent <code class="language-plaintext highlighter-rouge">Blog</code>,  use for the <code class="language-plaintext highlighter-rouge">permalink</code> the structure <code class="language-plaintext highlighter-rouge">/blog/YYYY/name/</code>.</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>The <code class="language-plaintext highlighter-rouge">date</code>, <code class="language-plaintext highlighter-rouge">author</code> and <code class="language-plaintext highlighter-rouge">excerpt</code> will show up below the title on the <a href="/blog/">Blog archive page</a> and below the title on the blog post itself.
+The <code class="language-plaintext highlighter-rouge">date</code> can be in the future, the post will show up from that date and not before.</p>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p>The option for listings of <code class="language-plaintext highlighter-rouge">categories</code> hasn’t been implemented yet, but please use it already.</p>
 
+<h2 id="the-content-of-post">The content of post</h2>
+
+<p>The theme inserts your title, author, and the date of publication for you, so you should not include these in the content of your post.</p>
+
+<p>The page <a href="/docs/contribute/content-kitchen-sink/">Content kitchen sink</a> describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text.</p>
+
+<h2 id="how-to-start">How to start</h2>
+
+<p>If you have an idea for a blog post, please open an <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues">issue on GitHub</a> and share your idea first.
+If you want to work on a blog post (yay!) please let us know by adding a comment with the issue.</p>
+
+<p>Need help? Feel free to <a href="/docs/contact/">contact us</a>.</p>
 
 
 
@@ -251,7 +282,7 @@
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/_posts/2011-12-31-new-years-eve-is-awesome.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contribute/blog-post.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
