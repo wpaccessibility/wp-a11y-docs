@@ -7,15 +7,23 @@ div.opaque {
   background-color: $body-background-color;
 }
 
-p.highlight,
+p.tutorial,
 blockquote.highlight {
-  background: rgba($yellow-000, 0.1);
-  border-left: $border-radius solid $yellow-300;
+  background: rgba($green-000, 0.1);
+  border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
-  > .highlight-title {
-    color: $yellow-300;
+  &::before {
+    content: "Example";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+
+  > .tutorial-title {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -24,26 +32,15 @@ blockquote.highlight {
   }
 }
 
-p.highlight-title,
-blockquote.highlight-title {
-  background: rgba($yellow-000, 0.1);
-  border-left: $border-radius solid $yellow-300;
+p.tutorial-title,
+blockquote.tutorial-title {
+  background: rgba($green-000, 0.1);
+  border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
   padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-    color: $yellow-300;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    padding-bottom: 0.125rem;
-  }
 }
 
-blockquote.highlight {
+blockquote.tutorial {
   margin-left: 0;
   margin-right: 0;
 
@@ -56,7 +53,7 @@ blockquote.highlight {
   }
 }
 
-blockquote.highlight-title {
+blockquote.tutorial-title {
   margin-left: 0;
   margin-right: 0;
 
@@ -69,16 +66,15 @@ blockquote.highlight-title {
   }
 }
 
-p.important,
-blockquote.important {
-  background: rgba($blue-000, 0.1);
-  border-left: $border-radius solid $blue-300;
+p.alert,
+blockquote.alert {
+  background: rgba($yellow-000, 0.1);
+  border-left: $border-radius solid $yellow-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
-    color: $blue-300;
-    content: "Important";
+    content: "Alert";
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -86,8 +82,7 @@ blockquote.important {
     padding-bottom: 0.125rem;
   }
 
-  > .important-title {
-    color: $blue-300;
+  > .alert-title {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -96,17 +91,16 @@ blockquote.important {
   }
 }
 
-p.important-title,
-blockquote.important-title {
-  background: rgba($blue-000, 0.1);
-  border-left: $border-radius solid $blue-300;
+p.alert-title,
+blockquote.alert-title {
+  background: rgba($yellow-000, 0.1);
+  border-left: $border-radius solid $yellow-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    color: $blue-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -115,7 +109,7 @@ blockquote.important-title {
   }
 }
 
-blockquote.important {
+blockquote.alert {
   margin-left: 0;
   margin-right: 0;
 
@@ -128,7 +122,7 @@ blockquote.important {
   }
 }
 
-blockquote.important-title {
+blockquote.alert-title {
   margin-left: 0;
   margin-right: 0;
 
@@ -178,7 +172,6 @@ blockquote.example-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    color: $green-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -213,16 +206,15 @@ blockquote.example-title {
   }
 }
 
-p.note,
-blockquote.note {
+p.info,
+blockquote.info {
   background: rgba($purple-000, 0.1);
   border-left: $border-radius solid $purple-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
-    color: $purple-300;
-    content: "Note";
+    content: "Info";
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -230,8 +222,7 @@ blockquote.note {
     padding-bottom: 0.125rem;
   }
 
-  > .note-title {
-    color: $purple-300;
+  > .info-title {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -240,8 +231,8 @@ blockquote.note {
   }
 }
 
-p.note-title,
-blockquote.note-title {
+p.info-title,
+blockquote.info-title {
   background: rgba($purple-000, 0.1);
   border-left: $border-radius solid $purple-300;
   border-radius: $border-radius;
@@ -250,7 +241,6 @@ blockquote.note-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    color: $purple-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -259,7 +249,7 @@ blockquote.note-title {
   }
 }
 
-blockquote.note {
+blockquote.info {
   margin-left: 0;
   margin-right: 0;
 
@@ -272,7 +262,7 @@ blockquote.note {
   }
 }
 
-blockquote.note-title {
+blockquote.info-title {
   margin-left: 0;
   margin-right: 0;
 
@@ -293,7 +283,6 @@ blockquote.warning {
   padding: 0.8rem;
 
   &::before {
-    color: $red-300;
     content: "Warning";
     display: block;
     font-weight: bold;
@@ -303,7 +292,6 @@ blockquote.warning {
   }
 
   > .warning-title {
-    color: $red-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -322,7 +310,6 @@ blockquote.warning-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    color: $red-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;

@@ -126,17 +126,17 @@ color_scheme: nil
 
 callouts_level: quiet # or loud
 callouts:
-  highlight:
+  alert:
     color: yellow
-  important:
-    title: Important
+  tutorial: # visual title = example
+    title: tutorial
+    color: green
+  info:
+    title: Info
     color: blue
   example:
     title: Example
     color: green
-  note:
-    title: Note
-    color: purple
   warning:
     title: Warning
     color: red
