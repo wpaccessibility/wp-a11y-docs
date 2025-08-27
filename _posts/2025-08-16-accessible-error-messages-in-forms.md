@@ -64,7 +64,7 @@ This success criterion was added in [WCAG 2.2: 3.3.7 Redundant Entry](https://ww
 We’ve all been there: you enter a new password, click submit, and *then* you’re told what the password requirements are. You yell at the screen: “Why didn't you tell me that before?”.
 
 The blog post [*Blind people don't visit my website*](https://www.a11y-collective.com/blog/blind-people-dont-visit-my-website/) lists frustrations from web users, such as:
-*"Error messages that come afterwards and eventually don't explain what you need to change."*
+> *"Error messages that come afterwards and eventually don't explain what you need to change."*
 
 Don’t make users guess — offer clear help in plain language, at the right moment. Tell users in advance which documents they'll need, and which fields are or aren't required. Add descriptions to fields where necessary.
 
