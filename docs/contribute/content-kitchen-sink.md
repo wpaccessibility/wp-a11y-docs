@@ -74,7 +74,7 @@ has_video: true
 ```
 
 This loads the CSS and Javascript for the Able media player. 
-Please read the [Able Player documentation](https://ableplayer.github.io/ableplayer/) for the settings and how to add caption and subtitle tracks.  
+Please read the [Able Player documentation](https://ableplayer.github.io/ableplayer/) for information on all available settings and how to add caption and subtitle tracks.  
 
 Add the video itself in the page with:
 
