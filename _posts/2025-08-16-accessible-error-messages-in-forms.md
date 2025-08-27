@@ -37,7 +37,7 @@ Only ask for information you truly need in order to process the request. The few
 Be clear about why you need sensitive personal information, such as an identification number, race, religion or medical data. Check your local legislation to see if you are allowed to request such private information in an open online form.
 
 {: .note }
-In the Netherlands there are strict rules about [when to ask for a citizen service number](https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)).
+In the Netherlands there are strict rules about [when to ask for a citizen service number](https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)). Canada has similar rules governing [how you can request Personally Identifying Information (PII)](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/). 
 
 
 ## How will I ask for this information?
