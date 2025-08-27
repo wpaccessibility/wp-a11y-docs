@@ -120,7 +120,7 @@ function themename_custom_excerpt_length( $length ) {
 add_filter('excerpt_length','themename_custom_excerpt_length', 99 ); 
 ```
 
-## Langauge switch in the content text
+## Language switch in the content text
 
 Only use the lang attribute for 4 words and more.
 
