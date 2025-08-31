@@ -47,7 +47,7 @@ User research shows that people with low literacy prefer calling first:
 
 > “I always try calling first. If that doesn’t work, I’ll check the website to find another way.”
 
-But for some, like deaf, hard-of-hearing, shy, autistic, or stuttering people, phone calls can be tough. Same goes for people who struggle your native language. Image you're in a noisy train and don’t want to talk about private stuff.
+But for some, like deaf, hard-of-hearing, shy, autistic, or stuttering people, phone calls can be tough. The same goes for people who struggle with your native language. Image you're in a noisy train and don’t want to talk about private stuff.
 
 Some callers even get hung up on if they take too long to respond. Wouter Honselaar, who stutters, said in the interview [I am stronger than stuttering](https://www.a11y-collective.com/blog/interview-with-wouter-i-am-stronger-than-stuttering/):
 
