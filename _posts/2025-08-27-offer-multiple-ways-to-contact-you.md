@@ -9,7 +9,7 @@ excerpt: "It’s better to offer multiple ways to get in touch, so people can ch
 "
 date: 2025-08-27
 ---
-You want to reach out to the customer service, and they say  *“Send us a WhatsApp message.”* WHat if you don't use WhatsApp, or can make a phone call, or use the chatbox? If you offer multiple contact options, you're leaving no people (customers) behind.
+You want to reach out to the customer service, and they say  *“Send us a WhatsApp message.”* What if you don't use WhatsApp, or cannot make a phone call, or use the chatbox? If you offer multiple contact options, you're leaving no people (customers) behind.
 {: .fs-6 .fw-300 }
 
 ## Don’t make getting in touch their problem
