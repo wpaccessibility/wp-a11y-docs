@@ -55,7 +55,7 @@ Some callers even get hung up on if they take too long to respond. Wouter Honsel
 
 Also, phone calls often only work during office hours. If you work during those hours and can’t make personal calls, it’s not an option.
 
-I asked on LinkedIn my deaf followers:
+I asked my deaf followers on LinkedIn:
 
 > “What do you do when the only way to contact a website is by phone, and you *really* need to get in touch?”
 
