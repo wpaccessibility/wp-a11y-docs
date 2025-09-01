@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "I have a question, but I don't have WhatsApp!"
+title: "I have a question, but I don’t have WhatsApp!"
 permalink: /blog/2025/offer-multiple-ways-of-contact/
 author: Rian Rietveld
 categories: contact, multiple ways
@@ -9,7 +9,9 @@ excerpt: "It’s better to offer multiple ways to get in touch, so people can ch
 "
 date: 2025-08-27
 ---
-You want to reach out to the customer service, and they say  *“Send us a WhatsApp message.”* What if you don't use WhatsApp, or cannot make a phone call, or use the chatbox? If you offer multiple contact options, you're leaving no people (customers) behind.
+You want to reach out to customer service, and they say  *“Send us a WhatsApp message.”* What if you don’t use WhatsApp, or cannot make a phone call, or use the chatbox? 
+{: .fs-6 .fw-300 }
+If you offer multiple contact options, you’re leaving no people (customers) behind.
 {: .fs-6 .fw-300 }
 
 ## Don’t make getting in touch their problem
@@ -18,11 +20,11 @@ Let’s say someone wants to ask a quick question through your website, but the 
 
 Sure, it’s convenient for you. One place to manage it all, and you reply when it suits you.
 
-Other examples:
+There are many similar examples:
 
 - You only list the phone number of your helpdesk.
 - You only offer a chat function, with a bot you hope can handle basic questions. And if not, it points people to the “FAQs”.
-- You require people to come in person to renew their passport.
+- You require people to show up in person to renew their passport.
 - You provide a clunky, hard-to-use form to submit a complaint, just because that’s how it’s set up in your customer information software.
 
 In all these cases, you’re forcing your way of working on the people trying to reach you. And it’s worth remembering: some of them can’t even use these options.
@@ -33,21 +35,21 @@ So, what are the ways to communicate? And what are the pros and cons?
 
 ### Social media and instant messaging
 
-Services like WhatsApp or X (formerly Twitter) can be useful, it’s widely used, low-barrier, and great for quick questions.
+Services like WhatsApp or X (formerly Twitter) can be useful. They’re widely used, pose a low barrier to usage, and are great for quick questions.
 
-But don’t assume everyone uses it. Many of people are moving away from WhatsApp due to Meta’s privacy issues. Some prefer Signal or don’t want to share personal stuff over WhatsApp at all.
+But don’t assume everyone uses them. Many people are moving away from social media services due to privacy issues. Some prefer more private services, like Signal, or don’t want to share personal information over your chosen service.
 
 So keep in mind: not everyone uses what you prefer.
 
 ### Phone call
 
-Many people prefer a phone call, real person, instant answers. Definitely offer it as an option if possible.
+Many people prefer a phone call to reach a real person and get instant answers. You should definitely offer it as an option if possible.
 
 User research shows that people with low literacy prefer calling first:
 
 > “I always try calling first. If that doesn’t work, I’ll check the website to find another way.”
 
-But for some, like deaf, hard-of-hearing, shy, autistic, or stuttering people, phone calls can be tough. The same goes for people who struggle with your native language. Image you're in a noisy train and don’t want to talk about private stuff.
+But for some, like deaf, hard-of-hearing, shy, autistic, or stuttering people, phone calls can be tough. The same goes for people who struggle with your native language. Image you’re in a noisy train and don’t want to talk about private stuff.
 
 Some callers even get hung up on if they take too long to respond. Wouter Honselaar, who stutters, said in the interview [I am stronger than stuttering](https://www.a11y-collective.com/blog/interview-with-wouter-i-am-stronger-than-stuttering/):
 
@@ -71,13 +73,13 @@ I asked my deaf followers on LinkedIn:
 
 The nice thing about email is that you can send one whenever you want.
 
-But not everyone finds it easy to write an email, especially if they’re not confident in your langauge, have dyslexia or low literacy. Some people may need help just to write a message.
+But not everyone finds it easy to write an email, especially if they’re not confident in your language, have dyslexia or low literacy. Some people may need help just to write a message.
 
 ### Contact Form
 
 Contact forms are handy, you ask exactly what you need, and users can fill it out in an organized way.
 
-But forms can be a real barrier for people who aren’t great with tech. Especially if the form is long or complicated. Always test your forms with real users, including people with disabilities.
+But forms can be a real barrier for people who aren’t great with tech, especially if the form is long or complicated. Always test your forms with real users, including people with disabilities.
 
 If someone is blind, visually impaired, or just not tech-savvy, a poorly set up and coded form can be a nightmare.
 
@@ -87,7 +89,7 @@ So, make sure it’s easy to use and it’s accessible.
 
 Quick question? Don’t want to call? A chat box sounds perfect.
 
-Until you get stuck with a robot that can’t help and just tells you to “check the FAQs” or to call someone. Instead of helping, you're fobbing people off.
+Until you get stuck with a robot that can’t help and just tells you to “check the FAQs” or to call someone. Instead of helping, you’re fobbing people off.
 
 Deaf and hard-of-hearing people say chat can be a great alternative to phone calls, as long as it’s a real person.
 
@@ -95,20 +97,18 @@ If you offer chat, let people (maybe after a quick filter) talk to a real human.
 
 ### In person contact
 
-Sometimes, like when renewing a passport, you have to show up in person to confirm your identity.
+Sometimes, like when renewing a passport, you have to show up in person to confirm your identity. But what if your health makes that impossible? Then what?
 
-But what if your health makes that impossible? Then what?
-
-Therefore, make sure you offer an alternative. As a municipality you can offer a home visit to confirm the identity of a resident.
+Make sure you offer an alternative. As a municipality you can offer a home visit to confirm the identity of a resident.
 
 ### A letter
 
-As a bonus option, sending an old-school paper letter is helpful if you're not computer-savvy. It's definitely an option as an alternative to all that digital communication.
-
+As a bonus option, sending an old-school paper letter is helpful if you’re not computer-savvy. It’s definitely an option as an alternative to all that digital communication.
+Provide an address on your website where customers can send a letter.
 
 ## Summary: communication matters
 
-It’s important to offer multiple ways for people to get in touch. 
+It’s important to offer multiple ways for people to get in touch. And don’t just ask for their preferences; respect them.
 
 {: .example }
 You could ask for example:
