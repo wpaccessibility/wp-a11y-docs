@@ -119,7 +119,5 @@ Be flexible. If your current workflow doesn’t allow for that, talk about it wi
 The goal should always be this:
 Anyone should be able to contact your organization in a way that works for *them*.
 
-
 ## Credits
 This post was first published in Dutch on the [NL Design Systems blog](https://nldesignsystem.nl/blog/meerdere-manieren-contact/) and is used with permission. The text has been modified for a global audience.
-
