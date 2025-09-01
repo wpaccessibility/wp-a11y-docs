@@ -129,14 +129,14 @@ callouts:
   alert:
     color: yellow
   tutorial: # visual title = example
-    title: tutorial
+    title: Example
+    color: green
+  tip:
+    title: Tip
     color: green
   info:
     title: Info
     color: blue
-  example:
-    title: Example
-    color: green
   warning:
     title: Warning
     color: red
