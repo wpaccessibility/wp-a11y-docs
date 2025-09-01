@@ -574,12 +574,6 @@ h6,
   min-height: 3.75rem;
   align-items: center;
 }
-@media (min-width: 50rem) {
-  .site-header {
-    height: 3.75rem;
-    max-height: 3.75rem;
-  }
-}
 
 .site-title {
   flex-grow: 1;
@@ -614,8 +608,8 @@ h6,
 }
 @media (min-width: 50rem) {
   .site-title {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
