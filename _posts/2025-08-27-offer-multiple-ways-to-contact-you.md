@@ -89,7 +89,7 @@ So, make sure it’s easy to use and it’s accessible.
 
 Quick question? Don’t want to call? A chat box sounds perfect.
 
-Until you get stuck with a robot that can’t help and just tells you to “check the FAQs” or to call someone. Instead of helping, you’re fobbing people off.
+Until you get stuck with a robot that can’t help and tells you to “check the FAQs” or to call someone. Instead of helping, you’re fobbing people off.
 
 Deaf and hard-of-hearing people say that chat can be a great alternative to phone calls, as long as it involves a real person.
 
