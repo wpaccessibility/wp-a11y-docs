@@ -108,7 +108,7 @@ Provide an address on your website where customers can send a letter.
 
 ## Summary: communication matters
 
-It’s important to offer multiple ways for people to get in touch. And don’t just ask for their preferences; respect them.
+It’s essential to provide multiple options for people to contact you. And don’t just ask for their preferences; respect them.
 
 {: .example }
 You could ask for example:
