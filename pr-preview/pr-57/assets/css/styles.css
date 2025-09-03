@@ -1197,7 +1197,6 @@ p.tip {
   padding: 0.8rem;
 }
 p.tip::before {
-  color: #026e57;
   content: "Tip";
   display: block;
   font-weight: bold;
@@ -1206,7 +1205,6 @@ p.tip::before {
   padding-bottom: 0.125rem;
 }
 p.tip > .tip-title {
-  color: #026e57;
   display: block;
   font-weight: bold;
   text-transform: uppercase;
