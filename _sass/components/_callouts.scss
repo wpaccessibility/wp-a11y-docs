@@ -86,7 +86,6 @@ p.tip {
   padding: 0.8rem;
 
   &::before {
-    color: $green-300;
     content: "Tip";
     display: block;
     font-weight: bold;
@@ -96,7 +95,6 @@ p.tip {
   }
 
   > .tip-title {
-    color: $green-300;
     display: block;
     font-weight: bold;
     text-transform: uppercase;
