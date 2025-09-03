@@ -99,7 +99,7 @@ If you offer chat, let people (maybe after a quick filter) talk to a real human.
 
 Sometimes, such as when renewing a passport, you must appear in person to confirm your identity. But what if your health makes that impossible? Then what?
 
-Make sure you offer an alternative. As a municipality you can offer a home visit to confirm the identity of a resident.
+Make sure you offer an alternative. As a municipality, you can offer a home visit to confirm the identity of a resident.
 
 ### A letter
 
