@@ -3,7 +3,7 @@ layout: post
 title: "I have a question, but I don’t have WhatsApp!"
 permalink: /blog/2025/offer-multiple-ways-of-contact/
 author: Rian Rietveld
-categories: contact, multiple ways
+categories: contact
 parent: Blog
 excerpt: "It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you.
 "
@@ -11,7 +11,7 @@ date: 2025-08-27
 ---
 You want to reach out to customer service, and they say  *“Send us a WhatsApp message.”* What if you don’t use WhatsApp, or cannot make a phone call, or use the chatbox? 
 {: .fs-6 .fw-300 }
-If you offer multiple contact options, you’re leaving no people (customers) behind.
+By offering multiple contact options, you make sure every customer has a way to connect.
 {: .fs-6 .fw-300 }
 
 ## Don’t make getting in touch their problem
@@ -29,7 +29,7 @@ There are many similar examples:
 
 In all these cases, you’re forcing your way of working on the people trying to reach you. And it’s worth remembering: some of them can’t even use these options.
 
-So, what are the ways to communicate? And what are the pros and cons?
+So, what are some other ways to communicate? What are the pros and cons of different methods?
 
 ## Different ways to get in touch
 
@@ -57,7 +57,7 @@ Some callers even get hung up on if they take too long to respond. Wouter Honsel
 
 Also, phone calls often only work during office hours. If you work during those hours and can’t make personal calls, it’s not an option.
 
-I asked my deaf followers on LinkedIn:
+Rian asked her deaf followers on LinkedIn:
 
 > “What do you do when the only way to contact a website is by phone, and you *really* need to get in touch?”
 
