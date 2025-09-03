@@ -1,14 +1,13 @@
 @use "../abstracts/variables" as *;
 @use "../base/colors" as *;
 
-// callouts
+// Callouts.
 
 div.opaque {
   background-color: $body-background-color;
 }
 
-p.tutorial,
-blockquote.highlight {
+p.tutorial {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
@@ -32,42 +31,14 @@ blockquote.highlight {
   }
 }
 
-p.tutorial-title,
-blockquote.tutorial-title {
+p.tutorial-title {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 }
 
-blockquote.tutorial {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:first-child {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-blockquote.tutorial-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:nth-child(2) {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p.alert,
-blockquote.alert {
+p.alert {
   background: rgba($yellow-000, 0.1);
   border-left: $border-radius solid $yellow-300;
   border-radius: $border-radius;
@@ -91,8 +62,7 @@ blockquote.alert {
   }
 }
 
-p.alert-title,
-blockquote.alert-title {
+p.alert-title {
   background: rgba($yellow-000, 0.1);
   border-left: $border-radius solid $yellow-300;
   border-radius: $border-radius;
@@ -109,42 +79,14 @@ blockquote.alert-title {
   }
 }
 
-blockquote.alert {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:first-child {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-blockquote.alert-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:nth-child(2) {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p.example,
-blockquote.example {
+p.tip {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
-    color: $green-300;
-    content: "Example";
+    content: "Tip";
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -152,8 +94,7 @@ blockquote.example {
     padding-bottom: 0.125rem;
   }
 
-  > .example-title {
-    color: $green-300;
+  > .tip-title {
     display: block;
     font-weight: bold;
     text-transform: uppercase;
@@ -162,8 +103,7 @@ blockquote.example {
   }
 }
 
-p.example-title,
-blockquote.example-title {
+p.tip-title {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
@@ -180,34 +120,7 @@ blockquote.example-title {
   }
 }
 
-blockquote.example {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:first-child {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-blockquote.example-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:nth-child(2) {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p.info,
-blockquote.info {
+p.info {
   background: rgba($purple-000, 0.1);
   border-left: $border-radius solid $purple-300;
   border-radius: $border-radius;
@@ -231,8 +144,7 @@ blockquote.info {
   }
 }
 
-p.info-title,
-blockquote.info-title {
+p.info-title {
   background: rgba($purple-000, 0.1);
   border-left: $border-radius solid $purple-300;
   border-radius: $border-radius;
@@ -249,34 +161,7 @@ blockquote.info-title {
   }
 }
 
-blockquote.info {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:first-child {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-blockquote.info-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:nth-child(2) {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p.warning,
-blockquote.warning {
+p.warning {
   background: rgba($red-000, 0.1);
   border-left: $border-radius solid $red-300;
   border-radius: $border-radius;
@@ -300,8 +185,7 @@ blockquote.warning {
   }
 }
 
-p.warning-title,
-blockquote.warning-title {
+p.warning-title {
   background: rgba($red-000, 0.1);
   border-left: $border-radius solid $red-300;
   border-radius: $border-radius;
@@ -315,31 +199,5 @@ blockquote.warning-title {
     text-transform: uppercase;
     font-size: 0.75em;
     padding-bottom: 0.125rem;
-  }
-}
-
-blockquote.warning {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:first-child {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-blockquote.warning-title {
-  margin-left: 0;
-  margin-right: 0;
-
-  > p:nth-child(2) {
-    margin-top: 0;
-  }
-
-  > p:last-child {
-    margin-bottom: 0;
   }
 }
