@@ -97,7 +97,7 @@ If you offer chat, let people (maybe after a quick filter) talk to a real human.
 
 ### In person contact
 
-Sometimes, like when renewing a passport, you have to show up in person to confirm your identity. But what if your health makes that impossible? Then what?
+Sometimes, such as when renewing a passport, you must appear in person to confirm your identity. But what if your health makes that impossible? Then what?
 
 Make sure you offer an alternative. As a municipality you can offer a home visit to confirm the identity of a resident.
 
