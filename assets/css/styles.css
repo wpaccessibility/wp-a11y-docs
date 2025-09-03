@@ -1123,15 +1123,13 @@ div.opaque {
   background-color: #fff;
 }
 
-p.tutorial,
-blockquote.highlight {
+p.tutorial {
   background: rgba(65, 214, 147, 0.1);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.tutorial::before,
-blockquote.highlight::before {
+p.tutorial::before {
   content: "Example";
   display: block;
   font-weight: bold;
@@ -1139,8 +1137,7 @@ blockquote.highlight::before {
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.tutorial > .tutorial-title,
-blockquote.highlight > .tutorial-title {
+p.tutorial > .tutorial-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1148,45 +1145,20 @@ blockquote.highlight > .tutorial-title {
   padding-bottom: 0.125rem;
 }
 
-p.tutorial-title,
-blockquote.tutorial-title {
+p.tutorial-title {
   background: rgba(65, 214, 147, 0.1);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   padding: 0.8rem;
 }
 
-blockquote.tutorial {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.tutorial > p:first-child {
-  margin-top: 0;
-}
-blockquote.tutorial > p:last-child {
-  margin-bottom: 0;
-}
-
-blockquote.tutorial-title {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.tutorial-title > p:nth-child(2) {
-  margin-top: 0;
-}
-blockquote.tutorial-title > p:last-child {
-  margin-bottom: 0;
-}
-
-p.alert,
-blockquote.alert {
+p.alert {
   background: rgba(255, 235, 130, 0.1);
   border-left: 4px solid #e7af06;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.alert::before,
-blockquote.alert::before {
+p.alert::before {
   content: "Alert";
   display: block;
   font-weight: bold;
@@ -1194,8 +1166,7 @@ blockquote.alert::before {
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.alert > .alert-title,
-blockquote.alert > .alert-title {
+p.alert > .alert-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1203,15 +1174,13 @@ blockquote.alert > .alert-title {
   padding-bottom: 0.125rem;
 }
 
-p.alert-title,
-blockquote.alert-title {
+p.alert-title {
   background: rgba(255, 235, 130, 0.1);
   border-left: 4px solid #e7af06;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.alert-title > p:first-child,
-blockquote.alert-title > p:first-child {
+p.alert-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
@@ -1221,48 +1190,21 @@ blockquote.alert-title > p:first-child {
   padding-bottom: 0.125rem;
 }
 
-blockquote.alert {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.alert > p:first-child {
-  margin-top: 0;
-}
-blockquote.alert > p:last-child {
-  margin-bottom: 0;
-}
-
-blockquote.alert-title {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.alert-title > p:nth-child(2) {
-  margin-top: 0;
-}
-blockquote.alert-title > p:last-child {
-  margin-bottom: 0;
-}
-
-p.example,
-blockquote.example {
+p.tip {
   background: rgba(65, 214, 147, 0.1);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.example::before,
-blockquote.example::before {
-  color: #026e57;
-  content: "Example";
+p.tip::before {
+  content: "Tip";
   display: block;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.example > .example-title,
-blockquote.example > .example-title {
-  color: #026e57;
+p.tip > .tip-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1270,15 +1212,13 @@ blockquote.example > .example-title {
   padding-bottom: 0.125rem;
 }
 
-p.example-title,
-blockquote.example-title {
+p.tip-title {
   background: rgba(65, 214, 147, 0.1);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.example-title > p:first-child,
-blockquote.example-title > p:first-child {
+p.tip-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
@@ -1288,37 +1228,13 @@ blockquote.example-title > p:first-child {
   padding-bottom: 0.125rem;
 }
 
-blockquote.example {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.example > p:first-child {
-  margin-top: 0;
-}
-blockquote.example > p:last-child {
-  margin-bottom: 0;
-}
-
-blockquote.example-title {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.example-title > p:nth-child(2) {
-  margin-top: 0;
-}
-blockquote.example-title > p:last-child {
-  margin-bottom: 0;
-}
-
-p.info,
-blockquote.info {
+p.info {
   background: rgba(114, 83, 237, 0.1);
   border-left: 4px solid #381885;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.info::before,
-blockquote.info::before {
+p.info::before {
   content: "Info";
   display: block;
   font-weight: bold;
@@ -1326,8 +1242,7 @@ blockquote.info::before {
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.info > .info-title,
-blockquote.info > .info-title {
+p.info > .info-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1335,15 +1250,13 @@ blockquote.info > .info-title {
   padding-bottom: 0.125rem;
 }
 
-p.info-title,
-blockquote.info-title {
+p.info-title {
   background: rgba(114, 83, 237, 0.1);
   border-left: 4px solid #381885;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.info-title > p:first-child,
-blockquote.info-title > p:first-child {
+p.info-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
@@ -1353,37 +1266,13 @@ blockquote.info-title > p:first-child {
   padding-bottom: 0.125rem;
 }
 
-blockquote.info {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.info > p:first-child {
-  margin-top: 0;
-}
-blockquote.info > p:last-child {
-  margin-bottom: 0;
-}
-
-blockquote.info-title {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.info-title > p:nth-child(2) {
-  margin-top: 0;
-}
-blockquote.info-title > p:last-child {
-  margin-bottom: 0;
-}
-
-p.warning,
-blockquote.warning {
+p.warning {
   background: rgba(247, 126, 126, 0.1);
   border-left: 4px solid #b62424;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.warning::before,
-blockquote.warning::before {
+p.warning::before {
   content: "Warning";
   display: block;
   font-weight: bold;
@@ -1391,8 +1280,7 @@ blockquote.warning::before {
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.warning > .warning-title,
-blockquote.warning > .warning-title {
+p.warning > .warning-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1400,15 +1288,13 @@ blockquote.warning > .warning-title {
   padding-bottom: 0.125rem;
 }
 
-p.warning-title,
-blockquote.warning-title {
+p.warning-title {
   background: rgba(247, 126, 126, 0.1);
   border-left: 4px solid #b62424;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.warning-title > p:first-child,
-blockquote.warning-title > p:first-child {
+p.warning-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
@@ -1416,28 +1302,6 @@ blockquote.warning-title > p:first-child {
   text-transform: uppercase;
   font-size: 0.75em;
   padding-bottom: 0.125rem;
-}
-
-blockquote.warning {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.warning > p:first-child {
-  margin-top: 0;
-}
-blockquote.warning > p:last-child {
-  margin-bottom: 0;
-}
-
-blockquote.warning-title {
-  margin-left: 0;
-  margin-right: 0;
-}
-blockquote.warning-title > p:nth-child(2) {
-  margin-top: 0;
-}
-blockquote.warning-title > p:last-child {
-  margin-bottom: 0;
 }
 
 .label,
