@@ -79,7 +79,7 @@ But not everyone finds it easy to write an email, especially if they’re not co
 
 Contact forms are handy, you ask exactly what you need, and users can fill it out in an organized way.
 
-But forms can be a real barrier for people who aren’t great with tech, especially if the form is long or complicated. Always test your forms with real users, including people with disabilities.
+But forms can be a real barrier for people who aren’t great with tech, especially if the form is long or complicated. Always test your forms with real users, including people with various disabilities.
 
 If someone is blind, visually impaired, or just not tech-savvy, a poorly set up and coded form can be a nightmare.
 
@@ -89,17 +89,17 @@ So, make sure it’s easy to use and it’s accessible.
 
 Quick question? Don’t want to call? A chat box sounds perfect.
 
-Until you get stuck with a robot that can’t help and just tells you to “check the FAQs” or to call someone. Instead of helping, you’re fobbing people off.
+Until you get stuck with a robot that can’t help and tells you to “check the FAQs” or to call someone. Instead of helping, you’re fobbing people off.
 
-Deaf and hard-of-hearing people say chat can be a great alternative to phone calls, as long as it’s a real person.
+Deaf and hard-of-hearing people say that chat can be a great alternative to phone calls, as long as it involves a real person.
 
 If you offer chat, let people (maybe after a quick filter) talk to a real human. And show when someone’s available.
 
 ### In person contact
 
-Sometimes, like when renewing a passport, you have to show up in person to confirm your identity. But what if your health makes that impossible? Then what?
+Sometimes, such as when renewing a passport, you must appear in person to confirm your identity. But what if your health makes that impossible? Then what?
 
-Make sure you offer an alternative. As a municipality you can offer a home visit to confirm the identity of a resident.
+Make sure you offer an alternative. As a municipality, you can offer a home visit to confirm the identity of a resident.
 
 ### A letter
 
@@ -108,7 +108,7 @@ Provide an address on your website where customers can send a letter.
 
 ## Summary: communication matters
 
-It’s important to offer multiple ways for people to get in touch. And don’t just ask for their preferences; respect them.
+It’s essential to provide multiple options for people to contact you. And don’t just ask for their preferences; respect them.
 
 {: .example }
 You could ask for example:
