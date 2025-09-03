@@ -79,7 +79,7 @@ But not everyone finds it easy to write an email, especially if they’re not co
 
 Contact forms are handy, you ask exactly what you need, and users can fill it out in an organized way.
 
-But forms can be a real barrier for people who aren’t great with tech, especially if the form is long or complicated. Always test your forms with real users, including people with disabilities.
+But forms can be a real barrier for people who aren’t great with tech, especially if the form is long or complicated. Always test your forms with real users, including people with various disabilities.
 
 If someone is blind, visually impaired, or just not tech-savvy, a poorly set up and coded form can be a nightmare.
 
