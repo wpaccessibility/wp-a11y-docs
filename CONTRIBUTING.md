@@ -41,3 +41,7 @@ There are several easy ways to help:
   Testing the site, pointing out unclear documentation, or sharing examples (do’s and don’ts) is a valuable contribution.
 
 *In short: if you can write, review, or test, you can contribute — no coding required!*
+
+For more details, see the [Contribute page](https://wpaccessibility.org/pr-preview/pr-61/docs/contribute/).  
+All contributors will also be listed on the [**Contributors page**](https://wpaccessibility.org/pr-preview/pr-61/docs/contributors/) as a thank you for their help.
+
