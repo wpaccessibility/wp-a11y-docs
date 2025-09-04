@@ -1,0 +1,416 @@
+{"0": {
+    "doc": "Changelog website",
+    "title": "Changelog",
+    "content": "All notable user-facing changes to this project are documented in this file. ",
+    "url": "/pr-preview/pr-63/CHANGELOG/#changelog",
+    "relUrl": "/CHANGELOG/#changelog"
+  },"1": {
+    "doc": "Changelog website",
+    "title": "Release v0.1",
+    "content": "This Jekyll theme WP A11y Docs is based on Just the Docs by Just The Docs is licenced as MIT. In this initial release the theme is renamed into WP A11y Docs. The URL for the GitHib pages is wpaccessibility.org. File organisation . This will be a one design theme only, so all the changes will be done directly in the files itself. This simplifies the code and makes the theme better maintainable. For this the following changes were made: . | Removed custom files and their references. | Removed redundant include files. | Removed the nav-footer: took up too much space and added a second &lt;footer&gt;. | Added option for posts and post pagination. | Refactored the breadcrumbs for the posts. | Removed Just the Docs info pages and create placeholder text to match the actual site structure. | Set Ruby to 3.3.6. | Added option to add a canonical URL. | . SCSS . | Refactoring directory structure. | Removed the dark theme for now, that will be restored when the theme is finished and stable. | Replaced @import for @use, for compatibility with Dart Sass 3.0.0. | Replaced darken by color.scale and color.adjust, for compatibility with Dart Sass 3.0.0. | Replaced deprecated global built-in functions by Sass values (sass:map, sass:color, sass:list etc.). | . CSS color contrast issue . | Placeholder: fixt color contrast and opacity. | Fixed color contrast issues for text and non-text meaningful elements. | . Search at the top of the page . | Refactored the HTML of the form to make the HTML valid. | Added screen reader feedback to announce number of search results. | . _config.yml . | Removed Google Analytics Tracking settings. | Removed most variable because this is a static site. | Changed names and colours of the callouts to match those used in WordPress documentation style guide | . Accessibility improvements . | Moved the button to expand the submenus to after the submenu link, so the tab order is meaningful. | Changed aria-pressed by aria-expanded, see also issue Change aria-pressed into aria-expanded for buttons connected to expandable content. | Added aria-current=\"page\" to links to the current page. | Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. Maybe we find an accessible way later on. | Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screenreader feedback. | The code blocks now have a tabindex=”0”. | . ",
+    "url": "/pr-preview/pr-63/CHANGELOG/#release-v01",
+    "relUrl": "/CHANGELOG/#release-v01"
+  },"2": {
+    "doc": "Changelog website",
+    "title": "Changelog website",
+    "content": " ",
+    "url": "/pr-preview/pr-63/CHANGELOG/",
+    "relUrl": "/CHANGELOG/"
+  },"3": {
+    "doc": "Code of Conduct",
+    "title": "Contributor Covenant Code of Conduct",
+    "content": "The WordPress Accessibility Team believes our community should be truly open for everyone. As such, we are committed to providing a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation. We act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. ",
+    "url": "/pr-preview/pr-63/docs/contribute/CODE_OF_CONDUCT/#contributor-covenant-code-of-conduct",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#contributor-covenant-code-of-conduct"
+  },"4": {
+    "doc": "Code of Conduct",
+    "title": "Our Standards",
+    "content": "Examples of behavior that contributes to a positive environment for our community include: . | Demonstrating empathy and kindness toward other people. | Being respectful of differing opinions, viewpoints, and experiences. | Giving and gracefully accepting constructive feedback. | Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience. | . Examples of unacceptable behavior include: . | The use of sexualized language or imagery, and sexual attention or advances of any kind. | Trolling, insulting or derogatory comments, and personal or political attacks. | Public or private harassment. | Publishing others’ private information, such as a physical or email address, without their explicit permission. | Other conduct which could reasonably be considered inappropriate in a professional setting. | . ",
+    "url": "/pr-preview/pr-63/docs/contribute/CODE_OF_CONDUCT/#our-standards",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#our-standards"
+  },"5": {
+    "doc": "Code of Conduct",
+    "title": "Consequences of unacceptable behavior",
+    "content": "The WordPress Accessibility Team has the right and responsibility to remove, edit, or reject comments, commits, code, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate. ",
+    "url": "/pr-preview/pr-63/docs/contribute/CODE_OF_CONDUCT/#consequences-of-unacceptable-behavior",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#consequences-of-unacceptable-behavior"
+  },"6": {
+    "doc": "Code of Conduct",
+    "title": "What to do if you witness or are subject to unacceptable behavior",
+    "content": "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project lead. All complaints will be reviewed and investigated promptly and fairly. The project lead is obligated to respect the privacy and security of the reporter of any incident. ",
+    "url": "/pr-preview/pr-63/docs/contribute/CODE_OF_CONDUCT/#what-to-do-if-you-witness-or-are-subject-to-unacceptable-behavior",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#what-to-do-if-you-witness-or-are-subject-to-unacceptable-behavior"
+  },"7": {
+    "doc": "Code of Conduct",
+    "title": "Code of Conduct",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contribute/CODE_OF_CONDUCT/",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/"
+  },"8": {
+    "doc": "Accessibility statement",
+    "title": "Accessibility statement",
+    "content": "We aim for the latest recommended version of the Web Content Accessibility Guidelines (WCAG) level AA, at this moment that is WCAG 2.2 AA. Did you find an accessibility issue or do you have problems using this website? Please inform us! . | contact us in the #accessibility-docs channel on the Make WordPress Slack account. | or create an issue in GitHub. | . Please note: this is only for accessibility issues in this website and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. ",
+    "url": "/pr-preview/pr-63/docs/about/accessibility-statement/",
+    "relUrl": "/docs/about/accessibility-statement/"
+  },"9": {
+    "doc": "Accessibility statement",
+    "title": "Known accessibility issues",
+    "content": "The search option needs improvement, see GitHub issue: Improve the accessibility of the search option. ",
+    "url": "/pr-preview/pr-63/docs/about/accessibility-statement/#known-accessibility-issues",
+    "relUrl": "/docs/about/accessibility-statement/#known-accessibility-issues"
+  },"10": {
+    "doc": "Add a blog post",
+    "title": "Add or change blog post.",
+    "content": "Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add post for this website. Each blog post file has the same setup. First a set of variables like the title and the parent. Then the content using Markdown. The blog post live in the directory /_posts/ and are named yyyy-mm-dd-title.md. For example 2025-08-16-able-player-now-available.md. ",
+    "url": "/pr-preview/pr-63/docs/contribute/blog-post/#add-or-change-blog-post",
+    "relUrl": "/docs/contribute/blog-post/#add-or-change-blog-post"
+  },"11": {
+    "doc": "Add a blog post",
+    "title": "The variables at the top of the file for a blog post",
+    "content": "For example: . --- layout: post title: \"The Able Player is now available for videos\" permalink: /blog/2025/able-player-available-for-videos/ author: Joe Dolson categories: video parent: Blog excerpt: \"Able Player is now available for YouTube videos in the WP Accessibility Knowledge Base.\" date: 2025-08-16 --- . The layout must be post, the parent Blog, use for the permalink the structure /blog/YYYY/name/. The date, author and excerpt will show up below the title on the Blog archive page and below the title on the blog post itself. The date can be in the future, the post will show up from that date and not before. The option for listings of categories hasn’t been implemented yet, but please use it already. ",
+    "url": "/pr-preview/pr-63/docs/contribute/blog-post/#the-variables-at-the-top-of-the-file-for-a-blog-post",
+    "relUrl": "/docs/contribute/blog-post/#the-variables-at-the-top-of-the-file-for-a-blog-post"
+  },"12": {
+    "doc": "Add a blog post",
+    "title": "The content of post",
+    "content": "The theme inserts your title, author, and the date of publication for you, so you should not include these in the content of your post. The page Content kitchen sink describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text. ",
+    "url": "/pr-preview/pr-63/docs/contribute/blog-post/#the-content-of-post",
+    "relUrl": "/docs/contribute/blog-post/#the-content-of-post"
+  },"13": {
+    "doc": "Add a blog post",
+    "title": "How to start",
+    "content": "If you have an idea for a blog post, please open an issue on GitHub and share your idea first. If you want to work on a blog post (yay!) please let us know by adding a comment with the issue. Need help? Feel free to contact us. ",
+    "url": "/pr-preview/pr-63/docs/contribute/blog-post/#how-to-start",
+    "relUrl": "/docs/contribute/blog-post/#how-to-start"
+  },"14": {
+    "doc": "Add a blog post",
+    "title": "Add a blog post",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contribute/blog-post/",
+    "relUrl": "/docs/contribute/blog-post/"
+  },"15": {
+    "doc": "Content kitchen sink",
+    "title": "Kitchen sink: options available for content",
+    "content": "This page lists the options and code available for creating content on this website. WordPress.org provides a lot of style guides for documentation: WordPress Style Guides - highlights. We value most of all: be kind and professional in your text and please write the text yourself or make sure the reader knows who you are citing. ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#kitchen-sink-options-available-for-content",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#kitchen-sink-options-available-for-content"
+  },"16": {
+    "doc": "Content kitchen sink",
+    "title": "Headings",
+    "content": "# This is an H1 heading ## This is an H2 heading ### This is an H3 heading #### This is an H4 heading ##### This is an H5 heading ###### This is an H6 heading . In blog posts the H1 is added by the template: Add a blog post. ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#headings",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#headings"
+  },"17": {
+    "doc": "Content kitchen sink",
+    "title": "Summary in a larger text font.",
+    "content": "End the paragraph with the code {: .fs-6 .fw-300 }. When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. {: .fs-6 .fw-300 } . When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#summary-in-a-larger-text-font",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#summary-in-a-larger-text-font"
+  },"18": {
+    "doc": "Content kitchen sink",
+    "title": "Text",
+    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. An image: ![Alt text](url) for example: ![Library](/assets/images/small-image.jpg) . For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#text",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#text"
+  },"19": {
+    "doc": "Content kitchen sink",
+    "title": "Videos",
+    "content": "This site uses the accessible media player Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able media player. Please read the Able Player documentation for information on all available settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#videos",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#videos"
+  },"20": {
+    "doc": "Content kitchen sink",
+    "title": "Code examples in the text",
+    "content": "A line of code starts and ends with a ` on the same line. &lt;img src=\"alice.jpg\" alt=\"White rabbit\" /&gt; . A block of code starts and ends with ```. If you want to highlight the text for a programming language, add the language after the 3 quotes. For example: ```html. &lt;!-- html --&gt; &lt;img src=\"alice.jpg\" alt=\"White rabbit\" /&gt; . // javascript var foo = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . /* css */ button { cursor: pointer; } . // php function themename_custom_excerpt_length( $length ) { return 40; //number of words in excerpt. } add_filter('excerpt_length','themename_custom_excerpt_length', 99 ); . ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#code-examples-in-the-text",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#code-examples-in-the-text"
+  },"21": {
+    "doc": "Content kitchen sink",
+    "title": "Language switch in the content text",
+    "content": "Only use the lang attribute for 4 words and more. For a part of sentence write, use a span in your Markdown text: . This text is in English and &lt;span lang=\"nl\"&gt;deze tekst is in het Nederlands&lt;/span&gt; and now we continue in English. In linktexts . [&lt;span lang=\"de\"&gt;Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland&lt;/span&gt;](https://www.deutscher-behindertenrat.de/ID255536). For larger pieces of content, you can add to a &lt;p&gt;, &lt;div&gt;or even a landmark, depending on what you need. For example: . &lt;p lang=\"de\"&gt; [...] &lt;/p&gt; . ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text"
+  },"22": {
+    "doc": "Content kitchen sink",
+    "title": "Callouts",
+    "content": "{: .info } This is an informational message and uses the “info” callout. {: .tip } Use the “tip” callout to highlight tips. {: .alert } The “alert” callout is for alerting readers to important messages. {: .warning } When something is particularly precarious, use the “warning” callout. {: .tutorial } Give an example with the \"tutorial\" callout. The title of the callout will be \"Example\". This is an informational message and uses the “info” callout. Use the “tip” callout to highlight tips. The “alert” callout is for alerting readers to important messages. When something is particularly precarious, use the “warning” callout. Give an example with the “tutorial” callout. The title of the callout will be “Example”. Labels . blue {: .label .label-blue } green {: .label .label-green } purple {: .label .label-purple } yellow {: .label .label-yellow } red {: .label .label-red } **bold** {: .label } *italic* {: .label } ***bold + italic*** {: .label } . blue . green . purple . yellow . red . bold . italic . bold + italic . Note: these are not form labels, but text labels. Collapsed Section . The following uses the &lt;details&gt; tag to create a collapsed section. &lt;details markdown=\"block\"&gt; &lt;summary&gt;Shopping list (click me!)&lt;/summary&gt; This is content inside a `&lt;details&gt;` dropdown. - Apples - Oranges - Milk &lt;/details&gt; . Shopping list (click me!) This is content inside a &lt;details&gt; dropdown. | Apples | Oranges | Milk | . ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/#callouts",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#callouts"
+  },"23": {
+    "doc": "Content kitchen sink",
+    "title": "Content kitchen sink",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contribute/content-kitchen-sink/",
+    "relUrl": "/docs/contribute/content-kitchen-sink/"
+  },"24": {
+    "doc": "Add a topic",
+    "title": "Add or change a topic in the Knowledge Base",
+    "content": "Do you have a great idea for a topic for this Knowledge Base or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add content for this website. Each documentation file has the same setup: . | First a set of variables like the title and the parent. | Then the content. | . The documentation files live in the directory /docs/ and are named [title].md. For example contribute.md. Keep the name short and unique. Use - instead of spaces in the filename. Each directory has an index.md which is the file that directly links to the directory topic. For example: /docs/about/index.md displays About this website. Other files for this topic are also placed in this directory and assigned a ‘parent’ with the variables. ",
+    "url": "/pr-preview/pr-63/docs/contribute/documentation/#add-or-change-a-topic-in-the-knowledge-base",
+    "relUrl": "/docs/contribute/documentation/#add-or-change-a-topic-in-the-knowledge-base"
+  },"25": {
+    "doc": "Add a topic",
+    "title": "The variables at the top of the file for a topic",
+    "content": "Example for /docs/about/index.md: . --- layout: default title: Accessibility statement parent: About this website description: \"Accessibility statement of the website wpaccessibility.org.\" nav_order: 2 --- . Use for the parent the title of the parent and not the filename. The nav_order determines the location of the topic in the menu. ",
+    "url": "/pr-preview/pr-63/docs/contribute/documentation/#the-variables-at-the-top-of-the-file-for-a-topic",
+    "relUrl": "/docs/contribute/documentation/#the-variables-at-the-top-of-the-file-for-a-topic"
+  },"26": {
+    "doc": "Add a topic",
+    "title": "The content of the post",
+    "content": "The page Content kitchen sink describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text. ",
+    "url": "/pr-preview/pr-63/docs/contribute/documentation/#the-content-of-the-post",
+    "relUrl": "/docs/contribute/documentation/#the-content-of-the-post"
+  },"27": {
+    "doc": "Add a topic",
+    "title": "How to start",
+    "content": "If you have an idea for a topic, please open an issue on GitHub and share your idea first. If you want to work on a topic (yay!) please let us know by adding a comment with the issue. Need help? Feel free to contact us. ",
+    "url": "/pr-preview/pr-63/docs/contribute/documentation/#how-to-start",
+    "relUrl": "/docs/contribute/documentation/#how-to-start"
+  },"28": {
+    "doc": "Add a topic",
+    "title": "Add a topic",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contribute/documentation/",
+    "relUrl": "/docs/contribute/documentation/"
+  },"29": {
+    "doc": "Blog",
+    "title": "Blog",
+    "content": " ",
+    "url": "/pr-preview/pr-63/blog/",
+    "relUrl": "/blog/"
+  },"30": {
+    "doc": "Blog",
+    "title": "\n          \n            I have a question, but I don’t have WhatsApp!\n          \n        ",
+    "content": "August 27, 2025 by Rian Rietveld . It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you. ",
+    "url": "/pr-preview/pr-63/blog/",
+    "relUrl": "/blog/"
+  },"31": {
+    "doc": "Blog",
+    "title": "\n          \n            Accessible error messages in forms\n          \n        ",
+    "content": "August 16, 2025 by Rian Rietveld . When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. ",
+    "url": "/pr-preview/pr-63/blog/",
+    "relUrl": "/blog/"
+  },"32": {
+    "doc": "Blog",
+    "title": "Blog",
+    "content": "Blog, WP Accessibility Knowledge Base ",
+    "url": "/pr-preview/pr-63/blog/",
+    "relUrl": "/blog/"
+  },"33": {
+    "doc": "Contributors",
+    "title": "Contributors of WP Accessibility Knowledge Base",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contributors/#contributors-of-wp-accessibility-knowledge-base",
+    "relUrl": "/docs/contributors/#contributors-of-wp-accessibility-knowledge-base"
+  },"34": {
+    "doc": "Contributors",
+    "title": "Props for code, reviews, content and discussion",
+    "content": ". | Paul van Buuren | Yoren Chang | Gary Jones | Wendie Huis in’t Veld | Johan Huijkman | Caitlin de Rooij | Savi Sinnema | Annelies Verhelst | . Project leads . | Joe Dolson | Rian Rietveld | . ",
+    "url": "/pr-preview/pr-63/docs/contributors/#props-for-code-reviews-content-and-discussion",
+    "relUrl": "/docs/contributors/#props-for-code-reviews-content-and-discussion"
+  },"35": {
+    "doc": "Contributors",
+    "title": "Contributors",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contributors/",
+    "relUrl": "/docs/contributors/"
+  },"36": {
+    "doc": "Sponsors",
+    "title": "Sponsors",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/sponsors/",
+    "relUrl": "/docs/sponsors/"
+  },"37": {
+    "doc": "Start with accessibility",
+    "title": "Start with accessibility",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/start/",
+    "relUrl": "/docs/start/"
+  },"38": {
+    "doc": "Standards and best practice",
+    "title": "Standards and best practice",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/topics/",
+    "relUrl": "/docs/topics/"
+  },"39": {
+    "doc": "WP and Accessibility",
+    "title": "WordPress and Accessibility",
+    "content": "What is WordPress and why this site. Answer questions like does WP have an a11y statement of an ATAG etc. ",
+    "url": "/pr-preview/pr-63/docs/wordpress-accessibility/#wordpress-and-accessibility",
+    "relUrl": "/docs/wordpress-accessibility/#wordpress-and-accessibility"
+  },"40": {
+    "doc": "WP and Accessibility",
+    "title": "WP and Accessibility",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/wordpress-accessibility/",
+    "relUrl": "/docs/wordpress-accessibility/"
+  },"41": {
+    "doc": "Team and process",
+    "title": "Team and process",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/team-process/",
+    "relUrl": "/docs/team-process/"
+  },"42": {
+    "doc": "How to contribute",
+    "title": "How to contribute to the Knowledge Base",
+    "content": "Do you want to help maintain and extend this website? . Please note: we use GitHub to maintain and extend the content of the knowledge base. A GitHub account is free. ",
+    "url": "/pr-preview/pr-63/docs/contribute/#how-to-contribute-to-the-knowledge-base",
+    "relUrl": "/docs/contribute/#how-to-contribute-to-the-knowledge-base"
+  },"43": {
+    "doc": "How to contribute",
+    "title": "Write or review content for the knowledge base",
+    "content": "Starting August 22nd, ‘25 we will publish topics to be written for the knowledge base labeled documentation in our GitHub repository. There are several ways you can contribute to the documentation: . | Create a new issue on GitHub and share your ideas. | Pick an issue on the WP A11y Docs project board from the Todo column. | Add a comment with a GitHub issue you have an opinion about. | Join the Accessibility table at a WordCamp contributor day and share your ideas. | Share a comment in the Make WordPress #accessibility-docs Slack channel. | Create a GitHub pull request. | . If you need help, feel free to reach out to us by opening an issue with your question. Please respect our Code of Conduct. ",
+    "url": "/pr-preview/pr-63/docs/contribute/#write-or-review-content-for-the-knowledge-base",
+    "relUrl": "/docs/contribute/#write-or-review-content-for-the-knowledge-base"
+  },"44": {
+    "doc": "How to contribute",
+    "title": "Audit the accessibility of this website",
+    "content": "A website about accessibility (a11y) must be accessible itself. That’s a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We’d love to have an independent WCAG-EM audit, that results in a WCAG-EM report. Your name or your company name will be added to the contributors list. We then will add that information in our accessibility statement and fix the issues found. See the GitHub issue: Audit the website for accessibility WCAG 2.2 AA. Did you notice an a11y-issue on this website? Please inform us by opening an issue on GitHub. Please note: this is only for accessibility issues in this website and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. Contribute with regular accessibility audits . We would value a full WCAG-EM audit and WCAG-EM report for WCAG 2.2 AA to start and a yearly update for the new content and functionality. Your name or your company name will be added to the sponsor list. Contact Rian Rietveld if you want to sponsor this project with regular WCAG-EM audits of wpaccessibility.org. ",
+    "url": "/pr-preview/pr-63/docs/contribute/#audit-the-accessibility-of-this-website",
+    "relUrl": "/docs/contribute/#audit-the-accessibility-of-this-website"
+  },"45": {
+    "doc": "How to contribute",
+    "title": "Improve this website",
+    "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. The theme is based on the Jekyll theme Just the Docs. For the changes made in Just the Docs, please read the Changelog for Release v0.1. A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub labeled website. Read how to do a local install in the page GitHub pull requests for the Knowledge Base . ",
+    "url": "/pr-preview/pr-63/docs/contribute/#improve-this-website",
+    "relUrl": "/docs/contribute/#improve-this-website"
+  },"46": {
+    "doc": "How to contribute",
+    "title": "How to contribute",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contribute/",
+    "relUrl": "/docs/contribute/"
+  },"47": {
+    "doc": "Legislation",
+    "title": "Legislation",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/legislation/",
+    "relUrl": "/docs/legislation/"
+  },"48": {
+    "doc": "Reading guide",
+    "title": "Reading guide",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/guide/",
+    "relUrl": "/docs/guide/"
+  },"49": {
+    "doc": "Resources",
+    "title": "Resources on accessibility",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/resources/#resources-on-accessibility",
+    "relUrl": "/docs/resources/#resources-on-accessibility"
+  },"50": {
+    "doc": "Resources",
+    "title": "Resources",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/resources/",
+    "relUrl": "/docs/resources/"
+  },"51": {
+    "doc": "Contact",
+    "title": "Contact the WP Accessibility Docs Team",
+    "content": "There are several ways to contact us: . | Open an issue on GitHub with your question. | Fill out the contact form on make.wordpress.org. You don’t need to log-in for this. | Share a comment in the Make WordPress #accessibility-docs Slack channel. | . Contact Rian Rietveld if you want to sponsor this project. We still need a few sponsors to cover our time and costs. ",
+    "url": "/pr-preview/pr-63/docs/contact/#contact-the-wp-accessibility-docs-team",
+    "relUrl": "/docs/contact/#contact-the-wp-accessibility-docs-team"
+  },"52": {
+    "doc": "Contact",
+    "title": "Contact",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contact/",
+    "relUrl": "/docs/contact/"
+  },"53": {
+    "doc": "Testing",
+    "title": "Accessibility testing",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-63/docs/testing/#accessibility-testing",
+    "relUrl": "/docs/testing/#accessibility-testing"
+  },"54": {
+    "doc": "Testing",
+    "title": "Testing",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/testing/",
+    "relUrl": "/docs/testing/"
+  },"55": {
+    "doc": "About this website",
+    "title": "About this website",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/about/",
+    "relUrl": "/docs/about/"
+  },"56": {
+    "doc": "Home",
+    "title": "[work in progress] WP Accessibility Knowledge Base demo website",
+    "content": "Documentation about accessibility for WordPress users and creators. For the community, by the community. Please note: this website is a work in progress and is still in the setup phase. This knowledge base has no content yet and the site needs an accessibility audit. Please visit, for now, the documentation on the Make WordPress Accessible Handbook. This website aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation? . We’ll provide documentation, effective examples (both what to do and what to avoid) and reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples. We aim to meet WCAG 2.2 AA. Did we miss a topic? Did you find an error or have a great idea? Create an issue on our GitHub repository wpaccessibility/wp-a11y-docs. We would like to invite you to contribute to this Knowledge Base. Let’s make the web for everyone. ",
+    "url": "/pr-preview/pr-63/#work-in-progress-wp-accessibility-knowledge-base-demo-website",
+    "relUrl": "/#work-in-progress-wp-accessibility-knowledge-base-demo-website"
+  },"57": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/pr-preview/pr-63/",
+    "relUrl": "/"
+  },"58": {
+    "doc": "Licences",
+    "title": "Licenses",
+    "content": "The text of the documentation is created by the WordPress and Accessibility community worldwide. This documentation is licenced as Creative Commons Zero 1.0 Universal (CC0-1.0). The licence under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. Theme of this website is based on the Just The Docs Jekyll theme. Just the Docs is distributed by an MIT license. Copyright (c) 2016 Patrick Marsceill . ",
+    "url": "/pr-preview/pr-63/docs/about/licence/#licenses",
+    "relUrl": "/docs/about/licence/#licenses"
+  },"59": {
+    "doc": "Licences",
+    "title": "Licences",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/about/licence/",
+    "relUrl": "/docs/about/licence/"
+  },"60": {
+    "doc": "Pull requests",
+    "title": "GitHub pull requests for the Knowledge Base",
+    "content": "First, create a new issue on GitHub or find an issue you want to help with on in our GitHub repository labeled “documentation”. Also check if there isn’t already an open issue about what you want to add or change. ",
+    "url": "/pr-preview/pr-63/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base",
+    "relUrl": "/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base"
+  },"61": {
+    "doc": "Pull requests",
+    "title": "How to make a good pull request",
+    "content": "Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to. All Knowledge Base files live in the /docs/ directory. For Markdown, we use the Markdown Style Guide. Please check for grammer and spelling errors before submitting the PR. ",
+    "url": "/pr-preview/pr-63/docs/contribute/pull-requests/#how-to-make-a-good-pull-request",
+    "relUrl": "/docs/contribute/pull-requests/#how-to-make-a-good-pull-request"
+  },"62": {
+    "doc": "Pull requests",
+    "title": "Create a pull request from a fork on GitHub with your text.",
+    "content": "GitHub offers good documentation on how to create a pull request using a fork on: Creating a pull request from a fork. ",
+    "url": "/pr-preview/pr-63/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text",
+    "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text"
+  },"63": {
+    "doc": "Pull requests",
+    "title": "Create a pull request from a fork using a local install",
+    "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. Please read Local install of the website in wp-a11y-docs/README.md. ",
+    "url": "/pr-preview/pr-63/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install",
+    "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install"
+  },"64": {
+    "doc": "Pull requests",
+    "title": "Pull Request Previews",
+    "content": "When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging. Preview URLs follow the format: https://wpaccessibility.org/pr-preview/pr-{number}/. ",
+    "url": "/pr-preview/pr-63/docs/contribute/pull-requests/#pull-request-previews",
+    "relUrl": "/docs/contribute/pull-requests/#pull-request-previews"
+  },"65": {
+    "doc": "Pull requests",
+    "title": "Pull requests",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/contribute/pull-requests/",
+    "relUrl": "/docs/contribute/pull-requests/"
+  },"66": {
+    "doc": "Theme of this website",
+    "title": "Theme of this website",
+    "content": "This website is powered by Jekyll and based on the theme Just the Docs. Just the ddocs: Copyright© 2017-2020 Patrick Marsceill. Distributed by an MIT licence. ",
+    "url": "/pr-preview/pr-63/docs/about/theme/",
+    "relUrl": "/docs/about/theme/"
+  },"67": {
+    "doc": "WP Accessibility Team",
+    "title": "Info about the WordPress Accessibility Team",
+    "content": "Info and links. ",
+    "url": "/pr-preview/pr-63/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team",
+    "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team"
+  },"68": {
+    "doc": "WP Accessibility Team",
+    "title": "WP Accessibility Team",
+    "content": " ",
+    "url": "/pr-preview/pr-63/docs/wordpress-accessibility/wp-a11y-team/",
+    "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/"
+  }
+}
