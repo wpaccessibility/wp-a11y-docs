@@ -40,4 +40,7 @@ There are several easy ways to help:
 - **Give Accessibility Feedback**  
   Testing the site, pointing out unclear documentation, or sharing examples (do’s and don’ts) is a valuable contribution.
 
+For more details, see the [Contribute pages](https://wpaccessibility.org/docs/contribute/).  
+All contributors will also be listed on the [**Contributors page**](https://wpaccessibility.org/docs/contributors/) as a thank you for their help.
+
 *In short: if you can write, review, or test, you can contribute — no coding required!*
