@@ -102,6 +102,14 @@
   }
 }
 
+.site-header,
+.site-nav {
+  a:focus,
+  a:focus-visible {
+    outline-offset: -1px;
+  }
+}
+
 .site-nav {
   display: none;
 
