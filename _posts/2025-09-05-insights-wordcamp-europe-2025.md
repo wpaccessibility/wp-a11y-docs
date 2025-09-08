@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Why accessibility should be your next priority, insights from WordCamp Europe '25"
+title: "Why accessibility should be your next priority, insights from WordCamp Europe 2025"
 permalink: /blog/2025/insights-wordcamp-europe-2025/
 author: Wendie Huis in't Veld
 categories: EAA, WordCamp, business
 parent: Blog
 excerpt: "One topic that really stands out on WordCamp Europe 2025, is accessibility. With the European Accessibility Act (EAA) coming into effect in June, it's clear that this is something we all need to pay attention to. While the Act isn’t specific to WordPress, it affects all website owners, especially those running businesses online."
-date: 2025-09-05
+date: 2025-09-08
 ---
 
-In the beginning of June 2025 WordCamp Europe happened, the biggest WordPress event in the world where thought leaders, and industry experts share their insights and knowledge. Luckily, sessions from Tracks 1 and 2 are available on WordPress TV for everybody that missed the event, so you can always dive into the valuable insights at a later moment.
+In the beginning of June [WordCamp Europe 2025 happened](https://wordpress.tv/event/wordcamp-europe-2025/), the biggest WordPress event in the world where thought leaders, and industry experts share their insights and knowledge. Luckily, sessions from Tracks 1 and 2 are available on WordPress TV for everybody that missed the event, so you can always dive into the valuable insights at a later moment.
 
-One topic that really stands out, especially when you are a European entrepreneur, is accessibility. With the European Accessibility Act (EAA) coming into effect in June, it's clear that this is something we all need to pay attention to. While the Act isn’t specific to WordPress, it affects all website owners, especially those running businesses online.
+One topic that really stands out, especially when you are a European entrepreneur, is accessibility. With the European Accessibility Act (EAA) having come into effect in June 2025, it's clear that this is something we all need to pay attention to. While the Act isn’t specific to WordPress, it affects all website owners, especially those running businesses online.
 
 Three exceptional talks stand out this year that explore this topic from different angles:
 
