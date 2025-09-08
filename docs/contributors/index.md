@@ -7,17 +7,29 @@ nav_order: 12
 
 #  Contributors of WP Accessibility Knowledge Base
 
-## Props for code, reviews, content and discussion
+## Props for content, discussion, code, design and reviews
 
-- <a href="https://wbvb.nl/">Paul van Buuren</a>
-- <a href="https://github.com/yoren">Yoren Chang</a>
-- <a href="https://github.com/GaryJones">Gary Jones</a>
-- <a href="https://wendiehuisintveld.nl/">Wendie Huis in't Veld</a>
-- <a href="https://www.linkedin.com/in/johanhuijkman/">Johan Huijkman</a>
-- <a href="https://www.caitlinderooij.com/">Caitlin de Rooij</a>
+- [Paul van Buuren](https://wbvb.nl/)
+- [Yoren Chang](https://github.com/yoren)
+- [Moses Cursor Ssebunya](https://mosescursor.com/)
+- [Gary Jones](https://garyjones.io/)
+- [Wendie Huis in't Veld](https://wendiehuisintveld.nl/)
+- [Johan Huijkman](https://www.linkedin.com/in/johanhuijkman/)
+- [Jeffrey Lauwers](https://www.linkedin.com/in/jeffreylauwers/)
+- [Caitlin de Rooij](https://www.caitlinderooij.com/)
 - Savi Sinnema
-- <a href="https://linkedin.com/in/anneliesverhelst">Annelies Verhelst</a>
+- [Annelies Verhelst](https://linkedin.com/in/anneliesverhelst)
 
 ### Project leads
-- <a href="https://joedolson.com">Joe Dolson</a>
-- <a href="https://rianrietveld.com">Rian Rietveld</a>
+- [Joe Dolson](https://joedolson.com)
+- [Rian Rietveld](https://rianrietveld.com)
+
+### GitHub contributor list
+
+<ul class="list-style-none">
+{% for contributor in site.github.contributors %}
+  <li class="d-inline-block mr-1">
+     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="44" height="44" alt="{{ contributor.login }}"></a>
+  </li>
+{% endfor %}
+</ul>
