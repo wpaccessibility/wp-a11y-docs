@@ -5,13 +5,14 @@ description: "Thank you to the contributors of WP Accessibility Knowledge Base"
 nav_order: 12
 ---
 
-#  Contributors of WP Accessibility Knowledge Base
+#  Contributors of the WordPress accessibility documentation
 
 ## Props for content, discussion, code, design and reviews
 
 - [Paul van Buuren](https://wbvb.nl/)
 - [Yoren Chang](https://github.com/yoren)
-- [Moses Cursor Ssebunya](https://mosescursor.com/)
+- [Virginia Ciambriello](https://profiles.wordpress.org/virginiaciambriello/)
+- [Moses Cursor Ssebunya](https://profiles.wordpress.org/mosescursor/)
 - [Gary Jones](https://garyjones.io/)
 - [Wendie Huis in't Veld](https://wendiehuisintveld.nl/)
 - [Johan Huijkman](https://www.linkedin.com/in/johanhuijkman/)
