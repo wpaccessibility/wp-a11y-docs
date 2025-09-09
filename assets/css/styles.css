@@ -553,6 +553,13 @@ h6,
   }
 }
 
+.site-header a:focus,
+.site-header a:focus-visible,
+.site-nav a:focus,
+.site-nav a:focus-visible {
+  outline-offset: -2px;
+}
+
 .site-nav {
   display: none;
 }
