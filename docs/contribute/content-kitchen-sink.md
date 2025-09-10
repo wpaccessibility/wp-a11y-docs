@@ -130,7 +130,7 @@ For a part of sentence write, use a span in your Markdown text:
 This text is in English and <span lang="nl">deze tekst is in het Nederlands</span> and now we continue in English.
 ```
 
-In linktexts
+In link texts:
 ```markdown
 [<span lang="de">Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland</span>](https://www.deutscher-behindertenrat.de/ID255536).
 ```
@@ -157,9 +157,16 @@ The “alert” callout is for alerting readers to important messages.
 {: .warning }
 When something is particularly precarious, use the “warning” callout.
 
-{: .tutorial }
-Give an example with the "tutorial" callout. 
+{: .example }
+Give an example with the "example" callout. 
 The title of the callout will be "Example".
+
+{: .do }
+Example of good practice.
+
+{: .dont }
+Example of bad practice.
+
 ```
 
 {: .info }
@@ -174,8 +181,14 @@ The “alert” callout is for alerting readers to important messages.
 {: .warning }
 When something is particularly precarious, use the “warning” callout.
 
-{: .tutorial }
-Give an example with the "tutorial" callout. The title of the callout will be "Example".
+{: .example }
+Give an example with the example" callout. The title of the callout will be "Example".
+
+{: .do }
+Example of how to do something. The title of the callout will be "Do".
+
+{: .dont }
+Example of how to not to do something. The title of the callout will be "Don't".
 
 ### Labels
 
