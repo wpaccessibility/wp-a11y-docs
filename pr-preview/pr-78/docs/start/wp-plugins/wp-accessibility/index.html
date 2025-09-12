@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+
+
+<title>WP Accessibility, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/pr-preview/pr-78/assets/css/styles.css">
+  <link rel="icon" href="/pr-preview/pr-78/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/pr-preview/pr-78/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <a href="/pr-preview/pr-78/" class="site-title lh-tight">
+      WP Accessibility Knowledge Base</a>
+    <button id="menu-button" class="site-button btn-reset" aria-expanded="false">
+      <span>Menu</span>
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+        <use xlink:href="#svg-menu"></use>
+      </svg>
+    </button>
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav" tabindex="0">
+
+    <h2 class="screen-reader-text">Menu</h2>
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/" class="nav-list-link">Start with accessibility</a><button class="nav-list-expander btn-reset" aria-label="Start with accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/wp-plugins/" class="nav-list-link">WP Plugins</a><button class="nav-list-expander btn-reset" aria-label="WP Plugins submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/wp-plugins/wp-accessibility/" class="nav-list-link">WP Accessibility</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/business/" class="nav-list-link">Accessibility for your business</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/at/" class="nav-list-link">Assistive technology</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/myths/" class="nav-list-link">Debunking myths</a><button class="nav-list-expander btn-reset" aria-label="Debunking myths submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/myths/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/start/myths/overlays/" class="nav-list-link">Overlays</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/topics/" class="nav-list-link">Standards and best practice</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/testing/" class="nav-list-link">Testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/wordpress-accessibility/" class="nav-list-link">WP and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WP and Accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/wordpress-accessibility/wp-a11y-team/" class="nav-list-link">WP Accessibility Team</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/team-process/" class="nav-list-link">Team and process</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/resources/" class="nav-list-link">Resources</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/blog/" class="nav-list-link">Blog</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contribute/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contribute/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contribute/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contribute/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/sponsors/" class="nav-list-link">Sponsors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/about/" class="nav-list-link">About this website</a><button class="nav-list-expander btn-reset" aria-label="About this website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/about/theme/" class="nav-list-link">Theme of this website</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-78/docs/contact/" class="nav-list-link">Contact</a></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    
+<div class="search">
+  <form class="search-input-wrap" role="search">
+    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search WP Accessibility Knowledge Base" autocomplete="off">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+    </label>
+  </form>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-78/docs/start/'>Start with accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-78/docs/start/wp-plugins/'>WP Plugins</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">WP Accessibility</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1 id="wp-accessibility-plugin">WP accessibility plugin</h1>
+
+<p class="warning"><strong>TODO:</strong>
+Starter content. Is this still relevant?.</p>
+
+<p>The <a href="https://wordpress.org/extend/plugins/wp-accessibility/">WP Accessibility plugin</a> — developed by <a href="http://www.joedolson.com/">Joe Dolson</a> — can help non-technical site owners correct a variety of technical accessibility issues within many WordPress themes.</p>
+
+<h2 id="accessibility-features">Accessibility Features</h2>
+
+<ul>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c2">Enable skip links</a> with WebKit support by enqueuing JavaScript support for moving keyboard focus.</li>
+  <li>Add skip links with user-defined targets.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c3">Add language and text direction attributes</a> to your HTML attribute</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c9">Add a :focus outline</a> to focusable elements.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c11">Toggle for high-contrast and large font stylesheets</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c13">Add support for the longdesc attribute</a></li>
+</ul>
+
+<h2 id="accessibility-issues-fixed">Accessibility Issues Fixed</h2>
+
+<ul>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c1">Remove redundant title attributes</a> from page lists, category lists, and archive menus.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c4">Remove the target attribute</a> from links.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c5">Force a search page error</a> when a search is made with an empty text string.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c6">Remove tabindex</a> from elements that are focusable.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c7">Strip title attributes</a> from images inserted into content.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c8">Add post titles to standard “read more” links</a>.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c14">Add ARIA roles to HTML5 structural elements</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c15">Force underlines on links</a></li>
+</ul>
+
+<h2 id="accessibility-tools">Accessibility Tools</h2>
+
+<ul>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c12">Custom admin stylesheet</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c10">Provide color contrast testing tool</a> to compare colors against WCAG contrast standards</li>
+</ul>
+
+<p>However, whilst the plugin can correct some issues within themes, it <strong>cannot</strong> correct every problem. So it is not a substitute for <a href="https://codex.wordpress.org/Accessibility">good web accessibility practice</a>. There is still a great deal you can do to make your site more accessible when creating your content. But it may help those who lack the HTML skills necessary by allowing them to focus on creating accessible content.</p>
+
+<p>And do remember that creating an accessible site will immediately increase your potential audience as well as facilitating search engine indexing. All in all, a win-in situation!</p>
+
+<h2 id="removing-title-attributes">Removing title attributes</h2>
+
+<p>By default, WordPress adds title attributes to all system-generated links — navigation menus, lists of posts, etc. These title attributes have exactly the same value as the text of the link — if the text of the link is “Joe’s Blue Widgets”, then the title attribute is also “Joe’s Blue Widgets”. In the best case scenario, where a screen reader is set up to ignore title attributes, having this set makes little difference. In the worst case scenario, where a screen reader reads all attributes, it’s awful: the screen reader reads the title attribute and the link text, meaning that every link is, effectively, read twice. This is an enormous cognitive overload that benefits nobody. The purpose of the title attribute is to add context to a link that otherwise does not have sufficient context: but in almost all cases, the WordPress use does not meet that criteria.<br />
+<a href="http://www.paciellogroup.com/blog/2010/11/using-the-html-title-attribute/">Further reading about title attributes and accessibility</a>.</p>
+
+<h2 id="skiplinks">Skiplinks</h2>
+
+<p>Skiplinks are a means to help users of screenreaders jump from the beginning of a page to another section of the page. Visual users can scan a page quickly to identify the larger sections and skip over large blocks of text or links, but users of screen readers can’t easily do that. Skiplinks provide a means to leap from the very top of a page to an alternate section of that page — one principle use being to leap over the main navigation to the main page content.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html">Further reading about skip links</a>.</p>
+
+<h2 id="add-site-language-and-text-direction-to-html-element">Add site language and text direction to HTML element</h2>
+
+<p>Screen readers use the site’s declared language to figure out what pronunciation rules to use when reading the content. If no language is declared, then the screen reader will generally use the screen-reader user’s installation’s language or try to guess: e.g., if a French user of a screen reader visits your page, and no HTML language is declared, it will either read as if the text was written in French, or attempt to guess the actual language and pronunciation. Declaring the actual default language greatly improves comprehension of the text.</p>
+
+<p>As problems go, this is relatively rare as a problem in a theme: what is actually a bigger problem is sections of text that are not in the primary language of the site. This plug-in doesn’t currently handle changing languages in the middle of content. <br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">Further reading about document language</a>.</p>
+
+<h2 id="remove-target-attribute-from-links">Remove target attribute from links</h2>
+
+<p>Links opened in new windows can break web site flow (creating a change of context) and disorient users who don’t realize they’ve moved to a new window. Also, it takes away the option of opening in the same window/tab: all browsers have an option to open links in a new tab, few have an option to open in the same tab.<br />
+<a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-no-extreme-changes-context.html">Further reading about changes of context</a>.</p>
+
+<h2 id="force-search-error-on-empty-search-submission">Force search error on empty search submission</h2>
+
+<p>The default WordPress behavior when a search is submitted with an empty search field is to simply return the main index with no notice at all. This is disorienting and confusing. The plug-in will change this so that the submission of an empty search field will return the same as a search with no results, which makes a great deal more sense in terms of user feedback.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">Further reading on form feedback</a>.</p>
+
+<h2 id="remove-tabindex-from-focusable-elements">Remove tabindex from focusable elements</h2>
+
+<p>Many (primarily older) themes had tabindex defined for comment input fields, in particular. Tabindex was an early concept for an accessibility feature for HTML, but was quickly demonstrated to cause more problems than it solved. What tabindex does is force keyboard navigation to follow a particular sequence according to the values defined in tabindex attributes. Removing those attributes usually makes keyboard navigation much more linear and predictable. The intention behind tabindex was to create a logical tab sequence when it would otherwise have been unnatural; but in practice, that required absolutely insane degrees of maintenance to use in a real-life web site. This option removes the attribute from standard focusable elements: links and form fields. It does <em>not</em> remove it from other fields, because a common technique to grant keyboard focusability to normally non-focusable elements is to define a negative tabindex: this places the element into the focus sequence but does not force it into a particular place in that sequence.</p>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">Further reading about focus order</a>.</li>
+  <li><a href="http://www.w3.org/TR/WCAG20-TECHS/F44">Further reading about tabindex</a>.</li>
+</ul>
+
+<h2 id="remove-title-attribute-from-inserted-post-imagesfeatured-images">Remove title attribute from inserted post images/featured images.</h2>
+
+<p>Similar to the title attribute above: WordPress automatically adds the title element to inserted images. This automatically strips it out; which is primarily a labor saver for people who would otherwise be doing this manually.</p>
+
+<h2 id="add-post-title-to-more-links">Add post title to “more” links</h2>
+
+<p>A common pattern for WordPress in many views is to show an excerpt of your post with a link to read the entire post. By default, this link is just plain text “more” or “continue reading” or an equivalent. This is problematic for accessibility because it means that there are many links on the same page with the same link text: for accessibility, all links should make sense without requiring context, to grant screen readers the ability to scan the page and have information. This plug-in adds the title of the post into this pattern, so that instead of hearing “Continue Reading. Continue Reading. Continue Reading.”, the user will hear something like “Continue Reading About The Storm. Continue Reading The Storm Aftermath. Continue Reading Cleaning Up”, and be able to pick the article they actually want to read from that set of links.<br />
+<a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/h20">Further reading about identifying link purpose</a>.</p>
+
+<h2 id="add-outline-to-elements-on-keyboard-focus">Add outline to elements on keyboard focus.</h2>
+
+<p>Many designs do not provide a design for the view of links or other focusable fields when a keyboard user brings focus to that element. This makes it very difficult for visual users who are keyboard dependent to keep track of where they are. A common pattern for this is to change the appearance of the element on keyboard focus; and this item adds an outline. Outline is rarely defined in most designs, so that ensures that the definition by this plug-in will almost always work and be visible; the same can’t be said for text decorations like underline, since that may be the default state for links, and therefore would not be a change indicator.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">Further reading about keyboard focus</a>.</p>
+
+<h2 id="toggle-for-high-contrast-and-large-font-stylesheets">Toggle for high-contrast and large font stylesheets</h2>
+
+<p>While not a solution in itself, if your theme has low contrast issues or small fonts, using this custom control to toggle high-contrast or large font modes can be useful. All styles can be customized or extended within your theme directory, since default states for these tools may not be suitable for your site. The accessibility toolbar is based on the original written by <a href="http://www.usableinteractions.com/2013/01/a11y-toolbar-to-be-incorporated-into-wp-accessibility-plugin/">Chris Rodriguez</a>.</p>
+
+<h2 id="custom-admin-stylesheet">Custom admin stylesheet</h2>
+
+<p>The WordPress admin has some miscellaneous accessibility issues, which this stylesheet will correct. It can also be modified to customize according to your specific needs.</p>
+
+<h2 id="color-contrast-tester">Color Contrast Tester</h2>
+
+<p>This tool doesn’t make any active changes to your web site, but allows you to easily test whether a set of colors you’re considering for customization of your site meet the standards set by WCAG 2 for color contrast.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">Further reading about color contrast</a>.</p>
+
+<h2 id="add-support-for-the-longdesc-attribute">Add support for the longdesc attribute</h2>
+
+<p>The longdesc attribute provides a description field for images that are more information-rich than can be conveyed in an alt attribute, such as in graphs or infographics. This uses the WordPress media “Description” field to generate a page linked to from the longdesc attribute which can describe that image. <a href="https://www.joedolson.com/articles/2014/03/update-wp-accessibility-longdesc/">Read more about longdesc in WP Accessibility</a>.</p>
+
+<h2 id="add-aria-roles-to-html5-structural-elements">Add ARIA roles to HTML5 structural elements</h2>
+
+<p>The HTML5 specification defines structural elements such as main, header, and footer, that theoretically define specific landmarks for assistive technology. In practice, the support for these landmarks is very good using ARIA role attributes and not so great with the HTML5 structural elements. Turning this option automatically adds the appropriate role attribute to instances of HTML5 structural elements. Specifically, it picks the first header, the last footer, any main element, and each nav element.</p>
+
+<p>Because there is no page-unique sectioning element that can reliably be matched with the “complementary” role, there’s an option to set a region ID for the section of the page that should be your complementary region. This will usually be your sidebar.</p>
+
+<h2 id="force-underlines-on-links">Force underlines on links</h2>
+
+<p>Some themes define link styles that are nearly or completely indistinguishable from the surrounding text. This can be readily be improved by underlining links. This is a “sledgehammer” tool — it will underline all links on the page, even if some of those links are visually styled as buttons or clearly defined navigation menus.</p>
+
+
+          
+            
+          
+
+          
+            
+<div class="d-flex mt-2">
+    
+
+    
+    <p class="text-small text-grey-dk-000 mb-0">
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/start/wp-plugins/wp-accessibility.md" id="edit-this-page">View this page on GitHub</a>
+    </p>
+    
+
+</div>
+
+
+          
+        </main>
+
+        
+  <footer>
+
+    <p class="mb-0">The work on the WP Accessibility Knowledge Base is sponsored by <a href="https://kinsta.com/">Kinsta</a>, <a href="https://humanmade.com/">Human Made</a>, <a href="https://aiwos.com/">Aiwos</a> and <a href="https://lamper-design.nl/">Lamper Design</a>.</p>
+
+    <p>
+      <a href="#top" id="back-to-top" class="back-to-top">
+        <span aria-hidden="true">&#x2191;</span> Back to top
+      </a>
+    </p>
+
+  </footer>
+
+
+      </div>
+    </div>
+  </div>
+<div id="screen-reader-feedback" role="status"></div>
+</body>
+</html>
+
