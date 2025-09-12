@@ -1,0 +1,776 @@
+{"0": {
+    "doc": "Changelog website",
+    "title": "Changelog",
+    "content": "All notable user-facing changes to this project are documented in this file. ",
+    "url": "/pr-preview/pr-77/CHANGELOG/#changelog",
+    "relUrl": "/CHANGELOG/#changelog"
+  },"1": {
+    "doc": "Changelog website",
+    "title": "Release v0.1",
+    "content": "This Jekyll theme WP A11y Docs is based on Just the Docs by Just The Docs is licenced as MIT. In this initial release the theme is renamed into WP A11y Docs. The URL for the GitHib pages is wpaccessibility.org. File organisation . This will be a one design theme only, so all the changes will be done directly in the files itself. This simplifies the code and makes the theme better maintainable. For this the following changes were made: . | Removed custom files and their references. | Removed redundant include files. | Removed the nav-footer: took up too much space and added a second &lt;footer&gt;. | Added option for posts and post pagination. | Refactored the breadcrumbs for the posts. | Removed Just the Docs info pages and create placeholder text to match the actual site structure. | Set Ruby to 3.3.6. | Added option to add a canonical URL. | . SCSS . | Refactoring directory structure. | Removed the dark theme for now, that will be restored when the theme is finished and stable. | Replaced @import for @use, for compatibility with Dart Sass 3.0.0. | Replaced darken by color.scale and color.adjust, for compatibility with Dart Sass 3.0.0. | Replaced deprecated global built-in functions by Sass values (sass:map, sass:color, sass:list etc.). | . CSS color contrast issue . | Placeholder: fixt color contrast and opacity. | Fixed color contrast issues for text and non-text meaningful elements. | . Search at the top of the page . | Refactored the HTML of the form to make the HTML valid. | Added screen reader feedback to announce number of search results. | . _config.yml . | Removed Google Analytics Tracking settings. | Removed most variable because this is a static site. | Changed names and colours of the callouts to match those used in WordPress documentation style guide | . Accessibility improvements . | Moved the button to expand the submenus to after the submenu link, so the tab order is meaningful. | Changed aria-pressed by aria-expanded, see also issue Change aria-pressed into aria-expanded for buttons connected to expandable content. | Added aria-current=\"page\" to links to the current page. | Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. Maybe we find an accessible way later on. | Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screenreader feedback. | The code blocks now have a tabindex=”0”. | . ",
+    "url": "/pr-preview/pr-77/CHANGELOG/#release-v01",
+    "relUrl": "/CHANGELOG/#release-v01"
+  },"2": {
+    "doc": "Changelog website",
+    "title": "Changelog website",
+    "content": " ",
+    "url": "/pr-preview/pr-77/CHANGELOG/",
+    "relUrl": "/CHANGELOG/"
+  },"3": {
+    "doc": "Code of Conduct",
+    "title": "Contributor Covenant Code of Conduct",
+    "content": "The WordPress Accessibility Team believes our community should be truly open for everyone. As such, we are committed to providing a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation. We act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. ",
+    "url": "/pr-preview/pr-77/docs/contribute/CODE_OF_CONDUCT/#contributor-covenant-code-of-conduct",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#contributor-covenant-code-of-conduct"
+  },"4": {
+    "doc": "Code of Conduct",
+    "title": "Our Standards",
+    "content": "Examples of behavior that contributes to a positive environment for our community include: . | Demonstrating empathy and kindness toward other people. | Being respectful of differing opinions, viewpoints, and experiences. | Giving and gracefully accepting constructive feedback. | Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience. | . Examples of unacceptable behavior include: . | The use of sexualized language or imagery, and sexual attention or advances of any kind. | Trolling, insulting or derogatory comments, and personal or political attacks. | Public or private harassment. | Publishing others’ private information, such as a physical or email address, without their explicit permission. | Other conduct which could reasonably be considered inappropriate in a professional setting. | . ",
+    "url": "/pr-preview/pr-77/docs/contribute/CODE_OF_CONDUCT/#our-standards",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#our-standards"
+  },"5": {
+    "doc": "Code of Conduct",
+    "title": "Consequences of unacceptable behavior",
+    "content": "The WordPress Accessibility Team has the right and responsibility to remove, edit, or reject comments, commits, code, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate. ",
+    "url": "/pr-preview/pr-77/docs/contribute/CODE_OF_CONDUCT/#consequences-of-unacceptable-behavior",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#consequences-of-unacceptable-behavior"
+  },"6": {
+    "doc": "Code of Conduct",
+    "title": "What to do if you witness or are subject to unacceptable behavior",
+    "content": "Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project lead. All complaints will be reviewed and investigated promptly and fairly. The project lead is obligated to respect the privacy and security of the reporter of any incident. ",
+    "url": "/pr-preview/pr-77/docs/contribute/CODE_OF_CONDUCT/#what-to-do-if-you-witness-or-are-subject-to-unacceptable-behavior",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/#what-to-do-if-you-witness-or-are-subject-to-unacceptable-behavior"
+  },"7": {
+    "doc": "Code of Conduct",
+    "title": "Code of Conduct",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contribute/CODE_OF_CONDUCT/",
+    "relUrl": "/docs/contribute/CODE_OF_CONDUCT/"
+  },"8": {
+    "doc": "Accessibility statement",
+    "title": "Accessibility statement",
+    "content": "We aim for the latest recommended version of the Web Content Accessibility Guidelines (WCAG) level AA, at this moment that is WCAG 2.2 AA. Did you find an accessibility issue or do you have problems using this website? Please inform us! . | contact us in the #accessibility-docs channel on the Make WordPress Slack account. | or create an issue in GitHub. | . Please note: this is only for accessibility issues in this website and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. ",
+    "url": "/pr-preview/pr-77/docs/about/accessibility-statement/",
+    "relUrl": "/docs/about/accessibility-statement/"
+  },"9": {
+    "doc": "Accessibility statement",
+    "title": "Known accessibility issues",
+    "content": "The search option needs improvement, see GitHub issue: Improve the accessibility of the search option. ",
+    "url": "/pr-preview/pr-77/docs/about/accessibility-statement/#known-accessibility-issues",
+    "relUrl": "/docs/about/accessibility-statement/#known-accessibility-issues"
+  },"10": {
+    "doc": "Add a blog post",
+    "title": "Add or change blog post.",
+    "content": "Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add post for this website. Each blog post file has the same setup. First a set of variables like the title and the parent. Then the content using Markdown. The blog post live in the directory /_posts/ and are named yyyy-mm-dd-title.md. For example 2025-08-16-able-player-now-available.md. ",
+    "url": "/pr-preview/pr-77/docs/contribute/blog-post/#add-or-change-blog-post",
+    "relUrl": "/docs/contribute/blog-post/#add-or-change-blog-post"
+  },"11": {
+    "doc": "Add a blog post",
+    "title": "The variables at the top of the file for a blog post",
+    "content": "For example: . --- layout: post title: \"The Able Player is now available for videos\" permalink: /blog/2025/able-player-available-for-videos/ author: Joe Dolson categories: video parent: Blog excerpt: \"Able Player is now available for YouTube videos in the WP Accessibility Knowledge Base.\" date: 2025-08-16 --- . The layout must be post, the parent Blog, use for the permalink the structure /blog/YYYY/name/. The date, author and excerpt will show up below the title on the Blog archive page and below the title on the blog post itself. The date can be in the future, the post will show up from that date and not before. The option for listings of categories hasn’t been implemented yet, but please use it already. ",
+    "url": "/pr-preview/pr-77/docs/contribute/blog-post/#the-variables-at-the-top-of-the-file-for-a-blog-post",
+    "relUrl": "/docs/contribute/blog-post/#the-variables-at-the-top-of-the-file-for-a-blog-post"
+  },"12": {
+    "doc": "Add a blog post",
+    "title": "The content of post",
+    "content": "The theme inserts your title, author, and the date of publication for you, so you should not include these in the content of your post. The page Content kitchen sink describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text. ",
+    "url": "/pr-preview/pr-77/docs/contribute/blog-post/#the-content-of-post",
+    "relUrl": "/docs/contribute/blog-post/#the-content-of-post"
+  },"13": {
+    "doc": "Add a blog post",
+    "title": "How to start",
+    "content": "If you have an idea for a blog post, please open an issue on GitHub and share your idea first. If you want to work on a blog post (yay!) please let us know by adding a comment with the issue. Need help? Feel free to contact us. ",
+    "url": "/pr-preview/pr-77/docs/contribute/blog-post/#how-to-start",
+    "relUrl": "/docs/contribute/blog-post/#how-to-start"
+  },"14": {
+    "doc": "Add a blog post",
+    "title": "Add a blog post",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contribute/blog-post/",
+    "relUrl": "/docs/contribute/blog-post/"
+  },"15": {
+    "doc": "Content kitchen sink",
+    "title": "Kitchen sink: options available for content",
+    "content": "This page lists the options and code available for creating content on this website. WordPress.org provides a lot of style guides for documentation: WordPress Style Guides - highlights. We value most of all: be kind and professional in your text and please write the text yourself or make sure the reader knows who you are citing. ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#kitchen-sink-options-available-for-content",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#kitchen-sink-options-available-for-content"
+  },"16": {
+    "doc": "Content kitchen sink",
+    "title": "Headings",
+    "content": "# This is an H1 heading ## This is an H2 heading ### This is an H3 heading #### This is an H4 heading ##### This is an H5 heading ###### This is an H6 heading . In blog posts the H1 is added by the template: Add a blog post. ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#headings",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#headings"
+  },"17": {
+    "doc": "Content kitchen sink",
+    "title": "Summary in a larger text font.",
+    "content": "End the paragraph with the code {: .fs-6 .fw-300 }. When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. {: .fs-6 .fw-300 } . When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#summary-in-a-larger-text-font",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#summary-in-a-larger-text-font"
+  },"18": {
+    "doc": "Content kitchen sink",
+    "title": "Text",
+    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. An image: ![Alt text](url) for example: ![Library](/assets/images/small-image.jpg) . For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#text",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#text"
+  },"19": {
+    "doc": "Content kitchen sink",
+    "title": "Videos",
+    "content": "This site uses the accessible media player Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able media player. Please read the Able Player documentation for information on all available settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#videos",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#videos"
+  },"20": {
+    "doc": "Content kitchen sink",
+    "title": "Code examples in the text",
+    "content": "A line of code starts and ends with a ` on the same line. &lt;img src=\"alice.jpg\" alt=\"White rabbit\" /&gt; . A block of code starts and ends with ```. If you want to highlight the text for a programming language, add the language after the 3 quotes. For example: ```html. &lt;!-- html --&gt; &lt;img src=\"alice.jpg\" alt=\"White rabbit\" /&gt; . // javascript var foo = function lang(l) { dateformat.i18n = require('./lang/' + l) return true; } . /* css */ button { cursor: pointer; } . // php function themename_custom_excerpt_length( $length ) { return 40; //number of words in excerpt. } add_filter('excerpt_length','themename_custom_excerpt_length', 99 ); . ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#code-examples-in-the-text",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#code-examples-in-the-text"
+  },"21": {
+    "doc": "Content kitchen sink",
+    "title": "Language switch in the content text",
+    "content": "Only use the lang attribute for 4 words and more. For a part of sentence write, use a span in your Markdown text: . This text is in English and &lt;span lang=\"nl\"&gt;deze tekst is in het Nederlands&lt;/span&gt; and now we continue in English. In linktexts . [&lt;span lang=\"de\"&gt;Forderungspapier des Deutschen Behindertenrats zur Umsetzung des European Accessibility Acts in Deutschland&lt;/span&gt;](https://www.deutscher-behindertenrat.de/ID255536). For larger pieces of content, you can add to a &lt;p&gt;, &lt;div&gt;or even a landmark, depending on what you need. For example: . &lt;p lang=\"de\"&gt; [...] &lt;/p&gt; . ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#language-switch-in-the-content-text"
+  },"22": {
+    "doc": "Content kitchen sink",
+    "title": "Callouts",
+    "content": "{: .info } This is an informational message and uses the “info” callout. {: .tip } Use the “tip” callout to highlight tips. {: .alert } The “alert” callout is for alerting readers to important messages. {: .warning } When something is particularly precarious, use the “warning” callout. {: .tutorial } Give an example with the \"tutorial\" callout. The title of the callout will be \"Example\". This is an informational message and uses the “info” callout. Use the “tip” callout to highlight tips. The “alert” callout is for alerting readers to important messages. When something is particularly precarious, use the “warning” callout. Give an example with the “tutorial” callout. The title of the callout will be “Example”. Labels . blue {: .label .label-blue } green {: .label .label-green } purple {: .label .label-purple } yellow {: .label .label-yellow } red {: .label .label-red } **bold** {: .label } *italic* {: .label } ***bold + italic*** {: .label } . blue . green . purple . yellow . red . bold . italic . bold + italic . Note: these are not form labels, but text labels. Collapsed Section . The following uses the &lt;details&gt; tag to create a collapsed section. &lt;details markdown=\"block\"&gt; &lt;summary&gt;Shopping list (click me!)&lt;/summary&gt; This is content inside a `&lt;details&gt;` dropdown. - Apples - Oranges - Milk &lt;/details&gt; . Shopping list (click me!) This is content inside a &lt;details&gt; dropdown. | Apples | Oranges | Milk | . ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/#callouts",
+    "relUrl": "/docs/contribute/content-kitchen-sink/#callouts"
+  },"23": {
+    "doc": "Content kitchen sink",
+    "title": "Content kitchen sink",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contribute/content-kitchen-sink/",
+    "relUrl": "/docs/contribute/content-kitchen-sink/"
+  },"24": {
+    "doc": "Add a topic",
+    "title": "Add or change a topic in the Knowledge Base",
+    "content": "Do you have a great idea for a topic for this Knowledge Base or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add content for this website. Each documentation file has the same setup: . | First a set of variables like the title and the parent. | Then the content. | . The documentation files live in the directory /docs/ and are named [title].md. For example contribute.md. Keep the name short and unique. Use - instead of spaces in the filename. Each directory has an index.md which is the file that directly links to the directory topic. For example: /docs/about/index.md displays About this website. Other files for this topic are also placed in this directory and assigned a ‘parent’ with the variables. ",
+    "url": "/pr-preview/pr-77/docs/contribute/documentation/#add-or-change-a-topic-in-the-knowledge-base",
+    "relUrl": "/docs/contribute/documentation/#add-or-change-a-topic-in-the-knowledge-base"
+  },"25": {
+    "doc": "Add a topic",
+    "title": "The variables at the top of the file for a topic",
+    "content": "Example for /docs/about/index.md: . --- layout: default title: Accessibility statement parent: About this website description: \"Accessibility statement of the website wpaccessibility.org.\" nav_order: 2 --- . Use for the parent the title of the parent and not the filename. The nav_order determines the location of the topic in the menu. ",
+    "url": "/pr-preview/pr-77/docs/contribute/documentation/#the-variables-at-the-top-of-the-file-for-a-topic",
+    "relUrl": "/docs/contribute/documentation/#the-variables-at-the-top-of-the-file-for-a-topic"
+  },"26": {
+    "doc": "Add a topic",
+    "title": "The content of the post",
+    "content": "The page Content kitchen sink describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text. ",
+    "url": "/pr-preview/pr-77/docs/contribute/documentation/#the-content-of-the-post",
+    "relUrl": "/docs/contribute/documentation/#the-content-of-the-post"
+  },"27": {
+    "doc": "Add a topic",
+    "title": "How to start",
+    "content": "If you have an idea for a topic, please open an issue on GitHub and share your idea first. If you want to work on a topic (yay!) please let us know by adding a comment with the issue. Need help? Feel free to contact us. ",
+    "url": "/pr-preview/pr-77/docs/contribute/documentation/#how-to-start",
+    "relUrl": "/docs/contribute/documentation/#how-to-start"
+  },"28": {
+    "doc": "Add a topic",
+    "title": "Add a topic",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contribute/documentation/",
+    "relUrl": "/docs/contribute/documentation/"
+  },"29": {
+    "doc": "Blog",
+    "title": "Blog",
+    "content": " ",
+    "url": "/pr-preview/pr-77/blog/",
+    "relUrl": "/blog/"
+  },"30": {
+    "doc": "Blog",
+    "title": "\n          \n            Why accessibility should be your next priority, insights from WordCamp Europe 2025\n          \n        ",
+    "content": "September 8, 2025 by Wendie Huis in't Veld . One topic that really stands out on WordCamp Europe 2025, is accessibility. With the European Accessibility Act (EAA) coming into effect in June, it's clear that this is something we all need to pay attention to. While the Act isn’t specific to WordPress, it affects all website owners, especially those running businesses online. ",
+    "url": "/pr-preview/pr-77/blog/",
+    "relUrl": "/blog/"
+  },"31": {
+    "doc": "Blog",
+    "title": "\n          \n            I have a question, but I don’t have WhatsApp!\n          \n        ",
+    "content": "August 27, 2025 by Rian Rietveld . It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you. ",
+    "url": "/pr-preview/pr-77/blog/",
+    "relUrl": "/blog/"
+  },"32": {
+    "doc": "Blog",
+    "title": "\n          \n            Accessible error messages in forms\n          \n        ",
+    "content": "August 16, 2025 by Rian Rietveld . When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. ",
+    "url": "/pr-preview/pr-77/blog/",
+    "relUrl": "/blog/"
+  },"33": {
+    "doc": "Blog",
+    "title": "Blog",
+    "content": "Blog, WP Accessibility Knowledge Base ",
+    "url": "/pr-preview/pr-77/blog/",
+    "relUrl": "/blog/"
+  },"34": {
+    "doc": "Contributors",
+    "title": "Contributors of the WordPress accessibility documentation",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contributors/#contributors-of-the-wordpress-accessibility-documentation",
+    "relUrl": "/docs/contributors/#contributors-of-the-wordpress-accessibility-documentation"
+  },"35": {
+    "doc": "Contributors",
+    "title": "Props for content, discussion, code, design and reviews",
+    "content": ". | Paul van Buuren | Yoren Chang | Virginia Ciambriello | Moses Cursor Ssebunya | Gary Jones | Wendie Huis in’t Veld | Johan Huijkman | Jeffrey Lauwers | Caitlin de Rooij | Savi Sinnema | Annelies Verhelst | . Project leads . | Joe Dolson | Rian Rietveld | . GitHub contributor list . | | | | | | | . ",
+    "url": "/pr-preview/pr-77/docs/contributors/#props-for-content-discussion-code-design-and-reviews",
+    "relUrl": "/docs/contributors/#props-for-content-discussion-code-design-and-reviews"
+  },"36": {
+    "doc": "Contributors",
+    "title": "Contributors",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contributors/",
+    "relUrl": "/docs/contributors/"
+  },"37": {
+    "doc": "Sponsors",
+    "title": "Sponsors",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-77/docs/sponsors/",
+    "relUrl": "/docs/sponsors/"
+  },"38": {
+    "doc": "Introduction to WCAG",
+    "title": "Introduction to WCAG",
+    "content": "The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. These guidelines are created and updated by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C). WordPress Accessibility Coding Standard: . All new or updated code released in WordPress must conform with the WCAG 2.2 guidelines at level AA. WordPress Accessibility Coding Standard ",
+    "url": "/pr-preview/pr-77/docs/start/wcag-intro/",
+    "relUrl": "/docs/start/wcag-intro/"
+  },"39": {
+    "doc": "Introduction to WCAG",
+    "title": "WCAG explained",
+    "content": "When building a new website, theme, or plugin, ask yourself these four questions: . | Is all content available to everyone? (Perceivable) | Can visitors use all functionality? (Operable) | Can visitors comprehend all content? (Understandable) | Can visitors use any device? (Robust) | . These are the four principles of Web Content Accessibility Guidelines (WCAG) of what a website should be: perceivable, operable, understandable and robust. Perceivable . Is all content available to everyone? . | Provide text alternatives for non-text content (e.g., images). | Provide captions and other alternatives for multimedia. | Create content that can be presented in different ways without losing meaning. | Make it easy for users to see and hear content (e.g., by using color well, offering multimedia controls, and allowing text resizing). | . Operable . Can visitors use all functionality? . | Make all essential functionality available from a keyboard. | Give users enough time to read and use content. | Do not use content that causes seizures. | Help users navigate and find content. | . Understandable . Can visitors comprehend all content? . | Make text readable and understandable. | Use easy-to-comprehend text — avoid complex wording. | Make content appear and operate in predictable ways. | Guide users to avoid and correct mistakes. | . Robust . Can visitors use any device? . | Content must be able to be interpreted reliably by a wide variety of user agents, including assistive technologies. | All user interface components should have programmatically determinable names and roles. | . ",
+    "url": "/pr-preview/pr-77/docs/start/wcag-intro/#wcag-explained",
+    "relUrl": "/docs/start/wcag-intro/#wcag-explained"
+  },"40": {
+    "doc": "Introduction to WCAG",
+    "title": "Levels of Accessibility",
+    "content": "There are 3 levels of accessibility: . | A (basic) | AA (the global accessibility standard) | AAA (for dedicated software) | . TODO: add content about version . TODO: add info about different principle/ guideline/succes criteria/technique. Most European Union and many other countries use the accessibility standard WCAG 2.1 AA or equivalent for their government websites. Some countries require compliance with these guidelines for commercial websites, so the accessibility team uses these guidelines to improve WordPress core. Overview of government accessibility laws and policies from the Web Accessibility Initiative. The WCAG Quick Reference is a good starting to read the guidelines. Use common sense when following WCAG techniques. Pick the one(s) that work well with your theme or plugin. Decide which browser and versions your theme or plugin will support. Some WCAG techniques apply only to older browsers, e.g, Internet Explorer 7 and below. WordPress no longer supports Internet Explorer as of version 5.8. TODO: what is the WP baseline now? A link may be better. TODO: Link to Standards and best practice/ WCAG (to be written) for more in dept info . ",
+    "url": "/pr-preview/pr-77/docs/start/wcag-intro/#levels-of-accessibility",
+    "relUrl": "/docs/start/wcag-intro/#levels-of-accessibility"
+  },"41": {
+    "doc": "Quick wins",
+    "title": "Quick wins",
+    "content": "TODO: Add links when there is content to link to in Standards and Practice. What to do first? Start with the low-hanging fruit. Color contrast of text ia an easy fix. Alternative text with images probably too. The most made errors reported in the yearly report WebAIM Million are: . | Low color contrast for texttext | Missing Alternative Text on images | Missing labels in forms | Empty links | Empty buttons | Missing language in the &lt;html&gt; element | . 96% of all errors detected fall into these six categories. So: if these errors are all sorted, you are already better than 96% of the web. TODO: Add content about what you can do when you can’t change your WordPress theme yourself. ",
+    "url": "/pr-preview/pr-77/docs/start/quick-wins/",
+    "relUrl": "/docs/start/quick-wins/"
+  },"42": {
+    "doc": "Debunking myths",
+    "title": "Debunking accessibility myths",
+    "content": "TODO: add into text. ",
+    "url": "/pr-preview/pr-77/docs/start/myths/#debunking-accessibility-myths",
+    "relUrl": "/docs/start/myths/#debunking-accessibility-myths"
+  },"43": {
+    "doc": "Debunking myths",
+    "title": "Debunking myths",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/start/myths/",
+    "relUrl": "/docs/start/myths/"
+  },"44": {
+    "doc": "Assistive technology",
+    "title": "Assistive technology",
+    "content": "TODO: Add (links to) content, demos and to how to test about the different ways people use the web . | keyboard only | screen reader | braille line | voice recognition software | zoom | [ … ] | . ",
+    "url": "/pr-preview/pr-77/docs/start/at/",
+    "relUrl": "/docs/start/at/"
+  },"45": {
+    "doc": "Accessibility for your business",
+    "title": "Accessibility for your business",
+    "content": "TODO: Add information about the European Accessibility Act (EAA). An inclusive website enhances your business. It will: . | Increase Traffic. More people can complete orders in your web shop. | Comply with the Law. Your website is better prepared to adhere to your nation’s accessibility regulations and government contract requirements. | Improve SEO. Google, the largest user of the internet, is blind and deaf. | . The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Entire countries are among this increased user-base: Israel, Norway and Australia require all company websites to be accessible. Many other nations have laws regarding website accessibility. The WAI provides an overview on Web Accessibility Laws &amp; Policies. Another vital group of users with neither sight nor hearing are search engines. Improving accessibility improves your site’s Google visibility, thus improving your search engine optimization. ",
+    "url": "/pr-preview/pr-77/docs/start/business/",
+    "relUrl": "/docs/start/business/"
+  },"46": {
+    "doc": "Training",
+    "title": "Training, learn web accessibility",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/start/training/#training-learn-web-accessibility",
+    "relUrl": "/docs/start/training/#training-learn-web-accessibility"
+  },"47": {
+    "doc": "Training",
+    "title": "WP Accessibility Day",
+    "content": "WP Accessibility Day is an online event with a 24-hour single track of presentations. Attendees can register for free and watch live streams of talks held via Zoom with live captions and American Sign Language (ASL) Interpretation. After the conference ends, presentations are edited, transcribed, captioned, and made freely available on the web. ",
+    "url": "/pr-preview/pr-77/docs/start/training/#wp-accessibility-day",
+    "relUrl": "/docs/start/training/#wp-accessibility-day"
+  },"48": {
+    "doc": "Training",
+    "title": "WordPress Accessibility Meetup",
+    "content": "The WordPress Accessibility Meetup is a global group of WordPress developers, designers, and users interested in building more accessible websites. Join us twice per month for meetups on a variety of topics related to making WordPress websites that can be used by people of all abilities. ",
+    "url": "/pr-preview/pr-77/docs/start/training/#wordpress-accessibility-meetup",
+    "relUrl": "/docs/start/training/#wordpress-accessibility-meetup"
+  },"49": {
+    "doc": "Training",
+    "title": "Online training",
+    "content": "There are many places around the internet where you can learn more about Accessibility either within the WordPress ecosystem or as a general technical concept. Here are a few suggestions: . | WordPress Accessibility at LinkedIn Learning. Learn about accessibility within WordPress from Joe Dolson, a WordPress core committer and contributor to the accessibility team. | The A11y Collective. A wide variety of online courses about accessibility on the web. | Deque University – Training and on-demand reference materials covering a wide variety of accessibility topics. | Course path on Website Accessibility at PluralSight. A series of courses on many aspects of website accessibility. | Lesson Plan on Theme Accessibility. Advice from Learn WordPress about making a theme accessible. | Mike Gifford maintains a large list of courses, webinars, educational videos and more, offered in web accessibility: a11y-courses. | . ",
+    "url": "/pr-preview/pr-77/docs/start/training/#online-training",
+    "relUrl": "/docs/start/training/#online-training"
+  },"50": {
+    "doc": "Training",
+    "title": "Training",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/start/training/",
+    "relUrl": "/docs/start/training/"
+  },"51": {
+    "doc": "Start with accessibility",
+    "title": "Start with accessibility",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/start/",
+    "relUrl": "/docs/start/"
+  },"52": {
+    "doc": "Start with accessibility",
+    "title": "What is web accessibility?",
+    "content": "Web accessibility refers to the inclusive practice of removing barriers that prevent access to websites by people with disabilities. — Wikipedia The Web is for everyone, not just those who see, hear and move well. Building your website for inclusion, rather than exclusion, increases access for people of all abilities; as well as for all types of browsers and search engines. ",
+    "url": "/pr-preview/pr-77/docs/start/#what-is-web-accessibility",
+    "relUrl": "/docs/start/#what-is-web-accessibility"
+  },"53": {
+    "doc": "Start with accessibility",
+    "title": "What does a11y mean?",
+    "content": "Accessibility is often abbreviated as a11y; “a” is the first character of the word, and “y” the last , with 11 characters in between. (similar to i18n for “internationalization”). So when you tweet about accessibility, use the hashtags #a11y or #wpa11y. ",
+    "url": "/pr-preview/pr-77/docs/start/#what-does-a11y-mean",
+    "relUrl": "/docs/start/#what-does-a11y-mean"
+  },"54": {
+    "doc": "Start with accessibility",
+    "title": "Include everyone",
+    "content": "By adopting the accessibility best practices you can ensure your website can be used by a large group of different people. Don’t create for perfect people only. More about this in They’re not my visitors. ",
+    "url": "/pr-preview/pr-77/docs/start/#include-everyone",
+    "relUrl": "/docs/start/#include-everyone"
+  },"55": {
+    "doc": "Start with accessibility",
+    "title": "Consider your business",
+    "content": "The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Read about the business case in Accessibility for your business. ",
+    "url": "/pr-preview/pr-77/docs/start/#consider-your-business",
+    "relUrl": "/docs/start/#consider-your-business"
+  },"56": {
+    "doc": "Start with accessibility",
+    "title": "Consider your development process",
+    "content": "For developers web accessibility means a way of thinking often called progressive enhancement: . | Let the HTML tell the content. | Let the CSS present the content. | Let the JavaScript interact with the content. | . This division helps you create websites that are easier to maintain and update, and is considered to be a (c)lean approach to web development. Standards and best practice explains how to code with sematics and accessibility in mind. ",
+    "url": "/pr-preview/pr-77/docs/start/#consider-your-development-process",
+    "relUrl": "/docs/start/#consider-your-development-process"
+  },"57": {
+    "doc": "Start with accessibility",
+    "title": "In Summary",
+    "content": "A11y includes everyone when building websites. Think of it as your ally in optimizing your website’s user-experience, for as many people as possible, while furthering your business or organizational goals. ",
+    "url": "/pr-preview/pr-77/docs/start/#in-summary",
+    "relUrl": "/docs/start/#in-summary"
+  },"58": {
+    "doc": "Standards and best practice",
+    "title": "Standards and best practice",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-77/docs/topics/",
+    "relUrl": "/docs/topics/"
+  },"59": {
+    "doc": "WP and Accessibility",
+    "title": "WordPress and Accessibility",
+    "content": "What is WordPress and why this site. Answer questions like does WP have an a11y statement of an ATAG etc. ",
+    "url": "/pr-preview/pr-77/docs/wordpress-accessibility/#wordpress-and-accessibility",
+    "relUrl": "/docs/wordpress-accessibility/#wordpress-and-accessibility"
+  },"60": {
+    "doc": "WP and Accessibility",
+    "title": "WP and Accessibility",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/wordpress-accessibility/",
+    "relUrl": "/docs/wordpress-accessibility/"
+  },"61": {
+    "doc": "Team and process",
+    "title": "Team and process",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-77/docs/team-process/",
+    "relUrl": "/docs/team-process/"
+  },"62": {
+    "doc": "How to contribute",
+    "title": "How to contribute to the Knowledge Base",
+    "content": "Do you want to help maintain and extend this website? . Please note: we use GitHub to maintain and extend the content of the knowledge base. A GitHub account is free. ",
+    "url": "/pr-preview/pr-77/docs/contribute/#how-to-contribute-to-the-knowledge-base",
+    "relUrl": "/docs/contribute/#how-to-contribute-to-the-knowledge-base"
+  },"63": {
+    "doc": "How to contribute",
+    "title": "Write or review content for the knowledge base",
+    "content": "Starting August 22nd, ‘25 we will publish topics to be written for the knowledge base labeled documentation in our GitHub repository. There are several ways you can contribute to the documentation: . | Create a new issue on GitHub and share your ideas. | Pick an issue on the WP A11y Docs project board from the Todo column. | Add a comment with a GitHub issue you have an opinion about. | Join the Accessibility table at a WordCamp contributor day and share your ideas. | Share a comment in the Make WordPress #accessibility-docs Slack channel. | Create a GitHub pull request. | . If you need help, feel free to reach out to us by opening an issue with your question. Please respect our Code of Conduct. ",
+    "url": "/pr-preview/pr-77/docs/contribute/#write-or-review-content-for-the-knowledge-base",
+    "relUrl": "/docs/contribute/#write-or-review-content-for-the-knowledge-base"
+  },"64": {
+    "doc": "How to contribute",
+    "title": "Audit the accessibility of this website",
+    "content": "A website about accessibility (a11y) must be accessible itself. That’s a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We’d love to have an independent WCAG-EM audit, that results in a WCAG-EM report. Your name or your company name will be added to the contributors list. We then will add that information in our accessibility statement and fix the issues found. See the GitHub issue: Audit the website for accessibility WCAG 2.2 AA. Did you notice an a11y-issue on this website? Please inform us by opening an issue on GitHub. Please note: this is only for accessibility issues in this website and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. Contribute with regular accessibility audits . We would value a full WCAG-EM audit and WCAG-EM report for WCAG 2.2 AA to start and a yearly update for the new content and functionality. Your name or your company name will be added to the sponsor list. Contact Rian Rietveld if you want to sponsor this project with regular WCAG-EM audits of wpaccessibility.org. ",
+    "url": "/pr-preview/pr-77/docs/contribute/#audit-the-accessibility-of-this-website",
+    "relUrl": "/docs/contribute/#audit-the-accessibility-of-this-website"
+  },"65": {
+    "doc": "How to contribute",
+    "title": "Improve this website",
+    "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. The theme is based on the Jekyll theme Just the Docs. For the changes made in Just the Docs, please read the Changelog for Release v0.1. A website is never finished and there is always one more bug. If you want to help improve this website, please check out the issues in GitHub labeled website. Read how to do a local install in the page GitHub pull requests for the Knowledge Base . ",
+    "url": "/pr-preview/pr-77/docs/contribute/#improve-this-website",
+    "relUrl": "/docs/contribute/#improve-this-website"
+  },"66": {
+    "doc": "How to contribute",
+    "title": "How to contribute",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contribute/",
+    "relUrl": "/docs/contribute/"
+  },"67": {
+    "doc": "Legislation",
+    "title": "Legislation",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-77/docs/legislation/",
+    "relUrl": "/docs/legislation/"
+  },"68": {
+    "doc": "Reading guide",
+    "title": "Reading guide",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-77/docs/guide/",
+    "relUrl": "/docs/guide/"
+  },"69": {
+    "doc": "Resources",
+    "title": "Resources on accessibility",
+    "content": "Content follows. ",
+    "url": "/pr-preview/pr-77/docs/resources/#resources-on-accessibility",
+    "relUrl": "/docs/resources/#resources-on-accessibility"
+  },"70": {
+    "doc": "Resources",
+    "title": "Resources",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/resources/",
+    "relUrl": "/docs/resources/"
+  },"71": {
+    "doc": "Contact",
+    "title": "Contact the WP Accessibility Docs Team",
+    "content": "There are several ways to contact us: . | Open an issue on GitHub with your question. | Fill out the contact form on make.wordpress.org. You don’t need to log-in for this. | Share a comment in the Make WordPress #accessibility-docs Slack channel. | . Contact Rian Rietveld if you want to sponsor this project. We still need a few sponsors to cover our time and costs. ",
+    "url": "/pr-preview/pr-77/docs/contact/#contact-the-wp-accessibility-docs-team",
+    "relUrl": "/docs/contact/#contact-the-wp-accessibility-docs-team"
+  },"72": {
+    "doc": "Contact",
+    "title": "Contact",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contact/",
+    "relUrl": "/docs/contact/"
+  },"73": {
+    "doc": "Keyboard testing",
+    "title": "Keyboard navigation testing",
+    "content": "TODO: Starter content. This content should be reviewed and restructured. The links need to be checked and updated. Some info/resources can be moved to the topics (and linked to) Standards and best practice. All functionality should work using a keyboard only. This essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development. ",
+    "url": "/pr-preview/pr-77/docs/testing/keyboard/#keyboard-navigation-testing",
+    "relUrl": "/docs/testing/keyboard/#keyboard-navigation-testing"
+  },"74": {
+    "doc": "Keyboard testing",
+    "title": "How to keyboard test:",
+    "content": ". | Keyboard Accessibility by WebAIM | Workshop keyboard accessibility | . Tab through your pages, links and forms to do the following tests: . | Confirm all links can be reached and activated via keyboard, including any inside drop downs | Confirm all links have a strong visible focus indicator | Confirm all focusable visually hidden content (such as skip links) become visible when in focus. | Confirm all interactions – form fields, buttons, and other controls – can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard. | Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting. | . ",
+    "url": "/pr-preview/pr-77/docs/testing/keyboard/#how-to-keyboard-test",
+    "relUrl": "/docs/testing/keyboard/#how-to-keyboard-test"
+  },"75": {
+    "doc": "Keyboard testing",
+    "title": "Keyboard testing",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/testing/keyboard/",
+    "relUrl": "/docs/testing/keyboard/"
+  },"76": {
+    "doc": "Overall checklists",
+    "title": "Checklists for accessibility testing overall",
+    "content": "TODO: Starter content. This content needs to extended and some checklists can be added from the other Testing content. Accessibility testing guide by the Britisch Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion. Check your WCAG compliance by the A11y Project. The checks are ordered by topic. WebAIM’s WCAG 2 Checklist, a checklist that presents recommendations for implementing the most common accessibility principles and techniques for those seeking WCAG conformance. ",
+    "url": "/pr-preview/pr-77/docs/testing/checklists/#checklists-for-accessibility-testing-overall",
+    "relUrl": "/docs/testing/checklists/#checklists-for-accessibility-testing-overall"
+  },"77": {
+    "doc": "Overall checklists",
+    "title": "Overall checklists",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/testing/checklists/",
+    "relUrl": "/docs/testing/checklists/"
+  },"78": {
+    "doc": "Content checks",
+    "title": "Content checks for web accessibility",
+    "content": "TODO: Starter content. This content should be reviewed and restructured. The links need to be checked and updated. Some info/resources can be moved to the topics (and linked to) Standards and best practice. This page gives an overview of practical approaches and best practices for to keep your content as readable for as many users as possible. ",
+    "url": "/pr-preview/pr-77/docs/testing/content/#content-checks-for-web-accessibility",
+    "relUrl": "/docs/testing/content/#content-checks-for-web-accessibility"
+  },"79": {
+    "doc": "Content checks",
+    "title": "Reading level",
+    "content": "People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read. Resources: . | WordPress Accessibility Handbook on readability | Reading level, accessibility for web writers | 1Up Your Writing with Plain Language by Ashley Bischoff (slides) | . ",
+    "url": "/pr-preview/pr-77/docs/testing/content/#reading-level",
+    "relUrl": "/docs/testing/content/#reading-level"
+  },"80": {
+    "doc": "Content checks",
+    "title": "Headings",
+    "content": "Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book: . | One H1 per page, describing what the page is about | Use the other headings meaningful by their level and not by their font size | A good heading describes in short the content that follows | Do not skip a heading level | . Resources . | Heading structure in theme development | Headings in the content | . ",
+    "url": "/pr-preview/pr-77/docs/testing/content/#headings",
+    "relUrl": "/docs/testing/content/#headings"
+  },"81": {
+    "doc": "Content checks",
+    "title": "Link texts",
+    "content": ". | Use meaningful link text that describes the content being linked to | Avoid “click here”, “read more”, ”download”, ”continue reading” as link text. It’s meaningless and people have to read around the link to see what’s it about | If you use an image as link, use the alternative text as link text | . Resources: . | Good link texts | . ",
+    "url": "/pr-preview/pr-77/docs/testing/content/#link-texts",
+    "relUrl": "/docs/testing/content/#link-texts"
+  },"82": {
+    "doc": "Content checks",
+    "title": "Video and audio",
+    "content": ". | Make sure video has closed captions | Make sure audio has transcriptions | Don’t autoplay video and audio | . ",
+    "url": "/pr-preview/pr-77/docs/testing/content/#video-and-audio",
+    "relUrl": "/docs/testing/content/#video-and-audio"
+  },"83": {
+    "doc": "Content checks",
+    "title": "Alternative text for images",
+    "content": "Always give images proper alternative text using the W3C alt decision tree. Resources: . | Alternative text for images | Images as link | . ",
+    "url": "/pr-preview/pr-77/docs/testing/content/#alternative-text-for-images",
+    "relUrl": "/docs/testing/content/#alternative-text-for-images"
+  },"84": {
+    "doc": "Content checks",
+    "title": "Related posts",
+    "content": ". | Test for web accessibility: introduction | Test for web accessibility: design | Test for web accessibility: frontend code (DOM) | . ",
+    "url": "/pr-preview/pr-77/docs/testing/content/#related-posts",
+    "relUrl": "/docs/testing/content/#related-posts"
+  },"85": {
+    "doc": "Content checks",
+    "title": "Content checks",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/testing/content/",
+    "relUrl": "/docs/testing/content/"
+  },"86": {
+    "doc": "Frontend code checks",
+    "title": "Frontend checks for web accessibility",
+    "content": "TODO: Starter content. This content should be reviewed and restructured. The links need to be checked and updated. Some info/resources can be moved to the topics (and linked to) Standards and best practice. Testing for valid, semantic HTML is essential for the accessibility of your work. In this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development and before you commit your work. While you develop, always check the following items while developing: keyboard navigation, W3C validation, WCAG 2 AA validation and then announcement of dynamic changes for screen readers. Note: automated testing is not perfect. Automated testing rarely catchies more than about 30% of types of issues. They also give false positives. Manual testing is required to find most issues. ",
+    "url": "/pr-preview/pr-77/docs/testing/code/#frontend-checks-for-web-accessibility",
+    "relUrl": "/docs/testing/code/#frontend-checks-for-web-accessibility"
+  },"87": {
+    "doc": "Frontend code checks",
+    "title": "What is web accessibility?",
+    "content": "Using semantic, meaningful, valid HTML5. The way all devices, browsers and users can understand and interact with the functionality on a web page. The best resource for HTML5 are the Mozilla Developer Network web docs. For WordPress, we aim to meet WCAG accessibility guidelines at level AA and the W3C standards. In the WordPress Accessibility handbook section Best Practices you’ll find examples and resources. You need to do two different checks, one for keyboard navigation and one for DOM validation. Key topics to check . | Write semantic, meaningful HTML . | Use a &lt;button&gt; to invoke an action and an &lt;a&gt; for a change of location. | A &lt;div&gt; or &lt;span&gt; doesn’t natively provide interactivity, and should not be used for links or buttons. | . | Heading text and level matter | Make link and button text meaningful | Use the .screen-reader-text class, a CSS class to hide text visually while leaving it available to screen readers. | Always give images a proper alt attribute following the alt decision tree | Forms: . | always explicitly link labels to an input control. If the label must be invisible for the design, hide it with the screen-reader-text class | Wrap check box groups and radio buttons in a &lt;fieldset&gt; and add a &lt;legend&gt; describing the group of controls | . | Always define both a :hover and :focus states in your CSS | Announce dynamic changes with aria-live or wp.a11y.speak() | . ",
+    "url": "/pr-preview/pr-77/docs/testing/code/#what-is-web-accessibility",
+    "relUrl": "/docs/testing/code/#what-is-web-accessibility"
+  },"88": {
+    "doc": "Frontend code checks",
+    "title": "Frontend code checks",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/testing/code/",
+    "relUrl": "/docs/testing/code/"
+  },"89": {
+    "doc": "Screen reader testing",
+    "title": "Screen reader testing",
+    "content": "TODO: Starter content. This content should be reviewed and restructured. The links need to be checked and updated. Some info/resources can be moved to the topics (and linked to) Standards and best practice. Content that changes dynamically during time, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website! . While we know that many developers work primarily on MacOS, testing only with Apple’s VoiceOver is not sufficient. VoiceOver, while fairly common, has many non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience. Screen reader testing . | Testing with Screen Readers: Questions and Answers | Screen reader keyboard shortcuts and gestures | Basic screen reader commands for accessibility testing | . Best screen reader / browser combinations . | VoiceOver with Safari, | NVDA with Chrome or FireFox | JAWS with Chrome, Edge or FireFox | Windows Narrator with Edge | . The screen readers ChromeVox and Orca don’t perform well enough as a screen reader, at this moment, to give representative test information. How to use a screen reader . | List of screen reader test tools in the Accessibility Handbook | VoiceOver Getting Started | VoiceOver cheat sheet by Paul J. Adam | NVDA | NVDA shortcuts | . ",
+    "url": "/pr-preview/pr-77/docs/testing/screen-readers/",
+    "relUrl": "/docs/testing/screen-readers/"
+  },"90": {
+    "doc": "WP plugins for testing",
+    "title": "WordPress’ plugins for accessibility testing",
+    "content": "TODO: Starter content. This content should be reviewed and restructured. The links need to be checked and updated. We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use in your own accessible WordPress site. Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
+    "url": "/pr-preview/pr-77/docs/testing/plugins/#wordpress-plugins-for-accessibility-testing",
+    "relUrl": "/docs/testing/plugins/#wordpress-plugins-for-accessibility-testing"
+  },"91": {
+    "doc": "WP plugins for testing",
+    "title": "Testing Tools &amp; Content Analysis",
+    "content": ". | Accessibility Checker – Accessibility testing tool that runs directly in your WordPress site. | WP ADA Compliance Check Basic – Accessibility testing tool that runs directly in your WordPress site. (Limit 15 posts or pages) | Fix Alt Text – Helps user find images with missing alternative text. | WP Accessibility Tools &amp; Missing Alt Text Finder – Provides accessibility testing and media analysis support. | Editoria11y – Accessibility checking tool geared towards content authors. | Sa11y – Accessibility checking tool geared towards content authors. | . ",
+    "url": "/pr-preview/pr-77/docs/testing/plugins/#testing-tools--content-analysis",
+    "relUrl": "/docs/testing/plugins/#testing-tools--content-analysis"
+  },"92": {
+    "doc": "WP plugins for testing",
+    "title": "WP plugins for testing",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/testing/plugins/",
+    "relUrl": "/docs/testing/plugins/"
+  },"93": {
+    "doc": "Automated testing",
+    "title": "Automated accessibility testing",
+    "content": "TODO: Starter content. This content should be reviewed and restructured. The links need to be checked and updated. Some info/resources can be moved to the topics (and linked to) Standards and best practice. ",
+    "url": "/pr-preview/pr-77/docs/testing/automated/#automated-accessibility-testing",
+    "relUrl": "/docs/testing/automated/#automated-accessibility-testing"
+  },"94": {
+    "doc": "Automated testing",
+    "title": "WCAG 2 AA automated validation",
+    "content": "The generated DOM, the front end of your web project, must conform to WCAG 2 AA. You can use automated validation to get a limited scope of your success at this. Recommended: . | aXe browser addon for Chrome and FireFox. The addon adds a tab to your inspector with a validate button. After validating you see the errors and warnings for that particular webpage and how to fix them. Make sure to also test in different views and with the menu open and closed, for example. | HTML_CodeSniffer | Accessibility Inspector in the Firefox Developer Tools. A good read about this by Marco Zehe: How to use NVDA and Firefox to test your web pages for accessibility | . More tools: . | React-a11y, Identifies accessibility issues in your React.js elements | Static AST checker for a11y rules on JSX elements | More Toolbars and toolkits in the Accessibility Handbook | . ",
+    "url": "/pr-preview/pr-77/docs/testing/automated/#wcag-2-aa-automated-validation",
+    "relUrl": "/docs/testing/automated/#wcag-2-aa-automated-validation"
+  },"95": {
+    "doc": "Automated testing",
+    "title": "Automated testing",
+    "content": "The big difference between PHP and JavaScript code standard checks and accessibility checks is that the accessibility checks need to be performed on the generated DOM, not on the code base. You need to run checks on a working WordPress site. This can be done using automation that sets up your environment dynamically, but still requires a fully built and run installation. There are several command line tools for automated testing like aXe-cli and pa11y. Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow. Setup for aXe-cli . Install axe-core for CLI first: . npm install axe-cli -g npm install chromedriver –g` . Then run axe in the command line: . axe url -b c . The url can be any url, also a local one. You get a report of the accessibility issues for that url. The -b stands for browser, c for chrome, as this browser gives the best results (better than the default PhantomJS). You will get the errors and warnings in your console. You can provide more (space separated) urls to the command like . axe url url2 url3 -b c . or call a file with urls like: . axe $( cat list-of-urls.txt ) -b c . Note: You can run axe-cli on more than one url in one command, but axe-cli is not build to run on a large amount of urls or on a complete site, axe-cli is not a crawler. Deque Labs recommends to use the axe-webdriverjs, a chainable aXe API for Selenium’s WebDriverJS for testing on a large amounts of urls. Setup for pa11y . The setup for pa11y is well documented in the GitHub repository. ",
+    "url": "/pr-preview/pr-77/docs/testing/automated/",
+    "relUrl": "/docs/testing/automated/"
+  },"96": {
+    "doc": "Automated testing",
+    "title": "Browser Toolbars &amp; Toolkits",
+    "content": ". | aXe accessibility testing tool — available as browser extension and npm module (axe-core) | WAVE — run the WAVE accessibility evaluation tool within Firefox and Chrome. | Accessibility inspector in the FireFox developer tools | AInspector for WCAG Accessibility Evaluation — Inspect web pages for potential accessibility issues. | Tota11y — An accessibility visualization toolkit that can be dragged into your bookmarks bar or installed as a plugin. | Total Validator — an HTML validator, accessibility validator, spell checker, and broken link checker all rolled into one tool. Free &amp; commercial versions available. | HeadingsMap — A Chrome or Firefox extension that shows the structure of headings on a webpage. | Visual ARIA Bookmarklet — A bookmarklet to visually display ARIA attributes on a webpage. | Accessibility Testing Tools for Desktop and Mobile Websites – A review of testing tools by Paul J. Adam. | Accessibility Bookmarklets – A collection of bookmarklets useful for accessibility testing. | . ",
+    "url": "/pr-preview/pr-77/docs/testing/automated/#browser-toolbars--toolkits",
+    "relUrl": "/docs/testing/automated/#browser-toolbars--toolkits"
+  },"97": {
+    "doc": "Design checks",
+    "title": "Design checks for web accessibility",
+    "content": "TODO: Starter content. This content should be reviewed and restructured. The links need to be checked and updated. Some info/resources can be moved to the topics (and linked to) Standards and best practice. The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design. Here are a few major issues to address. At the end of the page you’ll find links to good resources with more examples and solutions. ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#design-checks-for-web-accessibility",
+    "relUrl": "/docs/testing/design/#design-checks-for-web-accessibility"
+  },"98": {
+    "doc": "Design checks",
+    "title": "Color contrast",
+    "content": "Check the color contrast ratio between text and its background. The rules in WCAG 2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold. There are many tools to calculate this easily, see Color contrast checkers. Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway. ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#color-contrast",
+    "relUrl": "/docs/testing/design/#color-contrast"
+  },"99": {
+    "doc": "Design checks",
+    "title": "Color Contrast",
+    "content": ". | contrastchecker.com (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast | Color Contrast Analyser (Windows and OSX)– checks foreground/background contrast levels and preview designs as they might be seen by color blind users. | Sim Daltonism — a color blindness simulator for Mac OS X. | Colorblind Web Page Filter — apply a color blindness emulating filter to a web page. | Color Palette Accessibility Evaluator — analyze color combinations for conformance to accessibility guidelines. | . ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#color-contrast-1",
+    "relUrl": "/docs/testing/design/#color-contrast-1"
+  },"100": {
+    "doc": "Design checks",
+    "title": "Not by color alone",
+    "content": ". | Don’t depend on color for meaning – it’s fine to use color, as long as that isn’t the only identifying characteristic | Links in text must stand out as links, make them underlined | Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds; include clear text messages or icons, as well. | . Color blindness check tools: . | Look at your design only in grey scale colors, remove all color. Can you still understand it? | Sim Daltonism tool for color blindness check. | Coblis – Color Blindness Simulator | . ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#not-by-color-alone",
+    "relUrl": "/docs/testing/design/#not-by-color-alone"
+  },"101": {
+    "doc": "Design checks",
+    "title": "Not by icon alone",
+    "content": "Add text with icons, if they are an essential part of the functionality. Make sure interactive elements such as navigation menus are labelled correctly. Not every user understands the icons (hamburgers) that are obvious to you. ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#not-by-icon-alone",
+    "relUrl": "/docs/testing/design/#not-by-icon-alone"
+  },"102": {
+    "doc": "Design checks",
+    "title": "For users with dyslexia",
+    "content": ". | No large blocks of text, e.g. use short paragraphs, headings and lists to divide the information | Uppercase font is harder to read | Handwritten font is harder to read | A font size of 16 pixels minimum, is best for most devices | Make the line height not too small | . ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#for-users-with-dyslexia",
+    "relUrl": "/docs/testing/design/#for-users-with-dyslexia"
+  },"103": {
+    "doc": "Design checks",
+    "title": "For users with limited vision",
+    "content": "Keep together what belongs together: place related links or controls near each other. Some people don’t have an overview of everything that’s on a page, like people with glaucoma. Don’t make them search for a submit button that’s on the bottom right, while the input fields is on the top left, for example. Make the order of things logical, most users read from top to bottom. For example, do not put required check boxes below the submit button in a form. ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#for-users-with-limited-vision",
+    "relUrl": "/docs/testing/design/#for-users-with-limited-vision"
+  },"104": {
+    "doc": "Design checks",
+    "title": "For users with an attention disorder",
+    "content": ". | Users must be able to pause animations, or the animations must automatically stop after 3 seconds | Avoid using too many elements that distract the user from reading the text or using the navigation. | . ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#for-users-with-an-attention-disorder",
+    "relUrl": "/docs/testing/design/#for-users-with-an-attention-disorder"
+  },"105": {
+    "doc": "Design checks",
+    "title": "Resources",
+    "content": ". | Section Use of color in this handbook | Inclusive Components | Inclusive Design Patterns – Heydon Pickering | Inclusive Design Checklist – Heydon Pickering | Web Accessibility for Designers | Accessible design: a process | 7 Things Every Designer Needs to Know about Accessibility – Jesse Hausler | Tips for Getting Started Designing for Web Accessibility – W3C | Writing accessible content – Sami Keijonen | 6 Principles Of Visual Accessibility Design – Jenna Erickson | Designing for Accessibility, Step 1: Colour Contrast – Neil Shankar | Accessible Design – Maja Benke (presentation) | Accessibility for everyone – Laura Kalbag (book) | WebAIM: on fonts | Pennsylvania State University: about Font Face | . ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#resources",
+    "relUrl": "/docs/testing/design/#resources"
+  },"106": {
+    "doc": "Design checks",
+    "title": "Related posts",
+    "content": ". | Test for web accessibility: introduction | Test for web accessibility: content | Test for web accessibility: frontend code (DOM) | . ",
+    "url": "/pr-preview/pr-77/docs/testing/design/#related-posts",
+    "relUrl": "/docs/testing/design/#related-posts"
+  },"107": {
+    "doc": "Design checks",
+    "title": "Design checks",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/testing/design/",
+    "relUrl": "/docs/testing/design/"
+  },"108": {
+    "doc": "Testing",
+    "title": "Accessibility testing",
+    "content": "TODO: A short intro needs to be written. ",
+    "url": "/pr-preview/pr-77/docs/testing/#accessibility-testing",
+    "relUrl": "/docs/testing/#accessibility-testing"
+  },"109": {
+    "doc": "Testing",
+    "title": "Testing",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/testing/",
+    "relUrl": "/docs/testing/"
+  },"110": {
+    "doc": "About this website",
+    "title": "About this website",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/about/",
+    "relUrl": "/docs/about/"
+  },"111": {
+    "doc": "Home",
+    "title": "[work in progress] WP Accessibility Knowledge Base demo website",
+    "content": "Documentation about accessibility for WordPress users and creators. For the community, by the community. Please note: this website is a work in progress and is still in the setup phase. This knowledge base has no content yet and the site needs an accessibility audit. Please visit, for now, the documentation on the Make WordPress Accessible Handbook. This website aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation? . We’ll provide documentation, effective examples (both what to do and what to avoid) and reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples. We aim to meet WCAG 2.2 AA. Did we miss a topic? Did you find an error or have a great idea? Create an issue on our GitHub repository wpaccessibility/wp-a11y-docs. We would like to invite you to contribute to this Knowledge Base. Let’s make the web for everyone. ",
+    "url": "/pr-preview/pr-77/#work-in-progress-wp-accessibility-knowledge-base-demo-website",
+    "relUrl": "/#work-in-progress-wp-accessibility-knowledge-base-demo-website"
+  },"112": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "/pr-preview/pr-77/",
+    "relUrl": "/"
+  },"113": {
+    "doc": "Licences",
+    "title": "Licenses",
+    "content": "The text of the documentation is created by the WordPress and Accessibility community worldwide. This documentation is licenced as Creative Commons Zero 1.0 Universal (CC0-1.0). The licence under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. Theme of this website is based on the Just The Docs Jekyll theme. Just the Docs is distributed by an MIT license. Copyright (c) 2016 Patrick Marsceill . ",
+    "url": "/pr-preview/pr-77/docs/about/licence/#licenses",
+    "relUrl": "/docs/about/licence/#licenses"
+  },"114": {
+    "doc": "Licences",
+    "title": "Licences",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/about/licence/",
+    "relUrl": "/docs/about/licence/"
+  },"115": {
+    "doc": "Overlays",
+    "title": "Overlays",
+    "content": "TODO: Add content: . | what is an overlay | to consider: WP plugins for overlays and their claim (maybe not) | the difference between an overlay and a toolbar | link to overlayfactsheet.com | include video Overlays Underwhelm. | add more resources from within the WP community | . ",
+    "url": "/pr-preview/pr-77/docs/start/myths/overlays/",
+    "relUrl": "/docs/start/myths/overlays/"
+  },"116": {
+    "doc": "They're not my visitors",
+    "title": "They’re not my visitors",
+    "content": "We often design and build for a perfect user in a perfect setting: someone who’s young, healthy, full of energy, tech-savvy, well-rested, sitting in a quiet room, free from distractions, not hungover, sipping coffee, and with all the time in the world. But is that your visitor, is that even you? . For example: did you ever watch a video in a full, noisy train, and you forgot your headset? Wouldn’t it be nice to have captioning of the spoken text of the video. ",
+    "url": "/pr-preview/pr-77/docs/start/myths/personas/#theyre-not-my-visitors",
+    "relUrl": "/docs/start/myths/personas/#theyre-not-my-visitors"
+  },"117": {
+    "doc": "They're not my visitors",
+    "title": "Consider these people",
+    "content": ". | Cheyenne has arthritis and cannot use a mouse, She uses a keyboard but cannot activate a hamburger menu. | Carel has Parkinson’s disease. His hands are not steady enough to mouse-click on a link with tiny text. | Louis uses a screen reader. He struggles to understand a page’s content because its markup has no logical heading structure. | Kaia is blind. Links that are an image or an icon font, with no link text, are effectively invisible to her. | Carlos is color blind. He can’t distinguish the red links from the black text. | Ray is in his 60s. His eyesight has degraded. He can no longer read small grey text on top a darker grey background. | Braiden has ADD (Attention Deficit Disorder). A distracting animation in the sidebar, with no user-control for stopping, prevents her from focusing on the page content. | Alyssa is deaf. A video without subtitles is unusable to her. | Yurem has Down syndrome. He can’t comprehend the content of a webpage because the writing is unnecessarily complicated. | Jabari lives in Western Africa. He has a slow Internet connection. Sites bloated with heavy scripts and images keep him from browsing a substantial portion of the Web. | . These people, and many more like them, already face lots of life challenges. By adopting the a11y best practices you can ensure your website does not add their challenges. ",
+    "url": "/pr-preview/pr-77/docs/start/myths/personas/#consider-these-people",
+    "relUrl": "/docs/start/myths/personas/#consider-these-people"
+  },"118": {
+    "doc": "They're not my visitors",
+    "title": "Resources",
+    "content": ". | Blind people don’t visit my website by The A11Y Collective. | . ",
+    "url": "/pr-preview/pr-77/docs/start/myths/personas/#resources",
+    "relUrl": "/docs/start/myths/personas/#resources"
+  },"119": {
+    "doc": "They're not my visitors",
+    "title": "They're not my visitors",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/start/myths/personas/",
+    "relUrl": "/docs/start/myths/personas/"
+  },"120": {
+    "doc": "Pull requests",
+    "title": "GitHub pull requests for the Knowledge Base",
+    "content": "First, create a new issue on GitHub or find an issue you want to help with on in our GitHub repository labeled “documentation”. Also check if there isn’t already an open issue about what you want to add or change. ",
+    "url": "/pr-preview/pr-77/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base",
+    "relUrl": "/docs/contribute/pull-requests/#github-pull-requests-for-the-knowledge-base"
+  },"121": {
+    "doc": "Pull requests",
+    "title": "How to make a good pull request",
+    "content": "Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to. All Knowledge Base files live in the /docs/ directory. For Markdown, we use the Markdown Style Guide. Please check for grammer and spelling errors before submitting the PR. ",
+    "url": "/pr-preview/pr-77/docs/contribute/pull-requests/#how-to-make-a-good-pull-request",
+    "relUrl": "/docs/contribute/pull-requests/#how-to-make-a-good-pull-request"
+  },"122": {
+    "doc": "Pull requests",
+    "title": "Create a pull request from a fork on GitHub with your text.",
+    "content": "GitHub offers good documentation on how to create a pull request using a fork on: Creating a pull request from a fork. ",
+    "url": "/pr-preview/pr-77/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text",
+    "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text"
+  },"123": {
+    "doc": "Pull requests",
+    "title": "Create a pull request from a fork using a local install",
+    "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. Please read Local install of the website in wp-a11y-docs/README.md. ",
+    "url": "/pr-preview/pr-77/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install",
+    "relUrl": "/docs/contribute/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install"
+  },"124": {
+    "doc": "Pull requests",
+    "title": "Pull Request Previews",
+    "content": "When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging. Preview URLs follow the format: https://wpaccessibility.org/pr-preview/pr-{number}/. ",
+    "url": "/pr-preview/pr-77/docs/contribute/pull-requests/#pull-request-previews",
+    "relUrl": "/docs/contribute/pull-requests/#pull-request-previews"
+  },"125": {
+    "doc": "Pull requests",
+    "title": "Pull requests",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/contribute/pull-requests/",
+    "relUrl": "/docs/contribute/pull-requests/"
+  },"126": {
+    "doc": "Theme of this website",
+    "title": "Theme of this website",
+    "content": "This website is powered by Jekyll and based on the theme Just the Docs. Just the ddocs: Copyright© 2017-2020 Patrick Marsceill. Distributed by an MIT licence. ",
+    "url": "/pr-preview/pr-77/docs/about/theme/",
+    "relUrl": "/docs/about/theme/"
+  },"127": {
+    "doc": "WP Accessibility Team",
+    "title": "Info about the WordPress Accessibility Team",
+    "content": "Info and links. ",
+    "url": "/pr-preview/pr-77/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team",
+    "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team"
+  },"128": {
+    "doc": "WP Accessibility Team",
+    "title": "WP Accessibility Team",
+    "content": " ",
+    "url": "/pr-preview/pr-77/docs/wordpress-accessibility/wp-a11y-team/",
+    "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/"
+  }
+}
