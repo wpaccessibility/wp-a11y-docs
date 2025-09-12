@@ -1,0 +1,32 @@
+---
+title: Keyboard testing
+layout: default
+parent: Testing
+nav_order: 6
+---
+
+# Keyboard navigation testing
+
+{: .warning }
+**TODO:**
+Starter content. This content should be reviewed and restructured.
+The links need to be checked and updated.
+Some info/resources can be moved to the topics (and linked to) Standards and best practice.
+
+All functionality should work using a **keyboard only**. This essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.
+
+## How to keyboard test:
+
+- [Keyboard Accessibility](https://webaim.org/techniques/keyboard/) by WebAIM
+- [Workshop keyboard accessibility](http://rianrietveld.com/2016/05/10/keyboard/)
+
+Tab through your pages, links and forms to do the following tests:
+
+- Confirm all links can be reached and activated via keyboard, including any inside drop downs
+- Confirm all links have a strong visible focus indicator
+- Confirm all focusable [visually hidden content](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/) (such as [skip links](https://make.wordpress.org/accessibility/handbook/best-practices/markup/skip-links/)) become visible when in focus.
+- Confirm all interactions – form fields, buttons, and other controls – can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.
+- Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting.
+
+
+
