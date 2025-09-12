@@ -1136,13 +1136,13 @@ div.opaque {
   background-color: #fff;
 }
 
-p.tutorial {
+p.example {
   background: rgba(65, 214, 147, 0.1);
   border-left: 4px solid #026e57;
   border-radius: 4px;
   padding: 0.8rem;
 }
-p.tutorial::before {
+p.example::before {
   content: "Example";
   display: block;
   font-weight: bold;
@@ -1150,7 +1150,7 @@ p.tutorial::before {
   font-size: 0.75em;
   padding-bottom: 0.125rem;
 }
-p.tutorial > .tutorial-title {
+p.example > .tutorial-title {
   display: block;
   font-weight: bold;
   text-transform: uppercase;
@@ -1308,6 +1308,82 @@ p.warning-title {
   padding: 0.8rem;
 }
 p.warning-title > p:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+
+p.dont {
+  background: rgba(247, 126, 126, 0.1);
+  border: 2px solid #b62424;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+p.dont::before {
+  content: "Don't";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+p.dont > .dont-title {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+
+p.dont-title {
+  background: rgba(247, 126, 126, 0.1);
+  border: 2px solid #b62424;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+p.dont-title > p:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+
+p.do {
+  background: rgba(65, 214, 147, 0.1);
+  border: 2px solid #41d693;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+p.do::before {
+  content: "Do";
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+p.do > .dont-title {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  padding-bottom: 0.125rem;
+}
+
+p.do-title {
+  background: rgba(65, 214, 147, 0.1);
+  border: 2px solid #41d693;
+  border-radius: 4px;
+  padding: 0.8rem;
+}
+p.do-title > p:first-child {
   margin-top: 0;
   margin-bottom: 0;
   display: block;
