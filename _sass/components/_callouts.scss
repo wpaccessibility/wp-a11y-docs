@@ -7,7 +7,7 @@ div.opaque {
   background-color: $body-background-color;
 }
 
-p.tutorial {
+p.example {
   background: rgba($green-000, 0.1);
   border-left: $border-radius solid $green-300;
   border-radius: $border-radius;
@@ -188,6 +188,88 @@ p.warning {
 p.warning-title {
   background: rgba($red-000, 0.1);
   border-left: $border-radius solid $red-300;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+  > p:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+}
+
+p.dont {
+  background: rgba($red-000, 0.1);
+  border: 2px solid $red-300;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+  &::before {
+    content: "Don't";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+
+  > .dont-title {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+}
+
+p.dont-title {
+  background: rgba($red-000, 0.1);
+  border: 2px solid $red-300;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+  > p:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+}
+
+p.do {
+  background: rgba($green-000, 0.1);
+  border: 2px solid $green-000;
+  border-radius: $border-radius;
+  padding: 0.8rem;
+
+  &::before {
+    content: "Do";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+
+  > .dont-title {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-bottom: 0.125rem;
+  }
+}
+
+p.do-title {
+  background: rgba($green-000, 0.1);
+  border: 2px solid $green-000;
   border-radius: $border-radius;
   padding: 0.8rem;
 
