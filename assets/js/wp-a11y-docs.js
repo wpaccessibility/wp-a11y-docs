@@ -88,6 +88,9 @@ function initSearch() {
       });
 
       searchLoaded(index, docs);
+      window.jtdSearchIndex = index;
+      window.jtdSearchDocs = docs;
+
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);
     }
@@ -429,11 +432,12 @@ function searchLoaded(index, docs) {
         var active = document.querySelector('.search-result.active');
         if (active) {
           active.click();
-        } else {
-          var first = document.querySelector('.search-result');
-          if (first) {
-            first.click();
-          }
+        } 
+        else {
+            var inputValue = searchInput.value.trim();
+            if (inputValue.length > 0) {
+              window.location.href = '/search/?q=' + encodeURIComponent(inputValue);
+            }
         }
         return;
     }
@@ -560,3 +564,43 @@ jtd.onReady(function(){
 });
 
 })(window.jtd = window.jtd || {});
+
+// ---------------------------
+// Full Search Results Page
+// ---------------------------
+document.addEventListener("DOMContentLoaded", function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get("q");
+
+  if (query) {
+    const resultsContainer = document.getElementById("search-results-page");
+    if (resultsContainer) {
+      // Ensure index and docs exist
+      if (window.jtdSearchIndex && window.jtdSearchDocs) {
+        const index = window.jtdSearchIndex;
+        const docs = window.jtdSearchDocs;
+
+        let results = index.search(query);
+
+        if (results.length > 0) {
+          resultsContainer.innerHTML = `
+            <p>${results.length} results found for "<strong>${query}</strong>"</p>
+            <ul>
+              ${results.map(r => {
+                const doc = docs[r.ref];
+                return `
+                  <li>
+                    <a href="${doc.url}">${doc.title}</a><br>
+                    <small>${doc.relUrl}</small>
+                  </li>`;
+              }).join("")}
+            </ul>
+          `;
+        } else {
+          resultsContainer.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+        }
+      }
+    }
+  }
+});
+
