@@ -7,6 +7,11 @@ nav_order: 2
 
 # Introduction to WCAG
 
+{: .alert }
+Starter content. This content needs to be reviewed and expanded.  
+Related issue on [GitHub #92 Introduction to WCAG](https://github.com/wpaccessibility/wp-a11y-docs/issues/92).  
+If you want to work on this, please let us know before you start.
+
 The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. 
 
 These guidelines are created and updated by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C).
