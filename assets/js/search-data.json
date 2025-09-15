@@ -397,7 +397,7 @@
   },"66": {
     "doc": "Introduction to WCAG",
     "title": "Introduction to WCAG",
-    "content": "The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. These guidelines are created and updated by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C). WordPress Accessibility Coding Standard: . All new or updated code released in WordPress must conform with the WCAG 2.2 guidelines at level AA. WordPress Accessibility Coding Standard ",
+    "content": "Starter content. This content needs to be reviewed and expanded. Related issue on GitHub #92 Introduction to WCAG. If you want to work on this, please let us know before you start. The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. These guidelines are created and updated by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C). WordPress Accessibility Coding Standard: . All new or updated code released in WordPress must conform with the WCAG 2.2 guidelines at level AA. WordPress Accessibility Coding Standard ",
     "url": "/docs/start/wcag-intro/",
     "relUrl": "/docs/start/wcag-intro/"
   },"67": {
@@ -415,13 +415,13 @@
   },"69": {
     "doc": "Quick wins",
     "title": "Quick wins",
-    "content": "TODO: Add links when there is content to link to in Standards and Practice. What to do first? Start with the low-hanging fruit. Color contrast of text ia an easy fix. Alternative text with images probably too. The most made errors reported in the yearly report WebAIM Million are: . | Low color contrast for texttext | Missing Alternative Text on images | Missing labels in forms | Empty links | Empty buttons | Missing language in the &lt;html&gt; element | . 96% of all errors detected fall into these six categories. So: if these errors are all sorted, you are already better than 96% of the web. TODO: Add content about what you can do when you can’t change your WordPress theme yourself. ",
+    "content": "Starter content. This content needs to be reviewed and expanded. Related issue on GitHub #91 Topic Quick wins. If you want to work on this, please let us know before you start. What to do first? Start with the low-hanging fruit. Color contrast of text ia an easy fix. Alternative text with images probably too. The most made errors reported in the yearly report WebAIM Million are: . | Low color contrast for texttext | Missing Alternative Text on images | Missing labels in forms | Empty links | Empty buttons | Missing language in the &lt;html&gt; element | . 96% of all errors detected fall into these six categories. So: if these errors are all sorted, you are already better than 96% of the web. ",
     "url": "/docs/start/quick-wins/",
     "relUrl": "/docs/start/quick-wins/"
   },"70": {
     "doc": "Debunking myths",
     "title": "Debunking accessibility myths",
-    "content": "TODO: add into text. ",
+    "content": "This intro content needs to be written. Related issue on GitHub #95 Intro page Debunking accessibility myths. If you want to work on this, please let us know before you start. ",
     "url": "/docs/start/myths/#debunking-accessibility-myths",
     "relUrl": "/docs/start/myths/#debunking-accessibility-myths"
   },"71": {
@@ -433,19 +433,19 @@
   },"72": {
     "doc": "Assistive technology",
     "title": "Assistive technology",
-    "content": "TODO: Add (links to) content, demos and to how to test about the different ways people use the web . | keyboard only | screen reader | braille line | voice recognition software | zoom | [ … ] | . ",
+    "content": "This content needs to be written. Related issue on GitHub #87 Assistive technology. If you want to work on this, please let us know before you start. ",
     "url": "/docs/start/at/",
     "relUrl": "/docs/start/at/"
   },"73": {
     "doc": "Accessibility for your business",
     "title": "Accessibility for your business",
-    "content": "TODO: Add information about the European Accessibility Act (EAA). An inclusive website enhances your business. It will: . | Increase Traffic. More people can complete orders in your web shop. | Comply with the Law. Your website is better prepared to adhere to your nation’s accessibility regulations and government contract requirements. | Improve SEO. Google, the largest user of the internet, is blind and deaf. | . The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Entire countries are among this increased user-base: Israel, Norway and Australia require all company websites to be accessible. Many other nations have laws regarding website accessibility. The WAI provides an overview on Web Accessibility Laws &amp; Policies. Another vital group of users with neither sight nor hearing are search engines. Improving accessibility improves your site’s Google visibility, thus improving your search engine optimization. ",
+    "content": "Starter content. This content needs to be reviewed and expanded. Related issue on GitHub #94 Topic Accessibility for your business. If you want to work on this, please let us know before you start. An inclusive website enhances your business. It will: . | Increase Traffic. More people can complete orders in your web shop. | Comply with the Law. Your website is better prepared to adhere to your nation’s accessibility regulations and government contract requirements. | Improve SEO. Google, the largest user of the internet, is blind and deaf. | . The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Entire countries are among this increased user-base: Israel, Norway and Australia require all company websites to be accessible. Many other nations have laws regarding website accessibility. The WAI provides an overview on Web Accessibility Laws &amp; Policies. Another vital group of users with neither sight nor hearing are search engines. Improving accessibility improves your site’s Google visibility, thus improving your search engine optimization. ",
     "url": "/docs/start/business/",
     "relUrl": "/docs/start/business/"
   },"74": {
     "doc": "Training",
     "title": "Training, learn web accessibility",
-    "content": "TODO: Starter content. This content should be reviewed and extended Maybe devide into sub pages. The links need to be checked and updated. ",
+    "content": "This content needs to be reviewed and expanded. The links need to be checked and updated. Related issue on GitHub #93 Training. If you want to work on this, please let us know before you start. ",
     "url": "/docs/start/training/#training-learn-web-accessibility",
     "relUrl": "/docs/start/training/#training-learn-web-accessibility"
   },"75": {
@@ -601,7 +601,7 @@
   },"100": {
     "doc": "WCAG vs best practice",
     "title": "The difference between WCAG and best practice",
-    "content": "TODO: The content needs to be written. ",
+    "content": "This content needs to be written. Related issue on GitHub #98 Topic WCAG and best practice. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/best-practice/#the-difference-between-wcag-and-best-practice",
     "relUrl": "/docs/topics/best-practice/#the-difference-between-wcag-and-best-practice"
   },"101": {
@@ -997,7 +997,7 @@
   },"166": {
     "doc": "WCAG and compliance",
     "title": "WCAG and compliance",
-    "content": "TODO: This content should be reviewed and restructured and divided between separate topics. The World Wide Web Consortium (W3C) developed guidelines to safeguard the accessibility of a website: the Web Content Accessibility Guidelines: WCAG. The current recommended version is 2.2. For WordPress, we test against WCAG version 2.2 level AA. The page Introduction to WCAG explains how WCAG is put together and what all the terminology means, like principles, guidelines, succes criterion, techniques, levels and versions. ",
+    "content": "This content needs to be reviewed and expanded. Related issue on GitHub #97 Topic WCAG and compliance. If you want to work on this, please let us know before you start. The World Wide Web Consortium (W3C) developed guidelines to safeguard the accessibility of a website: the Web Content Accessibility Guidelines: WCAG. The current recommended version is 2.2. For WordPress, we test against WCAG version 2.2 level AA. The page Introduction to WCAG explains how WCAG is put together and what all the terminology means, like principles, guidelines, succes criterion, techniques, levels and versions. ",
     "url": "/docs/topics/wcag/",
     "relUrl": "/docs/topics/wcag/"
   },"167": {
@@ -1021,7 +1021,7 @@
   },"170": {
     "doc": "Standards and best practice",
     "title": "Standards and best practice",
-    "content": "TODO: This content needs to be written. ",
+    "content": "This intro content needs to be written. Related issue on GitHub #96 Intro page Standards and best practice. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/",
     "relUrl": "/docs/topics/"
   },"171": {
@@ -1081,7 +1081,7 @@
   },"180": {
     "doc": "Reading guide",
     "title": "Reading guide",
-    "content": "Content follows. ",
+    "content": "This content will be created later, when there is sufficient content to point to. Help discuss how to create a useful reading guide for various target groups with comments on issue GitHub #59 Reading guide. ",
     "url": "/docs/guide/",
     "relUrl": "/docs/guide/"
   },"181": {
@@ -1441,7 +1441,7 @@
   },"240": {
     "doc": "Overlays",
     "title": "Overlays",
-    "content": "TODO: Add content: . | what is an overlay | to consider: WP plugins for overlays and their claim (maybe not) | the difference between an overlay and a toolbar | link to overlayfactsheet.com | include video Overlays Underwhelm. | add more resources from within the WP community | . ",
+    "content": "This content needs to be written. Related issue on GitHub #88 Overlays. If you want to work on this, please let us know before you start. ",
     "url": "/docs/start/myths/overlays/",
     "relUrl": "/docs/start/myths/overlays/"
   },"241": {
@@ -1583,36 +1583,30 @@
     "url": "/docs/topics/content/tables/",
     "relUrl": "/docs/topics/content/tables/"
   },"264": {
-    "doc": "Theme of this website",
-    "title": "Theme of this website",
-    "content": "This website is powered by Jekyll and based on the theme Just the Docs. Just the ddocs: Copyright© 2017-2020 Patrick Marsceill. Distributed by an MIT licence. ",
-    "url": "/docs/about/theme/",
-    "relUrl": "/docs/about/theme/"
-  },"265": {
     "doc": "Use of color",
     "title": "Using color",
     "content": "TODO: This content should be reviewed and restructured. Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example, . | error, success, or note messages | links in the content | active, hover or focus states | display information updates | . Use additional styling to indicate types of information including a change of shape or decoration. For example: . | Change symbols in addition to color | Underline links that are embedded in text | . Grouped links in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that the text is a link, underlines are not required. However, in many cases underlining can increase the usability of your website. ",
     "url": "/docs/topics/design/color/use-of-color/#using-color",
     "relUrl": "/docs/topics/design/color/use-of-color/#using-color"
-  },"266": {
+  },"265": {
     "doc": "Use of color",
     "title": "Examples",
     "content": "Correct . Underline your links, which are placed between text. Undelined links are easier to see. Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white. Incorrect . Links not underlined – color blind users may have trouble distinguish links from text. Can you see the links now? . Color used as the only indicator for information or functionality . The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
     "url": "/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
-  },"267": {
+  },"266": {
     "doc": "Use of color",
     "title": "Use of color",
     "content": " ",
     "url": "/docs/topics/design/color/use-of-color/",
     "relUrl": "/docs/topics/design/color/use-of-color/"
-  },"268": {
+  },"267": {
     "doc": "WP Accessibility Team",
     "title": "Info about the WordPress Accessibility Team",
     "content": "Info and links. ",
     "url": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team",
     "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team"
-  },"269": {
+  },"268": {
     "doc": "WP Accessibility Team",
     "title": "WP Accessibility Team",
     "content": " ",
