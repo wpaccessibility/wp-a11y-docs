@@ -7,10 +7,10 @@ nav_order: 3
 
 # Training, learn web accessibility
 
-{: .warning }
-**TODO:**
-Starter content. This content should be reviewed and extended Maybe devide into sub pages.
-The links need to be checked and updated.
+{: .alert }
+This content needs to be reviewed and expanded. The links need to be checked and updated.
+Related issue on [GitHub #93 Training](https://github.com/wpaccessibility/wp-a11y-docs/issues/93).  
+If you want to work on this, please let us know before you start.
 
 ## Online events
 
@@ -35,7 +35,6 @@ There are many places around the internet where you can learn more about Accessi
 - [Lesson Plan on Theme Accessibility](https://learn.wordpress.org/lesson-plan/theme-accessibility/). Advice from [Learn WordPress ](https://learn.wordpress.org/) about making a theme accessible. 
 - Mike Gifford maintains a large list of courses, webinars, educational videos and more, offered in web accessibility: [a11y-courses](https://github.com/mgifford/a11y-courses).
 
-
 ## Free Knowledge Resources
 
 - [html5doctor.com](https://html5doctor.com/)
@@ -53,7 +52,6 @@ There are many places around the internet where you can learn more about Accessi
 - [Inclusive Components](https://inclusive-components.design/), pattern library, with a focus on inclusive design
 - [GOV.UK elements](https://patternlib.medway.gov.uk/)
 - [Deque University Code Examples and Accessibility Resources](https://dequeuniversity.com/resources/)
-
 
 ## Books
 
@@ -74,4 +72,3 @@ Sometimes, what you’re building doesn’t have an already-available accessible
 ### The WebAIM mailing list
 
 The [WebAIM mailing list](https://webaim.org/discussion/) is a long-running community forum for everyone who wants to grow in their accessibility journey, from beginner to expert. The archives span decades, and are available to search through. if you need to find the solution to a problem, or need help creating one, and you don’t know what question to ask when searching the archives, list members are very friendly and always willing to help, without judgment.
-

@@ -7,11 +7,7 @@ nav_order: 5
 
 # Assistive technology
 
-**TODO:** Add (links to) content, demos and to how to test about the different ways people use the web
-- keyboard only
-- screen reader
-- braille line
-- voice recognition software
-- zoom
-- [ ... ]
-
+{: .alert }
+This content needs to be written.
+Related issue on [GitHub #87 Assistive technology](https://github.com/wpaccessibility/wp-a11y-docs/issues/87).  
+If you want to work on this, please let us know before you start.
