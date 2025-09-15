@@ -10,7 +10,7 @@
 
 
 
-<title>Heading structure, WP Accessibility Knowledge Base</title>
+<title>WP Accessibility, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -367,8 +367,8 @@
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/docs/topics/code/'>Frontend code</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Heading structure</li>
+                <li class='breadcrumb-nav-list-item'><a href='/docs/start/'>Start with accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/docs/start/wp-plugins/'>WP Plugins</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">WP Accessibility</li>
     </ol>
 </nav>
 
@@ -377,63 +377,124 @@
 
         <main>
 
-          <h1 id="heading-structure-in-theme-development">Heading structure in theme development</h1>
+          <h1 id="wp-accessibility-plugin">WP accessibility plugin</h1>
 
 <p class="warning"><strong>TODO:</strong>
-This content should be reviewed and restructured.</p>
+Starter content. Is this still relevant?.</p>
 
-<p>Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As a sighted user, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content.</p>
+<p>The <a href="https://wordpress.org/extend/plugins/wp-accessibility/">WP Accessibility plugin</a> — developed by <a href="http://www.joedolson.com/">Joe Dolson</a> — can help non-technical site owners correct a variety of technical accessibility issues within many WordPress themes.</p>
 
-<p>Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense.</p>
-
-<h2 id="rules-of-thumb-for-headings-in-theme-development">Rules of thumb for headings in theme development:</h2>
+<h2 id="accessibility-features">Accessibility Features</h2>
 
 <ul>
-  <li>One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post -, page – or archive title.</li>
-  <li>Use H2 through H6 to divide major sections of the page, such as widget areas, comment sections, or other major segments of the page.</li>
-  <li>Use headings in a logical and hierarchical structure.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c2">Enable skip links</a> with WebKit support by enqueuing JavaScript support for moving keyboard focus.</li>
+  <li>Add skip links with user-defined targets.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c3">Add language and text direction attributes</a> to your HTML attribute</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c9">Add a :focus outline</a> to focusable elements.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c11">Toggle for high-contrast and large font stylesheets</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c13">Add support for the longdesc attribute</a></li>
 </ul>
 
-<p>Use HTML headings to meaningfully describe the content that follows, not as a design element. A heading means “this text describes the information that follows it.” There should not be text before the heading that is part of what that heading describes, and there must be content following the heading.</p>
-
-<p><strong>Note</strong>: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard.</p>
-
-<h2 id="testing-tools">Testing Tools</h2>
+<h2 id="accessibility-issues-fixed">Accessibility Issues Fixed</h2>
 
 <ul>
-  <li><a href="http://wave.webaim.org/extension/">WAVE</a></li>
-  <li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en">Headings map for Chrome</a></li>
-  <li><a href="http://www.pauljadam.com/extension.html">a11yTools Extension for Safari macOS</a></li>
-  <li><a href="http://khan.github.io/tota11y/">Tota11y</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c1">Remove redundant title attributes</a> from page lists, category lists, and archive menus.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c4">Remove the target attribute</a> from links.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c5">Force a search page error</a> when a search is made with an empty text string.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c6">Remove tabindex</a> from elements that are focusable.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c7">Strip title attributes</a> from images inserted into content.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c8">Add post titles to standard “read more” links</a>.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c14">Add ARIA roles to HTML5 structural elements</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c15">Force underlines on links</a></li>
 </ul>
 
-<h2 id="heading-semantics">Heading semantics</h2>
+<h2 id="accessibility-tools">Accessibility Tools</h2>
 
 <ul>
-  <li><a href="https://webaim.org/techniques/semanticstructure/">Semantic Structure on WebAIM</a></li>
-  <li><a href="https://developer.paciellogroup.com/blog/2013/10/html5-document-outline/">The HTML5 Document Outline</a></li>
-  <li><a href="http://accessibility.psu.edu/headingshtml/">Heading Tags (H1, H2, H3, P) in HTML</a></li>
-  <li><a href="http://html5doctor.com/computer-says-no-to-html5-document-outline/">Computer says NO to HTML5 document outline</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c12">Custom admin stylesheet</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/wp-accessibility-plugin/#c10">Provide color contrast testing tool</a> to compare colors against WCAG contrast standards</li>
 </ul>
 
-<h2 id="heading-structure-best-practices">Heading structure best practices</h2>
+<p>However, whilst the plugin can correct some issues within themes, it <strong>cannot</strong> correct every problem. So it is not a substitute for <a href="https://codex.wordpress.org/Accessibility">good web accessibility practice</a>. There is still a great deal you can do to make your site more accessible when creating your content. But it may help those who lack the HTML skills necessary by allowing them to focus on creating accessible content.</p>
+
+<p>And do remember that creating an accessible site will immediately increase your potential audience as well as facilitating search engine indexing. All in all, a win-in situation!</p>
+
+<h2 id="removing-title-attributes">Removing title attributes</h2>
+
+<p>By default, WordPress adds title attributes to all system-generated links — navigation menus, lists of posts, etc. These title attributes have exactly the same value as the text of the link — if the text of the link is “Joe’s Blue Widgets”, then the title attribute is also “Joe’s Blue Widgets”. In the best case scenario, where a screen reader is set up to ignore title attributes, having this set makes little difference. In the worst case scenario, where a screen reader reads all attributes, it’s awful: the screen reader reads the title attribute and the link text, meaning that every link is, effectively, read twice. This is an enormous cognitive overload that benefits nobody. The purpose of the title attribute is to add context to a link that otherwise does not have sufficient context: but in almost all cases, the WordPress use does not meet that criteria.<br />
+<a href="http://www.paciellogroup.com/blog/2010/11/using-the-html-title-attribute/">Further reading about title attributes and accessibility</a>.</p>
+
+<h2 id="skiplinks">Skiplinks</h2>
+
+<p>Skiplinks are a means to help users of screenreaders jump from the beginning of a page to another section of the page. Visual users can scan a page quickly to identify the larger sections and skip over large blocks of text or links, but users of screen readers can’t easily do that. Skiplinks provide a means to leap from the very top of a page to an alternate section of that page — one principle use being to leap over the main navigation to the main page content.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html">Further reading about skip links</a>.</p>
+
+<h2 id="add-site-language-and-text-direction-to-html-element">Add site language and text direction to HTML element</h2>
+
+<p>Screen readers use the site’s declared language to figure out what pronunciation rules to use when reading the content. If no language is declared, then the screen reader will generally use the screen-reader user’s installation’s language or try to guess: e.g., if a French user of a screen reader visits your page, and no HTML language is declared, it will either read as if the text was written in French, or attempt to guess the actual language and pronunciation. Declaring the actual default language greatly improves comprehension of the text.</p>
+
+<p>As problems go, this is relatively rare as a problem in a theme: what is actually a bigger problem is sections of text that are not in the primary language of the site. This plug-in doesn’t currently handle changing languages in the middle of content. <br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html">Further reading about document language</a>.</p>
+
+<h2 id="remove-target-attribute-from-links">Remove target attribute from links</h2>
+
+<p>Links opened in new windows can break web site flow (creating a change of context) and disorient users who don’t realize they’ve moved to a new window. Also, it takes away the option of opening in the same window/tab: all browsers have an option to open links in a new tab, few have an option to open in the same tab.<br />
+<a href="http://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/consistent-behavior-no-extreme-changes-context.html">Further reading about changes of context</a>.</p>
+
+<h2 id="force-search-error-on-empty-search-submission">Force search error on empty search submission</h2>
+
+<p>The default WordPress behavior when a search is submitted with an empty search field is to simply return the main index with no notice at all. This is disorienting and confusing. The plug-in will change this so that the submission of an empty search field will return the same as a search with no results, which makes a great deal more sense in terms of user feedback.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html">Further reading on form feedback</a>.</p>
+
+<h2 id="remove-tabindex-from-focusable-elements">Remove tabindex from focusable elements</h2>
+
+<p>Many (primarily older) themes had tabindex defined for comment input fields, in particular. Tabindex was an early concept for an accessibility feature for HTML, but was quickly demonstrated to cause more problems than it solved. What tabindex does is force keyboard navigation to follow a particular sequence according to the values defined in tabindex attributes. Removing those attributes usually makes keyboard navigation much more linear and predictable. The intention behind tabindex was to create a logical tab sequence when it would otherwise have been unnatural; but in practice, that required absolutely insane degrees of maintenance to use in a real-life web site. This option removes the attribute from standard focusable elements: links and form fields. It does <em>not</em> remove it from other fields, because a common technique to grant keyboard focusability to normally non-focusable elements is to define a negative tabindex: this places the element into the focus sequence but does not force it into a particular place in that sequence.</p>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">Web Accessibility Tutorials: Headings</a></li>
-  <li><a href="https://www.w3.org/WAI/tutorials/page-structure/labels/#using-aria-labelledby">Web Accessibility Tutorials: Labeling Regions</a></li>
-  <li><a href="http://www.webpagemistakes.ca/heading-structure-heading-tag/">Web Page Mistakes: Heading Structure – Heading Tag</a></li>
-  <li><a href="https://www.nomensa.com/blog/2017/how-structure-headings-web-accessibility">Nomensa: How to structure headings for web accessibility</a></li>
-  <li><a href="https://www.drupal.org/docs/7/creating-accessible-themes/using-headings-to-improve-accessibility">Using headings to improve accessibility (Drupal)</a>. Note class=”element-invisible” is in WP class=”screen-reader-text”</li>
-  <li><a href="https://mrwweb.com/use-html-headings-for-accessibility/">MRW web: H1 Headings Are Important</a></li>
-  <li><a href="https://mrwweb.com/common-heading-mistakes/">MRW web: Common heading-mistakes</a></li>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html">Further reading about focus order</a>.</li>
+  <li><a href="http://www.w3.org/TR/WCAG20-TECHS/F44">Further reading about tabindex</a>.</li>
 </ul>
 
-<h2 id="heading-structure-in-wordpress">Heading structure in WordPress</h2>
+<h2 id="remove-title-attribute-from-inserted-post-imagesfeatured-images">Remove title attribute from inserted post images/featured images.</h2>
 
-<ul>
-  <li><a href="https://www.joedolson.com/2014/11/headings-hierarchy-problem/">The Headings Hierarchy Challenge</a></li>
-  <li><a href="http://rianrietveld.com/2014/11/21/html5-headings-in-wordpress-lets-fight/">Accessible HTML5 heading structure in WordPress</a></li>
-</ul>
+<p>Similar to the title attribute above: WordPress automatically adds the title element to inserted images. This automatically strips it out; which is primarily a labor saver for people who would otherwise be doing this manually.</p>
+
+<h2 id="add-post-title-to-more-links">Add post title to “more” links</h2>
+
+<p>A common pattern for WordPress in many views is to show an excerpt of your post with a link to read the entire post. By default, this link is just plain text “more” or “continue reading” or an equivalent. This is problematic for accessibility because it means that there are many links on the same page with the same link text: for accessibility, all links should make sense without requiring context, to grant screen readers the ability to scan the page and have information. This plug-in adds the title of the post into this pattern, so that instead of hearing “Continue Reading. Continue Reading. Continue Reading.”, the user will hear something like “Continue Reading About The Storm. Continue Reading The Storm Aftermath. Continue Reading Cleaning Up”, and be able to pick the article they actually want to read from that set of links.<br />
+<a href="http://www.w3.org/TR/2008/WD-WCAG20-TECHS-20081103/h20">Further reading about identifying link purpose</a>.</p>
+
+<h2 id="add-outline-to-elements-on-keyboard-focus">Add outline to elements on keyboard focus.</h2>
+
+<p>Many designs do not provide a design for the view of links or other focusable fields when a keyboard user brings focus to that element. This makes it very difficult for visual users who are keyboard dependent to keep track of where they are. A common pattern for this is to change the appearance of the element on keyboard focus; and this item adds an outline. Outline is rarely defined in most designs, so that ensures that the definition by this plug-in will almost always work and be visible; the same can’t be said for text decorations like underline, since that may be the default state for links, and therefore would not be a change indicator.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">Further reading about keyboard focus</a>.</p>
+
+<h2 id="toggle-for-high-contrast-and-large-font-stylesheets">Toggle for high-contrast and large font stylesheets</h2>
+
+<p>While not a solution in itself, if your theme has low contrast issues or small fonts, using this custom control to toggle high-contrast or large font modes can be useful. All styles can be customized or extended within your theme directory, since default states for these tools may not be suitable for your site. The accessibility toolbar is based on the original written by <a href="http://www.usableinteractions.com/2013/01/a11y-toolbar-to-be-incorporated-into-wp-accessibility-plugin/">Chris Rodriguez</a>.</p>
+
+<h2 id="custom-admin-stylesheet">Custom admin stylesheet</h2>
+
+<p>The WordPress admin has some miscellaneous accessibility issues, which this stylesheet will correct. It can also be modified to customize according to your specific needs.</p>
+
+<h2 id="color-contrast-tester">Color Contrast Tester</h2>
+
+<p>This tool doesn’t make any active changes to your web site, but allows you to easily test whether a set of colors you’re considering for customization of your site meet the standards set by WCAG 2 for color contrast.<br />
+<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">Further reading about color contrast</a>.</p>
+
+<h2 id="add-support-for-the-longdesc-attribute">Add support for the longdesc attribute</h2>
+
+<p>The longdesc attribute provides a description field for images that are more information-rich than can be conveyed in an alt attribute, such as in graphs or infographics. This uses the WordPress media “Description” field to generate a page linked to from the longdesc attribute which can describe that image. <a href="https://www.joedolson.com/articles/2014/03/update-wp-accessibility-longdesc/">Read more about longdesc in WP Accessibility</a>.</p>
+
+<h2 id="add-aria-roles-to-html5-structural-elements">Add ARIA roles to HTML5 structural elements</h2>
+
+<p>The HTML5 specification defines structural elements such as main, header, and footer, that theoretically define specific landmarks for assistive technology. In practice, the support for these landmarks is very good using ARIA role attributes and not so great with the HTML5 structural elements. Turning this option automatically adds the appropriate role attribute to instances of HTML5 structural elements. Specifically, it picks the first header, the last footer, any main element, and each nav element.</p>
+
+<p>Because there is no page-unique sectioning element that can reliably be matched with the “complementary” role, there’s an option to set a region ID for the section of the page that should be your complementary region. This will usually be your sidebar.</p>
+
+<h2 id="force-underlines-on-links">Force underlines on links</h2>
+
+<p>Some themes define link styles that are nearly or completely indistinguishable from the surrounding text. This can be readily be improved by underlining links. This is a “sledgehammer” tool — it will underline all links on the page, even if some of those links are visually styled as buttons or clearly defined navigation menus.</p>
 
 
           
@@ -447,7 +508,7 @@ This content should be reviewed and restructured.</p>
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/code/heading-structure/index.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/start/wp-plugins/wp-accessibility.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
