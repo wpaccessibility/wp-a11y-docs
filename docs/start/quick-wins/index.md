@@ -7,7 +7,10 @@ nav_order: 1
 
 # Quick wins
 
-**TODO**: Add links when there is content to link to in [Standards and Practice](/docs/topics/).
+{: .alert }
+Starter content. This content needs to be reviewed and expanded.  
+Related issue on [GitHub #91 Topic Quick wins](https://github.com/wpaccessibility/wp-a11y-docs/issues/91).  
+If you want to work on this, please let us know before you start.
 
 What to do first? Start with the low-hanging fruit. Color contrast of text ia an easy fix. Alternative text with images probably too.
 
@@ -24,7 +27,6 @@ The most made errors reported in the yearly report [WebAIM Million](https://weba
 
 So: if these errors are all sorted, you are already better than 96% of the web.
 
-**TODO**: Add content about what you can do when you can't change your WordPress theme yourself.
 
 
 
