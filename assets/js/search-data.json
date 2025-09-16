@@ -61,7 +61,7 @@
   },"10": {
     "doc": "Alt text for images",
     "title": "Alternative text for images",
-    "content": "TODO: This content should be reviewed and restructured. Note: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it. ",
+    "content": "This content should be reviewed and expanded and maybe divided into separate topic pages. Related issue on GitHub #105 Topic Alt text for images. If you want to work on this, please let us know before you start. Note: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it. ",
     "url": "/docs/topics/content/alt-text/#alternative-text-for-images",
     "relUrl": "/docs/topics/content/alt-text/#alternative-text-for-images"
   },"11": {
@@ -295,7 +295,7 @@
   },"49": {
     "doc": "Headings",
     "title": "Headings in the content",
-    "content": "TODO: This content should be reviewed and restructured. ",
+    "content": "This content should be reviewed. Related issue on GitHub #106 Headings in the content. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/content/headings/#headings-in-the-content",
     "relUrl": "/docs/topics/content/headings/#headings-in-the-content"
   },"50": {
@@ -619,13 +619,13 @@
   },"103": {
     "doc": "Links",
     "title": "Links",
-    "content": "TODO: A short intro needs to be written. Give all users sufficient information about what happens when they click on a link. ",
+    "content": "This content needs to be written. Related issue on GitHub #107 Intro page Links. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/content/links/",
     "relUrl": "/docs/topics/content/links/"
   },"104": {
     "doc": "Content and images",
     "title": "Content and images",
-    "content": "TODO: A short intro needs to be written. ",
+    "content": "This content needs to be written. Related issue on GitHub #104 Intro page Content and images. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/content/",
     "relUrl": "/docs/topics/content/"
   },"105": {
