@@ -7,9 +7,11 @@ nav_order: 2
 
 # Alternative text for images
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content should be reviewed and expanded and maybe divided into separate topic pages.
+Related issue on [GitHub #105 Topic Alt text for images](https://github.com/wpaccessibility/wp-a11y-docs/issues/105).  
+If you want to work on this, please let us know before you start.
+
 
 {: .info }
 **Note**: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it.
