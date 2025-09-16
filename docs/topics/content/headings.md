@@ -7,9 +7,10 @@ nav_order: 3
 
 # Headings in the content
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content should be reviewed.
+Related issue on [GitHub #106 Headings in the content](https://github.com/wpaccessibility/wp-a11y-docs/issues/106).  
+If you want to work on this, please let us know before you start.
 
 ## What are headings?
 

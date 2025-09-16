@@ -7,11 +7,10 @@ nav_order: 4
 
 # Links
 
-{: .warning }
-**TODO:**
-A short intro needs to be written.
+{: .alert }
+This content needs to be written.
+Related issue on [GitHub #107 Intro page Links](https://github.com/wpaccessibility/wp-a11y-docs/issues/107).  
+If you want to work on this, please let us know before you start.
 
-
-Give all users sufficient information about what happens when they click on a link.
 
 
