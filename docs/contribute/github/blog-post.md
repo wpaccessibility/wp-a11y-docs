@@ -1,15 +1,14 @@
 ---
 title: Add a blog post
-parent: How to contribute
+parent: How to help on GitHub
 nav_order: 2
 ---
 
 # Add or change blog post.
 
 Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here's the documentation how to write and add post for this website.
-{: .fs-6 .fw-300 }
 
-Each blog post file has the same setup.  First a set of variables like the title and the parent. Then the content using Markdown. 
+Each blog post file has the same setup. First a set of variables like the title and the parent. Then the content using Markdown. 
 
 The blog post live in the directory `/_posts/` and are named `yyyy-mm-dd-title.md`.
 For example `2025-08-16-able-player-now-available.md`.
@@ -25,7 +24,7 @@ permalink: /blog/2025/able-player-available-for-videos/
 author: Joe Dolson
 categories: video
 parent: Blog
-excerpt: "Able Player is now available for YouTube videos in the WP Accessibility Knowledge Base."
+excerpt: "Able Player is now available for YouTube videos in the WP Accessibility documentation."
 date: 2025-08-16
 ---
 ```

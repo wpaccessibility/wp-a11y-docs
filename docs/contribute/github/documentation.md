@@ -1,21 +1,20 @@
 ---
 title: Add a topic
-parent: How to contribute
+parent: How to help on GitHub
 nav_order: 1
 ---
 
-# Add or change a topic in the Knowledge Base
+# Add or change a topic in the documentation
 
-Do you have a great idea for a topic for this Knowledge Base or do you want to pick up an open issue for GitHub? Here's the documentation how to write and add content for this website.
-{: .fs-6 .fw-300 }
+Do you have a great idea for a topic for the documentation or do you want to pick up an open issue for GitHub? Here's the documentation how to write and add content for this website.
 
 Each documentation file has the same setup:
 
 - First a set of variables like the title and the parent.
 - Then the content.
 
-The documentation files live in the directory `/docs/` and are named `[title].md`.
-For example `contribute.md`. Keep the name short and unique. Use `-` instead of spaces in the filename.
+The documentation files live in the directory /docs/ and are named [title].md.
+For example contribute.md. Keep the name short and unique. Use `-` instead of spaces in the filename.
 
 Each directory has an `index.md` which is the file that directly links to the directory topic. For example: 
 `/docs/about/index.md` displays [About this website](/docs/about/).

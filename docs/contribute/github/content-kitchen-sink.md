@@ -1,6 +1,6 @@
 ---
 title: Content kitchen sink
-parent: How to contribute
+parent: How to help on GitHub
 nav_order: 4
 has_video: true
 ---
