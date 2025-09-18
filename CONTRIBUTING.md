@@ -12,8 +12,6 @@ There are several ways you can help improve this project:
 You don’t need to know Git, GitHub, or coding to contribute to this project.  
 There are several easy ways to help:
 
-- **Open a New Trac Ticket**
-  Open a new Trac Ticket via the [Accessibility Team Trac](https://core.trac.wordpress.org/newticket). Simply fill in a Title in the Simple Summary of the Issue and then good description so that someone can easily understand the issue, Choose and issue type and submit.
 - **Open a GitHub Issue**  
   Share your content idea, report an error, or suggest improvements by [creating an issue](https://github.com/wpaccessibility/wp-a11y-docs/issues). Just write in plain text — a maintainer will help format it.
 - **Comment with Draft Content**  
@@ -21,7 +19,7 @@ There are several easy ways to help:
 - **Contribute via Slack**  
   Join the [WordPress Accessibility Team Slack channel](https://wordpress.slack.com/archives/C02RP4X03) and join the [WordPress Accessibility Docs Slack](https://wordpress.slack.com/archives/C6PK2QCTY) and share your draft or suggestion there.
 - **Give Accessibility Feedback**  
-  Testing the site, pointing out unclear documentation, or sharing examples (do’s and don’ts) is a valuable contribution.
+  Testing the site, pointing out unclear documentation, or sharing examples (dos and don’ts) is a valuable contribution.
 
 ## Contributing with Code
 
