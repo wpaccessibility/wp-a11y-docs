@@ -7,9 +7,9 @@ nav_order: 8
 
 # Audit the accessibility of this website
 
-A website about accessibility (a11y) must be accessible itself. That's a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We'd love to have an independent [WCAG-EM audit](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/), that results in a [WCAG-EM report](https://www.w3.org/WAI/eval/report-tool/). Your name or your company name will be added to the [contributors list](/docs/contributors/).
+A website about accessibility (a11y) must be accessible itself. That's a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We'd love to have an independent [WCAG-EM audit](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/), that results in a [WCAG-EM report](https://www.w3.org/WAI/eval/report-tool/). Your name or your company name will be added to the [contributors list]({{site.baseurl}}/docs/contributors/).
 
-We then will add that information in our [accessibility statement](/docs/about/accessibility-statement/) and fix the issues found. See the GitHub issue: [Audit the website for accessibility WCAG 2.2 AA](https://github.com/wpaccessibility/wp-a11y-docs/issues/4).
+We then will add that information in our [accessibility statement]({{site.baseurl}}/docs/about/accessibility-statement/) and fix the issues found. See the GitHub issue: [Audit the website for accessibility WCAG 2.2 AA](https://github.com/wpaccessibility/wp-a11y-docs/issues/4).
 
 Did you notice an a11y-issue on this website? Please inform us by opening an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues).
 

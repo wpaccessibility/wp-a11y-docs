@@ -20,4 +20,4 @@ There are several ways you can give feedback:
 
 ## The existing documentation
 
-When you read through the existing documentation and find content you think is not right, please [report this](/docs/contribute/report-error/) as an error.
+When you read through the existing documentation and find content you think is not right, please [report this]({{site.baseurl}}/docs/contribute/report-error/) as an error.
