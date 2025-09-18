@@ -1,0 +1,51 @@
+name: Deploy PR Preview (Trusted)
+#
+# Triggers after 'PR Build (Preview Artifact)' completes successfully.
+#
+on:
+  workflow_run:
+    workflows: ["PR Build (Preview Artifact)"]
+    types: [completed]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  pull-requests: write
+
+concurrency:
+  group: pr-deploy-${{ github.event.workflow_run.pull_requests[0].number }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Extract PR number
+        id: pr
+        run: |
+          echo "pr_number=${{ github.event.workflow_run.pull_requests[0].number }}" >> "$GITHUB_OUTPUT"
+          echo "Deploying preview for PR #${{ github.event.workflow_run.pull_requests[0].number }}"
+
+      - name: Download artifact
+        uses: dawidd6/action-download-artifact@v3
+        with:
+          run_id: ${{ github.event.workflow_run.id }}
+          name: pr-preview-site-${{ steps.pr.outputs.pr_number }}
+          path: ./site
+
+      - name: List downloaded files (debug)
+        run: find ./site -maxdepth 4 -type f | head -100
+
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: ./site
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          pages-base-url: wpaccessibility.org
+          action: deploy

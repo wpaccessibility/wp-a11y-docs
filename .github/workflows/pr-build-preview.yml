@@ -1,0 +1,47 @@
+name: PR Build (Preview Artifact)
+#
+# IMPORTANT: Do NOT rename this workflow unless you also update
+# the 'workflows:' array in pr-deploy-preview.yml
+#
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-build-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PR_NUMBER: ${{ github.event.pull_request.number }}
+      JEKYLL_ENV: production
+    steps:
+      - name: Checkout PR Head
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
+        with:
+          ruby-version: '3.3.6'
+          bundler-cache: true
+          cache-version: 0
+
+      - name: Build site
+        run: |
+            echo "Building preview for PR #$PR_NUMBER"
+            bundle exec jekyll build --baseurl "/pr-preview/pr-${PR_NUMBER}"
+
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-preview-site-${{ env.PR_NUMBER }}
+          path: _site
+          if-no-files-found: error
+          retention-days: 7
