@@ -8,9 +8,10 @@ nav_order: 4
 
 # Link destinations
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content needs to be reviewed, restructured and expanded.
+Related issue on [GitHub #118 Topic Link destinations](https://github.com/wpaccessibility/wp-a11y-docs/issues/118).  
+If you want to work on this, please let us know before you start.
 
 {: .tip }
 **Rule of thumb**: Always tell a visitor what to expect when selecting a link.

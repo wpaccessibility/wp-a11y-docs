@@ -7,11 +7,10 @@ nav_order: 7
 
 # Digital documents
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
-
-**TODO**: this topic (and the link) needs to be updated, also other types of docs need to be added.
+{: .alert }
+This content needs to be reviewed, restructured and expanded.
+Related issue on [GitHub #119 Topic Digital document](https://github.com/wpaccessibility/wp-a11y-docs/issues/119).  
+If you want to work on this, please let us know before you start.
 
 ## Accessible PDFs 
 
