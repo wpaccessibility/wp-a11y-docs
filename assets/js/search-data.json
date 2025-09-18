@@ -61,7 +61,7 @@
   },"10": {
     "doc": "Alt text for images",
     "title": "Alternative text for images",
-    "content": "This content should be reviewed and expanded and maybe divided into separate topic pages. Related issue on GitHub #105 Topic Alt text for images. If you want to work on this, please let us know before you start. Note: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it. ",
+    "content": "This content needs to be reviewed and expanded and maybe divided into separate topic pages. Related issue on GitHub #105 Topic Alt text for images. If you want to work on this, please let us know before you start. Note: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it. ",
     "url": "/docs/topics/content/alt-text/#alternative-text-for-images",
     "relUrl": "/docs/topics/content/alt-text/#alternative-text-for-images"
   },"11": {
@@ -127,19 +127,19 @@
   },"21": {
     "doc": "Color contrast in forms",
     "title": "Color contrast in forms",
-    "content": "TODO: The content needs to be written. ",
+    "content": "This content needs to be written. Related issue on GitHub #129 Topic Color contrast in forms. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/design/color/color-contrast-forms/",
     "relUrl": "/docs/topics/design/color/color-contrast-forms/"
   },"22": {
     "doc": "Color contrast of icons",
     "title": "Color contrast of icons",
-    "content": "TODO: The content needs to be written. ",
+    "content": "This content needs to be reviewed, restructured and expanded. Related issue on GitHub #128 Topic Color contrast of icons. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/design/color/color-contrast-icons/",
     "relUrl": "/docs/topics/design/color/color-contrast-icons/"
   },"23": {
     "doc": "Color contrast of text",
     "title": "Color contrast of text against its background",
-    "content": "TODO: This content should be reviewed and restructured. Color contrast is an important issue to address for the accessibility of your website. It should be considered for foreground (text and other elements) and background colors (or images), but also between elements and hover or focus states. Color contrast should be high enough for good readability, but should not be too bright for people with sensitive eyes or cognitive problems.There are no WCAG criteria defining excessively high contrast, but very high contrast should be used selectively. The WordPress project follows the accessibility level “AA” of WCAG. This requires that the contrast between background and foreground colors has a luminosity contrast ratio of: . | 4.5:1 for normal text | 3:1 for large text (24px equivalent or 19px equivalent and bold) | . There are many tools to check color contrast ratios. WebAxe published an overview of contrast checkers. ",
+    "content": "This content needs to be reviewed, restructured and expanded. Related issue on GitHub #127 Topic Color contrast of text against its background. If you want to work on this, please let us know before you start. Color contrast is an important issue to address for the accessibility of your website. It should be considered for foreground (text and other elements) and background colors (or images), but also between elements and hover or focus states. Color contrast should be high enough for good readability, but should not be too bright for people with sensitive eyes or cognitive problems.There are no WCAG criteria defining excessively high contrast, but very high contrast should be used selectively. The WordPress project follows the accessibility level “AA” of WCAG. This requires that the contrast between background and foreground colors has a luminosity contrast ratio of: . | 4.5:1 for normal text | 3:1 for large text (24px equivalent or 19px equivalent and bold) | . There are many tools to check color contrast ratios. WebAxe published an overview of contrast checkers. ",
     "url": "/docs/topics/design/color/color-contrast-text/#color-contrast-of-text-against-its-background",
     "relUrl": "/docs/topics/design/color/color-contrast-text/#color-contrast-of-text-against-its-background"
   },"24": {
@@ -223,7 +223,7 @@
   },"37": {
     "doc": "Digital documents",
     "title": "Digital documents",
-    "content": "TODO: This content should be reviewed and restructured. TODO: this topic (and the link) needs to be updated, also other types of docs need to be added. ",
+    "content": "This content needs to be reviewed, restructured and expanded. Related issue on GitHub #119 Topic Digital document. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/content/docs/",
     "relUrl": "/docs/topics/content/docs/"
   },"38": {
@@ -295,7 +295,7 @@
   },"49": {
     "doc": "Headings",
     "title": "Headings in the content",
-    "content": "This content should be reviewed. Related issue on GitHub #106 Headings in the content. If you want to work on this, please let us know before you start. ",
+    "content": "This content needs to be reviewed and restructured. Related issue on GitHub #106 Headings in the content. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/content/headings/#headings-in-the-content",
     "relUrl": "/docs/topics/content/headings/#headings-in-the-content"
   },"50": {
@@ -619,13 +619,13 @@
   },"103": {
     "doc": "Links",
     "title": "Links",
-    "content": "This content needs to be written. Related issue on GitHub #107 Intro page Links. If you want to work on this, please let us know before you start. ",
+    "content": "A short intro needs to be written. Related issue on GitHub #107 Intro page Links. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/content/links/",
     "relUrl": "/docs/topics/content/links/"
   },"104": {
     "doc": "Content and images",
     "title": "Content and images",
-    "content": "This content needs to be written. Related issue on GitHub #104 Intro page Content and images. If you want to work on this, please let us know before you start. ",
+    "content": "A short intro needs to be written. Related issue on GitHub #104 Intro page Content and images. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/content/",
     "relUrl": "/docs/topics/content/"
   },"105": {
@@ -907,7 +907,7 @@
   },"151": {
     "doc": "Fonts",
     "title": "Fonts",
-    "content": "TODO: This content should be reviewed and restructured and divided between separate topics. ",
+    "content": "This content needs to be reviewed and restructured and probably divided into separate topics. Related issue on GitHub #124 Topic Fonts. If you want to work on this, please let us know before you start. This content should be reviewed and restructured and divided between separate topics. ",
     "url": "/docs/topics/design/fonts/",
     "relUrl": "/docs/topics/design/fonts/"
   },"152": {
@@ -931,7 +931,7 @@
   },"155": {
     "doc": "Color",
     "title": "Color",
-    "content": "TODO: The intro needs to be rewritten an the resources moved to the specific topics. Color is important to make a beautiful website, but not everyone sees colors the same way. That’s why it’s important to check color contrast and use of color: . | Check the color contrast between foreground and background content | Verify that color is not the only way of indicating controls or content | . ",
+    "content": "The intro text needs to be rewritten and the resources needs to be moved to the related topics. Related issue on GitHub #126 Intro page Color. If you want to work on this, please let us know before you start. Color is important to make a beautiful website, but not everyone sees colors the same way. That’s why it’s important to check color contrast and use of color: . | Check the color contrast between foreground and background content | Verify that color is not the only way of indicating controls or content | . ",
     "url": "/docs/topics/design/color/",
     "relUrl": "/docs/topics/design/color/"
   },"156": {
@@ -943,7 +943,7 @@
   },"157": {
     "doc": "Meaningful sequence",
     "title": "Meaningful sequence of content",
-    "content": "TODO: The content needs to be written. ",
+    "content": "This content needs to be written. Related issue on GitHub #134 Topic Meaningful sequence of content. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/design/meaningful-sequence/#meaningful-sequence-of-content",
     "relUrl": "/docs/topics/design/meaningful-sequence/#meaningful-sequence-of-content"
   },"158": {
@@ -955,7 +955,7 @@
   },"159": {
     "doc": "Patterns to avoid",
     "title": "Design patterns to avoid",
-    "content": "TODO: A short intro needs to be written. ",
+    "content": "The intro text needs to be written. Related issue on GitHub #131 Intro Design patterns to avoid. If you want to work on this, please let us know before you start. ",
     "url": "/docs/topics/design/avoid/#design-patterns-to-avoid",
     "relUrl": "/docs/topics/design/avoid/#design-patterns-to-avoid"
   },"160": {
@@ -967,7 +967,7 @@
   },"161": {
     "doc": "Design & user experience",
     "title": "Design and user experience",
-    "content": "TODO: The summary needs to be rewritten and the resources moved to the specific topics. The information about accessible design is an addition to the WordPress Design Style Guide. New topics will be added on a regular basis. ",
+    "content": "This intro text needs to be rewritten, the resources needs to be moved to the related topics. Related issue on GitHub #123 Intro page Design and user experience. If you want to work on this, please let us know before you start. The information about accessible design is an addition to the WordPress Design Style Guide. New topics will be added on a regular basis. ",
     "url": "/docs/topics/design/#design-and-user-experience",
     "relUrl": "/docs/topics/design/#design-and-user-experience"
   },"162": {
@@ -985,7 +985,7 @@
   },"164": {
     "doc": "WordPress Core",
     "title": "WordPress Core Accessibility Standards",
-    "content": "TODO: This is duplicate content? see also Accessibility Coding Standards in the coding standards habdbook WCAG 2.0 must be WCAG 2.2??? The content should be reviewed for modern code and the links adjusted and devided between the topics. When creating new interfaces in core, the output and interactions are expected to conform to WCAG 2.0 at level AA. But beyond that, there are some specific patterns that the accessibility team and core team have agreed on as the preferred method for structure. Though there are many patterns that meet accessibility standards, being consistent across the platform is a key method to ensure that WordPress as a whole is easier to use. This document is supplemental guidance to help developers meet the WordPress Accessibility Coding Standards. ",
+    "content": "This content needs to be reviewed and restructured. Related issue on GitHub #122 Topic WordPress Core Accessibility Standards. If you want to work on this, please let us know before you start. TODO: This is duplicate content? see also Accessibility Coding Standards in the coding standards habdbook WCAG 2.0 must be WCAG 2.2??? The content should be reviewed for modern code and the links adjusted and devided between the topics. When creating new interfaces in core, the output and interactions are expected to conform to WCAG 2.0 at level AA. But beyond that, there are some specific patterns that the accessibility team and core team have agreed on as the preferred method for structure. Though there are many patterns that meet accessibility standards, being consistent across the platform is a key method to ensure that WordPress as a whole is easier to use. This document is supplemental guidance to help developers meet the WordPress Accessibility Coding Standards. TODO: should this stay or should it go? . ",
     "url": "/docs/topics/core/#wordpress-core-accessibility-standards",
     "relUrl": "/docs/topics/core/#wordpress-core-accessibility-standards"
   },"165": {
@@ -1381,7 +1381,7 @@
   },"230": {
     "doc": "Infinite scroll",
     "title": "Patterns to avoid: Infinite scroll",
-    "content": "TODO: This content should be reviewed and restructured. We don’t recommend using infinite scroll because it has many significant accessibility issues: . | You can’t go back to your previous place using browser “back” button. | You can’t easily get to the footer or the last items in the infinite scroll. | There is a large memory footprint if loading big images. | It doesn’t work without Javascript. | You can’t access elements with keyboard only. | There is no consistent audible feedback or instructions about how infinite scrolling works for assistive technologies. | There is no URL to a specific place on the page. | And the list goes on… | . There is a great summary in the “Reconsider the usage of infinite scrolling across the admin” trac ticket for more information. ",
+    "content": "This content should be reviewed and restructured. Related issue on GitHub #132 Topic Patterns to avoid: Infinite scroll. If you want to work on this, please let us know before you start. We don’t recommend using infinite scroll because it has many significant accessibility issues: . | You can’t go back to your previous place using browser “back” button. | You can’t easily get to the footer or the last items in the infinite scroll. | There is a large memory footprint if loading big images. | It doesn’t work without Javascript. | You can’t access elements with keyboard only. | There is no consistent audible feedback or instructions about how infinite scrolling works for assistive technologies. | There is no URL to a specific place on the page. | And the list goes on… | . There is a great summary in the “Reconsider the usage of infinite scrolling across the admin” trac ticket for more information. ",
     "url": "/docs/topics/design/avoid/infinite-scroll/#patterns-to-avoid-infinite-scroll",
     "relUrl": "/docs/topics/design/avoid/infinite-scroll/#patterns-to-avoid-infinite-scroll"
   },"231": {
@@ -1417,7 +1417,7 @@
   },"236": {
     "doc": "Link destinations",
     "title": "Link destinations",
-    "content": "TODO: This content should be reviewed and restructured. Rule of thumb: Always tell a visitor what to expect when selecting a link. ",
+    "content": "This content needs to be reviewed, restructured and expanded. Related issue on GitHub #118 Topic Link destinations. If you want to work on this, please let us know before you start. Rule of thumb: Always tell a visitor what to expect when selecting a link. ",
     "url": "/docs/topics/content/links/link-destinations/",
     "relUrl": "/docs/topics/content/links/link-destinations/"
   },"237": {
@@ -1435,7 +1435,7 @@
   },"239": {
     "doc": "Images as links",
     "title": "Images as links",
-    "content": "TODO: This content should be reviewed and restructured. For linked images, the alt attribute (the alternative text) will be the link text. | If the alt attribute describes the image: the link text will be the description of the image, which is unlikely to clearly communicate the link purpose. | If there is no alt attribute: the link text will be the image file name. | If there is an Empty alt attribute: the link will have no link text and will be announced as “link”. | . So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”. It is not necessary to ever use the word ‘link’ in your alt text; that will already be announced by the screen reader. ",
+    "content": "This content needs to be reviewed, restructured and expanded. Related issue on GitHub #117 Topic Images as links. If you want to work on this, please let us know before you start. For linked images, the alt attribute (the alternative text) will be the link text. | If the alt attribute describes the image: the link text will be the description of the image, which is unlikely to clearly communicate the link purpose. | If there is no alt attribute: the link text will be the image file name. | If there is an Empty alt attribute: the link will have no link text and will be announced as “link”. | . So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”. It is not necessary to ever use the word ‘link’ in your alt text; that will already be announced by the screen reader. ",
     "url": "/docs/topics/content/links/link-image/",
     "relUrl": "/docs/topics/content/links/link-image/"
   },"240": {
@@ -1447,7 +1447,7 @@
   },"241": {
     "doc": "Link texts",
     "title": "Write a meaningful link text",
-    "content": "TODO: This content should be reviewed and restructured. Rule of thumb: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise. Link text should stand on its own. Some assistive software scans a page for links and presents them to the user as a simple list. In these situations, all the links will be read out of context. So it is important the text used in a link is descriptive and meaningful. It also makes your text easier to scan visually, so that sighted users can more quickly find the information they’re looking for. Descriptive, meaningful link text in the Apple VoiceOver link list. Make links texts descriptive . Avoid meaningless link text like: click here, download, info, more, here, this. With these types of links, users have to read the whole sentence to understand the purpose of the link. This makes your content less browsable, and harder to engage with. Screen reader users cannot navigate by links, because those links are not useful without additional context. Useless, non-descriptive link text in the Apple VoiceOver link list. Poor qualify (non-descriptive) link texts: If you are interested in our work, click here to subscribe to our newsletter. You can download the manual of the espresso machine, or contact us for more info. Helpful (descriptive) link texts: Subscribe to our newsletter if you are interested in our work. You can download the manual as a PDF of the espresso machine, or contact us for more info. ",
+    "content": "This content needs to be reviewed, restructured and expanded. Related issue on GitHub #110 Topic Write a meaningful link text. If you want to work on this, please let us know before you start. Rule of thumb: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise. Link text should stand on its own. Some assistive software scans a page for links and presents them to the user as a simple list. In these situations, all the links will be read out of context. So it is important the text used in a link is descriptive and meaningful. It also makes your text easier to scan visually, so that sighted users can more quickly find the information they’re looking for. Descriptive, meaningful link text in the Apple VoiceOver link list. Make links texts descriptive . Avoid meaningless link text like: click here, download, info, more, here, this. With these types of links, users have to read the whole sentence to understand the purpose of the link. This makes your content less browsable, and harder to engage with. Screen reader users cannot navigate by links, because those links are not useful without additional context. Useless, non-descriptive link text in the Apple VoiceOver link list. Poor qualify (non-descriptive) link texts: If you are interested in our work, click here to subscribe to our newsletter. You can download the manual of the espresso machine, or contact us for more info. Helpful (descriptive) link texts: Subscribe to our newsletter if you are interested in our work. You can download the manual as a PDF of the espresso machine, or contact us for more info. ",
     "url": "/docs/topics/content/links/link-text/#write-a-meaningful-link-text",
     "relUrl": "/docs/topics/content/links/link-text/#write-a-meaningful-link-text"
   },"242": {
@@ -1537,7 +1537,7 @@
   },"256": {
     "doc": "Readability",
     "title": "Readability",
-    "content": "TODO: This content should be reviewed and restructured. People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read. Good practice: . | Start with a short summary of the content | Divide the rest of the text in short blocks | Use headings and lists and meaningful link text | Avoid large blocks of text | . ",
+    "content": "This content needs to be reviewed, restructured and expanded. Related issue on GitHub #120 Topic Readability. If you want to work on this, please let us know before you start. People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read. Good practice: . | Start with a short summary of the content | Divide the rest of the text in short blocks | Use headings and lists and meaningful link text | Avoid large blocks of text | . ",
     "url": "/docs/topics/content/readability/",
     "relUrl": "/docs/topics/content/readability/"
   },"257": {
@@ -1608,35 +1608,41 @@
     "relUrl": "/docs/topics/code/components/skip-links/#additional-resources-for-skip-links"
   },"268": {
     "doc": "Tables",
+    "title": "Tables in the content",
+    "content": "This content needs to be written, Related issue on GitHub #121 Topic Tables in the content. If you want to work on this, please let us know before you start. This content will be about how to add an accessible table in WordPres Admin and gives info about plugins to use, that can create accessible tables. ",
+    "url": "/docs/topics/content/tables/#tables-in-the-content",
+    "relUrl": "/docs/topics/content/tables/#tables-in-the-content"
+  },"269": {
+    "doc": "Tables",
     "title": "Tables",
-    "content": "TODO: The content needs to be written. This content will be about how to add a table in WordPres Admin and gives tips about plugins to use. ",
+    "content": " ",
     "url": "/docs/topics/content/tables/",
     "relUrl": "/docs/topics/content/tables/"
-  },"269": {
+  },"270": {
     "doc": "Use of color",
     "title": "Using color",
-    "content": "TODO: This content should be reviewed and restructured. Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example, . | error, success, or note messages | links in the content | active, hover or focus states | display information updates | . Use additional styling to indicate types of information including a change of shape or decoration. For example: . | Change symbols in addition to color | Underline links that are embedded in text | . Grouped links in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that the text is a link, underlines are not required. However, in many cases underlining can increase the usability of your website. ",
+    "content": "This content needs to be reviewed and restructured. Related issue on GitHub #130 Topic Color Use of color. If you want to work on this, please let us know before you start. Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example, . | error, success, or note messages | links in the content | active, hover or focus states | display information updates | . Use additional styling to indicate types of information including a change of shape or decoration. For example: . | Change symbols in addition to color | Underline links that are embedded in text | . Grouped links in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that the text is a link, underlines are not required. However, in many cases underlining can increase the usability of your website. ",
     "url": "/docs/topics/design/color/use-of-color/#using-color",
     "relUrl": "/docs/topics/design/color/use-of-color/#using-color"
-  },"270": {
+  },"271": {
     "doc": "Use of color",
     "title": "Examples",
     "content": "Correct . Underline your links, which are placed between text. Undelined links are easier to see. Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white. Incorrect . Links not underlined – color blind users may have trouble distinguish links from text. Can you see the links now? . Color used as the only indicator for information or functionality . The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
     "url": "/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
-  },"271": {
+  },"272": {
     "doc": "Use of color",
     "title": "Use of color",
     "content": " ",
     "url": "/docs/topics/design/color/use-of-color/",
     "relUrl": "/docs/topics/design/color/use-of-color/"
-  },"272": {
+  },"273": {
     "doc": "WP Accessibility Team",
     "title": "Info about the WordPress Accessibility Team",
     "content": "Info and links. ",
     "url": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team",
     "relUrl": "/docs/wordpress-accessibility/wp-a11y-team/#info-about-the-wordpress-accessibility-team"
-  },"273": {
+  },"274": {
     "doc": "WP Accessibility Team",
     "title": "WP Accessibility Team",
     "content": " ",
