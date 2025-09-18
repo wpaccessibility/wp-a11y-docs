@@ -7,10 +7,10 @@ nav_order: 3
 
 # Color
 
-{: .warning }
-**TODO:**
-The intro needs to be rewritten an the resources moved to the specific topics.
-
+{: .alert }
+The intro text needs to be rewritten and the resources needs to be moved to the related topics.
+Related issue on [GitHub #126 Intro page Color](https://github.com/wpaccessibility/wp-a11y-docs/issues/126).
+If you want to work on this, please let us know before you start.
 
 Color is important to make a beautiful website, but not everyone sees colors the same way. That’s why it’s important to check color contrast and use of color:
 
