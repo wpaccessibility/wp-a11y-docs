@@ -28,7 +28,10 @@
 <loc>https://wpaccessibility.org//docs/topics/content/alt-text/</loc>
 </url>
 <url>
-<loc>https://wpaccessibility.org//docs/contribute/blog-post/</loc>
+<loc>https://wpaccessibility.org//docs/contribute/audit/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/contribute/github/blog-post/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/design/color/color-contrast-forms/</loc>
@@ -40,7 +43,7 @@
 <loc>https://wpaccessibility.org//docs/topics/design/color/color-contrast-text/</loc>
 </url>
 <url>
-<loc>https://wpaccessibility.org//docs/contribute/content-kitchen-sink/</loc>
+<loc>https://wpaccessibility.org//docs/contribute/github/content-kitchen-sink/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/code/components/dialog/</loc>
@@ -49,7 +52,7 @@
 <loc>https://wpaccessibility.org//docs/topics/content/docs/</loc>
 </url>
 <url>
-<loc>https://wpaccessibility.org//docs/contribute/documentation/</loc>
+<loc>https://wpaccessibility.org//docs/contribute/github/documentation/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/code/components/excerpt/</loc>
@@ -59,6 +62,9 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/code/images-animations/images/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/contribute/improve-website/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//blog/</loc>
@@ -169,6 +175,9 @@
 <loc>https://wpaccessibility.org//docs/team-process/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/contribute/github/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/contribute/</loc>
 </url>
 <url>
@@ -241,7 +250,7 @@
 <loc>https://wpaccessibility.org//docs/start/myths/personas/</loc>
 </url>
 <url>
-<loc>https://wpaccessibility.org//docs/contribute/pull-requests/</loc>
+<loc>https://wpaccessibility.org//docs/contribute/github/pull-requests/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/content/readability/</loc>
@@ -250,7 +259,16 @@
 <loc>https://wpaccessibility.org//docs/topics/code/images-animations/reduced-motion/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/contribute/report-error/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/contribute/review/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/code/components/skip-links/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/contribute/suggest/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/content/tables/</loc>
@@ -260,5 +278,8 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/wordpress-accessibility/wp-a11y-team/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/contribute/write/</loc>
 </url>
 </urlset>
