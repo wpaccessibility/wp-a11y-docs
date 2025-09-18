@@ -1,6 +1,6 @@
 ---
 title: Content kitchen sink
-parent: How to contribute
+parent: How to help on GitHub
 nav_order: 4
 has_video: true
 ---
@@ -25,7 +25,7 @@ WordPress.org provides a lot of style guides for documentation: [WordPress Style
 ```
 
 {: .alert }
-In blog posts the H1 is added by the template: [Add a blog post](/docs/contribute/blog-post/).
+In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}}/docs/contribute/github/blog-post/).
 
 ## Summary in a larger text font.
 
