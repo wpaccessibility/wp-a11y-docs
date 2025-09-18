@@ -6,6 +6,13 @@ on:
   workflow_run:
     workflows: ["PR Build (Preview Artifact)"]
     types: [completed]
+  # Add manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR Number'
+        required: true
+        type: string
 
 permissions:
   contents: write
@@ -14,29 +21,49 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: pr-deploy-${{ github.event.workflow_run.pull_requests[0].number }}
+  group: pr-deploy-${{ github.event.workflow_run.pull_requests[0].number || github.event.inputs.pr_number || github.run_id }}
   cancel-in-progress: true
 
 jobs:
+  debug-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug workflow trigger
+        run: |
+          echo "=== Trigger Information ==="
+          echo "Event name: ${{ github.event_name }}"
+          echo "Workflow run conclusion: ${{ github.event.workflow_run.conclusion }}"
+          echo "Workflow run event: ${{ github.event.workflow_run.event }}"
+          echo "Workflow run name: ${{ github.event.workflow_run.name }}"
+          echo "Pull requests: ${{ toJson(github.event.workflow_run.pull_requests) }}"
+          echo ""
+          echo "=== Full workflow_run context ==="
+          echo '${{ toJson(github.event.workflow_run) }}'
+
   deploy:
     if: >
-      github.event.workflow_run.conclusion == 'success' &&
-      github.event.workflow_run.event == 'pull_request' &&
-      github.event.workflow_run.pull_requests[0].number != null
+      (github.event_name == 'workflow_dispatch') ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'pull_request')
     runs-on: ubuntu-latest
 
     steps:
       - name: Extract PR number
         id: pr
         run: |
-          PR_NUMBER=$(jq '.[0].number' <<< '${{ toJson(github.event.workflow_run.pull_requests) }}')
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            PR_NUMBER="${{ github.event.inputs.pr_number }}"
+          else
+            PR_NUMBER=$(jq '.[0].number' <<< '${{ toJson(github.event.workflow_run.pull_requests) }}')
+          fi
           echo "pr_number=$PR_NUMBER" >> "$GITHUB_OUTPUT"
           echo "Deploying preview for PR #$PR_NUMBER"
 
       - name: Download artifact
         uses: dawidd6/action-download-artifact@v3
         with:
-          run_id: ${{ github.event.workflow_run.id }}
+          run_id: ${{ github.event.workflow_run.id || github.run_id }}
           name: pr-preview-site-${{ steps.pr.outputs.pr_number }}
           path: ./site
 
