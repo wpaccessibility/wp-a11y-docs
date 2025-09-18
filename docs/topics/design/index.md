@@ -7,11 +7,12 @@ nav_order: 4
 
 # Design and user experience
 
-{: .warning }
-**TODO:**
-The summary needs to be rewritten and the resources moved to the specific topics.
+{: .alert }
+This intro text needs to be rewritten, the resources needs to be moved to the related topics.
+Related issue on [GitHub #123 Intro page  Design and user experience](https://github.com/wpaccessibility/wp-a11y-docs/issues/123).  
+If you want to work on this, please let us know before you start.
 
-The information about accessible design is an addition to the WordPress Design Style Guide. New topics will be added on a regular basis.
+The information about accessible design is an addition to the [WordPress Design Style Guide](https://make.wordpress.org/design/handbook/design-guide/). New topics will be added on a regular basis.
 
 ## Good reads on design
 
