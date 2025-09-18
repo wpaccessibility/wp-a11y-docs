@@ -76,8 +76,8 @@ jobs:
           number: ${{ steps.pr.outputs.pr_number }}
           header: pr-preview
           message: |
-            [PR Preview](https://wpaccessibility.org/pr-preview/pr-${{ steps.pr.outputs.pr_number }}/)
+            **PR Preview**
             :---:
-            Preview deployed for PR #${{ steps.pr.outputs.pr_number }}.
+            :rocket: View PR Preview at https://wpaccessibility.org/pr-preview/pr-${{ steps.pr.outputs.pr_number }}.
+            If you see a 404 error, please wait a few minutes and refresh the page.
             ${{ steps.ts.outputs.utc }}
-            <!-- Sticky Pull Request Commentpr-preview -->

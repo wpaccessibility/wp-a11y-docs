@@ -19,14 +19,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create empty deploy folder
-        run: mkdir -p empty
-
       - name: Remove PR Preview folder using GitHub Pages Deploy Action
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./empty
+          folder: ./site
           target-folder: pr-preview/pr-${{ github.event.pull_request.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
@@ -41,8 +38,7 @@ jobs:
           number: ${{ github.event.pull_request.number }}
           header: pr-preview
           message: |
-            [PR Preview Action](https://github.com/rossjrw/pr-preview-action) v1
+            **PR Preview**
             :---:
             Preview removed because the pull request was closed.
             ${{ steps.ts.outputs.utc }}
-            <!-- Sticky Pull Request Commentpr-preview -->
