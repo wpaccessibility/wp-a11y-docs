@@ -1105,7 +1105,7 @@
   },"184": {
     "doc": "How to contribute",
     "title": "How to contribute to this documentation",
-    "content": "Do you want to help maintain and extend the accessibility documentation for WordPress? Thank you! Let us know you want to work on the WordPress accessibility documentation and share your ideas, write or review content, report or fix bugs in this website. There are several ways you can contribute: . | Write new content | Review content someone else wrote | Suggest new content or resources | Report an error | Fix code issues in this website | Audit the accessibility of wpaccessibility.org | . Respect our Code of Conduct. Please write the content yourself and use AI only to translate or to check the quality of your English. ",
+    "content": "Do you want to help maintain and extend the accessibility documentation for WordPress? Thank you! Let us know you want to work on the WordPress accessibility documentation and share your ideas, write or review content, report or fix bugs in this website. There are several ways you can contribute: . | Suggest new content or resources | Write new content | Review content someone else wrote | Report an error | Fix code issues in this website | Audit the accessibility of wpaccessibility.org | . Respect our Code of Conduct. Please write the content yourself and use AI only to translate or to check the quality of your English. ",
     "url": "/pr-preview/pr-109/docs/contribute/#how-to-contribute-to-this-documentation",
     "relUrl": "/docs/contribute/#how-to-contribute-to-this-documentation"
   },"185": {
