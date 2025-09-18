@@ -43,6 +43,27 @@ jobs:
       - name: List downloaded files (debug)
         run: find ./site -maxdepth 4 -type f | head -100
 
+      - name: Debug permissions and token
+        run: |
+          echo "=== GitHub Context ==="
+          echo "Repository: ${{ github.repository }}"
+          echo "Event name: ${{ github.event_name }}"
+          echo "Actor: ${{ github.actor }}"
+          echo "Token permissions: ${{ toJson(github.token) }}"
+          echo ""
+          echo "=== Workflow Run Context ==="
+          echo "Workflow run actor: ${{ github.event.workflow_run.actor.login }}"
+          echo "Workflow run conclusion: ${{ github.event.workflow_run.conclusion }}"
+          echo "Workflow run event: ${{ github.event.workflow_run.event }}"
+          echo ""
+          echo "=== Available Environment Variables ==="
+          env | grep -E '^(GITHUB_|ACTIONS_)' | sort
+          echo ""
+          echo "=== Test Git Access ==="
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          echo "Git configured successfully"
+
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@v1
         with:
