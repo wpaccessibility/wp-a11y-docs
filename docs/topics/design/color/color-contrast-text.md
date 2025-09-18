@@ -7,9 +7,10 @@ nav_order: 2
 
 # Color contrast of text against its background
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content needs to be reviewed, restructured and expanded.
+Related issue on [GitHub #127 Topic Color contrast of text against its background](https://github.com/wpaccessibility/wp-a11y-docs/issues/127).  
+If you want to work on this, please let us know before you start.
 
 Color contrast is an important issue to address for the accessibility of your website. It should be considered for foreground (text and other elements) and background colors (or images), but also between elements and hover or focus states.
 
