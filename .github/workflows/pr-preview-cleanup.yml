@@ -1,7 +1,7 @@
 name: Remove PR Preview
 
 on:
-  pull_request:
+  pull_request_target:
     types: [closed]
 
 permissions:
@@ -19,11 +19,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Create empty deploy folder
+        run: mkdir -p empty
+
       - name: Remove PR Preview folder using GitHub Pages Deploy Action
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./site
+          folder: ./empty
           target-folder: pr-preview/pr-${{ github.event.pull_request.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
           clean: true
