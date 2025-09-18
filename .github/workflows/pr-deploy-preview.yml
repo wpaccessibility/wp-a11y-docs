@@ -55,6 +55,9 @@ jobs:
       - name: List downloaded files (debug)
         run: find ./site -maxdepth 4 -type f | head -100
 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@v1
         with:
