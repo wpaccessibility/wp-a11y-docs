@@ -6,7 +6,7 @@ description: "Home. WP Accessibility Knowledge Base. Documentation about accessi
 permalink: /
 ---
 
-# [work in progress] WP Accessibility Knowledge Base demo website
+# [work in progress] TEST WP Accessibility Knowledge Base demo website
 {: .fs-9 }
 
 Documentation about accessibility for WordPress users and creators. For the community, by the community.
