@@ -12,7 +12,7 @@ Additionally, we are developing a pattern library with code examples. We aim to 
 
 Did we miss a topic? Did you find an error or have a great idea? Create an issue on our [GitHub repository wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/issues/).
 
-We would like to [invite you to contribute](/docs/contribute/) to this Knowledge Base.
+We would like to invite you [to contribute](https://wpaccessibility.org/docs/contribute/) to this documentation.
 
 ## Pull Request Previews
 

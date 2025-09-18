@@ -1,19 +1,19 @@
 ---
 title: Pull requests
 layout: default
-parent: How to contribute
+parent: How to help on GitHub
 nav_order: 3
 ---
 
-# GitHub pull requests for the Knowledge Base
+# GitHub pull requests for the documentation
 
-First, create a new issue on GitHub or find an issue you want to help with on in our [GitHub repository labeled "documentation"](https://github.com/wpaccessibility/wp-a11y-docs/issues?q=is%3Aissue%20state%3Aopen%20label%3Adocumentation). Also check if there isn't already an open issue about what you want to add or change.
+First, find the issue you want to help with on in our [project board WP A11y Docs](https://github.com/orgs/wpaccessibility/projects/3) in the Todo column, that is not assigned to someone else. Comment with the issues that you want to work on this, and you will be assigned to the issue. This prevents double work.
 
 ## How to make a good pull request
 
 Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to.
 
-All Knowledge Base files live in the `/docs/` directory. For Markdown, we use the [Markdown Style Guide](https://developer.wordpress.org/coding-standards/styleguide/).
+All documentation files live in the `/docs/` directory. For Markdown, we use the [Markdown Style Guide](https://developer.wordpress.org/coding-standards/styleguide/).
 
 Please check for grammer and spelling errors before submitting the PR. 
 

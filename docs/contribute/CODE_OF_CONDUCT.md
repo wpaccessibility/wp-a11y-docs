@@ -2,7 +2,7 @@
 title: Code of Conduct
 layout: default
 parent: How to contribute
-nav_order: 6
+nav_order: 9
 ---
 
 # Contributor Covenant Code of Conduct
