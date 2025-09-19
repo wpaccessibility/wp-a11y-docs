@@ -7,10 +7,10 @@ nav_order: 3
 
 # Post Excerpts
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
-There are better and more modern ways to do this
+{: .alert }
+This content should be reviewed, modernized and restructured.  
+Related issue on [GitHub #151 Topic Post Excerpts](https://github.com/wpaccessibility/wp-a11y-docs/issues/151).  
+If you want to work on this, please let us know before you start.
 
 ## Excerpt block
 

@@ -7,9 +7,10 @@ nav_order: 3
 
 # Heading structure in theme development
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content needs to be reviewed and restructured.  
+Related issue on [GitHub #142 Topic Heading structure in theme development](https://github.com/wpaccessibility/wp-a11y-docs/issues/142).  
+If you want to work on this, please let us know before you start.
 
 
 Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As a sighted user, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content.

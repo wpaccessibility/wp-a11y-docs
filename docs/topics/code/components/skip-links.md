@@ -7,9 +7,10 @@ nav_order: 2
 
 # Skip links
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content needs to be reviewed and restructured.  
+Related issue on [GitHub #149 Topic Skip links](https://github.com/wpaccessibility/wp-a11y-docs/issues/149).  
+If you want to work on this, please let us know before you start.
 
 Navigation links, search forms, social media links, or other elements commonly appear on the page before the main content. When navigating using the keyboard, it can be frustrating to get to the main content of a page because of these elements if you need to tab through everything on each page. A skip link provides users (particularly keyboard users) with a means to skip all these elements and jump to the content.
 

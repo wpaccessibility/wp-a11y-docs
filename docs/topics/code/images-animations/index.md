@@ -7,6 +7,7 @@ nav_order: 4
 
 # Images and Animations
 
-{: .warning }
-**TODO:**
-A short intro needs to be written.
+{: .alert }
+The intro text needs to be written.
+Related issue on [GitHub #146 Intro page Images and Animations](https://github.com/wpaccessibility/wp-a11y-docs/issues/146).
+
