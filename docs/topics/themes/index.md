@@ -7,9 +7,9 @@ nav_order: 8
 
 # WordPress themes and accessibility
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content will be updated later.  
+Related issue on [GitHub #164 Topic WordPress themes and accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/164).  
 
 Creating a theme that supports accessibility is mostly about setting healthy defaults. This includes:
 

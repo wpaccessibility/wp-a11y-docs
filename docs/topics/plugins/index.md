@@ -7,11 +7,10 @@ nav_order: 9
 
 # WordPress plugins and accessibility
 
-{: .warning }
-**TODO:**
-The accessibility content should be moved to the topics, this page should only contain practical info.The content should be reviewed for modern code and the links adjusted and divided between the topics.  For plugin developers and for people choosing a plugin.
-
-<hr>
+{: .alert }
+The accessibility content should be moved to the related topics, this page should only contain practical info. Which info that will be is open for discussion.  
+Related issue on [GitHub #165 Topic WordPress plugins and accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/165).  
+If you want to work on this, please let us know before you start.
 
 There are no plugin accessibility requirements in the WordPress plugin directory. This is because of the labor required to test plugins for accessibility. However, you are strongly encouraged to consider accessibility when creating or updating your plugins.
 

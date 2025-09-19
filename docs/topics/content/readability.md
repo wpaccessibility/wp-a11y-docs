@@ -8,7 +8,7 @@ nav_order: 6
 # Readability
 
 {: .alert }
-This content needs to be reviewed, restructured and expanded.
+This content needs to be reviewed, restructured and expanded.  
 Related issue on [GitHub #120 Topic Readability](https://github.com/wpaccessibility/wp-a11y-docs/issues/120).  
 If you want to work on this, please let us know before you start.
 
