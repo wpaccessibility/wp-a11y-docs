@@ -228,9 +228,31 @@
 
           <a href="/docs/topics/code/components/link-logo/" class="nav-list-link">Link on a logo</a></li><li class="nav-list-item">
 
-          <a href="/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li></ul></li></ul></li><li class="nav-list-item">
+          <a href="/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li><li class="nav-list-item">
 
-          <a href="/docs/topics/forms/" class="nav-list-link">Web forms</a></li><li class="nav-list-item">
+          <a href="/docs/topics/code/components/pagination/" class="nav-list-link">Pagination</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/Input-label/" class="nav-list-link">Input and label</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/placeholders/" class="nav-list-link">Placeholders</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/help/" class="nav-list-link">Provide help</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/required/" class="nav-list-link">Required fields</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/wp-form-plugins/" class="nav-list-link">WP form plugins</a></li></ul></li><li class="nav-list-item">
 
           <a href="/docs/topics/core/" class="nav-list-link">WordPress Core</a></li><li class="nav-list-item">
 
@@ -258,12 +280,6 @@
 
           <a href="/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/docs/wordpress-accessibility/" class="nav-list-link">WP and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WP and Accessibility submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/docs/wordpress-accessibility/wp-a11y-team/" class="nav-list-link">WP Accessibility Team</a></li></ul></li><li class="nav-list-item">
-
           <a href="/docs/team-process/" class="nav-list-link">Team and process</a></li><li class="nav-list-item">
 
           <a href="/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
@@ -271,6 +287,8 @@
           <a href="/docs/resources/" class="nav-list-link">Resources</a></li><li class="nav-list-item">
 
           <a href="/blog/" class="nav-list-link">Blog</a></li><li class="nav-list-item">
+
+          <a href="/docs/wp-a11y-team/" class="nav-list-link">WordPress Accessibility Team</a></li><li class="nav-list-item">
 
           <a href="/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -381,8 +399,8 @@
 
           <h1 id="accessible-web-forms">Accessible web forms</h1>
 
-<p class="warning"><strong>TODO:</strong>
-This content should be reviewed and restructured and divided between separate topics.</p>
+<p class="alert">The intro text needs to be rewritten.<br />
+Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/154">GitHub #154 Intro page Accessible web forms</a>.</p>
 
 <p>For web-based forms to be accessible to all devices, it’s important to use valid, well-constructed HTML. Good structure is the foundation of a good form. In addition to using valid HTML, be sure to:</p>
 
@@ -402,115 +420,54 @@ This content should be reviewed and restructured and divided between separate to
   <li>WebAIM: <a href="http://webaim.org/techniques/forms/">Creating Accessible Forms</a></li>
   <li>A good introduction by Nomensa: <a href="https://www.nomensa.com/blog/2010/three-rules-for-creating-accessible-forms">Three rules for creating accessible websites</a></li>
   <li><a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/#labeling">Core handbook on labeling</a></li>
-</ul>
-
-<h2 id="form-structure-guide">Form Structure Guide</h2>
-
-<h3 id="labels-and-placeholders">Labels and placeholders</h3>
-
-<p>A placeholder is not a substitute for a label. For all users to understand a form, a <code class="language-plaintext highlighter-rouge">label</code> should be connected to an <code class="language-plaintext highlighter-rouge">input</code>.</p>
-
-<p>The <code class="language-plaintext highlighter-rouge">label</code> should tell the user what information is required; the <code class="language-plaintext highlighter-rouge">placeholder</code> should describe <em>how</em> to fill it out.</p>
-
-<p>For example:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>Search for a product:<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"For example: apples, bread or milk"</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-
-<p>The placeholder attribute should not be used as a replacement for a label. For a longer hint or other advisory text, place the text next to the control. In this case, use <code class="language-plaintext highlighter-rouge">aria-describedby</code> to connect the descriptive text to the form input:</p>
-
-<p>The placeholder attribute represents a short hint (a word or short phrase) intended to aid the user with data entry when the control has no value. A hint could be a sample value or a brief description of the expected format.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>Search for a product:<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"For example: apples, bread or milk"</span> <span class="na">aria-describedby=</span><span class="s">"search_description"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">"search_description"</span><span class="nt">&gt;</span>This store only carries fruit, grain products, and dairy.<span class="nt">&lt;/span&gt;</span>
-</code></pre></div></div>
-
-<p>If you must hide a label or control from vision, use the CSS class <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/">.screen-reader-text</a> and not <code class="language-plaintext highlighter-rouge">display: none</code> or <code class="language-plaintext highlighter-rouge">visibility: hidden</code>. Hiding labels is generally discouraged, but can be acceptable in some cases, such as single-field search forms.</p>
-
-<h3 id="grouping-with-fieldset--legend">Grouping with Fieldset &amp; Legend</h3>
-
-<p>The <code class="language-plaintext highlighter-rouge">fieldset</code> and <code class="language-plaintext highlighter-rouge">legend</code> elements are a standard way to group fields. When a screen reader enters a fieldset, the <code class="language-plaintext highlighter-rouge">legend</code> of that group will be announced. This is a helpful way of grouping related fields together, such as differentiating between an order address and a shipping address; but is critical when grouping radio buttons and checkboxes.</p>
-
-<p>In radio and checkbox groups, it is common that the <code class="language-plaintext highlighter-rouge">label</code> holds the answer to a question that is presented earlier. Without an appropriate <code class="language-plaintext highlighter-rouge">legend</code>, this question may not be presented to users of assistive technology.</p>
-
-<p>If design demands make the use of a legend impractical, you can use ARIA to group fields:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"radiogroup"</span> <span class="na">aria-labelledby=</span><span class="s">"color_question"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h3</span> <span class="na">id=</span><span class="s">"color_question"</span><span class="nt">&gt;</span>Which is the best color?<span class="nt">&lt;/h3&gt;</span>
-  <span class="nt">&lt;p&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"purple"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"purple"</span><span class="nt">&gt;</span>Purple<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;p&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"aubergine"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"aubergine"</span><span class="nt">&gt;</span>Aubergine<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;p&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"magenta"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"magenta"</span><span class="nt">&gt;</span>Magenta<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;p&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"all"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"all"</span><span class="nt">&gt;</span>All of the above<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<h3 id="provide-instructions-to-help-users-with-complex-forms">Provide instructions to help users with complex forms</h3>
-
-<p>Strong semantic structure, like what is provided by <code class="language-plaintext highlighter-rouge">fieldset</code> and <code class="language-plaintext highlighter-rouge">legend</code> is very helpful in understanding complex forms. However, providing assistance to users can sometimes make the difference between having a user complete a process and abandon it.</p>
-
-<p>Instructions can range anywhere from an <code class="language-plaintext highlighter-rouge">aria-describedby</code> description associated with a single input, to a modal dialog that gives additional context or provides a worksheet to help the user calculate a value.</p>
-
-<p>Importantly, the line between understandable and…not can be very blurry; and you should always be looking at your form with an empathetic eye. Your knowledge of the form is likely much greater than your user’s.</p>
-
-<h3 id="validate-user-input">Validate user input</h3>
-
-<p>If it is possible to know whether a value is acceptable before the form is submitted, you should provide accessible validation as soon as possible. That validation should do more than simply notifying the user there is a problem with the field; it should also tell them how to fix it, if you’re able to provide that information.</p>
-
-<p>For example, in a required email field, you should be able to quickly identify the difference between a missing email and an invalid format, and provide feedback accordingly.</p>
-
-<p>That feedback should be provided in an accessible notification. And on that point…</p>
-
-<h3 id="provide-accessible-notifications">Provide accessible notifications</h3>
-
-<p>When a dynamic event occurs, it should be announced audibly by screen readers. A dynamic event is any event that is reacting to a user without a page refresh: either a direct scripted validation or an AJAX request.</p>
-
-<p>A good way to announce dynamic notifications in WordPress is using <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/wp-a11y-speak/">wp.a11y-speak()</a>. This JavaScript function is included in WordPress core and enables you to announce dynamic changes and notifications to screen reader users.</p>
-
-<h3 id="consistent-tab-order">Consistent tab order</h3>
-
-<p>It is a common technique for forms to give the first input field <code class="language-plaintext highlighter-rouge">tabindex="1"</code>. This can be annoying or confusing for keyboard users, as the tab order does not match what they expect.</p>
-
-<p>Avoid applying <code class="language-plaintext highlighter-rouge">tabindex</code> attributes with positive values anywhere on your site, so that the keyboard path through the form is predictable and matches the visual layout of the form.</p>
-
-<h3 id="dont-remove-native-focus-styling">Don’t remove native :focus styling</h3>
-
-<p>Most modern browsers have strong default <code class="language-plaintext highlighter-rouge">:focus</code> styling, making it easy for a user to tab from control to control and see clearly where they are on the page.</p>
-
-<p>If you remove this, it is very easy for a sighted user to get lost and abandon the page. Custom <code class="language-plaintext highlighter-rouge">:focus</code> states are just fine; but avoid subtlety. Focus is an undirected action – meaning that the user does not know in advance where they are going, and will need to locate focus after it moves. Strong states make this easier.</p>
-
-<h2 id="useful-wordpress-form-plugins">Useful WordPress Form plugins</h2>
-
-<ul>
-  <li><a href="https://wordpress.org/plugins/contact-form-7-accessible-defaults/">Contact Form 7: Accessible Defaults</a> (Generate accessible settings for Contact Form 7 forms.)</li>
-  <li><a href="https://gravityforms.com/">Gravity Forms</a> (Build accessible forms; always disable Legacy HTML)</li>
-</ul>
-
-<h2 id="more-resources">More resources</h2>
-
-<ul>
   <li><a href="https://foxland.fi/wordpress-speaks-wp-a11y-speak/">WordPress speaks with wp.a11y.speak</a></li>
-  <li>Research: <a href="http://rianrietveld.com/2017/11/21/accessible-custom-styled-form-elements/">Accessible custom styled form elements</a></li>
   <li><a href="https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/">A Guide to Accessible Form Validation</a></li>
   <li><a href="https://www.deque.com/blog/anatomy-of-accessible-forms-best-practices/">The Anatomy of Accessible Forms</a></li>
 </ul>
 
 
           
-            
+            <hr>
+<h2 class="no_toc text-delta" id="table-of-contents">Table of contents</h2>
+<ul>
+  
+  <li>
+    <a href="/docs/topics/forms/Input-label/">Input and label</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/placeholders/">Placeholders</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/descriptions/">Input and description</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/fieldsets/">Group form fields</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/focus/">Focus handling</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/help/">Provide help</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/required/">Required fields</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/feedback/">Feedback on errors</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/wp-form-plugins/">WP form plugins</a>
+  </li>
+  
+</ul>
           
 
           
