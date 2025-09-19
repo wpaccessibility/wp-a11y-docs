@@ -5,10 +5,12 @@ parent: Frontend code
 nav_order: 5
 ---
 
-# Tables
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+# Tables in theme and plugin development
+
+{: .alert }
+This content needs to be reviewed and restructured.  
+Related issue on [GitHub #144 Topic Tables in theme and plugin development](https://github.com/wpaccessibility/wp-a11y-docs/issues/144).  
+If you want to work on this, please let us know before you start.
 
 Tables are the recommended way to display tabular data. Tabular data is any data that is best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not a good idea for layout, however.
 

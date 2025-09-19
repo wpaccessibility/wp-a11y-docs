@@ -8,7 +8,7 @@ nav_order: 3
 # Headings in the content
 
 {: .alert }
-This content needs to be reviewed and restructured.
+This content needs to be reviewed and restructured.  
 Related issue on [GitHub #106 Headings in the content](https://github.com/wpaccessibility/wp-a11y-docs/issues/106).  
 If you want to work on this, please let us know before you start.
 

@@ -7,9 +7,10 @@ nav_order: 4
 
 # ARIA Landmarks
 
-{: .warning }
-**TODO:**
-This content should be reviewed and restructured.
+{: .alert }
+This content needs to be reviewed and restructured.  
+Related issue on [GitHub #143 Topic ARIA Landmarks](https://github.com/wpaccessibility/wp-a11y-docs/issues/143).  
+If you want to work on this, please let us know before you start.
 
 ARIA landmark roles provide a method for screen reader users to navigate structural regions of a site. By default, many HTML5 elements define ARIA landmark roles which identify these regions.
 
@@ -94,7 +95,7 @@ A basic example of page structure can look like this:
 
 Using this markup, screen reader users can navigate using mapped ARIA landmark roles. For example, in VoiceOver the landmark list will look like this:
 
-![List of aria landmarks in VoiceOver: banner, navigation, main, complementary](/assets/images/aria-landmarks-in-voiceover.png)
+![List of aria landmarks in VoiceOver: banner, navigation, main, complementary]({{site.baseurl}}/assets/images/aria-landmarks-in-voiceover.png)
 
 Note that the contentinfo role is missing. This is because of a VoiceOver bug. Life isn’t perfect. You can add this role manually: `<footer role="contentinfo">`.
 
@@ -107,7 +108,7 @@ If the same role appears on more than one element on a page, there should be an 
 
 With those aria-label attributes, screen readers will announce **Top navigation** and **Bottom navigation**, rather than **navigation** and **navigation**.
 
-![Top and bottom navigation added using aria labels](/assets/images/aria-landmarks-with-aria-label.png)
+![Top and bottom navigation added using aria labels]({{site.baseurl}}/assets/images/aria-landmarks-with-aria-label.png)
 
 Note that the word navigation is already announced by assistive technologies. Therefore, avoid using landmark names like “navigation” in youraria-label content.
 

@@ -8,13 +8,14 @@ nav_order: 7
 # WordPress Core Accessibility Standards
 
 {: .alert }
-This content needs to be reviewed and restructured.
+This content needs to be reviewed and restructured. 
 Related issue on [GitHub #122 Topic WordPress Core Accessibility Standards](https://github.com/wpaccessibility/wp-a11y-docs/issues/122).  
 If you want to work on this, please let us know before you start.
 
 {: .warning }
 **TODO:**
-This is duplicate content? see also [Accessibility Coding Standards ](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/)in the coding standards habdbook  WCAG 2.0 must be WCAG 2.2??? The content should be reviewed for modern code and the links adjusted and devided between the topics. 
+This is duplicate content? see also [Accessibility Coding Standards ](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/)in the coding standards handbook WCAG 2.0 must be WCAG 2.2?
+The content should be reviewed for modern code and the links adjusted and divided between the topics.
 
 When creating new interfaces in core, the output and interactions are expected to conform to WCAG 2.0 at level AA. But beyond that, there are some specific patterns that the accessibility team and core team have agreed on as the preferred method for structure.
 
