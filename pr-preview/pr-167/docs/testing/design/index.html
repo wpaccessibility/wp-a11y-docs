@@ -1,0 +1,542 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+
+
+<title>Design checks, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/pr-preview/pr-167/assets/css/styles.css">
+  <link rel="icon" href="/pr-preview/pr-167/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/pr-preview/pr-167/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <a href="/pr-preview/pr-167/" class="site-title lh-tight">
+      WP Accessibility Knowledge Base</a>
+    <button id="menu-button" class="site-button btn-reset" aria-expanded="false">
+      <span>Menu</span>
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+        <use xlink:href="#svg-menu"></use>
+      </svg>
+    </button>
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav" tabindex="0">
+
+    <h2 class="screen-reader-text">Menu</h2>
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/" class="nav-list-link">Start with accessibility</a><button class="nav-list-expander btn-reset" aria-label="Start with accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/wp-plugins/" class="nav-list-link">WP Plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/business/" class="nav-list-link">Accessibility for your business</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/at/" class="nav-list-link">Assistive technology</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/myths/" class="nav-list-link">Debunking myths</a><button class="nav-list-expander btn-reset" aria-label="Debunking myths submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/myths/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/start/myths/overlays/" class="nav-list-link">Overlays</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/" class="nav-list-link">Standards and best practice</a><button class="nav-list-expander btn-reset" aria-label="Standards and best practice submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/wcag/" class="nav-list-link">WCAG and compliance</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/best-practice/" class="nav-list-link">WCAG vs best practice</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/" class="nav-list-link">Content and images</a><button class="nav-list-expander btn-reset" aria-label="Content and images submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/alt-text/" class="nav-list-link">Alt text for images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/headings/" class="nav-list-link">Headings</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/links/" class="nav-list-link">Links</a><button class="nav-list-expander btn-reset" aria-label="Links submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/links/link-text/" class="nav-list-link">Link texts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/links/link-image/" class="nav-list-link">Images as links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/tables/" class="nav-list-link">Tables</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/color/color-contrast-icons/" class="nav-list-link">Color contrast of icons</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/color/color-contrast-forms/" class="nav-list-link">Color contrast in forms</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/meaningful-sequence/" class="nav-list-link">Meaningful sequence</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/" class="nav-list-link">Frontend code</a><button class="nav-list-expander btn-reset" aria-label="Frontend code submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/semantics/" class="nav-list-link">Semantic HTML</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/tables/" class="nav-list-link">Tables</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/screen-reader-text/" class="nav-list-link">CSS screen-reader-text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/dynamic-changes/" class="nav-list-link">Feedback on dynamic changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/components/" class="nav-list-link">Components</a><button class="nav-list-expander btn-reset" aria-label="Components submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/components/skip-links/" class="nav-list-link">Skip links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/components/excerpt/" class="nav-list-link">Post Excerpts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/components/link-logo/" class="nav-list-link">Link on a logo</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/code/components/pagination/" class="nav-list-link">Pagination</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/Input-label/" class="nav-list-link">Input and label</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/placeholders/" class="nav-list-link">Placeholders</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/help/" class="nav-list-link">Provide help</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/required/" class="nav-list-link">Required fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/forms/wp-form-plugins/" class="nav-list-link">WP form plugins</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/core/" class="nav-list-link">WordPress Core</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/themes/" class="nav-list-link">Themes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/topics/plugins/" class="nav-list-link">Plugins</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/" class="nav-list-link">Testing</a><button class="nav-list-expander btn-reset" aria-label="Testing submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/checklists/" class="nav-list-link">Overall checklists</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/keyboard/" class="nav-list-link">Keyboard testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/screen-readers/" class="nav-list-link">Screen reader testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/team-process/" class="nav-list-link">Team and process</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/resources/" class="nav-list-link">Resources</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/blog/" class="nav-list-link">Blog</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/wp-a11y-team/" class="nav-list-link">WordPress Accessibility Team</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/improve-website/" class="nav-list-link">Improve this website</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/github/" class="nav-list-link">How to help on GitHub</a><button class="nav-list-expander btn-reset" aria-label="How to help on GitHub submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/github/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/github/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/github/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/github/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/audit/" class="nav-list-link">WCAG-EM audit of this site</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/sponsors/" class="nav-list-link">Sponsors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/about/" class="nav-list-link">About this website</a><button class="nav-list-expander btn-reset" aria-label="About this website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-167/docs/contact/" class="nav-list-link">Contact</a></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    
+<div class="search">
+  <form class="search-input-wrap" role="search">
+    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search WP Accessibility Knowledge Base" autocomplete="off">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+    </label>
+  </form>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-167/docs/testing/'>Testing</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Design checks</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1 id="design-checks-for-web-accessibility">Design checks for web accessibility</h1>
+
+<p class="warning"><strong>TODO:</strong>
+Starter content. This content should be reviewed and restructured.
+The links need to be checked and updated.
+Some info/resources can be moved to the topics (and linked to) Standards and best practice.</p>
+
+<p>The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design.</p>
+
+<p>Here are a few major issues to address. At the end of the page you’ll find links to good resources with more examples and solutions.</p>
+
+<h2 id="color-contrast">Color contrast</h2>
+
+<p>Check the color contrast ratio between text and its background. The rules in WCAG 2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold.</p>
+
+<p>There are many tools to calculate this easily, see <a href="http://www.webaxe.org/color-contrast-tools/">Color contrast checkers</a>.</p>
+
+<p class="tip">Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.</p>
+
+<h2 id="color-contrast-1">Color Contrast</h2>
+
+<ul>
+  <li><a href="http://contrastchecker.com/">contrastchecker.com</a> (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast</li>
+  <li><a href="http://www.paciellogroup.com/resources/contrastAnalyser">Color Contrast Analyser</a> (Windows and OSX)– checks foreground/background contrast levels and preview designs as they might be seen by color blind users.</li>
+  <li><a href="http://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a> — a color blindness simulator for Mac OS X.</li>
+  <li><a href="https://www.toptal.com/designers/colorfilter">Colorblind Web Page Filter</a> — apply a color blindness emulating filter to a web page.</li>
+  <li><a href="http://accessibility.oit.ncsu.edu/tools/color-contrast/index.php">Color Palette Accessibility Evaluator</a> — analyze color combinations for conformance to accessibility guidelines.</li>
+</ul>
+
+<h2 id="not-by-color-alone">Not by color alone</h2>
+
+<ul>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/best-practices/design/use-of-color/">Don’t depend on color for meaning</a> – it’s fine to use color, as long as that isn’t the only identifying characteristic</li>
+  <li>Links in text must stand out as links, make them underlined</li>
+  <li>Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds; include clear text messages or icons, as well.</li>
+</ul>
+
+<h3 id="color-blindness-check-tools">Color blindness check tools:</h3>
+
+<ul>
+  <li>Look at your design only in grey scale colors, remove all color. Can you still understand it?</li>
+  <li><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a> tool for color blindness check.</li>
+  <li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/">Coblis</a> – Color Blindness Simulator</li>
+</ul>
+
+<h2 id="not-by-icon-alone">Not by icon alone</h2>
+
+<p>Add text with icons, if they are an essential part of the functionality. Make sure interactive elements such as navigation menus are labelled correctly. Not every user understands the icons (hamburgers) that are obvious to you.</p>
+
+<h2 id="for-users-with-dyslexia">For users with dyslexia</h2>
+
+<ul>
+  <li>No large blocks of text, e.g. use short paragraphs, headings and lists to divide the information</li>
+  <li>Uppercase font is harder to read</li>
+  <li>Handwritten font is harder to read</li>
+  <li>A font size of 16 pixels minimum, is best for most devices</li>
+  <li>Make the line height not too small</li>
+</ul>
+
+<h2 id="for-users-with-limited-vision">For users with limited vision</h2>
+
+<p>Keep together what belongs together: place related links or controls near each other.</p>
+
+<p>Some people don’t have an overview of everything that’s on a page, like <a href="https://www.aao.org/newsroom/news-releases/detail/probability-of-blindness-from-glaucoma-has-nearly-">people with glaucoma</a>. Don’t make them search for a submit button that’s on the bottom right, while the input fields is on the top left, for example.</p>
+
+<p>Make the order of things logical, most users read from top to bottom. For example, do not put required check boxes below the submit button in a form.</p>
+
+<h2 id="for-users-with-an-attention-disorder">For users with an attention disorder</h2>
+
+<ul>
+  <li>Users must be able to pause animations, or the animations must automatically stop after 3 seconds</li>
+  <li>Avoid using too many elements that distract the user from reading the text or using the navigation.</li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li>Section <a href="https://make.wordpress.org/accessibility/handbook/best-practices/design/use-of-color/">Use of color</a> in this handbook</li>
+  <li><a href="https://inclusive-components.design/">Inclusive Components</a></li>
+  <li><a href="https://shop.smashingmagazine.com/products/inclusive-design-patterns">Inclusive Design Patterns – Heydon Pickering</a></li>
+  <li><a href="https://github.com/Heydon/inclusive-design-checklist">Inclusive Design Checklist – Heydon Pickering</a></li>
+  <li><a href="https://webaim.org/resources/designers/">Web Accessibility for Designers</a></li>
+  <li><a href="https://humanmade.com/2017/11/09/accessible-design-a-process/">Accessible design: a process</a></li>
+  <li><a href="https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b">7 Things Every Designer Needs to Know about Accessibility – Jesse Hausler</a></li>
+  <li><a href="https://www.w3.org/WAI/tips/designing/">Tips for Getting Started Designing for Web Accessibility – W3C</a></li>
+  <li><a href="https://foxland.fi/writing-accessible-content/">Writing accessible content – Sami Keijonen</a></li>
+  <li><a href="https://usabilitygeek.com/6-principles-visual-accessibility-design/https:/usabilitygeek.com/6-principles-visual-accessibility-design/">6 Principles Of Visual Accessibility Design – Jenna Erickson</a></li>
+  <li><a href="https://uxdesign.cc/the-easiest-part-about-designing-accessible-websites-76cd6b9a7ae4?gi=ffa6b3378eb0">Designing for Accessibility, Step 1: Colour Contrast – Neil Shankar</a></li>
+  <li><a href="https://wordpress.tv/2017/09/27/maja-benke-accessible-design/">Accessible Design – Maja Benke (presentation)</a></li>
+  <li><a href="https://abookapart.com/products/accessibility-for-everyone">Accessibility for everyone – Laura Kalbag (book)</a></li>
+  <li><a href="https://webaim.org/techniques/fonts/">WebAIM: on fonts</a></li>
+  <li><a href="http://accessibility.psu.edu/legibility/fontface/">Pennsylvania State University: about Font Face</a></li>
+</ul>
+
+<h2 id="related-posts">Related posts</h2>
+
+<ul>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility/">Test for web accessibility: introduction</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility-content/">Test for web accessibility: content</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility/test-for-web-accessibility-frontend-code/">Test for web accessibility: frontend code (DOM)</a></li>
+</ul>
+
+
+          
+            
+          
+
+          
+            
+<div class="d-flex mt-2">
+    
+
+    
+    <p class="text-small text-grey-dk-000 mb-0">
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/design/index.md" id="edit-this-page">View this page on GitHub</a>
+    </p>
+    
+
+</div>
+
+
+          
+        </main>
+
+        
+  <footer>
+
+    <p>
+      <a href="#top" id="back-to-top" class="back-to-top">
+        <span aria-hidden="true">&#x2191;</span> Back to top
+      </a>
+    </p>
+
+  </footer>
+
+
+      </div>
+    </div>
+  </div>
+<div id="screen-reader-feedback" role="status"></div>
+</body>
+</html>
+
