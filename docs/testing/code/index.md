@@ -1,7 +1,7 @@
 ---
 title: Frontend code checks
 layout: default
-parent: Testing
+parent: Testing for accessibility
 nav_order: 5
 ---
 
