@@ -1207,7 +1207,7 @@
   },"201": {
     "doc": "Resources",
     "title": "Resources on accessibility",
-    "content": "Content follows. ",
+    "content": "This intro text needs to be written. Related issue on GitHub #181 Intro page Resources on accessibility. If you want to work on this, please let us know before you start. ",
     "url": "/pr-preview/pr-184/docs/resources/#resources-on-accessibility",
     "relUrl": "/docs/resources/#resources-on-accessibility"
   },"202": {
@@ -1439,21 +1439,21 @@
     "url": "/pr-preview/pr-184/docs/testing/design/",
     "relUrl": "/docs/testing/design/"
   },"240": {
-    "doc": "Testing",
+    "doc": "Testing for accessibility",
     "title": "Accessibility testing",
     "content": "This intro content needs to be written. Related issue on GitHub #169 Intro page Accessibility testing. If you want to work on this, please let us know before you start. ",
     "url": "/pr-preview/pr-184/docs/testing/#accessibility-testing",
     "relUrl": "/docs/testing/#accessibility-testing"
   },"241": {
-    "doc": "Testing",
-    "title": "Testing",
+    "doc": "Testing for accessibility",
+    "title": "Testing for accessibility",
     "content": " ",
     "url": "/pr-preview/pr-184/docs/testing/",
     "relUrl": "/docs/testing/"
   },"242": {
     "doc": "About this website",
     "title": "About this website",
-    "content": "This intro text needs to be written. Related issue on GitHub #183Intro page About this website. If you want to work on this, please let us know before you start. ",
+    "content": "This intro text needs to be written. Related issue on GitHub #183 Intro page About this website. If you want to work on this, please let us know before you start. ",
     "url": "/pr-preview/pr-184/docs/about/",
     "relUrl": "/docs/about/"
   },"243": {
