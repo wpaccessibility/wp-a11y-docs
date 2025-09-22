@@ -7,11 +7,10 @@ nav_order: 5
 
 # Automated accessibility testing
 
-{: .warning }
-**TODO:**
-Starter content. This content should be reviewed and restructured.
-The links need to be checked and updated.
-Some info/resources can be moved to the topics (and linked to) Standards and best practice.
+{: .alert }
+This content needs to be reviewed and expanded.  
+Related issue on [GitHub #174 Topic Automated accessibility testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/174).     
+If you want to work on this, please let us know before you start.
 
 ## WCAG 2 AA automated validation
 

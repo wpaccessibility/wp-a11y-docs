@@ -7,11 +7,10 @@ nav_order: 3
 
 # Content checks for web accessibility
 
-{: .warning }
-**TODO:**
-Starter content. This content should be reviewed and restructured.
-The links need to be checked and updated.
-Some info/resources can be moved to the topics (and linked to) Standards and best practice.
+{: .alert }
+This content needs to be reviewed and expanded.
+Related issue on [GitHub #171 Topic Content checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/171).    
+If you want to work on this, please let us know before you start.
 
 This page gives an overview of practical approaches and best practices for to keep your content as readable for as many users as possible.
 

@@ -7,15 +7,12 @@ nav_order: 8
 
 # WordPress' plugins for accessibility testing 
 
-{: .warning }
-**TODO:**
-Starter content. This content should be reviewed and restructured.
-The links need to be checked and updated.
+{: .alert }
+This content needs to be reviewed and expanded.  
+Related issue on [GitHub #177 Topic Screen reader testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/177).    
+If you want to work on this, please let us know before you start.
 
 We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use in your own accessible WordPress site.
-
-{: .alert }
-Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
 
 ## Testing Tools & Content Analysis
 
@@ -25,3 +22,6 @@ Note that while many plugins in the WordPress plugin repository are overlays or 
 - [WP Accessibility Tools & Missing Alt Text Finder](https://wordpress.org/plugins/tool-for-ada-section-508-and-seo/) – Provides accessibility testing and media analysis support.
 - [Editoria11y](https://wordpress.org/plugins/editoria11y-accessibility-checker/) – Accessibility checking tool geared towards content authors.
 - [Sa11y](https://wordpress.org/plugins/sa11y/) – Accessibility checking tool geared towards content authors.
+
+{: .warning }
+Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
