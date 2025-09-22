@@ -1,17 +1,16 @@
 ---
 title: Frontend code checks
 layout: default
-parent: Testing
+parent: Testing for accessibility
 nav_order: 5
 ---
 
 # Frontend checks for web accessibility
 
-{: .warning }
-**TODO:**
-Starter content. This content should be reviewed and restructured.
-The links need to be checked and updated.
-Some info/resources can be moved to the topics (and linked to) Standards and best practice.
+{: .alert }
+This content needs to be reviewed and expanded.  
+Related issue on [GitHub #173 Topic Frontend checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/173).     
+If you want to work on this, please let us know before you start.
 
 Testing for valid, semantic HTML is essential for the accessibility of your work. In this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development and before you commit your work.
 

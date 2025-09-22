@@ -1,17 +1,16 @@
 ---
 title: Screen reader testing
 layout: default
-parent: Testing
+parent: Testing for accessibility
 nav_order: 7
 ---
 
 # Screen reader testing
 
-{: .warning }
-**TODO:**
-Starter content. This content should be reviewed and restructured.
-The links need to be checked and updated.
-Some info/resources can be moved to the topics (and linked to) Standards and best practice.
+{: .alert }
+This content needs to be reviewed and expanded.  
+Related issue on [GitHub #176 Topic Screen reader testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/176).    
+If you want to work on this, please let us know before you start.
 
 Content that changes dynamically during time, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!
 

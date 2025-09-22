@@ -1,15 +1,16 @@
 ---
 title: Overall checklists
 layout: default
-parent: Testing
+parent: Testing for accessibility
 nav_order: 2
 ---
 
 # Checklists for accessibility testing overall
 
-{: .warning }
-**TODO:**
-Starter content. This content needs to extended and some checklists can be added from the other Testing content.
+{: .alert }
+This content needs to be reviewed and expanded.  
+Related issue on [GitHub #170 Checklists for accessibility testing overall](https://github.com/wpaccessibility/wp-a11y-docs/issues/170).    
+If you want to work on this, please let us know before you start.
 
 [Accessibility testing guide](https://github.com/alphagov/wcag-primer/wiki) by the Britisch Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion.
 

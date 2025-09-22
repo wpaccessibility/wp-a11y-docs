@@ -1,17 +1,16 @@
 ---
 title: Keyboard testing
 layout: default
-parent: Testing
+parent: Testing for accessibility
 nav_order: 6
 ---
 
 # Keyboard navigation testing
 
-{: .warning }
-**TODO:**
-Starter content. This content should be reviewed and restructured.
-The links need to be checked and updated.
-Some info/resources can be moved to the topics (and linked to) Standards and best practice.
+{: .alert }
+This content needs to be reviewed and expanded.  
+Related issue on [GitHub #175 Topic Keyboard navigation testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/175).    
+If you want to work on this, please let us know before you start.
 
 All functionality should work using a **keyboard only**. This essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.
 

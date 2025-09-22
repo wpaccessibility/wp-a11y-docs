@@ -7,6 +7,7 @@ nav_order: 2
 ---
 
 # Licenses
+
 The text of the documentation is created by the WordPress and Accessibility community worldwide.
 
 This documentation is licenced as [Creative Commons Zero 1.0 Universal (CC0-1.0)](
