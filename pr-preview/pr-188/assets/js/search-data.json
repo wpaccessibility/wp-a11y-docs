@@ -199,7 +199,7 @@
   },"33": {
     "doc": "Content kitchen sink",
     "title": "Text",
-    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. An image: ![Alt text](url) for example: ![Library](/assets/images/small-image.jpg) . For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
+    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. An image: ![Alt text](url) for example: ![Library](/pr-preview/pr-188/assets/images/small-image.jpg) . For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
     "url": "/pr-preview/pr-188/docs/contribute/github/content-kitchen-sink/#text",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#text"
   },"34": {
@@ -631,7 +631,7 @@
   },"105": {
     "doc": "Images and animations",
     "title": "Images and Animations",
-    "content": "The intro text needs to be written. Related issue on GitHub #146 Intro page Images and Animations. ",
+    "content": "These pages inform you about what is important to for developers when they implement animation and images in a theme, plugin or WordPress core. ",
     "url": "/pr-preview/pr-188/docs/topics/code/images-animations/#images-and-animations",
     "relUrl": "/docs/topics/code/images-animations/#images-and-animations"
   },"106": {
@@ -805,7 +805,7 @@
   },"134": {
     "doc": "Feedback on dynamic changes",
     "title": "Feedback on dynamic changes",
-    "content": "This content needs to be reviewed and restructured. And propably divided into separate topics for more use cases. Related issue on GitHub #166 Topic Feedback on dynamic changes. If you want to work on this, please let us know before you start. ",
+    "content": "This content needs to be reviewed and restructured. And probably divided into separate topics for more use cases. Related issue on GitHub #166 Topic Feedback on dynamic changes. If you want to work on this, please let us know before you start. ",
     "url": "/pr-preview/pr-188/docs/topics/code/dynamic-changes/",
     "relUrl": "/docs/topics/code/dynamic-changes/"
   },"135": {
@@ -829,7 +829,7 @@
   },"138": {
     "doc": "Frontend code",
     "title": "Frontend code",
-    "content": "The intro text needs to be rewritten. Related issue on GitHub #140 Intro page Frontend code. If you want to work on this, please let us know before you start. ",
+    "content": "These pages inform you about what is important to keep the result of your frontend code accessible for everyone. ",
     "url": "/pr-preview/pr-188/docs/topics/code/",
     "relUrl": "/docs/topics/code/"
   },"139": {
@@ -1813,13 +1813,13 @@
   },"302": {
     "doc": "Use of color",
     "title": "Examples",
-    "content": "Correct . Underline your links, which are placed between text. Undelined links are easier to see. Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white. Incorrect . Links not underlined – color blind users may have trouble distinguish links from text. Can you see the links now? . Color used as the only indicator for information or functionality . The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
+    "content": "Correct . Underline your links, which are placed between text. Underlined links are easier to see. Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white. Incorrect . Links not underlined – color blind users may have trouble distinguish links from text. Can you see the links now? . Color used as the only indicator for information or functionality . The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
     "url": "/pr-preview/pr-188/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
   },"303": {
     "doc": "Use of color",
     "title": "Good reads",
-    "content": ". | On link underlines by Adrian Roselli. | Keep the underline | . ",
+    "content": ". | Adrian Roselli: On link underlines | WebAxe: Keep the underline | . ",
     "url": "/pr-preview/pr-188/docs/topics/design/color/use-of-color/#good-reads",
     "relUrl": "/docs/topics/design/color/use-of-color/#good-reads"
   },"304": {
