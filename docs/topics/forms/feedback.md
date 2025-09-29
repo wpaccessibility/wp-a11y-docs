@@ -17,3 +17,8 @@ When a dynamic event occurs, it should be announced audibly by screen readers. A
 
 A good way to announce dynamic notifications in WordPress is using [wp.a11y-speak()](https://make.wordpress.org/accessibility/handbook/best-practices/markup/wp-a11y-speak/). This JavaScript function is included in WordPress core and enables you to announce dynamic changes and notifications to screen reader users.
 
+
+## Resources
+
+- [A Guide to Accessible Form Validation](https://www.smashingmagazine.com/2023/02/guide-accessible-form-validation/)
+
