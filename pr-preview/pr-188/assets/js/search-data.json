@@ -1195,7 +1195,7 @@
   },"199": {
     "doc": "Testing for accessibility",
     "title": "Accessibility testing",
-    "content": "This intro content needs to be written. Related issue on GitHub #169 Intro page Accessibility testing. If you want to work on this, please let us know before you start. ",
+    "content": "How to test your work and check for accessibility issues? How to test for the WCAG guidelines and for best practices? . In the pages of this section you can find several ways to tests for different topics and workflows. ",
     "url": "/pr-preview/pr-188/docs/testing/#accessibility-testing",
     "relUrl": "/docs/testing/#accessibility-testing"
   },"200": {
@@ -1255,7 +1255,7 @@
   },"209": {
     "doc": "WordPress Accessibility Team",
     "title": "The WordPress Accessibility Team",
-    "content": "This content needs to be written. Related issue on GitHub #182 Topic Screen reader testing. If you want to work on this, please let us know before you start. ",
+    "content": "WordPress is always changing and improving, it’s never truly finished. The same goes for making WordPress accessible to everyone. As the design, user experience, and code change, they need to be checked for accessibility. The community also needs ongoing help and education to keep up with accessibility best practices. The Accessibility Team helps to improve the accessibility of WordPress core and resources. Visit Make WordPress Accessibility to read the blog about the current work of the team. In the WordPress Accessibility Handbook you can find more about the team itself and how to help or join in. ",
     "url": "/pr-preview/pr-188/docs/wp-a11y-team/#the-wordpress-accessibility-team",
     "relUrl": "/docs/wp-a11y-team/#the-wordpress-accessibility-team"
   },"210": {
