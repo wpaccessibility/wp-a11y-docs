@@ -57,3 +57,7 @@ Color used as the only indicator for information or functionality
 
 The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable.
 
+## Good reads
+
+- [On link underlines](http://adrianroselli.com/2016/06/on-link-underlines.html) by Adrian Roselli.
+- [Keep the underline](http://www.webaxe.org/keep-the-underline-text-links/)
