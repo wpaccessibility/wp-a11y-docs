@@ -7,7 +7,6 @@ nav_order: 4
 
 # Images and Animations
 
-{: .alert }
-The intro text needs to be written.
-Related issue on [GitHub #146 Intro page Images and Animations](https://github.com/wpaccessibility/wp-a11y-docs/issues/146).
+These pages inform you about what is important to for developers when they implement animation and images in a theme, plugin or WordPress core. 
+
 

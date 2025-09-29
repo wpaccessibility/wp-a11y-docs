@@ -30,7 +30,7 @@ There is a great summary in the “[Reconsider the usage of infinite scrolling a
 
 Pagination with page numbers removes all the issues mentioned above.
 
-![Pagination with page numbers from 1 to 9](../../../assets/pagination.png)
+![Pagination with page numbers from 1 to 9]({{site.baseurl}}/assets/images/pagination.png)
 
 If the number of items to load is not too high, “Load more items” buttons could work as well. However, that option is limited to sequential usage and doesn’t provide any methods to access previously loaded items or the very last items to load.
 

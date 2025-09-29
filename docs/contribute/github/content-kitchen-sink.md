@@ -57,9 +57,9 @@ A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.
 
 ```markdown
 An image: ![Alt text](url)
-for example: ![Library](/assets/images/small-image.jpg)
+for example: ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 ```
-![Library](/assets/images/small-image.jpg)
+![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 
 
 {: .info } 

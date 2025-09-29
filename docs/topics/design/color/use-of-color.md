@@ -32,15 +32,15 @@ Grouped links in sidebars, footers, or in navigation menus frequently don’t ne
 
 Underline your links, which are placed between text.
 
-Undelined links are easier to see.
-![underlined links in body text](../../assets/Bildschirmfoto-2017-08-05-um-15.01.29-768x497.png)
+Underlined links are easier to see.
+![underlined links in body text]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-05-um-15.01.29-768x497.png)
 
 
 Use symbols and colors in graphics.
 
 Graphic with differently shaped symbols in black in white.
-![graphic in color with differently shaped symbols](../../assets/Bildschirmfoto-2017-08-16-um-10.27.20-768x588.png)
-![Graphic with differently shaped symbols in black in white](../../assets/Bildschirmfoto-2017-08-16-um-10.33.58-Kopie-768x629.png)
+![graphic in color with differently shaped symbols]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.27.20-768x588.png)
+![Graphic with differently shaped symbols in black in white]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.33.58-Kopie-768x629.png)
 
 
 
@@ -49,15 +49,15 @@ Graphic with differently shaped symbols in black in white.
 Links not underlined – color blind users may have trouble distinguish links from text.
 
 Can you see the links now?
-![Links are not seen on grey scale when there is no underline](../../assets/grey-scale-links.png)
+![Links are not seen on grey scale when there is no underline]({{site.baseurl}}/assets/images/grey-scale-links.png)
 
 Color used as the only indicator for information or functionality
-![Graphic: only color used (no symbols)](../../assets/Bildschirmfoto-2017-08-16-um-10.34.46-768x646.png)
-![Graphic: only color used (in black and white)](../../assets/Bildschirmfoto-2017-08-16-um-10.34.46-Kopie-768x646.png)
+![Graphic: only color used (no symbols)]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.34.46-768x646.png)
+![Graphic: only color used (in black and white)]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.34.46-Kopie-768x646.png)
 
 The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable.
 
 ## Good reads
 
-- [On link underlines](http://adrianroselli.com/2016/06/on-link-underlines.html) by Adrian Roselli.
-- [Keep the underline](http://www.webaxe.org/keep-the-underline-text-links/)
+- Adrian Roselli: [On link underlines](http://adrianroselli.com/2016/06/on-link-underlines.html)
+- WebAxe: [Keep the underline](http://www.webaxe.org/keep-the-underline-text-links/)
