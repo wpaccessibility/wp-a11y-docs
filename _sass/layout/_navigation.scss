@@ -19,6 +19,9 @@
   .nav-list-item {
     position: relative;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 
     @include fs-4;
 
@@ -33,6 +36,8 @@
       padding-top: $sp-1;
       padding-bottom: $sp-1;
       line-height: #{$nav-list-item-height-sm - 2 * $sp-1};
+      flex: 1;
+
       @if $nav-list-expander-right {
         padding-right: $nav-list-item-height-sm;
         padding-left: $gutter-spacing-sm;
@@ -71,15 +76,12 @@
     }
 
     .nav-list-expander {
-      position: absolute;
-      @if $nav-list-expander-right {
-        right: 5px;
-      }
-
       width: $nav-list-item-height-sm;
       height: $nav-list-item-height-sm;
       padding: #{$nav-list-item-height-sm * 0.25};
       color: $link-color;
+      flex-shrink: 0;
+      margin-right: 2px; // Add space for outline/border
 
       @include mq(md) {
         width: $nav-list-item-height;
@@ -103,6 +105,8 @@
       display: none;
       padding-left: $sp-3;
       list-style: none;
+      flex-basis: 100%;
+      width: 100%;
 
       .nav-list-item {
         position: relative;
