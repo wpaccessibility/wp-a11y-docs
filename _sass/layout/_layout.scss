@@ -132,6 +132,16 @@
   align-items: center;
 }
 
+@media screen and ( width < 31.25rem ) {
+  .lh-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .lh-wrapper img {
+    max-width: 80px;
+  }
+}
+
 .site-title {
   flex-grow: 1;
   display: flex;
