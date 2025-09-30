@@ -55,11 +55,26 @@ A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.
 ```
 A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days.
 
+### Internal links
+
+For links to other pages within this website, always use `{{site.baseurl}}` to ensure they work in preview environments:
+
+```markdown
+Internal link: [Contact the Documentation Team]({{site.baseurl}}/docs/contact/)
+```
+Internal link: [Contact the Documentation Team]({{site.baseurl}}/docs/contact/)
+
+{: .info }
+Always use `{{site.baseurl}}` for internal links (to other pages on this site) and asset links (images, etc.). This ensures links work correctly in both production and preview environments. External links to other websites don't need `{{site.baseurl}}`.
+
 ```markdown
 An image: ![Alt text](url)
-for example: ![Library](/assets/images/small-image.jpg)
+for example: ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 ```
-![Library](/assets/images/small-image.jpg)
+![Library]({{site.baseurl}}/assets/images/small-image.jpg)
+
+{: .info }
+For images and other assets, always include `{{site.baseurl}}` in the path to ensure they display correctly in preview environments.
 
 
 {: .info } 

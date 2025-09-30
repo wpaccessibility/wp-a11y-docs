@@ -16,7 +16,7 @@ The World Wide Web Consortium (W3C) developed guidelines to safeguard the access
 
 For WordPress, we test against [WCAG version 2.2 level AA](https://www.w3.org/WAI/WCAG22/quickref/).
 
-The page [Introduction to WCAG](/docs/start/wcag-intro/) explains how WCAG is put together and what all the terminology means, like principles, guidelines, succes criterion, techniques, levels and versions.
+The page [Introduction to WCAG]({{site.baseurl}}/docs/start/wcag-intro/) explains how WCAG is put together and what all the terminology means, like principles, guidelines, succes criterion, techniques, levels and versions.
 
 ## Accessibility coding standards for WordPress core
 

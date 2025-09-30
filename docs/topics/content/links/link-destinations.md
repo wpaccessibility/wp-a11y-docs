@@ -20,7 +20,7 @@ If you want to work on this, please let us know before you start.
 
 Opening a link in a new window or tab unexpectedly can disorient users. It also breaks the “back button”. The best practice is to let the user decide if she wants to open a link in a new tab or window.
 
-![Screenshot of the WP Admin modal to insert or edit a link](/assets/images/new-tab.png)
+![Screenshot of the WP Admin modal to insert or edit a link]({{site.baseurl}}/assets/images/new-tab.png)
 
 Not all screen readers alert users when a new window or tab has opened and for those with cognitive disabilities, they may have trouble interpreting what’s happened.
 

@@ -21,11 +21,11 @@ Accessibility is often abbreviated as a11y; “a” is the first character of th
 
 ## Include everyone
 
-By adopting the accessibility best practices you can ensure your website can be used by a large group of different people. Don't create for perfect people only. More about this in [They're not my visitors](/docs/start/myths/personas/).
+By adopting the accessibility best practices you can ensure your website can be used by a large group of different people. Don't create for perfect people only. More about this in [They're not my visitors]({{site.baseurl}}/docs/start/myths/personas/).
 
 ## Consider your business
 
-The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Read about the business case in [Accessibility for your business](/docs/start/business/).
+The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Read about the business case in [Accessibility for your business]({{site.baseurl}}/docs/start/business/).
 
 ## Consider your development process
 
@@ -36,7 +36,7 @@ For developers web accessibility means a way of thinking often called progressiv
 - Let the JavaScript interact with the content.
 
 This division helps you create websites that are easier to maintain and update, and is considered to be a (c)lean approach to web development.
-[Standards and best practice](/docs/topics/) explains how to code with sematics and accessibility in mind.
+[Standards and best practice]({{site.baseurl}}/docs/topics/) explains how to code with sematics and accessibility in mind.
 
 ## In Summary
 
