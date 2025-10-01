@@ -7,7 +7,7 @@ nav_order: 3
 
 # GitHub pull requests for the documentation
 
-First, find the issue you want to help with on in our [project board WP A11y Docs](https://github.com/orgs/wpaccessibility/projects/3) in the Todo column, that is not assigned to someone else. Comment with the issues that you want to work on this, and you will be assigned to the issue. This prevents double work.
+First, find the issue you want to help with on our [project board WP A11y Docs](https://github.com/orgs/wpaccessibility/projects/3) in the **Todo column**, that is not assigned to someone else. Comment with the issues that you want to work on this, and you will be assigned to the issue. This prevents double work.
 
 ## How to make a good pull request
 
@@ -15,7 +15,7 @@ Describe in the title and description of the pull request what the change or add
 
 All documentation files live in the `/docs/` directory. For Markdown, we use the [Markdown Style Guide](https://developer.wordpress.org/coding-standards/styleguide/).
 
-Please check for grammer and spelling errors before submitting the PR. 
+Please check for grammar and spelling errors before submitting the PR. 
 
 ## Create a pull request from a fork on GitHub with your text.
 

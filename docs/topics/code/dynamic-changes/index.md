@@ -8,7 +8,7 @@ nav_order: 7
 # Feedback on dynamic changes
 
 {: .alert }
-This content needs to be reviewed and restructured. And propably divided into separate topics for more use cases.
+This content needs to be reviewed and restructured. And probably divided into separate topics for more use cases.
 Related issue on [GitHub #166 Topic Feedback on dynamic changes](https://github.com/wpaccessibility/wp-a11y-docs/issues/166).  
 If you want to work on this, please let us know before you start.
 
