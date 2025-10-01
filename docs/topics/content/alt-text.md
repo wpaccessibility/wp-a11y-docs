@@ -56,7 +56,7 @@ Incorrect: will both be interpreted as "illustration.png, image"
 Image from WordPress Media Library where you can insert various meta-information for an image.
 
 An alternative text can be inserted in the Alt Text-field:
-![Screenshot of the add image modal in the editor](/assets/images/add-image.png)
+![Screenshot of the add image modal in the editor]({{site.baseurl}}/assets/images/add-image.png)
 
 ### Inserting alt attributes
 

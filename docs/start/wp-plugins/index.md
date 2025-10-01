@@ -26,4 +26,4 @@ Note that while many plugins in the WordPress plugin repository are overlays or 
 
 {: .info }
 Do you want to add your plugin to this list?   
-Please [contact the Documentation Team](/docs/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.
+Please [contact the Documentation Team]({{site.baseurl}}/docs/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.

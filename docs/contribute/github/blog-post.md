@@ -31,7 +31,7 @@ date: 2025-08-16
 
 The layout must be `post`, the parent `Blog`,  use for the `permalink` the structure `/blog/YYYY/name/`.
 
-The `date`, `author` and `excerpt` will show up below the title on the [Blog archive page](/blog/) and below the title on the blog post itself.
+The `date`, `author` and `excerpt` will show up below the title on the [Blog archive page]({{site.baseurl}}/blog/) and below the title on the blog post itself.
 The `date` can be in the future, the post will show up from that date and not before.
 
 The option for listings of `categories` hasn't been implemented yet, but please use it already.

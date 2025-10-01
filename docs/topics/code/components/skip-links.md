@@ -22,7 +22,7 @@ Navigation links, search forms, social media links, or other elements commonly a
 - When the link is clicked, it should move focus to the main content. The next tab press should continue navigation inside the main content.
 
 Skip to content link when focused
-![Skip to content link](/assets/images/skip-link.png)
+![Skip to content link]({{site.baseurl}}/assets/images/skip-link.png)
 
 Even though [all content should be inside a landmark region](https://make.wordpress.org/accessibility/handbook/best-practices/markup/aria-landmarks/), skip links can be outside any landmarks. If a user is navigating using landmark regions, having skip links inside a landmark may be excessively verbose. Since the skip link is the first item on the page, it is always easily findable.
 
