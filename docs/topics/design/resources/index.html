@@ -10,7 +10,7 @@
 
 
 
-<title>Feedback on dynamic changes, WP Accessibility Knowledge Base</title>
+<title>Resources, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -400,7 +400,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/docs/topics/code/'>Frontend code</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Feedback on dynamic changes</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/docs/topics/design/'>Design & user experience</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Resources</li>
     </ol>
 </nav>
 
@@ -409,96 +409,18 @@
 
         <main>
 
-          <h1 id="feedback-on-dynamic-changes">Feedback on dynamic changes</h1>
+          <h1 id="resources-about-design-and-user-experience">Resources about Design and user experience</h1>
 
-<p class="alert">This content needs to be reviewed and restructured. And probably divided into separate topics for more use cases.
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/166">GitHub #166 Topic Feedback on dynamic changes</a>.<br />
-If you want to work on this, please let us know before you start.</p>
-
-<h2 id="using-aria-live-in-wordpress">Using ARIA Live in WordPress</h2>
-
-<p><code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> is a JavaScript method included into WordPress core as off version 4.2.</p>
-
-<p>When content changes dynamically in a web page, <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> can announce a message using <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">aria-live</a>. Then users who depend on a screen reader will be notified of any change to the content on the page.</p>
-
-<p>Joe Dolson and Andrea Fercia wrote a clear introduction and manual on the method in <a href="https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/">Let WordPress Speak</a>, new in WordPress 4.2</p>
-
-<h3 id="example-of-a-wpa11yspeak-implementation">Example of a <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> implementation</h3>
-
-<p>In this example a table with data is displayed. The user can select for example a category and the table with the data below will be updated dynamically.</p>
-
-<p>With <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> we can announce that the table has been updated with new data.</p>
-
-<p><strong>Note</strong>: for <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> to work best, the <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/">.screen-reader-text CSS class</a> should be added to your theme CSS. Also, <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> is only available after DOM ready, so be sure not to call it earlier!</p>
-
-<h3 id="in-functionsphp">In functions.php</h3>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>add_action( 'wp_enqueue_scripts', 'yourprefix_ajax' );
-
-function yourprefix_ajax() {
-    // Register the script.
-    wp_register_script( 'your-prefix-ajax', get_template_directory_uri() . '/assets/js/your-ajax-file.js',
-        array(
-            'wp-a11y',
-        ),
-        false,
-        true
-    );
-
-    // Localization.
-    wp_localize_script( 'your-prefix-ajax', 'yourData', array(
-        strings' =&gt; array(
-            'resultsFound' =&gt; esc_html__( 'New results found and displayed in the table below', 'your-theme' )
-        ),
-    ) );
-    wp_enqueue_script( 'your-prefix-ajax' );
-}
-</code></pre></div></div>
-
-<h3 id="in-your-ajax-filejs">In your-ajax-file.js</h3>
-
-<p>Within the js method generating the dynamic changes you can call:</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Announce change of data in the table.</span>
-<span class="nx">wp</span><span class="p">.</span><span class="nx">a11y</span><span class="p">.</span><span class="nf">speak</span><span class="p">(</span> <span class="nx">yourData</span><span class="p">.</span><span class="nx">strings</span><span class="p">.</span><span class="nx">resultsFound</span><span class="p">,</span> <span class="dl">'</span><span class="s1">polite</span><span class="dl">'</span> <span class="p">);</span>
-</code></pre></div></div>
-
-<h3 id="the-generated-output">The generated output</h3>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"wp-a11y-speak-polite"</span> <span class="na">aria-live=</span><span class="s">"polite"</span> <span class="na">aria-relevant=</span><span class="s">"additions text"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"screen-reader-text wp-a11y-speak-region"</span><span class="nt">&gt;</span>
-New results found and displayed in the table below
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<p>This <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> will be added to the bottom of the web page.</p>
-
-<h2 id="using-the-npm-package">Using the npm package</h2>
-
-<p>The <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> functionality is also available from the NPM package <code class="language-plaintext highlighter-rouge">@wordpress/a11y</code>.</p>
-
-<p>Install the module:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install @wordpress/a11y --save
-</code></pre></div></div>
-
-<p>Example usage:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import { speak } from '@wordpress/a11y';
-
-// For polite messages that shouldn't interrupt what screen readers are currently announcing.
-speak( 'The message you want to send to the ARIA live region' );
-
-// For assertive messages that should interrupt what screen readers are currently announcing.
-speak( 'The message you want to send to the ARIA live region', 'assertive' );
-</code></pre></div></div>
-
-<h2 id="resources">Resources</h2>
+<p>For a more in depth understanding of how to create an accessible design and user experience.</p>
 
 <ul>
-  <li><a href="https://foxland.fi/wordpress-speaks-wp-a11y-speak/">WordPress speaks with wp.a11y.speak</a> by Sami Keijonen, explanation, examples in GitHub and a demo site</li>
-  <li><a href="https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/">Let WordPress Speak, new in WordPress 4.2</a> by Joe Dolson and Andrea Fercia, introducing and explaining the method</li>
-  <li>The NPM Module<a href="https://www.npmjs.com/package/@wordpress/a11y"> @wordpress/a11y</a> that has the “speak” method that allows you to easily announce dynamic interface updates to screen readers using ARIA live regions. This module is inspired by the speak function in wp-a11y.js</li>
-  <li><a href="https://github.com/Yoast/a11y-speak">a11y-speak</a>, a Github repository by Yoast containing a dedicated JS module, called A11ySpeak which makes the wp.a11y.speak functionality more universally available</li>
+  <li>GOV.UK: <a href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">Dos and don’ts on designing for accessibility</a>.</li>
+  <li>Heydon Pickering: <a href="https://inclusive-components.design/">Inclusive Components</a>: A blog trying to be a pattern library. All about designing inclusive web interfaces, piece by piece.</li>
+  <li>Heydon Pickering: <a href="https://www.smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/">Inclusive Design Patterns</a></li>
+  <li>Heydon Pickering: <a href="https://github.com/Heydon/inclusive-design-checklist">Inclusive Design Checklist</a>, a checklist on GitHub</li>
+  <li>Steven Lambert: <a href="https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/">Designing For Accessibility And Inclusion</a></li>
+  <li>Andrée Lange: <a href="https://www.a11y-collective.com/blog/five-myths-about-accessible-design/">Five myths about accessible design</a></li>
+  <li><a href="https://lawsofux.com/">Laws of UX</a>.</li>
 </ul>
 
 
@@ -513,7 +435,7 @@ speak( 'The message you want to send to the ARIA live region', 'assertive' );
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/code/dynamic-changes/index.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/resources.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
