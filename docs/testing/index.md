@@ -6,7 +6,6 @@ nav_order: 5
 
 # Accessibility testing
 
-{: .alert }
-This intro content needs to be written.  
-Related issue on [GitHub #169 Intro page Accessibility testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/169).  
-If you want to work on this, please let us know before you start.
+How to test your work and check for accessibility issues? How to test for the WCAG guidelines and for best practices?
+
+In the pages of this section you can find several ways to tests for different topics and workflows.

@@ -25,3 +25,21 @@ This requires that the contrast between background and foreground colors has a l
 
 There are many tools to check color contrast ratios. WebAxe published an overview of contrast checkers.
 
+### Guidelines
+
+- [WCAG Contrast Minimum](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html)
+- [WCAG Color Contrast Guideline](http://mcdpartners.com/lab/meeting-wcag-color-contrast-guideline/)
+- [Color Contrast and why you should rethink it](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
+
+### Tools
+
+You can test color contrast with these color checkers:
+
+- [Overview of all sorts of contrast checkers](http://www.webaxe.org/color-contrast-tools/)
+- [WebAIM Contrast Checker](http://webaim.org/resources/contrastchecker/)
+- [Background Image & Text Contrast Checker](http://www.brandwood.com/a11y/)
+
+## Resources
+
+- [Assistive Technology Experiment: High Contrast](https://webaim.org/blog/high-contrast/)
+- [Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
