@@ -7,12 +7,12 @@ nav_order: 3
 
 # Write documentation
 
-Before you start writing new documentation, please inform us you want to work this, we will assign the work to you. We keep track of the work on the documentation in the project board [WP A11y docs](https://github.com/orgs/wpaccessibility/projects/3).
-
-To keep all pages in the same structure, please stick to the following formats.
+Before you start writing new documentation, please inform us you want to work on this, we will assign the work to you. We keep track of the work on the documentation in the project board [WP A11y docs](https://github.com/orgs/wpaccessibility/projects/3).
 
 {: .tip }
-Please write the content yourself and use AI only to translate or to check the quality of your English.
+Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English.
+
+To keep all pages in the same structure, please stick to the following formats for a blogpost or an accessibility topic.
 
 ## Content structure of a blogpost
 
@@ -24,15 +24,15 @@ Please write the content yourself and use AI only to translate or to check the q
 
 One page per topic. This makes it easier to read and also to refer to in other documentation.
 
-- Title (65 charters or less)
+- Title, if possible 65 characters or fewer, including spaces
 - A short summary in one or two paragraphs
-- Main content describing what, why, who benefits and the how to do in WordPress (if applicable)
+- Main content describing what, why, who benefits and how to do this in WordPress (if applicable)
 - Additional content, depending on the topic, like for example:
-  - User experience with demo’s
+  - User experience with demos
   - Quick wins and workarounds
   - Code examples
   - Supporting images
-  - Video/Audio with demo’s
+  - Video/Audio with demos
   - Dos/don’ts
   - Frequently made mistakes and how to fix them
   - How to test or refer to checklist

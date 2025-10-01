@@ -6,9 +6,10 @@ nav_order: 14
 
 # About this website
 
-{: .alert }
-This intro text needs to be written.  
-Related issue on [GitHub #183 Intro page About this website](https://github.com/wpaccessibility/wp-a11y-docs/issues/183).    
-If you want to work on this, please let us know before you start.
+WPaccessibility.org is a documentation website about web accessibility, for the WordPress community and beyond.
+We aim to make this website WCAG 2.2 AA accessible.
+Three licences are included: For this documentation, for WordPress and for the software and theme of this website.
+The changelog describes the changes made on the original Just The Docs Jekyll theme.
+
 
 

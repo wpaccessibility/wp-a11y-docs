@@ -7,7 +7,4 @@ nav_order: 3
 
 # Content and images
 
-{: .alert }
-A short intro needs to be written.
-Related issue on [GitHub #104 Intro page Content and images](https://github.com/wpaccessibility/wp-a11y-docs/issues/104).  
-If you want to work on this, please let us know before you start.
+The pages in this section inform content managers about what is important to create accessible content with WordPress. 

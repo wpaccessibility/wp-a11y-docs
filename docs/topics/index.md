@@ -6,7 +6,5 @@ nav_order: 4
 
 # Standards and best practice
 
-{: .alert }
-This intro content needs to be written.  
-Related issue on [GitHub #96 Intro page Standards and best practice](https://github.com/wpaccessibility/wp-a11y-docs/issues/96).  
-If you want to work on this, please let us know before you start.
+The pages in this section inform you about the Web Content Accessibility Guidelines (WCAG) and best practices, about what is important to keep your work and WordPress core accessible for everyone. 
+

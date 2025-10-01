@@ -20,7 +20,7 @@ There are several ways you can contribute:
 Respect our [Code of Conduct]({{site.baseurl}}/docs/contribute/CODE_OF_CONDUCT/).
 
 {: .tip }
-Please write the content yourself and use AI only to translate or to check the quality of your English. 
+Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. 
 
 ## Ways to communicate 
 

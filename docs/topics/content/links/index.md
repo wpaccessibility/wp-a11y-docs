@@ -5,12 +5,9 @@ parent: Content and images
 nav_order: 4
 ---
 
-# Links
+# Web links
 
-{: .alert }
-A short intro needs to be written.
-Related issue on [GitHub #107 Intro page Links](https://github.com/wpaccessibility/wp-a11y-docs/issues/107).  
-If you want to work on this, please let us know before you start.
+These pages in this section inform you about what is important to create accessible links and how to write proper link texts for the web.
 
 
 

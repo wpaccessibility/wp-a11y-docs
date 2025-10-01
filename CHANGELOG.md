@@ -10,8 +10,9 @@ All notable user-facing changes to this project are documented in this file.
 
 ## Release v0.1
 
-This Jekyll theme WP A11y Docs is based on Just the Docs by
-Just The Docs is licenced as MIT.
+Theme of this website is based on the Just The Docs Jekyll theme.
+Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
+Copyright (c) 2016 Patrick Marsceill.
 
 In this initial release the theme is renamed into WP A11y Docs.
 

@@ -26,7 +26,7 @@ For example: did you ever watch a video in a full, noisy train, and you forgot y
 - Yurem has Down syndrome. He can’t comprehend the content of a webpage because the writing is unnecessarily complicated.
 - Jabari lives in Western Africa. He has a slow Internet connection. Sites bloated with heavy scripts and images keep him from browsing a substantial portion of the Web.
 
-These people, and many more like them, already face lots of life challenges. By adopting the a11y best practices you can ensure your website does not add their challenges.
+These people and many more like them, already face lots of life challenges. By adopting the a11y best practices you can ensure your website does not add their challenges.
 
 ## Resources
 

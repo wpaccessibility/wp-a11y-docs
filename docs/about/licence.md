@@ -17,4 +17,4 @@ The licence under which the WordPress software is released is the GPLv2 (or late
 
 Theme of this website is based on the Just The Docs Jekyll theme.
 Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
-Copyright (c) 2016 Patrick Marsceill .
+Copyright (c) 2016 Patrick Marsceill.
