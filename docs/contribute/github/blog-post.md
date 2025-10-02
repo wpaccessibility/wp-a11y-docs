@@ -6,7 +6,7 @@ nav_order: 2
 
 # Add or change blog post.
 
-Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here's the documentation how to write and add posts for this website.
+Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here's the documentation how to write and add posts for this documentation.
 
 Each blog post file has the same setup. First a set of variables like the title and the parent. Then the content using Markdown. 
 

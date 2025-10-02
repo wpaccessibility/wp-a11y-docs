@@ -7,14 +7,14 @@ nav_order: 11
 # How to contribute to this documentation
 
 Do you want to help maintain and extend the accessibility documentation for WordPress? Thank you!
-Let us know you want to work on the WordPress accessibility documentation and share your ideas, write or review content, report or fix bugs in this website.
+Let us know you want to work on the WordPress accessibility documentation and share your ideas, write or review content, report or fix bugs in this documentation.
 
 There are several ways you can contribute:
 - [Suggest]({{site.baseurl}}/docs/contribute/suggest/) new content or resources
 - [Write]({{site.baseurl}}/docs/contribute/write/) new content
 - [Review]({{site.baseurl}}/docs/contribute/review/) content someone else wrote
 - [Report]({{site.baseurl}}/docs/contribute/report-error) an error
-- [Fix code]({{site.baseurl}}/docs/contribute/improve-website) issues in this website
+- [Fix code]({{site.baseurl}}/docs/contribute/improve-website) issues in wpaccessibility.org
 - [Audit]({{site.baseurl}}/docs/contribute/audit) the accessibility of wpaccessibility.org
 
 Respect our [Code of Conduct]({{site.baseurl}}/docs/contribute/CODE_OF_CONDUCT/).

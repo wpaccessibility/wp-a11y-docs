@@ -8,7 +8,7 @@ has_video: true
 # Kitchen sink: options available for content
 
 
-This page lists the options and code available for creating content on this website.
+This page lists the options and code available for creating content in this documentation
 {: .fs-6 .fw-300 }
 
 {: .info }
@@ -57,7 +57,7 @@ A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.
 
 ### Internal links
 
-For links to other pages within this website, always use `{{site.baseurl}}` to ensure they work in preview environments:
+For links to other pages within wpaccessibility.org, always use `{{site.baseurl}}` to ensure they work in preview environments:
 
 ```markdown
 Internal link: [Contact the Documentation Team]({{site.baseurl}}/docs/contact/)

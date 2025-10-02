@@ -6,7 +6,7 @@ nav_order: 1
 
 # Add or change a topic in the documentation
 
-Do you have a great idea for a topic for the documentation or do you want to pick up an open issue for GitHub? Here's the documentation how to write and add content for this website.
+Do you have a great idea for a topic for the documentation or do you want to pick up an open issue for GitHub? Here's the documentation how to write and add content.
 
 Each documentation file has the same setup:
 
