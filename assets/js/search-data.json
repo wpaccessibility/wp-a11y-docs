@@ -108,10 +108,10 @@
     "relUrl": "/docs/topics/content/alt-text/"
   },"18": {
     "doc": "WCAG-EM audit of this site",
-    "title": "Audit the accessibility of this website",
+    "title": "Audit the accessibility of wpaccessibility.org",
     "content": "A website about accessibility (a11y) must be accessible itself. That’s a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We’d love to have an independent WCAG-EM audit, that results in a WCAG-EM report. Your name or your company name will be added to the contributors list. We then will add that information in our accessibility statement and fix the issues found. See the GitHub issue: Audit the website for accessibility WCAG 2.2 AA. Did you notice an a11y-issue on this website? Please inform us by opening an issue on GitHub. Please note: this is only for accessibility issues in this website and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. Contribute with regular accessibility audits . We would value a full WCAG-EM audit and WCAG-EM report for WCAG 2.2 AA to start and a yearly update for the new content and functionality. Your name or your company name will be added to the sponsor list. Contact Rian Rietveld if you want to sponsor this project with regular WCAG-EM audits of wpaccessibility.org. ",
-    "url": "/docs/contribute/audit/#audit-the-accessibility-of-this-website",
-    "relUrl": "/docs/contribute/audit/#audit-the-accessibility-of-this-website"
+    "url": "/docs/contribute/audit/#audit-the-accessibility-of-wpaccessibilityorg",
+    "relUrl": "/docs/contribute/audit/#audit-the-accessibility-of-wpaccessibilityorg"
   },"19": {
     "doc": "WCAG-EM audit of this site",
     "title": "WCAG-EM audit of this site",
@@ -121,7 +121,7 @@
   },"20": {
     "doc": "Add a blog post",
     "title": "Add or change blog post.",
-    "content": "Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add posts for this website. Each blog post file has the same setup. First a set of variables like the title and the parent. Then the content using Markdown. The blog post live in the directory /_posts/ and are named yyyy-mm-dd-title.md. For example 2025-08-16-able-player-now-available.md. ",
+    "content": "Do you have a great idea for a blog post or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add posts for this documentation. Each blog post file has the same setup. First a set of variables like the title and the parent. Then the content using Markdown. The blog post live in the directory /_posts/ and are named yyyy-mm-dd-title.md. For example 2025-08-16-able-player-now-available.md. ",
     "url": "/docs/contribute/github/blog-post/#add-or-change-blog-post",
     "relUrl": "/docs/contribute/github/blog-post/#add-or-change-blog-post"
   },"21": {
@@ -181,7 +181,7 @@
   },"30": {
     "doc": "Content kitchen sink",
     "title": "Kitchen sink: options available for content",
-    "content": "This page lists the options and code available for creating content on this website. WordPress.org provides a lot of style guides for documentation: WordPress Style Guides - highlights. We value most of all: be kind and professional in your text and please write the text yourself or make sure the reader knows who you are citing. ",
+    "content": "This page lists the options and code available for creating content in this documentation . WordPress.org provides a lot of style guides for documentation: WordPress Style Guides - highlights. We value most of all: be kind and professional in your text and please write the text yourself or make sure the reader knows who you are citing. ",
     "url": "/docs/contribute/github/content-kitchen-sink/#kitchen-sink-options-available-for-content",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#kitchen-sink-options-available-for-content"
   },"31": {
@@ -199,7 +199,7 @@
   },"33": {
     "doc": "Content kitchen sink",
     "title": "Text",
-    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. Internal links . For links to other pages within this website, always use `` to ensure they work in preview environments: . Internal link: [Contact the Documentation Team](/docs/contact/) . Internal link: Contact the Documentation Team . Always use for internal links (to other pages on this site) and asset links (images, etc.). This ensures links work correctly in both production and preview environments. External links to other websites don't need. An image: ![Alt text](url) for example: ![Library](/assets/images/small-image.jpg) . For images and other assets, always include `` in the path to ensure they display correctly in preview environments. For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
+    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. Internal links . For links to other pages within wpaccessibility.org, always use `` to ensure they work in preview environments: . Internal link: [Contact the Documentation Team](/docs/contact/) . Internal link: Contact the Documentation Team . Always use for internal links (to other pages on this site) and asset links (images, etc.). This ensures links work correctly in both production and preview environments. External links to other websites don't need. An image: ![Alt text](url) for example: ![Library](/assets/images/small-image.jpg) . For images and other assets, always include `` in the path to ensure they display correctly in preview environments. For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
     "url": "/docs/contribute/github/content-kitchen-sink/#text",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#text"
   },"34": {
@@ -277,7 +277,7 @@
   },"46": {
     "doc": "Add a topic",
     "title": "Add or change a topic in the documentation",
-    "content": "Do you have a great idea for a topic for the documentation or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add content for this website. Each documentation file has the same setup: . | First a set of variables like the title and the parent. | Then the content. | . The documentation files live in the directory /docs/ and are named [title].md. For example contribute.md. Keep the name short and unique. Use - instead of spaces in the filename. Each directory has an index.md which is the file that directly links to the directory topic. For example: /docs/about/index.md displays About this website. Other files for this topic are also placed in this directory and assigned a ‘parent’ with the variables. ",
+    "content": "Do you have a great idea for a topic for the documentation or do you want to pick up an open issue for GitHub? Here’s the documentation how to write and add content. Each documentation file has the same setup: . | First a set of variables like the title and the parent. | Then the content. | . The documentation files live in the directory /docs/ and are named [title].md. For example contribute.md. Keep the name short and unique. Use - instead of spaces in the filename. Each directory has an index.md which is the file that directly links to the directory topic. For example: /docs/about/index.md displays About this website. Other files for this topic are also placed in this directory and assigned a ‘parent’ with the variables. ",
     "url": "/docs/contribute/github/documentation/#add-or-change-a-topic-in-the-documentation",
     "relUrl": "/docs/contribute/github/documentation/#add-or-change-a-topic-in-the-documentation"
   },"47": {
@@ -1177,7 +1177,7 @@
   },"196": {
     "doc": "Design checks",
     "title": "Resources",
-    "content": ". | Section Use of color in this handbook | Inclusive Components | Inclusive Design Patterns – Heydon Pickering | Inclusive Design Checklist – Heydon Pickering | Web Accessibility for Designers | Accessible design: a process | 7 Things Every Designer Needs to Know about Accessibility – Jesse Hausler | Tips for Getting Started Designing for Web Accessibility – W3C | Writing accessible content – Sami Keijonen | 6 Principles Of Visual Accessibility Design – Jenna Erickson | Designing for Accessibility, Step 1: Colour Contrast – Neil Shankar | Accessible Design – Maja Benke (presentation) | Accessibility for everyone – Laura Kalbag (book) | WebAIM: on fonts | Pennsylvania State University: about Font Face | . ",
+    "content": ". | Section Use of color in this handbook | Inclusive Components | Inclusive Design Patterns – Heydon Pickering | Inclusive Design Checklist – Heydon Pickering | Web Accessibility for Designers | Accessible design: a process | 7 Things Every Designer Needs to Know about Accessibility – Jesse Hausler | Tips for Getting Started Designing for Web Accessibility – W3C | Writing accessible content – Sami Keijonen | 6 Principles Of Visual Accessibility Design – Jenna Erickson | Designing for Accessibility, Step 1: Color Contrast – Neil Shankar | Accessible Design – Maja Benke (presentation) | Accessibility for everyone – Laura Kalbag (book) | WebAIM: on fonts | Pennsylvania State University: about Font Face | . ",
     "url": "/docs/testing/design/#resources",
     "relUrl": "/docs/testing/design/#resources"
   },"197": {
@@ -1213,7 +1213,7 @@
   },"202": {
     "doc": "How to contribute",
     "title": "How to contribute to this documentation",
-    "content": "Do you want to help maintain and extend the accessibility documentation for WordPress? Thank you! Let us know you want to work on the WordPress accessibility documentation and share your ideas, write or review content, report or fix bugs in this website. There are several ways you can contribute: . | Suggest new content or resources | Write new content | Review content someone else wrote | Report an error | Fix code issues in this website | Audit the accessibility of wpaccessibility.org | . Respect our Code of Conduct. Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. ",
+    "content": "Do you want to help maintain and extend the accessibility documentation for WordPress? Thank you! Let us know you want to work on the WordPress accessibility documentation and share your ideas, write or review content, report or fix bugs in this documentation. There are several ways you can contribute: . | Suggest new content or resources | Write new content | Review content someone else wrote | Report an error | Fix code issues in wpaccessibility.org | Audit the accessibility of wpaccessibility.org | . Respect our Code of Conduct. Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. ",
     "url": "/docs/contribute/#how-to-contribute-to-this-documentation",
     "relUrl": "/docs/contribute/#how-to-contribute-to-this-documentation"
   },"203": {
@@ -1441,7 +1441,7 @@
   },"240": {
     "doc": "About this website",
     "title": "About this website",
-    "content": "WPaccessibility.org is a documentation website about web accessibility, for the WordPress community and beyond. We aim to make this website WCAG 2.2 AA accessible. Three licences are included: For this documentation, for WordPress and for the software and theme of this website. The changelog describes the changes made on the original Just The Docs Jekyll theme. ",
+    "content": "WPaccessibility.org is a documentation website about web accessibility, for the WordPress community and beyond. We aim to make this website WCAG 2.2 AA accessible. Three licences are included: For this documentation, for WordPress and for the software and theme of wpaccessibility.org. The changelog describes the changes made on the original Just The Docs Jekyll theme. ",
     "url": "/docs/about/",
     "relUrl": "/docs/about/"
   },"241": {
@@ -1495,7 +1495,7 @@
   },"249": {
     "doc": "Licences",
     "title": "Licenses",
-    "content": "The text of the documentation is created by the WordPress and Accessibility community worldwide. This documentation is licenced as Creative Commons Zero 1.0 Universal (CC0-1.0). The licence under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. Theme of this website is based on the Just The Docs Jekyll theme. Just the Docs is distributed by an MIT license. Copyright (c) 2016 Patrick Marsceill. ",
+    "content": "The text of the documentation is created by the WordPress and Accessibility community worldwide. This documentation is licenced as Creative Commons Zero 1.0 Universal (CC0-1.0). The licence under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. Theme of wpaccessibility.org is based on the Just The Docs Jekyll theme. Just the Docs is distributed by an MIT license. Copyright (c) 2016 Patrick Marsceill. ",
     "url": "/docs/about/licence/#licenses",
     "relUrl": "/docs/about/licence/#licenses"
   },"250": {
@@ -1633,7 +1633,7 @@
   },"272": {
     "doc": "Pull requests",
     "title": "Create a pull request from a fork using a local install",
-    "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. Please read Local install of the website in wp-a11y-docs/README.md. ",
+    "content": "WPaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. Please read Local install of wpaccessibility.org in wp-a11y-docs/README.md. ",
     "url": "/docs/contribute/github/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install",
     "relUrl": "/docs/contribute/github/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install"
   },"273": {
