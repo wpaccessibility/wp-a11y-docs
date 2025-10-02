@@ -5,7 +5,7 @@ parent: How to contribute
 nav_order: 8
 ---
 
-# Audit the accessibility of this website
+# Audit the accessibility of wpaccessibility.org
 
 A website about accessibility (a11y) must be accessible itself. That's a no-brainer. We want to meet WCAG 2.2 AA and do our very best to comply to that. We'd love to have an independent [WCAG-EM audit](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/), that results in a [WCAG-EM report](https://www.w3.org/WAI/eval/report-tool/). Your name or your company name will be added to the [contributors list]({{site.baseurl}}/docs/contributors/).
 

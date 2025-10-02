@@ -1,7 +1,7 @@
 ---
 title: Contributors
 layout: default
-description: "Thank you to the contributors of WP Accessibility Knowledge Base"
+description: "Thank you to the contributors of WP accessibility documentation"
 nav_order: 12
 ---
 

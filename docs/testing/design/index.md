@@ -84,7 +84,7 @@ Make the order of things logical, most users read from top to bottom. For exampl
 - [Tips for Getting Started Designing for Web Accessibility – W3C](https://www.w3.org/WAI/tips/designing/)
 - [Writing accessible content – Sami Keijonen](https://foxland.fi/writing-accessible-content/)
 - [6 Principles Of Visual Accessibility Design – Jenna Erickson](https://usabilitygeek.com/6-principles-visual-accessibility-design/https:/usabilitygeek.com/6-principles-visual-accessibility-design/)
-- [Designing for Accessibility, Step 1: Colour Contrast – Neil Shankar](https://uxdesign.cc/the-easiest-part-about-designing-accessible-websites-76cd6b9a7ae4?gi=ffa6b3378eb0)
+- [Designing for Accessibility, Step 1: Color Contrast – Neil Shankar](https://uxdesign.cc/the-easiest-part-about-designing-accessible-websites-76cd6b9a7ae4?gi=ffa6b3378eb0)
 - [Accessible Design – Maja Benke (presentation)](https://wordpress.tv/2017/09/27/maja-benke-accessible-design/)
 - [Accessibility for everyone – Laura Kalbag (book)](https://abookapart.com/products/accessibility-for-everyone)
 - [WebAIM: on fonts](https://webaim.org/techniques/fonts/)
