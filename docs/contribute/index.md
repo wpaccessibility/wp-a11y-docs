@@ -15,7 +15,6 @@ There are several ways you can contribute:
 - [Review]({{site.baseurl}}/docs/contribute/review/) content someone else wrote
 - [Report]({{site.baseurl}}/docs/contribute/report-error) an error
 - [Fix code]({{site.baseurl}}/docs/contribute/improve-website) issues in wpaccessibility.org
-- [Audit]({{site.baseurl}}/docs/contribute/audit) the accessibility of wpaccessibility.org
 
 Respect our [Code of Conduct]({{site.baseurl}}/docs/contribute/CODE_OF_CONDUCT/).
 
