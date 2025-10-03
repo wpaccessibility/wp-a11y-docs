@@ -26,6 +26,6 @@ The [standards for the WordPress theme directory’s accessibility-ready program
 In the [Themes Directory](https://wordpress.org/themes/) on WordPress.org, select the ‘Accessibility Ready’ option in the Feature Filter to browse themes [tested against the “Accessibility Ready” guidelines](https://wordpress.org/themes/tags/accessibility-ready/).
 
 
-![WordPress.org themes directory filter with Accessibility Ready tag checked]({{site.baseurl}}/assets/images/a11y-themes-filter.png)
+![WordPress.org themes directory filter with Accessibility Ready tag checked](/assets/images/a11y-themes-filter.png)
 
-**Note**: Want to get your theme listed as “Accessibility Ready” on the Themes Repo? See the [themes review handbook for more information](https://make.wordpress.org/themes/handbook/review/accessibility/). 
+**Note**: Want to get your theme listed as “Accessibility Ready” on the Themes Repo? See the [themes review handbook for more information](https://make.wordpress.org/themes/handbook/review/accessibility/).
