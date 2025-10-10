@@ -589,7 +589,6 @@ h6,
 .site-header .lh-wrapper {
   align-items: center;
   display: flex;
-  gap: 1rem;
 }
 .site-header .lh-wrapper img {
   max-width: 80px;
