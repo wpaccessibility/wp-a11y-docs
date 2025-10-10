@@ -128,18 +128,31 @@
 
 .site-header {
   display: flex;
-  min-height: $header-height;
   align-items: center;
-}
 
-@media screen and ( width < 31.25rem ) {
-  .lh-wrapper {
-    display: flex;
-    align-items: center;
-  }
-  .lh-wrapper img {
-    max-width: 80px;
-  }
+    .lh-wrapper {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+
+      img {
+        max-width: 80px;
+        margin: 0 auto;
+        display: block;
+      }
+
+      @include mq(md) {
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+    @include mq(md) {
+      .lh-wrapper {
+        display: block;
+      }
+    }
+
 }
 
 .site-title {
