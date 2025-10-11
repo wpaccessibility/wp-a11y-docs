@@ -584,8 +584,26 @@ h6,
 
 .site-header {
   display: flex;
-  min-height: 3.75rem;
   align-items: center;
+}
+.site-header .lh-wrapper {
+  align-items: center;
+  display: flex;
+}
+.site-header .lh-wrapper img {
+  max-width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 50rem) {
+  .site-header .lh-wrapper img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 50rem) {
+  .site-header .lh-wrapper {
+    display: block;
+  }
 }
 
 .site-title {
@@ -1465,7 +1483,6 @@ p.do-title > p:first-child {
 }
 @media (min-width: 50rem) {
   .search-input-wrap {
-    position: absolute;
     width: 100%;
     max-width: 33.5rem;
     height: 100% !important;
@@ -1504,6 +1521,7 @@ p.do-title > p:first-child {
   display: flex;
   height: 100%;
   padding-left: 1rem;
+  z-index: 20;
 }
 @media (min-width: 50rem) {
   .search-label {
