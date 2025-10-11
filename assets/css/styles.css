@@ -1483,7 +1483,6 @@ p.do-title > p:first-child {
 }
 @media (min-width: 50rem) {
   .search-input-wrap {
-    position: absolute;
     width: 100%;
     max-width: 33.5rem;
     height: 100% !important;
@@ -1522,6 +1521,7 @@ p.do-title > p:first-child {
   display: flex;
   height: 100%;
   padding-left: 1rem;
+  z-index: 20;
 }
 @media (min-width: 50rem) {
   .search-label {
