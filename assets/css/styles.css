@@ -584,8 +584,26 @@ h6,
 
 .site-header {
   display: flex;
-  min-height: 3.75rem;
   align-items: center;
+}
+.site-header .lh-wrapper {
+  align-items: center;
+  display: flex;
+}
+.site-header .lh-wrapper img {
+  max-width: 80px;
+  margin: 0 auto;
+  display: block;
+}
+@media (min-width: 50rem) {
+  .site-header .lh-wrapper img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 50rem) {
+  .site-header .lh-wrapper {
+    display: block;
+  }
 }
 
 .site-title {
