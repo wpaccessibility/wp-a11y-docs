@@ -13,7 +13,7 @@ Give an (interactive) HTML element the correct accessible name.
 
 ## Why is this important?
 
-- Screen readers will announce the name, role, value or status read aloud when an interactive element gets keyboard focus.
+- Screen readers will announce the name, role, value or status when an interactive element gets keyboard focus.
 - Voice recognition (voice control) users can focus an interactive element by announcing its name.
 
 An proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page.
