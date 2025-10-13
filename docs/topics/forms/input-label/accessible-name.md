@@ -7,7 +7,7 @@ nav_order: 2
 
 # Give a form field an accessible name with a label
 
-Each form field requires a label, linked to the form field with a for/id relationship.  
+Each form field requires a label, linked to the form field with a `for`/`id` relationship.  
 The label text then becomes the form field's [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
 
@@ -83,9 +83,9 @@ The IDs used must be unique for the page; otherwise, the wrong input fields may 
 
 ## Other ways to provide an accessible name
 
-The [first rule of ARIA](https://www.w3.org/TR/using-aria/#rule1) is, don't use ARIA if there is a native HTML-element for the job. But it's valid to use `aria-label` or `aria-labelledby` to give an accessible name for a form control.
+The [first rule of ARIA](https://www.w3.org/TR/using-aria/#rule1) is, don't use ARIA if there is a native HTML element for the job. But it's valid to use `aria-label` or `aria-labelledby` to give an accessible name for a form control.
 
-If you have to, here's the basics:
+If you have to, here are the basics:
 
 <input type="search" name="s" aria-label="Search">
 <button>Search</button>
@@ -108,10 +108,10 @@ If you have to, here's the basics:
 {: .alert }
 Visual text or equivalent, like a search icon, should always be visible, so sighted users don't have to guess what they need to fill out.
 
-If you must hide a label or control from vision, use the CSS class [.screen-reader-text](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/) or equivalent.
+If you must hide a label or control from vision, use the CSS class [`.screen-reader-text`](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/) or equivalent.
 
 {: .dont }
-Don't use the CSS `display: none`, `visibility: hidden` or the HTML-attribuut `hidden` on a label, as that also removes the element, and its accessible name, from the accessibility tree.
+Don't use the CSS `display: none`, `visibility: hidden` or the HTML attribute `hidden` on a label, as that also removes the element, and its accessible name, from the accessibility tree.
 
 ```html
 <!-- this in incorrect code, the visual text Go is not describing what you need to fill out -->
@@ -128,7 +128,7 @@ Don't use the CSS `display: none`, `visibility: hidden` or the HTML-attribuut `h
 ```
 
 {: .do }
-Always a visible hint about how to fill out the form field.  
+Always add a visible hint about how to fill out the form field.  
 <label for="search-text" class="screen-reader-text">Search this website</label>
 <input type="text" name="s" id="search-text">
 <button>Search</button>
@@ -141,7 +141,7 @@ Always a visible hint about how to fill out the form field.
 
 ## How to test for a proper accessible name
 
-Good tools the check the accessible name of a form input:
+Good tools to check the accessible name of a form input:
 
 - Your browser's [accessibility tree]({{site.baseurl}}/docs/topics/code/accessible-name/).
 - A screen reader, such as NVDA for Windows or VoiceOver/Safari for macOS.
@@ -161,6 +161,6 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 
 ## Resources
 
-- Gravityforms accessibility documentation: [Labels and Placeholders](https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&irgwc=1#h-labels-and-placeholders).
+- Gravity Forms accessibility documentation: [Labels and Placeholders](https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&irgwc=1#h-labels-and-placeholders).
 - WebAIM: [Decoding Label and Name for Accessibility](https://webaim.org/articles/label-name).
 

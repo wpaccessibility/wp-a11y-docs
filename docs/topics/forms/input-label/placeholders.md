@@ -9,7 +9,7 @@ nav_order: 3
 
 For all users to understand how to fill out a form, the **labels** should be connected to form control.
 
-The **placeholder** represents a short hint (a word or short phrase) intended to aid the user how to fill out a form field. A hint could be a sample value or a brief description of the expected format.
+The **placeholder** represents a short hint (a word or short phrase) intended to aid the user on _what_ to fill out a form field. A hint could be a sample value or a brief description of the expected format.
 
 A screen reader announces first the label and then the placeholder.
 
