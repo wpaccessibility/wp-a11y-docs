@@ -13,7 +13,7 @@ Use only plain text in a label. Avoid including interactive elements such as lin
 
 Additional HTML elements can cause problems when screen readers announce the label or when a user tries to focus the input field by voice recognition.
 
-- The text inside the addition interactive elements wil be added to the [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/). It that text is for example a tooltip, the accessible name of the form input can become unreadable or incomprehensible or just plain wrong.
+- The text inside the addition interactive elements will be added to the [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/). If that text is, for example, a tooltip, the accessible name of the form input can become unreadable, incomprehensible, or just plain wrong.
 - If there is a clickable item inside the label, clicking it can result in also selecting the form control if it's a checkbox.
 - The reading order (meaningful sequence) of the content can get unlogical.
 
