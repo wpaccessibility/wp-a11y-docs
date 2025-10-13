@@ -18,7 +18,7 @@ A screen reader announces first the label and then the placeholder.
 <input type="search" id="search" name="s" placeholder="For example: apples, bread or milk">
 ```
 
-Only using a placeholder (without ao connected label) has some disadvantages:
+Only using a placeholder (without a connected label) has some disadvantages:
 - the form field doesn't have a proper accessible name.
 - the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field.
 
