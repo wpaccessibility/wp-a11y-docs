@@ -1957,7 +1957,7 @@
   },"326": {
     "doc": "Label has text only",
     "title": "Examples",
-    "content": "Place the link to the terms of delivery outside and above the label. The terms of delivery. I agree with the terms of delivery . &lt;p&gt; &lt;a href=\"#\"&gt;The terms of delivery&lt;/a&gt;. &lt;/p&gt; &lt;label for=\"alv1\"&gt;I agree with the terms of delivery&lt;/label&gt; &lt;input id=\"alv1\" type=\"checkbox\"/&gt; . Note that the reading order is also meaningful: first the link to the terms and after that the checkbox to agree with them. Place the link to the terms of delivery inside the label. I agree with the terms of delivery . &lt;!-- this is invalid code, do not use --&gt; &lt;label for=\"alv2\"&gt;I agree with the &lt;a href=\"#\"&gt;terms of delivery&lt;/a&gt;&lt;/label&gt; &lt;input id=\"alv2\" type=\"checkbox\"/&gt; . ",
+    "content": "Place the link to the terms of delivery outside and above the label. The terms of delivery. I agree with the terms of delivery . &lt;p&gt; &lt;a href=\"#\"&gt;The terms of delivery&lt;/a&gt;. &lt;/p&gt; &lt;label for=\"alv1\"&gt;I agree with the terms of delivery&lt;/label&gt; &lt;input id=\"alv1\" type=\"checkbox\"/&gt; . Note that the reading order is also meaningful: first the link to the terms and after that the checkbox to agree with them. Place the link to the terms of delivery inside the label. I agree with the terms of delivery . &lt;!-- this is invalid code, do not use --&gt; &lt;input id=\"alv2\" type=\"checkbox\"/&gt; &lt;label for=\"alv2\"&gt;I agree with the &lt;a href=\"#\"&gt;terms of delivery&lt;/a&gt;&lt;/label&gt; . ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/text-only/#examples",
     "relUrl": "/docs/topics/forms/input-label/text-only/#examples"
   },"327": {
