@@ -36,7 +36,7 @@ The way browsers show the accessibility tree differs:
 - In Chrome: [Full accessibility tree in Chrome DevTools Tools](https://developer.chrome.com/blog/full-accessibility-tree).
 - In FireFox: [Accessibility inspector](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/).
 
-## Examples the accessible name of interactive elements
+## Examples clarifying the accessible name of interactive elements
 
 ### Menu button:
 
