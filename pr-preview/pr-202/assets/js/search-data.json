@@ -817,7 +817,7 @@
   },"136": {
     "doc": "Accessible name",
     "title": "Why is this important?",
-    "content": ". | Screen readers will announce the name, role, value or status read aloud when an interactive element gets keyboard focus. | Voice recognition (voice control) users can focus an interactive element by announcing its name. | . An proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page. Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name Understanding Accessible Names in HTML. Note: aria-label on a link or a button overrides all textual content withing. For example, the accessible name of the button &lt;button aria-label=\"Close\"&gt;Open&lt;/button&gt; is “Close”. ",
+    "content": ". | Screen readers will announce the name, role, value or status when an interactive element gets keyboard focus. | Voice recognition (voice control) users can focus an interactive element by announcing its name. | . A proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page. Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name Understanding Accessible Names in HTML. Note: An aria-label attribute on a link or a button overrides all textual content within. For example, the accessible name of the button &lt;button aria-label=\"Close\"&gt;Open&lt;/button&gt; is “Close”. ",
     "url": "/pr-preview/pr-202/docs/topics/code/accessible-name/#why-is-this-important",
     "relUrl": "/docs/topics/code/accessible-name/#why-is-this-important"
   },"137": {
@@ -828,10 +828,10 @@
     "relUrl": "/docs/topics/code/accessible-name/#the-accessibility-tree-shows-the-accessible-name"
   },"138": {
     "doc": "Accessible name",
-    "title": "Examples the accessible name of interactive elements",
+    "title": "Examples clarifying the accessible name of interactive elements",
     "content": "Menu button: . Menu . &lt;button aria-expanded=\"false\"&gt;Menu&lt;/button&gt; . The accessibility tree of Chrome shows the following relevant information: the accessible name is taken from the content, the role is button, the element is focusable, has focus and the menu is not expanded: . | Name . | aria-labelledby: Not specified | aria-label: Not specified | From label: Not specified | Contents: “Menu” | title: Not specified | . | Role: button | Invalid user entry: false | Focusable: true | Focused: true | Expanded: false | . Link: . Contact . &lt;a href=\"https://wpaccessibility.org/docs/contact/\"&gt;Contact&lt;/a&gt; . The accessibility tree of Firefox shows the following relevant information: The accessible name is contact, the role is link and the value is the url. | name:”Contact” | role:”link” | value:”https://wpaccessibility.org/docs/contact/” | . ",
-    "url": "/pr-preview/pr-202/docs/topics/code/accessible-name/#examples-the-accessible-name-of-interactive-elements",
-    "relUrl": "/docs/topics/code/accessible-name/#examples-the-accessible-name-of-interactive-elements"
+    "url": "/pr-preview/pr-202/docs/topics/code/accessible-name/#examples-clarifying-the-accessible-name-of-interactive-elements",
+    "relUrl": "/docs/topics/code/accessible-name/#examples-clarifying-the-accessible-name-of-interactive-elements"
   },"139": {
     "doc": "Accessible name",
     "title": "WCAG Succes Criteria",
@@ -1723,7 +1723,7 @@
   },"287": {
     "doc": "Placeholders",
     "title": "Placeholders in form fields",
-    "content": "For all users to understand how to fill out a form, the labels should be connected to form control. The placeholder represents a short hint (a word or short phrase) intended to aid the user how to fill out a form field. A hint could be a sample value or a brief description of the expected format. A screen reader announces first the label and then the placeholder. &lt;label for=\"search\"&gt;Search for a product:&lt;/label&gt; &lt;input type=\"search\" id=\"search\" name=\"s\" placeholder=\"For example: apples, bread or milk\"&gt; . Only using a placeholder (without ao connected label) has some disadvantages: . | the form field doesn’t have a proper accessible name. | the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field. | . For a longer hint or other advisory text, place the text next to the form field. In this case, use aria-describedby to connect the descriptive text to the field. ",
+    "content": "For all users to understand how to fill out a form, the labels should be connected to form control. The placeholder represents a short hint (a word or short phrase) intended to aid the user how to fill out a form field. A hint could be a sample value or a brief description of the expected format. A screen reader announces first the label and then the placeholder. &lt;label for=\"search\"&gt;Search for a product:&lt;/label&gt; &lt;input type=\"search\" id=\"search\" name=\"s\" placeholder=\"For example: apples, bread or milk\"&gt; . Only using a placeholder (without a connected label) has some disadvantages: . | the form field doesn’t have a proper accessible name. | the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field. | . For a longer hint or other advisory text, place the text next to the form field. In this case, use aria-describedby to connect the descriptive text to the field. ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/placeholders/#placeholders-in-form-fields",
     "relUrl": "/docs/topics/forms/input-label/placeholders/#placeholders-in-form-fields"
   },"288": {
@@ -1855,7 +1855,7 @@
   },"309": {
     "doc": "Form resources",
     "title": "Accessible web forms",
-    "content": ". | Gen Harris on Equalize Digital How Accessible are WordPress Forms by Default? | W3C Web accessibility Tutorials: Forms Concepts | WebAIM: Creating Accessible Forms | Deque: The Anatomy of Accessible Forms | . ",
+    "content": ". | Gen Herres on Equalize Digital How Accessible are WordPress Forms by Default? | W3C Web accessibility Tutorials: Forms Concepts | WebAIM: Creating Accessible Forms | Deque: The Anatomy of Accessible Forms | . ",
     "url": "/pr-preview/pr-202/docs/topics/forms/resources/#accessible-web-forms",
     "relUrl": "/docs/topics/forms/resources/#accessible-web-forms"
   },"310": {
@@ -1951,7 +1951,7 @@
   },"325": {
     "doc": "Label has text only",
     "title": "Why keep the label text only?",
-    "content": "Additional HTML elements can cause problems when screen readers announce the label or when a user tries to focus the input field by voice recognition. | The text inside the addition interactive elements wil be added to the accessible name. It that text is for example a tooltip, the accessible name of the form input can become unreadable or incomprehensible or just plain wrong. | If there is a clickable item inside the label, clicking it can result in also selecting the form control if it’s a checkbox. | The reading order (meaningful sequence) of the content can get unlogical. | . Keep the label with a form control to the point. Include additional information above the form, either as links above the label or form field (whichever makes sense in terms of reading order) or as a description next to the field. There is an exception when using an implicitly associated form control. But adding an input field inside a label has accessibility concerns. Read MDN about label accessibility. ",
+    "content": "Additional HTML elements can cause problems when screen readers announce the label or when a user tries to focus the input field by voice recognition. | The text inside the addition interactive elements will be added to the accessible name. If that text is, for example, a tooltip, the accessible name of the form input can become unreadable, incomprehensible, or just plain wrong. | If there is a clickable item inside the label, clicking it can result in also selecting the form control if it’s a checkbox. | The reading order (meaningful sequence) of the content can get illogical. | . Keep the label with a form control to the point. Include additional information above the form, either as links above the label or form field (whichever makes sense in terms of reading order) or as a description next to the field. There is an exception when using an implicitly associated form control. But adding an input field inside a label has accessibility concerns. Read MDN about label accessibility. ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/text-only/#why-keep-the-label-text-only",
     "relUrl": "/docs/topics/forms/input-label/text-only/#why-keep-the-label-text-only"
   },"326": {

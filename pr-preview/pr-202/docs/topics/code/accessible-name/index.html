@@ -428,15 +428,15 @@
 <h2 id="why-is-this-important">Why is this important?</h2>
 
 <ul>
-  <li>Screen readers will announce the name, role, value or status read aloud when an interactive element gets keyboard focus.</li>
+  <li>Screen readers will announce the name, role, value or status when an interactive element gets keyboard focus.</li>
   <li>Voice recognition (voice control) users can focus an interactive element by announcing its name.</li>
 </ul>
 
-<p>An proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page.</p>
+<p>A proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page.</p>
 
 <p>Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name <a href="https://dev.to/ibn_abubakre/understanding-accessible-names-in-html-562">Understanding Accessible Names in HTML</a>.</p>
 
-<p class="info">Note: aria-label on a link or a button overrides all textual content withing. <br />
+<p class="info">Note: An <code class="language-plaintext highlighter-rouge">aria-label</code> attribute on a link or a button overrides all textual content within. <br />
 For example, the accessible name of the button <code class="language-plaintext highlighter-rouge">&lt;button aria-label="Close"&gt;Open&lt;/button&gt;</code> is “Close”.</p>
 
 <h2 id="the-accessibility-tree-shows-the-accessible-name">The accessibility tree shows the accessible name</h2>
@@ -452,7 +452,7 @@ Assistive technology, like a screen reader, gets the information it needs from t
   <li>In FireFox: <a href="https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/">Accessibility inspector</a>.</li>
 </ul>
 
-<h2 id="examples-the-accessible-name-of-interactive-elements">Examples the accessible name of interactive elements</h2>
+<h2 id="examples-clarifying-the-accessible-name-of-interactive-elements">Examples clarifying the accessible name of interactive elements</h2>
 
 <h3 id="menu-button">Menu button:</h3>
 
@@ -465,11 +465,11 @@ Assistive technology, like a screen reader, gets the information it needs from t
 <ul>
   <li>Name
     <ul>
-      <li>aria-labelledby: Not specified</li>
-      <li>aria-label: Not specified</li>
-      <li>From label: Not specified</li>
+      <li><code class="language-plaintext highlighter-rouge">aria-labelledby</code>: Not specified</li>
+      <li><code class="language-plaintext highlighter-rouge">aria-label</code>: Not specified</li>
+      <li>From <code class="language-plaintext highlighter-rouge">label</code>: Not specified</li>
       <li>Contents: “Menu”</li>
-      <li>title: Not specified</li>
+      <li><code class="language-plaintext highlighter-rouge">title</code>: Not specified</li>
     </ul>
   </li>
   <li>Role: button</li>
