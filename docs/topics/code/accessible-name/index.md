@@ -48,11 +48,11 @@ The way browsers show the accessibility tree differs:
 
 The accessibility tree of Chrome shows the following relevant information: the accessible name is taken from the content, the role is button, the element is focusable, has focus and the menu is not expanded:
 - Name
-  - aria-labelledby: Not specified
-  - aria-label: Not specified
-  - From label: Not specified
+  - `aria-labelledby`: Not specified
+  - `aria-label`: Not specified
+  - From `label`: Not specified
   - Contents: "Menu"
-  - title: Not specified
+  - `title`: Not specified
 - Role: button
 - Invalid user entry: false
 - Focusable: true
