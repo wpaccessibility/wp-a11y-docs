@@ -44,11 +44,13 @@ Place the link to the terms of delivery inside the label.
 <input id="alv1" type="checkbox"/>
 <label for="alv1">I agree with [the terms of delivery](#)</label>
 
+
 ```html
 
 <!-- this is invalid code, do not use -->
-<label for="alv2">I agree with the <a href="#">terms of delivery</a></label>
 <input id="alv2" type="checkbox"/>
+<label for="alv2">I agree with the <a href="#">terms of delivery</a></label>
+
 ```
 
 ## WCAG Succes Criteria
