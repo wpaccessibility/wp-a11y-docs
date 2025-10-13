@@ -15,7 +15,7 @@ Additional HTML elements can cause problems when screen readers announce the lab
 
 - The text inside the addition interactive elements will be added to the [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/). If that text is, for example, a tooltip, the accessible name of the form input can become unreadable, incomprehensible, or just plain wrong.
 - If there is a clickable item inside the label, clicking it can result in also selecting the form control if it's a checkbox.
-- The reading order (meaningful sequence) of the content can get unlogical.
+- The reading order (meaningful sequence) of the content can get illogical.
 
 Keep the label with a form control to the point.  Include additional information above the form, either as links above the label or form field (whichever makes sense in terms of reading order) or as a description next to the field.
 
