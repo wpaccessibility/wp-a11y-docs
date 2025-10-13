@@ -22,7 +22,7 @@ Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name 
 
 
 {: .info }
-Note: aria-label on a link or a button overrides all textual content withing.   
+Note: An `aria-label` attribute on a link or a button overrides all textual content within.   
 For example, the accessible name of the button `<button aria-label="Close">Open</button>` is "Close".
 
 ## The accessibility tree shows the accessible name
