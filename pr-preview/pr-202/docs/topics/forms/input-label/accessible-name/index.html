@@ -429,7 +429,7 @@
 
           <h1 id="give-a-form-field-an-accessible-name-with-a-label">Give a form field an accessible name with a label</h1>
 
-<p>Each form field requires a label, linked to the form field with a for/id relationship.<br />
+<p>Each form field requires a label, linked to the form field with a <code class="language-plaintext highlighter-rouge">for</code>/<code class="language-plaintext highlighter-rouge">id</code> relationship.<br />
 The label text then becomes the form field’s <a href="/pr-preview/pr-202/docs/topics/code/accessible-name/">accessible name</a>.</p>
 
 <h2 id="why-is-this-important">Why is this important?</h2>
@@ -504,9 +504,9 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-202/docs/
 
 <h2 id="other-ways-to-provide-an-accessible-name">Other ways to provide an accessible name</h2>
 
-<p>The <a href="https://www.w3.org/TR/using-aria/#rule1">first rule of ARIA</a> is, don’t use ARIA if there is a native HTML-element for the job. But it’s valid to use <code class="language-plaintext highlighter-rouge">aria-label</code> or <code class="language-plaintext highlighter-rouge">aria-labelledby</code> to give an accessible name for a form control.</p>
+<p>The <a href="https://www.w3.org/TR/using-aria/#rule1">first rule of ARIA</a> is, don’t use ARIA if there is a native HTML element for the job. But it’s valid to use <code class="language-plaintext highlighter-rouge">aria-label</code> or <code class="language-plaintext highlighter-rouge">aria-labelledby</code> to give an accessible name for a form control.</p>
 
-<p>If you have to, here’s the basics:</p>
+<p>If you have to, here are the basics:</p>
 
 <p><input type="search" name="s" aria-label="Search" />
 <button>Search</button></p>
@@ -526,9 +526,9 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-202/docs/
 
 <p class="alert">Visual text or equivalent, like a search icon, should always be visible, so sighted users don’t have to guess what they need to fill out.</p>
 
-<p>If you must hide a label or control from vision, use the CSS class <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/">.screen-reader-text</a> or equivalent.</p>
+<p>If you must hide a label or control from vision, use the CSS class <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/"><code class="language-plaintext highlighter-rouge">.screen-reader-text</code></a> or equivalent.</p>
 
-<p class="dont">Don’t use the CSS <code class="language-plaintext highlighter-rouge">display: none</code>, <code class="language-plaintext highlighter-rouge">visibility: hidden</code> or the HTML-attribuut <code class="language-plaintext highlighter-rouge">hidden</code> on a label, as that also removes the element, and its accessible name, from the accessibility tree.</p>
+<p class="dont">Don’t use the CSS <code class="language-plaintext highlighter-rouge">display: none</code>, <code class="language-plaintext highlighter-rouge">visibility: hidden</code> or the HTML attribute <code class="language-plaintext highlighter-rouge">hidden</code> on a label, as that also removes the element, and its accessible name, from the accessibility tree.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- this in incorrect code, the visual text Go is not describing what you need to fill out --&gt;</span>
 <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search-text"</span> <span class="na">class=</span><span class="s">"screen-reader-text"</span><span class="nt">&gt;</span>Search this website<span class="nt">&lt;/label&gt;</span>
@@ -542,7 +542,7 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-202/docs/
 <span class="nt">&lt;button&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
-<p class="do">Always a visible hint about how to fill out the form field.<br />
+<p class="do">Always add a visible hint about how to fill out the form field.<br />
 <label for="search-text" class="screen-reader-text">Search this website</label>
 <input type="text" name="s" id="search-text" />
 <button>Search</button></p>
@@ -554,7 +554,7 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-202/docs/
 
 <h2 id="how-to-test-for-a-proper-accessible-name">How to test for a proper accessible name</h2>
 
-<p>Good tools the check the accessible name of a form input:</p>
+<p>Good tools to check the accessible name of a form input:</p>
 
 <ul>
   <li>Your browser’s <a href="/pr-preview/pr-202/docs/topics/code/accessible-name/">accessibility tree</a>.</li>
@@ -581,7 +581,7 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-202/docs/
 <h2 id="resources">Resources</h2>
 
 <ul>
-  <li>Gravityforms accessibility documentation: <a href="https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&amp;irgwc=1#h-labels-and-placeholders">Labels and Placeholders</a>.</li>
+  <li>Gravity Forms accessibility documentation: <a href="https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&amp;irgwc=1#h-labels-and-placeholders">Labels and Placeholders</a>.</li>
   <li>WebAIM: <a href="https://webaim.org/articles/label-name">Decoding Label and Name for Accessibility</a>.</li>
 </ul>
 

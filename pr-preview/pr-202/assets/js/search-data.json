@@ -79,13 +79,13 @@
   },"13": {
     "doc": "Accessible name",
     "title": "Other ways to provide an accessible name",
-    "content": "The first rule of ARIA is, don’t use ARIA if there is a native HTML-element for the job. But it’s valid to use aria-label or aria-labelledby to give an accessible name for a form control. If you have to, here’s the basics: . Search . &lt;input type=\"search\" name=\"s\" aria-label=\"Search\"&gt; &lt;button&gt;Search&lt;/button&gt; . Search this website Go . &lt;span id=\"search-text\"&gt;Search this website&lt;/span&gt; &lt;input type=\"text\" name=\"s\" aria-labelledby=\"search-text\"&gt; &lt;button&gt;Go&lt;/button&gt; . Visual text or equivalent, like a search icon, should always be visible, so sighted users don’t have to guess what they need to fill out. If you must hide a label or control from vision, use the CSS class .screen-reader-text or equivalent. Don’t use the CSS display: none, visibility: hidden or the HTML-attribuut hidden on a label, as that also removes the element, and its accessible name, from the accessibility tree. &lt;!-- this in incorrect code, the visual text Go is not describing what you need to fill out --&gt; &lt;label for=\"search-text\" class=\"screen-reader-text\"&gt;Search this website&lt;/label&gt; &lt;input type=\"text\" name=\"s\" id=\"search-text\"&gt; &lt;button&gt;Go&lt;/button&gt; . &lt;!-- this in incorrect code, label is removed from the accessibility tree, the input field has no accessible name --&gt; &lt;label for=\"search-text\" hidden&gt;Search this website&lt;/label&gt; &lt;input type=\"text\" name=\"s\" id=\"search-text\"&gt; &lt;button&gt;Search&lt;/button&gt; . Always a visible hint about how to fill out the form field. Search this website Search . &lt;label for=\"search-text\" class=\"screen-reader-text\"&gt;Search this website&lt;/label&gt; &lt;input type=\"text\" name=\"s\" id=\"search-text\"&gt; &lt;button&gt;Search&lt;/button&gt; . ",
+    "content": "The first rule of ARIA is, don’t use ARIA if there is a native HTML element for the job. But it’s valid to use aria-label or aria-labelledby to give an accessible name for a form control. If you have to, here are the basics: . Search . &lt;input type=\"search\" name=\"s\" aria-label=\"Search\"&gt; &lt;button&gt;Search&lt;/button&gt; . Search this website Go . &lt;span id=\"search-text\"&gt;Search this website&lt;/span&gt; &lt;input type=\"text\" name=\"s\" aria-labelledby=\"search-text\"&gt; &lt;button&gt;Go&lt;/button&gt; . Visual text or equivalent, like a search icon, should always be visible, so sighted users don’t have to guess what they need to fill out. If you must hide a label or control from vision, use the CSS class .screen-reader-text or equivalent. Don’t use the CSS display: none, visibility: hidden or the HTML attribute hidden on a label, as that also removes the element, and its accessible name, from the accessibility tree. &lt;!-- this in incorrect code, the visual text Go is not describing what you need to fill out --&gt; &lt;label for=\"search-text\" class=\"screen-reader-text\"&gt;Search this website&lt;/label&gt; &lt;input type=\"text\" name=\"s\" id=\"search-text\"&gt; &lt;button&gt;Go&lt;/button&gt; . &lt;!-- this in incorrect code, label is removed from the accessibility tree, the input field has no accessible name --&gt; &lt;label for=\"search-text\" hidden&gt;Search this website&lt;/label&gt; &lt;input type=\"text\" name=\"s\" id=\"search-text\"&gt; &lt;button&gt;Search&lt;/button&gt; . Always add a visible hint about how to fill out the form field. Search this website Search . &lt;label for=\"search-text\" class=\"screen-reader-text\"&gt;Search this website&lt;/label&gt; &lt;input type=\"text\" name=\"s\" id=\"search-text\"&gt; &lt;button&gt;Search&lt;/button&gt; . ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/accessible-name/#other-ways-to-provide-an-accessible-name",
     "relUrl": "/docs/topics/forms/input-label/accessible-name/#other-ways-to-provide-an-accessible-name"
   },"14": {
     "doc": "Accessible name",
     "title": "How to test for a proper accessible name",
-    "content": "Good tools the check the accessible name of a form input: . | Your browser’s accessibility tree. | A screen reader, such as NVDA for Windows or VoiceOver/Safari for macOS. | . ",
+    "content": "Good tools to check the accessible name of a form input: . | Your browser’s accessibility tree. | A screen reader, such as NVDA for Windows or VoiceOver/Safari for macOS. | . ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/accessible-name/#how-to-test-for-a-proper-accessible-name",
     "relUrl": "/docs/topics/forms/input-label/accessible-name/#how-to-test-for-a-proper-accessible-name"
   },"15": {
@@ -103,7 +103,7 @@
   },"17": {
     "doc": "Accessible name",
     "title": "Resources",
-    "content": ". | Gravityforms accessibility documentation: Labels and Placeholders. | WebAIM: Decoding Label and Name for Accessibility. | . ",
+    "content": ". | Gravity Forms accessibility documentation: Labels and Placeholders. | WebAIM: Decoding Label and Name for Accessibility. | . ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/accessible-name/#resources",
     "relUrl": "/docs/topics/forms/input-label/accessible-name/#resources"
   },"18": {
@@ -529,7 +529,7 @@
   },"88": {
     "doc": "Input and label",
     "title": "Input field and form label",
-    "content": "A form label indicates what data the user can fill out in an input field. Input fields can be for example text, textareas, checkboxes, radiobuttons or an option. ",
+    "content": "A form label indicates what data the user can fill out in an input field. Input fields can be, for example, text, textareas, checkboxes, radio buttons, or an option. ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/#input-field-and-form-label",
     "relUrl": "/docs/topics/forms/input-label/#input-field-and-form-label"
   },"89": {
@@ -1723,7 +1723,7 @@
   },"287": {
     "doc": "Placeholders",
     "title": "Placeholders in form fields",
-    "content": "For all users to understand how to fill out a form, the labels should be connected to form control. The placeholder represents a short hint (a word or short phrase) intended to aid the user how to fill out a form field. A hint could be a sample value or a brief description of the expected format. A screen reader announces first the label and then the placeholder. &lt;label for=\"search\"&gt;Search for a product:&lt;/label&gt; &lt;input type=\"search\" id=\"search\" name=\"s\" placeholder=\"For example: apples, bread or milk\"&gt; . Only using a placeholder (without a connected label) has some disadvantages: . | the form field doesn’t have a proper accessible name. | the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field. | . For a longer hint or other advisory text, place the text next to the form field. In this case, use aria-describedby to connect the descriptive text to the field. ",
+    "content": "For all users to understand how to fill out a form, the labels should be connected to form control. The placeholder represents a short hint (a word or short phrase) intended to aid the user on what to fill out a form field. A hint could be a sample value or a brief description of the expected format. A screen reader announces first the label and then the placeholder. &lt;label for=\"search\"&gt;Search for a product:&lt;/label&gt; &lt;input type=\"search\" id=\"search\" name=\"s\" placeholder=\"For example: apples, bread or milk\"&gt; . Only using a placeholder (without a connected label) has some disadvantages: . | the form field doesn’t have a proper accessible name. | the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field. | . For a longer hint or other advisory text, place the text next to the form field. In this case, use aria-describedby to connect the descriptive text to the field. ",
     "url": "/pr-preview/pr-202/docs/topics/forms/input-label/placeholders/#placeholders-in-form-fields",
     "relUrl": "/docs/topics/forms/input-label/placeholders/#placeholders-in-form-fields"
   },"288": {
