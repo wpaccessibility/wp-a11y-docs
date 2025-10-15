@@ -462,6 +462,7 @@ Assistive technology, like a screen reader, gets the information it needs from t
 </code></pre></div></div>
 
 <p>The accessibility tree of Chrome shows the following relevant information: the accessible name is taken from the content, the role is button, the element is focusable, has focus and the menu is not expanded:</p>
+
 <ul>
   <li>Name
     <ul>
@@ -478,6 +479,8 @@ Assistive technology, like a screen reader, gets the information it needs from t
   <li>Focused: true</li>
   <li>Expanded: false</li>
 </ul>
+
+<p class="info">In this example the accessible name here is taken from “Contents”. The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. The value of the <code class="language-plaintext highlighter-rouge">aria-label</code> will overwrite the Contents value.</p>
 
 <p><img src="/pr-preview/pr-202/assets/images/accessible-name-button.png" alt="Screenshot accessible name menu in Chrome" /></p>
 
@@ -519,7 +522,6 @@ Assistive technology, like a screen reader, gets the information it needs from t
   <li>W3C: <a href="https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/">Providing Accessible Names and Descriptions </a>.</li>
   <li>W3C: <a href="https://www.w3.org/TR/using-aria/#firstrule">5 rules of ARIA</a>.</li>
 </ul>
-
 
 
           
