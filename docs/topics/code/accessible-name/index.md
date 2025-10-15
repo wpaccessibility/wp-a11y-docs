@@ -60,7 +60,7 @@ The accessibility tree of Chrome shows the following relevant information: the a
 - Expanded: false
 
 {: .info }
-In this example the accessible name here is taken from "Contents". The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. The value of the `aria-label` will overwrite the Contents value.
+In this example the accessible name is taken from "Contents". The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. A value for the `aria-label` will overwrite the Contents value.
 
 ![Screenshot accessible name menu in Chrome]({{site.baseurl}}/assets/images/accessible-name-button.png)
 
