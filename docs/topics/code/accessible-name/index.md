@@ -20,7 +20,6 @@ A proper accessible name for HTML elements is essential for screen reader users 
 
 Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name [Understanding Accessible Names in HTML](https://dev.to/ibn_abubakre/understanding-accessible-names-in-html-562).
 
-
 {: .info }
 Note: An `aria-label` attribute on a link or a button overrides all textual content within.   
 For example, the accessible name of the button `<button aria-label="Close">Open</button>` is "Close".
@@ -28,7 +27,7 @@ For example, the accessible name of the button `<button aria-label="Close">Open<
 ## The accessibility tree shows the accessible name
 
 Next to the [DOM-tree](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) a browser also generates an accessibility tree. Both are available in the inspector of every browser.
-Assistive technology, like a screen reader, gets the information it needs from that accessibility tree. 
+Assistive technology, like a screen reader, gets the information it needs from that accessibility tree.
 
 The way browsers show the accessibility tree differs:
 
@@ -47,6 +46,7 @@ The way browsers show the accessibility tree differs:
 ```
 
 The accessibility tree of Chrome shows the following relevant information: the accessible name is taken from the content, the role is button, the element is focusable, has focus and the menu is not expanded:
+
 - Name
   - `aria-labelledby`: Not specified
   - `aria-label`: Not specified
@@ -59,8 +59,10 @@ The accessibility tree of Chrome shows the following relevant information: the a
 - Focused: true
 - Expanded: false
 
+{: .info }
+In this example the accessible name here is taken from "Contents". The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. The value of the `aria-label` will overwrite the Contents value.
+
 ![Screenshot accessible name menu in Chrome]({{site.baseurl}}/assets/images/accessible-name-button.png)
- 
 
 ### Link:
 
@@ -97,4 +99,3 @@ How to provide a proper accessible name for each use case is documented with the
 - MDN: [Accessible name](https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name).
 - W3C: [Providing Accessible Names and Descriptions ](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/).
 - W3C: [5 rules of ARIA](https://www.w3.org/TR/using-aria/#firstrule).
-
