@@ -342,6 +342,8 @@
 
           <a href="/pr-preview/pr-202/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
 
+          <a href="/pr-preview/pr-202/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
           <a href="/pr-preview/pr-202/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-202/docs/contact/" class="nav-list-link">Contact</a></li></ul>
@@ -431,21 +433,25 @@
 
 <p>For all users to understand how to fill out a form, the <strong>labels</strong> should be connected to form control.</p>
 
-<p>The <strong>placeholder</strong> represents a short hint (a word or short phrase) intended to aid the user on <em>what</em> to fill out a form field. A hint could be a sample value or a brief description of the expected format.</p>
+<p>The <strong>placeholder</strong> represents a short hint (a word or short phrase) to inform the user on <em>what</em> to fill out a form field. A hint could be a sample value or a brief description of the expected format.</p>
 
 <p>A screen reader announces first the label and then the placeholder.</p>
 
+<p><label for="search2">Search for a product:</label><br />
+<input type="search" id="search2" name="s" placeholder="For example: apples" /></p>
+
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>Search for a product:<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"s"</span> <span class="na">placeholder=</span><span class="s">"For example: apples, bread or milk"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"s"</span> <span class="na">placeholder=</span><span class="s">"For example: apples"</span><span class="nt">&gt;</span>
 </code></pre></div></div>
 
 <p>Only using a placeholder (without a connected label) has some disadvantages:</p>
 <ul>
   <li>the form field doesn’t have a proper accessible name.</li>
   <li>the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field.</li>
+  <li>the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete.</li>
 </ul>
 
-<p>For a longer hint or other advisory text, place the text next to the form field. In this case, use <a href="/pr-preview/pr-202/docs/topics/forms/descriptions/">aria-describedby</a> to connect the descriptive text to the field.</p>
+<p>For a longer hint or other advisory text, place the text close to the form field. In this case, use <a href="/pr-preview/pr-202/docs/topics/forms/descriptions/">aria-describedby</a> to connect the descriptive text to the field.</p>
 
 <h2 id="wcag-succes-criteria">WCAG Succes Criteria</h2>
 
