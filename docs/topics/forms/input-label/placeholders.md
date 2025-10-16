@@ -9,20 +9,24 @@ nav_order: 3
 
 For all users to understand how to fill out a form, the **labels** should be connected to form control.
 
-The **placeholder** represents a short hint (a word or short phrase) intended to aid the user on _what_ to fill out a form field. A hint could be a sample value or a brief description of the expected format.
+The **placeholder** represents a short hint (a word or short phrase) to inform the user on _what_ to fill out a form field. A hint could be a sample value or a brief description of the expected format.
 
 A screen reader announces first the label and then the placeholder.
 
+<label for="search2">Search for a product:</label>  
+<input type="search" id="search2" name="s" placeholder="For example: apples">
+
 ```html
 <label for="search">Search for a product:</label>
-<input type="search" id="search" name="s" placeholder="For example: apples, bread or milk">
+<input type="search" id="search" name="s" placeholder="For example: apples">
 ```
 
 Only using a placeholder (without a connected label) has some disadvantages:
 - the form field doesn't have a proper accessible name.
 - the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field.
+- the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete.
 
-For a longer hint or other advisory text, place the text next to the form field. In this case, use [aria-describedby]({{site.baseurl}}/docs/topics/forms/descriptions/) to connect the descriptive text to the field.
+For a longer hint or other advisory text, place the text close to the form field. In this case, use [aria-describedby]({{site.baseurl}}/docs/topics/forms/descriptions/) to connect the descriptive text to the field.
 
 
 ## WCAG Succes Criteria
