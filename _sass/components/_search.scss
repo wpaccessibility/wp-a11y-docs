@@ -33,6 +33,9 @@
     max-width: $search-results-width;
     height: 100% !important;
     transition: width ease $transition-duration;
+    display: flex;
+    align-items: center;
+    gap: $sp-2;
   }
 }
 
@@ -48,6 +51,8 @@
   border-color: $grey-dk-050;
 
   @include mq(md) {
+    position: relative;
+    flex-grow: 1;
     padding: $sp-2 $gutter-spacing-sm $sp-2 #{$gutter-spacing + $sp-5};
     font-size: 0.875rem;
     background-color: $body-background-color;
@@ -61,6 +66,31 @@
       color: $link-color;
     }
   }
+}
+
+.search-submit {
+    // Hidden by default for the smaller, overlay search
+    display: none; 
+
+    @include mq(md) {
+        // Made visible for the full search page on medium screens and up
+        display: block;
+        
+        // General button styling
+        padding: $sp-2 $sp-3;
+        font-size: 0.875rem;
+        font-weight: bold;
+        color: $body-background-color;
+        background-color: $link-color;
+        border: 1px solid $link-color;
+        border-radius: $border-radius-sm;
+        cursor: pointer;
+        
+        // Accessibility: High-contrast focus state is essential
+        &:focus {
+            @include focus-outline;
+        }
+    }
 }
 
 .search-label {
