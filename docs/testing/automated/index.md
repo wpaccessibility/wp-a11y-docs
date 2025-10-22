@@ -20,7 +20,7 @@ Recommended:
 
 - [aXe browser addon](https://www.deque.com/aXe/) for Chrome and FireFox. The addon adds a tab to your inspector with a validate button. After validating you see the errors and warnings for that particular webpage and how to fix them. Make sure to also test in different views and with the menu open and closed, for example.
 - [HTML_CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/)
-- Accessibility Inspector in the [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools). A good read about this by Marco Zehe:  How to use [NVDA and Firefox to test your web pages for accessibility](https://www.marcozehe.de/articles/how-to-use-nvda-and-firefox-to-test-your-web-pages-for-accessibility/)
+- Accessibility Inspector in the [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools). A good read about this by Marco Zehe:  How to use [NVDA and Firefox to test your web pages for accessibility](https://www.marcozehe.de/how-to-use-nvda-and-firefox-to-test-your-web-pages-for-accessibility/)
 
 More tools:
 
