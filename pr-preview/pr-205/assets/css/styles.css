@@ -1525,6 +1525,7 @@ p.do-title > p:first-child {
   position: absolute;
   display: flex;
   height: 100%;
+  z-index: 10;
   padding-left: 1rem;
 }
 @media (min-width: 50rem) {
