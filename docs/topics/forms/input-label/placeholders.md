@@ -13,6 +13,15 @@ The **placeholder** represents a short hint (a word or short phrase) to inform t
 
 A screen reader announces first the label and then the placeholder.
 
+## Disadvantage of only using a placeholder
+Only using a placeholder (without a connected label) has some disadvantages:
+- the form field doesn't have a proper accessible name.
+- the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field.
+- the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete.
+
+For a longer hint or other advisory text, place the text close to the form field.
+In this case, use a [description]({{site.baseurl}}/docs/topics/forms/descriptions/).
+
 ## Basic HTML example for a placeholder
 
 <label for="search2">Search for a product:</label>  
@@ -22,15 +31,6 @@ A screen reader announces first the label and then the placeholder.
 <label for="search">Search for a product:</label>
 <input type="search" id="search" name="s" placeholder="For example: apples">
 ```
-
-## Disadvantage of only using a placeholder
-Only using a placeholder (without a connected label) has some disadvantages:
-- the form field doesn't have a proper accessible name.
-- the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field.
-- the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete.
-
-For a longer hint or other advisory text, place the text close to the form field. In this case, use [aria-describedby]({{site.baseurl}}/docs/topics/forms/descriptions/) to connect the descriptive text to the field.
-
 
 ## WCAG Succes Criteria
 
