@@ -575,6 +575,7 @@ jtd.onReady(function(){
     const query = urlParams.get("q") ? urlParams.get("q").trim() : null;
     const resultsContainer = document.getElementById("search-results-page");
     const searchInput = document.getElementById("search-input"); 
+    const input = query;
 
     if (!query || !resultsContainer) {
       return;
@@ -592,8 +593,29 @@ jtd.onReady(function(){
     const index = window.jtdSearchIndex;
     const docs = window.jtdSearchDocs;
 
-    let results = index.search(query);
+    var results = index.query(function (query) {
+      var tokens = lunr.tokenizer(input)
+      query.term(tokens, {
+        boost: 10
+      });
+      query.term(tokens, {
+        wildcard: lunr.Query.wildcard.TRAILING
+      });
+    });
 
+    if ((results.length === 0) && (input.length > 2)) {
+      var tokens = lunr.tokenizer(input).filter(function(token, i) {
+        return token.str.length < 20;
+      })
+      if (tokens.length > 0) {
+        results = index.query(function (query) {
+          query.term(tokens, {
+            editDistance: Math.round(Math.sqrt(input.length / 2 - 1))
+          });
+        });
+      }
+    }
+  
     // Display results
     if (results.length > 0) {
       resultsContainer.innerHTML = `
