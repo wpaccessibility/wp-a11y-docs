@@ -83,13 +83,8 @@
         color: $body-background-color;
         background-color: $link-color;
         border: 1px solid $link-color;
-        border-radius: $border-radius-sm;
+        border-radius: $border-radius;
         cursor: pointer;
-        
-        // Accessibility: High-contrast focus state is essential
-        &:focus {
-            @include focus-outline;
-        }
     }
 }
 
