@@ -93,6 +93,7 @@
   position: absolute;
   display: flex;
   height: 100%;
+  z-index: 10;
   padding-left: $gutter-spacing-sm;
 
   @include mq(md) {
