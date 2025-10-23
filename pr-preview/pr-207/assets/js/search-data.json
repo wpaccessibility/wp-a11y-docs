@@ -1866,16 +1866,16 @@
     "relUrl": "/docs/topics/forms/input-label/placeholders/#placeholders-in-form-fields"
   },"311": {
     "doc": "Placeholders",
+    "title": "Disadvantage of only using a placeholder",
+    "content": "Only using a placeholder (without a connected label) has some disadvantages: . | the form field doesn’t have a proper accessible name. | the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field. | the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete. | . For a longer hint or other advisory text, place the text close to the form field. In this case, use a description. ",
+    "url": "/pr-preview/pr-207/docs/topics/forms/input-label/placeholders/#disadvantage-of-only-using-a-placeholder",
+    "relUrl": "/docs/topics/forms/input-label/placeholders/#disadvantage-of-only-using-a-placeholder"
+  },"312": {
+    "doc": "Placeholders",
     "title": "Basic HTML example for a placeholder",
     "content": "Search for a product: . &lt;label for=\"search\"&gt;Search for a product:&lt;/label&gt; &lt;input type=\"search\" id=\"search\" name=\"s\" placeholder=\"For example: apples\"&gt; . ",
     "url": "/pr-preview/pr-207/docs/topics/forms/input-label/placeholders/#basic-html-example-for-a-placeholder",
     "relUrl": "/docs/topics/forms/input-label/placeholders/#basic-html-example-for-a-placeholder"
-  },"312": {
-    "doc": "Placeholders",
-    "title": "Disadvantage of only using a placeholder",
-    "content": "Only using a placeholder (without a connected label) has some disadvantages: . | the form field doesn’t have a proper accessible name. | the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field. | the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete. | . For a longer hint or other advisory text, place the text close to the form field. In this case, use aria-describedby to connect the descriptive text to the field. ",
-    "url": "/pr-preview/pr-207/docs/topics/forms/input-label/placeholders/#disadvantage-of-only-using-a-placeholder",
-    "relUrl": "/docs/topics/forms/input-label/placeholders/#disadvantage-of-only-using-a-placeholder"
   },"313": {
     "doc": "Placeholders",
     "title": "WCAG Succes Criteria",

@@ -445,15 +445,6 @@
 
 <p>A screen reader announces first the label and then the placeholder.</p>
 
-<h2 id="basic-html-example-for-a-placeholder">Basic HTML example for a placeholder</h2>
-
-<p><label for="search2">Search for a product:</label><br />
-<input type="search" id="search2" name="s" placeholder="For example: apples" /></p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>Search for a product:<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"s"</span> <span class="na">placeholder=</span><span class="s">"For example: apples"</span><span class="nt">&gt;</span>
-</code></pre></div></div>
-
 <h2 id="disadvantage-of-only-using-a-placeholder">Disadvantage of only using a placeholder</h2>
 <p>Only using a placeholder (without a connected label) has some disadvantages:</p>
 <ul>
@@ -462,7 +453,17 @@
   <li>the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete.</li>
 </ul>
 
-<p>For a longer hint or other advisory text, place the text close to the form field. In this case, use <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/">aria-describedby</a> to connect the descriptive text to the field.</p>
+<p>For a longer hint or other advisory text, place the text close to the form field.
+In this case, use a <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/">description</a>.</p>
+
+<h2 id="basic-html-example-for-a-placeholder">Basic HTML example for a placeholder</h2>
+
+<p><label for="search2">Search for a product:</label><br />
+<input type="search" id="search2" name="s" placeholder="For example: apples" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>Search for a product:<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"s"</span> <span class="na">placeholder=</span><span class="s">"For example: apples"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
 
 <h2 id="wcag-succes-criteria">WCAG Succes Criteria</h2>
 
