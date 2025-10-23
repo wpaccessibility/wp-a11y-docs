@@ -84,4 +84,5 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 
 ## Resources
 
+- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - [MDN about label accessibility](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label#accessibility)

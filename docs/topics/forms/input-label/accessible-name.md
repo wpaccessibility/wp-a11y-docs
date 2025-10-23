@@ -31,7 +31,7 @@ The IDs used must be unique for the page; otherwise, the wrong input fields may 
 
 ### Basic example with input type="text"
 
-<label for="color1">Your favorite color</label>
+<label for="color1">Your favorite color</label>  
 <input type="text" id="color1" name="color">
 
 ```html
@@ -87,7 +87,7 @@ The [first rule of ARIA](https://www.w3.org/TR/using-aria/#rule1) is, don't use 
 
 If you have to, here are the basics:
 
-<input type="search" name="s" aria-label="Search">
+<input type="search" name="s" aria-label="Search">  
 <button>Search</button>
 
 ```html
@@ -157,10 +157,11 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 
 ## Related pages in this documentation
 
-- [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
+-  Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
 ## Resources
 
+- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - Gravity Forms accessibility documentation: [Labels and Placeholders](https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&irgwc=1#h-labels-and-placeholders).
 - WebAIM: [Decoding Label and Name for Accessibility](https://webaim.org/articles/label-name).
 
