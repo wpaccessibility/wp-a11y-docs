@@ -29,6 +29,7 @@
   transition: height linear #{$transition-duration * 0.5};
 
   @include mq(md) {
+    position: absolute;
     width: 100%;
     max-width: $search-results-width;
     height: 100% !important;
@@ -93,7 +94,6 @@
   display: flex;
   height: 100%;
   padding-left: $gutter-spacing-sm;
-  z-index: 20;
 
   @include mq(md) {
     padding-left: $gutter-spacing;
