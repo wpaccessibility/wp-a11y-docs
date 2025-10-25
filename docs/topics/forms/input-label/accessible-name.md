@@ -164,4 +164,3 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - Gravity Forms accessibility documentation: [Labels and Placeholders](https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&irgwc=1#h-labels-and-placeholders).
 - WebAIM: [Decoding Label and Name for Accessibility](https://webaim.org/articles/label-name).
-
