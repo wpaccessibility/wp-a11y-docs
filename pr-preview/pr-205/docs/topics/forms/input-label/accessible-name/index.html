@@ -89,8 +89,11 @@
     <div class="side-bar">
   <header class="site-header">
 
-    <a href="/pr-preview/pr-205/" class="site-title lh-tight">
-      WP Accessibility Knowledge Base</a>
+    <div class="lh-wrapper">
+      <img src="/pr-preview/pr-205/assets/images/logo.jpg" alt="Accessibility: Advocate Equal Access">
+      <a href="/pr-preview/pr-205/" class="site-title lh-tight">
+        WP Accessibility Knowledge Base</a>
+    </div>
     <button id="menu-button" class="site-button btn-reset" aria-expanded="false">
       <span>Menu</span>
       <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
@@ -252,7 +255,17 @@
 
           <a href="/pr-preview/pr-205/docs/topics/forms/input-label/label-location/" class="nav-list-link">Best label location</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-205/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-205/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a><button class="nav-list-expander btn-reset" aria-label="Input and description submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-205/docs/topics/forms/descriptions/connect-description/" class="nav-list-link">Connect the description</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-205/docs/topics/forms/descriptions/content-description/" class="nav-list-link">Description has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-205/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-205/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-205/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
 
@@ -471,7 +484,7 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-205/docs/
 
 <h3 id="basic-example-with-input-typetext">Basic example with input type=”text”</h3>
 
-<p><label for="color1">Your favorite color</label>
+<p><label for="color1">Your favorite color</label><br />
 <input type="text" id="color1" name="color" /></p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"color2"</span><span class="nt">&gt;</span>Your favorite color<span class="nt">&lt;/label&gt;</span>
@@ -524,7 +537,7 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-205/docs/
 
 <p>If you have to, here are the basics:</p>
 
-<p><input type="search" name="s" aria-label="Search" />
+<p><input type="search" name="s" aria-label="Search" /><br />
 <button>Search</button></p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"s"</span> <span class="na">aria-label=</span><span class="s">"Search"</span><span class="nt">&gt;</span>
@@ -591,16 +604,16 @@ The label text then becomes the form field’s <a href="/pr-preview/pr-205/docs/
 <h2 id="related-pages-in-this-documentation">Related pages in this documentation</h2>
 
 <ul>
-  <li><a href="/pr-preview/pr-205/docs/topics/code/accessible-name/">Accessible name</a>.</li>
+  <li>Standards and best practice - Frontend code: <a href="/pr-preview/pr-205/docs/topics/code/accessible-name/">Accessible name</a>.</li>
 </ul>
 
 <h2 id="resources">Resources</h2>
 
 <ul>
+  <li>NL Design System <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
   <li>Gravity Forms accessibility documentation: <a href="https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&amp;irgwc=1#h-labels-and-placeholders">Labels and Placeholders</a>.</li>
   <li>WebAIM: <a href="https://webaim.org/articles/label-name">Decoding Label and Name for Accessibility</a>.</li>
 </ul>
-
 
 
           
