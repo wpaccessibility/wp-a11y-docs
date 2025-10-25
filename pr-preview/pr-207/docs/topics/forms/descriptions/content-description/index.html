@@ -265,7 +265,9 @@
 
           <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/content-description/" class="nav-list-link">Description has text only</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-207/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
 
@@ -444,49 +446,17 @@
 
           <h1 id="only-include-text-in-the-description">Only include text in the description</h1>
 
-<p>The HTML attribute <code class="language-plaintext highlighter-rouge">aria-describedby</code>, which you use to connect a description, must only contain “plain text”. Plain text represents text without further formatting and has no additional HTML for formatting or meaning. Link lists, headings or tooltips.</p>
+<p>The HTML attribute <code class="language-plaintext highlighter-rouge">aria-describedby</code>, which you use to connect a description, must only contain text and no additional structure or interactive functionality like links, buttons, lists, headings or for example tooltips.</p>
 
-<p>We call formatted text “rich text”. Screen readers don’t convey this information correctly or even skip it entirely in a description.</p>
+<p>Screen readers don’t convey this information correctly or even skip it entirely in a description.</p>
 
-<h2 id="demo-of-a-description-with-rich-text-announced-with-voiceover-in-safari">Demo of a description with rich text announced with VoiceOver in Safari</h2>
+<h2 id="demo-of-a-description-with-a-list-announced-with-voiceover-in-safari">Demo of a description with a list, announced with VoiceOver in Safari</h2>
 
 <video data-able-player="" data-youtube-nocookie="true" data-youtube-id="6brKmJfDtNQ" data-heading-level="0"></video>
 
 <p>In this <a href="https://www.youtube.com/watch?v=6brKmJfDtNQ">demo video</a>, VoiceOver in Safari 18.6 skips the bulleted list from the description when a form field receives keyboard focus. NVDA 2024.4.1 in Firefox does the same. The codepen with the HTML/CSS of this demo: <a href="https://codepen.io/rianrietveld/pen/emJedVR">Demo rich text in a description</a>.</p>
 
-<h2 id="description-decision-tree">Description decision tree</h2>
-
-<p>What are the options for adding information and explanations to a form and its input fields? Follow the decision tree in 6 questions.</p>
-
-<h3 id="question-1-does-the-information-apply-to-all-form-fields">Question 1: Does the information apply to all form fields?</h3>
-
-<p><strong>Yes</strong>: Place the information just above the form and below its heading. You can use rich text here.<br />
-<strong>No</strong>: Go to question 2.</p>
-
-<h3 id="question-2-does-the-information-concern-a-single-field-or-a-group-of-fields-grouped-in-a-fieldset">Question 2: Does the information concern a single field or a group of fields, grouped in a fieldset?</h3>
-
-<p><strong>A single field</strong>: Go to question 3.<br />
-<strong>A group of fields</strong>: Go to question 5.</p>
-
-<h3 id="question-3-is-the-information-in-the-form-field-plain-text">Question 3: Is the information in the form field plain text?</h3>
-
-<p><strong>Yes</strong>: Place the information in a description.<br />
-<strong>No</strong>: Go to question 4.</p>
-
-<h3 id="question-4-is-it-necessary-for-the-information-in-the-form-field-to-contain-rich-text">Question 4: Is it necessary for the information in the form field to contain rich text?</h3>
-
-<p><strong>Yes</strong>: Consider a multistep form, where the information is placed just above the form and below the corresponding heading for the relevant step.<br />
-<strong>No</strong>: Rewrite the description so that it only contains plain text.</p>
-
-<h3 id="question-5-is-the-information-in-the-grouped-fields-plain-text">Question 5: Is the information in the grouped fields plain text?</h3>
-
-<p><strong>Yes</strong>: Place the information in a description linked to the <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code>. <br />
-<strong>No</strong>: Go to question 6.</p>
-
-<h3 id="question-6-is-it-necessary-for-the-information-in-the-grouped-fields-to-contain-rich-text">Question 6: Is it necessary for the information in the grouped fields to contain rich text?</h3>
-
-<p><strong>Yes</strong>: Consider a multistep form, where the information is placed directly above the form for each step.<br />
-<strong>No</strong>: Rewrite the description so that it only contains plain text. This ensures that all users can read the information.</p>
+<p>What are the options for adding information and explanations to a form and its input fields? Follow the <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/">description decision tree</a>.</p>
 
 <h2 id="related-wcag-succes-criteria">Related WCAG Succes Criteria</h2>
 

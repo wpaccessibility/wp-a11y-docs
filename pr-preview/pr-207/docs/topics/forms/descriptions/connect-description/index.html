@@ -260,7 +260,9 @@
 
           <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/content-description/" class="nav-list-link">Description has text only</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-207/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-207/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
 
@@ -443,7 +445,7 @@
 
 <h2 id="why-is-this-important">Why is this important?</h2>
 
-<p>Screen readers, such as JAWS, switch to “forms mode” when processing content within a <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> element. In this mode, screen readers only read the form fields, including any associated information (for example with <code class="language-plaintext highlighter-rouge">aria-describedby</code>). Unassociated information is not read aloud unless the user searches for it.</p>
+<p>Screen readers can switch to “forms mode” when processing content within a <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> element. In this mode, screen readers only read the form fields and their associated information. Unassociated information is not read aloud unless the user searches for it.</p>
 
 <h2 id="the-aria-describedbyid-relationship">The aria-describedby/id relationship</h2>
 
@@ -462,9 +464,9 @@
         <span class="na">autocomplete=</span><span class="s">"name"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p class="alert">The IDs used must be unique for the page; otherwise, the wrong description may be announced with a form field.</p>
+<p class="alert">IDs used must be unique on each page; otherwise, the wrong description may be announced with a form field.</p>
 
-<p>It’s possible to add multiple descriptions to one form field. You can for example combine the text of description and an error message by separation the IDs with a space. The order of the IDs given in the <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute is the order in which they are announced.</p>
+<p>It’s possible to add multiple descriptions to one form field. You can combine the text of the description and an error message by separating the IDs with a space. The order of the IDs given in the <code class="language-plaintext highlighter-rouge">aria-describedby</code> attribute is the order in which they are announced.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"fullname"</span><span class="nt">&gt;</span>Full name<span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"description-fullname"</span><span class="nt">&gt;</span>Please fill out your first and last name.<span class="nt">&lt;/div&gt;</span>
@@ -477,7 +479,7 @@
 
 <h2 id="connect-the-description-of-a-fieldset-to-the-fieldset-element">Connect the description of a fieldset to the fieldset element</h2>
 
-<p>Radio buttons, checkboxes and, for example, address details can be grouped in a fieldset. The question or the subject will be the <code class="language-plaintext highlighter-rouge">legend</code>. Place the description below the legend just above the first label/form field. The description is linked to the fieldset element with <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</p>
+<p>Radio buttons, checkboxes, and other groups of related fields (like addresses) can be grouped in fieldsets. The question or the subject will be the <code class="language-plaintext highlighter-rouge">legend</code>. Place the description below the legend just above the first label/form field. The description is linked to the fieldset element with <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</p>
 
 <h2 id="example">Example</h2>
 
@@ -524,7 +526,6 @@
   <span class="na">aria-describedby=</span><span class="s">"description-new-password"</span>
   <span class="na">autocomplete=</span><span class="s">"new-password"</span>
 <span class="nt">/&gt;</span>
-
 </code></pre></div></div>
 
 <p class="dont">No connection between a form field and its description.</p>
@@ -540,10 +541,9 @@
   <span class="na">name=</span><span class="s">"new-password"</span>
   <span class="na">autocomplete=</span><span class="s">"new-password"</span>
 <span class="nt">/&gt;</span>
-
 </code></pre></div></div>
 
-<h2 id="wcag-succes-criteria">WCAG Succes Criteria</h2>
+<h2 id="wcag-success-criteria">WCAG Success Criteria</h2>
 
 <p>Connecting a description to a form field is necessary to meet the WCAG success criteria:</p>
 
