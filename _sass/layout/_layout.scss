@@ -128,8 +128,29 @@
 
 .site-header {
   display: flex;
-  min-height: $header-height;
   align-items: center;
+
+  .lh-wrapper {
+    align-items: center;
+    display: flex;
+
+    img {
+      max-width: 80px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    @include mq(md) {
+      img {
+        max-width: 70%;
+      }
+    }
+  }
+  @include mq(md) {
+    .lh-wrapper {
+      display: block;
+    }
+  }
 }
 
 .site-title {

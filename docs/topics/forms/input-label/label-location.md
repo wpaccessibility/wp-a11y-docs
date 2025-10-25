@@ -37,5 +37,6 @@ As this is best practice you are not required to place the label above the form 
 
 ## Resources
 
+- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - Adrian Roselli: [Avoid Messages Under Fields](https://adrianroselli.com/2017/01/avoid-messages-under-fields.html).
 - Smashing Magazine [Material Design Text Fields Are Badly Designed](https://www.smashingmagazine.com/2021/02/material-design-text-fields/).

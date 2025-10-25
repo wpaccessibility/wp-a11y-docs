@@ -30,7 +30,6 @@
   transition: height linear #{$transition-duration * 0.5};
 
   @include mq(md) {
-    position: absolute;
     width: 100%;
     max-width: calc( $search-results-width - 2rem );
     height: 100% !important;
