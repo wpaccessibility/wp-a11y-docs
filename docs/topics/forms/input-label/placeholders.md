@@ -13,6 +13,17 @@ The **placeholder** represents a short hint (a word or short phrase) to inform t
 
 A screen reader announces first the label and then the placeholder.
 
+## Disadvantage of only using a placeholder
+Only using a placeholder (without a connected label) has some disadvantages:
+- the form field doesn't have a proper accessible name.
+- the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field.
+- the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete.
+
+For a longer hint or other advisory text, place the text close to the form field.
+In this case, use a [description]({{site.baseurl}}/docs/topics/forms/descriptions/).
+
+## Basic HTML example for a placeholder
+
 <label for="search2">Search for a product:</label>  
 <input type="search" id="search2" name="s" placeholder="For example: apples">
 
@@ -20,14 +31,6 @@ A screen reader announces first the label and then the placeholder.
 <label for="search">Search for a product:</label>
 <input type="search" id="search" name="s" placeholder="For example: apples">
 ```
-
-Only using a placeholder (without a connected label) has some disadvantages:
-- the form field doesn't have a proper accessible name.
-- the placeholder text may become unreadable when a user zooms in and the text becomes too large for the input field.
-- the placeholder text disappears when the user starts typing in the form field or when the field is filled out with autocomplete.
-
-For a longer hint or other advisory text, place the text close to the form field. In this case, use [aria-describedby]({{site.baseurl}}/docs/topics/forms/descriptions/) to connect the descriptive text to the field.
-
 
 ## WCAG Succes Criteria
 
@@ -38,5 +41,10 @@ For a longer hint or other advisory text, place the text close to the form field
 
 ## Related pages in this documentation
 
-- [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
+- Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
+
+## Resources
+
+- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
+- MDN: [Placeholders](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/placeholder).
