@@ -349,12 +349,6 @@ function searchLoaded(index, docs) {
           }
         }
       }
-
-      var resultRelUrl = document.createElement('span');
-      resultRelUrl.classList.add('search-result-rel-url');
-      resultRelUrl.innerText = doc.relUrl;
-      resultTitle.appendChild(resultRelUrl);
-
     }
 
     function addHighlightedText(parent, text, start, end, positions) {
@@ -619,9 +613,16 @@ jtd.onReady(function(){
         <ul>
           ${results.map(r => {
             const doc = docs[r.ref];
+            let docSection = doc.doc;
+            if ( docSection !== doc.title ) {
+              docSection = `<strong>Section:</strong> <span class="search-doc-section">${doc.doc}</span><br>`;
+            } else {
+              docSection = '';
+            }
             return `
               <li>
                 <a href="${doc.url}">${doc.title}</a><br>
+                ${docSection}
                 <small>${doc.relUrl}</small>
               </li>`;
           }).join("")}
