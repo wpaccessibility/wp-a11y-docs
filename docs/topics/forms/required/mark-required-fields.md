@@ -5,7 +5,7 @@ parent: Required fields
 nav_order: 2
 ---
 
-# Option 2: Marking only the required form fields
+# Option 1: Marking only the required form fields
 
 Clearly indicate to the user if a form field is required to fill out or not. Inform the user above the field how the fields are marked. 
 
@@ -18,13 +18,12 @@ A required field indicator can be:
 ## Example
 
 <figure>
-    <img src="{{site.baseurl}}/assets/images/mark-required-form-fields.png" alt="">
+    <img src="{{site.baseurl}}/assets/images/mark-required-form-fields.png" alt="Screenshot form indicating required fields">
     <figcaption>
     In this screenshot: Above the form the text: "*" indicates required fields.
-    This information also in the label text: Your name *.
+    This information is also in the label text: Your name *.
     </figcaption>
 </figure>
-
 
 {: .alert }
 **Note for developers**: for screen reader users the indication if a field is required must be added in the code with a form field. Read [Mark if a form field is required for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) about how to do this.
@@ -43,11 +42,11 @@ Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with 
 
 ## Related WCAG Success Criteria
 
-By indication required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
+By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
 
 ## Related pages in this documentation
 
--  [Option 1: Marking only the non-required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-non-required-fields/).
+-  [Option 2: Marking only the non-required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-non-required-fields/).
 
 ## Resources
 
