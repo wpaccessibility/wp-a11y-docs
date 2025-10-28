@@ -667,7 +667,7 @@
   },"111": {
     "doc": "Required fields",
     "title": "Indicate required fields in forms",
-    "content": "Clearly indicate to the user whether a form field is required to fill out or not. Then the user knows which information they must provide to submit a form. You have two options: . | By visually marking non-required fields. | By visually marking required fields. | . Both are fine, as long as you are consistent within the form and if possible also withing all forms on your website. Always place the explanation of how you indicate this above the form, so the user knows beforehand what to expect when completing it. ",
+    "content": "Clearly indicate to the user whether a form field is required to fill out or not. Then the user knows which information they must provide to submit a form. You have two options: . | By visually marking required fields. | By visually marking non-required fields. | . Both are fine, as long as you are consistent within the form and, if possible, also within all forms on your website. Always place the explanation of how you indicate this above the form, so the user knows beforehand what to expect when completing it. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/#indicate-required-fields-in-forms",
     "relUrl": "/docs/topics/forms/required/#indicate-required-fields-in-forms"
   },"112": {
@@ -1854,14 +1854,14 @@
     "relUrl": "/docs/topics/forms/descriptions/location-description/"
   },"309": {
     "doc": "Mark non-required fields",
-    "title": "Option 1: Marking only the non-required form fields",
-    "content": "Clearly indicate to the user if a form field is required to fill out or not. Assume that you only request essential information in forms, most fields will be required. Then, non-required fields are the exception. You can choose to visually mark only the optional fields. Do this by informing the user above the field and by including the text ‘(optional)’ in the label for non-required fields. ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#option-1-marking-only-the-non-required-form-fields",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#option-1-marking-only-the-non-required-form-fields"
+    "title": "Option 2: Marking only the non-required form fields",
+    "content": "Clearly indicate to the user if a form field is optional. Assuming that you only request essential information in forms, most fields will be required. Then, non-required fields are the exception. You can choose to mark only the optional fields visually. Do this by informing the user above the field and by including the text ‘(optional)’ in the label for non-required fields. ",
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#option-2-marking-only-the-non-required-form-fields",
+    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#option-2-marking-only-the-non-required-form-fields"
   },"310": {
     "doc": "Mark non-required fields",
     "title": "Example",
-    "content": "In this screenshot: Above the form the text: \"All questions are required except the questions marked as (optional)\". This information also in the label text: Pronounce (optional). Note for developers: for screen reader users the indication if a field is required must be added in the code with a form field. Read Mark if a form field is required for screen readers about how to do this. ",
+    "content": "In this screenshot: Above the form the text: \"All questions are required except the questions marked as (optional)\". This information is also in the label text: Your Pronouns (optional). Note for developers: for screen reader users the indication if a field is required must be added in the code with a form field. Read Mark if a form field is required for screen readers about how to do this. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#example",
     "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#example"
   },"311": {
@@ -1873,13 +1873,13 @@
   },"312": {
     "doc": "Mark non-required fields",
     "title": "Related WCAG Success Criteria",
-    "content": "By indication required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
+    "content": "By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#related-wcag-success-criteria",
     "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#related-wcag-success-criteria"
   },"313": {
     "doc": "Mark non-required fields",
     "title": "Related pages in this documentation",
-    "content": ". | Option 2: Marking only the required form fields. | . ",
+    "content": ". | Option 1: Marking only the required form fields. | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#related-pages-in-this-documentation",
     "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#related-pages-in-this-documentation"
   },"314": {
@@ -1896,14 +1896,14 @@
     "relUrl": "/docs/topics/forms/required/mark-non-required-fields/"
   },"316": {
     "doc": "Mark required fields",
-    "title": "Option 2: Marking only the required form fields",
+    "title": "Option 1: Marking only the required form fields",
     "content": "Clearly indicate to the user if a form field is required to fill out or not. Inform the user above the field how the fields are marked. If you choose to mark the required field, include the text ‘(required)’, or an equivalent, in the label for required fields. A required field indicator can be: . | The text (required). | An asterisk (*). If you use an asterisk, explain this above the form. An asterisk on the form field alone is not sufficient; not everyone has this prior knowledge. | . ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#option-2-marking-only-the-required-form-fields",
-    "relUrl": "/docs/topics/forms/required/mark-required-fields/#option-2-marking-only-the-required-form-fields"
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#option-1-marking-only-the-required-form-fields",
+    "relUrl": "/docs/topics/forms/required/mark-required-fields/#option-1-marking-only-the-required-form-fields"
   },"317": {
     "doc": "Mark required fields",
     "title": "Example",
-    "content": "In this screenshot: Above the form the text: \"*\" indicates required fields. This information also in the label text: Your name *. Note for developers: for screen reader users the indication if a field is required must be added in the code with a form field. Read Mark if a form field is required for screen readers about how to do this. ",
+    "content": "In this screenshot: Above the form the text: \"*\" indicates required fields. This information is also in the label text: Your name *. Note for developers: for screen reader users the indication if a field is required must be added in the code with a form field. Read Mark if a form field is required for screen readers about how to do this. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#example",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#example"
   },"318": {
@@ -1915,13 +1915,13 @@
   },"319": {
     "doc": "Mark required fields",
     "title": "Related WCAG Success Criteria",
-    "content": "By indication required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
+    "content": "By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#related-wcag-success-criteria",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#related-wcag-success-criteria"
   },"320": {
     "doc": "Mark required fields",
     "title": "Related pages in this documentation",
-    "content": ". | Option 1: Marking only the non-required form fields. | . ",
+    "content": ". | Option 2: Marking only the non-required form fields. | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#related-pages-in-this-documentation",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#related-pages-in-this-documentation"
   },"321": {
@@ -2107,19 +2107,19 @@
   },"351": {
     "doc": "Mark required for screen readers",
     "title": "Mark a required form field for screen readers",
-    "content": "Screen reader users will have announced if a field is required by the HTML attributes aria-required or required with the form field. ",
+    "content": "Screen reader users will have the field announced as required by the HTML attributes aria-required or required on the form field. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#mark-a-required-form-field-for-screen-readers",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#mark-a-required-form-field-for-screen-readers"
   },"352": {
     "doc": "Mark required for screen readers",
     "title": "Basic HTML examples",
-    "content": "Using aria-required=”true” . &lt;label for=\"new-password\"&gt;New password (required)&lt;/label&gt; &lt;p&gt; Choose a password of at least 8 characters long. &lt;/p&gt; &lt;input id=\"new-password\" type=\"password\" name=\"new-password\" autocomplete=\"new-password\" aria-required=\"true\" aria-invalid=\"false\" /&gt; . Using required . &lt;label for=\"new-password\"&gt;New password (required)&lt;/label&gt; &lt;p&gt; Choose a password of at least 8 characters long. &lt;/p&gt; &lt;input id=\"new-password\" type=\"password\" name=\"new-password\" autocomplete=\"new-password\" required aria-invalid=\"false\" /&gt; . The disadvantage of using required is, that it triggers the client-side form validation of the browser. This validation is, at the moment of writing, do not meet WCAG accessibility guidelines. The text of the error messages are not specific enough, they disappear after a few seconds, and they have poor screen reader support at the moment. If you decide to use required, also use novalidate on the form element, to prevent the form validation of the browser kicking in and enables you to handle the validation server side. &lt;form action=\"some-url\" novalidate&gt; . Note: the use of aria-invalid will be addressed later in the section Feedback on form errors. ",
+    "content": "Using aria-required=”true” . &lt;label for=\"new-password\"&gt;New password (required)&lt;/label&gt; &lt;p&gt; Choose a password of at least 8 characters long. &lt;/p&gt; &lt;input id=\"new-password\" type=\"password\" name=\"new-password\" autocomplete=\"new-password\" aria-required=\"true\" aria-invalid=\"false\" /&gt; . Using required . &lt;label for=\"new-password\"&gt;New password (required)&lt;/label&gt; &lt;p&gt; Choose a password of at least 8 characters long. &lt;/p&gt; &lt;input id=\"new-password\" type=\"password\" name=\"new-password\" autocomplete=\"new-password\" required aria-invalid=\"false\" /&gt; . The disadvantage of using required is, that it triggers the client-side form validation of the browser. At the time of writing, this validation does not meet WCAG accessibility guidelines. The error messages are not specific enough, they disappear after a few seconds, and they currently lack sufficient screen reader support. If you decide to use required, also use novalidate on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side. &lt;form action=\"some-url\" novalidate&gt; . Note: the use of aria-invalid will be addressed later in the section Feedback on form errors. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#basic-html-examples",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#basic-html-examples"
   },"353": {
     "doc": "Mark required for screen readers",
     "title": "WCAG Success Criteria",
-    "content": "By indication required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
+    "content": "By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#wcag-success-criteria",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#wcag-success-criteria"
   },"354": {

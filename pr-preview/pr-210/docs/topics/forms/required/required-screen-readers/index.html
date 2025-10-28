@@ -452,7 +452,7 @@
 
           <h1 id="mark-a-required-form-field-for-screen-readers">Mark a required form field for screen readers</h1>
 
-<p>Screen reader users will have announced if a field is required by the HTML attributes <code class="language-plaintext highlighter-rouge">aria-required</code> or <code class="language-plaintext highlighter-rouge">required</code> with the form field.</p>
+<p>Screen reader users will have the field announced as required by the HTML attributes <code class="language-plaintext highlighter-rouge">aria-required</code> or <code class="language-plaintext highlighter-rouge">required</code> on the form field.</p>
 
 <h2 id="basic-html-examples">Basic HTML examples</h2>
 
@@ -471,7 +471,6 @@
   <span class="na">aria-required=</span><span class="s">"true"</span>
   <span class="na">aria-invalid=</span><span class="s">"false"</span>
 <span class="nt">/&gt;</span>
-
 </code></pre></div></div>
 
 <h3 id="using-required">Using required</h3>
@@ -488,14 +487,13 @@
   <span class="na">required</span>
   <span class="na">aria-invalid=</span><span class="s">"false"</span>
 <span class="nt">/&gt;</span>
-
 </code></pre></div></div>
 
 <p>The disadvantage of using <code class="language-plaintext highlighter-rouge">required</code> is, that it triggers the <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation">client-side form validation</a> of the browser.</p>
 
-<p>This validation is, at the moment of writing, do not meet WCAG accessibility guidelines. The text of the error messages are not specific enough, they disappear after a few seconds, and they have poor screen reader support at the moment.</p>
+<p>At the time of writing, this validation does not meet WCAG accessibility guidelines. The error messages are not specific enough, they disappear after a few seconds, and they currently lack sufficient screen reader support.</p>
 
-<p>If you decide to use required, also use <code class="language-plaintext highlighter-rouge">novalidate</code> on the form element, to prevent the form validation of the browser kicking in and enables you to handle the validation server side.</p>
+<p>If you decide to use <code class="language-plaintext highlighter-rouge">required</code>, also use <code class="language-plaintext highlighter-rouge">novalidate</code> on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"some-url"</span> <span class="na">novalidate</span><span class="nt">&gt;</span>
 </code></pre></div></div>
@@ -504,7 +502,7 @@
 
 <h2 id="wcag-success-criteria">WCAG Success Criteria</h2>
 
-<p>By indication required fields, you meet WCAG success criterion <a href="https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions">3.3.2 Labels or Instructions (Level A)</a>.</p>
+<p>By indicating required fields, you meet WCAG success criterion <a href="https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions">3.3.2 Labels or Instructions (Level A)</a>.</p>
 
 <h2 id="resources">Resources</h2>
 <ul>
@@ -513,7 +511,6 @@
   <li>W3C <a href="https://www.w3.org/WAI/tutorials/forms/validation/">Validating Input</a>.</li>
   <li>NL Design System <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
 </ul>
-
 
 
           
