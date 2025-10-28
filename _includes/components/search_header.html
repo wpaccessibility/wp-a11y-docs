@@ -1,5 +1,5 @@
 <div class="search">
-  <form class="search-input-wrap" role="search" action="/search/" method="get">
+  <form class="search-input-wrap" role="search" action="{{ site.baseurl }}/search/" method="get">
     <label for="search-input" class="search-label">
       <span class="screen-reader-text">Search {{ site.title }}</span>
       <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
@@ -13,7 +13,6 @@
       name="q" 
       class="search-input" 
       placeholder="Search {{ site.title }}" 
-      aria-label="Search {{ site.title }}" 
       autocomplete="off"
     >
 
