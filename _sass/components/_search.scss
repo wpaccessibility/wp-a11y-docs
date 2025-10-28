@@ -110,6 +110,7 @@
   width: 100%;
   max-height: calc(100% - #{$sp-10});
   overflow-y: auto;
+  padding: $sp-1 $sp-2;
   background-color: $search-background-color;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
@@ -118,6 +119,7 @@
     top: 100%;
     width: $search-results-width;
     max-height: calc(100vh - 200%) !important;
+    padding: 0 0 0 2rem;
   }
 }
 
@@ -279,7 +281,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
   }
 
   .search-input-wrap {
