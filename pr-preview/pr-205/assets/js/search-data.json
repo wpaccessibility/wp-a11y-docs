@@ -2071,7 +2071,7 @@
   },"345": {
     "doc": "Search Results",
     "title": "Search Results",
-    "content": "Loading search results... ",
+    "content": "Awaiting search results... ",
     "url": "/pr-preview/pr-205/search/",
     "relUrl": "/search/"
   },"346": {
