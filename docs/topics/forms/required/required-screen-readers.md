@@ -15,15 +15,12 @@ Screen reader users will have the field announced as required by the HTML attrib
 
 ```html
 
-<label for="new-password">New password (required)</label>
-<p>
-    Choose a password of at least 8 characters long.
-</p>
+<label for="name">Your name (required)</label>
 <input
-  id="new-password"
-  type="password"
-  name="new-password"
-  autocomplete="new-password"
+  id="name"
+  type="text"
+  name="name"
+  autocomplete="name"
   aria-required="true"
   aria-invalid="false"
 />
@@ -32,17 +29,14 @@ Screen reader users will have the field announced as required by the HTML attrib
 ### Using required
 
 ```html
-<label for="new-password">New password (required)</label>
-<p>
-    Choose a password of at least 8 characters long.
-</p>
+<label for="name">Your name (required)</label>
 <input
-  id="new-password"
-  type="password"
-  name="new-password"
-  autocomplete="new-password"
-  required
-  aria-invalid="false"
+        id="name"
+        type="text"
+        name="name"
+        autocomplete="name"
+        required
+        aria-invalid="false"
 />
 ```
 
