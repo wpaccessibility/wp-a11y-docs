@@ -613,8 +613,8 @@ jtd.onReady(function(){
     // Display results
     if (results.length > 0) {
       resultsContainer.innerHTML = `
-        <p>${results.length} results found for "<strong>${query}</strong>"</p>
-        <ul>
+        <h2>${results.length} results found for "<strong>${query}</strong>"</h2>
+        <ol>
           ${results.map(r => {
             const doc = docs[r.ref];
             let docSection = doc.doc;
@@ -630,7 +630,7 @@ jtd.onReady(function(){
                 <small>${doc.relUrl}</small>
               </li>`;
           }).join("")}
-        </ul>
+        </ol>
       `;
     } else {
       resultsContainer.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
