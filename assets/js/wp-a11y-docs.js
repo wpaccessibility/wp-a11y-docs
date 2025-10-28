@@ -88,6 +88,9 @@ function initSearch() {
       });
 
       searchLoaded(index, docs);
+      window.jtdSearchIndex = index;
+      window.jtdSearchDocs = docs;
+
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);
     }
@@ -350,12 +353,6 @@ function searchLoaded(index, docs) {
           }
         }
       }
-
-      var resultRelUrl = document.createElement('span');
-      resultRelUrl.classList.add('search-result-rel-url');
-      resultRelUrl.innerText = doc.relUrl;
-      resultTitle.appendChild(resultRelUrl);
-
     }
 
     function addHighlightedText(parent, text, start, end, positions) {
@@ -429,11 +426,12 @@ function searchLoaded(index, docs) {
         var active = document.querySelector('.search-result.active');
         if (active) {
           active.click();
-        } else {
-          var first = document.querySelector('.search-result');
-          if (first) {
-            first.click();
-          }
+        } 
+        else {
+            var inputValue = searchInput.value.trim();
+            if (inputValue.length > 0) {
+              window.location.href = '/search/?q=' + encodeURIComponent(inputValue);
+            }
         }
         return;
     }
@@ -560,3 +558,91 @@ jtd.onReady(function(){
 });
 
 })(window.jtd = window.jtd || {});
+
+// ---------------------------
+// Full Search Results Page
+// ---------------------------
+jtd.onReady(function(){
+
+  function processFullPageSearch() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get("q") ? urlParams.get("q").trim() : null;
+    const resultsContainer = document.getElementById("search-results-page");
+    const searchInput = document.getElementById("search-input"); 
+    const input = query;
+
+    if (!query || !resultsContainer) {
+      return;
+    }
+
+    if (searchInput) {
+      searchInput.value = query; 
+    }
+
+    if (!window.jtdSearchIndex || !window.jtdSearchDocs) {
+      resultsContainer.innerHTML = '<p>Error: The search index is not yet available. Please try again later.</p>';
+      return;
+    }
+
+    const index = window.jtdSearchIndex;
+    const docs = window.jtdSearchDocs;
+
+    var results = index.query(function (query) {
+      var tokens = lunr.tokenizer(input)
+      query.term(tokens, {
+        boost: 10
+      });
+      query.term(tokens, {
+        wildcard: lunr.Query.wildcard.TRAILING
+      });
+    });
+
+    if ((results.length === 0) && (input.length > 2)) {
+      var tokens = lunr.tokenizer(input).filter(function(token, i) {
+        return token.str.length < 20;
+      })
+      if (tokens.length > 0) {
+        results = index.query(function (query) {
+          query.term(tokens, {
+            editDistance: Math.round(Math.sqrt(input.length / 2 - 1))
+          });
+        });
+      }
+    }
+  
+    // Display results
+    if (results.length > 0) {
+      resultsContainer.innerHTML = `
+        <h2>${results.length} results found for "<strong>${query}</strong>"</h2>
+        <ol>
+          ${results.map(r => {
+            const doc = docs[r.ref];
+            let docSection = doc.title;
+            if ( docSection !== doc.doc ) {
+              docSection = `<strong>Section:</strong> <span class="search-doc-section">${doc.title}</span><br>`;
+            } else {
+              docSection = '';
+            }
+            return `
+              <li>
+                <a href="${doc.url}">${doc.doc}</a><br>
+                ${docSection}
+                <small>${doc.relUrl}</small>
+              </li>`;
+          }).join("")}
+        </ol>
+      `;
+    } else {
+      resultsContainer.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+    }
+  }
+
+  // Poll until the asynchronous initSearch() function has loaded the index data.
+  const checkInterval = setInterval(function() {
+      if (window.jtdSearchIndex && window.jtdSearchDocs) {
+          clearInterval(checkInterval); 
+          processFullPageSearch();      
+      }
+  }, 100); 
+
+});
