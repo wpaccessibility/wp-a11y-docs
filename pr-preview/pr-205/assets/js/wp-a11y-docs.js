@@ -613,15 +613,15 @@ jtd.onReady(function(){
         <ol>
           ${results.map(r => {
             const doc = docs[r.ref];
-            let docSection = doc.doc;
-            if ( docSection !== doc.title ) {
-              docSection = `<strong>Section:</strong> <span class="search-doc-section">${doc.doc}</span><br>`;
+            let docSection = doc.title;
+            if ( docSection !== doc.doc ) {
+              docSection = `<strong>Section:</strong> <span class="search-doc-section">${doc.title}</span><br>`;
             } else {
               docSection = '';
             }
             return `
               <li>
-                <a href="${doc.url}">${doc.title}</a><br>
+                <a href="${doc.url}">${doc.doc}</a><br>
                 ${docSection}
                 <small>${doc.relUrl}</small>
               </li>`;
