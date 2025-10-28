@@ -17,12 +17,12 @@ Screen reader users will have the field announced as required by the HTML attrib
 
 <label for="name">Your name (required)</label>
 <input
-  id="name"
-  type="text"
-  name="name"
-  autocomplete="name"
-  aria-required="true"
-  aria-invalid="false"
+    id="name"
+    type="text"
+    name="name"
+    autocomplete="name"
+    aria-required="true"
+    aria-invalid="false"
 />
 ```
 
@@ -31,12 +31,12 @@ Screen reader users will have the field announced as required by the HTML attrib
 ```html
 <label for="name">Your name (required)</label>
 <input
-        id="name"
-        type="text"
-        name="name"
-        autocomplete="name"
-        required
-        aria-invalid="false"
+    id="name"
+    type="text"
+    name="name"
+    autocomplete="name"
+    required
+    aria-invalid="false"
 />
 ```
 
