@@ -183,7 +183,11 @@ function searchLoaded(index, docs) {
       var resultsList = document.createElement('ul');
       resultsList.classList.add('search-results-list');
       searchResults.appendChild(resultsList);
-      screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
+      if ( results.length === 1 ) {
+        screenReaderFeedback.innerText = results.length + ' result found, tab to read it';
+      } else {
+        screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
+      }
       addResults(resultsList, results, 0, 10, 100, currentSearchIndex);
     }
 
@@ -608,8 +612,9 @@ jtd.onReady(function(){
   
     // Display results
     if (results.length > 0) {
+      let term = ( results.length === 1 ) ? 'result' : 'results';
       resultsContainer.innerHTML = `
-        <h2>${results.length} results found for "<strong>${query}</strong>"</h2>
+        <h2>${results.length} ${term} found for "<strong>${query}</strong>"</h2>
         <ol>
           ${results.map(r => {
             const doc = docs[r.ref];
