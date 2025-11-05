@@ -192,6 +192,9 @@ function searchLoaded(index, docs) {
       } else {
         screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
       }
+      jtd.addEvent(resultsList, 'keydown', function(e){
+        handleSearchKeyEvents( searchInput, e );
+      });
       addResults(resultsList, results, 0, 10, 100, currentSearchIndex);
     }
 
@@ -400,6 +403,16 @@ function searchLoaded(index, docs) {
     handleSearchKeyEvents( searchInput, e );
   });
 
+  jtd.addEvent(document, 'keyup', function (e) {
+    if ( e.keyCode === 9 ) { // tab
+      var focus = document.activeElement;
+      var results = document.querySelector( '.search' );
+      if ( ! results.contains( focus ) ) {
+        hideSearch();
+      }
+    }
+  });
+
   jtd.addEvent(document, 'click', function(e){
     if (e.target !== searchInput) {
       hideSearch();
@@ -417,6 +430,7 @@ function handleSearchKeyEvents( searchInput, e ) {
         if (active.parentElement.previousSibling) {
           var previous = active.parentElement.previousSibling.querySelector('.search-result');
           previous.classList.add('active');
+          previous.focus();
         }
       }
       return;
@@ -428,11 +442,13 @@ function handleSearchKeyEvents( searchInput, e ) {
           var next = active.parentElement.nextSibling.querySelector('.search-result');
           active.classList.remove('active');
           next.classList.add('active');
+          next.focus();
         }
       } else {
         var next = document.querySelector('.search-result');
         if (next) {
           next.classList.add('active');
+          next.focus();
         }
       }
       return;
