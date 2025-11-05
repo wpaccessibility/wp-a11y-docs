@@ -188,6 +188,9 @@ function searchLoaded(index, docs) {
       } else {
         screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
       }
+      jtd.addEvent(resultsList, 'keydown', function(e){
+        handleSearchKeyEvents( searchInput, e );
+      });
       addResults(resultsList, results, 0, 10, 100, currentSearchIndex);
     }
 
@@ -393,47 +396,16 @@ function searchLoaded(index, docs) {
   });
 
   jtd.addEvent(searchInput, 'keydown', function(e){
-    switch (e.keyCode) {
-      case 38: // arrow up
-        e.preventDefault();
-        var active = document.querySelector('.search-result.active');
-        if (active) {
-          active.classList.remove('active');
-          if (active.parentElement.previousSibling) {
-            var previous = active.parentElement.previousSibling.querySelector('.search-result');
-            previous.classList.add('active');
-          }
-        }
-        return;
-      case 40: // arrow down
-        e.preventDefault();
-        var active = document.querySelector('.search-result.active');
-        if (active) {
-          if (active.parentElement.nextSibling) {
-            var next = active.parentElement.nextSibling.querySelector('.search-result');
-            active.classList.remove('active');
-            next.classList.add('active');
-          }
-        } else {
-          var next = document.querySelector('.search-result');
-          if (next) {
-            next.classList.add('active');
-          }
-        }
-        return;
-      case 13: // enter
-        e.preventDefault();
-        var active = document.querySelector('.search-result.active');
-        if (active) {
-          active.click();
-        } 
-        else {
-            var inputValue = searchInput.value.trim();
-            if (inputValue.length > 0) {
-              window.location.href = '/search/?q=' + encodeURIComponent(inputValue);
-            }
-        }
-        return;
+    handleSearchKeyEvents( searchInput, e );
+  });
+
+  jtd.addEvent(document, 'keyup', function (e) {
+    if ( e.keyCode === 9 ) { // tab
+      var focus = document.activeElement;
+      var results = document.querySelector( '.search' );
+      if ( ! results.contains( focus ) ) {
+        hideSearch();
+      }
     }
   });
 
@@ -444,6 +416,53 @@ function searchLoaded(index, docs) {
   });
 }
 
+function handleSearchKeyEvents( searchInput, e ) {
+  switch (e.keyCode) {
+    case 38: // arrow up
+      e.preventDefault();
+      var active = document.querySelector('.search-result.active');
+      if (active) {
+        active.classList.remove('active');
+        if (active.parentElement.previousSibling) {
+          var previous = active.parentElement.previousSibling.querySelector('.search-result');
+          previous.classList.add('active');
+          previous.focus();
+        }
+      }
+      return;
+    case 40: // arrow down
+      e.preventDefault();
+      var active = document.querySelector('.search-result.active');
+      if (active) {
+        if (active.parentElement.nextSibling) {
+          var next = active.parentElement.nextSibling.querySelector('.search-result');
+          active.classList.remove('active');
+          next.classList.add('active');
+          next.focus();
+        }
+      } else {
+        var next = document.querySelector('.search-result');
+        if (next) {
+          next.classList.add('active');
+          next.focus();
+        }
+      }
+      return;
+    case 13: // enter
+      e.preventDefault();
+      var active = document.querySelector('.search-result.active');
+      if (active) {
+        active.click();
+      } 
+      else {
+          var inputValue = searchInput.value.trim();
+          if (inputValue.length > 0) {
+            window.location.href = '/search/?q=' + encodeURIComponent(inputValue);
+          }
+      }
+      return;
+  }
+}
 
 // Note: pathname can have a trailing slash on a local jekyll server
 // and not have the slash on GitHub Pages
