@@ -624,14 +624,14 @@ jtd.onReady(function(){
             const doc = docs[r.ref];
             let docSection = doc.title;
             if ( docSection !== doc.doc ) {
-              docSection = `<strong>Section:</strong> <span class="search-doc-section">${doc.title}</span><br>`;
+              docSection = `<span class="search-doc-section"><strong>Section:</strong> ${doc.title}</span><br>`;
             } else {
               docSection = '';
             }
             return `
               <li>
-                <a href="${doc.url}">${doc.doc}</a><br>
-                ${docSection}
+                <a href="${doc.url}">Page: ${doc.doc} <br>
+                ${docSection}</a>
                 <small>${doc.relUrl}</small>
               </li>`;
           }).join("")}
