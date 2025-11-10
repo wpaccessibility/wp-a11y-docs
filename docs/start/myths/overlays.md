@@ -9,7 +9,7 @@ nav_order: 3
 
 An accessibility overlay is scripted code that is placed on a web page that automatically makes changes to the page with the intent of fixing accessibility issues on that page.
 
-This purely technical definition of an overlay doesn't impose any judgement on the effectiveness of the concept: an overlay can legitimately fix accessibility problems.
+That's a technical definition of an overlay, which doesn't address the effectiveness of the overlay as a concept. An overlay can fix accessibility problems.
 
 However, an overlay can also create new problems. 
 
