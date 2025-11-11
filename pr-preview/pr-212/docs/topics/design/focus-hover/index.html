@@ -10,7 +10,7 @@
 
 
 
-<title>Pull requests, WP Accessibility Knowledge Base</title>
+<title>Styling hover and focus, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-212/assets/css/styles.css">
@@ -408,8 +408,8 @@
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-212/docs/contribute/'>How to contribute</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-212/docs/contribute/github/'>How to help on GitHub</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Pull requests</li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-212/docs/topics/'>Standards and best practice</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-212/docs/topics/design/'>Design & user experience</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Styling hover and focus</li>
     </ol>
 </nav>
 
@@ -418,30 +418,17 @@
 
         <main>
 
-          <h1 id="github-pull-requests-for-the-documentation">GitHub pull requests for the documentation</h1>
+          <h1 id="styling-hover-and-focus">Styling hover and focus</h1>
 
-<p>First, find the issue you want to help with on our <a href="https://github.com/orgs/wpaccessibility/projects/3">project board WP A11y Docs</a> in the <strong>Todo column</strong>, that is not assigned to someone else. Comment with the issues that you want to work on this, and you will be assigned to the issue. This prevents double work.</p>
+<p class="alert">This content needs to be reviewed and rewritten for designers.
+Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/214">GitHub #214 Topic Styling focus and hover</a>.<br />
+If you want to work on this, please let us know <strong>before you start</strong>.</p>
 
-<h2 id="how-to-make-a-good-pull-request">How to make a good pull request</h2>
+<h2 id="dont-remove-native-focus-styling">Don’t remove native :focus styling</h2>
 
-<p>Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to.</p>
+<p>Most modern browsers have strong default <code class="language-plaintext highlighter-rouge">:focus</code> styling, making it easy for a user to tab from control to control and see clearly where they are on the page.</p>
 
-<p>All documentation files live in the <code class="language-plaintext highlighter-rouge">/docs/</code> directory. For Markdown, we use the <a href="https://developer.wordpress.org/coding-standards/styleguide/">Markdown Style Guide</a>.</p>
-
-<p>Please check for grammar and spelling errors before submitting the PR.</p>
-
-<h2 id="create-a-pull-request-from-a-fork-on-github-with-your-text">Create a pull request from a fork on GitHub with your text.</h2>
-
-<p>GitHub offers good documentation on how to create a pull request using a fork on: <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork">Creating a pull request from a fork</a>.</p>
-
-<h2 id="create-a-pull-request-from-a-fork-using-a-local-install">Create a pull request from a fork using a local install</h2>
-
-<p>WPaccessibility.org is written in <a href="https://jekyllrb.com">Jekyll</a>, a static site generator in Ruby using <a href="https://www.markdownguide.org/">markdown</a> for content. Please read <a href="https://github.com/wpaccessibility/wp-a11y-docs?tab=readme-ov-file#local-install-of-the-website">Local install of wpaccessibility.org</a> in wp-a11y-docs/README.md.</p>
-
-<h2 id="pull-request-previews">Pull Request Previews</h2>
-<p>When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging.</p>
-
-<p>Preview URLs follow the format: <code class="language-plaintext highlighter-rouge">https://wpaccessibility.org/pr-preview/pr-{number}/</code>.</p>
+<p>If you remove this, it is very easy for a sighted user to get lost and abandon the page. Custom <code class="language-plaintext highlighter-rouge">:focus</code> states are just fine; but avoid subtlety. Focus is an undirected action – meaning that the user does not know in advance where they are going, and will need to locate focus after it moves. Strong states make this easier.</p>
 
 
           
@@ -455,7 +442,7 @@
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contribute/github/pull-requests.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/focus-hover/index.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
