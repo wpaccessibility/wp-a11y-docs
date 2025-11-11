@@ -80,21 +80,6 @@ figure.highlight {
   -webkit-overflow-scrolling: touch;
   position: relative;
   padding: 0;
-
-  // copy button (or other button)
-  > button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: $sp-6;
-    background-color: $code-background-color;
-    color: $body-text-color;
-    box-sizing: content-box;
-
-    svg {
-      fill: $body-text-color;
-    }
-  }
 }
 
 // setting the spacing and scrollbar on the second level for the first case
