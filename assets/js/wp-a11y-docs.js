@@ -516,5 +516,18 @@ jtd.onReady(function(){
 
   initSearch();
 });
+	
+/**
+ * Initializes tabIndex on code blocks to make them focusable.
+ * @function
+ */
+jtd.onReady(function() {
+  var codeBlocks = document.querySelectorAll('div.highlighter-rouge, div.listingblock > div.content, figure.highlight');
+
+  // Loop through each code block and make it focusable.
+  codeBlocks.forEach(codeBlock => {
+    codeBlock.tabIndex = 0;
+  });
+});
 
 })(window.jtd = window.jtd || {});
