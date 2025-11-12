@@ -451,12 +451,6 @@ function handleSearchKeyEvents( searchInput, e ) {
       var active = document.querySelector('.search-result.active');
       if (active) {
         active.click();
-      } 
-      else {
-          var inputValue = searchInput.value.trim();
-          if (inputValue.length > 0) {
-            window.location.href = '/search/?q=' + encodeURIComponent(inputValue);
-          }
       }
       return;
   }
