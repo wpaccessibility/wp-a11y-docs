@@ -667,7 +667,7 @@
   },"111": {
     "doc": "Required fields",
     "title": "Indicate required fields in forms",
-    "content": "Clearly indicate to the user whether a form field is required to fill out or not. Then the user knows which information they must provide to submit a form. You have two options: . | By visually marking required fields. | By visually marking non-required fields. | . Both are fine, as long as you are consistent within the form and, if possible, also within all forms on your website. Always place the explanation of how you indicate this above the form, so the user knows beforehand what to expect when completing it. ",
+    "content": "Clearly indicate to the user whether a form field is required. Then the user can tell what information they must provide to submit a form. You have two options:ç√c . | By visually marking required fields. | By visually marking optional fields. | . Both are fine, as long as you are consistent within the form and, if possible, also within all forms on your website. Always explain how you are indicating required fields above the form, so the user knows beforehand what to expect when completing it. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/#indicate-required-fields-in-forms",
     "relUrl": "/docs/topics/forms/required/#indicate-required-fields-in-forms"
   },"112": {
@@ -1865,86 +1865,86 @@
     "url": "/pr-preview/pr-210/docs/topics/forms/descriptions/location-description/",
     "relUrl": "/docs/topics/forms/descriptions/location-description/"
   },"311": {
-    "doc": "Mark non-required fields",
-    "title": "Option 2: Marking only the non-required form fields",
-    "content": "Clearly indicate to the user if a form field is optional. Assuming that you only request essential information in forms, most fields will be required. Then, non-required fields are the exception. You can choose to mark only the optional fields visually. Do this by informing the user above the field and by including the text ‘(optional)’ in the label for non-required fields. ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#option-2-marking-only-the-non-required-form-fields",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#option-2-marking-only-the-non-required-form-fields"
+    "doc": "Mark optional form fields",
+    "title": "Option 2: Marking only the optional form fields",
+    "content": "Clearly indicate to the user if a form field is optional. Assuming that you only request essential information in forms, most fields will be required. Then, optional fields are the exception. You can choose to mark only the optional fields visually. Do this by informing the user above the field and by including the text ‘(optional)’ in the label for optional fields. ",
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-optional-fields/#option-2-marking-only-the-optional-form-fields",
+    "relUrl": "/docs/topics/forms/required/mark-optional-fields/#option-2-marking-only-the-optional-form-fields"
   },"312": {
-    "doc": "Mark non-required fields",
+    "doc": "Mark optional form fields",
     "title": "Example",
-    "content": "In this screenshot: Above the form the text: \"All questions are required except the questions marked as (optional)\". This information is also in the label text: Your Pronouns (optional). Note for developers: for screen reader users the indication if a field is required must be added in the code with a form field. Read Mark if a form field is required for screen readers about how to do this. ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#example",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#example"
+    "content": "In this screenshot: Above the form the text: \"All questions are required except the questions marked as (optional)\". This information is also in the label text: Your Pronouns (optional). Note for developers: for screen reader users the indication if a field is required must be added in the code with a form field. Learn how to Indicate required fields for screen readers. ",
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-optional-fields/#example",
+    "relUrl": "/docs/topics/forms/required/mark-optional-fields/#example"
   },"313": {
-    "doc": "Mark non-required fields",
-    "title": "Indication non-required fields in WordPress form plugins",
+    "doc": "Mark optional form fields",
+    "title": "Indication optional fields in WordPress form plugins",
     "content": "We’d like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots. Please contact us if you want to help us with this additional content. ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#indication-non-required-fields-in-wordpress-form-plugins",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#indication-non-required-fields-in-wordpress-form-plugins"
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-optional-fields/#indication-optional-fields-in-wordpress-form-plugins",
+    "relUrl": "/docs/topics/forms/required/mark-optional-fields/#indication-optional-fields-in-wordpress-form-plugins"
   },"314": {
-    "doc": "Mark non-required fields",
+    "doc": "Mark optional form fields",
     "title": "Related WCAG Success Criteria",
     "content": "By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#related-wcag-success-criteria",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#related-wcag-success-criteria"
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-optional-fields/#related-wcag-success-criteria",
+    "relUrl": "/docs/topics/forms/required/mark-optional-fields/#related-wcag-success-criteria"
   },"315": {
-    "doc": "Mark non-required fields",
+    "doc": "Mark optional form fields",
     "title": "Related pages in this documentation",
-    "content": ". | Option 1: Marking only the required form fields. | . ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#related-pages-in-this-documentation",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#related-pages-in-this-documentation"
+    "content": ". | Option 1: Marking only the required form fields. | Indicate required fields for screen readers. | . ",
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-optional-fields/#related-pages-in-this-documentation",
+    "relUrl": "/docs/topics/forms/required/mark-optional-fields/#related-pages-in-this-documentation"
   },"316": {
-    "doc": "Mark non-required fields",
+    "doc": "Mark optional form fields",
     "title": "Resources",
     "content": ". | NL Design System Guidelines for web forms (Dutch content). | Faizan Ahmed on UX Design World Optimizing Form Design: Marking Required and Optional Fields in a Better Way | . ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/#resources",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/#resources"
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-optional-fields/#resources",
+    "relUrl": "/docs/topics/forms/required/mark-optional-fields/#resources"
   },"317": {
-    "doc": "Mark non-required fields",
-    "title": "Mark non-required fields",
+    "doc": "Mark optional form fields",
+    "title": "Mark optional form fields",
     "content": " ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-non-required-fields/",
-    "relUrl": "/docs/topics/forms/required/mark-non-required-fields/"
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-optional-fields/",
+    "relUrl": "/docs/topics/forms/required/mark-optional-fields/"
   },"318": {
-    "doc": "Mark required fields",
+    "doc": "Mark required form fields",
     "title": "Option 1: Marking only the required form fields",
-    "content": "Clearly indicate to the user if a form field is required to fill out or not. Inform the user above the field how the fields are marked. If you choose to mark the required field, include the text ‘(required)’, or an equivalent, in the label for required fields. A required field indicator can be: . | The text (required). | An asterisk (*). If you use an asterisk, explain this above the form. An asterisk on the form field alone is not sufficient; not everyone has this prior knowledge. | . ",
+    "content": "Clearly indicate to the user if a form field is required. Inform the user above the field how the fields are marked. If you choose to mark the required field, include the text ‘(required)’, or an equivalent, in the label for required fields. A required field indicator can be: . | The text (required). | An asterisk (*). If you use an asterisk, explain this above the form. An asterisk on the form field alone is not sufficient; not everyone has this prior knowledge. | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#option-1-marking-only-the-required-form-fields",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#option-1-marking-only-the-required-form-fields"
   },"319": {
-    "doc": "Mark required fields",
+    "doc": "Mark required form fields",
     "title": "Example",
-    "content": "In this screenshot: Above the form the text: \"*\" indicates required fields. This information is also in the label text: Your name *. Note for developers: for screen reader users the indication if a field is required must be added in the code with a form field. Read Mark if a form field is required for screen readers about how to do this. ",
+    "content": "In this screenshot: Above the form the text: \"*\" indicates required fields. This information is also in the label text: Your name *. Note for developers: screen readers have specific needs for discovering required fields. Read Mark if a form field is required for screen readers about how to do this. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#example",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#example"
   },"320": {
-    "doc": "Mark required fields",
+    "doc": "Mark required form fields",
     "title": "Indication required fields in WordPress form plugins",
     "content": "Gravity Forms . Gravity Forms adds the possibility to select “Required” with each form field. In the form settings you can choose the type of Required Field Indicator. The explanation of this indicator is added automatically above the form. Other WordPress form plugins . We’d like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots. Please contact us if you want to help us with this additional content. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#indication-required-fields-in-wordpress-form-plugins",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#indication-required-fields-in-wordpress-form-plugins"
   },"321": {
-    "doc": "Mark required fields",
+    "doc": "Mark required form fields",
     "title": "Related WCAG Success Criteria",
     "content": "By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#related-wcag-success-criteria",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#related-wcag-success-criteria"
   },"322": {
-    "doc": "Mark required fields",
+    "doc": "Mark required form fields",
     "title": "Related pages in this documentation",
-    "content": ". | Option 2: Marking only the non-required form fields. | . ",
+    "content": ". | Option 2: Marking only the optional form fields. | Indicate required fields for screen readers. | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#related-pages-in-this-documentation",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#related-pages-in-this-documentation"
   },"323": {
-    "doc": "Mark required fields",
+    "doc": "Mark required form fields",
     "title": "Resources",
     "content": ". | NL Design System Guidelines for web forms (Dutch content). | Faizan Ahmed on UX Design World Optimizing Form Design: Marking Required and Optional Fields in a Better Way | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/#resources",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#resources"
   },"324": {
-    "doc": "Mark required fields",
-    "title": "Mark required fields",
+    "doc": "Mark required form fields",
+    "title": "Mark required form fields",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/mark-required-fields/",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/"
@@ -2117,240 +2117,246 @@
     "url": "/pr-preview/pr-210/docs/contribute/report-error/",
     "relUrl": "/docs/contribute/report-error/"
   },"353": {
-    "doc": "Mark required for screen readers",
-    "title": "Mark a required form field for screen readers",
-    "content": "Screen reader users will have the field announced as required by the HTML attributes aria-required or required on the form field. ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#mark-a-required-form-field-for-screen-readers",
-    "relUrl": "/docs/topics/forms/required/required-screen-readers/#mark-a-required-form-field-for-screen-readers"
+    "doc": "Indicate required fields for screen readers",
+    "title": "Indicate required fields for screen readers",
+    "content": "Screen readers announce form fields as required if they have the HTML attributes aria-required=\"true\" or required on the form field. ",
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/",
+    "relUrl": "/docs/topics/forms/required/required-screen-readers/"
   },"354": {
-    "doc": "Mark required for screen readers",
+    "doc": "Indicate required fields for screen readers",
     "title": "Basic HTML examples",
-    "content": "Using aria-required=”true” . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" aria-required=\"true\" aria-invalid=\"false\" /&gt; . Using required . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" required aria-invalid=\"false\" /&gt; . The disadvantage of using required is, that it triggers the client-side form validation of the browser. At the time of writing, this validation does not meet WCAG accessibility guidelines. The error messages are not specific enough, they disappear after a few seconds, and they currently lack sufficient screen reader support. If you decide to use required, also use novalidate on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side. &lt;form action=\"some-url\" novalidate&gt; . Note: the use of aria-invalid will be addressed later in the section Feedback on form errors. ",
+    "content": "Using aria-required=”true” . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" aria-required=\"true\" aria-invalid=\"false\" /&gt; . Using required . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" required aria-invalid=\"false\" /&gt; . The attribute required triggers the client-side form validation of the browser. Client side validation may create accessibility and usability issues. The topic about feedback on form errors will address this in more detail. If you decide to use required, also use novalidate on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side. &lt;form action=\"some-url\" novalidate&gt; . Note: the use of aria-invalid will be addressed later in the section Feedback on form errors. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#basic-html-examples",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#basic-html-examples"
   },"355": {
-    "doc": "Mark required for screen readers",
+    "doc": "Indicate required fields for screen readers",
+    "title": "Using aria-required or required in WordPress plugins",
+    "content": "Gravity Forms . Gravity Forms adds aria-required=\"true\" to required fields. Other WordPress form plugins . We’d like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots. Please contact us if you want to help us with this additional content. ",
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#using-aria-required-or-required-in-wordpress-plugins",
+    "relUrl": "/docs/topics/forms/required/required-screen-readers/#using-aria-required-or-required-in-wordpress-plugins"
+  },"356": {
+    "doc": "Indicate required fields for screen readers",
     "title": "WCAG Success Criteria",
     "content": "By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#wcag-success-criteria",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#wcag-success-criteria"
-  },"356": {
-    "doc": "Mark required for screen readers",
+  },"357": {
+    "doc": "Indicate required fields for screen readers",
+    "title": "Related pages in this documentation",
+    "content": ". | Option 1: Marking only the required form fields. | Option 2: Marking only the optional form fields. | . ",
+    "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#related-pages-in-this-documentation",
+    "relUrl": "/docs/topics/forms/required/required-screen-readers/#related-pages-in-this-documentation"
+  },"358": {
+    "doc": "Indicate required fields for screen readers",
     "title": "Resources",
     "content": ". | MDN aria-required. | MDN HTML attribute: required. | W3C Validating Input. | NL Design System Guidelines for web forms (Dutch content). | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/#resources",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#resources"
-  },"357": {
-    "doc": "Mark required for screen readers",
-    "title": "Mark required for screen readers",
-    "content": " ",
-    "url": "/pr-preview/pr-210/docs/topics/forms/required/required-screen-readers/",
-    "relUrl": "/docs/topics/forms/required/required-screen-readers/"
-  },"358": {
+  },"359": {
     "doc": "Form resources",
     "title": "Resources about form accessibility",
     "content": "For a more in depth understanding of how to create validating forms and how forms work with various assistive technology. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/resources/#resources-about-form-accessibility",
     "relUrl": "/docs/topics/forms/resources/#resources-about-form-accessibility"
-  },"359": {
+  },"360": {
     "doc": "Form resources",
     "title": "Accessible web forms",
     "content": ". | Gen Herres on Equalize Digital How Accessible are WordPress Forms by Default? | W3C Web accessibility Tutorials: Forms Concepts | WebAIM: Creating Accessible Forms | Deque: The Anatomy of Accessible Forms | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/resources/#accessible-web-forms",
     "relUrl": "/docs/topics/forms/resources/#accessible-web-forms"
-  },"360": {
+  },"361": {
     "doc": "Form resources",
     "title": "Form resources",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/topics/forms/resources/",
     "relUrl": "/docs/topics/forms/resources/"
-  },"361": {
+  },"362": {
     "doc": "Resources",
     "title": "Resources about Design and user experience",
     "content": "For a more in depth understanding of how to create an accessible design and user experience. | GOV.UK: Dos and don’ts on designing for accessibility. | Heydon Pickering: Inclusive Components: A blog trying to be a pattern library. All about designing inclusive web interfaces, piece by piece. | Heydon Pickering: Inclusive Design Patterns | Heydon Pickering: Inclusive Design Checklist, a checklist on GitHub | Steven Lambert: Designing For Accessibility And Inclusion | Andrée Lange: Five myths about accessible design | Laws of UX. | . ",
     "url": "/pr-preview/pr-210/docs/topics/design/resources/#resources-about-design-and-user-experience",
     "relUrl": "/docs/topics/design/resources/#resources-about-design-and-user-experience"
-  },"362": {
+  },"363": {
     "doc": "Resources",
     "title": "Resources",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/topics/design/resources/",
     "relUrl": "/docs/topics/design/resources/"
-  },"363": {
+  },"364": {
     "doc": "Review documentation",
     "title": "Review documentation",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/contribute/review/",
     "relUrl": "/docs/contribute/review/"
-  },"364": {
+  },"365": {
     "doc": "Review documentation",
     "title": "New documentation",
     "content": "You can find documentation to review in the project board WP A11y Docs in the column PRs to review. With each pull request (PR) you can find a link to a preview of the proposed new documentation. Review only the content that is new and related to the topic of the pull request. There are several ways you can give feedback: . | Fill out our contact form on WordPress.org, and describe the error. | Share your findings in the Make WordPress #accessibility-docs Slack channel. | Comment with the pull request you are reviewing. | . ",
     "url": "/pr-preview/pr-210/docs/contribute/review/#new-documentation",
     "relUrl": "/docs/contribute/review/#new-documentation"
-  },"365": {
+  },"366": {
     "doc": "Review documentation",
     "title": "The existing documentation",
     "content": "When you read through the existing documentation and find content you think is not right, please report this as an error. ",
     "url": "/pr-preview/pr-210/docs/contribute/review/#the-existing-documentation",
     "relUrl": "/docs/contribute/review/#the-existing-documentation"
-  },"366": {
+  },"367": {
     "doc": "Skip links",
     "title": "Skip links",
     "content": "This content needs to be reviewed and restructured. Related issue on GitHub #149 Topic Skip links. If you want to work on this, please let us know before you start. Navigation links, search forms, social media links, or other elements commonly appear on the page before the main content. When navigating using the keyboard, it can be frustrating to get to the main content of a page because of these elements if you need to tab through everything on each page. A skip link provides users (particularly keyboard users) with a means to skip all these elements and jump to the content. ",
     "url": "/pr-preview/pr-210/docs/topics/code/components/skip-links/",
     "relUrl": "/docs/topics/code/components/skip-links/"
-  },"367": {
+  },"368": {
     "doc": "Skip links",
     "title": "Best practices",
     "content": ". | The link should be the first focusable element in the page. | The link is not required to be visible all the time for all users, but making it visible will increase accessibility. | If the link is visually hidden at first, it must become visible when keyboard focus moves to the link. | When the link is clicked, it should move focus to the main content. The next tab press should continue navigation inside the main content. | . Skip to content link when focused . Even though all content should be inside a landmark region, skip links can be outside any landmarks. If a user is navigating using landmark regions, having skip links inside a landmark may be excessively verbose. Since the skip link is the first item on the page, it is always easily findable. Skip links should be the first focusable element on a page. In this example, the skip link is inside the &lt;header&gt; landmark, but this is not a requirement – and if there is content above the site header, it would be incorrect. Being the first item on the page is much more important than being inside a landmark. &lt;body&gt; &lt;header&gt; &lt;a class=\"screen-reader-text skip-link\" href=\"#content\"&gt;Skip to content&lt;/a&gt; &lt;h1&gt;Site title&lt;/h1&gt; &lt;/header&gt; &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"/\"&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/accessibility\"&gt;Accessibility&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/blog\"&gt;Blog&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;main id=\"content\"&gt; &lt;!-- Content of the page --&gt; &lt;/main&gt; &lt;/body&gt; . Read more about the .screen-reader-text class. ",
     "url": "/pr-preview/pr-210/docs/topics/code/components/skip-links/#best-practices",
     "relUrl": "/docs/topics/code/components/skip-links/#best-practices"
-  },"368": {
+  },"369": {
     "doc": "Skip links",
     "title": "Example: Skip link in wrong place",
     "content": "In this example, the skip link has been placed inside the navigation region, and moved to the top left corner using CSS. The result is that a user must travel through the navigation in order to reach the skip link. It appears visually in the correct place, but is useless to a user. &lt;html&gt; &lt;style&gt;.skiplink { position: absolute; top: 0; left: 0; }&lt;/style&gt; &lt;body&gt; &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"/\"&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/accessibility\"&gt;Accessibility&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/blog\"&gt;Blog&lt;/a&gt;&lt;/li&gt; &lt;li class=\"skiplink\"&gt;&lt;a href=\"#content\"&gt;Skip to Content&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;main id=\"content\"&gt; &lt;!-- Content of the page --&gt; &lt;/main&gt; &lt;/body&gt; . ",
     "url": "/pr-preview/pr-210/docs/topics/code/components/skip-links/#example-skip-link-in-wrong-place",
     "relUrl": "/docs/topics/code/components/skip-links/#example-skip-link-in-wrong-place"
-  },"369": {
+  },"370": {
     "doc": "Skip links",
     "title": "Additional resources for skip links",
     "content": ". | Skip navigation links in webaim. In this article there is also information about having multiple skip links and the most common wording for skip to content. | How–to: Use Skip Navigation links. | Skip links guideline for accessibility ready themes. | .screen-reader-text class article in the handbook. | . ",
     "url": "/pr-preview/pr-210/docs/topics/code/components/skip-links/#additional-resources-for-skip-links",
     "relUrl": "/docs/topics/code/components/skip-links/#additional-resources-for-skip-links"
-  },"370": {
+  },"371": {
     "doc": "Suggest documentation",
     "title": "Suggest new documentation",
     "content": "Do you have a great idea for a new topic or blog post for this documentation? Here’s how to share it. First, go through the current suggestions for new content, maybe someone else has the same idea. You can find open GitHub issues for new content for this documentation. All content issues are labelled “Documentation”, the issue title for blog posts start with [Blog post], the accessibility topics with [Topic]. You don’t need a GitHub account to read through the issues. Is your idea not listed with the issues? Please share it with us. There are several ways you can suggest new documentation: . | Fill out our contact form on WordPress.org, and describe your idea. | Share your findings in the Make WordPress #accessibility-docs Slack channel. | Open a new issue in the GitHub repository wpaccessibility/wp-a11y-docs and describe the content you want to add. | . ",
     "url": "/pr-preview/pr-210/docs/contribute/suggest/#suggest-new-documentation",
     "relUrl": "/docs/contribute/suggest/#suggest-new-documentation"
-  },"371": {
+  },"372": {
     "doc": "Suggest documentation",
     "title": "Suggest documentation",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/contribute/suggest/",
     "relUrl": "/docs/contribute/suggest/"
-  },"372": {
+  },"373": {
     "doc": "Tables",
     "title": "Tables in the content",
     "content": "This content needs to be written. Related issue on GitHub #121 Topic Tables in the content. If you want to work on this, please let us know before you start. This content will be about how to add an accessible table in WordPres Admin and gives info about plugins to use, that can create accessible tables. ",
     "url": "/pr-preview/pr-210/docs/topics/content/tables/#tables-in-the-content",
     "relUrl": "/docs/topics/content/tables/#tables-in-the-content"
-  },"373": {
+  },"374": {
     "doc": "Tables",
     "title": "Tables",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/topics/content/tables/",
     "relUrl": "/docs/topics/content/tables/"
-  },"374": {
+  },"375": {
     "doc": "Label has text only",
     "title": "Only include text in the label",
     "content": "Use only plain text in a label. Avoid including interactive elements such as links, buttons or tooltips inside the label content. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/#only-include-text-in-the-label",
     "relUrl": "/docs/topics/forms/input-label/text-only/#only-include-text-in-the-label"
-  },"375": {
+  },"376": {
     "doc": "Label has text only",
     "title": "Why keep the label text only?",
     "content": "Additional HTML elements can cause problems when screen readers announce the label or when a user tries to focus the input field by voice recognition. | The text inside the additional interactive elements will be added to the accessible name. If that text is, for example, a tooltip, the accessible name of the form input can become unreadable, incomprehensible, or just plain wrong. | If there is a clickable item inside the label, clicking it can result in also selecting the form control if it’s a checkbox. | The reading order (meaningful sequence) of the content can get illogical. | . Keep the label with a form control to the point. Include additional information above the form, either as links above the label or form field (whichever makes sense in terms of reading order) or as a description next to the field. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/#why-keep-the-label-text-only",
     "relUrl": "/docs/topics/forms/input-label/text-only/#why-keep-the-label-text-only"
-  },"376": {
+  },"377": {
     "doc": "Label has text only",
     "title": "Accessibility concerns with using an implicitly associated form field",
     "content": "There is an exception for an implicitly associated form field. This is valid HTML. But adding an input field inside a label has accessibility concerns. Example implicit form field: . &lt;!-- Do not copy, using an implicit input field has accessibility concerns --&gt; &lt;label&gt;Your favorite color &lt;input type=\"text\" name=\"color\"&gt; &lt;/label&gt; . Read MDN about label accessibility. The populair WordPress form plugin Contact Form 7 uses implicitly associated form fields as its default template to create a form. Joe Dolson created the plugin Contact Form 7: Accessible Defaults that provides an accessible template for your form. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/#accessibility-concerns-with-using-an-implicitly-associated-form-field",
     "relUrl": "/docs/topics/forms/input-label/text-only/#accessibility-concerns-with-using-an-implicitly-associated-form-field"
-  },"377": {
+  },"378": {
     "doc": "Label has text only",
     "title": "Examples",
     "content": "Place the link to the terms of delivery outside and above the label. The terms of delivery. I agree with the terms of delivery . &lt;p&gt; &lt;a href=\"#\"&gt;The terms of delivery&lt;/a&gt;. &lt;/p&gt; &lt;label for=\"alv1\"&gt;I agree with the terms of delivery&lt;/label&gt; &lt;input id=\"alv1\" type=\"checkbox\"/&gt; . Note that the reading order is also meaningful: first the link to the terms and after that the checkbox to agree with them. Place the link to the terms of delivery inside the label. I agree with the terms of delivery . &lt;!-- this is invalid code, do not use --&gt; &lt;input id=\"alv2\" type=\"checkbox\"/&gt; &lt;label for=\"alv2\"&gt;I agree with the &lt;a href=\"#\"&gt;terms of delivery&lt;/a&gt;&lt;/label&gt; . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/#examples",
     "relUrl": "/docs/topics/forms/input-label/text-only/#examples"
-  },"378": {
+  },"379": {
     "doc": "Label has text only",
     "title": "WCAG Succes Criteria",
     "content": "Giving a form control an accessible name is necessary to meet the WCAG success criteria: . | 1.3.1 Info and relationships (Level A). | 1.3.2 Meaningful sequence (Level A). | 2.5.3 Label in Name (Level A). | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/#wcag-succes-criteria",
     "relUrl": "/docs/topics/forms/input-label/text-only/#wcag-succes-criteria"
-  },"379": {
+  },"380": {
     "doc": "Label has text only",
     "title": "Related pages in this documentation",
     "content": ". | Standards and best practice - Frontend code: Accessible name. | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/#related-pages-in-this-documentation",
     "relUrl": "/docs/topics/forms/input-label/text-only/#related-pages-in-this-documentation"
-  },"380": {
+  },"381": {
     "doc": "Label has text only",
     "title": "Resources",
     "content": ". | NL Design System Guidelines for web forms (Dutch content). | MDN about label accessibility | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/#resources",
     "relUrl": "/docs/topics/forms/input-label/text-only/#resources"
-  },"381": {
+  },"382": {
     "doc": "Label has text only",
     "title": "Label has text only",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/topics/forms/input-label/text-only/",
     "relUrl": "/docs/topics/forms/input-label/text-only/"
-  },"382": {
+  },"383": {
     "doc": "Use of color",
     "title": "Using color",
     "content": "This content needs to be reviewed and restructured. Related issue on GitHub #130 Topic Color Use of color. If you want to work on this, please let us know before you start. Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example, . | error, success, or note messages | links in the content | active, hover or focus states | display information updates | . Use additional styling to indicate types of information including a change of shape or decoration. For example: . | Change symbols in addition to color | Underline links that are embedded in text | . Grouped links in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that the text is a link, underlines are not required. However, in many cases underlining can increase the usability of your website. ",
     "url": "/pr-preview/pr-210/docs/topics/design/color/use-of-color/#using-color",
     "relUrl": "/docs/topics/design/color/use-of-color/#using-color"
-  },"383": {
+  },"384": {
     "doc": "Use of color",
     "title": "Examples",
     "content": "Correct . Underline your links, which are placed between text. Underlined links are easier to see. Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white. Incorrect . Links not underlined – color blind users may have trouble distinguish links from text. Can you see the links now? . Color used as the only indicator for information or functionality . The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
     "url": "/pr-preview/pr-210/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
-  },"384": {
+  },"385": {
     "doc": "Use of color",
     "title": "Resources",
     "content": ". | Adrian Roselli: On link underlines | WebAxe: Keep the underline | . ",
     "url": "/pr-preview/pr-210/docs/topics/design/color/use-of-color/#resources",
     "relUrl": "/docs/topics/design/color/use-of-color/#resources"
-  },"385": {
+  },"386": {
     "doc": "Use of color",
     "title": "Use of color",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/topics/design/color/use-of-color/",
     "relUrl": "/docs/topics/design/color/use-of-color/"
-  },"386": {
+  },"387": {
     "doc": "WP form plugins",
     "title": "WordPress form plugins and accessibility",
     "content": "This content needs to be rewritten and expanded. Related issue on GitHub #162 Topic WordPress form plugins and accessibility. If you want to add a plugin to this page, please comment with the GitHub issue. ",
     "url": "/pr-preview/pr-210/docs/topics/forms/wp-form-plugins/#wordpress-form-plugins-and-accessibility",
     "relUrl": "/docs/topics/forms/wp-form-plugins/#wordpress-form-plugins-and-accessibility"
-  },"387": {
+  },"388": {
     "doc": "WP form plugins",
     "title": "Useful WordPress Form plugins",
     "content": ". | Contact Form 7: Accessible Defaults (Generate accessible settings for Contact Form 7 forms.) | Gravity Forms (Build accessible forms; always disable Legacy HTML) | . ",
     "url": "/pr-preview/pr-210/docs/topics/forms/wp-form-plugins/#useful-wordpress-form-plugins",
     "relUrl": "/docs/topics/forms/wp-form-plugins/#useful-wordpress-form-plugins"
-  },"388": {
+  },"389": {
     "doc": "WP form plugins",
     "title": "WP form plugins",
     "content": " ",
     "url": "/pr-preview/pr-210/docs/topics/forms/wp-form-plugins/",
     "relUrl": "/docs/topics/forms/wp-form-plugins/"
-  },"389": {
+  },"390": {
     "doc": "Write documentation",
     "title": "Write documentation",
     "content": "Before you start writing new documentation, please inform us you want to work on this, we will assign the work to you. We keep track of the work on the documentation in the project board WP A11y docs. Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. To keep all pages in the same structure, please stick to the following formats for a blogpost or an accessibility topic. ",
     "url": "/pr-preview/pr-210/docs/contribute/write/",
     "relUrl": "/docs/contribute/write/"
-  },"390": {
+  },"391": {
     "doc": "Write documentation",
     "title": "Content structure of a blogpost",
     "content": ". | Title (65 charters or less) | A short summary in one or two paragraphs | The main content of the blogpost | . ",
     "url": "/pr-preview/pr-210/docs/contribute/write/#content-structure-of-a-blogpost",
     "relUrl": "/docs/contribute/write/#content-structure-of-a-blogpost"
-  },"391": {
+  },"392": {
     "doc": "Write documentation",
     "title": "Content structure of an accessibility topic",
     "content": "One page per topic. This makes it easier to read and also to refer to in other documentation. | Title, if possible 65 characters or fewer, including spaces | A short summary in one or two paragraphs | Main content describing what, why, who benefits and how to do this in WordPress (if applicable) | Additional content, depending on the topic, like for example: . | User experience with demos | Quick wins and workarounds | Code examples | Supporting images | Video/Audio with demos | Dos/don’ts | Frequently made mistakes and how to fix them | How to test or refer to checklist | . | Resources . | Related WCAG Success Criteria | Related info in this documentation | Other relevant resources | . | . ",
     "url": "/pr-preview/pr-210/docs/contribute/write/#content-structure-of-an-accessibility-topic",
     "relUrl": "/docs/contribute/write/#content-structure-of-an-accessibility-topic"
-  },"392": {
+  },"393": {
     "doc": "Write documentation",
     "title": "Share for review",
     "content": "There are several ways you can share new documentation: . | Fill out our contact form on WordPress.org, and share a link to the new content. | Share your content in the Make WordPress #accessibility-docs Slack channel. | Add your content as a comment with the related issue in the GitHub repository wpaccessibility/wp-a11y-docs. | Write a pull request (PR) containing the new content. | . ",
