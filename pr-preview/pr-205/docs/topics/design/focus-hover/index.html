@@ -10,7 +10,7 @@
 
 
 
-<title>Required fields, WP Accessibility Knowledge Base</title>
+<title>Styling hover and focus, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-205/assets/css/styles.css">
@@ -420,7 +420,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-205/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-205/docs/topics/forms/'>Web forms</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Required fields</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-205/docs/topics/design/'>Design & user experience</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Styling hover and focus</li>
     </ol>
 </nav>
 
@@ -429,10 +429,17 @@
 
         <main>
 
-          <h1 id="indicate-required-fields-in-forms">Indicate required fields in forms</h1>
+          <h1 id="styling-hover-and-focus">Styling hover and focus</h1>
 
-<p class="alert">This content needs to be written.<br />
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/160">GitHub #160 Topic Indicate required fields in forms</a>.</p>
+<p class="alert">This content needs to be reviewed and rewritten for designers.
+Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/214">GitHub #214 Topic Styling focus and hover</a>.<br />
+If you want to work on this, please let us know <strong>before you start</strong>.</p>
+
+<h2 id="dont-remove-native-focus-styling">Don’t remove native :focus styling</h2>
+
+<p>Most modern browsers have strong default <code class="language-plaintext highlighter-rouge">:focus</code> styling, making it easy for a user to tab from control to control and see clearly where they are on the page.</p>
+
+<p>If you remove this, it is very easy for a sighted user to get lost and abandon the page. Custom <code class="language-plaintext highlighter-rouge">:focus</code> states are just fine; but avoid subtlety. Focus is an undirected action – meaning that the user does not know in advance where they are going, and will need to locate focus after it moves. Strong states make this easier.</p>
 
 
           
@@ -446,7 +453,7 @@ Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/forms/required.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/focus-hover/index.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
