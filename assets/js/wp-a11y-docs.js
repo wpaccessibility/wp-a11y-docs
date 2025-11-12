@@ -601,22 +601,28 @@ jtd.onReady(function(){
     // Display results
     if (results.length > 0) {
       let term = ( results.length === 1 ) ? 'result' : 'results';
+      let pageTitle = document.querySelector( 'title' );
+      let h1 = document.querySelector( 'h1' );
+  
+      pageTitle.innerText = `${results.length} ${term} found for "${query}"`;
+      h1.innerText = `Search Results for "${query}"`;
+
       resultsContainer.innerHTML = `
-        <h2>${results.length} ${term} found for "<strong>${query}</strong>"</h2>
+        <h2>${results.length} ${term}</h2>
         <ol>
           ${results.map(r => {
             const doc = docs[r.ref];
             let docSection = doc.title;
             if ( docSection !== doc.doc ) {
-              docSection = `<span class="search-doc-section"><strong>Section:</strong> ${doc.title}</span><br>`;
+              docSection = `<p class="search-doc-section"><strong>Section:</strong> ${doc.title}</p>`;
             } else {
               docSection = '';
             }
             return `
               <li>
-                <a href="${doc.url}">Page: ${doc.doc} <br>
-                ${docSection}</a>
-                <small>${doc.relUrl}</small>
+                <h3><a href="${doc.url}">Page: ${doc.doc}</a></h3>
+                ${docSection}
+                <p><small>${doc.relUrl}</small></p>
               </li>`;
           }).join("")}
         </ol>
