@@ -1033,22 +1033,6 @@ figure.highlight {
   position: relative;
   padding: 0;
 }
-div.highlighter-rouge > button,
-div.listingblock > div.content > button,
-figure.highlight > button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 2rem;
-  background-color: #f5f5f5;
-  color: #5c5962;
-  box-sizing: content-box;
-}
-div.highlighter-rouge > button svg,
-div.listingblock > div.content > button svg,
-figure.highlight > button svg {
-  fill: #5c5962;
-}
 
 div.highlighter-rouge div.highlight {
   overflow-x: auto;
