@@ -44,59 +44,10 @@ It's possible to add multiple descriptions to one form field. You can combine th
         autocomplete="name" />
 ```
 
-## Connect the description of a fieldset to the fieldset element
-
-Radio buttons, checkboxes, and other groups of related fields (like addresses) can be grouped in fieldsets. The question or the subject will be the `legend`. Place the description below the legend just above the first label/form field. The description is linked to the fieldset element with `aria-describedby`.
-
-## Example
-
-![Screenshot of a fieldset, with a legend and 2 radio buttons]({{site.baseurl}}/assets/images/fieldset-description.png)
-
-IN HTML, simplified
-
-```html
-<fieldset aria-describedby="description-log-in">
-  <legend>Do you want to log in?</legend>
-  <p id="description-log-in">
-      When you log in, your details are already filled in, and we can help you faster.
-  </p>
-    <input
-      id="log-in-yes"
-      type="radio"
-      name="log-in"
-      value="yes"
-    />
-    <label for="og-in-yes">Yes</label>
-
-    <input
-      id="log-in-no"
-      type="radio"
-      name="log-in"
-      value="no"
-    />
-    <label for="log-in-no">No</label>
-
-</fieldset>
-```
+{: .info }
+For the documentation about descriptions in fieldsets read [Description with a fieldset]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/).
 
 ## Examples
-
-{: .do }
-Connect a description to the form field, using aria-describedby.
-
-```html
-<label for="new-password">New password</label>
-<p id="description-new-password">
-    Choose a password of at least 8 characters long.
-</p>
-<input
-  id="new-password"
-  type="password"
-  name="new-password"
-  aria-describedby="description-new-password"
-  autocomplete="new-password"
-/>
-```
 
 {: .dont }
 No connection between a form field and its description.
@@ -112,6 +63,23 @@ No connection between a form field and its description.
   type="password"
   name="new-password"
   autocomplete="new-password"
+/>
+```
+
+{: .do }
+Connection between a form field and its description.
+
+```html
+<label for="new-password">New password</label>
+<p id="new-password-description">
+    Choose a password of at least 8 characters long.
+</p>
+<input
+  id="new-password"
+  type="password"
+  name="new-password"
+  autocomplete="new-password"
+  aria-describedby="new-password-description"
 />
 ```
 
