@@ -1589,6 +1589,11 @@ p.do-title > p:first-child {
   padding: 0.5rem;
 }
 
+#search-results-page h3,
+#search-results-page li p {
+  margin: 0;
+}
+
 #search-results-page ol li:nth-of-type(even) {
   background: rgba(0, 0, 0, 0.04);
 }

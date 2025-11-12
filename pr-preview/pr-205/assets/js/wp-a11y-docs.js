@@ -184,9 +184,9 @@ function searchLoaded(index, docs) {
       resultsList.classList.add('search-results-list');
       searchResults.appendChild(resultsList);
       if ( results.length === 1 ) {
-        screenReaderFeedback.innerText = results.length + ' result found, tab to read it';
+        screenReaderFeedback.innerText = results.length + ' result found, use arrow keys to read';
       } else {
-        screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
+        screenReaderFeedback.innerText = results.length + ' results found, use arrow keys to read';
       }
       jtd.addEvent(resultsList, 'keydown', function(e){
         handleSearchKeyEvents( searchInput, e );
@@ -362,18 +362,12 @@ function searchLoaded(index, docs) {
       var index = start;
       for (var i in positions) {
         var position = positions[i];
-        var mark = document.createElement('mark');
-        mark.innerHTML = text.substring(index, position[0]);
-        parent.appendChild(mark);
         index = position[0] + position[1];
         var highlight = document.createElement('mark');
         highlight.classList.add('search-result-highlight');
         highlight.innerHTML = text.substring(position[0], index);
         parent.appendChild(highlight);
       }
-      var span = document.createElement('span');
-      span.innerHTML = text.substring(index, end);
-      parent.appendChild(span);
     }
   }
 
@@ -453,12 +447,6 @@ function handleSearchKeyEvents( searchInput, e ) {
       var active = document.querySelector('.search-result.active');
       if (active) {
         active.click();
-      } 
-      else {
-          var inputValue = searchInput.value.trim();
-          if (inputValue.length > 0) {
-            window.location.href = '/search/?q=' + encodeURIComponent(inputValue);
-          }
       }
       return;
   }
@@ -603,22 +591,28 @@ jtd.onReady(function(){
     // Display results
     if (results.length > 0) {
       let term = ( results.length === 1 ) ? 'result' : 'results';
+      let pageTitle = document.querySelector( 'title' );
+      let h1 = document.querySelector( 'h1' );
+  
+      pageTitle.innerText = `${results.length} ${term} found for "${query}"`;
+      h1.innerText = `Search Results for "${query}"`;
+
       resultsContainer.innerHTML = `
-        <h2>${results.length} ${term} found for "<strong>${query}</strong>"</h2>
+        <h2>${results.length} ${term}</h2>
         <ol>
           ${results.map(r => {
             const doc = docs[r.ref];
             let docSection = doc.title;
             if ( docSection !== doc.doc ) {
-              docSection = `<span class="search-doc-section"><strong>Section:</strong> ${doc.title}</span><br>`;
+              docSection = `<p class="search-doc-section"><strong>Section:</strong> ${doc.title}</p>`;
             } else {
               docSection = '';
             }
             return `
               <li>
-                <a href="${doc.url}">Page: ${doc.doc} <br>
-                ${docSection}</a>
-                <small>${doc.relUrl}</small>
+                <h3><a href="${doc.url}">Page: ${doc.doc}</a></h3>
+                ${docSection}
+                <p><small>${doc.relUrl}</small></p>
               </li>`;
           }).join("")}
         </ol>
