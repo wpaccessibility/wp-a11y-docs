@@ -188,9 +188,9 @@ function searchLoaded(index, docs) {
       resultsList.classList.add('search-results-list');
       searchResults.appendChild(resultsList);
       if ( results.length === 1 ) {
-        screenReaderFeedback.innerText = results.length + ' result found, tab to read it';
+        screenReaderFeedback.innerText = results.length + ' result found, use arrow keys to read';
       } else {
-        screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
+        screenReaderFeedback.innerText = results.length + ' results found, use arrow keys to read';
       }
       jtd.addEvent(resultsList, 'keydown', function(e){
         handleSearchKeyEvents( searchInput, e );
