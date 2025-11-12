@@ -372,9 +372,6 @@ function searchLoaded(index, docs) {
         highlight.innerHTML = text.substring(position[0], index);
         parent.appendChild(highlight);
       }
-      var span = document.createElement('span');
-      span.innerHTML = text.substring(index, end);
-      parent.appendChild(span);
     }
   }
 
