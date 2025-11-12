@@ -366,9 +366,6 @@ function searchLoaded(index, docs) {
       var index = start;
       for (var i in positions) {
         var position = positions[i];
-        var mark = document.createElement('mark');
-        mark.innerHTML = text.substring(index, position[0]);
-        parent.appendChild(mark);
         index = position[0] + position[1];
         var highlight = document.createElement('mark');
         highlight.classList.add('search-result-highlight');
