@@ -1,15 +1,16 @@
 ---
-title: Mark non-required fields
+title: Mark optional form fields
 layout: default
 parent: Required fields
 nav_order: 3
+description: Clearly indicate to the user if a form field is optional.
 ---
 
-# Option 2: Marking only the non-required form fields
+# Option 2: Marking only the optional form fields
 
 Clearly indicate to the user if a form field is optional.
 
-Assuming that you only request essential information in forms, most fields will be required. Then, non-required fields are the exception. You can choose to mark only the optional fields visually. Do this by informing the user above the field and by including the text '(optional)' in the label for non-required fields.
+Assuming that you only request essential information in forms, most fields will be required. Then, optional fields are the exception. You can choose to mark only the optional fields visually. Do this by informing the user above the field and by including the text '(optional)' in the label for optional fields.
 
 ## Example
 
@@ -22,9 +23,9 @@ Assuming that you only request essential information in forms, most fields will 
 </figure>
 
 {: .alert }
-**Note for developers**: for screen reader users the indication if a field is required must be added in the code with a form field. Read [Mark if a form field is required for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) about how to do this.
+**Note for developers**: for screen reader users the indication if a field is required must be added in the code with a form field. Learn how to [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
 
-## Indication non-required fields in WordPress form plugins
+## Indication optional fields in WordPress form plugins
 
 {: .info }
 We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
@@ -37,6 +38,7 @@ By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or 
 ## Related pages in this documentation
 
 -  [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/).
+- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
 
 ## Resources
 

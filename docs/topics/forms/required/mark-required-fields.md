@@ -1,13 +1,14 @@
 ---
-title: Mark required fields
+title: Mark required form fields
 layout: default
 parent: Required fields
 nav_order: 2
+description: Clearly indicate to the user if a form field is required.
 ---
 
 # Option 1: Marking only the required form fields
 
-Clearly indicate to the user if a form field is required to fill out or not. Inform the user above the field how the fields are marked. 
+Clearly indicate to the user if a form field is required. Inform the user above the field how the fields are marked. 
 
 If you choose to mark the required field, include  the text '(required)', or an equivalent, in the label for required fields.
 
@@ -26,7 +27,7 @@ A required field indicator can be:
 </figure>
 
 {: .alert }
-**Note for developers**: for screen reader users the indication if a field is required must be added in the code with a form field. Read [Mark if a form field is required for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) about how to do this.
+**Note for developers**: screen readers have specific needs for discovering required fields. Read [Mark if a form field is required for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) about how to do this.
 
 ## Indication required fields in WordPress form plugins
 
@@ -46,7 +47,8 @@ By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or 
 
 ## Related pages in this documentation
 
--  [Option 2: Marking only the non-required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-non-required-fields/).
+-  [Option 2: Marking only the optional form fields]({{site.baseurl}}/docs/topics/forms/required/mark-optional-fields/).
+- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
 
 ## Resources
 
