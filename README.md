@@ -40,7 +40,23 @@ bundle exec jekyll serve
 Open `http://127.0.0.1:4000/` or `http://localhost:4000` in your favourite browser.
 
 Before making a commit or pull request, run the linters with: `npm run test`.
+Fix the linter issues automatically with `npm run format`.
 
 If you made changes to the `_config.yml` file, run `bundle exec jekyll serve` again to apply the changes to the site.
 
 Documentation about Jekyll itself is on [jekyllrb.com](https://jekyllrb.com/docs/). The theme is based on the Jekyll theme [Just the Docs](https://just-the-docs.com/). The changes made in Just the Docs are documented in the [Changelog for Release v0.1](/CHANGELOG/#release-v01).
+
+## Create a Pull Request
+
+Before submitting a Pull Request, please make sure:
+- [ ] You checked the related issue is not already assigned to someone else.
+- [ ] You checked the status of the related issue is "Todo" when you start.
+- [ ] You did not generate content using AI (artificial intelligence).
+
+If you submit code or documentation using a local build:
+- [ ] Your code builds clean without any errors or warnings while running `npm run test`.
+- [ ] You read the documentation in [How to help on GitHub](https://wpaccessibility.org/docs/contribute/github/).
+- [ ] You checked the modified pages with an accessibility tool like [Axe Devtools](https://www.deque.com/axe/devtools/edge-browser-extension/) or [WAVE](https://wave.webaim.org/).
+
+For more information, see the [How to contribute to this documentation](https://wpaccessibility.org/docs/contribute/) guide.
+
