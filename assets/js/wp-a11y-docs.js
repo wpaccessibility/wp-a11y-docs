@@ -88,6 +88,9 @@ function initSearch() {
       });
 
       searchLoaded(index, docs);
+      window.jtdSearchIndex = index;
+      window.jtdSearchDocs = docs;
+
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);
     }
@@ -184,7 +187,14 @@ function searchLoaded(index, docs) {
       var resultsList = document.createElement('ul');
       resultsList.classList.add('search-results-list');
       searchResults.appendChild(resultsList);
-      screenReaderFeedback.innerText = results.length + ' results found, tab to read them';
+      if ( results.length === 1 ) {
+        screenReaderFeedback.innerText = results.length + ' result found, use arrow keys to read';
+      } else {
+        screenReaderFeedback.innerText = results.length + ' results found, use arrow keys to read';
+      }
+      jtd.addEvent(resultsList, 'keydown', function(e){
+        handleSearchKeyEvents( searchInput, e );
+      });
       addResults(resultsList, results, 0, 10, 100, currentSearchIndex);
     }
 
@@ -350,30 +360,18 @@ function searchLoaded(index, docs) {
           }
         }
       }
-
-      var resultRelUrl = document.createElement('span');
-      resultRelUrl.classList.add('search-result-rel-url');
-      resultRelUrl.innerText = doc.relUrl;
-      resultTitle.appendChild(resultRelUrl);
-
     }
 
     function addHighlightedText(parent, text, start, end, positions) {
       var index = start;
       for (var i in positions) {
         var position = positions[i];
-        var mark = document.createElement('mark');
-        mark.innerHTML = text.substring(index, position[0]);
-        parent.appendChild(mark);
         index = position[0] + position[1];
         var highlight = document.createElement('mark');
         highlight.classList.add('search-result-highlight');
         highlight.innerHTML = text.substring(position[0], index);
         parent.appendChild(highlight);
       }
-      var span = document.createElement('span');
-      span.innerHTML = text.substring(index, end);
-      parent.appendChild(span);
     }
   }
 
@@ -396,46 +394,16 @@ function searchLoaded(index, docs) {
   });
 
   jtd.addEvent(searchInput, 'keydown', function(e){
-    switch (e.keyCode) {
-      case 38: // arrow up
-        e.preventDefault();
-        var active = document.querySelector('.search-result.active');
-        if (active) {
-          active.classList.remove('active');
-          if (active.parentElement.previousSibling) {
-            var previous = active.parentElement.previousSibling.querySelector('.search-result');
-            previous.classList.add('active');
-          }
-        }
-        return;
-      case 40: // arrow down
-        e.preventDefault();
-        var active = document.querySelector('.search-result.active');
-        if (active) {
-          if (active.parentElement.nextSibling) {
-            var next = active.parentElement.nextSibling.querySelector('.search-result');
-            active.classList.remove('active');
-            next.classList.add('active');
-          }
-        } else {
-          var next = document.querySelector('.search-result');
-          if (next) {
-            next.classList.add('active');
-          }
-        }
-        return;
-      case 13: // enter
-        e.preventDefault();
-        var active = document.querySelector('.search-result.active');
-        if (active) {
-          active.click();
-        } else {
-          var first = document.querySelector('.search-result');
-          if (first) {
-            first.click();
-          }
-        }
-        return;
+    handleSearchKeyEvents( searchInput, e );
+  });
+
+  jtd.addEvent(document, 'keyup', function (e) {
+    if ( e.keyCode === 9 ) { // tab
+      var focus = document.activeElement;
+      var results = document.querySelector( '.search' );
+      if ( ! results.contains( focus ) ) {
+        hideSearch();
+      }
     }
   });
 
@@ -446,6 +414,47 @@ function searchLoaded(index, docs) {
   });
 }
 
+function handleSearchKeyEvents( searchInput, e ) {
+  switch (e.keyCode) {
+    case 38: // arrow up
+      e.preventDefault();
+      var active = document.querySelector('.search-result.active');
+      if (active) {
+        active.classList.remove('active');
+        if (active.parentElement.previousSibling) {
+          var previous = active.parentElement.previousSibling.querySelector('.search-result');
+          previous.classList.add('active');
+          previous.focus();
+        }
+      }
+      return;
+    case 40: // arrow down
+      e.preventDefault();
+      var active = document.querySelector('.search-result.active');
+      if (active) {
+        if (active.parentElement.nextSibling) {
+          var next = active.parentElement.nextSibling.querySelector('.search-result');
+          active.classList.remove('active');
+          next.classList.add('active');
+          next.focus();
+        }
+      } else {
+        var next = document.querySelector('.search-result');
+        if (next) {
+          next.classList.add('active');
+          next.focus();
+        }
+      }
+      return;
+    case 13: // enter
+      e.preventDefault();
+      var active = document.querySelector('.search-result.active');
+      if (active) {
+        active.click();
+      }
+      return;
+  }
+}
 
 // Note: pathname can have a trailing slash on a local jekyll server
 // and not have the slash on GitHub Pages
@@ -531,3 +540,98 @@ jtd.onReady(function() {
 });
 
 })(window.jtd = window.jtd || {});
+
+// ---------------------------
+// Full Search Results Page
+// ---------------------------
+jtd.onReady(function(){
+
+  function processFullPageSearch() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get("q") ? urlParams.get("q").trim() : null;
+    const resultsContainer = document.getElementById("search-results-page");
+    const searchInput = document.getElementById("search-input"); 
+    const input = query;
+
+    if (!query || !resultsContainer) {
+      return;
+    }
+
+    if (searchInput) {
+      searchInput.value = query; 
+    }
+
+    if (!window.jtdSearchIndex || !window.jtdSearchDocs) {
+      resultsContainer.innerHTML = '<p>Error: The search index is not yet available. Please try again later.</p>';
+      return;
+    }
+
+    const index = window.jtdSearchIndex;
+    const docs = window.jtdSearchDocs;
+
+    var results = index.query(function (query) {
+      var tokens = lunr.tokenizer(input)
+      query.term(tokens, {
+        boost: 10
+      });
+      query.term(tokens, {
+        wildcard: lunr.Query.wildcard.TRAILING
+      });
+    });
+
+    if ((results.length === 0) && (input.length > 2)) {
+      var tokens = lunr.tokenizer(input).filter(function(token, i) {
+        return token.str.length < 20;
+      })
+      if (tokens.length > 0) {
+        results = index.query(function (query) {
+          query.term(tokens, {
+            editDistance: Math.round(Math.sqrt(input.length / 2 - 1))
+          });
+        });
+      }
+    }
+  
+    // Display results
+    if (results.length > 0) {
+      let term = ( results.length === 1 ) ? 'result' : 'results';
+      let pageTitle = document.querySelector( 'title' );
+      let h1 = document.querySelector( 'h1' );
+  
+      pageTitle.innerText = `${results.length} ${term} found for "${query}"`;
+      h1.innerText = `Search Results for "${query}"`;
+
+      resultsContainer.innerHTML = `
+        <h2>${results.length} ${term}</h2>
+        <ol>
+          ${results.map(r => {
+            const doc = docs[r.ref];
+            let docSection = doc.title;
+            if ( docSection !== doc.doc ) {
+              docSection = `<p class="search-doc-section"><strong>Section:</strong> ${doc.title}</p>`;
+            } else {
+              docSection = '';
+            }
+            return `
+              <li>
+                <h3><a href="${doc.url}">Page: ${doc.doc}</a></h3>
+                ${docSection}
+                <p><small>${doc.relUrl}</small></p>
+              </li>`;
+          }).join("")}
+        </ol>
+      `;
+    } else {
+      resultsContainer.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+    }
+  }
+
+  // Poll until the asynchronous initSearch() function has loaded the index data.
+  const checkInterval = setInterval(function() {
+      if (window.jtdSearchIndex && window.jtdSearchDocs) {
+          clearInterval(checkInterval); 
+          processFullPageSearch();      
+      }
+  }, 100); 
+
+});
