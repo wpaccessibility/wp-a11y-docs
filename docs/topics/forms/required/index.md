@@ -8,10 +8,9 @@ description: Clearly indicate to the user whether a form field is required. Then
 
 # Indicate required fields in forms
 
-Clearly indicate to the user whether a form field is required.
-Then the user can tell what information they must provide to submit a form. 
+Clearly indicate to the user whether a form field is required. Then the user can tell what information they must provide to submit a form.
 
-You have two options:ç√c
+You have two options:
 
 1. By visually marking required fields.
 2. By visually marking optional fields.
