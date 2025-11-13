@@ -8,9 +8,8 @@ nav_order: 1
 # WCAG and compliance
 
 {: .alert }
-This content needs to be reviewed and expanded.  
+This content will be reviewed and expanded.  
 Related issue on [GitHub #97 Topic WCAG and compliance](https://github.com/wpaccessibility/wp-a11y-docs/issues/97).  
-If you want to work on this, please let us know before you start.
 
 The World Wide Web Consortium (W3C) developed guidelines to safeguard the accessibility of a website: the Web Content Accessibility Guidelines: WCAG. The current recommended version is 2.2.
 

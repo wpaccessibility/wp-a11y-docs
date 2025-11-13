@@ -8,9 +8,8 @@ nav_order: 2
 # Write a meaningful link text
 
 {: .alert }
-This content needs to be reviewed, restructured and expanded.
+This content will be reviewed, restructured and expanded.
 Related issue on [GitHub #110 Topic Write a meaningful link text](https://github.com/wpaccessibility/wp-a11y-docs/issues/110).  
-If you want to work on this, please let us know before you start.
 
 {: .tip }
 **Rule of thumb**: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise.

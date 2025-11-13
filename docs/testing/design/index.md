@@ -9,9 +9,8 @@ nav_order: 4
 # Design checks for web accessibility
 
 {: .alert }
-This content needs to be reviewed and expanded.
+This content will be reviewed and expanded.
 Related issue on [GitHub #172 Topic Design checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/172).    
-If you want to work on this, please let us know before you start.
 
 The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design.
 

@@ -8,9 +8,8 @@ nav_order: 6
 # The CSS class screen-reader-text
 
 {: .alert }
-This content needs to be reviewed and restructured.  
+This content will be reviewed and restructured.  
 Related issue on [GitHub #145 Topic The CSS class screen-reader-text](https://github.com/wpaccessibility/wp-a11y-docs/issues/145).  
-If you want to work on this, please let us know before you start.
 
 # The CSS class screen-reader-text
 

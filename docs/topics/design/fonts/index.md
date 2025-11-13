@@ -8,11 +8,10 @@ nav_order: 2
 # Fonts
 
 {: .alert }
-This content needs to be reviewed and restructured and probably divided into separate topics.
+This content will be reviewed and restructured and probably divided into separate topics.
 Related issue on [GitHub #124 Topic Fonts](https://github.com/wpaccessibility/wp-a11y-docs/issues/124).  
-If you want to work on this, please let us know before you start.
 
-This content should be reviewed and restructured and divided between separate topics.
+This content will be reviewed and restructured and divided between separate topics.
 
 ## Font sizes and resize text
 
