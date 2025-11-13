@@ -23,12 +23,12 @@ Assuming that you only request essential information in forms, most fields will 
 </figure>
 
 {: .alert }
-**Note for developers**: for screen reader users the indication if a field is required must be added in the code with a form field. Learn how to [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
+**Note for developers**: for screen reader users, the indication if a field is required must be added in the code with a form field. Learn how to [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
 
-## Indication optional fields in WordPress form plugins
+## Indication of optional fields in WordPress form plugins
 
 {: .info }
-We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
+We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
 ## Related WCAG Success Criteria

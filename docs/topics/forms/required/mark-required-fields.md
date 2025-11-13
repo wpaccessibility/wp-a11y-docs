@@ -8,12 +8,12 @@ description: Clearly indicate to the user if a form field is required.
 
 # Option 1: Marking only the required form fields
 
-Clearly indicate to the user if a form field is required. Inform the user above the field how the fields are marked. 
+Clearly indicate to the user whether a form field is required. Inform the user above the form how the fields are marked.
 
 If you choose to mark the required field, include  the text '(required)', or an equivalent, in the label for required fields.
 
 A required field indicator can be:
-- The text (required).
+- The text '(required)'.
 - An asterisk (\*). If you use an asterisk, explain this above the form. An asterisk on the form field alone is not sufficient; not everyone has this prior knowledge.
 
 ## Example
@@ -29,7 +29,7 @@ A required field indicator can be:
 {: .alert }
 **Note for developers**: screen readers have specific needs for discovering required fields. Read [Mark if a form field is required for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) about how to do this.
 
-## Indication required fields in WordPress form plugins
+## Indication of required fields in WordPress form plugins
 
 ### Gravity Forms
 
@@ -38,7 +38,7 @@ Gravity Forms adds the possibility to select "Required" with each form field. In
 ### Other WordPress form plugins
 
 {: .info }
-We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
+We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
 ## Related WCAG Success Criteria
