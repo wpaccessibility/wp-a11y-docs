@@ -1,7 +1,7 @@
 ---
 title: Pull requests
 layout: default
-parent: How to help on GitHub
+parent: Technical documentation website
 nav_order: 3
 ---
 

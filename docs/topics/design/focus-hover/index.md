@@ -8,7 +8,7 @@ nav_order: 3
 # Styling hover and focus
 
 {: .alert }
-This content needs to be reviewed and rewritten for designers.
+This content will be reviewed and rewritten for designers.
 Related issue on [GitHub #214 Topic Styling focus and hover](https://github.com/wpaccessibility/wp-a11y-docs/issues/214).  
 If you want to work on this, please let us know **before you start**.
 

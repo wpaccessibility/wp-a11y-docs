@@ -8,9 +8,8 @@ nav_order: 5
 # Fieldset and legend to group form fields
 
 {: .alert }
-This content needs to be rewritten and expanded.  
+This content will be rewritten and expanded.  
 Related issue on [GitHub #157 Topic  Fieldsets to group form fields](https://github.com/wpaccessibility/wp-a11y-docs/issues/157).  
-If you want to work on this, please let us know before you start.
 
 The `fieldset` and `legend` elements are a standard way to group fields. When a screen reader enters a fieldset, the `legend` of that group will be announced. This is a helpful way of grouping related fields together, such as differentiating between an order address and a shipping address; but is critical when grouping radio buttons and checkboxes.
 

@@ -8,9 +8,8 @@ nav_order: 3
 # Setting reduced motion for animations
 
 {: .alert }
-This content needs to be reviewed and restructured.  
+This content will be reviewed and restructured.  
 Related issue on [GitHub #148 Topic Setting reduced motion for animations](https://github.com/wpaccessibility/wp-a11y-docs/issues/148).  
-If you want to work on this, please let us know before you start.
 
 Animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines and nausea. You can help users avoid these problems by making all of your animations support the `prefers-reduced-motion` flag.
 

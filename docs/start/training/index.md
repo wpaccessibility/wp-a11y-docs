@@ -8,9 +8,8 @@ nav_order: 3
 # Training, learn web accessibility
 
 {: .alert }
-This content needs to be reviewed and expanded. The links need to be checked and updated.
+This content will to be reviewed and expanded. The links need to be checked and updated.
 Related issue on [GitHub #93 Training](https://github.com/wpaccessibility/wp-a11y-docs/issues/93).  
-If you want to work on this, please let us know before you start.
 
 ## Online events
 

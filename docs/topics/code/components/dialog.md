@@ -8,9 +8,8 @@ nav_order: 5
 # The dialog modal
 
 {: .alert }
-This content should be reviewed, modernized and restructured.  
+This content will be reviewed, modernized and restructured.  
 Related issue on [GitHub #152 Topic The dialog modal](https://github.com/wpaccessibility/wp-a11y-docs/issues/152).  
-If you want to work on this, please let us know before you start.
 
 A dialog is a window that separates content from the main content of a page. It can ask questions or require user input. When the dialog is active and opened, only the content inside the dialog should be available for interaction. Visually it’s usually overlaid on top of main content.
 

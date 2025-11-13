@@ -8,9 +8,8 @@ nav_order: 2
 # Images in theme development
 
 {: .alert }
-This content needs to be reviewed and restructured.  
+This content will be reviewed and restructured.  
 Related issue on [GitHub #147 Topic Images in theme development](https://github.com/wpaccessibility/wp-a11y-docs/issues/147).  
-If you want to work on this, please let us know before you start.
 
 You may think that you’re not including any images in your project. Possibly this is true; but are you using [dashicons](https://developer.wordpress.org/resource/dashicons/) or other icon fonts? Are you using SVG graphics?
 
