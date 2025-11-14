@@ -7,21 +7,22 @@ has_video: true
 
 # Kitchen sink: options available for content
 
-
+{: .lead }
 This page lists the options and code available for creating content in this documentation
-{: .fs-6 .fw-300 }
 
 {: .info }
 WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
 
 ## Headings
 ```markdown
-#  This is an H1 heading
+
+# This is an H1 heading
 ## This is an H2 heading
 ### This is an H3 heading
 #### This is an H4 heading
 ##### This is an H5 heading
 ###### This is an H6 heading
+
 ```
 
 {: .alert }
@@ -29,15 +30,15 @@ In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}
 
 ## Summary in a larger text font.
 
-End the paragraph with the code `{: .fs-6 .fw-300 }`.
+Start the paragraph with the code `{: .lead }`.
 
 ```markdown
 When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
-{: .fs-6 .fw-300 }
+{: .lead }
 ```
 
 When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
-{: .fs-6 .fw-300 }
+{: .lead  }
 
 ## Text
 ```markdown
@@ -57,27 +58,17 @@ A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.
 
 ### Internal links
 
-For links to other pages within wpaccessibility.org, always use `{{site.baseurl}}` to ensure they work in preview environments:
+For links to other pages within wpaccessibility.org, always add the prefix &#123;&#123;site.baseurl}} to ensure they work in preview environments. For example &#123;&#123;site.baseurl}}/assets/images/small-image.jpg. This ensures links work correctly in both production and preview environments. External links to other websites don't need  this prefix.
 
-```markdown
-Internal link: [Contact the Documentation Team]({{site.baseurl}}/docs/contact/)
-```
-Internal link: [Contact the Documentation Team]({{site.baseurl}}/docs/contact/)
-
-{: .info }
-Always use `{{site.baseurl}}` for internal links (to other pages on this site) and asset links (images, etc.). This ensures links work correctly in both production and preview environments. External links to other websites don't need `{{site.baseurl}}`.
+### Images
 
 ```markdown
 An image: ![Alt text](url)
-for example: ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
+
 ```
 ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 
-{: .info }
-For images and other assets, always include `{{site.baseurl}}` in the path to ensure they display correctly in preview environments.
-
-
-{: .info } 
+{: .tip } 
 For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos

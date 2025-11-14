@@ -10,6 +10,11 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $sidebar-color;
+  color: $sidebar-text-color;
+
+  a {
+    color: $sidebar-text-color;
+  }
 
   @include mq(md) {
     flex-flow: column nowrap;
@@ -43,11 +48,12 @@
 
     .main-header {
       display: none;
+      padding-top: 1rem;
       background-color: $sidebar-color;
 
       @include mq(md) {
         display: flex;
-        background-color: $body-background-color;
+        background-color: var(--color-neutral-bg-document);
       }
 
       &.nav-open {
@@ -63,6 +69,10 @@
 
 .main {
   margin: auto;
+
+  background-image: url("/assets/images/logo-wa11ypuu-waving-head.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
 
   @include mq(md) {
     position: relative;
@@ -129,13 +139,15 @@
 .site-header {
   display: flex;
   align-items: center;
+  padding-top: 1rem;
 
   .lh-wrapper {
     align-items: center;
     display: flex;
 
     img {
-      max-width: 80px;
+      max-height: 48px;
+      padding-right: 1rem;
       margin: 0 auto;
       display: block;
     }
@@ -161,7 +173,8 @@
   padding-top: $sp-3;
   padding-bottom: $sp-3;
   color: $body-heading-color;
-  font-family: $heading-font-family;
+  font-family: $body-font-family;
+  font-weight: 600;
   text-decoration: none;
 
   & :hover,
@@ -171,7 +184,7 @@
 
   @include container;
 
-  @include fs-6;
+  @include fs-4;
 
   @include mq(md) {
     padding-top: 0;
@@ -179,20 +192,27 @@
   }
 }
 
-.site-button {
+.menu-button-wrapper {
+
   display: flex;
   height: 100%;
   padding: $gutter-spacing-sm;
-  align-items: center;
 
-  span {
-    padding-right: 0.5em;
-    color: $link-color;
-  }
+  .site-button {
+    background-color: var(--color-neutral-inverse-bg-document);
+    color: var(--color-neutral-inverse-color-document)!important;
+    border: $border;
+    border-radius: $border-radius;
+    border-color: var(--color-neutral-inverse-color-document);
 
-  & :hover,
-  & :focus {
-    text-decoration: underline;
+    span {
+      padding-right: 0.5em;
+    }
+
+    & :hover,
+    & :focus {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -206,6 +226,7 @@
 
 body {
   position: relative;
+  margin: 0;
   padding-bottom: $sp-10;
   overflow-y: scroll;
 
@@ -223,7 +244,6 @@ body {
   left: 0;
   padding-top: $sp-4;
   padding-bottom: $sp-4;
-  color: $grey-dk-000;
 
   @include container;
 
@@ -239,6 +259,10 @@ body {
   width: $sp-5;
   height: $sp-5;
   color: $link-color;
+}
+
+.back-to-top {
+  color: var(--color-neutral-color-default);
 }
 
 footer {

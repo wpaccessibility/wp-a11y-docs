@@ -1,41 +1,151 @@
 @use "sass:map";
 
-$body-font-family:
-  system-ui,
-  -apple-system,
-  blinkmacsystemfont,
-  "Segoe UI",
-  roboto,
-  "Helvetica Neue",
-  arial,
-  sans-serif,
-  "Segoe UI Emoji" !default;
-$heading-font-family: georgia, "Times New Roman", times, serif;
+@font-face {
+  font-family: 'Source Sans 3';
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  src: url("/assets/fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf");
+}
+
+// Fonts.
+$body-font-family: 'Source Sans 3', sans-serif;
+$heading-font-family: 'Source Serif 4', serif;
 $mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
-$root-font-size: 16px !default; // DEPRECATED: previously base font-size for rems
-$body-line-height: 1.4 !default;
-$content-line-height: 1.6 !default;
+
+// Line heights.
+$body-line-height: 1.5 !default;
+$content-line-height: 1.5 !default;
 $body-heading-line-height: 1.25 !default;
-$font-size-1: 0.5625rem !default;
-$font-size-1-sm: 0.625rem !default;
-$font-size-2: 0.6875rem !default; // h4 - uppercased!, h6 not uppercased, text-small
-$font-size-3: 0.75rem !default; // h5
-$font-size-4: 0.875rem !default;
-$font-size-5: 1rem !default; // h3
-$font-size-6: 1.125rem !default; // h2
-$font-size-7: 1.5rem !default;
-$font-size-8: 2rem !default; // h1
-$font-size-9: 2.25rem !default;
-$font-size-10: 2.625rem !default;
-$font-size-10-sm: 3rem !default;
+
+// Variables new design
+:root {
+  /* Type scale */
+  --text-font-size-sm: clamp(1.000rem, 0.8118rem + 0.3765vw, 1.000rem);
+  --text-font-size-md: clamp(1.125rem, 1.0147rem + 0.4706vw, 1.250rem);
+  --text-font-size-lg: clamp(1.250rem, 1.2684rem + 0.5882vw, 1.500rem);
+  --text-font-size-xl: clamp(1.500rem, 1.5855rem + 0.7353vw, 2.000rem);
+  --text-font-size-2xl: clamp(2.000rem, 1.9818rem + 0.9191vw, 2.500rem);
+  --text-font-size-3xl: clamp(2.500rem, 2.4773rem + 1.1489vw, 3.000rem);
+  /* Colors: Brand */
+  --color-wa11ypuu-yellow: #F0C507;
+  /* Colors: Neutral */
+  --color-neutral-bg-document: #FCFCFC; // body background color.
+  --color-neutral-bg-subtle: #F6F6F7;
+  --color-neutral-bg-default: #F0F1F1;
+  --color-neutral-bg-hover: #EAEBEB;
+  --color-neutral-bg-active: #E5E5E6;
+  --color-neutral-border-subtle: #C2C4C5;
+  --color-neutral-border-default: #848789;
+  --color-neutral-border-hover: #797C7F;
+  --color-neutral-border-active: #6F7276;
+  --color-neutral-color-default: #606467;
+  --color-neutral-color-hover: #565A5E;
+  --color-neutral-color-active: #484C50;
+  --color-neutral-color-subtle: #3A3E43;
+  --color-neutral-color-document: #23282D;  // body text color.
+  /* Colors: Neutral Inverse */
+  --color-neutral-inverse-bg-document: #202429;
+  --color-neutral-inverse-bg-subtle: #181C1F;
+  --color-neutral-inverse-bg-default: #565A5E;
+  --color-neutral-inverse-bg-hover: #484C50;
+  --color-neutral-inverse-bg-active: #3A3E43;
+  --color-neutral-inverse-border-subtle: #43474B;
+  --color-neutral-inverse-border-default: #C8C9CB;
+  --color-neutral-inverse-border-hover: #D3D4D5;
+  --color-neutral-inverse-border-active: #DFE0E0;
+  --color-neutral-inverse-color-default: #FCFCFC;
+  --color-neutral-inverse-color-hover: #FCFCFC;
+  --color-neutral-inverse-color-active: #FCFCFC;
+  --color-neutral-inverse-color-subtle: #C0C1C2;
+  --color-neutral-inverse-color-document: #FCFCFC;
+  /* Colors: Informative */
+  --color-informative-bg-document: #FBFCFF;
+  --color-informative-bg-subtle: #F4F6FE;
+  --color-informative-bg-default: #EDF0FD;
+  --color-informative-bg-hover: #E6EAFC;
+  --color-informative-bg-active: #DFE4FC;
+  --color-informative-border-subtle: #B6C1F7;
+  --color-informative-border-default: #657EEE;
+  --color-informative-border-hover: #5772EC;
+  --color-informative-border-active: #4866EB;
+  --color-informative-color-default: #3654DF;
+  --color-informative-color-hover: #304CCA;
+  --color-informative-color-active: #2940AA;
+  --color-informative-color-subtle: #22358C;
+  --color-informative-color-document: #16225B;
+  /* Colors: Positive */
+  --color-positive-bg-document: #FAFDFB;
+  --color-positive-bg-subtle: #EFF9F3;
+  --color-positive-bg-default: #E4F5EA;
+  --color-positive-bg-hover: #D9F1E2;
+  --color-positive-bg-active: #CEEDD9;
+  --color-positive-border-subtle: #8AD3A6;
+  --color-positive-border-default: #009B3A;
+  --color-positive-border-hover: #009036;
+  --color-positive-border-active: #008432;
+  --color-positive-color-default: #00732B;
+  --color-positive-color-hover: #006827;
+  --color-positive-color-active: #005821;
+  --color-positive-color-subtle: #00481B;
+  --color-positive-color-document: #002F12;
+  /* Colors: Negative */
+  --color-negative-bg-document: #FFFBFB;
+  --color-negative-bg-subtle: #FEF4F4;
+  --color-negative-bg-default: #FEEDED;
+  --color-negative-bg-hover: #FDE6E6;
+  --color-negative-bg-active: #FDDEDE;
+  --color-negative-border-subtle: #F9B1B1;
+  --color-negative-border-default: #F14848;
+  --color-negative-border-hover: #EF2929;
+  --color-negative-border-active: #E60000;
+  --color-negative-color-default: #CA0000;
+  --color-negative-color-hover: #B70000;
+  --color-negative-color-active: #9C0000;
+  --color-negative-color-subtle: #820000;
+  --color-negative-color-document: #580000;
+  /* Colors: Warning */
+  --color-warning-bg-document: #FFFCF3;
+  --color-warning-bg-subtle: #FFF6DB;
+  --color-warning-bg-default: #FFF0C1;
+  --color-warning-bg-hover: #FFEAA6;
+  --color-warning-bg-active: #FFE48A;
+  --color-warning-border-subtle: #E9C00A;
+  --color-warning-border-default: #A08317;
+  --color-warning-border-hover: #947A17;
+  --color-warning-border-active: #887018;
+  --color-warning-color-default: #766117;
+  --color-warning-color-hover: #6B5817;
+  --color-warning-color-active: #5A4A16;
+  --color-warning-color-subtle: #493C14;
+  --color-warning-color-document: #2F2710;
+}
+
+// Font sizes.
+$font-size-1: var(--text-font-size-sm);
+$font-size-1-sm:  var(--text-font-size-sm);
+$font-size-2:  var(--text-font-size-sm);
+$font-size-3: var(--text-font-size-sm);
+$font-size-4: var(--text-font-size-sm);
+$font-size-5: var(--text-font-size-sm);
+$font-size-6: var(--text-font-size-md);
+$font-size-7: var(--text-font-size-xl);
+$font-size-8:  var(--text-font-size-2xl);
+$font-size-9:  var(--text-font-size-2xl);
+$font-size-10: var(--text-font-size-3xl);
+$font-size-10-sm: var(--text-font-size-3xl);
+
+// Colors.
 $white: #fff !default;
 $grey-dk-000: #959396 !default;
 $grey-dk-050: #757575 !default;
 $grey-dk-100: #5c5962 !default;
 $grey-dk-200: #44434d !default;
 $grey-dk-250: #302d36 !default;
-$grey-dk-300: #27262b !default;
-$grey-lt-000: #f5f5f5 !default;
+$grey-dk-300: #202429 !default; // Sidebar
+$grey-lt-000: #F0F1F1 !default;
 $grey-lt-100: #eeebee !default;
 $grey-lt-200: #ecebed !default;
 $grey-lt-300: #e6e1e8 !default;
@@ -60,6 +170,8 @@ $red-000: #f77e7e !default;
 $red-100: #f96e65 !default;
 $red-200: #e94c4c !default;
 $red-300: #b62424 !default;
+
+// Spacing.
 $spacing-unit: 1rem; // 1rem == 16px
 $spacers: (
   sp-0: 0,
@@ -84,17 +196,21 @@ $sp-7: map.get($spacers, sp-7) !default; // 2.5  rem == 40px
 $sp-8: map.get($spacers, sp-8) !default; // 3    rem == 48px
 $sp-9: map.get($spacers, sp-9) !default; // 3.5  rem == 56px
 $sp-10: map.get($spacers, sp-10) !default; // 4  rem == 64px
+$gutter-spacing: $sp-6 !default;
+$gutter-spacing-sm: $sp-4 !default;
+
+// Borders.
 $border: 1px solid !default;
 $border-radius: 4px !default;
 $border-color: $grey-dk-000 !default;
-$gutter-spacing: $sp-6 !default;
-$gutter-spacing-sm: $sp-4 !default;
-$nav-width: 16.5rem !default;
+
+// Layout.
+$nav-width: 17.75rem !default;
 $nav-width-md: 15.5rem !default;
 $nav-list-item-height: $sp-6 !default;
 $nav-list-item-height-sm: $sp-8 !default;
 $nav-list-expander-right: true;
-$content-width: 50rem !default;
+$content-width: 44rem !default;
 $header-height: 3.75rem !default;
 $search-results-width: $content-width - $nav-width !default;
 $transition-duration: 400ms;

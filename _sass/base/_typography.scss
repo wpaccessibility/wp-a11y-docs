@@ -2,53 +2,56 @@
 @use "../abstracts/mixins" as *;
 
 // Typography
-// stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
 
-h1,
-.text-alpha {
-  font-family: $heading-font-family;
-  font-weight: 300;
-
-  @include fs-7;
-}
-
-h2,
-.text-beta,
-#toctitle {
-  font-family: $heading-font-family;
-
-  @include fs-6;
-}
-
-h3,
-.text-gamma {
-  @include fs-5;
-}
-
-h4,
-.text-delta {
+body {
+  font-family: $body-font-family;
+  font-size: var(--text-font-size-md);
   font-weight: 400;
-  letter-spacing: 0.1em;
-
-  @include fs-4;
+  line-height: $body-line-height;
+  color: var(--color-neutral-color-document);
+  background-color: var(--color-neutral-bg-document);
 }
 
-h4 code {
-  text-transform: none;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  font-weight: 600;
+  line-height: $body-heading-line-height;
 }
 
-h5,
-.text-epsilon {
-  @include fs-3;
+h1 {
+  line-height: 1.1;
+  font-size: var(--text-font-size-3xl);
 }
 
-h6,
-.text-zeta {
-  @include fs-2;
+h2 {
+  line-height: 1.25;
+  font-size: var(--text-font-size-2xl);
 }
 
+h3 {
+  font-size: var(--text-font-size-xl);
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: var(--text-font-size-lg);
+}
+
+h5 {
+  font-size: var(--text-font-size-md);
+}
+
+h6 {
+  font-size: var(--text-font-size-sm);
+}
+
+small,
 .text-small {
-  @include fs-2;
+  font-size: var(--text-font-size-sm);
+}
+
+.lead {
+  font-size: var(--text-font-size-lg);
 }
 
 .text-mono {
