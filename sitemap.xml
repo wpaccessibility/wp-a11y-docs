@@ -100,6 +100,9 @@
 <loc>https://wpaccessibility.org//docs/topics/forms/input-label/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/forms/required/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/forms/</loc>
 </url>
 <url>
@@ -283,6 +286,12 @@
 <loc>https://wpaccessibility.org//docs/topics/forms/descriptions/location-description/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/forms/required/mark-optional-fields/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/topics/forms/required/mark-required-fields/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/start/myths/overlays/</loc>
 </url>
 <url>
@@ -307,7 +316,7 @@
 <loc>https://wpaccessibility.org//docs/contribute/report-error/</loc>
 </url>
 <url>
-<loc>https://wpaccessibility.org//docs/topics/forms/required/</loc>
+<loc>https://wpaccessibility.org//docs/topics/forms/required/required-screen-readers/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/forms/resources/</loc>
