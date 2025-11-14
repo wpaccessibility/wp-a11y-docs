@@ -19,7 +19,7 @@ Link text should stand on its own. Some assistive software scans a page for link
 It also makes your text easier to scan visually, so that sighted users can more quickly find the information they’re looking for.
 
 <figure>
-<img src="/assets/images/vo-rotor-links.png" alt="">
+<img src="{{site.baseurl}}/assets/images/vo-rotor-links.png" alt="">
 <figcaption>Descriptive, meaningful link text in the Apple VoiceOver link list.</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ Avoid meaningless link text like: click here, download, info, more, here, this.
 With these types of links, users have to read the whole sentence to understand the purpose of the link. This makes your content less browsable, and harder to engage with. Screen reader users cannot navigate by links, because those links are not useful without additional context.
 
 <figure>
-<img src="/assets/images/incorrect-links.png" alt="">
+<img src="{{site.baseurl}}/assets/images/incorrect-links.png" alt="">
 <figcaption>Useless, non-descriptive link text in the Apple VoiceOver link list.</figcaption>
 </figure>
 
