@@ -8,7 +8,7 @@ nav_order: 6
 # Form focus handling
 
 {: .alert }
-This content needs to be rewritten and expanded.  
+This content will be rewritten and expanded.  
 Related issue on [GitHub #158 Topic Form focus handling](https://github.com/wpaccessibility/wp-a11y-docs/issues/158).
 
 ## Consistent tab order

@@ -8,9 +8,8 @@ nav_order: 3
 # Images as links
 
 {: .alert }
-This content needs to be reviewed, restructured and expanded.
+This content will be reviewed, restructured and expanded.
 Related issue on [GitHub #117 Topic Images as links](https://github.com/wpaccessibility/wp-a11y-docs/issues/117).  
-If you want to work on this, please let us know before you start.
 
 For linked images, the `alt` attribute (the alternative text) will be the link text.
 

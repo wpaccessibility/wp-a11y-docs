@@ -8,9 +8,8 @@ nav_order: 3
 # Content checks for web accessibility
 
 {: .alert }
-This content needs to be reviewed and expanded.
+This content will be reviewed and expanded.
 Related issue on [GitHub #171 Topic Content checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/171).    
-If you want to work on this, please let us know before you start.
 
 This page gives an overview of practical approaches and best practices for to keep your content as readable for as many users as possible.
 

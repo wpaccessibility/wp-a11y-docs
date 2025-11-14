@@ -8,9 +8,8 @@ nav_order: 1
 # Quick wins
 
 {: .alert }
-Starter content. This content needs to be reviewed and expanded.  
+Starter content. This content will to be reviewed and expanded.  
 Related issue on [GitHub #91 Topic Quick wins](https://github.com/wpaccessibility/wp-a11y-docs/issues/91).  
-If you want to work on this, please let us know before you start.
 
 What to do first? Start with the low-hanging fruit. Color contrast of text ia an easy fix. Alternative text with images probably too.
 

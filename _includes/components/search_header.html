@@ -1,11 +1,23 @@
-
 <div class="search">
-  <form class="search-input-wrap" role="search">
+  <form class="search-input-wrap" role="search" action="{{ site.baseurl }}/search/" method="get">
     <label for="search-input" class="search-label">
-      <span class="screen-reader-text">Search {{site.title}}</span>
-      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+      <span class="screen-reader-text">Search {{ site.title }}</span>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <use xlink:href="#svg-search"></use>
+      </svg>
     </label>
-    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search {{site.title}}" autocomplete="off">
+
+    <input 
+      type="search" 
+      id="search-input" 
+      name="q" 
+      class="search-input" 
+      placeholder="Search {{ site.title }}" 
+      autocomplete="off"
+    >
+
+    <button type="submit" class="search-submit">Search</button>
   </form>
+
   <div id="search-results" class="search-results"></div>
 </div>

@@ -25,55 +25,75 @@
   position: relative;
   z-index: 1;
   height: $sp-8;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
   transition: height linear #{$transition-duration * 0.5};
 
   @include mq(md) {
     width: 100%;
-    max-width: $search-results-width;
+    max-width: calc( $search-results-width - 2rem );
     height: 100% !important;
     transition: width ease $transition-duration;
+  }
+
+  &:has(*:focus) {
+    .search-label,
+    .search-input {
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      border-bottom: 2px solid black;
+      border-left: none;
+      outline: none;
+    }
+    .search-label {
+      border-left: 2px solid black;
+      border-right: none;
+    }
   }
 }
 
 .search-input {
-  position: absolute;
   width: 100%;
   height: 100%;
-  padding: $sp-2 $gutter-spacing-sm $sp-2 #{$gutter-spacing-sm + $sp-5};
+  padding: $sp-2 $gutter-spacing-sm $sp-2 0;
   font-size: 1rem;
   color: $body-text-color;
   background-color: $search-background-color;
   border-width: 1px;
   border-color: $grey-dk-050;
+  border-left: none;
 
   @include mq(md) {
-    padding: $sp-2 $gutter-spacing-sm $sp-2 #{$gutter-spacing + $sp-5};
+    position: relative;
+    flex-grow: 1;
+    padding: $sp-2 $gutter-spacing-sm $sp-2 0;
     font-size: 0.875rem;
     background-color: $body-background-color;
     transition: padding-left linear #{$transition-duration * 0.5};
   }
+}
 
-  &:focus {
-    border-width: 3px;
-
-    + .search-label .search-icon {
-      color: $link-color;
-    }
-  }
+.search-submit {
+  display: block;
+  padding: $sp-2;
+  margin-left: .1rem;
+  height: 100%;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: $link-color;
+  background-color: $body-background-color;
+  border: 1px solid $link-color;
+  cursor: pointer;
 }
 
 .search-label {
-  position: absolute;
   display: flex;
   height: 100%;
+  z-index: 10;
   padding-left: $gutter-spacing-sm;
-  z-index: 20;
-
-  @include mq(md) {
-    padding-left: $gutter-spacing;
-    transition: padding-left linear #{$transition-duration * 0.5};
-  }
+  padding-right: .5rem;
+  border: 1px solid $grey-dk-050;
+  border-right: none;
 
   .search-icon {
     width: #{$sp-4 * 1.2};
@@ -90,6 +110,7 @@
   width: 100%;
   max-height: calc(100% - #{$sp-10});
   overflow-y: auto;
+  padding: $sp-1 $sp-2;
   background-color: $search-background-color;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
@@ -98,6 +119,7 @@
     top: 100%;
     width: $search-results-width;
     max-height: calc(100vh - 200%) !important;
+    padding: 0 0 0 2rem;
   }
 }
 
@@ -105,11 +127,26 @@
   padding-left: 0;
   margin-bottom: $sp-1;
   list-style: none;
+  outline: 1px solid $grey-dk-000;
+  outline-offset: -1px;
   @include fs-4;
 
   @include mq(md) {
     @include fs-3;
   }
+}
+
+#search-results-page li {
+  padding: $sp-2;
+}
+
+#search-results-page h3,
+#search-results-page li p {
+  margin: 0;
+}
+
+#search-results-page ol li:nth-of-type(even) {
+  background: rgb( 0, 0, 0, .04 );
 }
 
 .search-results-list-item {
@@ -253,12 +290,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 0;
   }
 
   .search-input-wrap {
     height: $sp-10;
     border-radius: 0;
+    background: $body-background-color;
 
     @include mq(md) {
       width: $search-results-width;
@@ -267,16 +304,6 @@
 
   .search-input {
     background-color: $search-background-color;
-
-    @include mq(md) {
-      padding-left: 2.3rem;
-    }
-  }
-
-  .search-label {
-    @include mq(md) {
-      padding-left: 0.6rem;
-    }
   }
 
   .search-results {
