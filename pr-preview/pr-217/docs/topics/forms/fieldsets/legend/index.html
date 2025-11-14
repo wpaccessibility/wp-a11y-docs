@@ -265,7 +265,15 @@
 
           <a href="/pr-preview/pr-217/docs/topics/forms/help/" class="nav-list-link">Provide help</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-217/docs/topics/forms/required/" class="nav-list-link">Required fields</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-217/docs/topics/forms/required/" class="nav-list-link">Required fields</a><button class="nav-list-expander btn-reset" aria-label="Required fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-217/docs/topics/forms/required/mark-required-fields/" class="nav-list-link">Mark required form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-217/docs/topics/forms/required/mark-optional-fields/" class="nav-list-link">Mark optional form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-217/docs/topics/forms/required/required-screen-readers/" class="nav-list-link">Indicate required fields for screen readers</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-217/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a></li><li class="nav-list-item">
 
@@ -321,7 +329,7 @@
 
           <a href="/pr-preview/pr-217/docs/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-217/docs/contribute/github/" class="nav-list-link">How to help on GitHub</a><button class="nav-list-expander btn-reset" aria-label="How to help on GitHub submenu" aria-expanded="false">
+          <a href="/pr-preview/pr-217/docs/contribute/github/" class="nav-list-link">Technical documentation website</a><button class="nav-list-expander btn-reset" aria-label="Technical documentation website submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
@@ -364,15 +372,27 @@
   
   <div class="main">
     <div id="main-header" class="main-header">
-    
-<div class="search">
-  <form class="search-input-wrap" role="search">
+    <div class="search">
+  <form class="search-input-wrap" role="search" action="/pr-preview/pr-217/search/" method="get">
     <label for="search-input" class="search-label">
       <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
-      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true"><use xlink:href="#svg-search"></use></svg>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <use xlink:href="#svg-search"></use>
+      </svg>
     </label>
-    <input type="text" id="search-input" name="q" class="search-input" placeholder="Search WP Accessibility Knowledge Base" autocomplete="off">
+
+    <input 
+      type="search" 
+      id="search-input" 
+      name="q" 
+      class="search-input" 
+      placeholder="Search WP Accessibility Knowledge Base" 
+      autocomplete="off"
+    >
+
+    <button type="submit" class="search-submit">Search</button>
   </form>
+
   <div id="search-results" class="search-results"></div>
 </div>
 
@@ -436,7 +456,7 @@
 
           <h1 id="legend-with-a-fieldset">Legend with a fieldset</h1>
 
-<p>A <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend">legend</a> serves as the name (caption) of grouped form fields in a <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code>. Screen readers read this legend aloud for each input field within the fieldset, making the connection clear even without visual information. Keep the content of the legend short and descriptive.</p>
+<p>A <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend">legend</a> serves as the name (caption) of grouped form fields in a <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code>. Most screen readers read this legend aloud the first input field within the fieldset, making the connection clear even without visual information. Keep the content of the legend short and descriptive.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;fieldset&gt;</span>
     <span class="nt">&lt;legend&gt;</span>Your address<span class="nt">&lt;/legend&gt;</span>
@@ -448,6 +468,8 @@
     <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"city"</span> <span class="na">id=</span><span class="s">"city"</span> <span class="na">autocomplete=</span><span class="s">"address-level2"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/fieldset&gt;</span>
 </code></pre></div></div>
+
+<p>Screen readers read the information in variable ways; most announce the legend text when you reach the first field in a fieldset. The legend should be short and descriptive because some screen readers will announce it on every form field within the group.</p>
 
 <h2 id="heading-in-a-legend">Heading in a legend</h2>
 
@@ -474,9 +496,25 @@
 <span class="nt">&lt;/fieldset&gt;</span>
 </code></pre></div></div>
 
-<h2 id="wcag-succes-criteria-for-fieldsets-and-legends">WCAG Succes Criteria for fieldsets and legends</h2>
+<p class="alert">The reverse is not true: a heading may not contain a <code class="language-plaintext highlighter-rouge">legend</code>, because the <code class="language-plaintext highlighter-rouge">legend</code> needs to be an immediate child of the <code class="language-plaintext highlighter-rouge">fieldset</code>.</p>
 
-<p>Using a legend to name a group of form fields is necessary to meet the WCAG success criteria:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- this is invalid code, do not use --&gt;</span>
+<span class="nt">&lt;fieldset&gt;</span>
+    
+    <span class="nt">&lt;h3&gt;&lt;legend&gt;</span>Which is the best color?<span class="nt">&lt;/legend&gt;&lt;/h3&gt;</span>
+
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"purple"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"purple"</span><span class="nt">&gt;</span>Purple<span class="nt">&lt;/label&gt;</span>
+    
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"aubergine"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"aubergine"</span><span class="nt">&gt;</span>Aubergine<span class="nt">&lt;/label&gt;</span>
+    
+<span class="nt">&lt;/fieldset&gt;</span>
+</code></pre></div></div>
+
+<h2 id="wcag-success-criteria-for-naming-grouped-form-fields">WCAG Success Criteria for naming grouped form fields</h2>
+
+<p>Naming grouped form fields is necessary to meet the WCAG success criteria:</p>
 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships">1.3.1 Info and relationships</a> (Level A).</li>
@@ -493,6 +531,7 @@
 <h2 id="resources">Resources</h2>
 
 <ul>
+  <li>W3C: <a href="https://www.w3.org/WAI/tutorials/forms/grouping/">Grouping Controls</a></li>
   <li>NL Design System <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
   <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend">The Field Set Legend element</a>.</li>
 </ul>

@@ -103,6 +103,9 @@
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/fieldsets/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/required/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/</loc>
 </url>
 <url>
@@ -289,6 +292,12 @@
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/descriptions/location-description/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/required/mark-optional-fields/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/required/mark-required-fields/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/start/myths/overlays/</loc>
 </url>
 <url>
@@ -313,7 +322,7 @@
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/contribute/report-error/</loc>
 </url>
 <url>
-<loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/required/</loc>
+<loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/required/required-screen-readers/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/forms/resources/</loc>
@@ -323,6 +332,9 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/contribute/review/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//pr-preview/pr-217/search/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//pr-preview/pr-217/docs/topics/code/components/skip-links/</loc>
