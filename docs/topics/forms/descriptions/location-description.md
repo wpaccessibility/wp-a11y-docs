@@ -111,7 +111,6 @@ Use the "Form Layout" settings on the Form Settings screen:
 - Validation Message Placement: Above inputs
 - Sub-Label Placement: Above inputs
 
-<!--suppress ALL -->
 <figure>
     <img src="{{site.baseurl}}/assets/images/form-settings-page-layout-gravity-forms.png" alt="">
     <figcaption>Screenshot Form Settings in Gravity Forms version 2.9.20 .</figcaption>

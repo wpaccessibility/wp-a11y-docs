@@ -28,7 +28,7 @@ IN HTML, simplified
       name="log-in"
       value="yes"
     />
-    <label for="og-in-yes">Yes</label>
+    <label for="log-in-yes">Yes</label>
 
     <input
       id="log-in-no"
@@ -60,7 +60,7 @@ Connect a description to the form field, using aria-describedby.
 />
 ```
 
-## WCAG Succes Criteria for descriptions
+## WCAG Success Criteria for descriptions
 
 A description is optional, but it can help users to understand better what they need to fill out.
 Then a description with a fieldset is necessary to meet the WCAG success criterion [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).

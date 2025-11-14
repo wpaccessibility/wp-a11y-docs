@@ -21,7 +21,7 @@ In this [demo video](https://www.youtube.com/watch?v=6brKmJfDtNQ), VoiceOver in 
 What are the options for adding information and explanations to a form and its input fields? Follow the [description decision tree]({{site.baseurl}}/docs/topics/forms/descriptions/).
 
 
-## Related WCAG Succes Criteria
+## WCAG Success Criteria
 
  - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
  - [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).

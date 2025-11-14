@@ -146,7 +146,7 @@ Good tools to check the accessible name of a form input:
 - Your browser's [accessibility tree]({{site.baseurl}}/docs/topics/code/accessible-name/).
 - A screen reader, such as NVDA for Windows or VoiceOver/Safari for macOS.
 
-## WCAG Succes Criteria
+## WCAG Success Criteria
 
 Giving a form control an accessible name is necessary to meet the WCAG success criteria:
 

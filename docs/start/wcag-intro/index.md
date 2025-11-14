@@ -77,7 +77,7 @@ There are 3 levels of accessibility:
 
 TODO: add content about version
 
-TODO: add info about different principle/ guideline/succes criteria/technique.
+TODO: add info about different principle/ guideline/Success Criteria/technique.
 
 Most European Union and many other countries use the accessibility standard WCAG 2.1 AA or equivalent for their government websites. Some countries require compliance with these guidelines for commercial websites, so the accessibility team uses these guidelines to improve WordPress core. [Overview of government accessibility laws and policies](Web Accessibility Laws & Policies) from the Web Accessibility Initiative.
 

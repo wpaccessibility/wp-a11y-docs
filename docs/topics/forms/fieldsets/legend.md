@@ -8,7 +8,7 @@ description: A legend serves as the name of grouped form fields in a fieldset`.
 
 # Legend with a fieldset
 
-A [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend) serves as the name (caption) of grouped form fields in a `<fieldset>`. Screen readers read this legend aloud for each input field within the fieldset, making the connection clear even without visual information. Keep the content of the legend short and descriptive.
+A [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend) serves as the name (caption) of grouped form fields in a `<fieldset>`. Most screen readers read this legend aloud the first input field within the fieldset, making the connection clear even without visual information. Keep the content of the legend short and descriptive.
 
 ```html
 <fieldset>
@@ -21,6 +21,9 @@ A [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/
     <input type="text" name="city" id="city" autocomplete="address-level2">
 </fieldset>
 ```
+
+{: info }
+Screen readers read the information in variable ways; most announce the legend text when you reach the first field in a fieldset. The legend should be short and descriptive because some screen readers will announce it on every form field within the group.
 
 ## Heading in a legend
 
@@ -48,9 +51,27 @@ A legend can contain a heading. Make sure that the heading level fits correctly 
 </fieldset>
 ```
 
-## WCAG Succes Criteria for fieldsets and legends
+{: .alert }
+The reverse is not true: a heading may not contain a `legend`, because the `legend` needs to be an immediate child of the `fieldset`.
 
-Using a legend to name a group of form fields is necessary to meet the WCAG success criteria:
+```html
+<!-- this is invalid code, do not use -->
+<fieldset>
+    
+    <h3><legend>Which is the best color?</legend></h3>
+
+    <input name="colorOption" type="radio" id="purple" />
+    <label for="purple">Purple</label>
+    
+    <input name="colorOption" type="radio" id="aubergine" />
+    <label for="aubergine">Aubergine</label>
+    
+</fieldset>
+```
+
+## WCAG Success Criteria for naming grouped form fields
+
+Naming grouped form fields is necessary to meet the WCAG success criteria:
 
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).
@@ -62,5 +83,6 @@ Using a legend to name a group of form fields is necessary to meet the WCAG succ
 
 ## Resources
 
+- W3C: [Grouping Controls](https://www.w3.org/WAI/tutorials/forms/grouping/)
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - MDN: [The Field Set Legend element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend).
