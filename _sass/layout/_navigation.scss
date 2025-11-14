@@ -79,7 +79,7 @@
       width: $nav-list-item-height-sm;
       height: $nav-list-item-height-sm;
       padding: #{$nav-list-item-height-sm * 0.25};
-      color: $link-color;
+      color: $sidebar-text-color;
       flex-shrink: 0;
       margin-right: 2px; // Add space for outline/border
 
@@ -110,9 +110,11 @@
 
       .nav-list-item {
         position: relative;
+        min-height: 48px;
 
         .nav-list-link {
           color: $nav-child-link-color;
+          font-weight: 300;
         }
 
         .nav-list-expander {
@@ -194,6 +196,10 @@
   display: table-cell;
   @include fs-2;
 
+  a {
+    color: var(--color-neutral-color-default);
+  }
+
   &::before {
     display: none;
   }
@@ -240,7 +246,7 @@
 }
 
 [aria-current] {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* Text meant only for screen readers. */

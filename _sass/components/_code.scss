@@ -189,7 +189,7 @@ figure.highlight {
 .highlight,
 pre.highlight {
   background: $code-background-color; // Code Background
-  color: $body-text-color; // Code Line Numbers
+  color: var(--color-neutral-border-default); // Code Line Numbers
 }
 
 // Override OneDarkJekyll Colors for Code Blocks

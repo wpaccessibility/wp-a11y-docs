@@ -2,7 +2,7 @@
 @use "../base/colors" as *;
 @use "../abstracts/mixins" as *;
 
-// Search input and autocomplete
+// Search input and autocomplete.
 
 .search {
   position: relative;
@@ -57,7 +57,7 @@
   height: 100%;
   padding: $sp-2 $gutter-spacing-sm $sp-2 0;
   font-size: 1rem;
-  color: $body-text-color;
+  color: var(--color-neutral-border-default);
   background-color: $search-background-color;
   border-width: 1px;
   border-color: $grey-dk-050;
@@ -68,7 +68,7 @@
     flex-grow: 1;
     padding: $sp-2 $gutter-spacing-sm $sp-2 0;
     font-size: 0.875rem;
-    background-color: $body-background-color;
+    background-color: var(--color-neutral-bg-document);
     transition: padding-left linear #{$transition-duration * 0.5};
   }
 }
@@ -78,11 +78,11 @@
   padding: $sp-2;
   margin-left: .1rem;
   height: 100%;
-  font-size: 0.875rem;
-  font-weight: bold;
-  color: $link-color;
-  background-color: $body-background-color;
-  border: 1px solid $link-color;
+  font-size: var(--text-font-size-sm);
+  font-weight: 600;
+  background-color: var(--color-neutral-bg-document);
+  border: 1px solid var(--color-neutral-border-default);
+  border-radius: $border-radius;
   cursor: pointer;
 }
 
@@ -246,7 +246,7 @@
 }
 
 .search-result-highlight {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .search-no-result {
@@ -295,7 +295,7 @@
   .search-input-wrap {
     height: $sp-10;
     border-radius: 0;
-    background: $body-background-color;
+    background-color: var(--color-neutral-bg-document);
 
     @include mq(md) {
       width: $search-results-width;

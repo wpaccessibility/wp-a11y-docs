@@ -4,29 +4,27 @@
 // Callouts.
 
 div.opaque {
-  background-color: $body-background-color;
+  background-color: var(--color-neutral-bg-document);
 }
 
 p.example {
-  background: rgba($green-000, 0.1);
-  border-left: $border-radius solid $green-300;
+  background: var(--color-informative-bg-document);
+  border-left: $border-radius solid var(--color-informative-border-default);
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
     content: "Example";
     display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 
   > .tutorial-title {
     display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -46,18 +44,16 @@ p.alert {
 
   &::before {
     content: "Alert";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 
   > .alert-title {
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -71,10 +67,9 @@ p.alert-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -87,18 +82,16 @@ p.tip {
 
   &::before {
     content: "Tip";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 
   > .tip-title {
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -112,34 +105,31 @@ p.tip-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
 
 p.info {
-  background: rgba($purple-000, 0.1);
-  border-left: $border-radius solid $purple-300;
+  background: var(--color-informative-bg-default);
+  border-left: $border-radius solid var(--color-informative-border-default);
   border-radius: $border-radius;
   padding: 0.8rem;
 
   &::before {
     content: "Info";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 
   > .info-title {
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -153,10 +143,9 @@ p.info-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -169,18 +158,16 @@ p.warning {
 
   &::before {
     content: "Warning";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 
   > .warning-title {
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -194,10 +181,9 @@ p.warning-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -210,18 +196,16 @@ p.dont {
 
   &::before {
     content: "Don't";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 
   > .dont-title {
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -235,10 +219,9 @@ p.dont-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -251,18 +234,16 @@ p.do {
 
   &::before {
     content: "Do";
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 
   > .dont-title {
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
@@ -276,10 +257,9 @@ p.do-title {
   > p:first-child {
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 0.75em;
+display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
     padding-bottom: 0.125rem;
   }
 }
