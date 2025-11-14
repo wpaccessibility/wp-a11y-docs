@@ -8,9 +8,8 @@ nav_order: 2
 # Patterns to avoid: Infinite scroll
 
 {: .alert }
-This content should be reviewed and restructured.
+This content will be reviewed and restructured.
 Related issue on [GitHub #132 Topic Patterns to avoid: Infinite scroll](https://github.com/wpaccessibility/wp-a11y-docs/issues/132).  
-If you want to work on this, please let us know before you start.
 
 
 We don’t recommend using infinite scroll because it has many significant accessibility issues:

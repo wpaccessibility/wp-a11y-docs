@@ -8,9 +8,8 @@ nav_order: 2
 # Write a meaningful link text
 
 {: .alert }
-This content needs to be reviewed, restructured and expanded.
+This content will be reviewed, restructured and expanded.
 Related issue on [GitHub #110 Topic Write a meaningful link text](https://github.com/wpaccessibility/wp-a11y-docs/issues/110).  
-If you want to work on this, please let us know before you start.
 
 {: .tip }
 **Rule of thumb**: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise.
@@ -20,7 +19,7 @@ Link text should stand on its own. Some assistive software scans a page for link
 It also makes your text easier to scan visually, so that sighted users can more quickly find the information they’re looking for.
 
 <figure>
-<img src="/assets/images/vo-rotor-links.png" alt="">
+<img src="{{site.baseurl}}/assets/images/vo-rotor-links.png" alt="">
 <figcaption>Descriptive, meaningful link text in the Apple VoiceOver link list.</figcaption>
 </figure>
 
@@ -31,7 +30,7 @@ Avoid meaningless link text like: click here, download, info, more, here, this.
 With these types of links, users have to read the whole sentence to understand the purpose of the link. This makes your content less browsable, and harder to engage with. Screen reader users cannot navigate by links, because those links are not useful without additional context.
 
 <figure>
-<img src="/assets/images/incorrect-links.png" alt="">
+<img src="{{site.baseurl}}/assets/images/incorrect-links.png" alt="">
 <figcaption>Useless, non-descriptive link text in the Apple VoiceOver link list.</figcaption>
 </figure>
 
