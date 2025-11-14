@@ -81,7 +81,7 @@ The accessibility tree of Firefox shows the following relevant information: The 
 ![Screenshot accessible name link in FireFox]({{site.baseurl}}/assets/images/accessible-name-link.png)
 
 
-## WCAG Succes Criteria
+## WCAG Success Criteria
 
 Giving interactive elements a well-defined, accessible name is necessary to meet the WCAG success criteria:
 
