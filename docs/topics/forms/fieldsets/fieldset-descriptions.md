@@ -14,7 +14,7 @@ Radio buttons, checkboxes, and other groups of related fields (like addresses) c
 
 ![Screenshot of a fieldset, with a legend and 2 radio buttons]({{site.baseurl}}/assets/images/fieldset-description.png)
 
-IN HTML, simplified
+In HTML, simplified
 
 ```html
 <fieldset aria-describedby="description-log-in">
