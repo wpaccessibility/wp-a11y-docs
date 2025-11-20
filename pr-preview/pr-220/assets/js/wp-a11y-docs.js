@@ -1,4 +1,4 @@
-(function (jtd, undefined) {
+    (function (jtd, undefined) {
 
 // Event handling
 
@@ -69,6 +69,7 @@ function initSearch() {
       var index = lunr(function(){
         this.ref('id');
         this.field('title', { boost: 200 });
+        this.field('description');
         this.field('content', { boost: 2 });
         this.field('relUrl');
         this.metadataWhitelist = ['position']
@@ -77,6 +78,7 @@ function initSearch() {
           this.add({
             id: i,
             title: docs[i].title,
+            description: docs[i].description,
             content: docs[i].content,
             relUrl: docs[i].relUrl
           });
@@ -546,7 +548,7 @@ jtd.onReady(function(){
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get("q") ? urlParams.get("q").trim() : null;
     const resultsContainer = document.getElementById("search-results-page");
-    const searchInput = document.getElementById("search-input"); 
+    const searchInput = document.getElementById("search-input");
     const input = query;
 
     if (!query || !resultsContainer) {
@@ -554,7 +556,7 @@ jtd.onReady(function(){
     }
 
     if (searchInput) {
-      searchInput.value = query; 
+      searchInput.value = query;
     }
 
     if (!window.jtdSearchIndex || !window.jtdSearchDocs) {
@@ -587,34 +589,40 @@ jtd.onReady(function(){
         });
       }
     }
-  
-    // Display results
+
+    // Display results in result page.
     if (results.length > 0) {
-      let term = ( results.length === 1 ) ? 'result' : 'results';
+      let term = ( results.length === 1 ) ? 'Search result' : 'Search results';
       let pageTitle = document.querySelector( 'title' );
       let h1 = document.querySelector( 'h1' );
-  
+
       pageTitle.innerText = `${results.length} ${term} found for "${query}"`;
-      h1.innerText = `Search Results for "${query}"`;
+      h1.innerText = `${results.length} ${term} found for "${query}"`;
 
       resultsContainer.innerHTML = `
-        <h2>${results.length} ${term}</h2>
+        <h2>${term}</h2>
         <ol>
           ${results.map(r => {
+            
             const doc = docs[r.ref];
-            let docSection = doc.title;
-            if ( docSection !== doc.doc ) {
-              docSection = `<p class="search-doc-section"><strong>Section:</strong> ${doc.title}</p>`;
+            
+            docSection = `<p><strong>In:</strong> ${doc.doc}</p>`;
+
+            if ( doc.description ) {
+              docDescription = `<p>${doc.description}</p>`;
             } else {
-              docSection = '';
+              docDescription = '';
             }
+            
             return `
               <li>
-                <h3><a href="${doc.url}">Page: ${doc.doc}</a></h3>
+                <h3><a href="${doc.url}">${doc.title}</a></h3>
+                ${docDescription}
                 ${docSection}
-                <p><small>${doc.relUrl}</small></p>
               </li>`;
+            
           }).join("")}
+          
         </ol>
       `;
     } else {
@@ -625,9 +633,9 @@ jtd.onReady(function(){
   // Poll until the asynchronous initSearch() function has loaded the index data.
   const checkInterval = setInterval(function() {
       if (window.jtdSearchIndex && window.jtdSearchDocs) {
-          clearInterval(checkInterval); 
-          processFullPageSearch();      
+          clearInterval(checkInterval);
+          processFullPageSearch();
       }
-  }, 100); 
+  }, 100);
 
 });
