@@ -20,21 +20,21 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   line-height: 1.1;
-  font-size: var(--text-font-size-3xl);
+  font-size: var(--text-font-size-2xl);
 }
 
 h2 {
   line-height: 1.25;
-  font-size: var(--text-font-size-2xl);
+  font-size: var(--text-font-size-xl);
 }
 
 h3 {
-  font-size: var(--text-font-size-xl);
+  font-size: var(--text-font-size-lg);
   line-height: 1.25;
 }
 
 h4 {
-  font-size: var(--text-font-size-lg);
+  font-size: var(--text-font-size-md);
 }
 
 h5 {

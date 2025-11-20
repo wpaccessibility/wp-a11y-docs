@@ -31,7 +31,6 @@
 
   @include mq(md) {
     width: 100%;
-    max-width: calc( $search-results-width - 2rem );
     height: 100% !important;
     transition: width ease $transition-duration;
   }
@@ -57,7 +56,7 @@
   height: 100%;
   padding: $sp-2 $gutter-spacing-sm $sp-2 0;
   font-size: 1rem;
-  color: var(--color-neutral-border-default);
+  color: $body-text-color;
   background-color: $search-background-color;
   border-width: 1px;
   border-color: $grey-dk-050;
@@ -67,9 +66,6 @@
     position: relative;
     flex-grow: 1;
     padding: $sp-2 $gutter-spacing-sm $sp-2 0;
-    font-size: 0.875rem;
-    background-color: var(--color-neutral-bg-document);
-    transition: padding-left linear #{$transition-duration * 0.5};
   }
 }
 
@@ -78,7 +74,7 @@
   padding: $sp-2;
   margin-left: .1rem;
   height: 100%;
-  font-size: var(--text-font-size-sm);
+  font-size: $font-size-1-sm;
   font-weight: 600;
   background-color: var(--color-neutral-bg-document);
   border: 1px solid var(--color-neutral-border-default);
@@ -117,7 +113,6 @@
 
   @include mq(md) {
     top: 100%;
-    width: $search-results-width;
     max-height: calc(100vh - 200%) !important;
     padding: 0 0 0 2rem;
   }
@@ -136,17 +131,30 @@
   }
 }
 
-#search-results-page li {
-  padding: $sp-2;
-}
+#search-results-page {
 
-#search-results-page h3,
-#search-results-page li p {
-  margin: 0;
-}
+  li {
+    padding: $sp-2;
+    margin: 0;
 
-#search-results-page ol li:nth-of-type(even) {
-  background: rgb( 0, 0, 0, .04 );
+    p {
+      margin: 0 auto;
+    }
+  }
+
+  h3 {
+    margin: 0;
+
+    a {
+      color: $link-color;
+      font-size: $font-size-6;
+    }
+  }
+
+  li:nth-of-type(even) {
+    background: rgb( 0, 0, 0, .04 );
+  }
+
 }
 
 .search-results-list-item {
@@ -199,6 +207,7 @@
 
   .search-result-doc-title {
     overflow: auto;
+    font-weight: 700;
   }
 }
 
@@ -246,7 +255,7 @@
 }
 
 .search-result-highlight {
-  font-weight: 600;
+  font-weight: normal;
 }
 
 .search-no-result {

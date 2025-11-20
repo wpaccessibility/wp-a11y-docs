@@ -9,7 +9,7 @@
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: $sidebar-color;
+  background-color: $sidebar-background-color;
   color: $sidebar-text-color;
 
   a {
@@ -49,7 +49,7 @@
     .main-header {
       display: none;
       padding-top: 1rem;
-      background-color: $sidebar-color;
+      background-color: $sidebar-background-color;
 
       @include mq(md) {
         display: flex;
@@ -139,6 +139,7 @@
 .site-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-top: 1rem;
 
   .lh-wrapper {
@@ -172,13 +173,13 @@
   align-items: center;
   padding-top: $sp-3;
   padding-bottom: $sp-3;
-  color: $body-heading-color;
+  color: $sidebar-text-color;
   font-family: $body-font-family;
   font-weight: 600;
   text-decoration: none;
 
-  & :hover,
-  & :focus {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 
@@ -195,29 +196,37 @@
 .menu-button-wrapper {
 
   display: flex;
-  height: 100%;
-  padding: $gutter-spacing-sm;
 
   .site-button {
-    background-color: var(--color-neutral-inverse-bg-document);
-    color: var(--color-neutral-inverse-color-document)!important;
-    border: $border;
+    display: flex;
+    align-items: center;
+    background-color: $sidebar-background-color;
+    color: $sidebar-text-color;
     border-radius: $border-radius;
-    border-color: var(--color-neutral-inverse-color-document);
+    border-color: $sidebar-text-color;
+    padding: $sp-3;
+    margin: 0 $sp-3;
 
     span {
-      padding-right: 0.5em;
+      padding-right: $sp-1;
+      font-weight: 700;
     }
 
-    & :hover,
-    & :focus {
+    .icon {
+      color: $sidebar-text-color;
+    }
+
+    &:hover,
+    &:focus {
       text-decoration: underline;
     }
+
   }
+
 }
 
 @include mq(md) {
-  header .site-button {
+  header .menu-button-wrapper {
     display: none;
   }
 }

@@ -20,7 +20,7 @@ $body-line-height: 1.5 !default;
 $content-line-height: 1.5 !default;
 $body-heading-line-height: 1.25 !default;
 
-// Variables new design
+// Colors new design
 :root {
   /* Type scale */
   --text-font-size-sm: clamp(1.000rem, 0.8118rem + 0.3765vw, 1.000rem);
@@ -34,20 +34,20 @@ $body-heading-line-height: 1.25 !default;
   /* Colors: Neutral */
   --color-neutral-bg-document: #FCFCFC; // body background color.
   --color-neutral-bg-subtle: #F6F6F7;
-  --color-neutral-bg-default: #F0F1F1;
+  --color-neutral-bg-default: #F0F1F1; // code background.
   --color-neutral-bg-hover: #EAEBEB;
   --color-neutral-bg-active: #E5E5E6;
-  --color-neutral-border-subtle: #C2C4C5;
+  --color-neutral-border-subtle: #C2C4C5; // code background border.
   --color-neutral-border-default: #848789;
   --color-neutral-border-hover: #797C7F;
   --color-neutral-border-active: #6F7276;
   --color-neutral-color-default: #606467;
   --color-neutral-color-hover: #565A5E;
   --color-neutral-color-active: #484C50;
-  --color-neutral-color-subtle: #3A3E43;
-  --color-neutral-color-document: #23282D;  // body text color.
+  --color-neutral-color-subtle: #3A3E43;    // body text color.
+  --color-neutral-color-document: #23282D;  // heading text color.
   /* Colors: Neutral Inverse */
-  --color-neutral-inverse-bg-document: #202429;
+  --color-neutral-inverse-bg-document: #202429; // $sidebar-background-color.
   --color-neutral-inverse-bg-subtle: #181C1F;
   --color-neutral-inverse-bg-default: #565A5E;
   --color-neutral-inverse-bg-hover: #484C50;
@@ -60,7 +60,7 @@ $body-heading-line-height: 1.25 !default;
   --color-neutral-inverse-color-hover: #FCFCFC;
   --color-neutral-inverse-color-active: #FCFCFC;
   --color-neutral-inverse-color-subtle: #C0C1C2;
-  --color-neutral-inverse-color-document: #FCFCFC;
+  --color-neutral-inverse-color-document: #FCFCFC; // $sidebar-text-color
   /* Colors: Informative */
   --color-informative-bg-document: #FBFCFF;
   --color-informative-bg-subtle: #F4F6FE;
@@ -71,7 +71,7 @@ $body-heading-line-height: 1.25 !default;
   --color-informative-border-default: #657EEE;
   --color-informative-border-hover: #5772EC;
   --color-informative-border-active: #4866EB;
-  --color-informative-color-default: #3654DF;
+  --color-informative-color-default: #3654DF;  // link and button color
   --color-informative-color-hover: #304CCA;
   --color-informative-color-active: #2940AA;
   --color-informative-color-subtle: #22358C;
@@ -131,20 +131,20 @@ $font-size-3: var(--text-font-size-sm);
 $font-size-4: var(--text-font-size-sm);
 $font-size-5: var(--text-font-size-sm);
 $font-size-6: var(--text-font-size-md);
-$font-size-7: var(--text-font-size-xl);
-$font-size-8:  var(--text-font-size-2xl);
+$font-size-7: var(--text-font-size-lg);
+$font-size-8:  var(--text-font-size-xl);
 $font-size-9:  var(--text-font-size-2xl);
-$font-size-10: var(--text-font-size-3xl);
+$font-size-10: var(--text-font-size-2xl);
 $font-size-10-sm: var(--text-font-size-3xl);
 
 // Colors.
 $white: #fff !default;
-$grey-dk-000: #959396 !default;
+$grey-dk-000: #959396 !default; // code background color
 $grey-dk-050: #757575 !default;
 $grey-dk-100: #5c5962 !default;
 $grey-dk-200: #44434d !default;
 $grey-dk-250: #302d36 !default;
-$grey-dk-300: #202429 !default; // Sidebar
+$grey-dk-300: #202429 !default; // Sidebar background color
 $grey-lt-000: #F0F1F1 !default;
 $grey-lt-100: #eeebee !default;
 $grey-lt-200: #ecebed !default;
