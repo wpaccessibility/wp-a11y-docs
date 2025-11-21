@@ -448,9 +448,9 @@
 
           <h1 id="kitchen-sink-options-available-for-content">Kitchen sink: options available for content</h1>
 
-<p class="lead">This page lists the options and code available for creating content in this documentation</p>
+<p class="callout lead">This page lists the options and code available for creating content in this documentation</p>
 
-<p class="info">WordPress.org provides a lot of style guides for documentation: <a href="https://make.wordpress.org/docs/style-guide/welcome/highlights/">WordPress Style Guides - highlights</a>. We value most of all: be <a href="docs/contribute/CODE_OF_CONDUCT.md">kind and professional</a> in your text and please write the text yourself or make sure the reader knows who you are citing.</p>
+<p class="callout info">WordPress.org provides a lot of style guides for documentation: <a href="https://make.wordpress.org/docs/style-guide/welcome/highlights/">WordPress Style Guides - highlights</a>. We value most of all: be <a href="docs/contribute/CODE_OF_CONDUCT.md">kind and professional</a> in your text and please write the text yourself or make sure the reader knows who you are citing.</p>
 
 <h2 id="headings">Headings</h2>
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
@@ -463,14 +463,14 @@
 
 </code></pre></div></div>
 
-<p class="alert">In blog posts the H1 is added by the template: <a href="/pr-preview/pr-220/docs/contribute/github/blog-post/">Add a blog post</a>.</p>
+<p class="callout alert">In blog posts the H1 is added by the template: <a href="/pr-preview/pr-220/docs/contribute/github/blog-post/">Add a blog post</a>.</p>
 
 <h2 id="summary-in-a-larger-text-font">Summary in a larger text font.</h2>
 
 <p>Start the paragraph with the code <code class="language-plaintext highlighter-rouge">{: .lead }</code>.</p>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
-{: .lead }
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .lead }
+When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
 </code></pre></div></div>
 
 <p class="lead">When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.</p>
@@ -499,7 +499,7 @@
 </code></pre></div></div>
 <p><img src="/pr-preview/pr-220/assets/images/small-image.jpg" alt="Library" /></p>
 
-<p class="tip">For more text options with Markdown read: <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a> on GitHub.</p>
+<p class="callout tip">For more text options with Markdown read: <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Basic writing and formatting syntax</a> on GitHub.</p>
 
 <h2 id="videos">Videos</h2>
 <p>This site uses the accessible media player Able Player.</p>
@@ -571,89 +571,69 @@ For example: ```html.</p>
 
 <h2 id="callouts">Callouts</h2>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .info }
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .callout  .info }
 This is an informational message and uses the “info” callout.
 
-{: .tip }
+{: .callout  .tip }
 Use the “tip” callout to highlight tips.
 
-{: .alert }
+{: .callout  .alert }
 The “alert” callout is for alerting readers to important messages.
 
-{: .warning }
+{: .callout  .warning }
 When something is particularly precarious, use the “warning” callout.
 
-{: .example }
+{: .callout  .example }
 Give an example with the "example" callout. 
 The title of the callout will be "Example".
 
-{: .do }
+{: .callout  .do }
 Example of good practice.
 
-{: .dont }
+{: .callout  .dont }
 Example of bad practice.
 
 </code></pre></div></div>
 
-<p class="info">This is an informational message and uses the “info” callout.</p>
+<p class="callout info">This is an informational message and uses the “info” callout.</p>
 
-<p class="tip">Use the “tip” callout to highlight tips.</p>
+<p class="callout tip">Use the “tip” callout to highlight tips.</p>
 
-<p class="alert">The “alert” callout is for alerting readers to important messages.</p>
+<p class="callout alert">The “alert” callout is for alerting readers to important messages.</p>
 
-<p class="warning">When something is particularly precarious, use the “warning” callout.</p>
+<p class="callout warning">When something is particularly precarious, use the “warning” callout.</p>
 
-<p class="example">Give an example with the example” callout. The title of the callout will be “Example”.</p>
+<p class="callout example">Give an example with the example. The title of the callout will be “Example”.</p>
 
-<p class="do">Example of how to do something. The title of the callout will be “Do”.</p>
+<p class="callout do">Example of how to do something. The title of the callout will be “Do”.</p>
 
-<p class="dont">Example of how to not to do something. The title of the callout will be “Don’t”.</p>
+<p class="callout dont">Example of how not to do something. The title of the callout will be “Don’t”.</p>
 
 <h3 id="labels">Labels</h3>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-blue
-{: .label .label-blue }
+<p class="callout info">Note: these are not form labels, but text labels.</p>
 
-green
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{: .label .label-blue }
+Blue
+
 {: .label .label-green }
+Green
 
-purple
-{: .label .label-purple }
-
-yellow
 {: .label .label-yellow }
+Yellow
 
-red
 {: .label .label-red }
+Red
 
-<span class="gs">**bold**</span>
-{: .label }
-
-<span class="ge">*italic*</span>
-{: .label }
-
-<span class="ges">***bold + italic***</span>
-{: .label }
 </code></pre></div></div>
 
-<p class="label label-blue">blue</p>
+<p class="label label-blue">Blue</p>
 
-<p class="label label-green">green</p>
+<p class="label label-green">Green</p>
 
-<p class="label label-purple">purple</p>
+<p class="label label-yellow">Yellow</p>
 
-<p class="label label-yellow">yellow</p>
-
-<p class="label label-red">red</p>
-
-<p class="label"><strong>bold</strong></p>
-
-<p class="label"><em>italic</em></p>
-
-<p class="label"><strong><em>bold + italic</em></strong></p>
-
-<p class="info">Note: these are not form labels, but text labels.</p>
+<p class="label label-red">Red</p>
 
 <h3 id="collapsed-section">Collapsed Section</h3>
 
