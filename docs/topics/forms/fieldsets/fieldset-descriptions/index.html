@@ -10,7 +10,7 @@
 
 
 
-<title>Resources, WP Accessibility Knowledge Base</title>
+<title>Fieldset description, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -428,6 +428,16 @@
 
         
             
+            
+            
+        
+
+    
+
+        
+
+        
+            
 
 
 
@@ -435,7 +445,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/docs/topics/design/'>Design & user experience</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Resources</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/docs/topics/forms/'>Web forms</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/docs/topics/forms/fieldsets/'>Group form fields</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Fieldset description</li>
     </ol>
 </nav>
 
@@ -444,18 +454,74 @@
 
         <main>
 
-          <h1 id="resources-about-design-and-user-experience">Resources about Design and user experience</h1>
+          <h1 id="description-with-a-fieldset">Description with a fieldset</h1>
 
-<p>For a more in depth understanding of how to create an accessible design and user experience.</p>
+<p>Radio buttons, checkboxes, and other groups of related fields (like addresses) can be grouped in fieldsets. The question or the subject will be the <code class="language-plaintext highlighter-rouge">legend</code>. Place the description below the legend just above the first label/form field. The description is linked to the fieldset element with <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</p>
+
+<h2 id="example">Example</h2>
+
+<p><img src="/assets/images/fieldset-description.png" alt="Screenshot of a fieldset, with a legend and 2 radio buttons" /></p>
+
+<p>In HTML, simplified</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;fieldset</span> <span class="na">aria-describedby=</span><span class="s">"description-log-in"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;legend&gt;</span>Do you want to log in?<span class="nt">&lt;/legend&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"description-log-in"</span><span class="nt">&gt;</span>
+      When you log in, your details are already filled in, and we can help you faster.
+  <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;input</span>
+      <span class="na">id=</span><span class="s">"log-in-yes"</span>
+      <span class="na">type=</span><span class="s">"radio"</span>
+      <span class="na">name=</span><span class="s">"log-in"</span>
+      <span class="na">value=</span><span class="s">"yes"</span>
+    <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"log-in-yes"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/label&gt;</span>
+
+    <span class="nt">&lt;input</span>
+      <span class="na">id=</span><span class="s">"log-in-no"</span>
+      <span class="na">type=</span><span class="s">"radio"</span>
+      <span class="na">name=</span><span class="s">"log-in"</span>
+      <span class="na">value=</span><span class="s">"no"</span>
+    <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"log-in-no"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;/fieldset&gt;</span>
+</code></pre></div></div>
+
+<h2 id="examples">Examples</h2>
+
+<p class="do">Connect a description to the form field, using aria-describedby.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"new-password"</span><span class="nt">&gt;</span>New password<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"description-new-password"</span><span class="nt">&gt;</span>
+    Choose a password of at least 8 characters long.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;input</span>
+  <span class="na">id=</span><span class="s">"new-password"</span>
+  <span class="na">type=</span><span class="s">"password"</span>
+  <span class="na">name=</span><span class="s">"new-password"</span>
+  <span class="na">aria-describedby=</span><span class="s">"description-new-password"</span>
+  <span class="na">autocomplete=</span><span class="s">"new-password"</span>
+<span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h2 id="wcag-success-criteria-for-descriptions">WCAG Success Criteria for descriptions</h2>
+
+<p>A description is optional, but it can help users to understand better what they need to fill out.
+Then a description with a fieldset is necessary to meet the WCAG success criterion <a href="https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions">3.3.2 Labels or Instructions</a> (Level AA).</p>
+
+<h2 id="related-pages-in-this-documentation">Related pages in this documentation</h2>
 
 <ul>
-  <li>GOV.UK: <a href="https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/">Dos and don’ts on designing for accessibility</a>.</li>
-  <li>Heydon Pickering: <a href="https://inclusive-components.design/">Inclusive Components</a>: A blog trying to be a pattern library. All about designing inclusive web interfaces, piece by piece.</li>
-  <li>Heydon Pickering: <a href="https://www.smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/">Inclusive Design Patterns</a></li>
-  <li>Heydon Pickering: <a href="https://github.com/Heydon/inclusive-design-checklist">Inclusive Design Checklist</a>, a checklist on GitHub</li>
-  <li>Steven Lambert: <a href="https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/">Designing For Accessibility And Inclusion</a></li>
-  <li>Andrée Lange: <a href="https://www.a11y-collective.com/blog/five-myths-about-accessible-design/">Five myths about accessible design</a></li>
-  <li><a href="https://lawsofux.com/">Laws of UX</a>.</li>
+  <li><a href="docs/topics/forms/fieldsets/">Group form fields</a>.</li>
+  <li><a href="/docs/topics/forms/fieldsets/legend/">Fieldset legend</a>.</li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby">ARIA: aria-describedby attribute</a>.</li>
+  <li>NL Design System <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
 </ul>
 
 
@@ -470,7 +536,7 @@
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/resources.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/forms/fieldsets/fieldset-descriptions.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 

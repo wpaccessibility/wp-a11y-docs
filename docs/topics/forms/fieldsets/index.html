@@ -253,7 +253,13 @@
 
           <a href="/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
+          <a href="/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a><button class="nav-list-expander btn-reset" aria-label="Group form fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/fieldsets/legend/" class="nav-list-link">Fieldset legend</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/fieldsets/fieldset-descriptions/" class="nav-list-link">Fieldset description</a></li></ul></li><li class="nav-list-item">
 
           <a href="/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
 
@@ -440,35 +446,89 @@
 
           <h1 id="fieldset-and-legend-to-group-form-fields">Fieldset and legend to group form fields</h1>
 
-<p class="alert">This content will be rewritten and expanded.<br />
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/157">GitHub #157 Topic  Fieldsets to group form fields</a>.</p>
+<p>Group form fields that belong together inside a <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code> with a descriptive <code class="language-plaintext highlighter-rouge">&lt;legend&gt;</code>. The advantage to this is that the form fields are grouped together both visually and semantically, making the design match the code.</p>
 
-<p>The <code class="language-plaintext highlighter-rouge">fieldset</code> and <code class="language-plaintext highlighter-rouge">legend</code> elements are a standard way to group fields. When a screen reader enters a fieldset, the <code class="language-plaintext highlighter-rouge">legend</code> of that group will be announced. This is a helpful way of grouping related fields together, such as differentiating between an order address and a shipping address; but is critical when grouping radio buttons and checkboxes.</p>
+<p>The <code class="language-plaintext highlighter-rouge">fieldset</code> and <code class="language-plaintext highlighter-rouge">legend</code> elements are the native HTML way to group fields. When a screen reader enters a fieldset, the <code class="language-plaintext highlighter-rouge">legend</code> of that group will be announced. This is a helpful way of grouping related fields together, such as differentiating between an order address and a shipping address; but is critical when grouping radio buttons and checkboxes.</p>
 
-<p>In radio and checkbox groups, it is common that the <code class="language-plaintext highlighter-rouge">label</code> holds the answer to a question that is presented earlier. Without an appropriate <code class="language-plaintext highlighter-rouge">legend</code>, this question may not be presented to users of assistive technology.</p>
+<p><img src="/assets/images/fieldset-radio-buttons.png" alt="Screenshot of grouped radio buttons that let you select the best color" /></p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;fieldset&gt;</span>
-<span class="nt">&lt;Legend&gt;</span>Which is the best color?<span class="nt">&lt;/legend&gt;</span>
+    
+    <span class="nt">&lt;legend&gt;</span>Which is the best color?<span class="nt">&lt;/legend&gt;</span>
 
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"purple"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"purple"</span> <span class="na">value=</span><span class="s">"purple"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"purple"</span><span class="nt">&gt;</span>Purple<span class="nt">&lt;/label&gt;</span>
     
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"aubergine"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"aubergine"</span> <span class="na">value=</span><span class="s">"aubergine"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"aubergine"</span><span class="nt">&gt;</span>Aubergine<span class="nt">&lt;/label&gt;</span>
     
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"magenta"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"magenta"</span> <span class="na">value=</span><span class="s">"magenta"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"magenta"</span><span class="nt">&gt;</span>Magenta<span class="nt">&lt;/label&gt;</span>
     
-    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"all"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"all"</span> <span class="na">value=</span><span class="s">"all"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"all"</span><span class="nt">&gt;</span>All of the above<span class="nt">&lt;/label&gt;</span>
 
 <span class="nt">&lt;/fieldset&gt;</span>
 </code></pre></div></div>
 
+<p>WCAG requires that the structure and relationships are programmatically determinable, and fieldset/legend is one way to meet that. The same can be achieved by using <code class="language-plaintext highlighter-rouge">role="group"</code> and <code class="language-plaintext highlighter-rouge">aria-labelledby</code>. But always keep the <a href="https://www.w3.org/TR/using-aria/#rule1">first rule of ARIA use</a> in mind:</p>
+
+<blockquote>
+  <p>If you can use a native HTML element or attribute with the semantics and behavior you require already built in, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, then do so.</p>
+</blockquote>
+
+<h2 id="example-using-aria-not-preferred">Example using ARIA (not preferred)</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"group"</span> <span class="na">aria-labelledby=</span><span class="s">"dummy-legend"</span><span class="nt">&gt;</span>
+    
+    <span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"dummy-legend"</span><span class="nt">&gt;</span>Which is the best color?<span class="nt">&lt;/h2&gt;</span>
+
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"purple"</span> <span class="na">value=</span><span class="s">"purple"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"purple"</span><span class="nt">&gt;</span>Purple<span class="nt">&lt;/label&gt;</span>
+    
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"aubergine"</span> <span class="na">value=</span><span class="s">"aubergine"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"aubergine"</span><span class="nt">&gt;</span>Aubergine<span class="nt">&lt;/label&gt;</span>
+    
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"magenta"</span> <span class="na">value=</span><span class="s">"magenta"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"magenta"</span><span class="nt">&gt;</span>Magenta<span class="nt">&lt;/label&gt;</span>
+    
+    <span class="nt">&lt;input</span> <span class="na">name=</span><span class="s">"colorOption"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"all"</span> <span class="na">value=</span><span class="s">"all"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"all"</span><span class="nt">&gt;</span>All of the above<span class="nt">&lt;/label&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="wcag-success-criteria-for-naming-grouped-form-fields">WCAG Success Criteria for naming grouped form fields</h2>
+
+<p>Naming grouped form fields is necessary to meet the WCAG success criteria:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships">1.3.1 Info and relationships</a> (Level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions">3.3.2 Labels or Instructions</a> (Level AA).</li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li>W3C: <a href="https://www.w3.org/WAI/tutorials/forms/grouping/">Grouping Controls</a></li>
+  <li>NL Design System: <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
+  <li>MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset">The Field Set element</a>.</li>
+</ul>
 
 
           
-            
+            <h2 class="no_toc" id="table-of-contents">Pages in this section</h2>
+<ul>
+  
+  <li>
+    <a href="/docs/topics/forms/fieldsets/legend/">Fieldset legend</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/fieldsets/fieldset-descriptions/">Fieldset description</a>
+  </li>
+  
+</ul>
           
 
           
@@ -478,7 +538,7 @@ Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues
 
     
     <p class="text-small text-grey-dk-000 mb-0">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/forms/fieldsets.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/forms/fieldsets/index.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
