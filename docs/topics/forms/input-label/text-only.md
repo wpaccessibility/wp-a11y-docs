@@ -70,7 +70,7 @@ Place the link to the terms of delivery inside the label.
 
 ```
 
-## WCAG Succes Criteria
+## WCAG Success Criteria
 
 Giving a form control an accessible name is necessary to meet the WCAG success criteria:
 

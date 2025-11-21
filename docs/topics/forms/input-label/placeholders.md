@@ -32,7 +32,7 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 <input type="search" id="search" name="s" placeholder="For example: apples">
 ```
 
-## WCAG Succes Criteria
+## WCAG Success Criteria
 
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [2.4.6 Headings and labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) (Level AA).
