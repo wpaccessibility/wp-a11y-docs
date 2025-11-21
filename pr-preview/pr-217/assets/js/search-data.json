@@ -691,7 +691,7 @@
   },"115": {
     "doc": "Group form fields",
     "title": "Example using ARIA (not preferred)",
-    "content": "&lt;div role=\"group\" aria-labelledby=\"dummy-legend\"&gt; &lt;h2 id=\"dummy-legend\"&gt;Which is the best color?&lt;/h2&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"purple\" /&gt; &lt;label for=\"purple\"&gt;Purple&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"aubergine\" /&gt; &lt;label for=\"aubergine\"&gt;Aubergine&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"magenta\" /&gt; &lt;label for=\"magenta\"&gt;Magenta&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"all\" /&gt; &lt;label for=\"all\"&gt;All of the above&lt;/label&gt; &lt;/div&gt; . ",
+    "content": "&lt;div role=\"group\" aria-labelledby=\"dummy-legend\"&gt; &lt;h2 id=\"dummy-legend\"&gt;Which is the best color?&lt;/h2&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"purple\" value=\"purple\" /&gt; &lt;label for=\"purple\"&gt;Purple&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"aubergine\" value=\"aubergine\" /&gt; &lt;label for=\"aubergine\"&gt;Aubergine&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"magenta\" value=\"magenta\" /&gt; &lt;label for=\"magenta\"&gt;Magenta&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"all\" value=\"all\" /&gt; &lt;label for=\"all\"&gt;All of the above&lt;/label&gt; &lt;/div&gt; . ",
     "url": "/pr-preview/pr-217/docs/topics/forms/fieldsets/#example-using-aria-not-preferred",
     "relUrl": "/docs/topics/forms/fieldsets/#example-using-aria-not-preferred"
   },"116": {
