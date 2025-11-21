@@ -21,16 +21,16 @@ The `fieldset` and `legend` elements are the native HTML way to group fields. Wh
     
     <legend>Which is the best color?</legend>
 
-    <input name="colorOption" type="radio" id="purple" />
+    <input name="colorOption" type="radio" id="purple" value="purple" />
     <label for="purple">Purple</label>
     
-    <input name="colorOption" type="radio" id="aubergine" />
+    <input name="colorOption" type="radio" id="aubergine" value="aubergine" />
     <label for="aubergine">Aubergine</label>
     
-    <input name="colorOption" type="radio" id="magenta" />
+    <input name="colorOption" type="radio" id="magenta" value="magenta" />
     <label for="magenta">Magenta</label>
     
-    <input name="colorOption" type="radio" id="all" />
+    <input name="colorOption" type="radio" id="all" value="all" />
     <label for="all">All of the above</label>
 
 </fieldset>

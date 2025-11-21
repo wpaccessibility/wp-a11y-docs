@@ -60,10 +60,10 @@ The reverse is not true: a heading may not contain a `legend`, because the `lege
     
     <h3><legend>Which is the best color?</legend></h3>
 
-    <input name="colorOption" type="radio" id="purple" />
+    <input name="colorOption" type="radio" id="purple" value="purple" />
     <label for="purple">Purple</label>
     
-    <input name="colorOption" type="radio" id="aubergine" />
+    <input name="colorOption" type="radio" id="aubergine" value="aubergine" />
     <label for="aubergine">Aubergine</label>
     
 </fieldset>
