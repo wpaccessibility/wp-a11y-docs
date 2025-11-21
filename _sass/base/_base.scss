@@ -52,6 +52,7 @@ p {
 a {
   color: $link-color;
   text-decoration: underline;
+  text-underline-offset: 2px;
 
   &:hover {
     text-decoration: none;
@@ -60,15 +61,6 @@ a {
 
 button {
   cursor: pointer;
-}
-
-a:not([class]) {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-
-  &:hover {
-    text-decoration-color: rgba($link-color, 0.45);
-  }
 }
 
 code {
@@ -105,15 +97,15 @@ hr {
   border: 0;
 }
 
-// adds a GitHub-style sidebar to blockquotes
+// adds a GitHub-style sidebar to blockquotes.
 blockquote {
   margin: 10px 0;
 
-  // resets user-agent stylesheets for blockquotes
+  // resets user-agent stylesheets for blockquotes.
   margin-block-start: 0;
   margin-inline-start: 0;
   padding-left: 1rem;
-  border-left: 3px solid $green-000;
+  border-left: 3px solid var(--color-positive-border-default);
 }
 
 ::placeholder {

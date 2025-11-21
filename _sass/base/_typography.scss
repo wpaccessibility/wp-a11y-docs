@@ -20,38 +20,38 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   line-height: 1.1;
-  font-size: var(--text-font-size-2xl);
+  @include fs-7;
 }
 
 h2 {
   line-height: 1.25;
-  font-size: var(--text-font-size-xl);
+  @include fs-6;
 }
 
 h3 {
-  font-size: var(--text-font-size-lg);
   line-height: 1.25;
+  @include fs-5;
 }
 
 h4 {
-  font-size: var(--text-font-size-md);
+  @include fs-4;
 }
 
 h5 {
-  font-size: var(--text-font-size-md);
+  @include fs-3;
 }
 
 h6 {
-  font-size: var(--text-font-size-sm);
+  @include fs-2;
 }
 
 small,
 .text-small {
-  font-size: var(--text-font-size-sm);
+  @include fs-2;
 }
 
 .lead {
-  font-size: var(--text-font-size-lg);
+  @include fs-6;
 }
 
 .text-mono {

@@ -34,10 +34,10 @@ $body-heading-line-height: 1.25 !default;
   /* Colors: Neutral */
   --color-neutral-bg-document: #FCFCFC; // body background color.
   --color-neutral-bg-subtle: #F6F6F7;
-  --color-neutral-bg-default: #F0F1F1; // code background.
+  --color-neutral-bg-default: #F0F1F1; // code background color.
   --color-neutral-bg-hover: #EAEBEB;
   --color-neutral-bg-active: #E5E5E6;
-  --color-neutral-border-subtle: #C2C4C5; // code background border.
+  --color-neutral-border-subtle: #C2C4C5; // code border border.
   --color-neutral-border-default: #848789;
   --color-neutral-border-hover: #797C7F;
   --color-neutral-border-active: #6F7276;
@@ -124,52 +124,30 @@ $body-heading-line-height: 1.25 !default;
 }
 
 // Font sizes.
-$font-size-1: var(--text-font-size-sm);
+$font-size-1:     var(--text-font-size-sm);
 $font-size-1-sm:  var(--text-font-size-sm);
-$font-size-2:  var(--text-font-size-sm);
-$font-size-3: var(--text-font-size-sm);
-$font-size-4: var(--text-font-size-sm);
-$font-size-5: var(--text-font-size-sm);
-$font-size-6: var(--text-font-size-md);
-$font-size-7: var(--text-font-size-lg);
-$font-size-8:  var(--text-font-size-xl);
-$font-size-9:  var(--text-font-size-2xl);
-$font-size-10: var(--text-font-size-2xl);
+$font-size-2:     var(--text-font-size-sm);
+$font-size-3:     var(--text-font-size-sm);
+$font-size-4:     var(--text-font-size-sm);
+$font-size-5:     var(--text-font-size-sm);
+$font-size-6:     var(--text-font-size-md);
+$font-size-7:     var(--text-font-size-lg);
+$font-size-8:     var(--text-font-size-xl);
+$font-size-9:     var(--text-font-size-2xl);
+$font-size-10:    var(--text-font-size-2xl);
 $font-size-10-sm: var(--text-font-size-3xl);
 
-// Colors.
-$white: #fff !default;
-$grey-dk-000: #959396 !default; // code background color
-$grey-dk-050: #757575 !default;
-$grey-dk-100: #5c5962 !default;
-$grey-dk-200: #44434d !default;
-$grey-dk-250: #302d36 !default;
-$grey-dk-300: #202429 !default; // Sidebar background color
-$grey-lt-000: #F0F1F1 !default;
-$grey-lt-100: #eeebee !default;
-$grey-lt-200: #ecebed !default;
+// Colors. TODO
+$grey-dk-000: var(--color-neutral-border-default) !default; // code background color
+$grey-dk-050:var(--color-neutral-border-hover) !default;
+$grey-dk-100: var(--color-neutral-color-hover) !default;
+$grey-dk-200: var(--color-neutral-color-active) !default;
+$grey-dk-250: var(--color-neutral-color-subtle) !default;
+$grey-dk-300: var(--color-neutral-color-document) !default; // Sidebar background color
+$grey-lt-000: var(--color-neutral-bg-subtle) !default;
+$grey-lt-100: var(--color-neutral-bg-hover) !default;
+$grey-lt-200: var(--color-neutral-bg-active) !default;
 $grey-lt-300: #e6e1e8 !default;
-$purple-000: #7253ed !default;
-$purple-100: #5e41d0 !default;
-$purple-200: #4e26af !default;
-$purple-300: #381885 !default;
-$wordpress-blue-000: #3858e9 !default;
-$blue-000: #2c84fa !default;
-$blue-100: #2869e6 !default;
-$blue-200: #264caf !default;
-$blue-300: #183385 !default;
-$green-000: #41d693 !default;
-$green-100: #11b584 !default;
-$green-200: #009c7b !default;
-$green-300: #026e57 !default;
-$yellow-000: #ffeb82 !default;
-$yellow-100: #fadf50 !default;
-$yellow-200: #f7d12e !default;
-$yellow-300: #e7af06 !default;
-$red-000: #f77e7e !default;
-$red-100: #f96e65 !default;
-$red-200: #e94c4c !default;
-$red-300: #b62424 !default;
 
 // Spacing.
 $spacing-unit: 1rem; // 1rem == 16px

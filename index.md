@@ -8,12 +8,12 @@ permalink: /
 
 # WP Accessibility Knowledge Base
 
-{: .fs-6 .fw-300 }
+{: .lead }
 Documentation about accessibility for WordPress users and creators. For the community, by the community.
 
 ---
 
-{: .alert }
+{: .callout .alert}
 **Please note**: this documentation is a work in progress.  
 The content is not finished yet and the website needs an accessibility audit.
 

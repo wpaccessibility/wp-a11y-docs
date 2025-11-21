@@ -7,7 +7,7 @@ nav_order: 5
 
 # Fieldset and legend to group form fields
 
-{: .alert }
+{: .callout  .alert }
 This content will be rewritten and expanded.  
 Related issue on [GitHub #157 Topic  Fieldsets to group form fields](https://github.com/wpaccessibility/wp-a11y-docs/issues/157).  
 

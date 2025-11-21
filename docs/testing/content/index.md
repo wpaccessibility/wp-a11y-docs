@@ -7,7 +7,7 @@ nav_order: 3
 
 # Content checks for web accessibility
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and expanded.
 Related issue on [GitHub #171 Topic Content checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/171).    
 

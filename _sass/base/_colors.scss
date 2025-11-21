@@ -2,17 +2,27 @@
 @use "sass:color";
 
 $color-scheme: light !default;
+
 $body-background-color: var(color-neutral-bg-document) !default;
-$body-text-color:  var(--color-neutral-color-subtle) !default;
+$body-text-color:       var(--color-neutral-color-subtle) !default;
+
 $body-heading-color: var(--color-neutral-bg-document) !default;
-$link-color:  var(--color-informative-color-default) !default;
+
+$link-color:           var(--color-informative-color-default) !default;
 $nav-child-link-color: var(--color-neutral-inverse-color-subtle) !default;
+
 $sidebar-background-color: var(--color-neutral-inverse-bg-document) !default;
-$sidebar-text-color: var(--color-neutral-inverse-color-document) !default;
+$sidebar-text-color:       var(--color-neutral-inverse-color-document) !default;
+
 $base-button-color: var(--color-neutral-bg-default) !default;
 $btn-primary-color: var(--color-informative-color-default) !default;
+
 $code-background-color: var(--color-neutral-bg-default) !default;
+$code-border-color: var(--color-neutral-border-subtle) !default;
+
 $feedback-color: var(--color-neutral-bg-default) !default;
+
 $table-background-color: var(--color-neutral-bg-subtle) !default;
-$search-background-color: var(--color-neutral-bg-subtle) !default;
+
+$search-background-color:     var(--color-neutral-bg-subtle) !default;
 $search-result-preview-color: var(--color-neutral-color-subtle) !default;

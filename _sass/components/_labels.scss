@@ -2,35 +2,39 @@
 @use "../base/colors" as *;
 @use "../abstracts/mixins" as *;
 
-// Labels (not the form kind)
+// Labels (not the form kind).
 
-.label,
-.label-blue {
+.label {
+  color: var(--color-neutral-color-default);
+  background-color: var(--color-neutral-bg-default);
   display: inline-block;
+  font-weight: 700;
   padding: 0.16em 0.56em;
   margin-right: $sp-2;
   margin-left: $sp-2;
-  color: $white;
   vertical-align: middle;
-  background-color: $blue-100;
   border-radius: 12px;
 
   @include fs-2;
 }
 
+.label-blue {
+  color: var(--color-informative-color-default);
+  background-color: var(--color-informative-bg-default);
+}
+
 .label-green {
-  background-color: $green-300;
-}
-
-.label-purple {
-  background-color: $purple-100;
-}
-
-.label-red {
-  background-color: $red-300;
+  color: var(--color-positive-color-default);
+  background-color: var(--color-positive-bg-default);
 }
 
 .label-yellow {
-  color: $grey-dk-200;
-  background-color: $yellow-200;
+  color: var(--color-warning-color-default);
+  background-color: var(--color-warning-bg-default);
 }
+.label-red {
+  color: var(--color-negative-color-default);
+  background-color: var(--color-negative-bg-default);
+}
+
+

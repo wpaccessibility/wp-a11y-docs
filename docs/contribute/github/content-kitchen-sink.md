@@ -7,10 +7,10 @@ has_video: true
 
 # Kitchen sink: options available for content
 
-{: .lead }
+{: .callout  .lead }
 This page lists the options and code available for creating content in this documentation
 
-{: .info }
+{: .callout  .info }
 WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
 
 ## Headings
@@ -25,7 +25,7 @@ WordPress.org provides a lot of style guides for documentation: [WordPress Style
 
 ```
 
-{: .alert }
+{: .callout  .alert }
 In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}}/docs/contribute/github/blog-post/).
 
 ## Summary in a larger text font.
@@ -33,12 +33,13 @@ In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}
 Start the paragraph with the code `{: .lead }`.
 
 ```markdown
-When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
 {: .lead }
+When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
 ```
 
-When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
 {: .lead  }
+When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
+
 
 ## Text
 ```markdown
@@ -68,7 +69,7 @@ An image: ![Alt text](url)
 ```
 ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 
-{: .tip } 
+{: .callout  .tip } 
 For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos
@@ -151,108 +152,83 @@ For larger pieces of content, you can add to a `<p>`, `<div>`or even a landmark,
 ## Callouts
  
 ```markdown
-{: .info }
+{: .callout  .info }
 This is an informational message and uses the “info” callout.
 
-{: .tip }
+{: .callout  .tip }
 Use the “tip” callout to highlight tips.
 
-{: .alert }
+{: .callout  .alert }
 The “alert” callout is for alerting readers to important messages.
 
-{: .warning }
+{: .callout  .warning }
 When something is particularly precarious, use the “warning” callout.
 
-{: .example }
+{: .callout  .example }
 Give an example with the "example" callout. 
 The title of the callout will be "Example".
 
-{: .do }
+{: .callout  .do }
 Example of good practice.
 
-{: .dont }
+{: .callout  .dont }
 Example of bad practice.
 
 ```
 
-{: .info }
+{: .callout  .info }
 This is an informational message and uses the “info” callout.
 
-{: .tip }
+{: .callout  .tip }
 Use the “tip” callout to highlight tips.
 
-{: .alert }
+{: .callout  .alert }
 The “alert” callout is for alerting readers to important messages.
 
-{: .warning }
+{: .callout  .warning }
 When something is particularly precarious, use the “warning” callout.
 
-{: .example }
-Give an example with the example" callout. The title of the callout will be "Example".
+{: .callout  .example }
+Give an example with the example. The title of the callout will be "Example".
 
-{: .do }
+{: .callout  .do }
 Example of how to do something. The title of the callout will be "Do".
 
-{: .dont }
-Example of how to not to do something. The title of the callout will be "Don't".
+{: .callout  .dont }
+Example of how not to do something. The title of the callout will be "Don't".
 
 ### Labels
 
-```markdown
-
-blue
-{: .label .label-blue }
-
-green
-{: .label .label-green }
-
-purple
-{: .label .label-purple }
-
-yellow
-{: .label .label-yellow }
-
-red
-{: .label .label-red }
-
-**bold**
-{: .label }
-
-*italic*
-{: .label }
-
-***bold + italic***
-{: .label }
-```
-
-blue
-{: .label .label-blue }
-
-green
-{: .label .label-green }
-
-purple
-{: .label .label-purple }
-
-yellow
-{: .label .label-yellow }
-
-red
-{: .label .label-red }
-
-**bold**
-{: .label }
-
-*italic*
-{: .label }
-
-***bold + italic***
-{: .label }
-
-
-{: .info }
+{: .callout  .info }
 Note: these are not form labels, but text labels.
 
+
+```markdown
+{: .label .label-blue }
+Blue
+
+{: .label .label-green }
+Green
+
+{: .label .label-yellow }
+Yellow
+
+{: .label .label-red }
+Red
+
+```
+
+{: .label .label-blue }
+Blue
+
+{: .label .label-green }
+Green
+
+{: .label .label-yellow }
+Yellow
+
+{: .label .label-red }
+Red
 
 ### Collapsed Section
 

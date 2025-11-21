@@ -3,263 +3,86 @@
 
 // Callouts.
 
-div.opaque {
-  background-color: var(--color-neutral-bg-document);
+.callout {
+  padding: 1rem;
+  border-left: $border-radius solid var(--color-neutral-bg-subtle);
+
+  &::before {
+    display: block;
+    font-family: $heading-font-family;
+    font-weight: 600;
+    padding-bottom: $sp-2;
+  }
 }
 
 p.example {
   background: var(--color-informative-bg-document);
-  border-left: $border-radius solid var(--color-informative-border-default);
-  border-radius: $border-radius;
-  padding: 0.8rem;
+  border-left-color: var(--color-informative-border-default);
 
   &::before {
+    color: var(--color-informative-color-document);
     content: "Example";
-    display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
   }
-
-  > .tutorial-title {
-    display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.tutorial-title {
-  background: rgba($green-000, 0.1);
-  border-left: $border-radius solid $green-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
 }
 
 p.alert {
-  background: rgba($yellow-000, 0.1);
-  border-left: $border-radius solid $yellow-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
+  background: var(--color-warning-bg-document);
+  border-left-color: var(--color-warning-border-default);
 
   &::before {
+    color: var(--color-warning-color-document);
     content: "Alert";
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-
-  > .alert-title {
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.alert-title {
-  background: rgba($yellow-000, 0.1);
-  border-left: $border-radius solid $yellow-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
   }
 }
 
 p.tip {
-  background: rgba($green-000, 0.1);
-  border-left: $border-radius solid $green-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
+  background: var(--color-positive-bg-document);
+  border-left-color: var(--color-positive-border-default);
 
   &::before {
+    color: var(--color-positive-color-document);
     content: "Tip";
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-
-  > .tip-title {
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.tip-title {
-  background: rgba($green-000, 0.1);
-  border-left: $border-radius solid $green-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
   }
 }
 
 p.info {
   background: var(--color-informative-bg-default);
-  border-left: $border-radius solid var(--color-informative-border-default);
-  border-radius: $border-radius;
-  padding: 0.8rem;
+  border-left-color: var(--color-informative-border-default);
 
   &::before {
+    color: var(--color-informative-color-document);
     content: "Info";
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-
-  > .info-title {
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.info-title {
-  background: rgba($purple-000, 0.1);
-  border-left: $border-radius solid $purple-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
   }
 }
 
 p.warning {
-  background: rgba($red-000, 0.1);
-  border-left: $border-radius solid $red-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
+  background: var(--color-negative-bg-default);
+  border-left-color: var(--color-negative-border-default);
 
   &::before {
+    color: var(--color-negative-color-subtle);
     content: "Warning";
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-
-  > .warning-title {
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
   }
 }
 
-p.warning-title {
-  background: rgba($red-000, 0.1);
-  border-left: $border-radius solid $red-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-}
 
 p.dont {
-  background: rgba($red-000, 0.1);
-  border: 2px solid $red-300;
+  background: var(--color-negative-bg-default);
+  border: 2px solid var(--color-negative-border-default);
   border-radius: $border-radius;
-  padding: 0.8rem;
 
   &::before {
+    color: var(--color-negative-color-subtle);
     content: "Don't";
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-
-  > .dont-title {
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.dont-title {
-  background: rgba($red-000, 0.1);
-  border: 2px solid $red-300;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
   }
 }
 
 p.do {
-  background: rgba($green-000, 0.1);
-  border: 2px solid $green-000;
+  background: var(--color-positive-bg-default);
+  border: 2px solid var(--color-positive-border-default);
   border-radius: $border-radius;
-  padding: 0.8rem;
 
   &::before {
     content: "Do";
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-
-  > .dont-title {
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
-  }
-}
-
-p.do-title {
-  background: rgba($green-000, 0.1);
-  border: 2px solid $green-000;
-  border-radius: $border-radius;
-  padding: 0.8rem;
-
-  > p:first-child {
-    margin-top: 0;
-    margin-bottom: 0;
-display: block;
-    font-family: $heading-font-family;
-    font-weight: 600;
-    padding-bottom: 0.125rem;
   }
 }
