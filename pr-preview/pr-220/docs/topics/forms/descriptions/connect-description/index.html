@@ -256,7 +256,13 @@
 
           <a href="/pr-preview/pr-220/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-220/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-220/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a><button class="nav-list-expander btn-reset" aria-label="Group form fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-220/docs/topics/forms/fieldsets/legend/" class="nav-list-link">Fieldset legend</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-220/docs/topics/forms/fieldsets/fieldset-descriptions/" class="nav-list-link">Fieldset description</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-220/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
 
@@ -489,56 +495,9 @@
         <span class="na">autocomplete=</span><span class="s">"name"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<h2 id="connect-the-description-of-a-fieldset-to-the-fieldset-element">Connect the description of a fieldset to the fieldset element</h2>
-
-<p>Radio buttons, checkboxes, and other groups of related fields (like addresses) can be grouped in fieldsets. The question or the subject will be the <code class="language-plaintext highlighter-rouge">legend</code>. Place the description below the legend just above the first label/form field. The description is linked to the fieldset element with <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</p>
-
-<h2 id="example">Example</h2>
-
-<p><img src="/pr-preview/pr-220/assets/images/fieldset-description.png" alt="Screenshot of a fieldset, with a legend and 2 radio buttons" /></p>
-
-<p>IN HTML, simplified</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;fieldset</span> <span class="na">aria-describedby=</span><span class="s">"description-log-in"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;legend&gt;</span>Do you want to log in?<span class="nt">&lt;/legend&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"description-log-in"</span><span class="nt">&gt;</span>
-      When you log in, your details are already filled in, and we can help you faster.
-  <span class="nt">&lt;/p&gt;</span>
-    <span class="nt">&lt;input</span>
-      <span class="na">id=</span><span class="s">"log-in-yes"</span>
-      <span class="na">type=</span><span class="s">"radio"</span>
-      <span class="na">name=</span><span class="s">"log-in"</span>
-      <span class="na">value=</span><span class="s">"yes"</span>
-    <span class="nt">/&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"og-in-yes"</span><span class="nt">&gt;</span>Yes<span class="nt">&lt;/label&gt;</span>
-
-    <span class="nt">&lt;input</span>
-      <span class="na">id=</span><span class="s">"log-in-no"</span>
-      <span class="na">type=</span><span class="s">"radio"</span>
-      <span class="na">name=</span><span class="s">"log-in"</span>
-      <span class="na">value=</span><span class="s">"no"</span>
-    <span class="nt">/&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"log-in-no"</span><span class="nt">&gt;</span>No<span class="nt">&lt;/label&gt;</span>
-
-<span class="nt">&lt;/fieldset&gt;</span>
-</code></pre></div></div>
+<p class="info">For the documentation about descriptions in fieldsets read <a href="/pr-preview/pr-220/docs/topics/forms/fieldsets/fieldset-descriptions/">Description with a fieldset</a>.</p>
 
 <h2 id="examples">Examples</h2>
-
-<p class="do">Connect a description to the form field, using aria-describedby.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"new-password"</span><span class="nt">&gt;</span>New password<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"description-new-password"</span><span class="nt">&gt;</span>
-    Choose a password of at least 8 characters long.
-<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;input</span>
-  <span class="na">id=</span><span class="s">"new-password"</span>
-  <span class="na">type=</span><span class="s">"password"</span>
-  <span class="na">name=</span><span class="s">"new-password"</span>
-  <span class="na">aria-describedby=</span><span class="s">"description-new-password"</span>
-  <span class="na">autocomplete=</span><span class="s">"new-password"</span>
-<span class="nt">/&gt;</span>
-</code></pre></div></div>
 
 <p class="dont">No connection between a form field and its description.</p>
 
@@ -552,6 +511,21 @@
   <span class="na">type=</span><span class="s">"password"</span>
   <span class="na">name=</span><span class="s">"new-password"</span>
   <span class="na">autocomplete=</span><span class="s">"new-password"</span>
+<span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<p class="do">Connection between a form field and its description.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"new-password"</span><span class="nt">&gt;</span>New password<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"new-password-description"</span><span class="nt">&gt;</span>
+    Choose a password of at least 8 characters long.
+<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;input</span>
+  <span class="na">id=</span><span class="s">"new-password"</span>
+  <span class="na">type=</span><span class="s">"password"</span>
+  <span class="na">name=</span><span class="s">"new-password"</span>
+  <span class="na">autocomplete=</span><span class="s">"new-password"</span>
+  <span class="na">aria-describedby=</span><span class="s">"new-password-description"</span>
 <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
