@@ -70,7 +70,6 @@
 
 .main {
   margin: auto;
-
   background-image: url("/assets/images/logo-wa11ypuu-waving-head.png");
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -196,7 +195,6 @@
 }
 
 .menu-button-wrapper {
-
   display: flex;
 
   .site-button {
@@ -222,9 +220,7 @@
     &:focus {
       text-decoration: underline;
     }
-
   }
-
 }
 
 @include mq(md) {
@@ -243,7 +239,6 @@ body {
 
   @include mq(md) {
     position: static;
-
   }
 }
 

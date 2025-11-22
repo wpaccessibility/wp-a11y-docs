@@ -23,7 +23,6 @@
     height: 100% !important;
     padding: 0 $sp-8;
     transition: none;
-
   }
 }
 
@@ -307,9 +306,9 @@
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition:
-          opacity ease $transition-duration,
-          width 0s $transition-duration,
-          height 0s $transition-duration;
+    opacity ease $transition-duration,
+    width 0s $transition-duration,
+    height 0s $transition-duration;
 }
 
 // ------------------------------------------------------------
@@ -351,9 +350,9 @@
     height: 100%;
     opacity: 1;
     transition:
-            opacity ease $transition-duration,
-            width 0s,
-            height 0s;
+      opacity ease $transition-duration,
+      width 0s,
+      height 0s;
   }
 
   @include mq(md) {

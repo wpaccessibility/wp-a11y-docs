@@ -1,126 +1,133 @@
 @use "sass:map";
 
 @font-face {
-  font-family: 'Source Sans 3';
+  font-family: "Source Sans 3";
   src: url("/assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: 'Source Serif 4';
+  font-family: "Source Serif 4";
   src: url("/assets/fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf");
 }
 
 // Colors new design
 :root {
   /* Type scale */
-  --text-font-size-sm: clamp(1.000rem, 0.8118rem + 0.3765vw, 1.000rem);
-  --text-font-size-md: clamp(1.125rem, 1.0147rem + 0.4706vw, 1.250rem);
-  --text-font-size-lg: clamp(1.250rem, 1.2684rem + 0.5882vw, 1.500rem);
-  --text-font-size-xl: clamp(1.500rem, 1.5855rem + 0.7353vw, 2.000rem);
-  --text-font-size-2xl: clamp(2.000rem, 1.9818rem + 0.9191vw, 2.500rem);
-  --text-font-size-3xl: clamp(2.500rem, 2.4773rem + 1.1489vw, 3.000rem);
+  --text-font-size-sm: clamp(1rem, 0.8118rem + 0.3765vw, 1rem);
+  --text-font-size-md: clamp(1.125rem, 1.0147rem + 0.4706vw, 1.25rem);
+  --text-font-size-lg: clamp(1.25rem, 1.2684rem + 0.5882vw, 1.5rem);
+  --text-font-size-xl: clamp(1.5rem, 1.5855rem + 0.7353vw, 2rem);
+  --text-font-size-2xl: clamp(2rem, 1.9818rem + 0.9191vw, 2.5rem);
+  --text-font-size-3xl: clamp(2.5rem, 2.4773rem + 1.1489vw, 3rem);
+
   /* Colors: Brand */
-  --color-wa11ypuu-yellow: #F0C507;
+  --color-wa11ypuu-yellow: #f0c507;
+
   /* Colors: Neutral */
-  --color-neutral-bg-document: #FCFCFC; // body background color.
-  --color-neutral-bg-subtle: #F6F6F7;
-  --color-neutral-bg-default: #F0F1F1; // code background color.
-  --color-neutral-bg-hover: #EAEBEB;
-  --color-neutral-bg-active: #E5E5E6;
-  --color-neutral-border-subtle: #C2C4C5; // code border border.
+  --color-neutral-bg-document: #fcfcfc;
+  --color-neutral-bg-subtle: #f6f6f7;
+  --color-neutral-bg-default: #f0f1f1;
+  --color-neutral-bg-hover: #eaebeb;
+  --color-neutral-bg-active: #e5e5e6;
+  --color-neutral-border-subtle: #c2c4c5;
   --color-neutral-border-default: #848789;
-  --color-neutral-border-hover: #797C7F;
-  --color-neutral-border-active: #6F7276;
+  --color-neutral-border-hover: #797c7f;
+  --color-neutral-border-active: #6f7276;
   --color-neutral-color-default: #606467;
-  --color-neutral-color-hover: #565A5E;
-  --color-neutral-color-active: #484C50;
-  --color-neutral-color-subtle: #3A3E43;    // body text color.
-  --color-neutral-color-document: #23282D;  // heading text color.
+  --color-neutral-color-hover: #565a5e;
+  --color-neutral-color-active: #484c50;
+  --color-neutral-color-subtle: #3a3e43;
+  --color-neutral-color-document: #23282d;
   --color-neutral-color-placeholder: #757575;
+
   /* Colors: Neutral Inverse */
-  --color-neutral-inverse-bg-document: #202429; // $sidebar-background-color.
-  --color-neutral-inverse-bg-subtle: #181C1F;
-  --color-neutral-inverse-bg-default: #565A5E;
-  --color-neutral-inverse-bg-hover: #484C50;
-  --color-neutral-inverse-bg-active: #3A3E43;
-  --color-neutral-inverse-border-subtle: #43474B;
-  --color-neutral-inverse-border-default: #C8C9CB;
-  --color-neutral-inverse-border-hover: #D3D4D5;
-  --color-neutral-inverse-border-active: #DFE0E0;
-  --color-neutral-inverse-color-default: #FCFCFC;
-  --color-neutral-inverse-color-hover: #FCFCFC;
-  --color-neutral-inverse-color-active: #FCFCFC;
-  --color-neutral-inverse-color-subtle: #C0C1C2;
-  --color-neutral-inverse-color-document: #FCFCFC; // $sidebar-text-color
+  --color-neutral-inverse-bg-document: #202429;
+  --color-neutral-inverse-bg-subtle: #181c1f;
+  --color-neutral-inverse-bg-default: #565a5e;
+  --color-neutral-inverse-bg-hover: #484c50;
+  --color-neutral-inverse-bg-active: #3a3e43;
+  --color-neutral-inverse-border-subtle: #43474b;
+  --color-neutral-inverse-border-default: #c8c9cb;
+  --color-neutral-inverse-border-hover: #d3d4d5;
+  --color-neutral-inverse-border-active: #dfe0e0;
+  --color-neutral-inverse-color-default: #fcfcfc;
+  --color-neutral-inverse-color-hover: #fcfcfc;
+  --color-neutral-inverse-color-active: #fcfcfc;
+  --color-neutral-inverse-color-subtle: #c0c1c2;
+  --color-neutral-inverse-color-document: #fcfcfc;
+
   /* Colors: Informative */
-  --color-informative-bg-document: #FBFCFF;
-  --color-informative-bg-subtle: #F4F6FE;
-  --color-informative-bg-default: #EDF0FD;
-  --color-informative-bg-hover: #E6EAFC;
-  --color-informative-bg-active: #DFE4FC;
-  --color-informative-border-subtle: #B6C1F7;
-  --color-informative-border-default: #657EEE;
-  --color-informative-border-hover: #5772EC;
-  --color-informative-border-active: #4866EB;
-  --color-informative-color-default: #3654DF;  // link and button color
-  --color-informative-color-hover: #304CCA;
-  --color-informative-color-active: #2940AA;
-  --color-informative-color-subtle: #22358C;
-  --color-informative-color-document: #16225B;
+  --color-informative-bg-document: #fbfcff;
+  --color-informative-bg-subtle: #f4f6fe;
+  --color-informative-bg-default: #edf0fd;
+  --color-informative-bg-hover: #e6eafc;
+  --color-informative-bg-active: #dfe4fc;
+  --color-informative-border-subtle: #b6c1f7;
+  --color-informative-border-default: #657eee;
+  --color-informative-border-hover: #5772ec;
+  --color-informative-border-active: #4866eb;
+  --color-informative-color-default: #3654df;
+  --color-informative-color-hover: #304cca;
+  --color-informative-color-active: #2940aa;
+  --color-informative-color-subtle: #22358c;
+  --color-informative-color-document: #16225b;
+
   /* Colors: Positive */
-  --color-positive-bg-document: #FAFDFB;
-  --color-positive-bg-subtle: #EFF9F3;
-  --color-positive-bg-default: #E4F5EA;
-  --color-positive-bg-hover: #D9F1E2;
-  --color-positive-bg-active: #CEEDD9;
-  --color-positive-border-subtle: #8AD3A6;
-  --color-positive-border-default: #009B3A;
+  --color-positive-bg-document: #fafdfb;
+  --color-positive-bg-subtle: #eff9f3;
+  --color-positive-bg-default: #e4f5ea;
+  --color-positive-bg-hover: #d9f1e2;
+  --color-positive-bg-active: #ceedd9;
+  --color-positive-border-subtle: #8ad3a6;
+  --color-positive-border-default: #009b3a;
   --color-positive-border-hover: #009036;
   --color-positive-border-active: #008432;
-  --color-positive-color-default: #00732B;
+  --color-positive-color-default: #00732b;
   --color-positive-color-hover: #006827;
   --color-positive-color-active: #005821;
-  --color-positive-color-subtle: #00481B;
-  --color-positive-color-document: #002F12;
+  --color-positive-color-subtle: #00481b;
+  --color-positive-color-document: #002f12;
+
   /* Colors: Negative */
-  --color-negative-bg-document: #FFFBFB;
-  --color-negative-bg-subtle: #FEF4F4;
-  --color-negative-bg-default: #FEEDED;
-  --color-negative-bg-hover: #FDE6E6;
-  --color-negative-bg-active: #FDDEDE;
-  --color-negative-border-subtle: #F9B1B1;
-  --color-negative-border-default: #F14848;
-  --color-negative-border-hover: #EF2929;
-  --color-negative-border-active: #E60000;
-  --color-negative-color-default: #CA0000;
-  --color-negative-color-hover: #B70000;
-  --color-negative-color-active: #9C0000;
+  --color-negative-bg-document: #fffbfb;
+  --color-negative-bg-subtle: #fef4f4;
+  --color-negative-bg-default: #feeded;
+  --color-negative-bg-hover: #fde6e6;
+  --color-negative-bg-active: #fddede;
+  --color-negative-border-subtle: #f9b1b1;
+  --color-negative-border-default: #f14848;
+  --color-negative-border-hover: #ef2929;
+  --color-negative-border-active: #e60000;
+  --color-negative-color-default: #ca0000;
+  --color-negative-color-hover: #b70000;
+  --color-negative-color-active: #9c0000;
   --color-negative-color-subtle: #820000;
   --color-negative-color-document: #580000;
+
   /* Colors: Warning */
-  --color-warning-bg-document: #FFFCF3;
-  --color-warning-bg-subtle: #FFF6DB;
-  --color-warning-bg-default: #FFF0C1;
-  --color-warning-bg-hover: #FFEAA6;
-  --color-warning-bg-active: #FFE48A;
-  --color-warning-border-subtle: #E9C00A;
-  --color-warning-border-default: #A08317;
-  --color-warning-border-hover: #947A17;
+  --color-warning-bg-document: #fffcf3;
+  --color-warning-bg-subtle: #fff6db;
+  --color-warning-bg-default: #fff0c1;
+  --color-warning-bg-hover: #ffeaa6;
+  --color-warning-bg-active: #ffe48a;
+  --color-warning-border-subtle: #e9c00a;
+  --color-warning-border-default: #a08317;
+  --color-warning-border-hover: #947a17;
   --color-warning-border-active: #887018;
   --color-warning-color-default: #766117;
-  --color-warning-color-hover: #6B5817;
-  --color-warning-color-active: #5A4A16;
-  --color-warning-color-subtle: #493C14;
-  --color-warning-color-document: #2F2710;
+  --color-warning-color-hover: #6b5817;
+  --color-warning-color-active: #5a4a16;
+  --color-warning-color-subtle: #493c14;
+  --color-warning-color-document: #2f2710;
 }
 
 // Color vars JTD theme
-$grey-dk-000: var(--color-neutral-border-default) !default; // code background color
+$grey-dk-000: var(--color-neutral-border-default) !default;
 $grey-dk-050: var(--color-neutral-border-hover) !default;
 $grey-dk-100: var(--color-neutral-color-hover) !default;
 $grey-dk-200: var(--color-neutral-color-active) !default;
 $grey-dk-250: var(--color-neutral-color-subtle) !default;
-$grey-dk-300: var(--color-neutral-color-document) !default; // Sidebar background color
+$grey-dk-300: var(--color-neutral-color-document) !default;
 $grey-lt-000: var(--color-neutral-bg-subtle) !default;
 $grey-lt-100: var(--color-neutral-bg-hover) !default;
 $grey-lt-200: var(--color-neutral-bg-active) !default;
@@ -154,15 +161,14 @@ $sp-10: map.get($spacers, sp-10) !default; // 4  rem == 64px
 $gutter-spacing: $sp-8 !default;
 $gutter-spacing-sm: $sp-4 !default;
 
-
 // Fonts.
-$body-font-family: 'Source Sans 3', sans-serif;
-$heading-font-family: 'Source Serif 4', serif;
+$body-font-family: "Source Sans 3", sans-serif;
+$heading-font-family: "Source Serif 4", serif;
 $mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
 
 // Main colors.
 $body-background-color: var(--color-neutral-bg-document) !default;
-$body-text-color:       var(--color-neutral-color-subtle) !default;
+$body-text-color: var(--color-neutral-color-subtle) !default;
 
 // Line heights.
 $body-line-height: 1.5 !default;

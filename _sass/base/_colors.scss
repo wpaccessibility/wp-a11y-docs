@@ -1,25 +1,47 @@
+// Import project-wide variables (colors, spacing, etc.)
 @use "../abstracts/variables" as *;
+
+// Import Sass color utilities
 @use "sass:color";
 
+// Global color scheme (e.g., light or dark)
 $color-scheme: light !default;
 
+// Heading text color for body content
 $body-heading-color: var(--color-neutral-bg-document) !default;
 
-$link-color:           var(--color-informative-color-default) !default;
+// Default link color
+$link-color: var(--color-informative-color-default) !default;
+
+// Link color for nested navigation items
 $nav-child-link-color: var(--color-neutral-inverse-color-subtle) !default;
 
+// Sidebar background layer
 $sidebar-background-color: var(--color-neutral-inverse-bg-document) !default;
-$sidebar-text-color:       var(--color-neutral-inverse-color-document) !default;
 
+// Sidebar text and icon color
+$sidebar-text-color: var(--color-neutral-inverse-color-document) !default;
+
+// Default background for buttons
 $base-button-color: var(--color-neutral-bg-default) !default;
+
+// Primary button color (brand/informational accent)
 $btn-primary-color: var(--color-informative-color-default) !default;
 
+// Background color for inline code, code blocks, etc.
 $code-background-color: var(--color-neutral-bg-default) !default;
+
+// Border color for code elements
 $code-border-color: var(--color-neutral-border-subtle) !default;
 
+// Background for feedback boxes, alerts, or messages
 $feedback-color: var(--color-neutral-bg-default) !default;
 
+// Table background (header rows, striped areas, etc.)
 $table-background-color: var(--color-neutral-bg-subtle) !default;
 
-$search-background-color:     var(--color-neutral-bg-subtle) !default;
+// Search input background color
+$search-background-color: var(--color-neutral-bg-subtle) !default;
+
+// Color used for search result preview text
 $search-result-preview-color: var(--color-neutral-color-subtle) !default;
