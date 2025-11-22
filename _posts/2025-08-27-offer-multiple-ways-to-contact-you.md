@@ -9,9 +9,9 @@ excerpt: "It’s better to offer multiple ways to get in touch, so people can ch
 date: 2025-08-27
 ---
 You want to reach out to customer service, and they say  *“Send us a WhatsApp message.”* What if you don’t use WhatsApp, or cannot make a phone call, or use the chatbox? 
-{: .fs-6 .fw-300 }
+{: .callout  .lead }
 By offering multiple contact options, you make sure every customer has a way to connect.
-{: .fs-6 .fw-300 }
+{: .callout  .lead }
 
 ## Don’t make getting in touch their problem
 
@@ -109,7 +109,7 @@ Provide an address on your website where customers can send a letter.
 
 It’s essential to provide multiple options for people to contact you. And don’t just ask for their preferences; respect them.
 
-{: .example }
+{: .callout  .example }
 You could ask for example:
 “Would you like us to call you back or send an email instead?”
 

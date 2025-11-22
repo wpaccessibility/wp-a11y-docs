@@ -7,7 +7,7 @@ nav_order: 2
 
 # Checklists for accessibility testing overall
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and expanded.  
 Related issue on [GitHub #170 Checklists for accessibility testing overall](https://github.com/wpaccessibility/wp-a11y-docs/issues/170).    
 

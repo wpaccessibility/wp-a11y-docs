@@ -7,7 +7,7 @@ nav_order: 5
 
 # Tables in theme and plugin development
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and restructured.  
 Related issue on [GitHub #144 Topic Tables in theme and plugin development](https://github.com/wpaccessibility/wp-a11y-docs/issues/144).  
 

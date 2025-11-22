@@ -7,6 +7,6 @@ nav_order: 2
 
 # The difference between WCAG and best practice
 
-{: .alert }
+{: .callout  .alert }
 This content will be written.
 Related issue on [GitHub #98 Topic WCAG and best practice](https://github.com/wpaccessibility/wp-a11y-docs/issues/98).  

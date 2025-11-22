@@ -7,7 +7,7 @@ nav_order: 2
 
 # WordPress accessibility plugins
 
-{: .alert }
+{: .callout  .alert }
 Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
 
 ## Editing Tools
@@ -24,6 +24,6 @@ Note that while many plugins in the WordPress plugin repository are overlays or 
 
 - [WP Accessibility](https://wordpress.org/extend/plugins/wp-accessibility/). Helps with a variety of common accessibility problems in WordPress themes. While most accessibility issues can’t be addressed without directly changing your theme, WP Accessibility adds a number of helpful accessibility features with a minimum amount of setup or expert knowledge.
 
-{: .info }
+{: .callout  .info }
 Do you want to add your plugin to this list?   
 Please [contact the Documentation Team]({{site.baseurl}}/docs/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.

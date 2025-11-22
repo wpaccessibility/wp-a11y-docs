@@ -7,16 +7,16 @@ has_video: true
 
 # Kitchen sink: options available for content
 
-
+{: .lead }
 This page lists the options and code available for creating content in this documentation
-{: .fs-6 .fw-300 }
 
-{: .info }
+{: .callout  .info }
 WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
 
 ## Headings
 ```markdown
-#  This is an H1 heading
+
+# This is an H1 heading
 ## This is an H2 heading
 ### This is an H3 heading
 #### This is an H4 heading
@@ -24,20 +24,28 @@ WordPress.org provides a lot of style guides for documentation: [WordPress Style
 ###### This is an H6 heading
 ```
 
-{: .alert }
+# This is an H1 heading
+## This is an H2 heading
+### This is an H3 heading
+#### This is an H4 heading
+##### This is an H5 heading
+###### This is an H6 heading
+
+{: .callout  .alert }
 In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}}/docs/contribute/github/blog-post/).
 
 ## Summary in a larger text font.
 
-End the paragraph with the code `{: .fs-6 .fw-300 }`.
+Start the paragraph with the code `{: .lead }`.
 
 ```markdown
+{: .lead }
 When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
-{: .fs-6 .fw-300 }
 ```
 
+{: .lead  }
 When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
-{: .fs-6 .fw-300 }
+
 
 ## Text
 ```markdown
@@ -55,29 +63,24 @@ A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.
 ```
 A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days.
 
+```markdown
+<small>This is small text</small>.
+```
+<small>This is small text</small>.
+
 ### Internal links
 
-For links to other pages within wpaccessibility.org, always use `{{site.baseurl}}` to ensure they work in preview environments:
+For links to other pages within wpaccessibility.org, always add the prefix &#123;&#123;site.baseurl}} to ensure they work in preview environments. For example &#123;&#123;site.baseurl}}/assets/images/small-image.jpg. This ensures links work correctly in both production and preview environments. External links to other websites don't need  this prefix.
 
-```markdown
-Internal link: [Contact the Documentation Team]({{site.baseurl}}/docs/contact/)
-```
-Internal link: [Contact the Documentation Team]({{site.baseurl}}/docs/contact/)
-
-{: .info }
-Always use `{{site.baseurl}}` for internal links (to other pages on this site) and asset links (images, etc.). This ensures links work correctly in both production and preview environments. External links to other websites don't need `{{site.baseurl}}`.
+### Images
 
 ```markdown
 An image: ![Alt text](url)
-for example: ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
+
 ```
 ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 
-{: .info }
-For images and other assets, always include `{{site.baseurl}}` in the path to ensure they display correctly in preview environments.
-
-
-{: .info } 
+{: .callout  .tip } 
 For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos
@@ -160,108 +163,83 @@ For larger pieces of content, you can add to a `<p>`, `<div>`or even a landmark,
 ## Callouts
  
 ```markdown
-{: .info }
+{: .callout  .info }
 This is an informational message and uses the “info” callout.
 
-{: .tip }
+{: .callout  .tip }
 Use the “tip” callout to highlight tips.
 
-{: .alert }
+{: .callout  .alert }
 The “alert” callout is for alerting readers to important messages.
 
-{: .warning }
+{: .callout  .warning }
 When something is particularly precarious, use the “warning” callout.
 
-{: .example }
+{: .callout  .example }
 Give an example with the "example" callout. 
 The title of the callout will be "Example".
 
-{: .do }
+{: .callout  .do }
 Example of good practice.
 
-{: .dont }
+{: .callout  .dont }
 Example of bad practice.
 
 ```
 
-{: .info }
+{: .callout  .info }
 This is an informational message and uses the “info” callout.
 
-{: .tip }
+{: .callout  .tip }
 Use the “tip” callout to highlight tips.
 
-{: .alert }
+{: .callout  .alert }
 The “alert” callout is for alerting readers to important messages.
 
-{: .warning }
+{: .callout  .warning }
 When something is particularly precarious, use the “warning” callout.
 
-{: .example }
-Give an example with the example" callout. The title of the callout will be "Example".
+{: .callout  .example }
+Give an example with the example. The title of the callout will be "Example".
 
-{: .do }
+{: .callout  .do }
 Example of how to do something. The title of the callout will be "Do".
 
-{: .dont }
-Example of how to not to do something. The title of the callout will be "Don't".
+{: .callout  .dont }
+Example of how not to do something. The title of the callout will be "Don't".
 
 ### Labels
 
-```markdown
-
-blue
-{: .label .label-blue }
-
-green
-{: .label .label-green }
-
-purple
-{: .label .label-purple }
-
-yellow
-{: .label .label-yellow }
-
-red
-{: .label .label-red }
-
-**bold**
-{: .label }
-
-*italic*
-{: .label }
-
-***bold + italic***
-{: .label }
-```
-
-blue
-{: .label .label-blue }
-
-green
-{: .label .label-green }
-
-purple
-{: .label .label-purple }
-
-yellow
-{: .label .label-yellow }
-
-red
-{: .label .label-red }
-
-**bold**
-{: .label }
-
-*italic*
-{: .label }
-
-***bold + italic***
-{: .label }
-
-
-{: .info }
+{: .callout  .info }
 Note: these are not form labels, but text labels.
 
+
+```markdown
+{: .label .label-blue }
+Blue
+
+{: .label .label-green }
+Green
+
+{: .label .label-yellow }
+Yellow
+
+{: .label .label-red }
+Red
+
+```
+
+{: .label .label-blue }
+Blue
+
+{: .label .label-green }
+Green
+
+{: .label .label-yellow }
+Yellow
+
+{: .label .label-red }
+Red
 
 ### Collapsed Section
 

@@ -2,53 +2,61 @@
 @use "../abstracts/mixins" as *;
 
 // Typography
-// stylelint-disable selector-no-type, selector-max-type, selector-max-specificity, selector-max-id
+
+body {
+  font-family: $body-font-family;
+  font-size: var(--text-font-size-md);
+  font-weight: 400;
+  line-height: $body-line-height;
+  color: $body-text-color;
+  background-color: $body-background-color;
+}
 
 h1,
-.text-alpha {
-  font-family: $heading-font-family;
-  font-weight: 300;
-
-  @include fs-7;
-}
-
 h2,
-.text-beta,
-#toctitle {
-  font-family: $heading-font-family;
-
-  @include fs-6;
-}
-
 h3,
-.text-gamma {
-  @include fs-5;
-}
-
 h4,
-.text-delta {
-  font-weight: 400;
-  letter-spacing: 0.1em;
-
-  @include fs-4;
-}
-
-h4 code {
-  text-transform: none;
-}
-
 h5,
-.text-epsilon {
-  @include fs-3;
+h6 {
+  font-family: $heading-font-family;
+  font-weight: 600;
+  line-height: $body-heading-line-height;
 }
 
-h6,
-.text-zeta {
-  @include fs-2;
+h1 {
+  line-height: 1.1;
+  font-size: var(--text-font-size-3xl); // 48px on desktop.
 }
 
+h2 {
+  line-height: 1.25;
+  font-size: var(--text-font-size-2xl); // 40px on desktop.
+}
+
+h3 {
+  line-height: 1.25;
+  font-size: var(--text-font-size-xl); // 32px on desktop.
+}
+
+h4 {
+  font-size: var(--text-font-size-lg); // 24px on desktop.
+}
+
+h5 {
+  font-size: var(--text-font-size-md); // 20px on desktop.
+}
+
+h6 {
+  font-size: var(--text-font-size-sm); // 16px on desktop.
+}
+
+small,
 .text-small {
-  @include fs-2;
+  font-size: var(--text-font-size-sm);
+}
+
+.lead {
+  font-size: var(--text-font-size-lg);
 }
 
 .text-mono {

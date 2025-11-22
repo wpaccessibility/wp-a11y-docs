@@ -7,7 +7,7 @@ nav_order: 2
 
 # Introduction to WCAG
 
-{: .alert }
+{: .callout  .alert }
 Starter content. This content will to be reviewed and expanded.  
 Related issue on [GitHub #92 Introduction to WCAG](https://github.com/wpaccessibility/wp-a11y-docs/issues/92).  
 

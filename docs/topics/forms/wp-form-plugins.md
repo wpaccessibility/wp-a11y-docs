@@ -7,7 +7,7 @@ nav_order: 10
 
 # WordPress form plugins and accessibility
 
-{: .alert }
+{: .callout  .alert }
 This content will be rewritten and expanded.  
 Related issue on [GitHub #162 Topic WordPress form plugins and accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/162).  
 If you want to add a plugin to this page, please comment with the GitHub issue.

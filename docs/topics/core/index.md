@@ -7,11 +7,11 @@ nav_order: 7
 
 # WordPress Core Accessibility Standards
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and restructured. 
 Related issue on [GitHub #122 Topic WordPress Core Accessibility Standards](https://github.com/wpaccessibility/wp-a11y-docs/issues/122).  
 
-{: .warning }
+{: .callout  .warning }
 **TODO:**
 This is duplicate content? see also [Accessibility Coding Standards ](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/)in the coding standards handbook WCAG 2.0 must be WCAG 2.2?
 The content should be reviewed for modern code and the links adjusted and divided between the topics.

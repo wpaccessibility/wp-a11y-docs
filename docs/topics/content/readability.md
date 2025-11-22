@@ -7,7 +7,7 @@ nav_order: 6
 
 # Readability
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed, restructured and expanded.  
 Related issue on [GitHub #120 Topic Readability](https://github.com/wpaccessibility/wp-a11y-docs/issues/120).  
 

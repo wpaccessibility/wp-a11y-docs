@@ -7,7 +7,7 @@ nav_order: 7
 
 # Screen reader testing
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and expanded.  
 Related issue on [GitHub #176 Topic Screen reader testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/176).    
 

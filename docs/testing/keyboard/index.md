@@ -7,7 +7,7 @@ nav_order: 6
 
 # Keyboard navigation testing
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and expanded.  
 Related issue on [GitHub #175 Topic Keyboard navigation testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/175).    
 

@@ -7,7 +7,7 @@ nav_order: 1
 
 # WCAG and compliance
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and expanded.  
 Related issue on [GitHub #97 Topic WCAG and compliance](https://github.com/wpaccessibility/wp-a11y-docs/issues/97).  
 
@@ -33,7 +33,7 @@ Quoting:
 
 > The WordPress accessibility coding standards require new or updated code to meet the standards of the Web Content Accessibility Guidelines (WCAG) version 2.0 at level AA. ATAG conformance is an additional goal beyond WCAG compliance.
 
-{: .alert }
+{: .callout  .alert }
 WordPress is not currently conforming with ATAG 2.0, but pledges to pursue features that are accessible and which help users create accessible content in pursuit of the long-term goal of ATAG compliance.
 
 ## Other resources
