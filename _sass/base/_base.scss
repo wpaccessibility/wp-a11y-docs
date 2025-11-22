@@ -11,8 +11,6 @@
 
 html {
   scroll-behavior: smooth;
-
-  @include fs-4;
 }
 
 body {
@@ -52,11 +50,11 @@ p {
 a {
   color: $link-color;
   text-decoration: underline;
-  text-underline-offset: 2px;
 
   &:hover {
     text-decoration: none;
   }
+
 }
 
 button {
@@ -109,6 +107,6 @@ blockquote {
 }
 
 ::placeholder {
-  color: $grey-dk-050;
+  color: var(--color-neutral-color-placeholder);
   opacity: 1;
 }

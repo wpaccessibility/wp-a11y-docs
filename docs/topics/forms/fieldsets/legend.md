@@ -3,7 +3,7 @@ title: Fieldset legend
 layout: default
 parent: Group form fields
 nav_order: 2
-description: A legend serves as the name of grouped form fields in a fieldset`.
+description: A legend serves as the name of grouped form fields in a fieldset.
 ---
 
 # Legend with a fieldset

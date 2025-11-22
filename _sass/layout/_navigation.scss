@@ -6,8 +6,6 @@
 
 .nav-main-heading {
   padding-left: 2rem;
-
-  @include fs-4;
 }
 
 .nav-list {
@@ -18,16 +16,12 @@
 
   .nav-list-item {
     position: relative;
+    font-size: var(--text-font-size-sm);
+    font-weight: 300;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
-    @include fs-4;
-
-    @include mq(md) {
-      @include fs-3;
-    }
 
     .nav-list-link {
       display: inline-block;
@@ -114,7 +108,6 @@
 
         .nav-list-link {
           color: $nav-child-link-color;
-          font-weight: 300;
         }
 
         .nav-list-expander {
@@ -145,7 +138,6 @@
   text-align: start;
   text-transform: uppercase;
   border-bottom: $border $border-color;
-  @include fs-2;
 
   @include mq(md) {
     padding: $sp-2 $gutter-spacing;
@@ -180,12 +172,6 @@
 
 // Breadcrumb nav
 
-.breadcrumb-nav {
-  @include mq(md) {
-    margin-top: -$sp-4;
-  }
-}
-
 .breadcrumb-nav-list {
   padding-left: 0;
   margin-bottom: $sp-3;
@@ -193,8 +179,8 @@
 }
 
 .breadcrumb-nav-list-item {
-  display: table-cell;
-  @include fs-2;
+  display: inline-block;
+  font-size: var(--text-font-size-sm);
 
   a {
     color: var(--color-neutral-color-default);
@@ -205,10 +191,8 @@
   }
 
   &::after {
-    display: inline-block;
     margin-right: $sp-2;
     margin-left: $sp-2;
-    color: $grey-dk-000;
     content: "/";
   }
 
@@ -246,6 +230,7 @@
 }
 
 [aria-current] {
+  color: var(--color-neutral-color-default);
   font-weight: 600;
 }
 

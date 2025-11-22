@@ -7,7 +7,7 @@ has_video: true
 
 # Kitchen sink: options available for content
 
-{: .callout  .lead }
+{: .lead }
 This page lists the options and code available for creating content in this documentation
 
 {: .callout  .info }
@@ -22,8 +22,14 @@ WordPress.org provides a lot of style guides for documentation: [WordPress Style
 #### This is an H4 heading
 ##### This is an H5 heading
 ###### This is an H6 heading
-
 ```
+
+# This is an H1 heading
+## This is an H2 heading
+### This is an H3 heading
+#### This is an H4 heading
+##### This is an H5 heading
+###### This is an H6 heading
 
 {: .callout  .alert }
 In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}}/docs/contribute/github/blog-post/).
@@ -56,6 +62,11 @@ This is **bold text** and this is _italic text_.
 A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days.
 ```
 A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days.
+
+```markdown
+<small>This is small text</small>.
+```
+<small>This is small text</small>.
 
 ### Internal links
 

@@ -14,6 +14,7 @@
 
   a {
     color: $sidebar-text-color;
+    font-size: var(--text-font-size-sm);
   }
 
   @include mq(md) {
@@ -140,7 +141,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1rem;
 
   .lh-wrapper {
     align-items: center;
@@ -160,6 +160,8 @@
     }
   }
   @include mq(md) {
+    padding-top: 1rem;
+
     .lh-wrapper {
       display: block;
     }
@@ -177,6 +179,7 @@
   font-family: $body-font-family;
   font-weight: 600;
   text-decoration: none;
+  max-width: 16rem;
 
   &:hover,
   &:focus {
@@ -185,11 +188,10 @@
 
   @include container;
 
-  @include fs-4;
-
   @include mq(md) {
     padding-top: 0;
     padding-bottom: 0;
+    max-width: 20rem;
   }
 }
 
@@ -236,12 +238,12 @@
 body {
   position: relative;
   margin: 0;
-  padding-bottom: $sp-10;
+  padding-bottom: 0;
   overflow-y: scroll;
 
   @include mq(md) {
     position: static;
-    padding-bottom: 0;
+
   }
 }
 
@@ -255,8 +257,6 @@ body {
   padding-bottom: $sp-4;
 
   @include container;
-
-  @include fs-2;
 
   @include mq(md) {
     position: static;
@@ -277,5 +277,6 @@ body {
 
 footer {
   margin-top: $sp-5;
+  padding-bottom: $sp-8;
   border-top: $border $border-color;
 }

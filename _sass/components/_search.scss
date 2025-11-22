@@ -1,9 +1,14 @@
+// ------------------------------------------------------------
+// Imports
+// ------------------------------------------------------------
 @use "../abstracts/variables" as *;
 @use "../base/colors" as *;
+@use "../base/typography" as *;
 @use "../abstracts/mixins" as *;
 
-// Search input and autocomplete.
-
+// ------------------------------------------------------------
+// Search container
+// ------------------------------------------------------------
 .search {
   position: relative;
   z-index: 2;
@@ -16,11 +21,15 @@
     position: relative !important;
     width: auto !important;
     height: 100% !important;
-    padding: 0 $sp-6;
+    padding: 0 $sp-8;
     transition: none;
+
   }
 }
 
+// ------------------------------------------------------------
+// Search input wrapper
+// ------------------------------------------------------------
 .search-input-wrap {
   position: relative;
   z-index: 1;
@@ -35,15 +44,15 @@
     transition: width ease $transition-duration;
   }
 
+  // Focused state styling
   &:has(*:focus) {
     .search-label,
     .search-input {
-      border-top: 2px solid black;
-      border-right: 2px solid black;
-      border-bottom: 2px solid black;
+      border: 2px solid black;
       border-left: none;
       outline: none;
     }
+
     .search-label {
       border-left: 2px solid black;
       border-right: none;
@@ -51,54 +60,68 @@
   }
 }
 
+// ------------------------------------------------------------
+// Search input
+// ------------------------------------------------------------
 .search-input {
   width: 100%;
   height: 100%;
   padding: $sp-2 $gutter-spacing-sm $sp-2 0;
   font-size: 1rem;
-  color: $body-text-color;
-  background-color: $search-background-color;
   border-width: 1px;
-  border-color: $grey-dk-050;
+  border-color: var(--color-neutral-border-default);
   border-left: none;
 
   @include mq(md) {
     position: relative;
     flex-grow: 1;
-    padding: $sp-2 $gutter-spacing-sm $sp-2 0;
   }
 }
 
+// ------------------------------------------------------------
+// Submit button
+// ------------------------------------------------------------
 .search-submit {
   display: block;
   padding: $sp-2;
-  margin-left: .1rem;
+  margin-left: $sp-2;
   height: 100%;
-  font-size: $font-size-1-sm;
   font-weight: 600;
-  background-color: var(--color-neutral-bg-document);
-  border: 1px solid var(--color-neutral-border-default);
   border-radius: $border-radius;
   cursor: pointer;
+
+  @include mq(sm) {
+    color: var(--color-neutral-inverse-document);
+    background-color: var(--color-neutral-bg-document);
+    border: 1px solid var(--color-neutral-border-default);
+  }
 }
 
+// ------------------------------------------------------------
+// Search label
+// ------------------------------------------------------------
 .search-label {
   display: flex;
   height: 100%;
   z-index: 10;
+  color: var(--color-neutral-color-document);
+  background-color: var(--color-neutral-bg-document);
   padding-left: $gutter-spacing-sm;
-  padding-right: .5rem;
-  border: 1px solid $grey-dk-050;
+  padding-right: 0.5rem;
+  border: 1px solid var(--color-neutral-border-default);
   border-right: none;
 
   .search-icon {
     width: #{$sp-4 * 1.2};
     height: #{$sp-4 * 1.2};
     align-self: center;
-    color: $grey-dk-050;
+    color: 1px solid var(--color-neutral-border-default);
   }
 }
 
+// ------------------------------------------------------------
+// Search results dropdown
+// ------------------------------------------------------------
 .search-results {
   position: absolute;
   left: 0;
@@ -107,14 +130,13 @@
   max-height: calc(100% - #{$sp-10});
   overflow-y: auto;
   padding: $sp-1 $sp-2;
-  background-color: $search-background-color;
   border-bottom-right-radius: $border-radius;
   border-bottom-left-radius: $border-radius;
 
   @include mq(md) {
     top: 100%;
     max-height: calc(100vh - 200%) !important;
-    padding: 0 0 0 2rem;
+    padding-left: 3rem;
   }
 }
 
@@ -122,17 +144,15 @@
   padding-left: 0;
   margin-bottom: $sp-1;
   list-style: none;
-  outline: 1px solid $grey-dk-000;
+  background-color: $body-background-color;
+  outline: 1px solid $border-color;
   outline-offset: -1px;
-  @include fs-4;
-
-  @include mq(md) {
-    @include fs-3;
-  }
 }
 
+// ------------------------------------------------------------
+// Full search results page
+// ------------------------------------------------------------
 #search-results-page {
-
   li {
     padding: $sp-2;
     margin: 0;
@@ -147,19 +167,22 @@
 
     a {
       color: $link-color;
-      font-size: $font-size-6;
+      font-size: var(--text-font-size-md);
     }
   }
 
   li:nth-of-type(even) {
-    background: rgb( 0, 0, 0, .04 );
+    background: rgba(0, 0, 0, 0.04);
   }
-
 }
 
+// ------------------------------------------------------------
+// Individual search result listing
+// ------------------------------------------------------------
 .search-results-list-item {
   padding: 0;
   margin: 0;
+  font-size: var(--text-font-size-sm);
 }
 
 .search-result {
@@ -174,28 +197,22 @@
 
 .search-result-title {
   display: block;
-  padding-top: $sp-2;
-  padding-bottom: $sp-2;
+  padding: $sp-2 0;
 
   @include mq(sm) {
     display: inline-block;
-    padding-right: $sp-2; // width: 40%;
+    padding-right: $sp-2;
     vertical-align: top;
   }
 }
 
+// ------------------------------------------------------------
+// Document name + icon
+// ------------------------------------------------------------
 .search-result-doc {
   display: flex;
   align-items: center;
   word-wrap: break-word;
-
-  &.search-result-doc-parent {
-    @include fs-3;
-
-    @include mq(md) {
-      @include fs-2;
-    }
-  }
 
   .search-result-icon {
     width: $sp-4;
@@ -211,6 +228,9 @@
   }
 }
 
+// ------------------------------------------------------------
+// Section title
+// ------------------------------------------------------------
 .search-result-section {
   margin-left: #{$sp-4 + $sp-2};
   word-wrap: break-word;
@@ -223,26 +243,21 @@
   color: $search-result-preview-color;
   text-overflow: ellipsis;
   white-space: nowrap;
-  @include fs-1;
 }
 
+// ------------------------------------------------------------
+// Search previews (disabled for now)
+// ------------------------------------------------------------
 .search-result-previews {
-  // display: none; just for now until I have the js of search figured out.
-  // display: block;
   display: none;
-  padding-top: $sp-2;
-  padding-bottom: $sp-2;
-  padding-left: $sp-4;
+  padding: $sp-2 0 $sp-2 $sp-4;
   margin-left: $sp-2;
   color: $search-result-preview-color;
   word-wrap: break-word;
   border-left: $border;
   border-left-color: $border-color;
-  @include fs-2;
 
   @include mq(sm) {
-    // display: inline-block;
-    display: none;
     width: 60%;
     padding-left: $sp-2;
     margin-left: 0;
@@ -260,9 +275,11 @@
 
 .search-no-result {
   padding: $sp-2 $sp-3;
-  @include fs-3;
 }
 
+// ------------------------------------------------------------
+// Floating search button
+// ------------------------------------------------------------
 .search-button {
   position: fixed;
   right: $sp-4;
@@ -277,6 +294,9 @@
   justify-content: center;
 }
 
+// ------------------------------------------------------------
+// Search overlay
+// ------------------------------------------------------------
 .search-overlay {
   position: fixed;
   top: 0;
@@ -287,11 +307,14 @@
   background-color: rgba(0, 0, 0, 0.3);
   opacity: 0;
   transition:
-    opacity ease $transition-duration,
-    width 0s $transition-duration,
-    height 0s $transition-duration;
+          opacity ease $transition-duration,
+          width 0s $transition-duration,
+          height 0s $transition-duration;
 }
 
+// ------------------------------------------------------------
+// Search-active state
+// ------------------------------------------------------------
 .search-active {
   .search {
     position: fixed;
@@ -299,12 +322,12 @@
     left: 0;
     width: 100%;
     height: 100%;
+    background-color: var(--color-neutral-inverse-bg-document);
   }
 
   .search-input-wrap {
     height: $sp-10;
     border-radius: 0;
-    background-color: var(--color-neutral-bg-document);
 
     @include mq(md) {
       width: $search-results-width;
@@ -312,11 +335,15 @@
   }
 
   .search-input {
-    background-color: $search-background-color;
+    background-color: var(--color-neutral-bg-document);
   }
 
   .search-results {
     display: block;
+  }
+
+  .search-no-result {
+    background-color: var(--color-neutral-bg-document);
   }
 
   .search-overlay {
@@ -324,9 +351,9 @@
     height: 100%;
     opacity: 1;
     transition:
-      opacity ease $transition-duration,
-      width 0s,
-      height 0s;
+            opacity ease $transition-duration,
+            width 0s,
+            height 0s;
   }
 
   @include mq(md) {

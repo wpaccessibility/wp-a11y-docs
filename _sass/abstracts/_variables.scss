@@ -10,16 +10,6 @@
   src: url("/assets/fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf");
 }
 
-// Fonts.
-$body-font-family: 'Source Sans 3', sans-serif;
-$heading-font-family: 'Source Serif 4', serif;
-$mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
-
-// Line heights.
-$body-line-height: 1.5 !default;
-$content-line-height: 1.5 !default;
-$body-heading-line-height: 1.25 !default;
-
 // Colors new design
 :root {
   /* Type scale */
@@ -46,6 +36,7 @@ $body-heading-line-height: 1.25 !default;
   --color-neutral-color-active: #484C50;
   --color-neutral-color-subtle: #3A3E43;    // body text color.
   --color-neutral-color-document: #23282D;  // heading text color.
+  --color-neutral-color-placeholder: #757575;
   /* Colors: Neutral Inverse */
   --color-neutral-inverse-bg-document: #202429; // $sidebar-background-color.
   --color-neutral-inverse-bg-subtle: #181C1F;
@@ -123,23 +114,9 @@ $body-heading-line-height: 1.25 !default;
   --color-warning-color-document: #2F2710;
 }
 
-// Font sizes.
-$font-size-1:     var(--text-font-size-sm);
-$font-size-1-sm:  var(--text-font-size-sm);
-$font-size-2:     var(--text-font-size-sm);
-$font-size-3:     var(--text-font-size-sm);
-$font-size-4:     var(--text-font-size-sm);
-$font-size-5:     var(--text-font-size-sm);
-$font-size-6:     var(--text-font-size-md);
-$font-size-7:     var(--text-font-size-lg);
-$font-size-8:     var(--text-font-size-xl);
-$font-size-9:     var(--text-font-size-2xl);
-$font-size-10:    var(--text-font-size-2xl);
-$font-size-10-sm: var(--text-font-size-3xl);
-
-// Colors. TODO
+// Color vars JTD theme
 $grey-dk-000: var(--color-neutral-border-default) !default; // code background color
-$grey-dk-050:var(--color-neutral-border-hover) !default;
+$grey-dk-050: var(--color-neutral-border-hover) !default;
 $grey-dk-100: var(--color-neutral-color-hover) !default;
 $grey-dk-200: var(--color-neutral-color-active) !default;
 $grey-dk-250: var(--color-neutral-color-subtle) !default;
@@ -147,7 +124,7 @@ $grey-dk-300: var(--color-neutral-color-document) !default; // Sidebar backgroun
 $grey-lt-000: var(--color-neutral-bg-subtle) !default;
 $grey-lt-100: var(--color-neutral-bg-hover) !default;
 $grey-lt-200: var(--color-neutral-bg-active) !default;
-$grey-lt-300: #e6e1e8 !default;
+$grey-lt-300: var(--color-neutral-inverse-border-hover) !default;
 
 // Spacing.
 $spacing-unit: 1rem; // 1rem == 16px
@@ -174,13 +151,28 @@ $sp-7: map.get($spacers, sp-7) !default; // 2.5  rem == 40px
 $sp-8: map.get($spacers, sp-8) !default; // 3    rem == 48px
 $sp-9: map.get($spacers, sp-9) !default; // 3.5  rem == 56px
 $sp-10: map.get($spacers, sp-10) !default; // 4  rem == 64px
-$gutter-spacing: $sp-6 !default;
+$gutter-spacing: $sp-8 !default;
 $gutter-spacing-sm: $sp-4 !default;
+
+
+// Fonts.
+$body-font-family: 'Source Sans 3', sans-serif;
+$heading-font-family: 'Source Serif 4', serif;
+$mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
+
+// Main colors.
+$body-background-color: var(--color-neutral-bg-document) !default;
+$body-text-color:       var(--color-neutral-color-subtle) !default;
+
+// Line heights.
+$body-line-height: 1.5 !default;
+$content-line-height: 1.5 !default;
+$body-heading-line-height: 1.25 !default;
 
 // Borders.
 $border: 1px solid !default;
 $border-radius: 4px !default;
-$border-color: $grey-dk-000 !default;
+$border-color: var(--color-neutral-border-default);
 
 // Layout.
 $nav-width: 17.75rem !default;
@@ -188,7 +180,7 @@ $nav-width-md: 15.5rem !default;
 $nav-list-item-height: $sp-6 !default;
 $nav-list-item-height-sm: $sp-8 !default;
 $nav-list-expander-right: true;
-$content-width: 44rem !default;
-$header-height: 3.75rem !default;
+$content-width: 50rem !default;
+$header-height: 4rem !default;
 $search-results-width: $content-width - $nav-width !default;
 $transition-duration: 400ms;

@@ -8,8 +8,8 @@ body {
   font-size: var(--text-font-size-md);
   font-weight: 400;
   line-height: $body-line-height;
-  color: var(--color-neutral-color-document);
-  background-color: var(--color-neutral-bg-document);
+  color: $body-text-color;
+  background-color: $body-background-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,38 +20,38 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   line-height: 1.1;
-  @include fs-7;
+  font-size: var(--text-font-size-3xl);  // 48px on desktop.
 }
 
 h2 {
   line-height: 1.25;
-  @include fs-6;
+  font-size: var(--text-font-size-2xl); // 40px on desktop.
 }
 
 h3 {
   line-height: 1.25;
-  @include fs-5;
+  font-size: var(--text-font-size-xl);  // 32px on desktop.
 }
 
 h4 {
-  @include fs-4;
+  font-size: var(--text-font-size-lg);  // 24px on desktop.
 }
 
 h5 {
-  @include fs-3;
+  font-size: var(--text-font-size-md);  // 20px on desktop.
 }
 
 h6 {
-  @include fs-2;
+  font-size: var(--text-font-size-sm);  // 16px on desktop.
 }
 
 small,
 .text-small {
-  @include fs-2;
+  font-size: var(--text-font-size-sm);
 }
 
 .lead {
-  @include fs-6;
+  font-size: var(--text-font-size-lg);
 }
 
 .text-mono {
