@@ -322,6 +322,10 @@
     width: 100%;
     height: 100%;
     background-color: var(--color-neutral-inverse-bg-document);
+
+    @include mq(md) {
+      background-color: var(--color-neutral-bg-document);
+    }
   }
 
   .search-input-wrap {
