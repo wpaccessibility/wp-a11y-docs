@@ -1,549 +1,593 @@
-    (function (jtd, undefined) {
+(function (jtd, undefined) {
 
-// Event handling
+//
+// ---------------------------------------------------------
+// Event handling utilities
+// ---------------------------------------------------------
 
-jtd.addEvent = function(el, type, handler) {
-  if (el.attachEvent) el.attachEvent('on'+type, handler); else el.addEventListener(type, handler);
-}
-jtd.removeEvent = function(el, type, handler) {
-  if (el.detachEvent) el.detachEvent('on'+type, handler); else el.removeEventListener(type, handler);
-}
-jtd.onReady = function(ready) {
-  // in case the document is already rendered
-  if (document.readyState!=='loading') ready();
-  // modern browsers
-  else if (document.addEventListener) document.addEventListener('DOMContentLoaded', ready);
-  // IE <= 8
-  else document.attachEvent('onreadystatechange', function(){
-      if (document.readyState==='complete') ready();
-  });
-}
+  /**
+   * Adds an event listener to an element with cross-browser support.
+   *
+   * @function jtd.addEvent
+   * @param {Element|Document|Window} el - The element to attach the listener to.
+   * @param {string} type - The event type (e.g., `"click"`).
+   * @param {Function} handler - Callback executed when event triggers.
+   */
+  jtd.addEvent = function(el, type, handler) {
+    if (el.attachEvent) el.attachEvent('on' + type, handler);
+    else el.addEventListener(type, handler);
+  };
 
-// Show/hide mobile menu
+  /**
+   * Removes an event listener from an element with cross-browser support.
+   *
+   * @function jtd.removeEvent
+   * @param {Element|Document|Window} el - Target element.
+   * @param {string} type - Event type.
+   * @param {Function} handler - Event handler previously attached.
+   */
+  jtd.removeEvent = function(el, type, handler) {
+    if (el.detachEvent) el.detachEvent('on' + type, handler);
+    else el.removeEventListener(type, handler);
+  };
 
-function initNav() {
-  jtd.addEvent(document, 'click', function(e){
-    var target = e.target;
-    while (target && !(target.classList && target.classList.contains('nav-list-expander'))) {
-      target = target.parentNode;
+  /**
+   * Executes a callback when DOM is fully loaded.
+   *
+   * Handles:
+   * - `DOMContentLoaded` (modern browsers)
+   * - `document.readyState`
+   * - IE8 fallback via `onreadystatechange`
+   *
+   * @function jtd.onReady
+   * @param {Function} ready - Function executed when DOM is ready.
+   */
+  jtd.onReady = function(ready) {
+    if (document.readyState !== 'loading') {
+      ready();
     }
-    if (target) {
-      e.preventDefault();
-      target.ariaExpanded = target.parentNode.classList.toggle('active');
+    else if (document.addEventListener) {
+      document.addEventListener('DOMContentLoaded', ready);
     }
-  });
-
-  const siteNav    = document.getElementById('site-nav');
-  const mainHeader = document.getElementById('main-header');
-  const menuButton = document.getElementById('menu-button');
-
-
-  jtd.addEvent(menuButton, 'click', function(e){
-    e.preventDefault();
-
-    if (menuButton.classList.toggle('nav-open')) {
-      siteNav.classList.add('nav-open');
-      mainHeader.classList.add('nav-open');
-      menuButton.ariaExpanded = "true";
-    } else {
-      siteNav.classList.remove('nav-open');
-      mainHeader.classList.remove('nav-open');
-      menuButton.ariaExpanded = false;
-    }
-  });
-
-}
-
-// Site search
-
-function initSearch() {
-  var request = new XMLHttpRequest();
-  request.open('GET', '/pr-preview/pr-220/assets/js/search-data.json', true);
-
-  request.onload = function(){
-    if (request.status >= 200 && request.status < 400) {
-      var docs = JSON.parse(request.responseText);
-
-      lunr.tokenizer.separator = "/[\\s/]+/";
-
-      var index = lunr(function(){
-        this.ref('id');
-        this.field('title', { boost: 200 });
-        this.field('description');
-        this.field('content', { boost: 2 });
-        this.field('relUrl');
-        this.metadataWhitelist = ['position']
-
-        for (var i in docs) {
-          this.add({
-            id: i,
-            title: docs[i].title,
-            description: docs[i].description,
-            content: docs[i].content,
-            relUrl: docs[i].relUrl
-          });
-        }
+    else {
+      document.attachEvent('onreadystatechange', function() {
+        if (document.readyState === 'complete') ready();
       });
-
-      searchLoaded(index, docs);
-      window.jtdSearchIndex = index;
-      window.jtdSearchDocs = docs;
-
-    } else {
-      console.log('Error loading ajax request. Request status:' + request.status);
     }
   };
 
-  request.onerror = function(){
-    console.log('There was a connection error');
-  };
+//
+// ---------------------------------------------------------
+// Navigation (mobile menu, active link highlighting)
+// ---------------------------------------------------------
 
-  request.send();
-}
+  /**
+   * Initializes the site’s mobile navigation system.
+   *
+   * Features:
+   * - Expand/collapse nested nav lists
+   * - Toggle entire mobile menu
+   * - Adds `ariaExpanded` attributes for accessibility
+   *
+   * @function initNav
+   * @private
+   */
+  function initNav() {
+    jtd.addEvent(document, 'click', function(e) {
+      var target = e.target;
 
-function searchLoaded(index, docs) {
+      // Find the element controlling nav expansion
+      while (target && !(target.classList && target.classList.contains('nav-list-expander'))) {
+        target = target.parentNode;
+      }
 
-  var searchInput = document.getElementById('search-input');
-  var searchResults = document.getElementById('search-results');
-  var mainHeader = document.getElementById('main-header');
-  var currentInput;
-  var currentSearchIndex = 0;
-
-  // add event listener on ctrl + <focus_shortcut_key> for showing the search input
-  jtd.addEvent(document, 'keydown', function (e) {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-      e.preventDefault();
-
-      mainHeader.classList.add('nav-open');
-      searchInput.focus();
-    }
-  });
-
-  function showSearch() {
-    document.documentElement.classList.add('search-active');
-  }
-
-  function hideSearch() {
-    document.documentElement.classList.remove('search-active');
-  }
-
-  function update() {
-    currentSearchIndex++;
-
-    var input = searchInput.value;
-    if (input === '') {
-      hideSearch();
-    } else {
-      showSearch();
-      // scroll search input into view, workaround for iOS Safari
-      window.scroll(0, -1);
-      setTimeout(function(){ window.scroll(0, 0); }, 0);
-    }
-    if (input === currentInput) {
-      return;
-    }
-    currentInput = input;
-    searchResults.innerHTML = '';
-    if (input === '') {
-      return;
-    }
-
-    var results = index.query(function (query) {
-      var tokens = lunr.tokenizer(input)
-      query.term(tokens, {
-        boost: 10
-      });
-      query.term(tokens, {
-        wildcard: lunr.Query.wildcard.TRAILING
-      });
+      if (target) {
+        e.preventDefault();
+        target.ariaExpanded = target.parentNode.classList.toggle('active');
+      }
     });
 
-    if ((results.length === 0) && (input.length > 2)) {
-      var tokens = lunr.tokenizer(input).filter(function(token, i) {
-        return token.str.length < 20;
-      })
-      if (tokens.length > 0) {
-        results = index.query(function (query) {
-          query.term(tokens, {
-            editDistance: Math.round(Math.sqrt(input.length / 2 - 1))
-          });
-        });
-      }
-    }
+    const siteNav = document.getElementById('site-nav');
+    const mainHeader = document.getElementById('main-header');
+    const menuButton = document.getElementById('menu-button');
 
-    let screenReaderFeedback = document.getElementById('screen-reader-feedback');
-    screenReaderFeedback.innerText = "";
+    /**
+     * Toggles mobile navigation panel.
+     */
+    jtd.addEvent(menuButton, 'click', function(e) {
+      e.preventDefault();
 
-    if (results.length === 0) {
-      var noResultsDiv = document.createElement('div');
-      noResultsDiv.classList.add('search-no-result');
-      noResultsDiv.innerText = 'No results found';
-      searchResults.appendChild(noResultsDiv);
-      screenReaderFeedback.innerText = 'No results found';
-
-    } else {
-      var resultsList = document.createElement('ul');
-      resultsList.classList.add('search-results-list');
-      searchResults.appendChild(resultsList);
-      if ( results.length === 1 ) {
-        screenReaderFeedback.innerText = results.length + ' result found, use arrow keys to read';
+      if (menuButton.classList.toggle('nav-open')) {
+        siteNav.classList.add('nav-open');
+        mainHeader.classList.add('nav-open');
+        menuButton.ariaExpanded = "true";
       } else {
-        screenReaderFeedback.innerText = results.length + ' results found, use arrow keys to read';
+        siteNav.classList.remove('nav-open');
+        mainHeader.classList.remove('nav-open');
+        menuButton.ariaExpanded = false;
       }
-      jtd.addEvent(resultsList, 'keydown', function(e){
-        handleSearchKeyEvents( searchInput, e );
-      });
-      addResults(resultsList, results, 0, 10, 100, currentSearchIndex);
-    }
+    });
+  }
 
-    function addResults(resultsList, results, start, batchSize, batchMillis, searchIndex) {
-      if (searchIndex !== currentSearchIndex) {
-        return;
-      }
-      for (var i = start; i < (start + batchSize); i++) {
-        if (i === results.length) {
-          return;
-        }
-        addResult(resultsList, results[i]);
-      }
-      setTimeout(function() {
-        addResults(resultsList, results, start + batchSize, batchSize, batchMillis, searchIndex);
-      }, batchMillis);
-    }
+//
+// ---------------------------------------------------------
+// Search system initialization
+// ---------------------------------------------------------
 
-    function addResult(resultsList, result) {
-      var doc = docs[result.ref];
+  /**
+   * Loads search data (search-data.json) and initializes Lunr.js index.
+   *
+   * After loading, exposes:
+   * - `window.jtdSearchIndex`
+   * - `window.jtdSearchDocs`
+   *
+   * Then calls {@link searchLoaded} to bind UI behavior.
+   *
+   * @function initSearch
+   * @private
+   */
+  function initSearch() {
+    var request = new XMLHttpRequest();
+    request.open('GET', '/pr-preview/pr-220/assets/js/search-data.json', true);
 
-      var resultsListItem = document.createElement('li');
-      resultsListItem.classList.add('search-results-list-item');
-      resultsList.appendChild(resultsListItem);
+    request.onload = function() {
+      if (request.status >= 200 && request.status < 400) {
+        var docs = JSON.parse(request.responseText);
 
-      var resultLink = document.createElement('a');
-      resultLink.classList.add('search-result');
-      resultLink.setAttribute('href', doc.url);
-      resultsListItem.appendChild(resultLink);
+        lunr.tokenizer.separator = "/[\\s/]+/";
 
-      var resultTitle = document.createElement('div');
-      resultTitle.classList.add('search-result-title');
-      resultLink.appendChild(resultTitle);
+        /** @type {lunr.Index} */
+        var index = lunr(function() {
+          this.ref('id');
+          this.field('title', { boost: 200 });
+          this.field('description');
+          this.field('content', { boost: 2 });
+          this.field('relUrl');
+          this.metadataWhitelist = ['position'];
 
-      // note: the SVG svg-doc is only loaded as a Jekyll include if site.search_enabled is true; see _includes/icons/icons.html
-      var resultDoc = document.createElement('div');
-      resultDoc.classList.add('search-result-doc');
-      resultDoc.innerHTML = '<svg viewBox="0 0 24 24" class="search-result-icon" aria-hidden="true"><use xlink:href="#svg-doc"></use></svg>';
-      resultTitle.appendChild(resultDoc);
-
-      var resultDocTitle = document.createElement('div');
-      resultDocTitle.classList.add('search-result-doc-title');
-      resultDocTitle.innerHTML = doc.doc;
-      resultDoc.appendChild(resultDocTitle);
-      var resultDocOrSection = resultDocTitle;
-
-      if (doc.doc !== doc.title) {
-        resultDoc.classList.add('search-result-doc-parent');
-        var resultSection = document.createElement('div');
-        resultSection.classList.add('search-result-section');
-        resultSection.innerHTML = doc.title;
-        resultTitle.appendChild(resultSection);
-        resultDocOrSection = resultSection;
-      }
-
-      var metadata = result.matchData.metadata;
-      var titlePositions = [];
-      var contentPositions = [];
-      for (var j in metadata) {
-        var meta = metadata[j];
-        if (meta.title) {
-          var positions = meta.title.position;
-          for (var k in positions) {
-            titlePositions.push(positions[k]);
-          }
-        }
-        if (meta.content) {
-          var positions = meta.content.position;
-          for (var k in positions) {
-            var position = positions[k];
-            var previewStart = position[0];
-            var previewEnd = position[0] + position[1];
-            var ellipsesBefore = true;
-            var ellipsesAfter = true;
-            for (var k = 0; k < 5; k++) {
-              var nextSpace = doc.content.lastIndexOf(' ', previewStart - 2);
-              var nextDot = doc.content.lastIndexOf('. ', previewStart - 2);
-              if ((nextDot >= 0) && (nextDot > nextSpace)) {
-                previewStart = nextDot + 1;
-                ellipsesBefore = false;
-                break;
-              }
-              if (nextSpace < 0) {
-                previewStart = 0;
-                ellipsesBefore = false;
-                break;
-              }
-              previewStart = nextSpace + 1;
-            }
-            for (var k = 0; k < 10; k++) {
-              var nextSpace = doc.content.indexOf(' ', previewEnd + 1);
-              var nextDot = doc.content.indexOf('. ', previewEnd + 1);
-              if ((nextDot >= 0) && (nextDot < nextSpace)) {
-                previewEnd = nextDot;
-                ellipsesAfter = false;
-                break;
-              }
-              if (nextSpace < 0) {
-                previewEnd = doc.content.length;
-                ellipsesAfter = false;
-                break;
-              }
-              previewEnd = nextSpace;
-            }
-            contentPositions.push({
-              highlight: position,
-              previewStart: previewStart, previewEnd: previewEnd,
-              ellipsesBefore: ellipsesBefore, ellipsesAfter: ellipsesAfter
+          for (var i in docs) {
+            this.add({
+              id: i,
+              title: docs[i].title,
+              description: docs[i].description,
+              content: docs[i].content,
+              relUrl: docs[i].relUrl
             });
           }
-        }
-      }
+        });
 
-      if (titlePositions.length > 0) {
-        titlePositions.sort(function(p1, p2){ return p1[0] - p2[0] });
-        resultDocOrSection.innerHTML = '';
-        addHighlightedText(resultDocOrSection, doc.title, 0, doc.title.length, titlePositions);
-      }
+        searchLoaded(index, docs);
+        window.jtdSearchIndex = index;
+        window.jtdSearchDocs = docs;
 
-      if (contentPositions.length > 0) {
-        contentPositions.sort(function(p1, p2){ return p1.highlight[0] - p2.highlight[0] });
-        var contentPosition = contentPositions[0];
-        var previewPosition = {
-          highlight: [contentPosition.highlight],
-          previewStart: contentPosition.previewStart, previewEnd: contentPosition.previewEnd,
-          ellipsesBefore: contentPosition.ellipsesBefore, ellipsesAfter: contentPosition.ellipsesAfter
-        };
-        var previewPositions = [previewPosition];
-        for (var j = 1; j < contentPositions.length; j++) {
-          contentPosition = contentPositions[j];
-          if (previewPosition.previewEnd < contentPosition.previewStart) {
-            previewPosition = {
-              highlight: [contentPosition.highlight],
-              previewStart: contentPosition.previewStart, previewEnd: contentPosition.previewEnd,
-              ellipsesBefore: contentPosition.ellipsesBefore, ellipsesAfter: contentPosition.ellipsesAfter
-            }
-            previewPositions.push(previewPosition);
-          } else {
-            previewPosition.highlight.push(contentPosition.highlight);
-            previewPosition.previewEnd = contentPosition.previewEnd;
-            previewPosition.ellipsesAfter = contentPosition.ellipsesAfter;
-          }
-        }
-
-        var resultPreviews = document.createElement('div');
-        resultPreviews.classList.add('search-result-previews');
-        resultLink.appendChild(resultPreviews);
-
-        var content = doc.content;
-        for (var j = 0; j < Math.min(previewPositions.length, 3); j++) {
-          var position = previewPositions[j];
-
-          var resultPreview = document.createElement('div');
-          resultPreview.classList.add('search-result-preview');
-          resultPreviews.appendChild(resultPreview);
-
-          if (position.ellipsesBefore) {
-            resultPreview.appendChild(document.createTextNode('... '));
-          }
-          addHighlightedText(resultPreview, content, position.previewStart, position.previewEnd, position.highlight);
-          if (position.ellipsesAfter) {
-            resultPreview.appendChild(document.createTextNode(' ...'));
-          }
-        }
-      }
-    }
-
-    function addHighlightedText(parent, text, start, end, positions) {
-      var index = start;
-      for (var i in positions) {
-        var position = positions[i];
-        index = position[0] + position[1];
-        var highlight = document.createElement('mark');
-        highlight.classList.add('search-result-highlight');
-        highlight.innerHTML = text.substring(position[0], index);
-        parent.appendChild(highlight);
-      }
-    }
-  }
-
-  jtd.addEvent(searchInput, 'focus', function(){
-    setTimeout(update, 0);
-  });
-
-  jtd.addEvent(searchInput, 'keyup', function(e){
-    switch (e.keyCode) {
-      case 27: // When esc key is pressed, hide the results and clear the field
-        searchInput.value = '';
-        break;
-      case 38: // arrow up
-      case 40: // arrow down
-      case 13: // enter
-        e.preventDefault();
-        return;
-    }
-    update();
-  });
-
-  jtd.addEvent(searchInput, 'keydown', function(e){
-    handleSearchKeyEvents( searchInput, e );
-  });
-
-  jtd.addEvent(document, 'keyup', function (e) {
-    if ( e.keyCode === 9 ) { // tab
-      var focus = document.activeElement;
-      var results = document.querySelector( '.search' );
-      if ( ! results.contains( focus ) ) {
-        hideSearch();
-      }
-    }
-  });
-
-  jtd.addEvent(document, 'click', function(e){
-    if (e.target !== searchInput) {
-      hideSearch();
-    }
-  });
-}
-
-function handleSearchKeyEvents( searchInput, e ) {
-  switch (e.keyCode) {
-    case 38: // arrow up
-      e.preventDefault();
-      var active = document.querySelector('.search-result.active');
-      if (active) {
-        active.classList.remove('active');
-        if (active.parentElement.previousSibling) {
-          var previous = active.parentElement.previousSibling.querySelector('.search-result');
-          previous.classList.add('active');
-          previous.focus();
-        }
-      }
-      return;
-    case 40: // arrow down
-      e.preventDefault();
-      var active = document.querySelector('.search-result.active');
-      if (active) {
-        if (active.parentElement.nextSibling) {
-          var next = active.parentElement.nextSibling.querySelector('.search-result');
-          active.classList.remove('active');
-          next.classList.add('active');
-          next.focus();
-        }
       } else {
-        var next = document.querySelector('.search-result');
-        if (next) {
-          next.classList.add('active');
-          next.focus();
+        console.log('Error loading ajax request. Request status:' + request.status);
+      }
+    };
+
+    request.onerror = function() {
+      console.log('There was a connection error');
+    };
+
+    request.send();
+  }
+
+//
+// ---------------------------------------------------------
+// Search widget behavior
+// ---------------------------------------------------------
+
+  /**
+   * Initializes live search UI.
+   *
+   * Includes:
+   * - Updated results on keystrokes
+   * - Accessibility announcements
+   * - Keyboard navigation (arrows, Enter)
+   * - Fuzzy search fallback
+   *
+   * @function searchLoaded
+   * @param {lunr.Index} index - Lunr search index.
+   * @param {Object.<string, Object>} docs - Document metadata.
+   * @private
+   */
+  function searchLoaded(index, docs) {
+    var searchInput = document.getElementById('search-input');
+    var searchResults = document.getElementById('search-results');
+    var mainHeader = document.getElementById('main-header');
+    var currentInput;
+    var currentSearchIndex = 0;
+
+    // Show search input via Ctrl+ shortcut
+    jtd.addEvent(document, 'keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        mainHeader.classList.add('nav-open');
+        searchInput.focus();
+      }
+    });
+
+    /**
+     * Shows the search results panel.
+     * @function
+     */
+    function showSearch() {
+      document.documentElement.classList.add('search-active');
+    }
+
+    /**
+     * Hides the search results panel.
+     * @function
+     */
+    function hideSearch() {
+      document.documentElement.classList.remove('search-active');
+    }
+
+    /**
+     * Updates search results each time input changes.
+     *
+     * Handles:
+     * - Live search
+     * - Fuzzy matching fallback
+     * - Batched result rendering
+     * - Screen reader announcements
+     *
+     * @function update
+     * @private
+     */
+    function update() {
+      currentSearchIndex++;
+      var input = searchInput.value;
+
+      if (input === '') {
+        hideSearch();
+      } else {
+        showSearch();
+        // Scroll fix for iOS Safari
+        window.scroll(0, -1);
+        setTimeout(function(){ window.scroll(0, 0); }, 0);
+      }
+
+      if (input === currentInput) return;
+
+      currentInput = input;
+      searchResults.innerHTML = '';
+
+      if (input === '') return;
+
+      /** @type {lunr.Index.Result[]} */
+      var results = index.query(function(query) {
+        var tokens = lunr.tokenizer(input);
+        query.term(tokens, { boost: 10 });
+        query.term(tokens, {
+          wildcard: lunr.Query.wildcard.TRAILING
+        });
+      });
+
+      // Fuzzy fallback
+      if (results.length === 0 && input.length > 2) {
+        var tokens = lunr.tokenizer(input).filter(t => t.str.length < 20);
+        if (tokens.length > 0) {
+          results = index.query(function(query) {
+            query.term(tokens, {
+              editDistance: Math.round(Math.sqrt(input.length / 2 - 1))
+            });
+          });
         }
       }
-      return;
-    case 13: // enter
-      e.preventDefault();
-      var active = document.querySelector('.search-result.active');
-      if (active) {
-        active.click();
+
+      let screenReaderFeedback = document.getElementById('screen-reader-feedback');
+      screenReaderFeedback.innerText = "";
+
+      if (results.length === 0) {
+        // No results
+        var noResultsDiv = document.createElement('div');
+        noResultsDiv.classList.add('search-no-result');
+        noResultsDiv.innerText = 'No results found';
+        searchResults.appendChild(noResultsDiv);
+        screenReaderFeedback.innerText = 'No results found';
+
+      } else {
+        // Render results
+        var resultsList = document.createElement('ul');
+        resultsList.classList.add('search-results-list');
+        searchResults.appendChild(resultsList);
+
+        screenReaderFeedback.innerText =
+            results.length === 1 ?
+                '1 result found, use arrow keys to read' :
+                results.length + ' results found, use arrow keys to read';
+
+        jtd.addEvent(resultsList, 'keydown', function(e) {
+          handleSearchKeyEvents(searchInput, e);
+        });
+
+        addResults(resultsList, results, 0, 10, 100, currentSearchIndex);
       }
-      return;
+
+      /**
+       * Recursively batch-renders search results to reduce UI blocking.
+       *
+       * @param {HTMLElement} resultsList
+       * @param {lunr.Index.Result[]} results
+       * @param {number} start - Start index.
+       * @param {number} batchSize - How many results to render at once.
+       * @param {number} batchMillis - Delay between batches.
+       * @param {number} searchIndex - Used to cancel outdated renders.
+       */
+      function addResults(resultsList, results, start, batchSize, batchMillis, searchIndex) {
+        if (searchIndex !== currentSearchIndex) return;
+
+        for (var i = start; i < start + batchSize; i++) {
+          if (i === results.length) return;
+          addResult(resultsList, results[i]);
+        }
+
+        setTimeout(function() {
+          addResults(resultsList, results, start + batchSize, batchSize, batchMillis, searchIndex);
+        }, batchMillis);
+      }
+
+      /**
+       * Renders a single search result item.
+       *
+       * @param {HTMLElement} resultsList
+       * @param {lunr.Index.Result} result
+       */
+      function addResult(resultsList, result) {
+        let doc = docs[result.ref];
+
+        let resultsListItem = document.createElement('li');
+        resultsListItem.classList.add('search-results-list-item');
+        resultsList.appendChild(resultsListItem);
+
+        let resultLink = document.createElement('a');
+        resultLink.classList.add('search-result');
+        resultLink.href = doc.url;
+        resultsListItem.appendChild(resultLink);
+
+        let resultTitle = document.createElement('div');
+        resultTitle.classList.add('search-result-title');
+        resultLink.appendChild(resultTitle);
+
+        let resultDoc = document.createElement('div');
+        resultDoc.classList.add('search-result-doc');
+        resultDoc.innerHTML = '<svg viewBox="0 0 24 24" class="search-result-icon" aria-hidden="true"><use xlink:href="#svg-doc"></use></svg>';
+        resultTitle.appendChild(resultDoc);
+
+        let resultDocTitle = document.createElement('div');
+        resultDocTitle.classList.add('search-result-doc-title');
+        resultDocTitle.innerHTML = doc.title;
+        resultDoc.appendChild(resultDocTitle);
+
+        let resultSection = document.createElement('div');
+        resultSection.classList.add('search-result-section');
+        resultSection.innerHTML = "In: " + doc.doc;
+        resultTitle.appendChild(resultSection);
+      }
+    }
+
+    // Bind search events
+    jtd.addEvent(searchInput, 'focus', () => setTimeout(update, 0));
+    jtd.addEvent(searchInput, 'keyup', function(e) {
+      switch (e.keyCode) {
+        case 27: searchInput.value = ''; break;
+        case 38:
+        case 40:
+        case 13: e.preventDefault(); return;
+      }
+      update();
+    });
+
+    jtd.addEvent(searchInput, 'keydown', function(e) {
+      handleSearchKeyEvents(searchInput, e);
+    });
+
+    // Hide search when tabbing away
+    jtd.addEvent(document, 'keyup', function(e) {
+      if (e.keyCode === 9) {
+        let focus = document.activeElement;
+        let results = document.querySelector('.search');
+        if (!results.contains(focus)) hideSearch();
+      }
+    });
+
+    // Hide search when clicking outside input
+    jtd.addEvent(document, 'click', function(e) {
+      if (e.target !== searchInput) hideSearch();
+    });
   }
-}
 
-// Note: pathname can have a trailing slash on a local jekyll server
-// and not have the slash on GitHub Pages
+//
+// ---------------------------------------------------------
+// Keyboard navigation for search results
+// ---------------------------------------------------------
 
-function navLink() {
-  var pathname = document.location.pathname;
+  /**
+   * Handles arrow key navigation and Enter selection inside search results.
+   *
+   * @function handleSearchKeyEvents
+   * @param {HTMLInputElement} searchInput - The search input element.
+   * @param {KeyboardEvent} e - Key event.
+   */
+  function handleSearchKeyEvents(searchInput, e) {
+    switch (e.keyCode) {
+      case 38: { // Up arrow
+        e.preventDefault();
+        var active = document.querySelector('.search-result.active');
+        if (active) {
+          active.classList.remove('active');
+          if (active.parentElement.previousSibling) {
+            var prev = active.parentElement.previousSibling.querySelector('.search-result');
+            prev.classList.add('active');
+            prev.focus();
+          }
+        }
+        return;
+      }
 
-  var navLink = document.getElementById('site-nav').querySelector('a[href="' + pathname + '"]');
-  if (navLink) {
-    return navLink;
-  }
+      case 40: { // Down arrow
+        e.preventDefault();
+        var active = document.querySelector('.search-result.active');
+        if (active) {
+          if (active.parentElement.nextSibling) {
+            var next = active.parentElement.nextSibling.querySelector('.search-result');
+            active.classList.remove('active');
+            next.classList.add('active');
+            next.focus();
+          }
+        } else {
+          var first = document.querySelector('.search-result');
+          if (first) {
+            first.classList.add('active');
+            first.focus();
+          }
+        }
+        return;
+      }
 
-  // The `permalink` setting may produce navigation links whose `href` ends with `/` or `.html`.
-  // To find these links when `/` is omitted from or added to pathname, or `.html` is omitted:
-
-  if (pathname.endsWith('/') && pathname !== '/') {
-    pathname = pathname.slice(0, -1);
-  }
-
-  if (pathname !== '/') {
-    navLink = document.getElementById('site-nav').querySelector('a[href="' + pathname + '"], a[href="' + pathname + '/"], a[href="' + pathname + '.html"]');
-    if (navLink) {
-      return navLink;
+      case 13: { // Enter
+        e.preventDefault();
+        var active = document.querySelector('.search-result.active');
+        if (active) active.click();
+        return;
+      }
     }
   }
 
-  return null; // avoids `undefined`
-}
+//
+// ---------------------------------------------------------
+// Navigation link helpers (active link, scroll into view)
+// ---------------------------------------------------------
 
-// Scroll site-nav to ensure the link to the current page is visible
+  /**
+   * Returns the nav link corresponding to the current page path.
+   *
+   * Handles variations:
+   * - With/without trailing slash
+   * - `.html` extension
+   *
+   * @function navLink
+   * @returns {HTMLAnchorElement|null}
+   */
+  function navLink() {
+    var pathname = document.location.pathname;
 
-function scrollNav() {
-  const targetLink = navLink();
-  if (targetLink) {
-    targetLink.scrollIntoView({ block: "center" });
-    targetLink.removeAttribute('href');
-  }
-}
+    var navLink = document.getElementById('site-nav').querySelector(`a[href="${pathname}"]`);
+    if (navLink) return navLink;
 
-// Find the nav-list-link that refers to the current page
-// then make it and all enclosing nav-list-item elements active.
-
-function activateNav() {
-  var target = navLink();
-  if (target) {
-    target.classList.toggle('active', true);
-    target.ariaCurrent = "page";
-  }
-  while (target) {
-    while (target && !(target.classList && target.classList.contains('nav-list-item'))) {
-      target = target.parentNode;
+    // Normalize path
+    if (pathname.endsWith('/') && pathname !== '/') {
+      pathname = pathname.slice(0, -1);
     }
+
+    if (pathname !== '/') {
+      navLink = document.getElementById('site-nav')
+          .querySelector(`a[href="${pathname}"], a[href="${pathname}/"], a[href="${pathname}.html"]`);
+      if (navLink) return navLink;
+    }
+
+    return null;
+  }
+
+  /**
+   * Scrolls sidebar navigation so the active link is centered.
+   *
+   * Also removes the link's `href` to prevent accidental reloads.
+   *
+   * @function scrollNav
+   */
+  function scrollNav() {
+    const targetLink = navLink();
+    if (targetLink) {
+      targetLink.scrollIntoView({ block: "center" });
+      targetLink.removeAttribute('href');
+    }
+  }
+
+  /**
+   * Marks the current nav item and its ancestors as active.
+   *
+   * Adds:
+   * - `.active` classes
+   * - `aria-current="page"`
+   *
+   * @function activateNav
+   */
+  function activateNav() {
+    var target = navLink();
     if (target) {
-      target.classList.toggle('active', true);
-      target = target.parentNode;
+      target.classList.add('active');
+      target.ariaCurrent = "page";
+    }
+    while (target) {
+      while (target && !(target.classList && target.classList.contains('nav-list-item'))) {
+        target = target.parentNode;
+      }
+      if (target) {
+        target.classList.add('active');
+        target = target.parentNode;
+      }
     }
   }
-}
 
-// Document ready
+//
+// ---------------------------------------------------------
+// Document ready initialization
+// ---------------------------------------------------------
 
-jtd.onReady(function(){
-  if (document.getElementById('site-nav')) {
-    initNav();
-    activateNav();
-    scrollNav();
-  }
+  jtd.onReady(function() {
+    if (document.getElementById('site-nav')) {
+      initNav();
+      activateNav();
+      scrollNav();
+    }
 
-  initSearch();
-});
-	
-/**
- * Initializes tabIndex on code blocks to make them focusable.
- * @function
- */
-jtd.onReady(function() {
-  var codeBlocks = document.querySelectorAll('div.highlighter-rouge, div.listingblock > div.content, figure.highlight');
-
-  // Loop through each code block and make it focusable.
-  codeBlocks.forEach(codeBlock => {
-    codeBlock.tabIndex = 0;
+    initSearch();
   });
-});
+
+  /**
+   * Makes code blocks focusable for keyboard navigation.
+   *
+   * Applies to:
+   * - Rouge highlighter blocks
+   * - AsciiDoc listingblocks
+   * - Generic code `<figure>` blocks
+   *
+   * @function
+   */
+  jtd.onReady(function() {
+    var codeBlocks = document.querySelectorAll(
+        'div.highlighter-rouge, div.listingblock > div.content, figure.highlight'
+    );
+
+    codeBlocks.forEach(codeBlock => {
+      codeBlock.tabIndex = 0;
+    });
+  });
 
 })(window.jtd = window.jtd || {});
 
-// ---------------------------
-// Full Search Results Page
-// ---------------------------
-jtd.onReady(function(){
+//
+// ---------------------------------------------------------
+// Full Search Results Page Logic
+// ---------------------------------------------------------
 
+jtd.onReady(function() {
+
+  /**
+   * Processes full-page search results based on `?q=...` URL parameter.
+   *
+   * Runs only on pages containing `#search-results-page`.
+   *
+   * Handles:
+   * - Waiting for global Lunr index (loaded asynchronously)
+   * - Rendering complete results list
+   * - Updating page title & header
+   *
+   * @function processFullPageSearch
+   * @private
+   */
   function processFullPageSearch() {
     const urlParams = new URLSearchParams(window.location.search);
     const query = urlParams.get("q") ? urlParams.get("q").trim() : null;
@@ -551,50 +595,43 @@ jtd.onReady(function(){
     const searchInput = document.getElementById("search-input");
     const input = query;
 
-    if (!query || !resultsContainer) {
-      return;
-    }
+    if (!query || !resultsContainer) return;
 
-    if (searchInput) {
-      searchInput.value = query;
-    }
+    if (searchInput) searchInput.value = query;
 
     if (!window.jtdSearchIndex || !window.jtdSearchDocs) {
-      resultsContainer.innerHTML = '<p>Error: The search index is not yet available. Please try again later.</p>';
+      resultsContainer.innerHTML =
+          '<p>Error: The search index is not yet available. Please try again later.</p>';
       return;
     }
 
     const index = window.jtdSearchIndex;
     const docs = window.jtdSearchDocs;
 
-    var results = index.query(function (query) {
-      var tokens = lunr.tokenizer(input)
-      query.term(tokens, {
-        boost: 10
-      });
-      query.term(tokens, {
-        wildcard: lunr.Query.wildcard.TRAILING
-      });
+    /** @type {lunr.Index.Result[]} */
+    var results = index.query(function(queryObj) {
+      var tokens = lunr.tokenizer(input);
+      queryObj.term(tokens, { boost: 10 });
+      queryObj.term(tokens, { wildcard: lunr.Query.wildcard.TRAILING });
     });
 
-    if ((results.length === 0) && (input.length > 2)) {
-      var tokens = lunr.tokenizer(input).filter(function(token, i) {
-        return token.str.length < 20;
-      })
+    // Fuzzy fallback
+    if (results.length === 0 && input.length > 2) {
+      var tokens = lunr.tokenizer(input).filter(t => t.str.length < 20);
       if (tokens.length > 0) {
-        results = index.query(function (query) {
-          query.term(tokens, {
+        results = index.query(function(queryObj) {
+          queryObj.term(tokens, {
             editDistance: Math.round(Math.sqrt(input.length / 2 - 1))
           });
         });
       }
     }
 
-    // Display results in result page.
+    // Render results
     if (results.length > 0) {
-      let term = ( results.length === 1 ) ? 'Search result' : 'Search results';
-      let pageTitle = document.querySelector( 'title' );
-      let h1 = document.querySelector( 'h1' );
+      let term = results.length === 1 ? 'Search result' : 'Search results';
+      let pageTitle = document.querySelector('title');
+      let h1 = document.querySelector('h1');
 
       pageTitle.innerText = `${results.length} ${term} found for "${query}"`;
       h1.innerText = `${results.length} ${term} found for "${query}"`;
@@ -603,39 +640,35 @@ jtd.onReady(function(){
         <h2>${term}</h2>
         <ol>
           ${results.map(r => {
-            
-            const doc = docs[r.ref];
-            
-            docSection = `<p><strong>In:</strong> ${doc.doc}</p>`;
+        const doc = docs[r.ref];
 
-            if ( doc.description ) {
-              docDescription = `<p>${doc.description}</p>`;
-            } else {
-              docDescription = '';
-            }
-            
-            return `
+        const docSection = `<p><strong>In:</strong> ${doc.doc}</p>`;
+        const description = doc.description ? `<p>${doc.description}</p>` : '';
+
+        return `
               <li>
                 <h3><a href="${doc.url}">${doc.title}</a></h3>
-                ${docDescription}
+                ${description}
                 ${docSection}
               </li>`;
-            
-          }).join("")}
-          
+      }).join("")}
         </ol>
       `;
+
     } else {
-      resultsContainer.innerHTML = `<p>No results found for "<strong>${query}</strong>".</p>`;
+      resultsContainer.innerHTML =
+          `<p>No results found for "<strong>${query}</strong>".</p>`;
     }
   }
 
-  // Poll until the asynchronous initSearch() function has loaded the index data.
+  /**
+   * Polls asynchronously until Lunr index is available.
+   */
   const checkInterval = setInterval(function() {
-      if (window.jtdSearchIndex && window.jtdSearchDocs) {
-          clearInterval(checkInterval);
-          processFullPageSearch();
-      }
+    if (window.jtdSearchIndex && window.jtdSearchDocs) {
+      clearInterval(checkInterval);
+      processFullPageSearch();
+    }
   }, 100);
 
 });

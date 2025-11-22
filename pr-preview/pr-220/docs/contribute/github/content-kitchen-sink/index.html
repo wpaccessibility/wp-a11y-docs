@@ -380,8 +380,8 @@
   
   <div class="main">
     <div id="main-header" class="main-header">
-    <div class="search">
-  <form class="search-input-wrap" role="search" action="/pr-preview/pr-220/search/" method="get">
+    <search class="search">
+  <form class="search-input-wrap" action="/pr-preview/pr-220/search/" method="get">
     <label for="search-input" class="search-label">
       <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
       <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
@@ -389,12 +389,11 @@
       </svg>
     </label>
 
-    <input 
-      type="search" 
-      id="search-input" 
-      name="q" 
-      class="search-input" 
-      placeholder="Search WP Accessibility Knowledge Base" 
+    <input
+      type="search"
+      id="search-input"
+      name="q"
+      class="search-input"
       autocomplete="off"
     >
 
@@ -402,7 +401,7 @@
   </form>
 
   <div id="search-results" class="search-results"></div>
-</div>
+</search>
 
 </div>
 
@@ -454,7 +453,7 @@
 
           <h1 id="kitchen-sink-options-available-for-content">Kitchen sink: options available for content</h1>
 
-<p class="callout lead">This page lists the options and code available for creating content in this documentation</p>
+<p class="lead">This page lists the options and code available for creating content in this documentation</p>
 
 <p class="callout info">WordPress.org provides a lot of style guides for documentation: <a href="https://make.wordpress.org/docs/style-guide/welcome/highlights/">WordPress Style Guides - highlights</a>. We value most of all: be <a href="docs/contribute/CODE_OF_CONDUCT.md">kind and professional</a> in your text and please write the text yourself or make sure the reader knows who you are citing.</p>
 
@@ -466,8 +465,14 @@
 <span class="gu">#### This is an H4 heading</span>
 <span class="gu">##### This is an H5 heading</span>
 <span class="gu">###### This is an H6 heading</span>
-
 </code></pre></div></div>
+
+<h1 id="this-is-an-h1-heading">This is an H1 heading</h1>
+<h2 id="this-is-an-h2-heading">This is an H2 heading</h2>
+<h3 id="this-is-an-h3-heading">This is an H3 heading</h3>
+<h4 id="this-is-an-h4-heading">This is an H4 heading</h4>
+<h5 id="this-is-an-h5-heading">This is an H5 heading</h5>
+<h6 id="this-is-an-h6-heading">This is an H6 heading</h6>
 
 <p class="callout alert">In blog posts the H1 is added by the template: <a href="/pr-preview/pr-220/docs/contribute/github/blog-post/">Add a blog post</a>.</p>
 
@@ -493,6 +498,10 @@ When you put care into preventing errors and clearly indicating when something g
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A link: Please visit the <span class="p">[</span><span class="nv">Make WordPress Accessible Team Handbook</span><span class="p">](</span><span class="sx">https://make.wordpress.org/accessibility/handbook/</span><span class="p">)</span> for more info about contributor days.
 </code></pre></div></div>
 <p>A link: Please visit the <a href="https://make.wordpress.org/accessibility/handbook/">Make WordPress Accessible Team Handbook</a> for more info about contributor days.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;small&gt;</span>This is small text<span class="nt">&lt;/small&gt;</span>.
+</code></pre></div></div>
+<p><small>This is small text</small>.</p>
 
 <h3 id="internal-links">Internal links</h3>
 
@@ -681,7 +690,7 @@ This is content inside a <span class="sb">`&lt;details&gt;`</span> dropdown.
     
 
     
-    <p class="text-small text-grey-dk-000 mb-0">
+    <p class="text-small">
         <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contribute/github/content-kitchen-sink.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
