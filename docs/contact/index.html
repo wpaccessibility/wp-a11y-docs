@@ -74,21 +74,24 @@
   <header class="site-header">
 
     <div class="lh-wrapper">
-      <img src="/assets/images/logo.jpg" alt="Accessibility: Advocate Equal Access">
-      <a href="/" class="site-title lh-tight">
-        WP Accessibility Knowledge Base</a>
+      <a href="/" class="site-title lh-tight" aria-label="WP Accessibility logo, to the homepage">
+        <img src="/assets/images/logo-wa11ypuu.png" alt="WP Accessibility logo">
+        WP Accessibility Knowledge Base
+      </a>
     </div>
-    <button id="menu-button" class="site-button btn-reset" aria-expanded="false">
-      <span>Menu</span>
-      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-        <use xlink:href="#svg-menu"></use>
-      </svg>
-    </button>
+
+    <div class="menu-button-wrapper">
+      <button id="menu-button" class="site-button" aria-expanded="false">
+        <span>Menu</span>
+        <svg viewBox="0 0 24 24" class="icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#svg-menu"></use>
+        </svg>
+      </button>
+    <div>
+
   </header>
 
   <nav aria-label="Main" id="site-nav" class="site-nav" tabindex="0">
-
-    <h2 class="screen-reader-text">Menu</h2>
 
     
 
@@ -372,7 +375,7 @@
   
   <div class="main">
     <div id="main-header" class="main-header">
-    <div class="search">
+    <section class="search" aria-label="Search">
   <form class="search-input-wrap" role="search" action="/search/" method="get">
     <label for="search-input" class="search-label">
       <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
@@ -381,12 +384,11 @@
       </svg>
     </label>
 
-    <input 
-      type="search" 
-      id="search-input" 
-      name="q" 
-      class="search-input" 
-      placeholder="Search WP Accessibility Knowledge Base" 
+    <input
+      type="search"
+      id="search-input"
+      name="q"
+      class="search-input"
       autocomplete="off"
     >
 
@@ -394,7 +396,7 @@
   </form>
 
   <div id="search-results" class="search-results"></div>
-</div>
+</section>
 
 </div>
 
@@ -439,7 +441,7 @@
     
 
     
-    <p class="text-small text-grey-dk-000 mb-0">
+    <p class="text-small">
         <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/contact/index.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
@@ -454,8 +456,9 @@
   <footer>
 
     <p>
+      <span aria-hidden="true">&#x2191;</span>
       <a href="#top" id="back-to-top" class="back-to-top">
-        <span aria-hidden="true">&#x2191;</span> Back to top
+        Back to top
       </a>
     </p>
 
