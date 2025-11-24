@@ -1,5 +1,5 @@
-<search class="search">
-  <form class="search-input-wrap" action="{{ site.baseurl }}/search/" method="get">
+<section class="search" aria-label="Search">
+  <form class="search-input-wrap" role="search" action="{{ site.baseurl }}/search/" method="get">
     <label for="search-input" class="search-label">
       <span class="screen-reader-text">Search {{ site.title }}</span>
       <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
@@ -19,4 +19,4 @@
   </form>
 
   <div id="search-results" class="search-results"></div>
-</search>
+</section>
