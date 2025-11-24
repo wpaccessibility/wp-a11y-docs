@@ -51,7 +51,7 @@ A legend can contain a heading. Make sure that the heading level fits correctly 
 </fieldset>
 ```
 
-{: .alert }
+{: .callout .alert }
 The reverse is not true: a heading may not contain a `legend`, because the `legend` needs to be an immediate child of the `fieldset`.
 
 ```html

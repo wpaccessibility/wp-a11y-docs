@@ -7,7 +7,7 @@ nav_order: 2
 
 # Semantic HTML
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed and restructured.  
 Related issue on [GitHub #141 Topic Semantic HTML](https://github.com/wpaccessibility/wp-a11y-docs/issues/141).  
 

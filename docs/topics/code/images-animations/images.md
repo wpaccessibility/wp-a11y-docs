@@ -7,7 +7,7 @@ nav_order: 2
 
 # Images in theme development
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed and restructured.  
 Related issue on [GitHub #147 Topic Images in theme development](https://github.com/wpaccessibility/wp-a11y-docs/issues/147).  
 

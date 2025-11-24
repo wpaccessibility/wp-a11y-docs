@@ -7,7 +7,7 @@ nav_order: 2
 
 # Color contrast of text against its background
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed, restructured and expanded.
 Related issue on [GitHub #127 Topic Color contrast of text against its background](https://github.com/wpaccessibility/wp-a11y-docs/issues/127).  
 

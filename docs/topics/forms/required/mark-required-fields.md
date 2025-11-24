@@ -26,7 +26,7 @@ A required field indicator can be:
     </figcaption>
 </figure>
 
-{: .alert }
+{: .callout .alert }
 **Note for developers**: screen readers have specific needs for discovering required fields. Read [Mark if a form field is required for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) about how to do this.
 
 ## Indication of required fields in WordPress form plugins

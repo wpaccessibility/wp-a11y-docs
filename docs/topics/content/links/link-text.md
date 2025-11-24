@@ -7,7 +7,7 @@ nav_order: 2
 
 # Write a meaningful link text
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed, restructured and expanded.
 Related issue on [GitHub #110 Topic Write a meaningful link text](https://github.com/wpaccessibility/wp-a11y-docs/issues/110).  
 
