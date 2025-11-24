@@ -74,8 +74,8 @@
   <header class="site-header">
 
     <div class="lh-wrapper">
-      <a href="/pr-preview/pr-220/" class="site-title lh-tight">
-        <img src="/pr-preview/pr-220/assets/images/logo-wa11ypuu.png" alt="WP Accessibility logo, to homepage">
+      <a href="/pr-preview/pr-220/" class="site-title lh-tight" aria-label="WP Accessibility logo, to the homepage">
+        <img src="/pr-preview/pr-220/assets/images/logo-wa11ypuu.png" alt="WP Accessibility logo">
         WP Accessibility Knowledge Base
       </a>
     </div>
@@ -375,8 +375,8 @@
   
   <div class="main">
     <div id="main-header" class="main-header">
-    <search class="search">
-  <form class="search-input-wrap" action="/pr-preview/pr-220/search/" method="get">
+    <section class="search" aria-label="Search">
+  <form class="search-input-wrap" role="search" action="/pr-preview/pr-220/search/" method="get">
     <label for="search-input" class="search-label">
       <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
       <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
@@ -396,7 +396,7 @@
   </form>
 
   <div id="search-results" class="search-results"></div>
-</search>
+</section>
 
 </div>
 

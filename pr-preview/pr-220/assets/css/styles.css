@@ -782,6 +782,7 @@ footer {
   font-size: var(--text-font-size-sm);
   font-weight: 300;
   margin: 0;
+  min-height: 48px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -847,7 +848,6 @@ footer {
 }
 .nav-list .nav-list-item > .nav-list .nav-list-item {
   position: relative;
-  min-height: 48px;
 }
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
   color: var(--color-neutral-inverse-color-subtle);
