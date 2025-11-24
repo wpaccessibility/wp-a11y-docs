@@ -7,7 +7,7 @@ nav_order: 4
 
 # Using color
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed and restructured.
 Related issue on [GitHub #130 Topic Color Use of color](https://github.com/wpaccessibility/wp-a11y-docs/issues/130).  
 

@@ -7,7 +7,7 @@ nav_order: 3
 
 # Images as links
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed, restructured and expanded.
 Related issue on [GitHub #117 Topic Images as links](https://github.com/wpaccessibility/wp-a11y-docs/issues/117).  
 

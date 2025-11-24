@@ -7,7 +7,7 @@ nav_order: 3
 
 # Setting reduced motion for animations
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed and restructured.  
 Related issue on [GitHub #148 Topic Setting reduced motion for animations](https://github.com/wpaccessibility/wp-a11y-docs/issues/148).  
 

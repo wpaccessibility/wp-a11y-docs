@@ -7,7 +7,7 @@ nav_order: 2
 
 # Skip links
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed and restructured.  
 Related issue on [GitHub #149 Topic Skip links](https://github.com/wpaccessibility/wp-a11y-docs/issues/149).  
 

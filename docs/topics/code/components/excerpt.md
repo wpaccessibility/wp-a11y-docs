@@ -7,7 +7,7 @@ nav_order: 3
 
 # Post Excerpts
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed, modernized and restructured.  
 Related issue on [GitHub #151 Topic Post Excerpts](https://github.com/wpaccessibility/wp-a11y-docs/issues/151).  
 

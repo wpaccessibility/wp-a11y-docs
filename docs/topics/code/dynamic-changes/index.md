@@ -7,7 +7,7 @@ nav_order: 7
 
 # Feedback on dynamic changes
 
-{: .alert }
+{: .callout .alert }
 This content will be reviewed and restructured. And probably divided into separate topics for more use cases.
 Related issue on [GitHub #166 Topic Feedback on dynamic changes](https://github.com/wpaccessibility/wp-a11y-docs/issues/166).  
 

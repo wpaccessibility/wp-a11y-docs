@@ -22,7 +22,7 @@ Assuming that you only request essential information in forms, most fields will 
     </figcaption>
 </figure>
 
-{: .alert }
+{: .callout .alert }
 **Note for developers**: for screen reader users, the indication if a field is required must be added in the code with a form field. Learn how to [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
 
 ## Indication of optional fields in WordPress form plugins
