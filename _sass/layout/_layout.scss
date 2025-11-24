@@ -9,7 +9,13 @@
   z-index: 0;
   display: flex;
   flex-wrap: wrap;
-  background-color: $sidebar-color;
+  background-color: $sidebar-background-color;
+  color: $sidebar-text-color;
+
+  a {
+    color: $sidebar-text-color;
+    font-size: var(--text-font-size-sm);
+  }
 
   @include mq(md) {
     flex-flow: column nowrap;
@@ -43,11 +49,12 @@
 
     .main-header {
       display: none;
-      background-color: $sidebar-color;
+      padding-top: 1rem;
+      background-color: $sidebar-background-color;
 
       @include mq(md) {
         display: flex;
-        background-color: $body-background-color;
+        background-color: var(--color-neutral-bg-document);
       }
 
       &.nav-open {
@@ -63,6 +70,9 @@
 
 .main {
   margin: auto;
+  background-image: url("/assets/images/logo-wa11ypuu-waving-head.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
 
   @include mq(md) {
     position: relative;
@@ -129,13 +139,15 @@
 .site-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   .lh-wrapper {
     align-items: center;
     display: flex;
 
     img {
-      max-width: 80px;
+      max-height: 48px;
+      padding-right: 1rem;
       margin: 0 auto;
       display: block;
     }
@@ -147,6 +159,8 @@
     }
   }
   @include mq(md) {
+    padding-top: 1rem;
+
     .lh-wrapper {
       display: block;
     }
@@ -160,44 +174,57 @@
   align-items: center;
   padding-top: $sp-3;
   padding-bottom: $sp-3;
-  color: $body-heading-color;
-  font-family: $heading-font-family;
+  color: $sidebar-text-color;
+  font-family: $body-font-family;
+  font-weight: 600;
   text-decoration: none;
+  max-width: 16rem;
 
-  & :hover,
-  & :focus {
+  &:hover,
+  &:focus {
     text-decoration: underline;
   }
 
   @include container;
 
-  @include fs-6;
-
   @include mq(md) {
     padding-top: 0;
     padding-bottom: 0;
+    max-width: 20rem;
   }
 }
 
-.site-button {
+.menu-button-wrapper {
   display: flex;
-  height: 100%;
-  padding: $gutter-spacing-sm;
-  align-items: center;
 
-  span {
-    padding-right: 0.5em;
-    color: $link-color;
-  }
+  .site-button {
+    display: flex;
+    align-items: center;
+    background-color: $sidebar-background-color;
+    color: $sidebar-text-color;
+    border-radius: $border-radius;
+    border-color: $sidebar-text-color;
+    padding: $sp-3;
+    margin: 0 $sp-3;
 
-  & :hover,
-  & :focus {
-    text-decoration: underline;
+    span {
+      padding-right: $sp-1;
+      font-weight: 700;
+    }
+
+    .icon {
+      color: $sidebar-text-color;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }
 
 @include mq(md) {
-  header .site-button {
+  header .menu-button-wrapper {
     display: none;
   }
 }
@@ -206,12 +233,12 @@
 
 body {
   position: relative;
-  padding-bottom: $sp-10;
+  margin: 0;
+  padding-bottom: 0;
   overflow-y: scroll;
 
   @include mq(md) {
     position: static;
-    padding-bottom: 0;
   }
 }
 
@@ -223,11 +250,8 @@ body {
   left: 0;
   padding-top: $sp-4;
   padding-bottom: $sp-4;
-  color: $grey-dk-000;
 
   @include container;
-
-  @include fs-2;
 
   @include mq(md) {
     position: static;
@@ -241,7 +265,13 @@ body {
   color: $link-color;
 }
 
+.back-to-top {
+  color: var(--color-neutral-color-default);
+  font-size: 1rem;
+}
+
 footer {
   margin-top: $sp-5;
+  padding-bottom: $sp-8;
   border-top: $border $border-color;
 }

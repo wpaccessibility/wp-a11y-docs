@@ -17,7 +17,7 @@ a.skip-to-main {
 a.skip-to-main:focus,
 a.skip-to-main:active {
   color: $link-color;
-  background-color: $body-background-color;
+  background-color: var(--color-neutral-bg-document);
   left: auto;
   top: auto;
   width: 30%;

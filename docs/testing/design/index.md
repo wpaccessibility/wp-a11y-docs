@@ -8,7 +8,7 @@ nav_order: 4
 
 # Design checks for web accessibility
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and expanded.
 Related issue on [GitHub #172 Topic Design checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/172).    
 
@@ -22,7 +22,7 @@ Check the color contrast ratio between text and its background. The rules in WCA
 
 There are many tools to calculate this easily, see [Color contrast checkers](http://www.webaxe.org/color-contrast-tools/).
 
-{: .tip }
+{: .callout  .tip }
 Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
 
 ## Color Contrast

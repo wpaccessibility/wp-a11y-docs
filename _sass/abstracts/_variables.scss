@@ -1,65 +1,139 @@
 @use "sass:map";
 
-$body-font-family:
-  system-ui,
-  -apple-system,
-  blinkmacsystemfont,
-  "Segoe UI",
-  roboto,
-  "Helvetica Neue",
-  arial,
-  sans-serif,
-  "Segoe UI Emoji" !default;
-$heading-font-family: georgia, "Times New Roman", times, serif;
-$mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
-$root-font-size: 16px !default; // DEPRECATED: previously base font-size for rems
-$body-line-height: 1.4 !default;
-$content-line-height: 1.6 !default;
-$body-heading-line-height: 1.25 !default;
-$font-size-1: 0.5625rem !default;
-$font-size-1-sm: 0.625rem !default;
-$font-size-2: 0.6875rem !default; // h4 - uppercased!, h6 not uppercased, text-small
-$font-size-3: 0.75rem !default; // h5
-$font-size-4: 0.875rem !default;
-$font-size-5: 1rem !default; // h3
-$font-size-6: 1.125rem !default; // h2
-$font-size-7: 1.5rem !default;
-$font-size-8: 2rem !default; // h1
-$font-size-9: 2.25rem !default;
-$font-size-10: 2.625rem !default;
-$font-size-10-sm: 3rem !default;
-$white: #fff !default;
-$grey-dk-000: #959396 !default;
-$grey-dk-050: #757575 !default;
-$grey-dk-100: #5c5962 !default;
-$grey-dk-200: #44434d !default;
-$grey-dk-250: #302d36 !default;
-$grey-dk-300: #27262b !default;
-$grey-lt-000: #f5f5f5 !default;
-$grey-lt-100: #eeebee !default;
-$grey-lt-200: #ecebed !default;
-$grey-lt-300: #e6e1e8 !default;
-$purple-000: #7253ed !default;
-$purple-100: #5e41d0 !default;
-$purple-200: #4e26af !default;
-$purple-300: #381885 !default;
-$wordpress-blue-000: #3858e9 !default;
-$blue-000: #2c84fa !default;
-$blue-100: #2869e6 !default;
-$blue-200: #264caf !default;
-$blue-300: #183385 !default;
-$green-000: #41d693 !default;
-$green-100: #11b584 !default;
-$green-200: #009c7b !default;
-$green-300: #026e57 !default;
-$yellow-000: #ffeb82 !default;
-$yellow-100: #fadf50 !default;
-$yellow-200: #f7d12e !default;
-$yellow-300: #e7af06 !default;
-$red-000: #f77e7e !default;
-$red-100: #f96e65 !default;
-$red-200: #e94c4c !default;
-$red-300: #b62424 !default;
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("/assets/fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("/assets/fonts/Source_Serif_4/SourceSerif4-VariableFont_opsz,wght.ttf");
+}
+
+// Colors new design
+:root {
+  /* Type scale */
+  --text-font-size-sm: clamp(1rem, 0.8118rem + 0.3765vw, 1rem);
+  --text-font-size-md: clamp(1.125rem, 1.0147rem + 0.4706vw, 1.25rem);
+  --text-font-size-lg: clamp(1.25rem, 1.2684rem + 0.5882vw, 1.5rem);
+  --text-font-size-xl: clamp(1.5rem, 1.5855rem + 0.7353vw, 2rem);
+  --text-font-size-2xl: clamp(2rem, 1.9818rem + 0.9191vw, 2.5rem);
+  --text-font-size-3xl: clamp(2.5rem, 2.4773rem + 1.1489vw, 3rem);
+
+  /* Colors: Brand */
+  --color-wa11ypuu-yellow: #f0c507;
+
+  /* Colors: Neutral */
+  --color-neutral-bg-document: #fcfcfc;
+  --color-neutral-bg-subtle: #f6f6f7;
+  --color-neutral-bg-default: #f0f1f1;
+  --color-neutral-bg-hover: #eaebeb;
+  --color-neutral-bg-active: #e5e5e6;
+  --color-neutral-border-subtle: #c2c4c5;
+  --color-neutral-border-default: #848789;
+  --color-neutral-border-hover: #797c7f;
+  --color-neutral-border-active: #6f7276;
+  --color-neutral-color-default: #606467;
+  --color-neutral-color-hover: #565a5e;
+  --color-neutral-color-active: #484c50;
+  --color-neutral-color-subtle: #3a3e43;
+  --color-neutral-color-document: #23282d;
+  --color-neutral-color-placeholder: #757575;
+
+  /* Colors: Neutral Inverse */
+  --color-neutral-inverse-bg-document: #202429;
+  --color-neutral-inverse-bg-subtle: #181c1f;
+  --color-neutral-inverse-bg-default: #565a5e;
+  --color-neutral-inverse-bg-hover: #484c50;
+  --color-neutral-inverse-bg-active: #3a3e43;
+  --color-neutral-inverse-border-subtle: #43474b;
+  --color-neutral-inverse-border-default: #c8c9cb;
+  --color-neutral-inverse-border-hover: #d3d4d5;
+  --color-neutral-inverse-border-active: #dfe0e0;
+  --color-neutral-inverse-color-default: #fcfcfc;
+  --color-neutral-inverse-color-hover: #fcfcfc;
+  --color-neutral-inverse-color-active: #fcfcfc;
+  --color-neutral-inverse-color-subtle: #c0c1c2;
+  --color-neutral-inverse-color-document: #fcfcfc;
+
+  /* Colors: Informative */
+  --color-informative-bg-document: #fbfcff;
+  --color-informative-bg-subtle: #f4f6fe;
+  --color-informative-bg-default: #edf0fd;
+  --color-informative-bg-hover: #e6eafc;
+  --color-informative-bg-active: #dfe4fc;
+  --color-informative-border-subtle: #b6c1f7;
+  --color-informative-border-default: #657eee;
+  --color-informative-border-hover: #5772ec;
+  --color-informative-border-active: #4866eb;
+  --color-informative-color-default: #3654df;
+  --color-informative-color-hover: #304cca;
+  --color-informative-color-active: #2940aa;
+  --color-informative-color-subtle: #22358c;
+  --color-informative-color-document: #16225b;
+
+  /* Colors: Positive */
+  --color-positive-bg-document: #fafdfb;
+  --color-positive-bg-subtle: #eff9f3;
+  --color-positive-bg-default: #e4f5ea;
+  --color-positive-bg-hover: #d9f1e2;
+  --color-positive-bg-active: #ceedd9;
+  --color-positive-border-subtle: #8ad3a6;
+  --color-positive-border-default: #009b3a;
+  --color-positive-border-hover: #009036;
+  --color-positive-border-active: #008432;
+  --color-positive-color-default: #00732b;
+  --color-positive-color-hover: #006827;
+  --color-positive-color-active: #005821;
+  --color-positive-color-subtle: #00481b;
+  --color-positive-color-document: #002f12;
+
+  /* Colors: Negative */
+  --color-negative-bg-document: #fffbfb;
+  --color-negative-bg-subtle: #fef4f4;
+  --color-negative-bg-default: #feeded;
+  --color-negative-bg-hover: #fde6e6;
+  --color-negative-bg-active: #fddede;
+  --color-negative-border-subtle: #f9b1b1;
+  --color-negative-border-default: #f14848;
+  --color-negative-border-hover: #ef2929;
+  --color-negative-border-active: #e60000;
+  --color-negative-color-default: #ca0000;
+  --color-negative-color-hover: #b70000;
+  --color-negative-color-active: #9c0000;
+  --color-negative-color-subtle: #820000;
+  --color-negative-color-document: #580000;
+
+  /* Colors: Warning */
+  --color-warning-bg-document: #fffcf3;
+  --color-warning-bg-subtle: #fff6db;
+  --color-warning-bg-default: #fff0c1;
+  --color-warning-bg-hover: #ffeaa6;
+  --color-warning-bg-active: #ffe48a;
+  --color-warning-border-subtle: #e9c00a;
+  --color-warning-border-default: #a08317;
+  --color-warning-border-hover: #947a17;
+  --color-warning-border-active: #887018;
+  --color-warning-color-default: #766117;
+  --color-warning-color-hover: #6b5817;
+  --color-warning-color-active: #5a4a16;
+  --color-warning-color-subtle: #493c14;
+  --color-warning-color-document: #2f2710;
+}
+
+// Color vars JTD theme
+$grey-dk-000: var(--color-neutral-border-default) !default;
+$grey-dk-050: var(--color-neutral-border-hover) !default;
+$grey-dk-100: var(--color-neutral-color-hover) !default;
+$grey-dk-200: var(--color-neutral-color-active) !default;
+$grey-dk-250: var(--color-neutral-color-subtle) !default;
+$grey-dk-300: var(--color-neutral-color-document) !default;
+$grey-lt-000: var(--color-neutral-bg-subtle) !default;
+$grey-lt-100: var(--color-neutral-bg-hover) !default;
+$grey-lt-200: var(--color-neutral-bg-active) !default;
+$grey-lt-300: var(--color-neutral-inverse-border-hover) !default;
+
+// Spacing.
 $spacing-unit: 1rem; // 1rem == 16px
 $spacers: (
   sp-0: 0,
@@ -84,17 +158,35 @@ $sp-7: map.get($spacers, sp-7) !default; // 2.5  rem == 40px
 $sp-8: map.get($spacers, sp-8) !default; // 3    rem == 48px
 $sp-9: map.get($spacers, sp-9) !default; // 3.5  rem == 56px
 $sp-10: map.get($spacers, sp-10) !default; // 4  rem == 64px
+$gutter-spacing: $sp-8 !default;
+$gutter-spacing-sm: $sp-4 !default;
+
+// Fonts.
+$body-font-family: "Source Sans 3", sans-serif;
+$heading-font-family: "Source Serif 4", serif;
+$mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
+
+// Main colors.
+$body-background-color: var(--color-neutral-bg-document) !default;
+$body-text-color: var(--color-neutral-color-subtle) !default;
+
+// Line heights.
+$body-line-height: 1.5 !default;
+$content-line-height: 1.5 !default;
+$body-heading-line-height: 1.25 !default;
+
+// Borders.
 $border: 1px solid !default;
 $border-radius: 4px !default;
-$border-color: $grey-dk-000 !default;
-$gutter-spacing: $sp-6 !default;
-$gutter-spacing-sm: $sp-4 !default;
-$nav-width: 16.5rem !default;
+$border-color: var(--color-neutral-border-default);
+
+// Layout.
+$nav-width: 17.75rem !default;
 $nav-width-md: 15.5rem !default;
 $nav-list-item-height: $sp-6 !default;
 $nav-list-item-height-sm: $sp-8 !default;
 $nav-list-expander-right: true;
 $content-width: 50rem !default;
-$header-height: 3.75rem !default;
+$header-height: 4rem !default;
 $search-results-width: $content-width - $nav-width !default;
 $transition-duration: 400ms;

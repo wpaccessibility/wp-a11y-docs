@@ -11,16 +11,9 @@
 
 html {
   scroll-behavior: smooth;
-
-  @include fs-4;
 }
 
 body {
-  font-family: $body-font-family;
-  font-size: inherit;
-  line-height: $body-line-height;
-  color: $body-text-color;
-  background-color: $body-background-color;
   overflow-wrap: break-word;
 }
 
@@ -44,13 +37,9 @@ h2,
 h3,
 h4,
 h5,
-h6,
-#toctitle {
+h6 {
   margin-top: 0;
   margin-bottom: 1em;
-  font-weight: 500;
-  line-height: $body-heading-line-height;
-  color: $body-heading-color;
 }
 
 p {
@@ -71,18 +60,9 @@ button {
   cursor: pointer;
 }
 
-a:not([class]) {
-  text-decoration: underline;
-  text-underline-offset: 2px;
-
-  &:hover {
-    text-decoration-color: rgba($link-color, 0.45);
-  }
-}
-
 code {
   font-family: $mono-font-family;
-  font-size: 0.75em;
+  font-size: var(--text-font-size-sm);
   line-height: $body-line-height;
 }
 
@@ -114,18 +94,18 @@ hr {
   border: 0;
 }
 
-// adds a GitHub-style sidebar to blockquotes
+// adds a GitHub-style sidebar to blockquotes.
 blockquote {
   margin: 10px 0;
 
-  // resets user-agent stylesheets for blockquotes
+  // resets user-agent stylesheets for blockquotes.
   margin-block-start: 0;
   margin-inline-start: 0;
   padding-left: 1rem;
-  border-left: 3px solid $green-000;
+  border-left: 3px solid var(--color-positive-border-default);
 }
 
 ::placeholder {
-  color: $grey-dk-050;
+  color: var(--color-neutral-color-placeholder);
   opacity: 1;
 }

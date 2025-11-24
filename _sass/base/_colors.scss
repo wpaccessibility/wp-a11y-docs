@@ -1,18 +1,47 @@
+// Import project-wide variables (colors, spacing, etc.)
 @use "../abstracts/variables" as *;
+
+// Import Sass color utilities
 @use "sass:color";
 
+// Global color scheme (e.g., light or dark)
 $color-scheme: light !default;
-$body-background-color: $white !default;
-$body-heading-color: $grey-dk-300 !default;
-$body-text-color: $grey-dk-100 !default;
-$link-color: $wordpress-blue-000 !default;
-$nav-child-link-color: $grey-dk-100 !default;
-$sidebar-color: $white !default;
-$base-button-color: #f7f7f7 !default;
-$btn-primary-color: $wordpress-blue-000 !default;
-$code-background-color: $grey-lt-000 !default;
-$feedback-color: color.scale($sidebar-color, $lightness: -3%);
-$feedback-color: color.adjust($sidebar-color, $lightness: -3%);
-$table-background-color: $white !default;
-$search-background-color: $white !default;
-$search-result-preview-color: $grey-dk-300 !default;
+
+// Heading text color for body content
+$body-heading-color: var(--color-neutral-bg-document) !default;
+
+// Default link color
+$link-color: var(--color-informative-color-default) !default;
+
+// Link color for nested navigation items
+$nav-child-link-color: var(--color-neutral-inverse-color-subtle) !default;
+
+// Sidebar background layer
+$sidebar-background-color: var(--color-neutral-inverse-bg-document) !default;
+
+// Sidebar text and icon color
+$sidebar-text-color: var(--color-neutral-inverse-color-document) !default;
+
+// Default background for buttons
+$base-button-color: var(--color-neutral-bg-default) !default;
+
+// Primary button color (brand/informational accent)
+$btn-primary-color: var(--color-informative-color-default) !default;
+
+// Background color for inline code, code blocks, etc.
+$code-background-color: var(--color-neutral-bg-default) !default;
+
+// Border color for code elements
+$code-border-color: var(--color-neutral-border-subtle) !default;
+
+// Background for feedback boxes, alerts, or messages
+$feedback-color: var(--color-neutral-bg-default) !default;
+
+// Table background (header rows, striped areas, etc.)
+$table-background-color: var(--color-neutral-bg-subtle) !default;
+
+// Search input background color
+$search-background-color: var(--color-neutral-bg-subtle) !default;
+
+// Color used for search result preview text
+$search-result-preview-color: var(--color-neutral-color-subtle) !default;

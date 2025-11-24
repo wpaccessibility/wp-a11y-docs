@@ -7,7 +7,7 @@ nav_order: 5
 
 # Frontend checks for web accessibility
 
-{: .alert }
+{: .callout  .alert }
 This content will be reviewed and expanded.  
 Related issue on [GitHub #173 Topic Frontend checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/173).     
 

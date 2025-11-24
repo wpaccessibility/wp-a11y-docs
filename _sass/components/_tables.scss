@@ -28,8 +28,6 @@ td {
   border-bottom: $border rgba($border-color, 0.5);
   border-left: $border $border-color;
 
-  @include fs-3;
-
   &:first-of-type {
     border-left: 0;
   }

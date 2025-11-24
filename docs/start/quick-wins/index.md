@@ -7,7 +7,7 @@ nav_order: 1
 
 # Quick wins
 
-{: .alert }
+{: .callout  .alert }
 Starter content. This content will to be reviewed and expanded.  
 Related issue on [GitHub #91 Topic Quick wins](https://github.com/wpaccessibility/wp-a11y-docs/issues/91).  
 

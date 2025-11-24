@@ -7,12 +7,12 @@ nav_order: 3
 
 # Write documentation
 
-{: .alert }
+{: .callout  .alert }
 Before you start writing new documentation, please let us know that you’d like to work on it, so we can assign the task to you. Content written without contacting the project leads first, will not be reviewed.
 
 We keep track of the work on the documentation in the project board [WP A11y docs](https://github.com/orgs/wpaccessibility/projects/3).
 
-{: .tip }
+{: .callout  .tip }
 Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English.
 
 To keep all pages in the same structure, please stick to the following formats for a blogpost or an accessibility topic.

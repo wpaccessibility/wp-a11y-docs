@@ -4,10 +4,7 @@
 
 // Styles for rendered markdown in the .main-content container
 // stylelint-disable selector-no-type, max-nesting-depth, selector-max-compound-selectors, selector-max-type, selector-max-specificity, selector-max-id
-
 .main-content {
-  line-height: $content-line-height;
-
   ol,
   ul,
   dl,
@@ -145,7 +142,8 @@
     }
   }
 
-  summary {
+  details > summary {
+    color: $link-color;
     cursor: pointer;
   }
 
@@ -154,8 +152,7 @@
   h3,
   h4,
   h5,
-  h6,
-  #toctitle {
+  h6 {
     position: relative;
     margin-top: 1.5em;
     margin-bottom: 0.25em;
