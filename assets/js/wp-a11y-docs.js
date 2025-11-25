@@ -599,7 +599,22 @@ jtd.onReady(function() {
     const searchInput = document.getElementById("search-input");
     const input = query;
 
-    if (!query || !resultsContainer) return;
+    if (!resultsContainer) return;
+    
+    // Handle empty search query
+    if (!query) {
+      // Check if there was a q parameter but it was empty
+      if (urlParams.has("q")) {
+        let pageTitle = document.querySelector('title');
+        let h1 = document.querySelector('h1');
+        
+        if (pageTitle) pageTitle.innerText = 'Empty Search Query - No Results';
+        if (h1) h1.innerText = 'No Search Term Entered';
+        
+        resultsContainer.innerHTML = '<p>Please enter a search term to find relevant content.</p>';
+      }
+      return;
+    }
 
     if (searchInput) searchInput.value = query;
 
