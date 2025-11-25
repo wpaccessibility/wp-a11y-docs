@@ -1,0 +1,609 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+
+
+<title>I have a question, but I don’t have WhatsApp!, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/pr-preview/pr-229/assets/css/styles.css">
+  <link rel="icon" href="/pr-preview/pr-229/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/pr-preview/pr-229/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <div class="lh-wrapper">
+      <a href="/pr-preview/pr-229/" class="site-title lh-tight" aria-label="WP Accessibility logo, to the homepage">
+        <img src="/pr-preview/pr-229/assets/images/logo-wa11ypuu.png" alt="WP Accessibility logo">
+        WP Accessibility Knowledge Base
+      </a>
+    </div>
+
+    <div class="menu-button-wrapper">
+      <button id="menu-button" class="site-button" aria-expanded="false">
+        <span>Menu</span>
+        <svg viewBox="0 0 24 24" class="icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#svg-menu"></use>
+        </svg>
+      </button>
+    </div>
+
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav" tabindex="0">
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/" class="nav-list-link">Start with accessibility</a><button class="nav-list-expander btn-reset" aria-label="Start with accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/wp-plugins/" class="nav-list-link">WP Plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/business/" class="nav-list-link">Accessibility for your business</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/at/" class="nav-list-link">Assistive technology</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/myths/" class="nav-list-link">Debunking myths</a><button class="nav-list-expander btn-reset" aria-label="Debunking myths submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/myths/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/start/myths/overlays/" class="nav-list-link">Overlays</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/" class="nav-list-link">Standards and best practice</a><button class="nav-list-expander btn-reset" aria-label="Standards and best practice submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/wcag/" class="nav-list-link">WCAG and compliance</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/best-practice/" class="nav-list-link">WCAG vs best practice</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/" class="nav-list-link">Content and images</a><button class="nav-list-expander btn-reset" aria-label="Content and images submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/alt-text/" class="nav-list-link">Alt text for images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/headings/" class="nav-list-link">Headings</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/links/" class="nav-list-link">Links</a><button class="nav-list-expander btn-reset" aria-label="Links submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/links/link-text/" class="nav-list-link">Link texts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/links/link-image/" class="nav-list-link">Images as links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/tables/" class="nav-list-link">Tables</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/focus-hover/" class="nav-list-link">Styling hover and focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/color/color-contrast-icons/" class="nav-list-link">Color contrast of icons</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/color/color-contrast-forms/" class="nav-list-link">Color contrast in forms</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/meaningful-sequence/" class="nav-list-link">Meaningful sequence</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/design/resources/" class="nav-list-link">Resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/" class="nav-list-link">Frontend code</a><button class="nav-list-expander btn-reset" aria-label="Frontend code submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/semantics/" class="nav-list-link">Semantic HTML</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/tables/" class="nav-list-link">Tables</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/screen-reader-text/" class="nav-list-link">CSS screen-reader-text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/dynamic-changes/" class="nav-list-link">Feedback on dynamic changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/components/" class="nav-list-link">Components</a><button class="nav-list-expander btn-reset" aria-label="Components submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/components/skip-links/" class="nav-list-link">Skip links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/components/excerpt/" class="nav-list-link">Post Excerpts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/components/link-logo/" class="nav-list-link">Link on a logo</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/code/components/pagination/" class="nav-list-link">Pagination</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/input-label/" class="nav-list-link">Input and label</a><button class="nav-list-expander btn-reset" aria-label="Input and label submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/input-label/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/input-label/placeholders/" class="nav-list-link">Placeholders</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/input-label/text-only/" class="nav-list-link">Label has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/input-label/label-location/" class="nav-list-link">Best label location</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a><button class="nav-list-expander btn-reset" aria-label="Input and description submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/descriptions/connect-description/" class="nav-list-link">Connect the description</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/descriptions/content-description/" class="nav-list-link">Description has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a><button class="nav-list-expander btn-reset" aria-label="Group form fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/fieldsets/legend/" class="nav-list-link">Fieldset legend</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/fieldsets/fieldset-descriptions/" class="nav-list-link">Fieldset description</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/help/" class="nav-list-link">Provide help</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/required/" class="nav-list-link">Required fields</a><button class="nav-list-expander btn-reset" aria-label="Required fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/required/mark-required-fields/" class="nav-list-link">Mark required form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/required/mark-optional-fields/" class="nav-list-link">Mark optional form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/required/required-screen-readers/" class="nav-list-link">Indicate required fields for screen readers</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/wp-form-plugins/" class="nav-list-link">WP form plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/forms/resources/" class="nav-list-link">Form resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/core/" class="nav-list-link">WordPress Core</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/themes/" class="nav-list-link">Themes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/topics/plugins/" class="nav-list-link">Plugins</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/" class="nav-list-link">Testing for accessibility</a><button class="nav-list-expander btn-reset" aria-label="Testing for accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/checklists/" class="nav-list-link">Overall checklists</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/keyboard/" class="nav-list-link">Keyboard testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/screen-readers/" class="nav-list-link">Screen reader testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/resources/" class="nav-list-link">Resources</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/blog/" class="nav-list-link">Blog</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/wp-a11y-team/" class="nav-list-link">WordPress Accessibility Team</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/improve-website/" class="nav-list-link">Improve this website</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/github/" class="nav-list-link">Technical documentation website</a><button class="nav-list-expander btn-reset" aria-label="Technical documentation website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/github/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/github/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/github/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/github/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/sponsors/" class="nav-list-link">Sponsors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/about/" class="nav-list-link">About this website</a><button class="nav-list-expander btn-reset" aria-label="About this website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-229/docs/contact/" class="nav-list-link">Contact</a></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    <section class="search" aria-label="Search">
+  <form class="search-input-wrap" role="search" action="/pr-preview/pr-229/search/" method="get">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <use xlink:href="#svg-search"></use>
+      </svg>
+    </label>
+
+    <input
+      type="search"
+      id="search-input"
+      name="q"
+      class="search-input"
+      autocomplete="off"
+    >
+
+    <button type="submit" class="search-submit">Search</button>
+  </form>
+
+  <div id="search-results" class="search-results"></div>
+</section>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-229/blog/'>Blog</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">I have a question, but I don’t have WhatsApp!</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1> I have a question, but I don’t have WhatsApp! </h1>
+
+<p class="post-meta">Published on August 27, 2025
+     by Rian Rietveld
+</p>
+
+<p class="callout lead">You want to reach out to customer service, and they say  <em>“Send us a WhatsApp message.”</em> What if you don’t use WhatsApp, or cannot make a phone call, or use the chatbox?</p>
+<p class="callout lead">By offering multiple contact options, you make sure every customer has a way to connect.</p>
+
+<h2 id="dont-make-getting-in-touch-their-problem">Don’t make getting in touch their problem</h2>
+
+<p>Let’s say someone wants to ask a quick question through your website, but the only way to do it is by sending a WhatsApp message.</p>
+
+<p>Sure, it’s convenient for you. One place to manage it all, and you reply when it suits you.</p>
+
+<p>There are many similar examples:</p>
+
+<ul>
+  <li>You only list the phone number of your helpdesk.</li>
+  <li>You only offer a chat function, with a bot you hope can handle basic questions. And if not, it points people to the “FAQs”.</li>
+  <li>You require people to show up in person to renew their passport.</li>
+  <li>You provide a clunky, hard-to-use form to submit a complaint, just because that’s how it’s set up in your customer information software.</li>
+</ul>
+
+<p>In all these cases, you’re forcing your way of working on the people trying to reach you. And it’s worth remembering: some of them can’t even use these options.</p>
+
+<p>So, what are some other ways to communicate? What are the pros and cons of different methods?</p>
+
+<h2 id="different-ways-to-get-in-touch">Different ways to get in touch</h2>
+
+<h3 id="social-media-and-instant-messaging">Social media and instant messaging</h3>
+
+<p>Services like WhatsApp or X (formerly Twitter) can be useful. They’re widely used, pose a low barrier to usage, and are great for quick questions.</p>
+
+<p>But don’t assume everyone uses them. Many people are moving away from social media services due to privacy issues. Some prefer more private services, like Signal, or don’t want to share personal information over your chosen service.</p>
+
+<p>So keep in mind: not everyone uses what you prefer.</p>
+
+<h3 id="phone-call">Phone call</h3>
+
+<p>Many people prefer a phone call to reach a real person and get instant answers. You should definitely offer it as an option if possible.</p>
+
+<p>User research shows that people with low literacy prefer calling first:</p>
+
+<blockquote>
+  <p>“I always try calling first. If that doesn’t work, I’ll check the website to find another way.”</p>
+</blockquote>
+
+<p>But for some, like deaf, hard-of-hearing, shy, autistic, or stuttering people, phone calls can be tough. The same goes for people who struggle with your native language. Image you’re in a noisy train and don’t want to talk about private stuff.</p>
+
+<p>Some callers even get hung up on if they take too long to respond. Wouter Honselaar, who stutters, said in the interview <a href="https://www.a11y-collective.com/blog/interview-with-wouter-i-am-stronger-than-stuttering/">I am stronger than stuttering</a>:</p>
+
+<blockquote>
+  <p>“Once, someone ended the call because they thought the line had gone dead.”</p>
+</blockquote>
+
+<p>Also, phone calls often only work during office hours. If you work during those hours and can’t make personal calls, it’s not an option.</p>
+
+<p>Rian asked her deaf followers on LinkedIn:</p>
+
+<blockquote>
+  <p>“What do you do when the only way to contact a website is by phone, and you <em>really</em> need to get in touch?”</p>
+</blockquote>
+
+<p><a href="https://www.linkedin.com/in/marie-van-driessche/">Marie Van Driessche</a> replied:</p>
+
+<blockquote>
+  <p>“I use a <a href="https://en.wikipedia.org/wiki/Video_relay_service">video relay service</a> via the Tolkcontact app. So I get a translator to call them for me. It works, but I have to arrange it all myself. It’d be nice if email or WhatsApp were options.”</p>
+</blockquote>
+
+<p><a href="https://www.linkedin.com/in/meryl/">Meryl Evans</a> added:</p>
+
+<blockquote>
+  <p>“Offer text-based options like email, SMS, live chat with a real person, or a video relay. Let people choose what contact details they share. Don’t make phone numbers required.”</p>
+</blockquote>
+
+<h3 id="email">Email</h3>
+
+<p>The nice thing about email is that you can send one whenever you want.</p>
+
+<p>But not everyone finds it easy to write an email, especially if they’re not confident in your language, have dyslexia or low literacy. Some people may need help just to write a message.</p>
+
+<h3 id="contact-form">Contact Form</h3>
+
+<p>Contact forms are handy, you ask exactly what you need, and users can fill it out in an organized way.</p>
+
+<p>But forms can be a real barrier for people who aren’t great with tech, especially if the form is long or complicated. Always test your forms with real users, including people with various disabilities.</p>
+
+<p>If someone is blind, visually impaired, or just not tech-savvy, a poorly set up and coded form can be a nightmare.</p>
+
+<p>So, make sure it’s easy to use and it’s accessible.</p>
+
+<h3 id="chat-box">Chat box</h3>
+
+<p>Quick question? Don’t want to call? A chat box sounds perfect.</p>
+
+<p>Until you get stuck with a robot that can’t help and tells you to “check the FAQs” or to call someone. Instead of helping, you’re fobbing people off.</p>
+
+<p>Deaf and hard-of-hearing people say that chat can be a great alternative to phone calls, as long as it involves a real person.</p>
+
+<p>If you offer chat, let people (maybe after a quick filter) talk to a real human. And show when someone’s available.</p>
+
+<h3 id="in-person-contact">In person contact</h3>
+
+<p>Sometimes, such as when renewing a passport, you must appear in person to confirm your identity. But what if your health makes that impossible? Then what?</p>
+
+<p>Make sure you offer an alternative. As a municipality, you can offer a home visit to confirm the identity of a resident.</p>
+
+<h3 id="a-letter">A letter</h3>
+
+<p>As a bonus option, sending an old-school paper letter is helpful if you’re not computer-savvy. It’s definitely an option as an alternative to all that digital communication.
+Provide an address on your website where customers can send a letter.</p>
+
+<h2 id="summary-communication-matters">Summary: communication matters</h2>
+
+<p>It’s essential to provide multiple options for people to contact you. And don’t just ask for their preferences; respect them.</p>
+
+<p class="callout example">You could ask for example:
+“Would you like us to call you back or send an email instead?”</p>
+
+<p>Be flexible. If your current workflow doesn’t allow for that, talk about it with your team.</p>
+
+<p>The goal should always be this:
+Anyone should be able to contact your organization in a way that works for <em>them</em>.</p>
+
+<h2 id="credits">Credits</h2>
+<p>This post was first published in Dutch on the <a href="https://nldesignsystem.nl/blog/meerdere-manieren-contact/">NL Design Systems blog</a> and is used with permission. The text has been modified for a global audience.</p>
+
+
+
+          
+            
+          
+
+          
+            
+<div class="d-flex mt-2">
+    
+
+    
+    <p class="text-small">
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/_posts/2025-08-27-offer-multiple-ways-to-contact-you.md" id="edit-this-page">View this page on GitHub</a>
+    </p>
+    
+
+</div>
+
+
+          
+        </main>
+
+        
+  <footer>
+
+    <p>
+      <span aria-hidden="true">&#x2191;</span>
+      <a href="#top" id="back-to-top" class="back-to-top">
+        Back to top
+      </a>
+    </p>
+
+  </footer>
+
+
+      </div>
+    </div>
+  </div>
+<div id="screen-reader-feedback" role="status"></div>
+</body>
+</html>
+
