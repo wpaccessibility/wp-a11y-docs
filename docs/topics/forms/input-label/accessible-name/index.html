@@ -557,7 +557,7 @@ The label text then becomes the form field’s <a href="/docs/topics/code/access
 
 <p>If you must hide a label or control from vision, use the CSS class <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/"><code class="language-plaintext highlighter-rouge">.screen-reader-text</code></a> or equivalent.</p>
 
-<p class="dont">Don’t use the CSS <code class="language-plaintext highlighter-rouge">display: none</code>, <code class="language-plaintext highlighter-rouge">visibility: hidden</code> or the HTML attribute <code class="language-plaintext highlighter-rouge">hidden</code> on a label, as that also removes the element, and its accessible name, from the accessibility tree.</p>
+<p class="callout dont">Don’t use the CSS <code class="language-plaintext highlighter-rouge">display: none</code>, <code class="language-plaintext highlighter-rouge">visibility: hidden</code> or the HTML attribute <code class="language-plaintext highlighter-rouge">hidden</code> on a label, as that also removes the element, and its accessible name, from the accessibility tree.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- this in incorrect code, the visual text Go is not describing what you need to fill out --&gt;</span>
 <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search-text"</span> <span class="na">class=</span><span class="s">"screen-reader-text"</span><span class="nt">&gt;</span>Search this website<span class="nt">&lt;/label&gt;</span>
@@ -571,7 +571,7 @@ The label text then becomes the form field’s <a href="/docs/topics/code/access
 <span class="nt">&lt;button&gt;</span>Search<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
-<p class="do">Always add a visible hint about how to fill out the form field.<br />
+<p class="callout do">Always add a visible hint about how to fill out the form field.<br />
 <label for="search-text" class="screen-reader-text">Search this website</label>
 <input type="text" name="s" id="search-text" />
 <button>Search</button></p>
