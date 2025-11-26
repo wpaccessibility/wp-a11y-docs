@@ -20,7 +20,7 @@ A proper accessible name for HTML elements is essential for screen reader users 
 
 Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name [Understanding Accessible Names in HTML](https://dev.to/ibn_abubakre/understanding-accessible-names-in-html-562).
 
-{: .info }
+{: .callout .info }
 Note: An `aria-label` attribute on a link or a button overrides all textual content within.   
 For example, the accessible name of the button `<button aria-label="Close">Open</button>` is "Close".
 
@@ -59,7 +59,7 @@ The accessibility tree of Chrome shows the following relevant information: the a
 - Focused: true
 - Expanded: false
 
-{: .info }
+{: .callout .info }
 In this example the accessible name is taken from "Contents". The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. A value for the `aria-label` will overwrite the Contents value.
 
 ![Screenshot accessible name menu in Chrome]({{site.baseurl}}/assets/images/accessible-name-button.png)
