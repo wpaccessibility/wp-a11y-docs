@@ -110,7 +110,7 @@ Visual text or equivalent, like a search icon, should always be visible, so sigh
 
 If you must hide a label or control from vision, use the CSS class [`.screen-reader-text`](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/) or equivalent.
 
-{: .dont }
+{: .callout .dont }
 Don't use the CSS `display: none`, `visibility: hidden` or the HTML attribute `hidden` on a label, as that also removes the element, and its accessible name, from the accessibility tree.
 
 ```html
@@ -127,7 +127,7 @@ Don't use the CSS `display: none`, `visibility: hidden` or the HTML attribute `h
 <button>Search</button>
 ```
 
-{: .do }
+{: .callout .do }
 Always add a visible hint about how to fill out the form field.  
 <label for="search-text" class="screen-reader-text">Search this website</label>
 <input type="text" name="s" id="search-text">

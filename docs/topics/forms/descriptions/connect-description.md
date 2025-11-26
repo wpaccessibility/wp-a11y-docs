@@ -49,7 +49,7 @@ For the documentation about descriptions in fieldsets read [Description with a f
 
 ## Examples
 
-{: .dont }
+{: .callout .dont }
 No connection between a form field and its description.
 
 ```html
@@ -66,7 +66,7 @@ No connection between a form field and its description.
 />
 ```
 
-{: .do }
+{: .callout .do }
 Connection between a form field and its description.
 
 ```html

@@ -40,7 +40,7 @@ The populair [WordPress form plugin Contact Form 7](https://wordpress.org/plugin
 
 ## Examples
 
-{: .do }
+{: .callout .do }
 Place the link to the terms of delivery outside and above the label.  
 [The terms of delivery](#).  
 <input id="alv3" type="checkbox"/>
@@ -56,7 +56,7 @@ Place the link to the terms of delivery outside and above the label.
 
 Note that the reading order is also meaningful: first the link to the terms and after that the checkbox to agree with them.
 
-{: .dont }
+{: .callout .dont }
 Place the link to the terms of delivery inside the label.  
 <input id="alv4" type="checkbox"/>
 <label for="alv4">I agree with [the terms of delivery](#)</label>

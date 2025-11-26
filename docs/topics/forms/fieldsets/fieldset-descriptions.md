@@ -43,7 +43,7 @@ In HTML, simplified
 
 ## Examples
 
-{: .do }
+{: .callout .do }
 Connect a description to the form field, using aria-describedby.
 
 ```html

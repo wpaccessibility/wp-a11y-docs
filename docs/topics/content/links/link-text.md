@@ -11,7 +11,7 @@ nav_order: 2
 This content will be reviewed, restructured and expanded.
 Related issue on [GitHub #110 Topic Write a meaningful link text](https://github.com/wpaccessibility/wp-a11y-docs/issues/110).  
 
-{: .tip }
+{: .callout .tip }
 **Rule of thumb**: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise.
 
 Link text should stand on its own. Some assistive software scans a page for links and presents them to the user as a simple list. In these situations, all the links will be read out of context. So it is important the text used in a link is descriptive and meaningful.
@@ -34,11 +34,11 @@ With these types of links, users have to read the whole sentence to understand t
 <figcaption>Useless, non-descriptive link text in the Apple VoiceOver link list.</figcaption>
 </figure>
 
-{: .dont}
+{: .callout .dont }
 Poor qualify (non-descriptive) link texts:
 If you are interested in our work, [click here](#dummy-link) to subscribe to our newsletter. You can [download](#dummy-link) the manual of the espresso machine, or contact us for more [info](#dummy-link).
 
-{: .do }
+{: .callout .do }
 Helpful (descriptive) link texts:
 [Subscribe to our newsletter](#dummy-link) if you are interested in our work. You can download the [manual as a PDF]((#dummy-link) ) of the espresso machine, or [contact us](#dummy-link) for more info.
 
@@ -61,11 +61,11 @@ Sequences of all capital letters are harder to read for people with dyslexia, sc
 
 Some URLs are highly readable, such as “wordpress.org”. Others are almost impossible to parse as language. In most cases, you should avoid using a URL as the visible link text. If you are explicitly referring to a web address, keep it short: [wordpress.org](https://www.wordpress.org) instead of [https://www.wordpress.org](https://www.wordpress.org).
 
-{: .dont}
+{: .callout .dont }
 Poor quality (non-descriptive) link texts:
 If you are interested in our work, [click here](#dummy-link) to subscribe to our newsletter. You can [download](#dummy-link) the manual of the espresso machine, or contact us for more [info](#dummy-link).
 
-{: .do}
+{: .callout .do }
 Helpful (descriptive) link texts:
 [Subscribe to our newsletter]((#dummy-link)) if you are interested in our work. You can download the [manual as a PDF]((#dummy-link)) of the espresso machine, or [contact us](#dummy-link) for more info.
 

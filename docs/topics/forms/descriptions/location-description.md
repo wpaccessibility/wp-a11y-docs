@@ -21,7 +21,7 @@ Also check the [description decision tree]({{site.baseurl}}/docs/topics/forms/de
 
 ## Examples
 
-{: .do }
+{: .callout .do }
 Place descriptions in a consistent location, preferably between the label and the form field.
 
 ```html
@@ -38,7 +38,7 @@ Place descriptions in a consistent location, preferably between the label and th
 />
 ```
 
-{: .do }
+{: .callout .do }
 Place all descriptions, including error messages, in a consistent location, preferably between the label and the form field.
 
 ```html
@@ -59,7 +59,7 @@ Place all descriptions, including error messages, in a consistent location, pref
 ```
 
 
-{: .dont }
+{: .callout .dont }
 Avoid placing the description below the form field.
 
 ```html
@@ -78,7 +78,7 @@ Avoid placing the description below the form field.
 ```
 
 
-{: .dont }
+{: .callout .dont }
 Do not place a description above the form field and an error message below it. Be consistent in the location of descriptions.
 
 ```html
