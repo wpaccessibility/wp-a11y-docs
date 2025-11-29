@@ -83,7 +83,7 @@
 
       if (target) {
         e.preventDefault();
-        target.ariaExpanded = target.parentNode.classList.toggle('true');
+        target.ariaExpanded = target.parentNode.classList.toggle('active');
       }
     });
 
@@ -523,6 +523,7 @@
       }
       if (target) {
         target.classList.add('active');
+        target.classList.toggle('active', true);
         target = target.parentNode;
       }
     }
@@ -593,17 +594,17 @@ jtd.onReady(function() {
     const input = query;
 
     if (!resultsContainer) return;
-    
+
     // Handle empty search query
     if (!query) {
       // Check if there was a q parameter but it was empty
       if (urlParams.has("q")) {
         let pageTitle = document.querySelector('title');
         let h1 = document.querySelector('h1');
-        
+
         if (pageTitle) pageTitle.innerText = 'Empty Search Query - No Results';
         if (h1) h1.innerText = 'No Search Term Entered';
-        
+
         resultsContainer.innerHTML = '<p>Please enter a search term to find relevant content.</p>';
       }
       return;
