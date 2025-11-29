@@ -1,4 +1,8 @@
-(function (jtd, undefined) {
+---
+    layout: null
+---
+
+    (function (jtd, undefined) {
 
 //
 // ---------------------------------------------------------
