@@ -1,7 +1,3 @@
----
-    layout: null
----
-
 (function (jtd, undefined) {
 
 //
