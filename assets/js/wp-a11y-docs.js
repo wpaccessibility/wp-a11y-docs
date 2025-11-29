@@ -497,15 +497,12 @@
   /**
    * Scrolls sidebar navigation so the active link is centered.
    *
-   * Also removes the link's `href` to prevent accidental reloads.
-   *
    * @function scrollNav
    */
   function scrollNav() {
     const targetLink = navLink();
     if (targetLink) {
       targetLink.scrollIntoView({ block: "center" });
-      targetLink.removeAttribute('href');
     }
   }
 
