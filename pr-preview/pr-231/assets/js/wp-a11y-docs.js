@@ -1,4 +1,4 @@
-(function (jtd, undefined) {
+    (function (jtd, undefined) {
 
 //
 // ---------------------------------------------------------
@@ -128,7 +128,7 @@
    */
   function initSearch() {
     var request = new XMLHttpRequest();
-    request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
+    request.open('GET', '/pr-preview/pr-231/assets/js/search-data.json', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
@@ -200,7 +200,7 @@
 
     // Show search input via Ctrl+ shortcut
     jtd.addEvent(document, 'keydown', function(e) {
-      if ((e.ctrlKey || e.metaKey) && e.key === '{{ site.search.focus_shortcut_key }}') {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
         e.preventDefault();
         mainHeader.classList.add('nav-open');
         searchInput.focus();
