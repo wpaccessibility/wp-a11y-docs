@@ -87,7 +87,7 @@
 
       if (target) {
         e.preventDefault();
-        target.ariaExpanded = target.parentNode.classList.toggle('active');
+        target.ariaExpanded = target.parentNode.classList.toggle('true');
       }
     });
 
