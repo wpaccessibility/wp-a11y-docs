@@ -49,7 +49,6 @@ If you’re updating an existing control, button or link decision logic:
         <th>Scenario</th>
         <th>Choice</th>
     </tr>
-    </thead>
     <tr>
         <td>Anchors with null or meaningless HREF values: href=’#’, no href, href=’#something’ where #something does not exist</td>
         <td><code>button</code></td>

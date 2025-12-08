@@ -7,8 +7,7 @@ has_video: true
 
 # Kitchen sink: options available for content
 
-{: .lead }
-This page lists the options and code available for creating content in this documentation
+This page lists the options and code available for creating content in this documentation.
 
 {: .callout  .info }
 WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
@@ -36,16 +35,19 @@ In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}
 
 ## Summary in a larger text font.
 
-Start the paragraph with the code `{: .lead }`.
+Start the paragraph with an H2 named "Summaty, or introduction and the callout {: .lead }`
+
 
 ```markdown
+## Summary
+
 {: .lead }
 When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
 ```
+## Summary
 
 {: .lead  }
 When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
-
 
 ## Text
 ```markdown
