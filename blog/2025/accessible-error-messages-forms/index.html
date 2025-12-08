@@ -442,11 +442,11 @@
      by Rian Rietveld
 </p>
 
-<p class="lead">When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.</p>
+<h2 id="summary">Summary</h2>
 
-<p>In this post, we’ll walk step-by-step through how to prevent errors, indicate them clearly, and offer help with error messages in forms for different types of users.</p>
+<p class="lead">When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. In this post, we’ll walk step-by-step through how to prevent errors, indicate them clearly, and offer help with error messages in forms for different types of users.</p>
 
-<p>When designing a form, ask yourself the following questions:</p>
+<h2 id="when-designing-a-form-ask-yourself-the-following-questions">When designing a form, ask yourself the following questions</h2>
 
 <ul>
   <li>What do I really need to know?</li>
@@ -462,7 +462,7 @@
 
 <p>No one enjoys filling out forms, and all the help you can give is useful. Keep that goal in mind. You want to learn something from your user, or your user wants to tell you something. Make that process as easy as possible.</p>
 
-<h2 id="what-do-i-really-need-to-know">What do I really need to know?</h2>
+<h3 id="what-do-i-really-need-to-know">What do I really need to know?</h3>
 
 <p>Handling errors starts with the questions you ask. Some questions are difficult to answer. Is it really essential to know whether someone is male or female? Do you only want to contact them by phone? What if a user’s answer to a question isn’t an available option, or they don’t want to answer a question? They may just give up.</p>
 
@@ -472,7 +472,7 @@
 
 <p class="callout info">In the Netherlands there are strict rules about <a href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)">when to ask for a citizen service number</a>. Canada has similar rules governing <a href="https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/">how you can request Personally Identifying Information (PII)</a>.</p>
 
-<h2 id="how-will-i-ask-for-this-information">How will I ask for this information?</h2>
+<h3 id="how-will-i-ask-for-this-information">How will I ask for this information?</h3>
 
 <p>The input mechanism you use to ask for information has a profound impact on your users. Should you design new custom input fields or use recognizable, familiar patterns? Please don’t reinvent the web for something as essential as form fields. As Heydon Pickering explains in his talk <a href="https://www.youtube.com/watch?v=ediHVy0869c">Get Your Priorities Straight</a>: “Real people aren’t looking to be delighted. People want to get the task done and get on with their lives”.</p>
 
@@ -489,7 +489,7 @@
 
 <p class="callout info">This success criterion was added in <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">WCAG 2.2: 3.3.7 Redundant Entry</a>.</p>
 
-<h2 id="what-information-can-i-provide-in-advance-to-help-the-user">What information can I provide in advance to help the user?</h2>
+<h3 id="what-information-can-i-provide-in-advance-to-help-the-user">What information can I provide in advance to help the user?</h3>
 
 <p>We’ve all been there: you enter a new password, click submit, and <em>then</em> you’re told what the password requirements are. You yell at the screen: “Why didn’t you tell me that before?”.</p>
 
@@ -500,11 +500,11 @@
 
 <p>Don’t make users guess — offer clear help in plain language, at the right moment. Tell users in advance which documents they’ll need, and which fields are or aren’t required. Add descriptions to fields where necessary.</p>
 
-<h2 id="how-do-i-show-which-fields-are-required">How do I show which fields are required?</h2>
+<h3 id="how-do-i-show-which-fields-are-required">How do I show which fields are required?</h3>
 
 <p>If you only ask what’s really needed, all fields could technically be required — but that’s not always the case. Different types of forms have different needs. For example, if you’re creating content in the admin of a website, all of the content fields you might use need to be available; but most of them won’t be required.</p>
 
-<h3 id="whats-the-best-way-to-indicate-required">What’s the best way to indicate required?</h3>
+<h4 id="whats-the-best-way-to-indicate-required">What’s the best way to indicate required?</h4>
 
 <p>Many websites use indicators like “required”, “optional”, or an asterisk (*). But which is clearest?</p>
 
@@ -512,7 +512,7 @@
 
 <p>Prefer <strong>“required”</strong> over an asterisk, because an asterisk assumes prior knowledge of the meaning of that icon. If you do use an asterisk, explain its meaning above the form.</p>
 
-<h3 id="should-i-mark-required-or-non-required-fields">Should I mark required or non-required fields?</h3>
+<h4 id="should-i-mark-required-or-non-required-fields">Should I mark required or non-required fields?</h4>
 
 <p>Which is better? Indicate required or non-required fields? It depends. Your choice should be based on the form’s function, your CMS or plugin, and user research.</p>
 
@@ -524,7 +524,7 @@
 
 <p>Whatever you choose, be consistent within the form and across all forms on your website. Inform users above the form how field requirements are indicated.</p>
 
-<h2 id="when-should-i-check-for-errors">When should I check for errors?</h2>
+<h3 id="when-should-i-check-for-errors">When should I check for errors?</h3>
 
 <p>Websites commonly check for errors while typing, after the focus moves out of a field, or after the form is submitted. Which approach is most user-friendly?</p>
 
@@ -534,7 +534,7 @@
 
 <p class="callout warning">HTML5 form validation is not accessible at this moment (in 2025). The W3C summarizes the options in <a href="https://www.w3.org/WAI/tutorials/forms/validation/">Validating Input </a>. “If your web browser supports HTML5, it will not allow you to submit the form without entering text into the input field. Instead, it will display a message that is generated by the web browser itself”.  Write custom error messages and provide server side generated error messages. The W3C explains the options in <a href="https://www.w3.org/WAI/tutorials/forms/validation/">Validating Input </a>.</p>
 
-<h2 id="how-do-i-indicate-that-an-answer-is-incomplete-or-filled-out-incorrectly">How do I indicate that an answer is incomplete or filled out incorrectly?</h2>
+<h3 id="how-do-i-indicate-that-an-answer-is-incomplete-or-filled-out-incorrectly">How do I indicate that an answer is incomplete or filled out incorrectly?</h3>
 
 <p>Use more than color alone to indicate errors. A user with visual impairments or color blindness may not notice a red outline. Color is helpful but always include an error message in text too.</p>
 
@@ -545,7 +545,7 @@
   <li>Add a summary of all errors above the form to help the user quickly see what needs to be corrected.</li>
 </ul>
 
-<h2 id="what-makes-a-helpful-error-message">What makes a helpful error message?</h2>
+<h3 id="what-makes-a-helpful-error-message">What makes a helpful error message?</h3>
 
 <p>Messages like “This field is required” or “Invalid value” don’t offer much help. Write clear error messages that explain what’s missing or needs changing.</p>
 
@@ -555,7 +555,7 @@
 
 <p>This is far more helpful than a generic message.</p>
 
-<h2 id="how-do-i-confirm-a-form-was-successfully-submitted">How do I confirm a form was successfully submitted?</h2>
+<h3 id="how-do-i-confirm-a-form-was-successfully-submitted">How do I confirm a form was successfully submitted?</h3>
 
 <p>You click “Send” and… nothing happens. Or you’re redirected to the homepage. Was the form actually sent? How do you know?</p>
 
@@ -564,7 +564,7 @@
 <p class="callout example">A confirmation text could be:<br />
 Thank you for your registration for our workshop “Knitting socks”. A confirmation email has been sent to user@example.com with the time and location of the workshop. If you haven’t received an email? <a href="#">Please contact us</a>.</p>
 
-<h2 id="how-can-i-offer-help-if-a-user-gets-stuck">How can I offer help if a user gets stuck?</h2>
+<h3 id="how-can-i-offer-help-if-a-user-gets-stuck">How can I offer help if a user gets stuck?</h3>
 
 <p>If a user gets stuck filling out a complex form, they need to be able to easily request help.</p>
 
@@ -575,7 +575,7 @@ Thank you for your registration for our workshop “Knitting socks”. A confirm
 <p class="callout example">A help text could be:<br />
 Do you need help filling out this form or do you have questions? <a href="#">Please contact us</a>.</p>
 
-<h2 id="summary">Summary</h2>
+<h2 id="conclusion">Conclusion</h2>
 
 <p>Help your users as much as possible when filling out a form. Don’t ask unnecessary questions just to collect for your statistics. Use standard input form fields wherever possible. Make it clear what is required and how to fill out a field. Use clear, timely error messages. And make sure it’s easy to ask for help when needed.</p>
 
