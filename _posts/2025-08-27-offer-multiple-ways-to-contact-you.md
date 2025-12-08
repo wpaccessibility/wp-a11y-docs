@@ -8,10 +8,11 @@ parent: Blog
 excerpt: "It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you."
 date: 2025-08-27
 ---
-You want to reach out to customer service, and they say  *“Send us a WhatsApp message.”* What if you don’t use WhatsApp, or cannot make a phone call, or use the chatbox? 
-{: .callout  .lead }
-By offering multiple contact options, you make sure every customer has a way to connect.
-{: .callout  .lead }
+
+## Summary
+
+{: .lead }
+You want to reach out to customer service, and they say  *“Send us a WhatsApp message.”* What if you don’t use WhatsApp, or cannot make a phone call, or use the chatbox? By offering multiple contact options, you make sure every customer has a way to connect.
 
 ## Don’t make getting in touch their problem
 
