@@ -8,7 +8,7 @@ nav_order: 8
 # WordPress' plugins for accessibility testing 
 
 {: .callout  .alert }
-This content will be reviewed and expanded.  
+**Alert:** This content will be reviewed and expanded.  
 Related issue on [GitHub #177 Topic Screen reader testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/177).    
 
 We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use in your own accessible WordPress site.

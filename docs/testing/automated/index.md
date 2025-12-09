@@ -8,7 +8,7 @@ nav_order: 5
 # Automated accessibility testing
 
 {: .callout  .alert }
-This content will be reviewed and expanded.  
+**Alert:** This content will be reviewed and expanded.  
 Related issue on [GitHub #174 Topic Automated accessibility testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/174).     
 
 ## WCAG 2 AA automated validation

@@ -8,7 +8,7 @@ nav_order: 6
 # Keyboard navigation testing
 
 {: .callout  .alert }
-This content will be reviewed and expanded.  
+**Alert:** This content will be reviewed and expanded.  
 Related issue on [GitHub #175 Topic Keyboard navigation testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/175).    
 
 All functionality should work using a **keyboard only**. This essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.

@@ -8,7 +8,7 @@ nav_order: 4
 # Accessibility for your business
 
 {: .callout  .alert }
-Starter content. This content will to be reviewed and expanded.  
+**Alert:** Starter content. This content will to be reviewed and expanded.  
 Related issue on [GitHub #94 Topic Accessibility for your business](https://github.com/wpaccessibility/wp-a11y-docs/issues/94).  
 
 An inclusive website enhances your business. It will:

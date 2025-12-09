@@ -8,7 +8,7 @@ nav_order: 7
 # Digital documents
 
 {: .callout  .alert }
-This content will be reviewed, restructured and expanded.  
+**Alert:** This content will be reviewed, restructured and expanded.  
 Related issue on [GitHub #119 Topic Digital document](https://github.com/wpaccessibility/wp-a11y-docs/issues/119).  
 
 ## Accessible PDFs 

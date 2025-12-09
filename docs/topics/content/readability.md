@@ -8,7 +8,7 @@ nav_order: 6
 # Readability
 
 {: .callout  .alert }
-This content will be reviewed, restructured and expanded.  
+**Alert:** This content will be reviewed, restructured and expanded.  
 Related issue on [GitHub #120 Topic Readability](https://github.com/wpaccessibility/wp-a11y-docs/issues/120).  
 
 People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read.

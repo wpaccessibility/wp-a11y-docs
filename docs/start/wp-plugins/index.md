@@ -8,7 +8,7 @@ nav_order: 2
 # WordPress accessibility plugins
 
 {: .callout  .alert }
-Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
+**Alert:** Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
 
 ## Editing Tools
 

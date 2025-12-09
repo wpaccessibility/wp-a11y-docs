@@ -8,7 +8,7 @@ nav_order: 7
 # WordPress Core Accessibility Standards
 
 {: .callout  .alert }
-This content will be reviewed and restructured. 
+**Alert:** This content will be reviewed and restructured. 
 Related issue on [GitHub #122 Topic WordPress Core Accessibility Standards](https://github.com/wpaccessibility/wp-a11y-docs/issues/122).  
 
 {: .callout  .warning }
