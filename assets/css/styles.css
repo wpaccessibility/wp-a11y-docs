@@ -1297,6 +1297,7 @@ p.do::before {
   font-size: 1rem;
   border-width: 1px;
   border-color: var(--color-neutral-border-default);
+  border-style: solid;
   border-left: none;
 }
 @media (min-width: 50rem) {
