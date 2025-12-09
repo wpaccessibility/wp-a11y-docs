@@ -7,7 +7,7 @@ nav_order: 5
 
 # Tables in the content
 
-{: .callout  .alert }
+{: .callout .alert }
 **Alert:** This content will be written.  
 Related issue on [GitHub #121 Topic Tables in the content](https://github.com/wpaccessibility/wp-a11y-docs/issues/121).  
 

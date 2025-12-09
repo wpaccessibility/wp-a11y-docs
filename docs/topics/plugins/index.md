@@ -7,7 +7,7 @@ nav_order: 9
 
 # WordPress plugins and accessibility
 
-{: .callout  .alert }
+{: .callout .alert }
 **Alert:** The accessibility content should be moved to the related topics, this page should only contain practical info. Which info that will be is open for discussion.  
 Related issue on [GitHub #165 Topic WordPress plugins and accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/165).  
 

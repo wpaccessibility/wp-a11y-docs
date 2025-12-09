@@ -34,7 +34,7 @@ The big difference between PHP and JavaScript code standard checks and accessibi
 There are several command line tools for automated testing like [aXe-cli](https://github.com/dequelabs/axe-cli) and [pa11y](https://github.com/pa11y/pa11y).
 
 {: .callout  .info }
-Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow.
+**Info:** Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow.
 
 ### Setup for aXe-cli
 

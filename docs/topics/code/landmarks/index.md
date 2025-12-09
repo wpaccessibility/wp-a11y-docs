@@ -7,7 +7,7 @@ nav_order: 4
 
 # ARIA Landmarks
 
-{: .callout  .alert }
+{: .callout .alert }
 **Alert:** This content will be reviewed and restructured.  
 Related issue on [GitHub #143 Topic ARIA Landmarks](https://github.com/wpaccessibility/wp-a11y-docs/issues/143).  
 

@@ -7,8 +7,8 @@ nav_order: 7
 
 # Place the label above the form field
 
-{: .info }
-Note: this is best practice and not a WCAG requirement. 
+{: .callout .info }
+**Info:** This is best practice and not a WCAG requirement. 
 
 Place the label above the form field, like a text input, textarea or select. Not next to it, below it, or inside the form field, but on the line above the form field. Do this consistently for all form fields. 
 

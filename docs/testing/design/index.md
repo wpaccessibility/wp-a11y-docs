@@ -23,7 +23,7 @@ Check the color contrast ratio between text and its background. The rules in WCA
 There are many tools to calculate this easily, see [Color contrast checkers](http://www.webaxe.org/color-contrast-tools/).
 
 {: .callout  .tip }
-Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
+**Tip:** Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
 
 ## Color Contrast
 

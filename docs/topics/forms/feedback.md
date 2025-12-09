@@ -7,7 +7,7 @@ nav_order: 9
 
 # Feedback on form errors
 
-{: .callout  .alert }
+{: .callout .alert }
 **Alert:** This content will be rewritten and expanded.  
 Related issue on [GitHub #161 Feedback on form errors](https://github.com/wpaccessibility/wp-a11y-docs/issues/161).
 

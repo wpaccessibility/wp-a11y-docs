@@ -23,4 +23,4 @@ We do not specifically endorse any of the plugins listed here but offer them as 
 - [Sa11y](https://wordpress.org/plugins/sa11y/) – Accessibility checking tool geared towards content authors.
 
 {: .callout  .warning }
-Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
+**Warning:** Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).

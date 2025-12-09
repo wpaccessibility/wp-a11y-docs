@@ -30,7 +30,7 @@ The HTML basics:
 ```
 
 {: .callout .alert }
-IDs used must be unique on each page; otherwise, the wrong description may be announced with a form field.
+**Alert:** IDs used must be unique on each page; otherwise, the wrong description may be announced with a form field.
 
 It's possible to add multiple descriptions to one form field. You can combine the text of the description and an error message by separating the IDs with a space. The order of the IDs given in the `aria-describedby` attribute is the order in which they are announced.
 

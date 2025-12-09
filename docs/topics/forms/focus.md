@@ -7,7 +7,7 @@ nav_order: 6
 
 # Form focus handling
 
-{: .callout  .alert }
+{: .callout .alert }
 **Alert:** This content will be rewritten and expanded.  
 Related issue on [GitHub #158 Topic Form focus handling](https://github.com/wpaccessibility/wp-a11y-docs/issues/158).
 
