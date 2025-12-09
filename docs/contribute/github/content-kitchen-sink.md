@@ -35,7 +35,7 @@ In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}
 
 ## Summary in a larger text font.
 
-Start the paragraph with an H2 named "Summaty, or introduction and the callout {: .lead }`
+Start the paragraph with an H2 named "Summary, or introduction and the callout {: .lead }`
 
 
 ```markdown
