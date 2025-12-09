@@ -560,7 +560,7 @@
    */
   jtd.onReady(function() {
     var codeBlocks = document.querySelectorAll(
-        'div.highlighter-rouge, div.listingblock > div.content, figure.highlight'
+        'div.highlighter-rouge > div.highlight, div.listingblock > div.content, figure.highlight, div.table-wrapper'
     );
 
     codeBlocks.forEach(codeBlock => {
