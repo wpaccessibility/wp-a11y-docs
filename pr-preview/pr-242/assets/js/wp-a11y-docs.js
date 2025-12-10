@@ -560,8 +560,8 @@
         'div.highlighter-rouge > div.highlight, div.listingblock > div.content, figure.highlight, div.table-wrapper'
     );
 
-    scrollBlocks.forEach(codeBlock => {
-      codeBlock.tabIndex = 0;
+    scrollBlocks.forEach(scrollBlock => {
+      scrollBlock.tabIndex = 0;
     });
   });
 
