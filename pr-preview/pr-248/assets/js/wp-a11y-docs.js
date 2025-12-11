@@ -1,4 +1,4 @@
-    (function (jtd, undefined) {
+(function (jtd, undefined) {
 
 //
 // ---------------------------------------------------------
@@ -126,7 +126,7 @@
    */
   function initSearch() {
     var request = new XMLHttpRequest();
-    request.open('GET', '/pr-preview/pr-248/assets/js/search-data.json', true);
+    request.open('GET', '/assets/js/search-data.json', true);
 
     request.onload = function() {
       if (request.status >= 200 && request.status < 400) {
