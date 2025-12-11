@@ -1,6 +1,7 @@
 ---
 title: Legislation
 layout: default
+description: Information about Accessibility Legislation, including brief comments about the ADA and the EAA.
 nav_order: 7
 ---
 
