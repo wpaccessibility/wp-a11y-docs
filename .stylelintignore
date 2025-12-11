@@ -1,0 +1,4 @@
+assets/@fontsource-variable/**/*.css
+assets/@fontsource-variable/**/*.scss
+_site/assets/@fontsource-variable/**/*.css
+_site/assets/@fontsource-variable/**/*.scss
