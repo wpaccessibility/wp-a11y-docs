@@ -1478,42 +1478,42 @@
   },"211": {
     "doc": "Legislation",
     "title": "Accessibility Legislation",
-    "description": null,
+    "description": "Information about Accessibility Legislation, including brief comments about the ADA and the EAA.",
     "content": "Website accessibility is tested against the WCAG (Web Content Accessibility Guidelines), which are a standard created by the W3C (World Web Consortium). Accessibility legislation sets the requirements websites must meet for different countries and localities. Many of these laws require websites to meet WCAG guidelines, but the specifics are highly variable from country to country. Within a country, local governments may have stricter requirements for some or all websites. If you are building a website, you should consult with a lawyer to determine what laws apply to your circumstances. If you are building a WordPress plugin or theme, your software may be used in any jurisdiction. Customers may need your application to meet their local standards to legally use it. The Web Accessibility Initiative maintains a list of laws and policies by country. ",
     "url": "/pr-preview/pr-250/docs/legislation/#accessibility-legislation",
     "relUrl": "/docs/legislation/#accessibility-legislation"
   },"212": {
     "doc": "Legislation",
     "title": "Global Web Content Accessibility Guidelines",
-    "description": null,
+    "description": "Information about Accessibility Legislation, including brief comments about the ADA and the EAA.",
     "content": "WCAG is intended as a multi-purpose document that can apply to any web site. In the absence of specific legal guidelines, it is most commonly recommended that you follow the latest accessibility standards. ",
     "url": "/pr-preview/pr-250/docs/legislation/#global-web-content-accessibility-guidelines",
     "relUrl": "/docs/legislation/#global-web-content-accessibility-guidelines"
   },"213": {
     "doc": "Legislation",
     "title": "The European Accessibility Act",
-    "description": null,
+    "description": "Information about Accessibility Legislation, including brief comments about the ADA and the EAA.",
     "content": "The EAA is a prominent act supporting accessibility that is commonly mischaracterized as legislation. The EAA was created by the European Union, which is not a legislative body. Instead, it imposes a requirement on the European member states that they must establish accessibility laws. These laws must cover certain specific areas, but the individual laws are variable. ",
     "url": "/pr-preview/pr-250/docs/legislation/#the-european-accessibility-act",
     "relUrl": "/docs/legislation/#the-european-accessibility-act"
   },"214": {
     "doc": "Legislation",
     "title": "The Americans with Disabilities Act",
-    "description": null,
+    "description": "Information about Accessibility Legislation, including brief comments about the ADA and the EAA.",
     "content": "The ADA governs accessibility requirements in the United States of America. The law, established in 1991, does not specifically address the internet or websites, but does address many key concepts surrounding operating a business or service with accessibility requirements. The general interpretation of the law is that businesses are required to provide accessible services, but the specific details are largely dictated by the courts. Government, health care and many non-governmental organizations (such as schools) have specific guidance, but businesses do not. The lack of specific guidance should not be interpreted as a lack of a requirement for accessibility. ",
     "url": "/pr-preview/pr-250/docs/legislation/#the-americans-with-disabilities-act",
     "relUrl": "/docs/legislation/#the-americans-with-disabilities-act"
   },"215": {
     "doc": "Legislation",
     "title": "Additional Resources",
-    "description": null,
+    "description": "Information about Accessibility Legislation, including brief comments about the ADA and the EAA.",
     "content": ". | Navigating International Accessibility Law | Laws and Legal Updates from Lainey Feingold | State &amp; Local Guidance for ADA Title II Rules | European Accessibility Act - Wikipedia | . ",
     "url": "/pr-preview/pr-250/docs/legislation/#additional-resources",
     "relUrl": "/docs/legislation/#additional-resources"
   },"216": {
     "doc": "Legislation",
     "title": "Legislation",
-    "description": null,
+    "description": "Information about Accessibility Legislation, including brief comments about the ADA and the EAA.",
     "content": " ",
     "url": "/pr-preview/pr-250/docs/legislation/",
     "relUrl": "/docs/legislation/"
