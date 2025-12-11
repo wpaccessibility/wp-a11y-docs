@@ -528,6 +528,10 @@
       if (target) {
         target.classList.add('active');
         target.classList.toggle('active', true);
+        let button = target.querySelector( 'button' );
+        if ( button ) {
+          button.ariaExpanded = 'true';
+        }
         target = target.parentNode;
       }
     }
@@ -549,22 +553,23 @@
   });
 
   /**
-   * Makes code blocks focusable for keyboard navigation.
+   * Makes scrollable containers focusable for keyboard navigation.
    *
    * Applies to:
-   * - Rouge highlighter blocks
+   * - Code blocks
+   * - Tables
    * - AsciiDoc listingblocks
    * - Generic code `<figure>` blocks
    *
    * @function
    */
   jtd.onReady(function() {
-    var codeBlocks = document.querySelectorAll(
-        'div.highlighter-rouge, div.listingblock > div.content, figure.highlight'
+    let scrollBlocks = document.querySelectorAll(
+        'div.highlighter-rouge > div.highlight, div.listingblock > div.content, figure.highlight, div.table-wrapper'
     );
 
-    codeBlocks.forEach(codeBlock => {
-      codeBlock.tabIndex = 0;
+    scrollBlocks.forEach(scrollBlock => {
+      scrollBlock.tabIndex = 0;
     });
   });
 
