@@ -528,6 +528,10 @@
       if (target) {
         target.classList.add('active');
         target.classList.toggle('active', true);
+        let button = target.querySelector( 'button' );
+        if ( button ) {
+          button.ariaExpanded = 'true';
+        }
         target = target.parentNode;
       }
     }
