@@ -40,9 +40,5 @@
     "singleQuote": false,
     "tabWidth": 2,
     "trailingComma": "es5"
-  },
-  "dependencies": {
-    "@fontsource-variable/source-sans-3": "^5.2.9",
-    "@fontsource-variable/source-serif-4": "^5.2.9"
   }
 }
