@@ -135,7 +135,7 @@
     "doc": "Alt text for images",
     "title": "Alternative text for images",
     "description": null,
-    "content": "This content will be reviewed and expanded and maybe divided into separate topic pages. Related issue on GitHub #105 Topic Alt text for images. Note: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it. ",
+    "content": "Alert: This content will be reviewed and expanded and maybe divided into separate topic pages. Related issue on GitHub #105 Topic Alt text for images. Note: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it. ",
     "url": "/docs/topics/content/alt-text/#alternative-text-for-images",
     "relUrl": "/docs/topics/content/alt-text/#alternative-text-for-images"
   },"20": {
@@ -261,7 +261,7 @@
     "doc": "Connect the description",
     "title": "The aria-describedby/id relationship",
     "description": null,
-    "content": "The HTML basics: . | Give the description a unique ID: id=\"description-name\". | In the form field, refer to that ID: aria-describedby=\"description-name\". | . &lt;label for=\"fullname\"&gt;Full name&lt;/label&gt; &lt;p id=\"description-fullname\"&gt;Please fill out your first and last name.&lt;/p&gt; &lt;input id=\"fullname\" aria-describedby=\"description-fullname\" autocomplete=\"name\" /&gt; . IDs used must be unique on each page; otherwise, the wrong description may be announced with a form field. It’s possible to add multiple descriptions to one form field. You can combine the text of the description and an error message by separating the IDs with a space. The order of the IDs given in the aria-describedby attribute is the order in which they are announced. &lt;label for=\"fullname\"&gt;Full name&lt;/label&gt; &lt;div id=\"description-fullname\"&gt;Please fill out your first and last name.&lt;/div&gt; &lt;div id=\"error-message-fullname\"&gt;Your first and last name are missing.&lt;/div&gt; &lt;input id=\"fullname\" aria-describedby=\"description-fullname error-message-fullname\" autocomplete=\"name\" /&gt; . For the documentation about descriptions in fieldsets read Description with a fieldset. ",
+    "content": "The HTML basics: . | Give the description a unique ID: id=\"description-name\". | In the form field, refer to that ID: aria-describedby=\"description-name\". | . &lt;label for=\"fullname\"&gt;Full name&lt;/label&gt; &lt;p id=\"description-fullname\"&gt;Please fill out your first and last name.&lt;/p&gt; &lt;input id=\"fullname\" aria-describedby=\"description-fullname\" autocomplete=\"name\" /&gt; . Alert: IDs used must be unique on each page; otherwise, the wrong description may be announced with a form field. It’s possible to add multiple descriptions to one form field. You can combine the text of the description and an error message by separating the IDs with a space. The order of the IDs given in the aria-describedby attribute is the order in which they are announced. &lt;label for=\"fullname\"&gt;Full name&lt;/label&gt; &lt;div id=\"description-fullname\"&gt;Please fill out your first and last name.&lt;/div&gt; &lt;div id=\"error-message-fullname\"&gt;Your first and last name are missing.&lt;/div&gt; &lt;input id=\"fullname\" aria-describedby=\"description-fullname error-message-fullname\" autocomplete=\"name\" /&gt; . For the documentation about descriptions in fieldsets read Description with a fieldset. ",
     "url": "/docs/topics/forms/descriptions/connect-description/#the-aria-describedbyid-relationship",
     "relUrl": "/docs/topics/forms/descriptions/connect-description/#the-aria-describedbyid-relationship"
   },"38": {
@@ -331,7 +331,7 @@
     "doc": "Content kitchen sink",
     "title": "Kitchen sink: options available for content",
     "description": null,
-    "content": "This page lists the options and code available for creating content in this documentation. WordPress.org provides a lot of style guides for documentation: WordPress Style Guides - highlights. We value most of all: be kind and professional in your text and please write the text yourself or make sure the reader knows who you are citing. ",
+    "content": "This page lists the options and code available for creating content in this documentation. Please note: WordPress.org provides a lot of style guides for documentation: WordPress Style Guides - highlights. We value most of all: be kind and professional in your text and please write the text yourself or make sure the reader knows who you are citing. ",
     "url": "/docs/contribute/github/content-kitchen-sink/#kitchen-sink-options-available-for-content",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#kitchen-sink-options-available-for-content"
   },"48": {
@@ -352,14 +352,14 @@
     "doc": "Content kitchen sink",
     "title": "This is an H2 heading",
     "description": null,
-    "content": "This is an H3 heading . This is an H4 heading . This is an H5 heading . This is an H6 heading . In blog posts the H1 is added by the template: Add a blog post. ",
+    "content": "This is an H3 heading . This is an H4 heading . This is an H5 heading . This is an H6 heading . Alert: In blog posts the H1 is added by the template: Add a blog post. ",
     "url": "/docs/contribute/github/content-kitchen-sink/#this-is-an-h2-heading",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#this-is-an-h2-heading"
   },"51": {
     "doc": "Content kitchen sink",
     "title": "Summary in a larger text font.",
     "description": null,
-    "content": "Start the paragraph with an H2 named “Summaty, or introduction and the callout {: .lead }` . ## Summary {: .lead } When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. ",
+    "content": "Start the paragraph with an H2 named “Summary, or introduction and the callout {: .lead }` . ## Summary {: .lead } When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. ",
     "url": "/docs/contribute/github/content-kitchen-sink/#summary-in-a-larger-text-font",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#summary-in-a-larger-text-font"
   },"52": {
@@ -373,7 +373,7 @@
     "doc": "Content kitchen sink",
     "title": "Text",
     "description": null,
-    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. &lt;small&gt;This is small text&lt;/small&gt;. This is small text. Internal links . For links to other pages within wpaccessibility.org, always add the prefix {{site.baseurl}} to ensure they work in preview environments. For example {{site.baseurl}}/assets/images/small-image.jpg. This ensures links work correctly in both production and preview environments. External links to other websites don’t need this prefix. Images . An image: ![Alt text](url) . For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
+    "content": "This is a paragraph. This is a paragraph. This is **bold text** and this is _italic text_. This is bold text and this is italic text. A link: Please visit the [Make WordPress Accessible Team Handbook](https://make.wordpress.org/accessibility/handbook/) for more info about contributor days. A link: Please visit the Make WordPress Accessible Team Handbook for more info about contributor days. &lt;small&gt;This is small text&lt;/small&gt;. This is small text. Internal links . For links to other pages within wpaccessibility.org, always add the prefix {{site.baseurl}} to ensure they work in preview environments. For example {{site.baseurl}}/assets/images/small-image.jpg. This ensures links work correctly in both production and preview environments. External links to other websites don’t need this prefix. Images . An image: ![Alt text](url) . Tip: For more text options with Markdown read: Basic writing and formatting syntax on GitHub. ",
     "url": "/docs/contribute/github/content-kitchen-sink/#text",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#text"
   },"54": {
@@ -401,7 +401,7 @@
     "doc": "Content kitchen sink",
     "title": "Callouts",
     "description": null,
-    "content": "{: .callout .info } This is an informational message and uses the “info” callout. {: .callout .tip } Use the “tip” callout to highlight tips. {: .callout .alert } The “alert” callout is for alerting readers to important messages. {: .callout .warning } When something is particularly precarious, use the “warning” callout. {: .callout .example } Give an example with the \"example\" callout. The title of the callout will be \"Example\". {: .callout .do } Example of good practice. {: .callout .dont } Example of bad practice. This is an informational message and uses the “info” callout. Use the “tip” callout to highlight tips. The “alert” callout is for alerting readers to important messages. When something is particularly precarious, use the “warning” callout. Give an example with the example. The title of the callout will be “Example”. Example of how to do something. The title of the callout will be “Do”. Example of how not to do something. The title of the callout will be “Don’t”. Labels . Note: these are not form labels, but text labels. {: .label .label-blue } Blue {: .label .label-green } Green {: .label .label-yellow } Yellow {: .label .label-red } Red . Blue . Green . Yellow . Red . Collapsed Section . The following uses the &lt;details&gt; tag to create a collapsed section. &lt;details markdown=\"block\"&gt; &lt;summary&gt;Shopping list (click me!)&lt;/summary&gt; This is content inside a `&lt;details&gt;` dropdown. - Apples - Oranges - Milk &lt;/details&gt; . Shopping list (click me!) This is content inside a &lt;details&gt; dropdown. | Apples | Oranges | Milk | . ",
+    "content": "{: .callout .info } **Info:** This is an informational message and uses the “info” callout. {: .callout .tip } **Tip:** Use the “tip” callout to highlight tips. {: .callout .alert } **Alert:** The “alert” callout is for alerting readers to important messages. {: .callout .warning } **Warning:** When something is particularly precarious, use the “warning” callout. {: .callout .example } **Example:** Give an example with the \"example\" callout. The title of the callout will be \"Example\". {: .callout .do } **Do:** Example of good practice. {: .callout .dont } **Don't:** Example of bad practice. Info: This is an informational message and uses the “info” callout. Tip: Use the “tip” callout to highlight tips. Alert: The “alert” callout is for alerting readers to important messages. Warning: When something is particularly precarious, use the “warning” callout. Example: Give an example with the example. Do: Example of how to do something. Don’t: Example of how not to do something. Labels . Please note: These are not form labels, but text labels. {: .label .label-blue } Blue {: .label .label-green } Green {: .label .label-yellow } Yellow {: .label .label-red } Red . Blue . Green . Yellow . Red . Collapsed Section . The following uses the &lt;details&gt; tag to create a collapsed section. &lt;details markdown=\"block\"&gt; &lt;summary&gt;Shopping list (click me!)&lt;/summary&gt; This is content inside a `&lt;details&gt;` dropdown. - Apples - Oranges - Milk &lt;/details&gt; . Shopping list (click me!) This is content inside a &lt;details&gt; dropdown. | Apples | Oranges | Milk | . ",
     "url": "/docs/contribute/github/content-kitchen-sink/#callouts",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#callouts"
   },"58": {
@@ -464,7 +464,7 @@
     "doc": "The dialog modal",
     "title": "The dialog modal",
     "description": null,
-    "content": "This content will be reviewed, modernized and restructured. Related issue on GitHub #152 Topic The dialog modal. A dialog is a window that separates content from the main content of a page. It can ask questions or require user input. When the dialog is active and opened, only the content inside the dialog should be available for interaction. Visually it’s usually overlaid on top of main content. There are two main practices for achieving an accessible modal dialog: . | The use of appropriate WAI-ARIA roles, states, and properties markup for dialog helps assistive technology identify the content as grouped and separated from the rest of the page. | Providing keyboard interaction and restricting focus within the modal helps keyboard users to navigate the content inside the dialog, and only navigate back to the main content when they’re ready. | . Detailed information can be found in the WAI-ARIA authoring practices for modals. The HTML 5.2 specification will include a native &lt;dialog&gt; element which is being implemented by browser vendors. See caniuse.com for up-to-date information on support. ",
+    "content": "Alert: This content will be reviewed, modernized and restructured. Related issue on GitHub #152 Topic The dialog modal. A dialog is a window that separates content from the main content of a page. It can ask questions or require user input. When the dialog is active and opened, only the content inside the dialog should be available for interaction. Visually it’s usually overlaid on top of main content. There are two main practices for achieving an accessible modal dialog: . | The use of appropriate WAI-ARIA roles, states, and properties markup for dialog helps assistive technology identify the content as grouped and separated from the rest of the page. | Providing keyboard interaction and restricting focus within the modal helps keyboard users to navigate the content inside the dialog, and only navigate back to the main content when they’re ready. | . Detailed information can be found in the WAI-ARIA authoring practices for modals. The HTML 5.2 specification will include a native &lt;dialog&gt; element which is being implemented by browser vendors. See caniuse.com for up-to-date information on support. ",
     "url": "/docs/topics/code/components/dialog/",
     "relUrl": "/docs/topics/code/components/dialog/"
   },"67": {
@@ -485,14 +485,14 @@
     "doc": "Digital documents",
     "title": "Digital documents",
     "description": null,
-    "content": "This content will be reviewed, restructured and expanded. Related issue on GitHub #119 Topic Digital document. ",
+    "content": "Alert: This content will be reviewed, restructured and expanded. Related issue on GitHub #119 Topic Digital document. ",
     "url": "/docs/topics/content/docs/",
     "relUrl": "/docs/topics/content/docs/"
   },"70": {
     "doc": "Digital documents",
     "title": "Accessible PDFs",
     "description": null,
-    "content": "PDFs (Portable Document Format) are often referred as tagged PDFs. Similar accessibility rules applies for PDFs as HTML documents: . | headings structure. | appropriate link texts. | color contrast. | alternative text for images. | . Tagged PDF . PDF tags are the semantic content marks and indicate the logical document structure and reading order. Compared to HTML tags, PDF tags look similar, but are not the same. In the source document (e.g. Microsoft Word, Adobe InDesign) you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside &lt;p&gt; tags. It also important to format your lists and tables correctly to get good results while exporting your PDF. The Paciello Group has a good overview of PDF inaccessibility. Export as accessible PDF . The list of software which are able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar. Note: Google Docs doesn’t yet support the export of a tagged and accessible PDF yet without any help of a plugin. Resources . | Defining PDF Accessibility on WebAIM. | Overview of PDF inaccessibility, by the Paciello Group. | PDF Accessibility Overview, by Adobe. | Create and verify PDF accessibility, by Acrobat Pro | PDF/UA in a Nutshell (PDF), by the PDF association. | Tagged PDF 508 help center, by Tagged PDF. | . ",
+    "content": "PDFs (Portable Document Format) are often referred as tagged PDFs. Similar accessibility rules applies for PDFs as HTML documents: . | headings structure. | appropriate link texts. | color contrast. | alternative text for images. | . Tagged PDF . PDF tags are the semantic content marks and indicate the logical document structure and reading order. Compared to HTML tags, PDF tags look similar, but are not the same. In the source document (e.g. Microsoft Word, Adobe InDesign) you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside &lt;p&gt; tags. It also important to format your lists and tables correctly to get good results while exporting your PDF. The Paciello Group has a good overview of PDF inaccessibility. Export as accessible PDF . The list of software which are able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar. Warning: Google Docs doesn’t yet support the export of a tagged and accessible PDF yet without any help of a plugin. Resources . | Defining PDF Accessibility on WebAIM. | Overview of PDF inaccessibility, by the Paciello Group. | PDF Accessibility Overview, by Adobe. | Create and verify PDF accessibility, by Acrobat Pro | PDF/UA in a Nutshell (PDF), by the PDF association. | Tagged PDF 508 help center, by Tagged PDF. | . ",
     "url": "/docs/topics/content/docs/#accessible-pdfs",
     "relUrl": "/docs/topics/content/docs/#accessible-pdfs"
   },"71": {
@@ -534,7 +534,7 @@
     "doc": "Post Excerpts",
     "title": "Post Excerpts",
     "description": null,
-    "content": "This content will be reviewed, modernized and restructured. Related issue on GitHub #151 Topic Post Excerpts. ",
+    "content": "Alert: This content will be reviewed, modernized and restructured. Related issue on GitHub #151 Topic Post Excerpts. ",
     "url": "/docs/topics/code/components/excerpt/",
     "relUrl": "/docs/topics/code/components/excerpt/"
   },"77": {
@@ -569,7 +569,7 @@
     "doc": "Feedback on errors",
     "title": "Feedback on form errors",
     "description": null,
-    "content": "This content will be rewritten and expanded. Related issue on GitHub #161 Feedback on form errors. ",
+    "content": "Alert: This content will be rewritten and expanded. Related issue on GitHub #161 Feedback on form errors. ",
     "url": "/docs/topics/forms/feedback/#feedback-on-form-errors",
     "relUrl": "/docs/topics/forms/feedback/#feedback-on-form-errors"
   },"82": {
@@ -611,7 +611,7 @@
     "doc": "Fieldset description",
     "title": "Examples",
     "description": "Connect the description of a fieldset to the fieldset element",
-    "content": "Connect a description to the form field, using aria-describedby. &lt;label for=\"new-password\"&gt;New password&lt;/label&gt; &lt;p id=\"description-new-password\"&gt; Choose a password of at least 8 characters long. &lt;/p&gt; &lt;input id=\"new-password\" type=\"password\" name=\"new-password\" aria-describedby=\"description-new-password\" autocomplete=\"new-password\" /&gt; . ",
+    "content": "Do: Connect a description to the form field, using aria-describedby. &lt;label for=\"new-password\"&gt;New password&lt;/label&gt; &lt;p id=\"description-new-password\"&gt; Choose a password of at least 8 characters long. &lt;/p&gt; &lt;input id=\"new-password\" type=\"password\" name=\"new-password\" aria-describedby=\"description-new-password\" autocomplete=\"new-password\" /&gt; . ",
     "url": "/docs/topics/forms/fieldsets/fieldset-descriptions/#examples",
     "relUrl": "/docs/topics/forms/fieldsets/fieldset-descriptions/#examples"
   },"88": {
@@ -646,7 +646,7 @@
     "doc": "Focus handling",
     "title": "Form focus handling",
     "description": null,
-    "content": "This content will be rewritten and expanded. Related issue on GitHub #158 Topic Form focus handling. ",
+    "content": "Alert: This content will be rewritten and expanded. Related issue on GitHub #158 Topic Form focus handling. ",
     "url": "/docs/topics/forms/focus/#form-focus-handling",
     "relUrl": "/docs/topics/forms/focus/#form-focus-handling"
   },"93": {
@@ -674,7 +674,7 @@
     "doc": "Headings",
     "title": "Headings in the content",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #106 Headings in the content. ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #106 Headings in the content. ",
     "url": "/docs/topics/content/headings/#headings-in-the-content",
     "relUrl": "/docs/topics/content/headings/#headings-in-the-content"
   },"97": {
@@ -716,7 +716,7 @@
     "doc": "Provide help",
     "title": "Provide help filling out a form",
     "description": null,
-    "content": "This content will be rewritten and expanded. Related issue on GitHub #159 Topic Provide help filling out a form. Provide instructions to help users with complex forms . Strong semantic structure, like what is provided by fieldset and legend is very helpful in understanding complex forms. However, providing assistance to users can sometimes make the difference between having a user complete a process and abandon it. Instructions can range anywhere from an aria-describedby description associated with a single input, to a modal dialog that gives additional context or provides a worksheet to help the user calculate a value. Importantly, the line between understandable and…not can be very blurry; and you should always be looking at your form with an empathetic eye. Your knowledge of the form is likely much greater than your user’s. Validate user input . If it is possible to know whether a value is acceptable before the form is submitted, you should provide accessible validation as soon as possible. That validation should do more than simply notifying the user there is a problem with the field; it should also tell them how to fix it, if you’re able to provide that information. For example, in a required email field, you should be able to quickly identify the difference between a missing email and an invalid format, and provide feedback accordingly. That feedback should be provided in an accessible notification. And on that point… . ",
+    "content": "Alert: This content will be rewritten and expanded. Related issue on GitHub #159 Topic Provide help filling out a form. Provide instructions to help users with complex forms . Strong semantic structure, like what is provided by fieldset and legend is very helpful in understanding complex forms. However, providing assistance to users can sometimes make the difference between having a user complete a process and abandon it. Instructions can range anywhere from an aria-describedby description associated with a single input, to a modal dialog that gives additional context or provides a worksheet to help the user calculate a value. Importantly, the line between understandable and…not can be very blurry; and you should always be looking at your form with an empathetic eye. Your knowledge of the form is likely much greater than your user’s. Validate user input . If it is possible to know whether a value is acceptable before the form is submitted, you should provide accessible validation as soon as possible. That validation should do more than simply notifying the user there is a problem with the field; it should also tell them how to fix it, if you’re able to provide that information. For example, in a required email field, you should be able to quickly identify the difference between a missing email and an invalid format, and provide feedback accordingly. That feedback should be provided in an accessible notification. And on that point… . ",
     "url": "/docs/topics/forms/help/#provide-help-filling-out-a-form",
     "relUrl": "/docs/topics/forms/help/#provide-help-filling-out-a-form"
   },"103": {
@@ -730,7 +730,7 @@
     "doc": "Images",
     "title": "Images in theme development",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #147 Topic Images in theme development. You may think that you’re not including any images in your project. Possibly this is true; but are you using dashicons or other icon fonts? Are you using SVG graphics? . For accessibility, “images” doesn’t only refer to the img element. It means any non-text graphical elements on the page. This is particularly crucial if you’re using images to represent controls – a hamburger menu icon, an arrow, or a plus or minus icon. These images are used to represent information. All of these images require accessibility considerations. The W3C offers a useful decision tree to help you decide what kind of text you need for an image. If your image is conveying information or activating a control, it’s going to need some form of accessible name. Making an image accessible doesn’t necessarily mean ensuring that it is named, however. If an image is the sole presentation of data, then it needs to be named. If it is supplemental, and that same information is presented in text, then it should be hidden from screen readers. | Accessible SVGS from CSS Tricks | Font Icon accessibility from Font Awesome | . ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #147 Topic Images in theme development. You may think that you’re not including any images in your project. Possibly this is true; but are you using dashicons or other icon fonts? Are you using SVG graphics? . For accessibility, “images” doesn’t only refer to the img element. It means any non-text graphical elements on the page. This is particularly crucial if you’re using images to represent controls – a hamburger menu icon, an arrow, or a plus or minus icon. These images are used to represent information. All of these images require accessibility considerations. The W3C offers a useful decision tree to help you decide what kind of text you need for an image. If your image is conveying information or activating a control, it’s going to need some form of accessible name. Making an image accessible doesn’t necessarily mean ensuring that it is named, however. If an image is the sole presentation of data, then it needs to be named. If it is supplemental, and that same information is presented in text, then it should be hidden from screen readers. | Accessible SVGS from CSS Tricks | Font Icon accessibility from Font Awesome | . ",
     "url": "/docs/topics/code/images-animations/images/#images-in-theme-development",
     "relUrl": "/docs/topics/code/images-animations/images/#images-in-theme-development"
   },"105": {
@@ -884,7 +884,7 @@
     "doc": "Themes",
     "title": "WordPress themes and accessibility",
     "description": null,
-    "content": "This content will be updated later. Related issue on GitHub #164 Topic WordPress themes and accessibility. Creating a theme that supports accessibility is mostly about setting healthy defaults. This includes: . | ensuring the menus are accessible from the keyboard, | checking that default color contrast meets standards, | that the HTML structure uses semantically correct code. | . The standards for the WordPress theme directory’s accessibility-ready program are available in the Theme Review handbook, including testing instructions, so you can check your own theme. Note: accessibility-ready does not mean a theme meets WCAG guidelines at level AA. It means that the theme reaches the minimum standards that the theme review team has set. ",
+    "content": "Alert: This content will be updated later. Related issue on GitHub #164 Topic WordPress themes and accessibility. Creating a theme that supports accessibility is mostly about setting healthy defaults. This includes: . | ensuring the menus are accessible from the keyboard, | checking that default color contrast meets standards, | that the HTML structure uses semantically correct code. | . The standards for the WordPress theme directory’s accessibility-ready program are available in the Theme Review handbook, including testing instructions, so you can check your own theme. Note: accessibility-ready does not mean a theme meets WCAG guidelines at level AA. It means that the theme reaches the minimum standards that the theme review team has set. ",
     "url": "/docs/topics/themes/#wordpress-themes-and-accessibility",
     "relUrl": "/docs/topics/themes/#wordpress-themes-and-accessibility"
   },"127": {
@@ -905,7 +905,7 @@
     "doc": "WCAG and compliance",
     "title": "WCAG and compliance",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #97 Topic WCAG and compliance. The World Wide Web Consortium (W3C) developed guidelines to safeguard the accessibility of a website: the Web Content Accessibility Guidelines: WCAG. The current recommended version is 2.2. For WordPress, we test against WCAG version 2.2 level AA. The page Introduction to WCAG explains how WCAG is put together and what all the terminology means, like principles, guidelines, succes criterion, techniques, levels and versions. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #97 Topic WCAG and compliance. The World Wide Web Consortium (W3C) developed guidelines to safeguard the accessibility of a website: the Web Content Accessibility Guidelines: WCAG. The current recommended version is 2.2. For WordPress, we test against WCAG version 2.2 level AA. The page Introduction to WCAG explains how WCAG is put together and what all the terminology means, like principles, guidelines, succes criterion, techniques, levels and versions. ",
     "url": "/docs/topics/wcag/",
     "relUrl": "/docs/topics/wcag/"
   },"130": {
@@ -919,7 +919,7 @@
     "doc": "WCAG and compliance",
     "title": "Accessibility statement for WordPress",
     "description": null,
-    "content": "Accessibility statement for WordPress. Quoting: . All new and updated code released in WordPress must conform with these guidelines as per the WordPress Accessibility Coding Standards. Some current features and functionality in development may not yet fully comply, and known issues are listed in the WordPress Trac “accessibility” focus. The WordPress accessibility coding standards require new or updated code to meet the standards of the Web Content Accessibility Guidelines (WCAG) version 2.0 at level AA. ATAG conformance is an additional goal beyond WCAG compliance. WordPress is not currently conforming with ATAG 2.0, but pledges to pursue features that are accessible and which help users create accessible content in pursuit of the long-term goal of ATAG compliance. ",
+    "content": "Accessibility statement for WordPress. Quoting: . All new and updated code released in WordPress must conform with these guidelines as per the WordPress Accessibility Coding Standards. Some current features and functionality in development may not yet fully comply, and known issues are listed in the WordPress Trac “accessibility” focus. The WordPress accessibility coding standards require new or updated code to meet the standards of the Web Content Accessibility Guidelines (WCAG) version 2.0 at level AA. ATAG conformance is an additional goal beyond WCAG compliance. Alert: WordPress is not currently conforming with ATAG 2.0, but pledges to pursue features that are accessible and which help users create accessible content in pursuit of the long-term goal of ATAG compliance. ",
     "url": "/docs/topics/wcag/#accessibility-statement-for-wordpress",
     "relUrl": "/docs/topics/wcag/#accessibility-statement-for-wordpress"
   },"132": {
@@ -933,7 +933,7 @@
     "doc": "WCAG vs best practice",
     "title": "The difference between WCAG and best practice",
     "description": null,
-    "content": "This content will be written. Related issue on GitHub #98 Topic WCAG and best practice. ",
+    "content": "Alert: This content will be written. Related issue on GitHub #98 Topic WCAG and best practice. ",
     "url": "/docs/topics/best-practice/#the-difference-between-wcag-and-best-practice",
     "relUrl": "/docs/topics/best-practice/#the-difference-between-wcag-and-best-practice"
   },"134": {
@@ -947,7 +947,7 @@
     "doc": "Plugins",
     "title": "WordPress plugins and accessibility",
     "description": null,
-    "content": "The accessibility content should be moved to the related topics, this page should only contain practical info. Which info that will be is open for discussion. Related issue on GitHub #165 Topic WordPress plugins and accessibility. There are no plugin accessibility requirements in the WordPress plugin directory. This is because of the labor required to test plugins for accessibility. However, you are strongly encouraged to consider accessibility when creating or updating your plugins. ",
+    "content": "Alert: The accessibility content should be moved to the related topics, this page should only contain practical info. Which info that will be is open for discussion. Related issue on GitHub #165 Topic WordPress plugins and accessibility. There are no plugin accessibility requirements in the WordPress plugin directory. This is because of the labor required to test plugins for accessibility. However, you are strongly encouraged to consider accessibility when creating or updating your plugins. ",
     "url": "/docs/topics/plugins/#wordpress-plugins-and-accessibility",
     "relUrl": "/docs/topics/plugins/#wordpress-plugins-and-accessibility"
   },"136": {
@@ -982,7 +982,7 @@
     "doc": "Tables",
     "title": "Tables in theme and plugin development",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #144 Topic Tables in theme and plugin development. Tables are the recommended way to display tabular data. Tabular data is any data that is best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not a good idea for layout, however. Well-coded tables are important for screen reader users, so they can read, navigate, and understand the data. Creating a pseudo-table for data by using divs and CSS will make the data much harder to understand for a screen reader user. ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #144 Topic Tables in theme and plugin development. Tables are the recommended way to display tabular data. Tabular data is any data that is best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not a good idea for layout, however. Well-coded tables are important for screen reader users, so they can read, navigate, and understand the data. Creating a pseudo-table for data by using divs and CSS will make the data much harder to understand for a screen reader user. ",
     "url": "/docs/topics/code/tables/#tables-in-theme-and-plugin-development",
     "relUrl": "/docs/topics/code/tables/#tables-in-theme-and-plugin-development"
   },"141": {
@@ -1038,7 +1038,7 @@
     "doc": "Semantic HTML",
     "title": "Semantic HTML",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #141 Topic Semantic HTML. Accessibility isn’t dark magic. Most of it comes down to using semantic HTML. Semantic HTML is about choosing the element that best presents the purpose of the content. Examples include using a button for an action, an a element for a link, and an h1 heading for the main page content. ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #141 Topic Semantic HTML. Accessibility isn’t dark magic. Most of it comes down to using semantic HTML. Semantic HTML is about choosing the element that best presents the purpose of the content. Examples include using a button for an action, an a element for a link, and an h1 heading for the main page content. ",
     "url": "/docs/topics/code/semantics/",
     "relUrl": "/docs/topics/code/semantics/"
   },"149": {
@@ -1080,7 +1080,7 @@
     "doc": "Heading structure",
     "title": "Heading structure in theme development",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #142 Topic Heading structure in theme development. Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As a sighted user, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content. Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense. ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #142 Topic Heading structure in theme development. Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As a sighted user, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content. Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense. ",
     "url": "/docs/topics/code/heading-structure/#heading-structure-in-theme-development",
     "relUrl": "/docs/topics/code/heading-structure/#heading-structure-in-theme-development"
   },"155": {
@@ -1136,7 +1136,7 @@
     "doc": "CSS screen-reader-text",
     "title": "The CSS class screen-reader-text",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #145 Topic The CSS class screen-reader-text. ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #145 Topic The CSS class screen-reader-text. ",
     "url": "/docs/topics/code/screen-reader-text/#the-css-class-screen-reader-text",
     "relUrl": "/docs/topics/code/screen-reader-text/#the-css-class-screen-reader-text"
   },"163": {
@@ -1192,7 +1192,7 @@
     "doc": "Accessible name",
     "title": "Why is this important?",
     "description": null,
-    "content": ". | Screen readers will announce the name, role, value or status when an interactive element gets keyboard focus. | Voice recognition (voice control) users can focus an interactive element by announcing its name. | . A proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page. Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name Understanding Accessible Names in HTML. Note: An aria-label attribute on a link or a button overrides all textual content within. For example, the accessible name of the button &lt;button aria-label=\"Close\"&gt;Open&lt;/button&gt; is “Close”. ",
+    "content": ". | Screen readers will announce the name, role, value or status when an interactive element gets keyboard focus. | Voice recognition (voice control) users can focus an interactive element by announcing its name. | . A proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page. Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name Understanding Accessible Names in HTML. Please note: An aria-label attribute on a link or a button overrides all textual content within. For example, the accessible name of the button &lt;button aria-label=\"Close\"&gt;Open&lt;/button&gt; is “Close”. ",
     "url": "/docs/topics/code/accessible-name/#why-is-this-important",
     "relUrl": "/docs/topics/code/accessible-name/#why-is-this-important"
   },"171": {
@@ -1206,7 +1206,7 @@
     "doc": "Accessible name",
     "title": "Examples clarifying the accessible name of interactive elements",
     "description": null,
-    "content": "Menu button: . Menu . &lt;button aria-expanded=\"false\"&gt;Menu&lt;/button&gt; . The accessibility tree of Chrome shows the following relevant information: the accessible name is taken from the content, the role is button, the element is focusable, has focus and the menu is not expanded: . | Name . | aria-labelledby: Not specified | aria-label: Not specified | From label: Not specified | Contents: “Menu” | title: Not specified | . | Role: button | Invalid user entry: false | Focusable: true | Focused: true | Expanded: false | . In this example the accessible name is taken from “Contents”. The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. A value for the aria-label will overwrite the Contents value. Link: . Contact . &lt;a href=\"https://wpaccessibility.org/docs/contact/\"&gt;Contact&lt;/a&gt; . The accessibility tree of Firefox shows the following relevant information: The accessible name is contact, the role is link and the value is the url. | name:”Contact” | role:”link” | value:”https://wpaccessibility.org/docs/contact/” | . ",
+    "content": "Menu button: . Menu . &lt;button aria-expanded=\"false\"&gt;Menu&lt;/button&gt; . The accessibility tree of Chrome shows the following relevant information: the accessible name is taken from the content, the role is button, the element is focusable, has focus and the menu is not expanded: . | Name . | aria-labelledby: Not specified | aria-label: Not specified | From label: Not specified | Contents: “Menu” | title: Not specified | . | Role: button | Invalid user entry: false | Focusable: true | Focused: true | Expanded: false | . Info: In this example the accessible name is taken from “Contents”. The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. A value for the aria-label will overwrite the Contents value. Link: . Contact . &lt;a href=\"https://wpaccessibility.org/docs/contact/\"&gt;Contact&lt;/a&gt; . The accessibility tree of Firefox shows the following relevant information: The accessible name is contact, the role is link and the value is the url. | name:”Contact” | role:”link” | value:”https://wpaccessibility.org/docs/contact/” | . ",
     "url": "/docs/topics/code/accessible-name/#examples-clarifying-the-accessible-name-of-interactive-elements",
     "relUrl": "/docs/topics/code/accessible-name/#examples-clarifying-the-accessible-name-of-interactive-elements"
   },"173": {
@@ -1234,7 +1234,7 @@
     "doc": "Landmarks",
     "title": "ARIA Landmarks",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #143 Topic ARIA Landmarks. ARIA landmark roles provide a method for screen reader users to navigate structural regions of a site. By default, many HTML5 elements define ARIA landmark roles which identify these regions. All content should be inside these semantically meaningful elements so content is not missed by the user. ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #143 Topic ARIA Landmarks. ARIA landmark roles provide a method for screen reader users to navigate structural regions of a site. By default, many HTML5 elements define ARIA landmark roles which identify these regions. All content should be inside these semantically meaningful elements so content is not missed by the user. ",
     "url": "/docs/topics/code/landmarks/#aria-landmarks",
     "relUrl": "/docs/topics/code/landmarks/#aria-landmarks"
   },"177": {
@@ -1276,7 +1276,7 @@
     "doc": "Feedback on dynamic changes",
     "title": "Feedback on dynamic changes",
     "description": null,
-    "content": "This content will be reviewed and restructured. And probably divided into separate topics for more use cases. Related issue on GitHub #166 Topic Feedback on dynamic changes. ",
+    "content": "Alert: This content will be reviewed and restructured. And probably divided into separate topics for more use cases. Related issue on GitHub #166 Topic Feedback on dynamic changes. ",
     "url": "/docs/topics/code/dynamic-changes/",
     "relUrl": "/docs/topics/code/dynamic-changes/"
   },"183": {
@@ -1311,7 +1311,7 @@
     "doc": "WordPress Core",
     "title": "WordPress Core Accessibility Standards",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #122 Topic WordPress Core Accessibility Standards. TODO: This is duplicate content? see also Accessibility Coding Standards in the coding standards handbook WCAG 2.0 must be WCAG 2.2? The content should be reviewed for modern code and the links adjusted and divided between the topics. When creating new interfaces in core, the output and interactions are expected to conform to WCAG 2.0 at level AA. But beyond that, there are some specific patterns that the accessibility team and core team have agreed on as the preferred method for structure. Though there are many patterns that meet accessibility standards, being consistent across the platform is a key method to ensure that WordPress as a whole is easier to use. This document is supplemental guidance to help developers meet the WordPress Accessibility Coding Standards. TODO: should this stay or should it go? . ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #122 Topic WordPress Core Accessibility Standards. Warning: This is duplicate content? see also Accessibility Coding Standards in the coding standards handbook WCAG 2.0 must be WCAG 2.2? The content should be reviewed for modern code and the links adjusted and divided between the topics. When creating new interfaces in core, the output and interactions are expected to conform to WCAG 2.0 at level AA. But beyond that, there are some specific patterns that the accessibility team and core team have agreed on as the preferred method for structure. Though there are many patterns that meet accessibility standards, being consistent across the platform is a key method to ensure that WordPress as a whole is easier to use. This document is supplemental guidance to help developers meet the WordPress Accessibility Coding Standards. TODO: should this stay or should it go? . ",
     "url": "/docs/topics/core/#wordpress-core-accessibility-standards",
     "relUrl": "/docs/topics/core/#wordpress-core-accessibility-standards"
   },"188": {
@@ -1479,14 +1479,14 @@
     "doc": "Legislation",
     "title": "Legislation",
     "description": null,
-    "content": "This content will be written. Related issue on GitHub #179 Intro page Legislation. ",
+    "content": "Alert: This content will be written. Related issue on GitHub #179 Intro page Legislation. ",
     "url": "/docs/legislation/",
     "relUrl": "/docs/legislation/"
   },"212": {
     "doc": "Resources",
     "title": "Resources on accessibility",
     "description": null,
-    "content": "This content will be written. Related issue on GitHub #181 Intro page Resources on accessibility. ",
+    "content": "Alert: This content will be written. Related issue on GitHub #181 Intro page Resources on accessibility. ",
     "url": "/docs/resources/#resources-on-accessibility",
     "relUrl": "/docs/resources/#resources-on-accessibility"
   },"213": {
@@ -1500,7 +1500,7 @@
     "doc": "Overall checklists",
     "title": "Checklists for accessibility testing overall",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #170 Checklists for accessibility testing overall. Accessibility testing guide by the British Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion. Check your WCAG compliance by the A11y Project. The checks are ordered by topic. WebAIM’s WCAG 2 Checklist, a checklist that presents recommendations for implementing the most common accessibility principles and techniques for those seeking WCAG conformance. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #170 Checklists for accessibility testing overall. Accessibility testing guide by the British Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion. Check your WCAG compliance by the A11y Project. The checks are ordered by topic. WebAIM’s WCAG 2 Checklist, a checklist that presents recommendations for implementing the most common accessibility principles and techniques for those seeking WCAG conformance. ",
     "url": "/docs/testing/checklists/#checklists-for-accessibility-testing-overall",
     "relUrl": "/docs/testing/checklists/#checklists-for-accessibility-testing-overall"
   },"215": {
@@ -1514,14 +1514,14 @@
     "doc": "Screen reader testing",
     "title": "Screen reader testing",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #176 Topic Screen reader testing. Content that changes dynamically during time, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website! . While we know that many developers work primarily on MacOS, testing only with Apple’s VoiceOver is not sufficient. VoiceOver, while fairly common, has many non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience. Screen reader testing . | Testing with Screen Readers: Questions and Answers | Screen reader keyboard shortcuts and gestures | Basic screen reader commands for accessibility testing | . Best screen reader / browser combinations . | VoiceOver with Safari, | NVDA with Chrome or FireFox | JAWS with Chrome, Edge or FireFox | Windows Narrator with Edge | . The screen readers ChromeVox and Orca don’t perform well enough as a screen reader, at this moment, to give representative test information. How to use a screen reader . | List of screen reader test tools in the Accessibility Handbook | VoiceOver Getting Started | VoiceOver cheat sheet by Paul J. Adam | NVDA | NVDA shortcuts | . ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #176 Topic Screen reader testing. Content that changes dynamically during time, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website! . While we know that many developers work primarily on MacOS, testing only with Apple’s VoiceOver is not sufficient. VoiceOver, while fairly common, has many non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience. Screen reader testing . | Testing with Screen Readers: Questions and Answers | Screen reader keyboard shortcuts and gestures | Basic screen reader commands for accessibility testing | . Best screen reader / browser combinations . | VoiceOver with Safari, | NVDA with Chrome or FireFox | JAWS with Chrome, Edge or FireFox | Windows Narrator with Edge | . The screen readers ChromeVox and Orca don’t perform well enough as a screen reader, at this moment, to give representative test information. How to use a screen reader . | List of screen reader test tools in the Accessibility Handbook | VoiceOver Getting Started | VoiceOver cheat sheet by Paul J. Adam | NVDA | NVDA shortcuts | . ",
     "url": "/docs/testing/screen-readers/",
     "relUrl": "/docs/testing/screen-readers/"
   },"217": {
     "doc": "Keyboard testing",
     "title": "Keyboard navigation testing",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #175 Topic Keyboard navigation testing. All functionality should work using a keyboard only. This essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #175 Topic Keyboard navigation testing. All functionality should work using a keyboard only. This essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development. ",
     "url": "/docs/testing/keyboard/#keyboard-navigation-testing",
     "relUrl": "/docs/testing/keyboard/#keyboard-navigation-testing"
   },"218": {
@@ -1542,14 +1542,14 @@
     "doc": "WP plugins for testing",
     "title": "WordPress’ plugins for accessibility testing",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #177 Topic Screen reader testing. We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use in your own accessible WordPress site. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #177 Topic Screen reader testing. We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use in your own accessible WordPress site. ",
     "url": "/docs/testing/plugins/#wordpress-plugins-for-accessibility-testing",
     "relUrl": "/docs/testing/plugins/#wordpress-plugins-for-accessibility-testing"
   },"221": {
     "doc": "WP plugins for testing",
     "title": "Testing Tools &amp; Content Analysis",
     "description": null,
-    "content": ". | Accessibility Checker – Accessibility testing tool that runs directly in your WordPress site. | WP ADA Compliance Check Basic – Accessibility testing tool that runs directly in your WordPress site. (Limit 15 posts or pages) | Fix Alt Text – Helps user find images with missing alternative text. | WP Accessibility Tools &amp; Missing Alt Text Finder – Provides accessibility testing and media analysis support. | Editoria11y – Accessibility checking tool geared towards content authors. | Sa11y – Accessibility checking tool geared towards content authors. | . Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
+    "content": ". | Accessibility Checker – Accessibility testing tool that runs directly in your WordPress site. | WP ADA Compliance Check Basic – Accessibility testing tool that runs directly in your WordPress site. (Limit 15 posts or pages) | Fix Alt Text – Helps user find images with missing alternative text. | WP Accessibility Tools &amp; Missing Alt Text Finder – Provides accessibility testing and media analysis support. | Editoria11y – Accessibility checking tool geared towards content authors. | Sa11y – Accessibility checking tool geared towards content authors. | . Warning: Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
     "url": "/docs/testing/plugins/#testing-tools--content-analysis",
     "relUrl": "/docs/testing/plugins/#testing-tools--content-analysis"
   },"222": {
@@ -1563,7 +1563,7 @@
     "doc": "Frontend code checks",
     "title": "Frontend checks for web accessibility",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #173 Topic Frontend checks for web accessibility. Testing for valid, semantic HTML is essential for the accessibility of your work. In this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development and before you commit your work. While you develop, always check the following items while developing: keyboard navigation, W3C validation, WCAG 2 AA validation and then announcement of dynamic changes for screen readers. Note: automated testing is not perfect. Automated testing rarely catchies more than about 30% of types of issues. They also give false positives. Manual testing is required to find most issues. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #173 Topic Frontend checks for web accessibility. Testing for valid, semantic HTML is essential for the accessibility of your work. In this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development and before you commit your work. While you develop, always check the following items while developing: keyboard navigation, W3C validation, WCAG 2 AA validation and then announcement of dynamic changes for screen readers. Note: automated testing is not perfect. Automated testing rarely catchies more than about 30% of types of issues. They also give false positives. Manual testing is required to find most issues. ",
     "url": "/docs/testing/code/#frontend-checks-for-web-accessibility",
     "relUrl": "/docs/testing/code/#frontend-checks-for-web-accessibility"
   },"224": {
@@ -1584,7 +1584,7 @@
     "doc": "Content checks",
     "title": "Content checks for web accessibility",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #171 Topic Content checks for web accessibility. This page gives an overview of practical approaches and best practices for to keep your content as readable for as many users as possible. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #171 Topic Content checks for web accessibility. This page gives an overview of practical approaches and best practices for to keep your content as readable for as many users as possible. ",
     "url": "/docs/testing/content/#content-checks-for-web-accessibility",
     "relUrl": "/docs/testing/content/#content-checks-for-web-accessibility"
   },"227": {
@@ -1640,7 +1640,7 @@
     "doc": "Automated testing",
     "title": "Automated accessibility testing",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #174 Topic Automated accessibility testing. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #174 Topic Automated accessibility testing. ",
     "url": "/docs/testing/automated/#automated-accessibility-testing",
     "relUrl": "/docs/testing/automated/#automated-accessibility-testing"
   },"235": {
@@ -1654,7 +1654,7 @@
     "doc": "Automated testing",
     "title": "Automated testing",
     "description": null,
-    "content": "The big difference between PHP and JavaScript code standard checks and accessibility checks is that the accessibility checks need to be performed on the generated DOM, not on the code base. You need to run checks on a working WordPress site. This can be done using automation that sets up your environment dynamically, but still requires a fully built and run installation. There are several command line tools for automated testing like aXe-cli and pa11y. Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow. Setup for aXe-cli . Install axe-core for CLI first: . npm install axe-cli -g npm install chromedriver –g` . Then run axe in the command line: . axe url -b c . The url can be any url, also a local one. You get a report of the accessibility issues for that url. The -b stands for browser, c for chrome, as this browser gives the best results (better than the default PhantomJS). You will get the errors and warnings in your console. You can provide more (space separated) urls to the command like . axe url url2 url3 -b c . or call a file with urls like: . axe $( cat list-of-urls.txt ) -b c . Note: You can run axe-cli on more than one url in one command, but axe-cli is not build to run on a large amount of urls or on a complete site, axe-cli is not a crawler. Deque Labs recommends to use the axe-webdriverjs, a chainable aXe API for Selenium’s WebDriverJS for testing on a large amounts of urls. Setup for pa11y . The setup for pa11y is well documented in the GitHub repository. ",
+    "content": "The big difference between PHP and JavaScript code standard checks and accessibility checks is that the accessibility checks need to be performed on the generated DOM, not on the code base. You need to run checks on a working WordPress site. This can be done using automation that sets up your environment dynamically, but still requires a fully built and run installation. There are several command line tools for automated testing like aXe-cli and pa11y. Info: Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow. Setup for aXe-cli . Install axe-core for CLI first: . npm install axe-cli -g npm install chromedriver –g` . Then run axe in the command line: . axe url -b c . The url can be any url, also a local one. You get a report of the accessibility issues for that url. The -b stands for browser, c for chrome, as this browser gives the best results (better than the default PhantomJS). You will get the errors and warnings in your console. You can provide more (space separated) urls to the command like . axe url url2 url3 -b c . or call a file with urls like: . axe $( cat list-of-urls.txt ) -b c . Note: You can run axe-cli on more than one url in one command, but axe-cli is not build to run on a large amount of urls or on a complete site, axe-cli is not a crawler. Deque Labs recommends to use the axe-webdriverjs, a chainable aXe API for Selenium’s WebDriverJS for testing on a large amounts of urls. Setup for pa11y . The setup for pa11y is well documented in the GitHub repository. ",
     "url": "/docs/testing/automated/",
     "relUrl": "/docs/testing/automated/"
   },"237": {
@@ -1668,14 +1668,14 @@
     "doc": "Design checks",
     "title": "Design checks for web accessibility",
     "description": null,
-    "content": "This content will be reviewed and expanded. Related issue on GitHub #172 Topic Design checks for web accessibility. The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design. Here are a few major issues to address. At the end of the page you’ll find links to good resources with more examples and solutions. ",
+    "content": "Alert: This content will be reviewed and expanded. Related issue on GitHub #172 Topic Design checks for web accessibility. The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design. Here are a few major issues to address. At the end of the page you’ll find links to good resources with more examples and solutions. ",
     "url": "/docs/testing/design/#design-checks-for-web-accessibility",
     "relUrl": "/docs/testing/design/#design-checks-for-web-accessibility"
   },"239": {
     "doc": "Design checks",
     "title": "Color contrast",
     "description": null,
-    "content": "Check the color contrast ratio between text and its background. The rules in WCAG 2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold. There are many tools to calculate this easily, see Color contrast checkers. Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway. ",
+    "content": "Check the color contrast ratio between text and its background. The rules in WCAG 2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold. There are many tools to calculate this easily, see Color contrast checkers. Tip: Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway. ",
     "url": "/docs/testing/design/#color-contrast",
     "relUrl": "/docs/testing/design/#color-contrast"
   },"240": {
@@ -1759,7 +1759,7 @@
     "doc": "Technical documentation website",
     "title": "Technical documentation wpaccessibility.org",
     "description": null,
-    "content": "We use the GitHub repository wpaccessibility/wp-a11y-docs for the documentation on wpaccessibility.org. The project board WP A11y docs contains all open issues and also the pull requests to review. Before you start writing new documentation, please let us know that you’d like to work on it, so we can assign the task to you. Content written without contacting the project leads first, will not be reviewed. ",
+    "content": "We use the GitHub repository wpaccessibility/wp-a11y-docs for the documentation on wpaccessibility.org. The project board WP A11y docs contains all open issues and also the pull requests to review. Alert: Before you start writing new documentation, please let us know that you’d like to work on it, so we can assign the task to you. Content written without contacting the project leads first, will not be reviewed. ",
     "url": "/docs/contribute/github/#technical-documentation-wpaccessibilityorg",
     "relUrl": "/docs/contribute/github/#technical-documentation-wpaccessibilityorg"
   },"252": {
@@ -1836,14 +1836,14 @@
     "doc": "Reading guide",
     "title": "Reading guide",
     "description": null,
-    "content": "This content will be created later, when there is sufficient content to point to. Help discuss how to create a useful reading guide for various target groups with comments on issue GitHub #59 Reading guide. ",
+    "content": "Alert: This content will be created later, when there is sufficient content to point to. Help discuss how to create a useful reading guide for various target groups with comments on issue GitHub #59 Reading guide. ",
     "url": "/docs/guide/",
     "relUrl": "/docs/guide/"
   },"263": {
     "doc": "Training",
     "title": "Training, learn web accessibility",
     "description": null,
-    "content": "This content will to be reviewed and expanded. The links need to be checked and updated. Related issue on GitHub #93 Training. ",
+    "content": "Alert: This content will to be reviewed and expanded. The links need to be checked and updated. Related issue on GitHub #93 Training. ",
     "url": "/docs/start/training/#training-learn-web-accessibility",
     "relUrl": "/docs/start/training/#training-learn-web-accessibility"
   },"264": {
@@ -1913,14 +1913,14 @@
     "doc": "Accessibility for your business",
     "title": "Accessibility for your business",
     "description": null,
-    "content": "Starter content. This content will to be reviewed and expanded. Related issue on GitHub #94 Topic Accessibility for your business. An inclusive website enhances your business. It will: . | Increase Traffic. More people can complete orders in your web shop. | Comply with the Law. Your website is better prepared to adhere to your nation’s accessibility regulations and government contract requirements. | Improve SEO. Google, the largest user of the internet, is blind and deaf. | . The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Entire countries are among this increased user-base: Israel, Norway and Australia require all company websites to be accessible. Many other nations have laws regarding website accessibility. The WAI provides an overview on Web Accessibility Laws &amp; Policies. Another vital group of users with neither sight nor hearing are search engines. Improving accessibility improves your site’s Google visibility, thus improving your search engine optimization. ",
+    "content": "Alert: Starter content. This content will to be reviewed and expanded. Related issue on GitHub #94 Topic Accessibility for your business. An inclusive website enhances your business. It will: . | Increase Traffic. More people can complete orders in your web shop. | Comply with the Law. Your website is better prepared to adhere to your nation’s accessibility regulations and government contract requirements. | Improve SEO. Google, the largest user of the internet, is blind and deaf. | . The website you build is not for you, or even your client. It’s for the users. Increasing accessibility instantly gains you a larger potential user-base. Entire countries are among this increased user-base: Israel, Norway and Australia require all company websites to be accessible. Many other nations have laws regarding website accessibility. The WAI provides an overview on Web Accessibility Laws &amp; Policies. Another vital group of users with neither sight nor hearing are search engines. Improving accessibility improves your site’s Google visibility, thus improving your search engine optimization. ",
     "url": "/docs/start/business/",
     "relUrl": "/docs/start/business/"
   },"274": {
     "doc": "WP Plugins",
     "title": "WordPress accessibility plugins",
     "description": null,
-    "content": "Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
+    "content": "Alert: Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
     "url": "/docs/start/wp-plugins/#wordpress-accessibility-plugins",
     "relUrl": "/docs/start/wp-plugins/#wordpress-accessibility-plugins"
   },"275": {
@@ -1955,21 +1955,21 @@
     "doc": "Assistive technology",
     "title": "Assistive technology",
     "description": null,
-    "content": "This content will be written. Related issue on GitHub #87 Assistive technology. ",
+    "content": "Alert: This content will be written. Related issue on GitHub #87 Assistive technology. ",
     "url": "/docs/start/at/",
     "relUrl": "/docs/start/at/"
   },"280": {
     "doc": "Quick wins",
     "title": "Quick wins",
     "description": null,
-    "content": "Starter content. This content will to be reviewed and expanded. Related issue on GitHub #91 Topic Quick wins. What to do first? Start with the low-hanging fruit. Color contrast of text ia an easy fix. Alternative text with images probably too. The most made errors reported in the yearly report WebAIM Million are: . | Low color contrast for texttext | Missing Alternative Text on images | Missing labels in forms | Empty links | Empty buttons | Missing language in the &lt;html&gt; element | . 96% of all errors detected fall into these six categories. So: if these errors are all sorted, you are already better than 96% of the web. ",
+    "content": "Alert: Starter content. This content will to be reviewed and expanded. Related issue on GitHub #91 Topic Quick wins. What to do first? Start with the low-hanging fruit. Color contrast of text ia an easy fix. Alternative text with images probably too. The most made errors reported in the yearly report WebAIM Million are: . | Low color contrast for texttext | Missing Alternative Text on images | Missing labels in forms | Empty links | Empty buttons | Missing language in the &lt;html&gt; element | . 96% of all errors detected fall into these six categories. So: if these errors are all sorted, you are already better than 96% of the web. ",
     "url": "/docs/start/quick-wins/",
     "relUrl": "/docs/start/quick-wins/"
   },"281": {
     "doc": "Introduction to WCAG",
     "title": "Introduction to WCAG",
     "description": null,
-    "content": "Starter content. This content will to be reviewed and expanded. Related issue on GitHub #92 Introduction to WCAG. The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. These guidelines are created and updated by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C). WordPress Accessibility Coding Standard: . All new or updated code released in WordPress must conform with the WCAG 2.2 guidelines at level AA. WordPress Accessibility Coding Standard ",
+    "content": "Alert: Starter content. This content will to be reviewed and expanded. Related issue on GitHub #92 Introduction to WCAG. The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. These guidelines are created and updated by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C). WordPress Accessibility Coding Standard: . All new or updated code released in WordPress must conform with the WCAG 2.2 guidelines at level AA. WordPress Accessibility Coding Standard ",
     "url": "/docs/start/wcag-intro/",
     "relUrl": "/docs/start/wcag-intro/"
   },"282": {
@@ -2060,7 +2060,7 @@
     "doc": "Home",
     "title": "WP Accessibility Knowledge Base",
     "description": "WP Accessibility Knowledge Base. Documentation about accessibility for WordPress.",
-    "content": "Documentation about accessibility for WordPress users and creators. For the community, by the community. Please note: this documentation is a work in progress. The content is not finished yet and the website needs an accessibility audit. This documentation aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation? . We’ll provide documentation, effective examples (both what to do and what to avoid) and more reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples. Did we miss a topic? Did you find an error or have a great idea? Please share your thoughts. We would like to invite you to contribute to this documentation. Let’s make the web for everyone. ",
+    "content": "Documentation about accessibility for WordPress users and creators. For the community, by the community. Please note: This documentation is a work in progress. The content is not finished yet and the website needs an accessibility audit. This documentation aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation? . We’ll provide documentation, effective examples (both what to do and what to avoid) and more reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples. Did we miss a topic? Did you find an error or have a great idea? Please share your thoughts. We would like to invite you to contribute to this documentation. Let’s make the web for everyone. ",
     "url": "/#wp-accessibility-knowledge-base",
     "relUrl": "/#wp-accessibility-knowledge-base"
   },"295": {
@@ -2102,7 +2102,7 @@
     "doc": "Best label location",
     "title": "Place the label above the form field",
     "description": null,
-    "content": "Note: this is best practice and not a WCAG requirement. Place the label above the form field, like a text input, textarea or select. Not next to it, below it, or inside the form field, but on the line above the form field. Do this consistently for all form fields. This placement has several advantages: . | It provides sufficient space for labels of varying lengths. Users may be using translation software on the page, which can cause labels to be longer or shorter than expected. | This works better for users who zoom in on the text. | Aligning labels, form fields, and actions vertically creates a natural “scan line”. This makes it easier for people to focus on this line. | . ",
+    "content": "Info: This is best practice and not a WCAG requirement. Place the label above the form field, like a text input, textarea or select. Not next to it, below it, or inside the form field, but on the line above the form field. Do this consistently for all form fields. This placement has several advantages: . | It provides sufficient space for labels of varying lengths. Users may be using translation software on the page, which can cause labels to be longer or shorter than expected. | This works better for users who zoom in on the text. | Aligning labels, form fields, and actions vertically creates a natural “scan line”. This makes it easier for people to focus on this line. | . ",
     "url": "/docs/topics/forms/input-label/label-location/#place-the-label-above-the-form-field",
     "relUrl": "/docs/topics/forms/input-label/label-location/#place-the-label-above-the-form-field"
   },"301": {
@@ -2144,14 +2144,14 @@
     "doc": "Fieldset legend",
     "title": "Legend with a fieldset",
     "description": "A legend serves as the name of grouped form fields in a fieldset.",
-    "content": "A legend serves as the name (caption) of grouped form fields in a &lt;fieldset&gt;. Most screen readers read this legend aloud the first input field within the fieldset, making the connection clear even without visual information. Keep the content of the legend short and descriptive. &lt;fieldset&gt; &lt;legend&gt;Your address&lt;/legend&gt; &lt;label for=\"street\"&gt;Street and house number&lt;/label&gt; &lt;input type=\"text\" name=\"street\" id=\"street\" autocomplete=\"address-line1\"&gt; &lt;label for=\"postal-code\"&gt;ZIP code&lt;/label&gt; &lt;input type=\"text\" name=\"postal-code\" id=\"postal-code\" autocomplete=\"postal-code\"&gt; &lt;label for=\"city\"&gt;City&lt;/label&gt; &lt;input type=\"text\" name=\"city\" id=\"city\" autocomplete=\"address-level2\"&gt; &lt;/fieldset&gt; . Screen readers read the information in variable ways; most announce the legend text when you reach the first field in a fieldset. The legend should be short and descriptive because some screen readers will announce it on every form field within the group. ",
+    "content": "A legend serves as the name (caption) of grouped form fields in a &lt;fieldset&gt;. Most screen readers read this legend aloud the first input field within the fieldset, making the connection clear even without visual information. Keep the content of the legend short and descriptive. &lt;fieldset&gt; &lt;legend&gt;Your address&lt;/legend&gt; &lt;label for=\"street\"&gt;Street and house number&lt;/label&gt; &lt;input type=\"text\" name=\"street\" id=\"street\" autocomplete=\"address-line1\"&gt; &lt;label for=\"postal-code\"&gt;ZIP code&lt;/label&gt; &lt;input type=\"text\" name=\"postal-code\" id=\"postal-code\" autocomplete=\"postal-code\"&gt; &lt;label for=\"city\"&gt;City&lt;/label&gt; &lt;input type=\"text\" name=\"city\" id=\"city\" autocomplete=\"address-level2\"&gt; &lt;/fieldset&gt; . Info: Screen readers read the information in variable ways; most announce the legend text when you reach the first field in a fieldset. The legend should be short and descriptive because some screen readers will announce it on every form field within the group. ",
     "url": "/docs/topics/forms/fieldsets/legend/#legend-with-a-fieldset",
     "relUrl": "/docs/topics/forms/fieldsets/legend/#legend-with-a-fieldset"
   },"307": {
     "doc": "Fieldset legend",
     "title": "Heading in a legend",
     "description": "A legend serves as the name of grouped form fields in a fieldset.",
-    "content": "A legend can contain a heading. Make sure that the heading level fits correctly within the hierarchical heading structure of the entire page. &lt;fieldset&gt; &lt;legend&gt;&lt;h3&gt;Shipping address&lt;/h3&gt;&lt;/legend&gt; &lt;label for=\"shipping-street\"&gt;Street and house number&lt;/label&gt; &lt;input type=\"text\" name=\"shipping-street\" id=\"shipping-street\" autocomplete=\"shipping address-line1\"&gt; &lt;label for=\"shipping-postal-code\"&gt;ZIP code&lt;/label&gt; &lt;input type=\"text\" name=\"shipping-postal-code\" id=\"shipping-postal-code\" autocomplete=\"shipping postal-code\"&gt; &lt;label for=\"shipping-city\"&gt;City&lt;/label&gt; &lt;input type=\"text\" name=\"shipping-city\" id=\"shipping-city\" autocomplete=\"shipping address-level2\"&gt; &lt;/fieldset&gt; &lt;fieldset&gt; &lt;legend&gt;&lt;h3&gt;Billing address&lt;/h3&gt;&lt;/legend&gt; &lt;label for=\"billing-street\"&gt;Street and house number&lt;/label&gt; &lt;input type=\"text\" name=\"billing-street\" id=\"billing-street\" autocomplete=\"billing address-line1\"&gt; &lt;label for=\"billing-postal-code\"&gt;ZIP code&lt;/label&gt; &lt;input type=\"text\" name=\"billing-postal-code\" id=\"billing-postal-code\" autocomplete=\"billing postal-code\"&gt; &lt;label for=\"billing-city\"&gt;City&lt;/label&gt; &lt;input type=\"text\" name=\"billing-city\" id=\"billing-city\" autocomplete=\"billing address-level2\"&gt; &lt;/fieldset&gt; . The reverse is not true: a heading may not contain a legend, because the legend needs to be an immediate child of the fieldset. &lt;!-- this is invalid code, do not use --&gt; &lt;fieldset&gt; &lt;h3&gt;&lt;legend&gt;Which is the best color?&lt;/legend&gt;&lt;/h3&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"purple\" value=\"purple\" /&gt; &lt;label for=\"purple\"&gt;Purple&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"aubergine\" value=\"aubergine\" /&gt; &lt;label for=\"aubergine\"&gt;Aubergine&lt;/label&gt; &lt;/fieldset&gt; . ",
+    "content": "A legend can contain a heading. Make sure that the heading level fits correctly within the hierarchical heading structure of the entire page. &lt;fieldset&gt; &lt;legend&gt;&lt;h3&gt;Shipping address&lt;/h3&gt;&lt;/legend&gt; &lt;label for=\"shipping-street\"&gt;Street and house number&lt;/label&gt; &lt;input type=\"text\" name=\"shipping-street\" id=\"shipping-street\" autocomplete=\"shipping address-line1\"&gt; &lt;label for=\"shipping-postal-code\"&gt;ZIP code&lt;/label&gt; &lt;input type=\"text\" name=\"shipping-postal-code\" id=\"shipping-postal-code\" autocomplete=\"shipping postal-code\"&gt; &lt;label for=\"shipping-city\"&gt;City&lt;/label&gt; &lt;input type=\"text\" name=\"shipping-city\" id=\"shipping-city\" autocomplete=\"shipping address-level2\"&gt; &lt;/fieldset&gt; &lt;fieldset&gt; &lt;legend&gt;&lt;h3&gt;Billing address&lt;/h3&gt;&lt;/legend&gt; &lt;label for=\"billing-street\"&gt;Street and house number&lt;/label&gt; &lt;input type=\"text\" name=\"billing-street\" id=\"billing-street\" autocomplete=\"billing address-line1\"&gt; &lt;label for=\"billing-postal-code\"&gt;ZIP code&lt;/label&gt; &lt;input type=\"text\" name=\"billing-postal-code\" id=\"billing-postal-code\" autocomplete=\"billing postal-code\"&gt; &lt;label for=\"billing-city\"&gt;City&lt;/label&gt; &lt;input type=\"text\" name=\"billing-city\" id=\"billing-city\" autocomplete=\"billing address-level2\"&gt; &lt;/fieldset&gt; . Alert: The reverse is not true: a heading may not contain a legend, because the legend needs to be an immediate child of the fieldset. &lt;!-- this is invalid code, do not use --&gt; &lt;fieldset&gt; &lt;h3&gt;&lt;legend&gt;Which is the best color?&lt;/legend&gt;&lt;/h3&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"purple\" value=\"purple\" /&gt; &lt;label for=\"purple\"&gt;Purple&lt;/label&gt; &lt;input name=\"colorOption\" type=\"radio\" id=\"aubergine\" value=\"aubergine\" /&gt; &lt;label for=\"aubergine\"&gt;Aubergine&lt;/label&gt; &lt;/fieldset&gt; . ",
     "url": "/docs/topics/forms/fieldsets/legend/#heading-in-a-legend",
     "relUrl": "/docs/topics/forms/fieldsets/legend/#heading-in-a-legend"
   },"308": {
@@ -2228,7 +2228,7 @@
     "doc": "Link on a logo",
     "title": "Link on a logo in the header",
     "description": null,
-    "content": "This content will be written. Related issue on GitHub #150 Topic Link on a logo in the header. ",
+    "content": "Alert: This content will be written. Related issue on GitHub #150 Topic Link on a logo in the header. ",
     "url": "/docs/topics/code/components/link-logo/#link-on-a-logo-in-the-header",
     "relUrl": "/docs/topics/code/components/link-logo/#link-on-a-logo-in-the-header"
   },"319": {
@@ -2319,7 +2319,7 @@
     "doc": "Mark optional form fields",
     "title": "Indication of optional fields in WordPress form plugins",
     "description": "Clearly indicate to the user if a form field is optional.",
-    "content": "We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. ",
+    "content": "Help wanted: We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. ",
     "url": "/docs/topics/forms/required/mark-optional-fields/#indication-of-optional-fields-in-wordpress-form-plugins",
     "relUrl": "/docs/topics/forms/required/mark-optional-fields/#indication-of-optional-fields-in-wordpress-form-plugins"
   },"332": {
@@ -2368,7 +2368,7 @@
     "doc": "Mark required form fields",
     "title": "Indication of required fields in WordPress form plugins",
     "description": "Clearly indicate to the user if a form field is required.",
-    "content": "Gravity Forms . Gravity Forms adds the possibility to select “Required” with each form field. In the form settings you can choose the type of Required Field Indicator. The explanation of this indicator is added automatically above the form. Other WordPress form plugins . We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. ",
+    "content": "Gravity Forms . Gravity Forms adds the possibility to select “Required” with each form field. In the form settings you can choose the type of Required Field Indicator. The explanation of this indicator is added automatically above the form. Other WordPress form plugins . Help wanted: We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. ",
     "url": "/docs/topics/forms/required/mark-required-fields/#indication-of-required-fields-in-wordpress-form-plugins",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#indication-of-required-fields-in-wordpress-form-plugins"
   },"339": {
@@ -2403,7 +2403,7 @@
     "doc": "Overlays",
     "title": "Accessibility Overlays",
     "description": null,
-    "content": "An accessibility overlay is scripted code that is placed on a web page that automatically makes changes to the page with the intent of fixing accessibility issues on that page. That’s a technical definition of an overlay, which doesn’t address the effectiveness of the overlay as a concept. An overlay can fix accessibility problems. However, an overlay can also create new problems. Note that while many of the accessibility plugins in the WordPress plugin repository are overlays or toolbar widgets, these are not recommended in this documentation. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
+    "content": "An accessibility overlay is scripted code that is placed on a web page that automatically makes changes to the page with the intent of fixing accessibility issues on that page. That’s a technical definition of an overlay, which doesn’t address the effectiveness of the overlay as a concept. An overlay can fix accessibility problems. However, an overlay can also create new problems. Alert: Note that while many of the accessibility plugins in the WordPress plugin repository are overlays or toolbar widgets, these are not recommended in this documentation. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
     "url": "/docs/start/myths/overlays/#accessibility-overlays",
     "relUrl": "/docs/start/myths/overlays/#accessibility-overlays"
   },"344": {
@@ -2459,7 +2459,7 @@
     "doc": "Pagination",
     "title": "Pagination",
     "description": null,
-    "content": "This content will be written. Related issue on GitHub #153 Topic Pagination. ",
+    "content": "Alert: This content will be written. Related issue on GitHub #153 Topic Pagination. ",
     "url": "/docs/topics/code/components/pagination/",
     "relUrl": "/docs/topics/code/components/pagination/"
   },"352": {
@@ -2585,7 +2585,7 @@
     "doc": "Readability",
     "title": "Readability",
     "description": null,
-    "content": "This content will be reviewed, restructured and expanded. Related issue on GitHub #120 Topic Readability. People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read. Good practice: . | Start with a short summary of the content | Divide the rest of the text in short blocks | Use headings and lists and meaningful link text | Avoid large blocks of text | . ",
+    "content": "Alert: This content will be reviewed, restructured and expanded. Related issue on GitHub #120 Topic Readability. People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read. Good practice: . | Start with a short summary of the content | Divide the rest of the text in short blocks | Use headings and lists and meaningful link text | Avoid large blocks of text | . ",
     "url": "/docs/topics/content/readability/",
     "relUrl": "/docs/topics/content/readability/"
   },"370": {
@@ -2620,7 +2620,7 @@
     "doc": "Reduced motion",
     "title": "Setting reduced motion for animations",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #148 Topic Setting reduced motion for animations. Animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines and nausea. You can help users avoid these problems by making all of your animations support the prefers-reduced-motion flag. prefers-reduced-motion is a system preference that allows the user to indicate that they would prefer not to see animations. But this only works if the code properly supports it! . You can check for this system preference using the CSS media feature: . @media (prefers-reduced-motion) { .animation { /* adjust your animations if reduced motion is requested. */ } } . Reduced motion doesn’t have to mean no animation at all, but it should be very minimal – no more than is absolutely necessary. When in doubt, eliminate the animation entirely. You can check for the media query in JavaScript by checking the value of the media query: . const mediaQuery = window.matchMedia(\"(prefers-reduced-motion: reduce)\"); . ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #148 Topic Setting reduced motion for animations. Animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines and nausea. You can help users avoid these problems by making all of your animations support the prefers-reduced-motion flag. prefers-reduced-motion is a system preference that allows the user to indicate that they would prefer not to see animations. But this only works if the code properly supports it! . You can check for this system preference using the CSS media feature: . @media (prefers-reduced-motion) { .animation { /* adjust your animations if reduced motion is requested. */ } } . Reduced motion doesn’t have to mean no animation at all, but it should be very minimal – no more than is absolutely necessary. When in doubt, eliminate the animation entirely. You can check for the media query in JavaScript by checking the value of the media query: . const mediaQuery = window.matchMedia(\"(prefers-reduced-motion: reduce)\"); . ",
     "url": "/docs/topics/code/images-animations/reduced-motion/#setting-reduced-motion-for-animations",
     "relUrl": "/docs/topics/code/images-animations/reduced-motion/#setting-reduced-motion-for-animations"
   },"375": {
@@ -2641,7 +2641,7 @@
     "doc": "Report an error",
     "title": "Report an error",
     "description": null,
-    "content": "Did you find an error in this documentation or a bug in the website wpaccessibility.org? Please let us know. There are several ways you can report an error: . | Fill out our contact form on WordPress.org, and describe the error. | Share your findings in the Make WordPress #accessibility-docs Slack channel. | Open an issue in the GitHub repository wpaccessibility/wp-a11y-docs. | . Please note: this is only for errors in the documentation or code in wpaccessibility.org and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. ",
+    "content": "Did you find an error in this documentation or a bug in the website wpaccessibility.org? Please let us know. There are several ways you can report an error: . | Fill out our contact form on WordPress.org, and describe the error. | Share your findings in the Make WordPress #accessibility-docs Slack channel. | Open an issue in the GitHub repository wpaccessibility/wp-a11y-docs. | . Please note: This is only for errors in the documentation or code in wpaccessibility.org and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a new ticket on Make WordPress Core and give it the focus “accessibility”. ",
     "url": "/docs/contribute/report-error/",
     "relUrl": "/docs/contribute/report-error/"
   },"378": {
@@ -2655,14 +2655,14 @@
     "doc": "Indicate required fields for screen readers",
     "title": "Basic HTML examples",
     "description": "Screen readers announce form fields as required if they have the HTML attributes aria-required or required on the form field.",
-    "content": "Using aria-required=”true” . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" aria-required=\"true\" aria-invalid=\"false\" /&gt; . Using required . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" required aria-invalid=\"false\" /&gt; . The attribute required triggers the client-side form validation of the browser. Client side validation may create accessibility and usability issues. The topic about feedback on form errors will address this in more detail. If you decide to use required, also use novalidate on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side. &lt;form action=\"some-url\" novalidate&gt; . Note: the use of aria-invalid will be addressed later in the section Feedback on form errors. ",
+    "content": "Using aria-required=”true” . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" aria-required=\"true\" aria-invalid=\"false\" /&gt; . Using required . &lt;label for=\"name\"&gt;Your name (required)&lt;/label&gt; &lt;input id=\"name\" type=\"text\" name=\"name\" autocomplete=\"name\" required aria-invalid=\"false\" /&gt; . The attribute required triggers the client-side form validation of the browser. Client side validation may create accessibility and usability issues. The topic about feedback on form errors will address this in more detail. If you decide to use required, also use novalidate on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side. &lt;form action=\"some-url\" novalidate&gt; . Note: The use of aria-invalid will be addressed later in the section Feedback on form errors. ",
     "url": "/docs/topics/forms/required/required-screen-readers/#basic-html-examples",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#basic-html-examples"
   },"380": {
     "doc": "Indicate required fields for screen readers",
     "title": "Using aria-required or required in WordPress plugins",
     "description": "Screen readers announce form fields as required if they have the HTML attributes aria-required or required on the form field.",
-    "content": "Gravity Forms . Gravity Forms adds aria-required=\"true\" to required fields. Other WordPress form plugins . We’d like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots. Please contact us if you want to help us with this additional content. ",
+    "content": "Gravity Forms . Gravity Forms adds aria-required=\"true\" to required fields. Other WordPress form plugins . Help wanted: We’d like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots. Please contact us if you want to help us with this additional content. ",
     "url": "/docs/topics/forms/required/required-screen-readers/#using-aria-required-or-required-in-wordpress-plugins",
     "relUrl": "/docs/topics/forms/required/required-screen-readers/#using-aria-required-or-required-in-wordpress-plugins"
   },"381": {
@@ -2746,7 +2746,7 @@
     "doc": "Skip links",
     "title": "Skip links",
     "description": null,
-    "content": "This content will be reviewed and restructured. Related issue on GitHub #149 Topic Skip links. Navigation links, search forms, social media links, or other elements commonly appear on the page before the main content. When navigating using the keyboard, it can be frustrating to get to the main content of a page because of these elements if you need to tab through everything on each page. A skip link provides users (particularly keyboard users) with a means to skip all these elements and jump to the content. ",
+    "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #149 Topic Skip links. Navigation links, search forms, social media links, or other elements commonly appear on the page before the main content. When navigating using the keyboard, it can be frustrating to get to the main content of a page because of these elements if you need to tab through everything on each page. A skip link provides users (particularly keyboard users) with a means to skip all these elements and jump to the content. ",
     "url": "/docs/topics/code/components/skip-links/",
     "relUrl": "/docs/topics/code/components/skip-links/"
   },"393": {
@@ -2788,7 +2788,7 @@
     "doc": "Tables",
     "title": "Tables in the content",
     "description": null,
-    "content": "This content will be written. Related issue on GitHub #121 Topic Tables in the content. This content will be about how to add an accessible table in WordPres Admin and gives info about plugins to use, that can create accessible tables. ",
+    "content": "Alert: This content will be written. Related issue on GitHub #121 Topic Tables in the content. This content will be about how to add an accessible table in WordPres Admin and gives info about plugins to use, that can create accessible tables. ",
     "url": "/docs/topics/content/tables/#tables-in-the-content",
     "relUrl": "/docs/topics/content/tables/#tables-in-the-content"
   },"399": {
@@ -2886,7 +2886,7 @@
     "doc": "WP form plugins",
     "title": "WordPress form plugins and accessibility",
     "description": null,
-    "content": "This content will be rewritten and expanded. Related issue on GitHub #162 Topic WordPress form plugins and accessibility. If you want to add a plugin to this page, please comment with the GitHub issue. ",
+    "content": "Alert: This content will be rewritten and expanded. Related issue on GitHub #162 Topic WordPress form plugins and accessibility. If you want to add a plugin to this page, please comment with the GitHub issue. ",
     "url": "/docs/topics/forms/wp-form-plugins/#wordpress-form-plugins-and-accessibility",
     "relUrl": "/docs/topics/forms/wp-form-plugins/#wordpress-form-plugins-and-accessibility"
   },"413": {
@@ -2907,7 +2907,7 @@
     "doc": "Write documentation",
     "title": "Write documentation",
     "description": null,
-    "content": "Before you start writing new documentation, please let us know that you’d like to work on it, so we can assign the task to you. Content written without contacting the project leads first, will not be reviewed. We keep track of the work on the documentation in the project board WP A11y docs. Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. To keep all pages in the same structure, please stick to the following formats for a blogpost or an accessibility topic. ",
+    "content": "Alert: Before you start writing new documentation, please let us know that you’d like to work on it, so we can assign the task to you. Content written without contacting the project leads first, will not be reviewed. We keep track of the work on the documentation in the project board WP A11y docs. Tip: Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. To keep all pages in the same structure, please stick to the following formats for a blogpost or an accessibility topic. ",
     "url": "/docs/contribute/write/",
     "relUrl": "/docs/contribute/write/"
   },"416": {

@@ -1263,45 +1263,40 @@ p.example {
   background: var(--color-informative-bg-document);
   border-left-color: var(--color-informative-border-default);
 }
-p.example::before {
-  color: var(--color-informative-color-document);
-  content: "Example";
+p.example > strong {
+  color: var(--color-informative-color-s);
 }
 
 p.alert {
   background: var(--color-warning-bg-document);
   border-left-color: var(--color-warning-border-default);
 }
-p.alert::before {
-  color: var(--color-warning-color-document);
-  content: "Alert";
+p.alert > strong {
+  color: var(--color-warning-color-subtle);
 }
 
 p.tip {
   background: var(--color-positive-bg-document);
   border-left-color: var(--color-positive-border-default);
 }
-p.tip::before {
-  color: var(--color-positive-color-document);
-  content: "Tip";
+p.tip > strong {
+  color: var(--color-positive-color-subtle);
 }
 
 p.info {
   background: var(--color-informative-bg-default);
   border-left-color: var(--color-informative-border-default);
 }
-p.info::before {
-  color: var(--color-informative-color-document);
-  content: "Info";
+p.info > strong {
+  color: var(--color-informative-color-subtle);
 }
 
 p.warning {
   background: var(--color-negative-bg-default);
   border-left-color: var(--color-negative-border-default);
 }
-p.warning::before {
+p.warning > strong {
   color: var(--color-negative-color-subtle);
-  content: "Warning";
 }
 
 p.dont {
@@ -1309,9 +1304,8 @@ p.dont {
   border: 2px solid var(--color-negative-border-default);
   border-radius: 4px;
 }
-p.dont::before {
+p.dont > strong {
   color: var(--color-negative-color-subtle);
-  content: "Don't";
 }
 
 p.do {
@@ -1319,8 +1313,8 @@ p.do {
   border: 2px solid var(--color-positive-border-default);
   border-radius: 4px;
 }
-p.do::before {
-  content: "Do";
+p.do > strong {
+  color: var(--color-positive-color-subtle);
 }
 
 .label {
