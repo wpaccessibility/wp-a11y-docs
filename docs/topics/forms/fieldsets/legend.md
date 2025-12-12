@@ -22,8 +22,8 @@ A [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/
 </fieldset>
 ```
 
-{: info }
-Screen readers read the information in variable ways; most announce the legend text when you reach the first field in a fieldset. The legend should be short and descriptive because some screen readers will announce it on every form field within the group.
+{: .callout .info }
+**Info:** Screen readers read the information in variable ways; most announce the legend text when you reach the first field in a fieldset. The legend should be short and descriptive because some screen readers will announce it on every form field within the group.
 
 ## Heading in a legend
 
@@ -52,7 +52,7 @@ A legend can contain a heading. Make sure that the heading level fits correctly 
 ```
 
 {: .callout .alert }
-The reverse is not true: a heading may not contain a `legend`, because the `legend` needs to be an immediate child of the `fieldset`.
+**Alert:** The reverse is not true: a heading may not contain a `legend`, because the `legend` needs to be an immediate child of the `fieldset`.
 
 ```html
 <!-- this is invalid code, do not use -->

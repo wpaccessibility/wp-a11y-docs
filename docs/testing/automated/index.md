@@ -8,7 +8,7 @@ nav_order: 5
 # Automated accessibility testing
 
 {: .callout  .alert }
-This content will be reviewed and expanded.  
+**Alert:** This content will be reviewed and expanded.  
 Related issue on [GitHub #174 Topic Automated accessibility testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/174).     
 
 ## WCAG 2 AA automated validation
@@ -34,7 +34,7 @@ The big difference between PHP and JavaScript code standard checks and accessibi
 There are several command line tools for automated testing like [aXe-cli](https://github.com/dequelabs/axe-cli) and [pa11y](https://github.com/pa11y/pa11y).
 
 {: .callout  .info }
-Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow.
+**Info:** Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow.
 
 ### Setup for aXe-cli
 

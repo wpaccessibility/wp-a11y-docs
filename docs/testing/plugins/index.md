@@ -8,7 +8,7 @@ nav_order: 8
 # WordPress' plugins for accessibility testing 
 
 {: .callout  .alert }
-This content will be reviewed and expanded.  
+**Alert:** This content will be reviewed and expanded.  
 Related issue on [GitHub #177 Topic Screen reader testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/177).    
 
 We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use in your own accessible WordPress site.
@@ -23,4 +23,4 @@ We do not specifically endorse any of the plugins listed here but offer them as 
 - [Sa11y](https://wordpress.org/plugins/sa11y/) – Accessibility checking tool geared towards content authors.
 
 {: .callout  .warning }
-Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
+**Warning:** Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).

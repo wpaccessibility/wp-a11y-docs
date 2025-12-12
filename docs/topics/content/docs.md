@@ -7,8 +7,8 @@ nav_order: 7
 
 # Digital documents
 
-{: .callout  .alert }
-This content will be reviewed, restructured and expanded.  
+{: .callout .alert }
+**Alert:** This content will be reviewed, restructured and expanded.  
 Related issue on [GitHub #119 Topic Digital document](https://github.com/wpaccessibility/wp-a11y-docs/issues/119).  
 
 ## Accessible PDFs 
@@ -32,8 +32,8 @@ The Paciello Group has a good [overview of PDF inaccessibility](https://develope
 
 The list of software which are able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar.
 
-{: .callout  .warning }
-**Note**: Google Docs doesn’t yet support the export of a tagged and accessible PDF yet without any help of a plugin.
+{: .callout .warning }
+**Warning**: Google Docs doesn’t yet support the export of a tagged and accessible PDF yet without any help of a plugin.
 
 ### Resources
 

@@ -10,7 +10,7 @@ has_video: true
 This page lists the options and code available for creating content in this documentation.
 
 {: .callout  .info }
-WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
+**Please note:** WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
 
 ## Headings
 ```markdown
@@ -31,11 +31,11 @@ WordPress.org provides a lot of style guides for documentation: [WordPress Style
 ###### This is an H6 heading
 
 {: .callout  .alert }
-In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}}/docs/contribute/github/blog-post/).
+**Alert:** In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}}/docs/contribute/github/blog-post/).
 
 ## Summary in a larger text font.
 
-Start the paragraph with an H2 named "Summaty, or introduction and the callout {: .lead }`
+Start the paragraph with an H2 named "Summary, or introduction and the callout {: .lead }`
 
 
 ```markdown
@@ -83,7 +83,7 @@ An image: ![Alt text](url)
 ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 
 {: .callout  .tip } 
-For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
+**Tip:** For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos
 This site uses the accessible media player Able Player.
@@ -166,54 +166,54 @@ For larger pieces of content, you can add to a `<p>`, `<div>`or even a landmark,
  
 ```markdown
 {: .callout  .info }
-This is an informational message and uses the “info” callout.
+**Info:** This is an informational message and uses the “info” callout.
 
 {: .callout  .tip }
-Use the “tip” callout to highlight tips.
+**Tip:** Use the “tip” callout to highlight tips.
 
 {: .callout  .alert }
-The “alert” callout is for alerting readers to important messages.
+**Alert:** The “alert” callout is for alerting readers to important messages.
 
 {: .callout  .warning }
-When something is particularly precarious, use the “warning” callout.
+**Warning:** When something is particularly precarious, use the “warning” callout.
 
 {: .callout  .example }
-Give an example with the "example" callout. 
+**Example:** Give an example with the "example" callout. 
 The title of the callout will be "Example".
 
 {: .callout  .do }
-Example of good practice.
+**Do:** Example of good practice.
 
 {: .callout  .dont }
-Example of bad practice.
+**Don't:** Example of bad practice.
 
 ```
 
 {: .callout  .info }
-This is an informational message and uses the “info” callout.
+**Info:** This is an informational message and uses the “info” callout.
 
 {: .callout  .tip }
-Use the “tip” callout to highlight tips.
+**Tip:** Use the “tip” callout to highlight tips.
 
 {: .callout  .alert }
-The “alert” callout is for alerting readers to important messages.
+**Alert:** The “alert” callout is for alerting readers to important messages.
 
 {: .callout  .warning }
-When something is particularly precarious, use the “warning” callout.
+**Warning:** When something is particularly precarious, use the “warning” callout.
 
 {: .callout  .example }
-Give an example with the example. The title of the callout will be "Example".
+**Example:** Give an example with the example.
 
 {: .callout  .do }
-Example of how to do something. The title of the callout will be "Do".
+**Do:** Example of how to do something.
 
 {: .callout  .dont }
-Example of how not to do something. The title of the callout will be "Don't".
+**Don't:** Example of how not to do something. 
 
 ### Labels
 
 {: .callout  .info }
-Note: these are not form labels, but text labels.
+**Please note:** These are not form labels, but text labels.
 
 
 ```markdown

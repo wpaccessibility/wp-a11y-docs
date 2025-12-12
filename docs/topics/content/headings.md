@@ -7,8 +7,8 @@ nav_order: 3
 
 # Headings in the content
 
-{: .callout  .alert }
-This content will be reviewed and restructured.  
+{: .callout .alert }
+**Alert:** This content will be reviewed and restructured.  
 Related issue on [GitHub #106 Headings in the content](https://github.com/wpaccessibility/wp-a11y-docs/issues/106).  
 
 ## What are headings?

@@ -8,7 +8,7 @@ nav_order: 2
 # Introduction to WCAG
 
 {: .callout  .alert }
-Starter content. This content will to be reviewed and expanded.  
+**Alert:** Starter content. This content will to be reviewed and expanded.  
 Related issue on [GitHub #92 Introduction to WCAG](https://github.com/wpaccessibility/wp-a11y-docs/issues/92).  
 
 The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. 

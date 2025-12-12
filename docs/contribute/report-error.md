@@ -15,4 +15,4 @@ There are several ways you can report an error:
 - Open an issue in the GitHub repository [wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/).
 
 {: .callout  .info }
-Please note: this is only for errors in the documentation or code in **wpaccessibility.org** and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a [new ticket on Make WordPress Core](https://core.trac.wordpress.org/newticket) and give it the focus “accessibility”.
+**Please note:** This is only for errors in the documentation or code in **wpaccessibility.org** and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a [new ticket on Make WordPress Core](https://core.trac.wordpress.org/newticket) and give it the focus “accessibility”.
