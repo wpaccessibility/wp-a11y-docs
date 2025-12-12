@@ -21,15 +21,21 @@ WCAG is intended as a multi-purpose document that can apply to any web site. In 
 
 ## The European Accessibility Act
 
-The EAA is a prominent act supporting accessibility that is commonly mischaracterized as legislation. The EAA was created by the European Union, which is not a legislative body. Instead, it imposes a requirement on the European member states that they must establish accessibility laws. These laws must cover certain specific areas, but the individual laws are variable. 
+The European Accessibility Act describes accessibility requirements for products and services. This includes websites that sell products and services. EU member states agreed to add these requirements in their legislation.
+
+The act is commonly mischaracterized as legislation. The EAA is not itself legislation. Instead, it imposes a requirement on the European member states that they must establish accessibility laws. These laws must cover certain specific areas, but the individual laws are variable.
+
+Learn more [about the European Accessibility Act](https://equalizedigital.com/european-accessibility-act/)
 
 ## The Americans with Disabilities Act
 
-The ADA governs accessibility requirements in the United States of America. The law, established in 1991, does not specifically address the internet or websites, but does address many key concepts surrounding operating a business or service with accessibility requirements. 
+The ADA governs accessibility requirements in the United States of America. The law, established in 1991, does not specifically address the internet or websites, but does address many key concepts surrounding operating a business or service with accessibility requirements.
 
 The general interpretation of the law is that businesses are required to provide accessible services, but the specific details are largely dictated by the courts. Government, health care and many non-governmental organizations (such as schools) have specific guidance, but businesses do not.
 
 The lack of specific guidance should not be interpreted as a lack of a requirement for accessibility.
+
+Learn more [about the American with Disabilities Act](https://www.ada.gov/)
 
 ## Additional Resources
 
