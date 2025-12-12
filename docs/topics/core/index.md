@@ -7,13 +7,12 @@ nav_order: 7
 
 # WordPress Core Accessibility Standards
 
-{: .callout  .alert }
-This content will be reviewed and restructured. 
+{: .callout .alert }
+**Alert:** This content will be reviewed and restructured. 
 Related issue on [GitHub #122 Topic WordPress Core Accessibility Standards](https://github.com/wpaccessibility/wp-a11y-docs/issues/122).  
 
-{: .callout  .warning }
-**TODO:**
-This is duplicate content? see also [Accessibility Coding Standards ](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/)in the coding standards handbook WCAG 2.0 must be WCAG 2.2?
+{: .callout .warning }
+**Warning:** This is duplicate content? see also [Accessibility Coding Standards ](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/)in the coding standards handbook WCAG 2.0 must be WCAG 2.2?
 The content should be reviewed for modern code and the links adjusted and divided between the topics.
 
 When creating new interfaces in core, the output and interactions are expected to conform to WCAG 2.0 at level AA. But beyond that, there are some specific patterns that the accessibility team and core team have agreed on as the preferred method for structure.
@@ -21,7 +20,6 @@ When creating new interfaces in core, the output and interactions are expected t
 Though there are many patterns that meet accessibility standards, being consistent across the platform is a key method to ensure that WordPress as a whole is easier to use.
 
 This document is supplemental guidance to help developers meet the [WordPress Accessibility Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/).
-
 
 **TODO:** should this stay or should it go?
 

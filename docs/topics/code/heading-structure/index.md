@@ -8,7 +8,7 @@ nav_order: 3
 # Heading structure in theme development
 
 {: .callout .alert }
-This content will be reviewed and restructured.  
+**Alert:** This content will be reviewed and restructured.  
 Related issue on [GitHub #142 Topic Heading structure in theme development](https://github.com/wpaccessibility/wp-a11y-docs/issues/142).  
 
 

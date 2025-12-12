@@ -9,7 +9,7 @@ nav_order: 4
 # Design checks for web accessibility
 
 {: .callout  .alert }
-This content will be reviewed and expanded.
+**Alert:** This content will be reviewed and expanded.
 Related issue on [GitHub #172 Topic Design checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/172).    
 
 The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design.
@@ -23,7 +23,7 @@ Check the color contrast ratio between text and its background. The rules in WCA
 There are many tools to calculate this easily, see [Color contrast checkers](http://www.webaxe.org/color-contrast-tools/).
 
 {: .callout  .tip }
-Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
+**Tip:** Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
 
 ## Color Contrast
 

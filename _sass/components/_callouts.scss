@@ -19,9 +19,8 @@ p.example {
   background: var(--color-informative-bg-document);
   border-left-color: var(--color-informative-border-default);
 
-  &::before {
-    color: var(--color-informative-color-document);
-    content: "Example";
+  > strong {
+    color: var(--color-informative-color-s);
   }
 }
 
@@ -29,9 +28,8 @@ p.alert {
   background: var(--color-warning-bg-document);
   border-left-color: var(--color-warning-border-default);
 
-  &::before {
-    color: var(--color-warning-color-document);
-    content: "Alert";
+  > strong {
+    color: var(--color-warning-color-subtle);
   }
 }
 
@@ -39,9 +37,8 @@ p.tip {
   background: var(--color-positive-bg-document);
   border-left-color: var(--color-positive-border-default);
 
-  &::before {
-    color: var(--color-positive-color-document);
-    content: "Tip";
+  > strong {
+    color: var(--color-positive-color-subtle);
   }
 }
 
@@ -49,9 +46,8 @@ p.info {
   background: var(--color-informative-bg-default);
   border-left-color: var(--color-informative-border-default);
 
-  &::before {
-    color: var(--color-informative-color-document);
-    content: "Info";
+  > strong {
+    color: var(--color-informative-color-subtle);
   }
 }
 
@@ -59,9 +55,8 @@ p.warning {
   background: var(--color-negative-bg-default);
   border-left-color: var(--color-negative-border-default);
 
-  &::before {
+  > strong {
     color: var(--color-negative-color-subtle);
-    content: "Warning";
   }
 }
 
@@ -70,9 +65,8 @@ p.dont {
   border: 2px solid var(--color-negative-border-default);
   border-radius: $border-radius;
 
-  &::before {
+  > strong {
     color: var(--color-negative-color-subtle);
-    content: "Don't";
   }
 }
 
@@ -81,7 +75,7 @@ p.do {
   border: 2px solid var(--color-positive-border-default);
   border-radius: $border-radius;
 
-  &::before {
-    content: "Do";
+  > strong {
+    color: var(--color-positive-color-subtle);
   }
 }

@@ -51,8 +51,8 @@ If you decide to use `required`, also use `novalidate` on the form element to pr
 <form action="some-url" novalidate>
 ```
 
-{: .info }
-Note: the use of `aria-invalid` will be addressed later in the section Feedback on form errors.
+{: .callout .info }
+**Note:** The use of `aria-invalid` will be addressed later in the section Feedback on form errors.
 
 ## Using aria-required or required in WordPress plugins
 
@@ -62,8 +62,8 @@ Gravity Forms adds `aria-required="true"` to required fields.
 
 ### Other WordPress form plugins
 
-{: .info }
-We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
+{: .callout .info }
+**Help wanted:** We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
 ## WCAG Success Criteria

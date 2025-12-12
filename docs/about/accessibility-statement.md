@@ -17,7 +17,7 @@ Please inform us!
 - or create an [issue in GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues/).
 
 {: .callout  .info }
-Please note: this is only for accessibility issues in **this website** and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a [new ticket on Make WordPress Core](https://core.trac.wordpress.org/newticket) and give it the focus “accessibility”.
+**Please note:** this is only for accessibility issues in **this website** and not for WordPress itself. If you find an accessibility issue in WordPress core, or in one of the core themes, please create a [new ticket on Make WordPress Core](https://core.trac.wordpress.org/newticket) and give it the focus “accessibility”.
 
 ## Known accessibility issues
 

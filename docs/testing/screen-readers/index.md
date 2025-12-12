@@ -8,7 +8,7 @@ nav_order: 7
 # Screen reader testing
 
 {: .callout  .alert }
-This content will be reviewed and expanded.  
+**Alert:** This content will be reviewed and expanded.  
 Related issue on [GitHub #176 Topic Screen reader testing](https://github.com/wpaccessibility/wp-a11y-docs/issues/176).    
 
 Content that changes dynamically during time, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!

@@ -7,8 +7,8 @@ nav_order: 7
 
 # Provide help filling out a form
 
-{: .callout  .alert }
-This content will be rewritten and expanded.  
+{: .callout .alert }
+**Alert:** This content will be rewritten and expanded.  
 Related issue on [GitHub #159 Topic Provide help filling out a form](https://github.com/wpaccessibility/wp-a11y-docs/issues/159).
 
 ### Provide instructions to help users with complex forms

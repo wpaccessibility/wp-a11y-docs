@@ -44,7 +44,7 @@ In HTML, simplified
 ## Examples
 
 {: .callout .do }
-Connect a description to the form field, using aria-describedby.
+**Do:** Connect a description to the form field, using aria-describedby.
 
 ```html
 <label for="new-password">New password</label>

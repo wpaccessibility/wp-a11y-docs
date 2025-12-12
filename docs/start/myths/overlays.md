@@ -14,7 +14,7 @@ That's a technical definition of an overlay, which doesn't address the effective
 However, an overlay can also create new problems. 
 
 {: .callout  .alert }
-Note that while many of the accessibility plugins in the WordPress plugin repository are overlays or toolbar widgets, these are not recommended in this documentation. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
+**Alert:** Note that while many of the accessibility plugins in the WordPress plugin repository are overlays or toolbar widgets, these are not recommended in this documentation. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
 
 ## What are legitimate uses of accessibility overlays?
 

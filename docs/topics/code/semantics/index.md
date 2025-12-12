@@ -8,7 +8,7 @@ nav_order: 2
 # Semantic HTML
 
 {: .callout .alert }
-This content will be reviewed and restructured.  
+**Alert:** This content will be reviewed and restructured.  
 Related issue on [GitHub #141 Topic Semantic HTML](https://github.com/wpaccessibility/wp-a11y-docs/issues/141).  
 
 Accessibility isn’t dark magic. Most of it comes down to using semantic HTML. Semantic HTML is about choosing the element that best presents the purpose of the content. Examples include using a `button` for an action, an `a` element for a link, and an `h1` heading for the main page content.

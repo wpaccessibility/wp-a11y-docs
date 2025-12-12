@@ -8,7 +8,7 @@ nav_order: 2
 # Checklists for accessibility testing overall
 
 {: .callout  .alert }
-This content will be reviewed and expanded.  
+**Alert:** This content will be reviewed and expanded.  
 Related issue on [GitHub #170 Checklists for accessibility testing overall](https://github.com/wpaccessibility/wp-a11y-docs/issues/170).    
 
 [Accessibility testing guide](https://github.com/alphagov/wcag-primer/wiki) by the British Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion.
