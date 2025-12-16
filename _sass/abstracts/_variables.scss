@@ -1,8 +1,8 @@
 @use "sass:map";
 @use "../../assets/@fontsource-variable/source-sans-3/index.css" as
-  source-sans-3;
+  source-sans-3-variable;
 @use "../../assets/@fontsource-variable/source-serif-4/index.css" as
-  source-serif-4;
+  source-serif-4-variable;
 
 // Colors new design
 :root {
@@ -156,8 +156,8 @@ $gutter-spacing: $sp-8 !default;
 $gutter-spacing-sm: $sp-4 !default;
 
 // Fonts.
-$body-font-family: "Source Sans 3", sans-serif;
-$heading-font-family: "Source Serif 4", serif;
+$body-font-family: "Source Sans 3 Variable", sans-serif;
+$heading-font-family: "Source Serif 4 Variable", serif;
 $mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
 
 // Main colors.

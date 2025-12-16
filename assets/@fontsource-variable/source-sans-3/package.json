@@ -23,28 +23,28 @@
   "exports": {
     ".": {
       "sass": "./index.css",
-      "default": "./index.css"
+      "default": "./@fontsource-variable/source-sans-3/index.css"
     },
     "./LICENSE": "./LICENSE",
     "./*": {
       "sass": "./*.css",
-      "default": "./*.css"
+      "default": "./@fontsource-variable/source-sans-3/*.css"
     },
     "./*.css": {
       "sass": "./*.css",
-      "default": "./*.css"
+      "default": "./@fontsource-variable/source-sans-3/*.css"
     },
     "./files/*": {
       "sass": "./files/*",
-      "default": "./files/*"
+      "default": "./@fontsource-variable/source-sans-3/files/*"
     },
     "./files/*.woff": {
       "sass": "./files/*.woff",
-      "default": "./files/*.woff"
+      "default": "./@fontsource-variable/source-sans-3/files/*.woff"
     },
     "./files/*.woff2": {
       "sass": "./files/*.woff2",
-      "default": "./files/*.woff2"
+      "default": "./@fontsource-variable/source-sans-3/files/*.woff2"
     },
     "./package.json": "./package.json",
     "./metadata.json": "./metadata.json",
