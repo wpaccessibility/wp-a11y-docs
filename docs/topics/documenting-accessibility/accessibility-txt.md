@@ -7,12 +7,12 @@ nav_order: 2
 
 # Accessibility.txt files
 
-An `accxessibility.txt` file is a file that can be included in plugins and themes to provide information about accessibility of the plugin or theme in a standardized format.
+An `accessibility.txt` file is a file that can be included in plugins and themes to provide information about accessibility of the plugin or theme in a standardized format.
 
-This file helps website owners make informed decisions when choosing plugins and themes by clearly outlining accessibility audit status, how it has been tested, and any included accessibility features. It also provides information on reporting accessibility issues, making it easier to ensure websites remain compliant with accessibility standards over time, and developers can be notified of issues as they are identified.
+When completed thoroughly, this file helps website owners make informed decisions when choosing plugins and themes. The file is most helpful when it clearly describes accessibility audit status, testing methodology, and included accessibility features. It also provides information on reporting accessibility issues, making it easier to ensure websites remain compliant with accessibility standards over time, and developers can be notified of issues as they are identified.
 
 {: .callout .alert }
-As of January 2026, Accessibility Ready themes must include an `accessibility.txt` file that adheres to the WordPress theme accessibility readme standard described below.  
+As of **Date TBD**, Accessibility Ready themes must include an `accessibility.txt` file that adheres to the WordPress theme accessibility readme standard described below.  
 
 ## Required Format
 
@@ -51,7 +51,7 @@ Email address or link to form to report accessibility issues identified in the t
 
 ```
 
-## Explanation of sections
+## How to complete the accessibility.txt sections
 The following explains how to complete each section in the required format shown above.
 
 ### Accessibility Statement
@@ -60,8 +60,11 @@ This section provides a short summary of your approach to accessibility during t
 
 Examples:
 
-* “This theme was designed and developed with accessibility best practices in mind, following WCAG 2.2 guidelines.”  
-* “We are committed to making our plugins usable by as many people as possible, including those using assistive technologies.”
+{: .callout  .example }
+“This theme was designed and developed with accessibility best practices in mind, following WCAG 2.2 guidelines.” 
+
+{: .callout  .example }
+“We are committed to making our plugins usable by as many people as possible, including those using assistive technologies.”
 
 ### Quick Information
 
@@ -108,6 +111,7 @@ You may use any naming convention for your class, but must visually hide content
 
 **Example:**
 
+{: .callout  .example }
 `.screen-reader-text`
 
 ### Accessibility Features
@@ -116,16 +120,20 @@ A list or description of accessibility enhancements built into the theme or plug
 
 **Example:**
 
+{: .callout  .example }
 "In addition to meeting accessibility-ready requirements, the theme provides stylesheets for light mode, dark mode, and high contrast mode. These styles will be enabled automatically based on operating system color mode preferences, but in the theme settings, there is an option to turn on a front-end toggle allowing users to switch between color modes."
 
 ### Accessibility Help Contact
 
-This section tells users how to get help if they experience accessibility issues with your theme.
+This section tells users how to get help if they experience accessibility issues with your theme or plugin.
 
 **Examples:**
 
-* [support@example.com](mailto:support@example.com)  
-* [https://example.com/support](https://example.com/support) 
+{: .callout  .example }
+"If you need accessibility help, email us at [support@example.com](mailto:support@example.com)."  
+
+{: .callout  .example }
+"Accessibility support information: [https://example.com/support](https://example.com/support)" 
 
 ### Where to Report Issues
 
@@ -133,12 +141,15 @@ This section provides a designated channel for users to report accessibility bug
 
 **Examples:**
 
-* [https://wordpress.org/support/theme/theme-slug-here/](https://wordpress.org/support/theme/theme-slug-here/)  
-* "Please report accessibility issues on our GitHub repository, https://github.com/URL."
+{: .callout  .example }
+[https://wordpress.org/support/theme/theme-slug-here/](https://wordpress.org/support/theme/theme-slug-here/)  
+
+{: .callout  .example }
+"Please report accessibility issues on our GitHub repository, https://github.com/URL."
 
 ## Markdown
 
-The `accessibility.txt` readme use a customized version of Markdown. Most Markdown calls work as expected.
+The `accessibility.txt` file is intended to be written in markdown similar to plugin and theme readme files. When creating your file, please use markdown to ensure future compatibility.
 
 Markdown allows for easy linking in your `accessibility.txt` file. Just write like this to link a word to a URL:
 
@@ -148,4 +159,6 @@ Markdown allows for easy linking in your `accessibility.txt` file. Just write li
 
 ## Visibility of accessibility.txt files
 
-Currently `accessibility.txt` files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the [theme or plugin file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/). In the future, the accessibility team hopes to surface this information withing the WordPress admin and on WordPress.org. 
+Currently `accessibility.txt` files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the [theme or plugin file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/). 
+
+In the future, the accessibility team hopes to surface this information within the WordPress admin and on WordPress.org. 
