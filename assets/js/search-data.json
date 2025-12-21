@@ -979,44 +979,44 @@
     "url": "/docs/topics/plugins/",
     "relUrl": "/docs/topics/plugins/"
   },"140": {
-    "doc": "Tables",
+    "doc": "Tables in code",
     "title": "Tables in theme and plugin development",
-    "description": null,
+    "description": "Tables in theme and plugin development",
     "content": "Alert: This content will be reviewed and restructured. Related issue on GitHub #144 Topic Tables in theme and plugin development. Tables are the recommended way to display tabular data. Tabular data is any data that is best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not a good idea for layout, however. Well-coded tables are important for screen reader users, so they can read, navigate, and understand the data. Creating a pseudo-table for data by using divs and CSS will make the data much harder to understand for a screen reader user. ",
     "url": "/docs/topics/code/tables/#tables-in-theme-and-plugin-development",
     "relUrl": "/docs/topics/code/tables/#tables-in-theme-and-plugin-development"
   },"141": {
-    "doc": "Tables",
+    "doc": "Tables in code",
     "title": "Examples",
-    "description": null,
+    "description": "Tables in theme and plugin development",
     "content": "Incorrect: a table purely for layout . // Incorrect: don’t use a table for layout only, for example in forms. &lt;table&gt; &lt;tr&gt; &lt;td&gt;&lt;label for=\"blogname\"&gt;Site Title&lt;/label&gt;&lt;/th&gt; &lt;td&gt;&lt;input name=\"blogname\" type=\"text\" id=\"blogname\" value=\"\" /&gt;&lt;/td&gt; &lt;/tr&gt; [...etc…] &lt;/table&gt; . Incorrect: divs show tabular information . // Incorrect: don’t use meaningless divs to display meaningful data. &lt;div&gt; &lt;div class=”row”&gt;The cities of WordCamp Europe&lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;&lt;strong&gt;Year&lt;/strong&gt;&lt;/div&gt; &lt;div class=”cell2”&gt;&lt;strong&gt;City&lt;/strong&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;2017&lt;/div&gt; &lt;div class=”cell2”&gt;Paris&lt;/div&gt; &lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;2018&lt;/div&gt; &lt;div class=”cell2”&gt;Belgrade&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; . Correct: a table to show tabular information . // A data table in it’s most basic form. &lt;table&gt; &lt;caption&gt;The cities of WordCamp Europe&lt;/caption&gt; &lt;tr&gt; &lt;th&gt;Year&lt;/th&gt; &lt;th&gt;City&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;2017&lt;/td&gt; &lt;td&gt;Paris&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;2018&lt;/td&gt; &lt;td&gt;Belgrade&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; . Header cells must be marked up with &lt;th&gt;, and data cells with &lt;td&gt;. For more complex tables, you may need thead, colgroup, rowgroup, scope, id, and headers attributes. The W3C WAI has a good and complete tutorial on how to do complex tables. Caption or summary? . | A caption functions like a heading for a table | Using &lt;summary&gt; in a &lt;table&gt; is deprecated in HTML5 and should no longer be used. | . ",
     "url": "/docs/topics/code/tables/#examples",
     "relUrl": "/docs/topics/code/tables/#examples"
   },"142": {
-    "doc": "Tables",
+    "doc": "Tables in code",
     "title": "Can we use role=presentation?",
-    "description": null,
+    "description": "Tables in theme and plugin development",
     "content": "Yes, you can use the ARIA attribute role=presentation to tell a screen reader user that this is not a data table and let it read out like it is text. This works, but don’t use ARIA to fix broken HTML5. It’s a hack this way, not a best practice. ",
     "url": "/docs/topics/code/tables/#can-we-use-rolepresentation",
     "relUrl": "/docs/topics/code/tables/#can-we-use-rolepresentation"
   },"143": {
-    "doc": "Tables",
+    "doc": "Tables in code",
     "title": "Complexity",
-    "description": null,
+    "description": "Tables in theme and plugin development",
     "content": "The rule of thumb is: the simpler, the better. If your table is going to be very complex, consider splitting it up into more tables or find a different way to organize your data. It will probably also be easier to read for sighted users. ",
     "url": "/docs/topics/code/tables/#complexity",
     "relUrl": "/docs/topics/code/tables/#complexity"
   },"144": {
-    "doc": "Tables",
+    "doc": "Tables in code",
     "title": "Resources",
-    "description": null,
+    "description": "Tables in theme and plugin development",
     "content": ". | Table element reference on developer.mozilla.org | A good tutorial on how to write complex tables for the W3C is at WAI/tutorials | Creating Accessible Tables | It’s OK to use tables | . Responsive tables . One of the major limitations to tables is that they are difficult to make responsive. There are ways to do it while retaining accessibility. | Accessible, Simple, Responsive Tables | A Responsive Accessible Table, by Adrian Roselli | Responsive Tables for Humans, Web Crawlers and Screen Readers | . ",
     "url": "/docs/topics/code/tables/#resources",
     "relUrl": "/docs/topics/code/tables/#resources"
   },"145": {
-    "doc": "Tables",
-    "title": "Tables",
-    "description": null,
+    "doc": "Tables in code",
+    "title": "Tables in code",
+    "description": "Tables in theme and plugin development",
     "content": " ",
     "url": "/docs/topics/code/tables/",
     "relUrl": "/docs/topics/code/tables/"
@@ -2822,14 +2822,14 @@
   },"403": {
     "doc": "Tables",
     "title": "Tables in the content",
-    "description": null,
+    "description": "Tables in WordPress content",
     "content": "Alert: This content will be written. Related issue on GitHub #121 Topic Tables in the content. This content will be about how to add an accessible table in WordPres Admin and gives info about plugins to use, that can create accessible tables. ",
     "url": "/docs/topics/content/tables/#tables-in-the-content",
     "relUrl": "/docs/topics/content/tables/#tables-in-the-content"
   },"404": {
     "doc": "Tables",
     "title": "Tables",
-    "description": null,
+    "description": "Tables in WordPress content",
     "content": " ",
     "url": "/docs/topics/content/tables/",
     "relUrl": "/docs/topics/content/tables/"
