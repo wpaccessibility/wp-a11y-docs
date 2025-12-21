@@ -11,13 +11,13 @@ An Accessibility Conformance Report (ACR) is a document that explains how well a
 
 ## What an ACR includes
 
-Accessibility Conformance Reports are created using an internationally-recognized template called a Voluntary Product Accessibility Template (VPAT®). This template offers a clear path for documenting conformance against one or more accessibility standards, such as:
+Accessibility Conformance Reports are created using an internationally-recognized template called a [Voluntary Product Accessibility Template (VPAT®).](https://www.itic.org/policy/accessibility/vpat) This template offers a clear path for documenting conformance against one or more accessibility standards, such as:
 
 * WCAG 2.0, 2.1, or 2.2
 * Section 508 (U.S. federal requirements)
 * EN 301 549 (used across the EU and for the European Accessibility Act)
 
-The ACR provides a tabular view of the requirements or criteria for each standard, and in each table row states:
+An ACR provides a tabular view of the requirements or criteria for each standard. Each table row contains information about the product's compliance to a standard, including:
 
 * Conformance level: whether the product supports, partially supports, or does not support the criteria.
 * Detailed remarks explaining what works, what doesn’t, and why.
