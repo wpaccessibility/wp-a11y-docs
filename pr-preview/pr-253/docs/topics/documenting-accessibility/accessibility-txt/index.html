@@ -498,11 +498,11 @@
 
           <h1 id="accessibilitytxt-files">Accessibility.txt files</h1>
 
-<p>An <code class="language-plaintext highlighter-rouge">accxessibility.txt</code> file is a file that can be included in plugins and themes to provide information about accessibility of the plugin or theme in a standardized format.</p>
+<p>An <code class="language-plaintext highlighter-rouge">accessibility.txt</code> file is a file that can be included in plugins and themes to provide information about accessibility of the plugin or theme in a standardized format.</p>
 
-<p>This file helps website owners make informed decisions when choosing plugins and themes by clearly outlining accessibility audit status, how it has been tested, and any included accessibility features. It also provides information on reporting accessibility issues, making it easier to ensure websites remain compliant with accessibility standards over time, and developers can be notified of issues as they are identified.</p>
+<p>When completed thoroughly, this file helps website owners make informed decisions when choosing plugins and themes. The file is most helpful when it clearly describes accessibility audit status, testing methodology, and included accessibility features. It also provides information on reporting accessibility issues, making it easier to ensure websites remain compliant with accessibility standards over time, and developers can be notified of issues as they are identified.</p>
 
-<p class="callout alert">As of January 2026, Accessibility Ready themes must include an <code class="language-plaintext highlighter-rouge">accessibility.txt</code> file that adheres to the WordPress theme accessibility readme standard described below.</p>
+<p class="callout alert">As of <strong>Date TBD</strong>, Accessibility Ready themes must include an <code class="language-plaintext highlighter-rouge">accessibility.txt</code> file that adheres to the WordPress theme accessibility readme standard described below.</p>
 
 <h2 id="required-format">Required Format</h2>
 
@@ -540,7 +540,7 @@ Email address or link to form to report accessibility issues identified in the t
 
 </code></pre></div></div>
 
-<h2 id="explanation-of-sections">Explanation of sections</h2>
+<h2 id="how-to-complete-the-accessibilitytxt-sections">How to complete the accessibility.txt sections</h2>
 <p>The following explains how to complete each section in the required format shown above.</p>
 
 <h3 id="accessibility-statement">Accessibility Statement</h3>
@@ -549,10 +549,9 @@ Email address or link to form to report accessibility issues identified in the t
 
 <p>Examples:</p>
 
-<ul>
-  <li>“This theme was designed and developed with accessibility best practices in mind, following WCAG 2.2 guidelines.”</li>
-  <li>“We are committed to making our plugins usable by as many people as possible, including those using assistive technologies.”</li>
-</ul>
+<p class="callout example">“This theme was designed and developed with accessibility best practices in mind, following WCAG 2.2 guidelines.”</p>
+
+<p class="callout example">“We are committed to making our plugins usable by as many people as possible, including those using assistive technologies.”</p>
 
 <h3 id="quick-information">Quick Information</h3>
 
@@ -609,7 +608,7 @@ Email address or link to form to report accessibility issues identified in the t
 
 <p><strong>Example:</strong></p>
 
-<p><code class="language-plaintext highlighter-rouge">.screen-reader-text</code></p>
+<p class="callout example"><code class="language-plaintext highlighter-rouge">.screen-reader-text</code></p>
 
 <h3 id="accessibility-features">Accessibility Features</h3>
 
@@ -617,18 +616,17 @@ Email address or link to form to report accessibility issues identified in the t
 
 <p><strong>Example:</strong></p>
 
-<p>“In addition to meeting accessibility-ready requirements, the theme provides stylesheets for light mode, dark mode, and high contrast mode. These styles will be enabled automatically based on operating system color mode preferences, but in the theme settings, there is an option to turn on a front-end toggle allowing users to switch between color modes.”</p>
+<p class="callout example">“In addition to meeting accessibility-ready requirements, the theme provides stylesheets for light mode, dark mode, and high contrast mode. These styles will be enabled automatically based on operating system color mode preferences, but in the theme settings, there is an option to turn on a front-end toggle allowing users to switch between color modes.”</p>
 
 <h3 id="accessibility-help-contact">Accessibility Help Contact</h3>
 
-<p>This section tells users how to get help if they experience accessibility issues with your theme.</p>
+<p>This section tells users how to get help if they experience accessibility issues with your theme or plugin.</p>
 
 <p><strong>Examples:</strong></p>
 
-<ul>
-  <li><a href="mailto:support@example.com">support@example.com</a></li>
-  <li><a href="https://example.com/support">https://example.com/support</a></li>
-</ul>
+<p class="callout example">“If you need accessibility help, email us at <a href="mailto:support@example.com">support@example.com</a>.”</p>
+
+<p class="callout example">“Accessibility support information: <a href="https://example.com/support">https://example.com/support</a>”</p>
 
 <h3 id="where-to-report-issues">Where to Report Issues</h3>
 
@@ -636,14 +634,13 @@ Email address or link to form to report accessibility issues identified in the t
 
 <p><strong>Examples:</strong></p>
 
-<ul>
-  <li><a href="https://wordpress.org/support/theme/theme-slug-here/">https://wordpress.org/support/theme/theme-slug-here/</a></li>
-  <li>“Please report accessibility issues on our GitHub repository, https://github.com/URL.”</li>
-</ul>
+<p class="callout example"><a href="https://wordpress.org/support/theme/theme-slug-here/">https://wordpress.org/support/theme/theme-slug-here/</a></p>
+
+<p class="callout example">“Please report accessibility issues on our GitHub repository, https://github.com/URL.”</p>
 
 <h2 id="markdown">Markdown</h2>
 
-<p>The <code class="language-plaintext highlighter-rouge">accessibility.txt</code> readme use a customized version of Markdown. Most Markdown calls work as expected.</p>
+<p>The <code class="language-plaintext highlighter-rouge">accessibility.txt</code> file is intended to be written in markdown similar to plugin and theme readme files. When creating your file, please use markdown to ensure future compatibility.</p>
 
 <p>Markdown allows for easy linking in your <code class="language-plaintext highlighter-rouge">accessibility.txt</code> file. Just write like this to link a word to a URL:</p>
 
@@ -653,7 +650,9 @@ Email address or link to form to report accessibility issues identified in the t
 
 <h2 id="visibility-of-accessibilitytxt-files">Visibility of accessibility.txt files</h2>
 
-<p>Currently <code class="language-plaintext highlighter-rouge">accessibility.txt</code> files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the <a href="https://developer.wordpress.org/advanced-administration/wordpress/edit-files/">theme or plugin file editor</a>. In the future, the accessibility team hopes to surface this information withing the WordPress admin and on WordPress.org.</p>
+<p>Currently <code class="language-plaintext highlighter-rouge">accessibility.txt</code> files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the <a href="https://developer.wordpress.org/advanced-administration/wordpress/edit-files/">theme or plugin file editor</a>.</p>
+
+<p>In the future, the accessibility team hopes to surface this information within the WordPress admin and on WordPress.org.</p>
 
 
           
