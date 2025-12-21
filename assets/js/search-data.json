@@ -2820,15 +2820,15 @@
     "url": "/docs/contribute/suggest/",
     "relUrl": "/docs/contribute/suggest/"
   },"403": {
-    "doc": "Tables",
+    "doc": "Tables in content",
     "title": "Tables in the content",
     "description": "Tables in WordPress content",
     "content": "Alert: This content will be written. Related issue on GitHub #121 Topic Tables in the content. This content will be about how to add an accessible table in WordPres Admin and gives info about plugins to use, that can create accessible tables. ",
     "url": "/docs/topics/content/tables/#tables-in-the-content",
     "relUrl": "/docs/topics/content/tables/#tables-in-the-content"
   },"404": {
-    "doc": "Tables",
-    "title": "Tables",
+    "doc": "Tables in content",
+    "title": "Tables in content",
     "description": "Tables in WordPress content",
     "content": " ",
     "url": "/docs/topics/content/tables/",
