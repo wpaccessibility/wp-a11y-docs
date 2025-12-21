@@ -2,7 +2,7 @@
 title: accessibility.txt files
 layout: default
 parent: Documenting accessibility
-nav_order: 3
+nav_order: 2
 ---
 
 # Accessibility.txt files
