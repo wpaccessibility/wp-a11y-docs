@@ -145,4 +145,7 @@ Markdown allows for easy linking in your `accessibility.txt` file. Just write li
 `[WordPress](http://wordpress.org)`
 
 [Learn more about markdown.](https://www.markdownguide.org/basic-syntax/)
- 
+
+## Visibility of `accessibility.txt` files
+
+Currently `accessibility.txt` files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the [theme or plugin file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/). In the future, the accessibility team hopes to surface this information withing the WordPress admin and on WordPress.org. 
