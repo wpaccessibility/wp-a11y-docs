@@ -240,7 +240,7 @@
     "doc": "Accessibility Conformance Reports",
     "title": "What an ACR includes",
     "description": null,
-    "content": "Accessibility Conformance Reports are created using an internationally-recognized template called a Voluntary Product Accessibility Template (VPAT®). This template offers a clear path for documenting conformance against one or more accessibility standards, such as: . | WCAG 2.0, 2.1, or 2.2 | Section 508 (U.S. federal requirements) | EN 301 549 (used across the EU and for the European Accessibility Act) | . The ACR provides a tabular view of the requirements or criteria for each standard, and in each table row states: . | Conformance level: whether the product supports, partially supports, or does not support the criteria. | Detailed remarks explaining what works, what doesn’t, and why. | Known issues or exceptions, often with context or remediation notes. | . ",
+    "content": "Accessibility Conformance Reports are created using an internationally-recognized template called a Voluntary Product Accessibility Template (VPAT®). This template offers a clear path for documenting conformance against one or more accessibility standards, such as: . | WCAG 2.0, 2.1, or 2.2 | Section 508 (U.S. federal requirements) | EN 301 549 (used across the EU and for the European Accessibility Act) | . An ACR provides a tabular view of the requirements or criteria for each standard. Each table row contains information about the product’s compliance to a standard, including: . | Conformance level: whether the product supports, partially supports, or does not support the criteria. | Detailed remarks explaining what works, what doesn’t, and why. | Known issues or exceptions, often with context or remediation notes. | . ",
     "url": "/pr-preview/pr-253/docs/topics/documenting-accessibility/acr/#what-an-acr-includes",
     "relUrl": "/docs/topics/documenting-accessibility/acr/#what-an-acr-includes"
   },"35": {
@@ -2256,7 +2256,7 @@
     "doc": "Contributors",
     "title": "Props for content, discussion, code, design and reviews",
     "description": "Thank you to the contributors of WP accessibility documentation",
-    "content": ". | Paul van Buuren | Yoren Chang | Virginia Ciambriello | Moses Cursor Ssebunya | Gary Jones | Wendie Huis in’t Veld | Johan Huijkman | Jeffrey Lauwers | Caitlin de Rooij | Savi Sinnema | Annelies Verhelst | . Project leads . | Joe Dolson | Rian Rietveld | . GitHub contributor list . | | | | | | | | | | . ",
+    "content": ". | Paul van Buuren | Yoren Chang | Virginia Ciambriello | Moses Cursor Ssebunya | Gary Jones | Wendie Huis in’t Veld | Johan Huijkman | Jeffrey Lauwers | Caitlin de Rooij | Savi Sinnema | Annelies Verhelst | . Project leads . | Joe Dolson | Rian Rietveld | . GitHub contributor list . ",
     "url": "/pr-preview/pr-253/docs/contributors/#props-for-content-discussion-code-design-and-reviews",
     "relUrl": "/docs/contributors/#props-for-content-discussion-code-design-and-reviews"
   },"323": {
