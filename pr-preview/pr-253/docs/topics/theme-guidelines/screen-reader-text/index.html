@@ -498,6 +498,29 @@
 
           <h1 id="screen-reader-text-supported">Screen Reader Text Supported</h1>
 
+<h2 id="basic-principle">Basic Principle</h2>
+
+<p>Accessibility-ready themes make it easier for content authors to create accessible websites. Themes must have a clearly defined and properly styled class, such as <code class="language-plaintext highlighter-rouge">.screen-reader-text</code> or <code class="language-plaintext highlighter-rouge">.sr-only</code>, that allows content creators to include text that is hidden visually but still read by assistive technologies without needing to write custom CSS. Including a screen reader text class makes it easier for content creators to add additional context for links, buttons, or form fields when building with the theme.</p>
+
+<p><a href="/pr-preview/pr-253/docs/topics/code/screen-reader-text/">See the required CSS for a screen reader text class.</a></p>
+
+<h2 id="testing">Testing</h2>
+
+<p><strong>Tools:</strong> Browser, browser inspector, text editor, screen reader (optional)</p>
+
+<ol>
+  <li>Open the <code class="language-plaintext highlighter-rouge">accessibility.txt</code> file saved in the main theme directory. This can be opened in a text editor or in the <a href="https://developer.wordpress.org/advanced-administration/wordpress/edit-files/">theme file editor</a>. If an <code class="language-plaintext highlighter-rouge">accessibility.txt</code> file is not present, this criterion can be considered a fail.</li>
+  <li>Find the Screen Reader Text Class section and see which class is being used for screen reader text (e.g., <code class="language-plaintext highlighter-rouge">.screen-reader-text</code>, <code class="language-plaintext highlighter-rouge">.visually-hidden</code>, etc.).</li>
+  <li>Open a post or page in the WordPress editor and insert a heading block.</li>
+  <li>Type any text in the heading block.</li>
+  <li>In the block settings &gt; Advanced section, apply the correct screen reader text class to the block in the Additional CSS Class(es) field.</li>
+  <li>View the post or page on the front end.</li>
+  <li>Verify that the text in the heading block is not visible.</li>
+  <li>Open the browser inspector and find the heading in the HTML section so you can inspect the related CSS.</li>
+  <li>Verify that the text is hidden using the required CSS linked above.</li>
+  <li>Optional: Listen to the page with a screen reader and confirm the hidden text is read.</li>
+</ol>
+
 
           
             
