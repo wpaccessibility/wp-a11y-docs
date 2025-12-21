@@ -42,7 +42,7 @@ Here is a basic overview of the process.
 
 1. Download the [free ITI VPAT® template](https://www.itic.org/policy/accessibility/vpat) for the version you would like to complete.
 2. Create one or more testing environments with your plugin or theme active and all possible templates, shortcodes, and blocks inserted and with all possible settings variations.
-3. Test the plugin or theme following the [accessibility testing practices outlined here.]({{site.baseurl}/docs/testing/). Use the VPAT template as a guide to make sure you test all criteria for your desired standard.
+3. Test the plugin or theme following the [accessibility testing practices outlined here.]({{site.baseurl}}/docs/testing/) Use the VPAT template as a guide to make sure you test all criteria for your desired standard.
 4. Once you have identified accessibility issues, these can be noted in the VPAT or fixed before the VPAT is completed.
 5. Fill out the complete VPAT following instructions in the template.
 
