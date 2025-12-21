@@ -7,23 +7,51 @@ nav_order: 2
 
 # WordPress accessibility plugins
 
+There are many plugins available for WordPress that can help support accessibility. These tools work in many ways. Some are website features built in a way that's specifically designed for accessibility, others help you create accessible content, and others help ensure that other plugins are more accessible.
+
+## Criteria for inclusion:
+
+- The plugin must have a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team
+- The plugin must not be primarily dedicated to accessibility testing
+- The plugin must not provide [overlay functionality](https://overlayfactsheet.com/en/) that cannot be fully disabled.
+- The plugin must have an accessible admin interface
+- The plugin must have been updated within the last year
+
 {: .callout  .alert }
 **Alert:** Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
 
-## Editing Tools
+## Accessible Features
+
+**Criteria:** Plugins that add a commonly used feature, but with a specific focus on accessibility.
 
 - [Able Player for WordPress](https://wordpress.org/plugins/ableplayer/). Able Player is a media player that offers extensive support for accessible features such as Audio Description, speed adjustment, and interactive transcriptions.
-- [Accessibility New Window Warnings](https://wordpress.org/plugins/accessibility-new-window-warnings/).  Automatically adds visible warnings on all links that open in new tabs or windows
+- [My Calendar - Accessible Event Manager](https://wordpress.org/plugins/my-calendar/). My Calendar is a full-featured event management plugin that includes support for event and location accessibility features and has a robustly accessible interface.
+
+## Editing Tools
+
+**Criteria:** Plugins that add options in the editor that help improve the accessibility of your content.
+
 - [Screen Reader Text Format](https://wordpress.org/plugins/screen-reader-text-format/). Adds a block editor text control to set content as screen reader only.
+
+## Front-end Features
+
+**Criteria:** Plugins that provide users with information about existing characteristics of your content.
+
+- [Accessibility New Window Warnings](https://wordpress.org/plugins/accessibility-new-window-warnings/).  Automatically adds visible warnings on links that open in new tabs or windows
 
 ## Plugin or Theme Specific Patterns
 
+**Criteria:** Plugins that improve the accessibility of a specific theme or plugin.
+
 - [Contact Form 7: Accessible defaults](https://wordpress.org/plugins/contact-form-7-accessible-defaults/) – generates accessible contact form defaults in Contact Form 7.
+-
 
 ## General Purpose
+
+**Criteria:** Multi-purpose accessibility plugins not easily placed in another category, but not primarily focused on testing.
 
 - [WP Accessibility](https://wordpress.org/extend/plugins/wp-accessibility/). Helps with a variety of common accessibility problems in WordPress themes. While most accessibility issues can’t be addressed without directly changing your theme, WP Accessibility adds a number of helpful accessibility features with a minimum amount of setup or expert knowledge.
 
 {: .callout  .info }
-Do you want to add your plugin to this list?   
+Do you want to add your plugin to this list?
 Please [contact the Documentation Team]({{site.baseurl}}/docs/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.
