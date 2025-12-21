@@ -25,7 +25,7 @@ Short statement about approach to accessibility in the development process.
 == Quick Information ==
 Accessibility audit completed: (Yes or No)
 Most recent audit date: YYYY-MM-DD
-Tested to standard and conformance level: WCAG 2.2 AA
+Tested to standard and conformance level: WCAG 2.2 AA (supports)
 Audited by: (comma-separated list of wordpress.org userid's or markdown-formatted links with Company Names and URLs)
 Accessibility Conformance Report: https://example.com/ 
 
@@ -69,7 +69,7 @@ The Quick Information section provides a high-level overview of the theme’s or
 
 * **Accessibility audit completed:** Yes or No. Answer yes if the theme or plugin has been audited for accessibility conformance with an officially recognized standard such as Web Content Accessibility Guidelines (WCAG), EN 301 549, etc. The testing may have been completed by you or an external organization or individual.  
 * **Most recent audit date:** (OPTIONAL) provide the date when most recent audit was completed. Omit if the theme or plugin has never been audited.  
-* **Conformance level:** (OPTIONAL) if an audit has been completed, list the standard it was tested against here. Omit if the theme or plugin has never been audited.  
+* **Tested to standard and conformance level:** (OPTIONAL) if an audit has been completed, list the standard it was tested against here and whether it supports, partially supports, or does not support the standard. Omit if the theme or plugin has never been audited.  
 * **Audited by:** (OPTIONAL) Provide a comma-separated list of wordpress.org userid's or markdown-formatted links with Company Names and URLs for the people or organization that performed the most recent audit. This can help to provide trustworthiness or third-party verification to the audit. Omit if the theme or plugin has never been audited.  
 * **Accessibility Conformance Report:** (OPTIONAL) URL to an Accessibility Conformance Report for the theme or plugin. Omit if an ACR is not available. [Learn more about ACRs]({{site.baseurl}}/docs/topics/documenting-accessibility/acr/)
 

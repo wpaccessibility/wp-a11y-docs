@@ -46,6 +46,8 @@ Here is a basic overview of the process.
 4. Once you have identified accessibility issues, these can be noted in the VPAT or fixed before the VPAT is completed.
 5. Fill out the complete VPAT following instructions in the template.
 
-When filling out a VPAT for a WordPress plugin or theme, it is important to note that active themes and plugins can greatly impact the accessibility conformance of websites using your product. Be clear about how it was tested, including the environment, configurations, and assistive technologies used, and clearly document any assumptions, dependencies, or known limitations. This helps set accurate expectations, clarifies shared responsibility between your product and the site owner, and ensures the report is an honest, useful disclosure rather than a blanket claim of compliance.
+When filling out a VPAT for a WordPress plugin or theme, it is important to note that active themes and plugins can greatly impact the accessibility conformance of websites using your product. 
+
+Be clear about how it was tested, including the environment, configurations, and assistive technologies used, and clearly document any assumptions, dependencies, or known limitations. This helps set accurate expectations, clarifies shared responsibility between your product and the site owner, and ensures the report is an honest, useful disclosure rather than a blanket claim of compliance.
 
 Typically ACRs are published on your website and linked to from an accessibility statement page, documentation, or an [accessibility.txt file.]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/)
