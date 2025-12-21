@@ -1,5 +1,5 @@
 ---
-title:  CSS screen-reader-text
+title: CSS screen-reader-text
 layout: default
 parent: Frontend code
 nav_order: 6
@@ -8,8 +8,8 @@ nav_order: 6
 # The CSS class screen-reader-text
 
 {: .callout .alert }
-**Alert:** This content will be reviewed and restructured.  
-Related issue on [GitHub #145 Topic The CSS class screen-reader-text](https://github.com/wpaccessibility/wp-a11y-docs/issues/145).  
+**Alert:** This content will be reviewed and restructured.
+Related issue on [GitHub #145 Topic The CSS class screen-reader-text](https://github.com/wpaccessibility/wp-a11y-docs/issues/145).
 
 # The CSS class screen-reader-text
 
