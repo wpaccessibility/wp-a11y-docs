@@ -109,6 +109,11 @@ You can add captions and navigable transcripts by placing `.vtt` files in the `/
 <video data-able-player data-youtube-nocookie="true" data-youtube-id="6brKmJfDtNQ" data-heading-level="0">
 	<track kind="captions" src="{{site.baseurl}}/assets/captions/captions-6brKmJfDtNQ.vtt"/>
 </video>
+```
+
+<video data-able-player data-youtube-nocookie="true" data-youtube-id="6brKmJfDtNQ" data-heading-level="0">
+	<track kind="captions" src="{{site.baseurl}}/assets/captions/captions-6brKmJfDtNQ.vtt"/>
+</video>
 
 ## Code examples in the text
 
