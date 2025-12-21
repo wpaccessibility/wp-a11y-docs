@@ -1,16 +1,18 @@
 ---
-title: Screen Reader Text Supported
+title: Screen reader text supported
 layout: default
 parent: Theme Accessibility Guidelines
 description: How screen reader text must be supported on an accessibility-ready theme
 nav_order: 17
 ---
 
-# Screen Reader Text Supported
+# Screen reader text supported
 
-## Basic Principle
+## Basic principle
 
-Accessibility-ready themes make it easier for content authors to create accessible websites. Themes must have a clearly defined and properly styled class, such as `.screen-reader-text` or `.sr-only`, that allows content creators to include text that is hidden visually but still read by assistive technologies without needing to write custom CSS. Including a screen reader text class makes it easier for content creators to add additional context for links, buttons, or form fields when building with the theme.
+Accessibility-ready themes make it easier for content authors to create accessible websites. Themes must have a clearly defined and properly styled class, such as `.screen-reader-text` or `.sr-only`, that allows content creators to include text that is hidden visually but still read by assistive technologies without needing to write custom CSS. 
+
+Including a screen reader text class makes it easier for content creators to add additional context for links, buttons, or form fields when building with the theme.
 
 [See the required CSS for a screen reader text class.]({{site.baseurl}}/docs/topics/code/screen-reader-text/)
 

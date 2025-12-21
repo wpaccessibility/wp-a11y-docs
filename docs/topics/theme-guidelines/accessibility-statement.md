@@ -1,14 +1,14 @@
 ---
-title: Accessibility Statement
+title: Accessibility statement
 layout: default
 parent: Theme Accessibility Guidelines
 nav_order: 16
 description: Accessibility Statement requirements for Accessibility-ready themes
 ---
 
-# Accessibility Statement
+# Accessibility statement
 
-## Basic Principle
+## Basic principle
 
 Accessibility Ready themes must include an `accessibility.txt` file to help website owners make informed decisions when choosing a theme. 
 
