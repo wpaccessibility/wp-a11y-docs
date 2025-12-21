@@ -1,5 +1,5 @@
 ---
-title: Tables
+title: Tables in content
 layout: default
 parent: Content and images
 nav_order: 5
