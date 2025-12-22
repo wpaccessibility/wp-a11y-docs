@@ -10,7 +10,7 @@
 
 
 
-<title>The dialog modal, WP Accessibility Knowledge Base</title>
+<title>Getting set up to test, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-253/assets/css/styles.css">
@@ -486,24 +486,14 @@
 
         
             
-            
-            
-        
-
-    
-
-        
-
-        
-            
 
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/code/components/'>Components</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">The dialog modal</li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/'>Testing for accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/testing-themes/'>Testing WordPress themes</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Getting set up to test</li>
     </ol>
 </nav>
 
@@ -512,46 +502,76 @@
 
         <main>
 
-          <h1 id="the-dialog-modal">The dialog modal</h1>
+          <h1 id="getting-set-up-to-test">Getting set up to test</h1>
 
-<p class="callout alert"><strong>Alert:</strong> This content will be reviewed, modernized and restructured.<br />
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/152">GitHub #152 Topic The dialog modal</a>.</p>
+<h2 id="creating-the-test-site">Creating the test site</h2>
+<p>To accessibility-ready test a theme, you will first need to set up a testing environment.</p>
 
-<p>A dialog is a window that separates content from the main content of a page. It can ask questions or require user input. When the dialog is active and opened, only the content inside the dialog should be available for interaction. Visually it’s usually overlaid on top of main content.</p>
+<p>It is important to note that browser extensions for accessibility testing do not current work in WordPress Playground. As a result, you can’t use Playground for accessibility-ready reviews.</p>
 
-<p><img src="/pr-preview/pr-253/assets/images/modal-dialog.png" alt="Form inside dialog modal" /></p>
+<p>Outside of Playground, reviews can be done in any WordPress environment you prefer. For convenience, we have a template site available for quick spin-up via <a href="https://instawp.com">InstaWP</a>.</p>
 
-<p>There are two main practices for achieving an accessible modal dialog:</p>
+<h3 id="why-use-our-instawp-testing-site">Why use our InstaWP testing site</h3>
+<p>You may be wondering why we recommend using our InstaWP template for testing rather than loading the theme up on any other WordPress site. Here’s why:</p>
 
-<ul>
-  <li>The use of appropriate WAI-ARIA roles, states, and properties markup for dialog helps assistive technology identify the content as grouped and separated from the rest of the page.</li>
-  <li>Providing keyboard interaction and restricting focus within the modal helps keyboard users to navigate the content inside the dialog, and only navigate back to the main content when they’re ready.</li>
-</ul>
+<p>Our InstaWP template has demo content including pages, posts, media, and navigation menus already configured so you can get started testing faster. We have also gone through the standard <a href="https://make.wordpress.org/themes/handbook/review/theme-unit-test/">WordPress theme unit test data</a> and remediated accessibility issues to avoid false positives.</p>
 
-<p>Detailed information can be found in the <a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA authoring practices for modals</a>.</p>
+<p>Additionally, specific pages and URLs from this site are referenced in the report template. For this reason, we recommend starting with an InstaWP testing site. If you prefer to test elsewhere, you can export the InstaWP content and import it into a different site using the <a href="https://wordpress.org/plugins/wordpress-importer/">WordPress Importer plugin.</a></p>
 
-<p>The HTML 5.2 specification will include a native <code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> element which is being implemented by browser vendors. <a href="https://caniuse.com/#feat=dialog">See caniuse.com for up-to-date information on support</a>.</p>
+<h3 id="how-to-create-your-site">How to create your site</h3>
+<p>Here’s how to create a site you can test on from our template:</p>
 
-<h2 id="resources">Resources</h2>
+<ol>
+  <li>Go to the <a href="https://app.instawp.io/launch?s=wp-accessibility-ready-test-sites&amp;d=v2">WordPress Accessibility-ready Test Sites launcher on InstaWP.</a></li>
+  <li>Click the launch demo button.</li>
+  <li>Enter your email address in the email field.</li>
+  <li>Check the box acknowledging the privacy notice.</li>
+  <li>Click the proceed button.</li>
+</ol>
 
-<ul>
-  <li><a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA authoring practices for dialog modal</a>.</li>
-  <li><a href="https://yoast.com/dev-blog/the-a11y-monthly-making-modals-accessible/">Making modals accessible</a> by Andrea Fercia</li>
-  <li><a href="https://tink.uk/understanding-screen-reader-interaction-modes/">Understanding screen reader interaction modes</a> by Léonie Watson</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role">Using the dialog role</a> (MDN web docs).</li>
-  <li><a href="https://www.marcozehe.de/2015/02/05/advanced-aria-tip-2-accessible-modal-dialogs/">Advanced ARIA Tips for Accessible modal dialogs</a>.</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">Mozilla Developer Network page for the HTML native dialog element</a>.</li>
-</ul>
+<p>The website should be created in a matter of minutes and you will be automatically logged into the site.</p>
 
-<h2 id="accessible-modal-dialog-scripts">Accessible modal dialog scripts</h2>
+<p>An email will be sent to you with the web address and admin credentials for logging into the website should you need to revisit the site later.</p>
 
-<ul>
-  <li><a href="https://github.com/edenspiekermann/a11y-dialog">A11y dialog script</a> for creating accessible dialog windows.</li>
-  <li><a href="https://github.com/svinkle/launchy">Launchy</a> is another script for accessible modal dialog.</li>
-  <li><a href="https://github.com/davidtheclark/react-aria-modal">Accessible and flexible React modal dialog</a>.</li>
-  <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html">W3C Modal Dialog Example</a></li>
-</ul>
+<p><strong>Note:</strong> These sites expire after seven (7) days. You can extend them for three (3) additional days if needed. If you need a testing site to be available longer than 10 days, you’ll need to migrate it to your own hosting or local development environment.</p>
 
+<h3 id="install-activate-and-configure-the-theme">Install, activate, and configure the theme</h3>
+
+<p class="callout alert">Amber will finish this on Monday.</p>
+
+<h2 id="creating-the-report">Creating the report</h2>
+
+<p>Accessibility-ready reports are generated with a Google Sheet template. This ensures that all reports are consistent and provides a template for your audit.</p>
+
+<h3 id="copy-the-template">Copy the template</h3>
+<ol>
+  <li>Open the <a href="https://drive.google.com/drive/folders/1z3v3U02W1WFt38Kvzb4aaVVkqzUq9pnP?usp=sharing">Theme Testing Reports Google Drive folder</a>.</li>
+  <li>Find the Google Sheet titled “** Template ** Accessibility-Ready Test Report”.</li>
+  <li>On the template report, click the “More Actions” button (three dots) located at the far right in the list layout or in the upper right corner in the grid layout.</li>
+  <li>Click “Make a Copy” to duplicate the template. Your copy should stay in the Theme Testing Reports folder.</li>
+  <li>Rename your copy following this format: <code class="language-plaintext highlighter-rouge">YYYY-MM [Theme Name] Accessibility-Ready Test Report</code>.</li>
+  <li>Now your report is ready to edit.</li>
+</ol>
+
+<p class="callout warning"><strong>Warning:</strong> Do not edit the template. Always make a copy of the template and then edit only your copy.</p>
+
+<h3 id="fill-in-the-report-summary">Fill in the report summary</h3>
+<p>After creating a <strong>copy</strong> of the Google Sheets template and renaming it, open the file to get started. Before testing fill in the following information on the Summary tab:</p>
+
+<ol>
+  <li><strong>Theme Name:</strong> the name of the theme found in the Trac ticket or themes directory.</li>
+  <li><strong>Theme URL:</strong> if the theme is published, this is the URL to the theme in the directory. If the theme has not been published, this is not applicable and may be left blank.</li>
+  <li><strong>Theme Version Number:</strong> the number of the version you’re testing.</li>
+  <li><strong>Trac Ticket URL:</strong> the URL to the Trac ticket for the theme and version you’re testing.</li>
+  <li><strong>Theme developer:</strong> WordPress.org username of the developer, formatted with an <code class="language-plaintext highlighter-rouge">@</code> symbol before it (e.g. <code class="language-plaintext highlighter-rouge">@alh0319</code>). Including the <code class="language-plaintext highlighter-rouge">@</code> symbol will ensure they get tagged when you paste in the final report on Trac. This cell supports multiple usernames so long as they each start with an <code class="language-plaintext highlighter-rouge">@</code> and are separated by spaces and/or commas.</li>
+  <li><strong>Tested by:</strong> Your WordPress.org username so you can get credit for the contribution.</li>
+  <li><strong>Test Date:</strong> The current date in YYYY-MM-DD format.</li>
+  <li><strong>Tested on URL:</strong> The URL to your test site, if applicable. This is provided for convenience only and is not expected to be permanent. Leave blank if testing on a local site.</li>
+</ol>
+
+<p class="callout alert"><strong>Alert:</strong> Do not edit any other content on the Summary tab. This content will update dynamically as you change content on the “Full Review” tab.</p>
+
+<p>After filling in the information on the Summary tab, you’re ready to start testing!</p>
 
 
           
@@ -565,7 +585,7 @@ Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues
 
     
     <p class="text-small">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/code/components/dialog.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/testing-themes/setup.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 

@@ -10,7 +10,7 @@
 
 
 
-<title>The dialog modal, WP Accessibility Knowledge Base</title>
+<title>Identifying themes that need to be tested, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-253/assets/css/styles.css">
@@ -486,24 +486,14 @@
 
         
             
-            
-            
-        
-
-    
-
-        
-
-        
-            
 
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/code/components/'>Components</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">The dialog modal</li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/'>Testing for accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/testing-themes/'>Testing WordPress themes</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Identifying themes that need to be tested</li>
     </ol>
 </nav>
 
@@ -512,46 +502,21 @@
 
         <main>
 
-          <h1 id="the-dialog-modal">The dialog modal</h1>
+          <h1 id="identifying-themes-that-need-to-be-tested">Identifying themes that need to be tested</h1>
 
-<p class="callout alert"><strong>Alert:</strong> This content will be reviewed, modernized and restructured.<br />
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/152">GitHub #152 Topic The dialog modal</a>.</p>
+<p>There are two ways to find themes that need an accessibility ready review, depending on if the theme has already been published in the Themes directory or if it is still under review.</p>
 
-<p>A dialog is a window that separates content from the main content of a page. It can ask questions or require user input. When the dialog is active and opened, only the content inside the dialog should be available for interaction. Visually it’s usually overlaid on top of main content.</p>
+<h2 id="new-themes">New Themes</h2>
 
-<p><img src="/pr-preview/pr-253/assets/images/modal-dialog.png" alt="Form inside dialog modal" /></p>
+<p>Themes that are not yet approved by the themes team and that have added the <code class="language-plaintext highlighter-rouge">accessibility-ready</code> tag can be found in the <a href="https://themes.trac.wordpress.org/query?status=!closed&amp;status=!approved&amp;keywords=~accessibility-ready&amp;report=9&amp;order=priority">Themes Trac</a>.</p>
 
-<p>There are two main practices for achieving an accessible modal dialog:</p>
+<p>If you choose to review one of these themes, leave a comment on the thread noting that you are reviewing the theme for accessibility so the assigned reviewer from the Themes Team, the developer, and other people from the Accessibility Team are aware that it is getting reviewed.</p>
 
-<ul>
-  <li>The use of appropriate WAI-ARIA roles, states, and properties markup for dialog helps assistive technology identify the content as grouped and separated from the rest of the page.</li>
-  <li>Providing keyboard interaction and restricting focus within the modal helps keyboard users to navigate the content inside the dialog, and only navigate back to the main content when they’re ready.</li>
-</ul>
+<h2 id="existing-themes">Existing Themes</h2>
 
-<p>Detailed information can be found in the <a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA authoring practices for modals</a>.</p>
+<p>Developers of themes that are already live <a href="https://make.wordpress.org/accessibility/request-an-accessibility-ready-review/">request a review via a form on the accessibility team website</a> (log in required). Form entries and their status are tracked in a Google spreadsheet: <a href="https://docs.google.com/spreadsheets/d/1AGJ4R13Y3VfnhT_qkvRyGd6DwpzZaGC0KZwqwD472fc/edit?usp=sharing">WordPress Theme Accessibility Ready Theme Review Requests.</a></p>
 
-<p>The HTML 5.2 specification will include a native <code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> element which is being implemented by browser vendors. <a href="https://caniuse.com/#feat=dialog">See caniuse.com for up-to-date information on support</a>.</p>
-
-<h2 id="resources">Resources</h2>
-
-<ul>
-  <li><a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA authoring practices for dialog modal</a>.</li>
-  <li><a href="https://yoast.com/dev-blog/the-a11y-monthly-making-modals-accessible/">Making modals accessible</a> by Andrea Fercia</li>
-  <li><a href="https://tink.uk/understanding-screen-reader-interaction-modes/">Understanding screen reader interaction modes</a> by Léonie Watson</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_dialog_role">Using the dialog role</a> (MDN web docs).</li>
-  <li><a href="https://www.marcozehe.de/2015/02/05/advanced-aria-tip-2-accessible-modal-dialogs/">Advanced ARIA Tips for Accessible modal dialogs</a>.</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">Mozilla Developer Network page for the HTML native dialog element</a>.</li>
-</ul>
-
-<h2 id="accessible-modal-dialog-scripts">Accessible modal dialog scripts</h2>
-
-<ul>
-  <li><a href="https://github.com/edenspiekermann/a11y-dialog">A11y dialog script</a> for creating accessible dialog windows.</li>
-  <li><a href="https://github.com/svinkle/launchy">Launchy</a> is another script for accessible modal dialog.</li>
-  <li><a href="https://github.com/davidtheclark/react-aria-modal">Accessible and flexible React modal dialog</a>.</li>
-  <li><a href="https://www.w3.org/TR/wai-aria-practices/examples/dialog-modal/dialog.html">W3C Modal Dialog Example</a></li>
-</ul>
-
+<p>If you choose to review one of these themes, change the <strong>Status</strong> column for the theme to <code class="language-plaintext highlighter-rouge">Reviewing</code> and add your WordPress.org username in the <strong>Assigned To Username</strong> column.</p>
 
 
           
@@ -565,7 +530,7 @@ Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues
 
     
     <p class="text-small">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/code/components/dialog.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/testing-themes/identifying-themes.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
