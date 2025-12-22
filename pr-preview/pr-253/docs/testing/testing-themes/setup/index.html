@@ -522,14 +522,14 @@
 
 <p class="callout alert"><strong>Notice</strong>: We are aware of some missing focus indicators and other accessibility issues with InstaWP’s launcher. These issues will be reported to them for remediation. If you are unable to create a test site due to accessibility issues tag Amber (<code class="language-plaintext highlighter-rouge">@alh0319</code>) in #accessibility in Make WordPress Slack, and she will create a site for you.</p>
 
-<p>Here’s how to create a site you can test on from our template:</p>
+<p>Here’s how to create a testing site from our template:</p>
 
 <ol>
   <li>Go to the <a href="https://app.instawp.io/launch?s=wp-accessibility-ready-test-sites&amp;d=v2">WordPress Accessibility-ready Test Sites launcher on InstaWP.</a></li>
-  <li>Click the launch demo button.</li>
+  <li>Click the “launch demo” button.</li>
   <li>Enter your email address in the email field.</li>
   <li>Check the box acknowledging the privacy notice.</li>
-  <li>Click the proceed button.</li>
+  <li>Click the “proceed” button.</li>
 </ol>
 
 <p>The website should be created in a matter of minutes and you will be automatically logged into the site.</p>
@@ -540,7 +540,79 @@
 
 <h3 id="install-activate-and-configure-the-theme">Install, activate, and configure the theme</h3>
 
-<p class="callout alert">Amber will finish this on Monday.</p>
+<p>After creating the site, you need to install and setup the theme for testing. Here are the steps to make sure you’re ready to test:</p>
+
+<h4 id="installing-and-activating-the-theme">Installing and activating the theme</h4>
+
+<ol>
+  <li>Determine if you’re testing a new theme or existing theme. (<a href="/pr-preview/pr-253/docs/testing/testing-themes/identifying-themes/">See Identifying themes that need to be tested</a>)</li>
+  <li>Install the theme in the testing site following these instructions:
+    <ol>
+      <li>If the theme is a new theme:
+        <ol>
+          <li>Go to the Trac ticket for the theme.</li>
+          <li>Download the latest zip file for the theme from the Trac ticket. There will be a zip file linked in the ticket, but check all comments to make sure a new zip file has not been provided.</li>
+          <li>In WP-admin, go to Appearance &gt; Themes.</li>
+          <li>Click the “Add theme” link (visually styled as a button).</li>
+          <li>Click the “Upload Theme” button.</li>
+          <li>Upload your theme and click the “Install Now” button.</li>
+        </ol>
+      </li>
+      <li>If the theme is already approved:
+        <ol>
+          <li>In WP-admin, go to Appearance &gt; Themes.</li>
+          <li>Click the “Add theme” link (visually styled as a button).</li>
+          <li>Search for the theme by name.</li>
+          <li>Once you have found the theme, click the “Install” link (visually styled as a button). on the theme tile.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>After installing the theme, click the “Activate” link (visually styled as a button) to activate it.</li>
+</ol>
+
+<h4 id="configuring-the-theme">Configuring the theme</h4>
+
+<p>Once the theme is active, you need to configure the theme content for testing. The following steps assume you’re starting with our InstaWP template content, in which case the setup work should be minimal.</p>
+
+<p>After activating the theme, do the following:</p>
+
+<ol>
+  <li>If prompted to install “required” plugins, install and activate those plugins.</li>
+  <li>If prompted to import demo content, import the content. Important: Add demo content to the existing content rather than overwriting it.</li>
+  <li>Set up the menus:
+    <ol>
+      <li>Set the primary menu in the header to the menu named “Primary”.</li>
+      <li>If a “mobile” menu exists, also assign the Primary menu to this menu area.</li>
+      <li>If a footer or other menu area exists, assign the “Social menu” or “All Pages Flat” menu to these areas.</li>
+    </ol>
+  </li>
+  <li>Set up the Block Patterns page:
+    <ol>
+      <li>Go to the Block Patterns page (<code class="language-plaintext highlighter-rouge">/accessibility-ready-test-pages/block-patterns/</code>).</li>
+      <li>Edit the Block Patterns page.</li>
+      <li>In the editing screen, click the Block inserter (+) in the top-left corner.</li>
+      <li>Click the Patterns tab.</li>
+      <li>Insert all available patterns into the page. Do not change any content or settings for the patterns.</li>
+      <li>Save the page.</li>
+    </ol>
+  </li>
+  <li>Configure any other available settings.
+    <ol>
+      <li>If the theme supports the Customizer, open the Customizer and check for theme settings that need to be configured.</li>
+      <li>Check for a theme settings page and enable settings there as needed.</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Examples of other settings you may need to enable in the theme Customizer or settings pages include:</p>
+<ul>
+  <li>Show search in header</li>
+  <li>Add related posts below content on post single.</li>
+  <li>Adding URLs to fields for social media profiles.</li>
+</ul>
+
+<p>Note: Each theme is different so the exact configuration process will vary by theme. Use these steps to guide you, however you may need to do something different if prompted by the theme. Ultimately the goal is to configure the theme in a way that is representative of how a typical website owner might configure it and to cover as many of the possible settings as is reasonably possible.</p>
 
 <h2 id="creating-the-report">Creating the report</h2>
 
