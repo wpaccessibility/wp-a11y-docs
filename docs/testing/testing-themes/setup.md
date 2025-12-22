@@ -23,6 +23,10 @@ Our InstaWP template has demo content including pages, posts, media, and navigat
 Additionally, specific pages and URLs from this site are referenced in the report template. For this reason, we recommend starting with an InstaWP testing site. If you prefer to test elsewhere, you can export the InstaWP content and import it into a different site using the [WordPress Importer plugin.](https://wordpress.org/plugins/wordpress-importer/)
 
 ### How to create your site
+
+{: .callout .alert }
+**Notice**: We are aware of some missing focus indicators and other accessibility issues with InstaWP's launcher. These issues will be reported to them for remediation. If you are unable to create a test site due to accessibility issues tag Amber (`@alh0319`) in #accessibility in Make WordPress Slack, and she will create a site for you.
+
 Here's how to create a site you can test on from our template:
 
 1. Go to the [WordPress Accessibility-ready Test Sites launcher on InstaWP.](https://app.instawp.io/launch?s=wp-accessibility-ready-test-sites&d=v2)
