@@ -1,7 +1,7 @@
 ---
 title: Keyboard navigation support
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: The requirements for keyboard navigation in accessibility-ready themes
 nav_order: 3
 ---

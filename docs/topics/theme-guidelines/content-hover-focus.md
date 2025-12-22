@@ -1,7 +1,7 @@
 ---
 title: Content on hover or focus is accessible
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: How to handle content revealed on hover or focus in accessibility-ready themes
 nav_order: 15
 ---

@@ -1,43 +1,18 @@
 ---
-title: Theme Accessibility Guidelines
+title: Theme accessibility guidelines
 layout: default
 parent: Standards and best practice
 description: Learn about the guidelines for the accessibility-ready tag on WordPress.org
 nav_order: 9
 ---
 
-# The Accessibility-Ready Requirements
+# Theme accessibility guidelines
 
-## Skip to Content Link
+Theme developers may request an optional accessibility review as part of the theme review process or later for an existing theme.  Submitted themes (or theme updates) that pass a manual review are approved to use the `accessibility-ready` tag and show up in the theme directory as accessibility-ready.
 
-## Meaningful Landmark Roles and Names
+This section outlines the requirements for the `accessibility-ready` tag with testing instructions for each requirement.
 
-## Keyboard Navigation Support
+For additional information about the accessibility ready testing process, see:
 
-## Controls with Accessible Names, Roles, and States
-
-## Labelled Form Fields
-
-## Headings with Meaningful Structure
-
-## Underlined Links in Text
-
-## No Ambiguous Link Text
-
-## Sufficient Color Contrast of Text and UI Controls
-
-## Alternative Text on Images and Graphics
-
-## Accessible Audio, Video, and Animations
-
-## Support for Reflow, Resize, and Text Spacing Changes
-
-## No Unexpected Changes of Context
-
-## No Links Opening New Windows or Tabs Without Warning
-
-## Content on Hover or Focus is Accessible
-
-## Accessibility Statement
-
-## Screen Reader Text Supported
+* [Theme developer handbook: Accessibility](https://make.wordpress.org/themes/handbook/review/accessibility/)
+* [Accessibility-ready testing process]({{site.baseurl}}/docs/testing/testing-themes/)

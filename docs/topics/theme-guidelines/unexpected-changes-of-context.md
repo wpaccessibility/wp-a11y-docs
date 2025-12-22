@@ -1,7 +1,7 @@
 ---
 title: No unexpected changes of context
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: Requirements for changes of context in accessibility-ready themes
 nav_order: 13
 ---

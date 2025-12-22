@@ -1,7 +1,7 @@
 ---
 title: Support for reflow, resize, and text spacing changes
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: Requirements for handling reflow, resize, and text spacing in accessibility-ready themes
 nav_order: 12
 ---

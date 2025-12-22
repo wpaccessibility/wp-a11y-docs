@@ -1,7 +1,7 @@
 ---
 title: Meaningful landmark roles and names
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: Accessibility-ready themes requirements for meaningful landmark roles and names
 nav_order: 2
 ---

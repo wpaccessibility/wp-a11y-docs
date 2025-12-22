@@ -1,7 +1,7 @@
 ---
 title: Skip to Content Link
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: The requirements for a Skip to Content link on accessibility-ready themes.
 nav_order: 1
 ---

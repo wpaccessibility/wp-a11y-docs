@@ -1,7 +1,7 @@
 ---
 title: Underlined links in text
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: Accessibility-ready theme requirements for how to indicate links in text
 nav_order: 7
 ---

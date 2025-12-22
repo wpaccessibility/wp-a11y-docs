@@ -1,7 +1,7 @@
 ---
 title: Accessible audio, video, and animations
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: Support for audio, video, and animations in accessibility-ready themes
 nav_order: 11
 ---

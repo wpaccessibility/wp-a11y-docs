@@ -1,7 +1,7 @@
 ---
 title: Screen reader text supported
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: How screen reader text must be supported on an accessibility-ready theme
 nav_order: 17
 ---

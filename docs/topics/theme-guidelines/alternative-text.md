@@ -1,7 +1,7 @@
 ---
 title: Alternative text on images and graphics
 layout: default
-parent: Theme Accessibility Guidelines
+parent: Theme accessibility guidelines
 description: Use of alternative text requirements for accessibility-ready themes
 nav_order: 10
 ---
