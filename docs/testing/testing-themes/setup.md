@@ -25,7 +25,7 @@ Additionally, specific pages and URLs from this site are referenced in the repor
 ### How to create your site
 
 {: .callout .alert }
-**Notice**: We are aware of some missing focus indicators and other accessibility issues with InstaWP's launcher. These issues will be reported to them for remediation. If you are unable to create a test site due to accessibility issues tag Amber (`@alh0319`) in #accessibility in Make WordPress Slack, and she will create a site for you.
+**Notice**: We are aware of some missing focus indicators and other accessibility issues with InstaWP's launcher. These issues will be reported to them for remediation. If you are unable to create a test site due to accessibility issues tag Amber Hinds and Joe Dolson (`@alh0319 @joedolson`) in #accessibility in Make WordPress Slack, and one of them will create a site for you.
 
 Here's how to create a testing site from our template:
 
@@ -49,9 +49,9 @@ After creating the site, you need to install and setup the theme for testing. He
 
 1. Determine if you're testing a new theme or existing theme. ([See Identifying themes that need to be tested]({{site.baseurl}}/docs/testing/testing-themes/identifying-themes/)) 
 2. Install the theme in the testing site following these instructions:
-    1. If the theme is a new theme:
+    1. If the theme is a new theme or an existing theme with an unreleased new version:
         1. Go to the Trac ticket for the theme.
-        2. Download the latest zip file for the theme from the Trac ticket. There will be a zip file linked in the ticket, but check all comments to make sure a new zip file has not been provided.
+        2. Download the latest zip file for the theme from the Trac ticket. There will be a zip file linked in the ticket, but check all comments to make sure a newer zip file has not been provided.
         3. In WP-admin, go to Appearance \> Themes.
         4. Click the "Add theme" link (visually styled as a button).
         5. Click the "Upload Theme" button.
@@ -87,7 +87,8 @@ After activating the theme, do the following:
     2. Check for a theme settings page and enable settings there as needed. 
 
 Examples of other settings you may need to enable in the theme Customizer or settings pages include:
-* Show search in header
+* Show search in header.
+* Enable comments.
 * Add related posts below content on post single.
 * Adding URLs to fields for social media profiles.
 
