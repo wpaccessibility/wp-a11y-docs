@@ -29,5 +29,7 @@ Themes should either:
 3. Conduct all accessibility-ready tests with the "recommended" or "required" plugins active.
 4. If accessibility problems are identified related to the plugins, this is considered a failure.
 
-{: .callout .alert }
-**Note:** When evaluating accessibility, responsibility for the issue is not relevant to the review outcome. Testers are not required to determine whether an accessibility problem originates in the theme or in a third-party plugin. If an accessibility barrier is present, it should be reported. It is then up to the theme developer to determine whether the issue can be addressed within the theme, needs to be reported upstream, or requires removing the plugin recommendation altogether.
+
+**Note:** When evaluating accessibility, responsibility for the issue is not relevant to the review outcome. Testers are not required to determine whether an accessibility problem originates in the theme or in a plugin recommended by the theme. 
+
+If an accessibility barrier is present, it should be reported. It is then up to the theme developer to determine whether the issue can be addressed within the theme, needs to be reported upstream, or requires removing the plugin recommendation altogether.
