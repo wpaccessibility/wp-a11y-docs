@@ -10,7 +10,7 @@
 
 
 
-<title>Home, WP Accessibility Knowledge Base</title>
+<title>Testing workflow tips, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-253/assets/css/styles.css">
@@ -466,26 +466,119 @@
     <div class="main-content-wrap">
 
       
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/'>Testing for accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/testing-themes/'>Testing WordPress themes</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Testing workflow tips</li>
+    </ol>
+</nav>
+
+      
       <div id="main-content" class="main-content">
 
         <main>
 
-          <h1 id="wp-accessibility-knowledge-base">WP Accessibility Knowledge Base</h1>
+          <h1 id="testing-workflow-tips">Testing workflow tips</h1>
 
-<p class="lead">Documentation about accessibility for WordPress users and creators. For the community, by the community.</p>
+<p>Once you have <a href="/pr-preview/pr-253/docs/testing/testing-themes/setup/">set up your test site and reporting document</a>, you can begin the theme testing process. The guidance below focuses on how to test efficiently and report issues quickly.</p>
 
-<hr />
+<h2 id="consider-your-browser-window-layout">Consider your browser window layout</h2>
 
-<p class="callout alert"><strong>Please note</strong>: This documentation is a work in progress.<br />
-The content is not finished yet and the website needs an accessibility audit.</p>
+<p>A consistent desktop and browser setup will significantly reduce context switching and reporting time. Figure out how you can position browser windows so you can see multiple things at a time and reduce clicks.</p>
 
-<p>This documentation aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation?</p>
+<p><strong>Suggested setup:</strong></p>
+<ul>
+  <li>Keep your reporting spreadsheet open in a browser window wide enough to show all columns without scrolling.</li>
+  <li>Open the <a href="/pr-preview/pr-253/docs/topics/theme-guidelines/">theme accessibility guidelines</a> in a separate browser window so you can reference instructions as needed while you work. This can be very narrow if you’re working on one monitor with limited space.</li>
+  <li>Open all pages you need to test in separate tabs so you can quickly switch between them without needing to navigate back and forth. Open these pages in the <strong>same order they appear in the reporting sheet</strong>. This alignment makes it much easier to record results accurately.</li>
+</ul>
 
-<p>We’ll provide documentation, effective examples (both what to do and what to avoid) and more reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples.</p>
+<h2 id="choosing-a-testing-approach-that-works-best-for-you">Choosing a testing approach that works best for you</h2>
 
-<p>Did we miss a topic? Did you find an error or have a great idea? Please <a href="https://wpaccessibility.org/docs/contact/">share your thoughts</a>.</p>
+<p>There is no single “correct” way to move through Accessibility Ready testing. Testers generally fall into one of two workflows: testing an entire page at once, or testing a single check across all required pages first. Understanding the pros and cons of each approach can help you choose the method that best matches your experience level, focus style, and available time.</p>
 
-<p>We would like to <a href="/docs/contribute/">invite you to contribute</a> to this documentation. Let’s make the web for everyone.</p>
+<h3 id="testing-a-whole-page-at-once">Testing a whole page at once</h3>
+
+<p>In this approach, you load one page (for example, the front page) and test all applicable accessibility requirements before moving on to the next page.</p>
+
+<p>This approach is recommended if you prefer linear, page-based workflows. It mirrors the typical accessibility auditing process and is helpful if you expect to identify many failures (perhaps because you saw some while configuring the theme), and want the fastest understanding of status to report back to the theme developer.</p>
+
+<p>On the other hand, this approach may make testing and reporting slower because it requires more switching between tools and techniques than if you test a single check across all pages.</p>
+
+<h3 id="testing-a-single-check-across-all-pages-first">Testing a single check across all pages first</h3>
+
+<p>In this approach, you choose one requirement (such as skip links or landmarks) and test it across every required page before moving on to the next requirement.</p>
+
+<p>This approach reduces context and tool switching. It may make identifying global issues and repeated patterns easier and can speed up reporting if you identify a global issue and drag the statuses across columns in the Google Sheet.</p>
+
+<p>The downside to this approach is that you may have fewer unique issues to note for the theme developer if you stop testing early based on a large numbers of failures.</p>
+
+<h3 id="choosing-the-right-approach-for-you">Choosing the right approach for you</h3>
+
+<p>Many experienced testers use a <strong>hybrid approach</strong>, starting with single-check testing to identify major blockers, then switching to page-based testing for more detailed reviews.</p>
+
+<p>If you are:</p>
+<ul>
+  <li><strong>New to Accessibility Ready testing</strong>: testing one check at a time across all pages may feel less overwhelming and help you gain confidence in testing.</li>
+  <li><strong>Seeing early, obvious failures</strong>: testing multiple checks on a single page (like the home page) gives you a better understanding of what needs to be fixed when you report back to the theme developer.</li>
+</ul>
+
+<p>Whichever approach you choose, consistency in your process matters more than the order in which you test. One you get started you’ll build a rhythm and each accessibility ready review will get easier as you go.</p>
+
+<h2 id="use-spreadsheet-features-to-save-time">Use spreadsheet features to save time</h2>
+
+<p>The reporting sheet is designed to support efficient workflows:</p>
+<ul>
+  <li>Drag statuses across cells when the same result applies to multiple pages</li>
+  <li>Mark checks that only need to be tested once (such as theme support declarations) or are irrelevant using the “Not Applicable” status.</li>
+</ul>
+
+<h2 id="stop-testing-when-the-outcome-is-clear">Stop testing when the outcome is clear</h2>
+
+<p>If you quickly identify multiple failures such as:</p>
+<ul>
+  <li>Missing skip links</li>
+  <li>Broken keyboard navigation</li>
+  <li>Color contrast failures</li>
+  <li>Empty buttons or links</li>
+  <li>Problems easily identified with a browser extension</li>
+</ul>
+
+<p><strong>You may stop testing early.</strong></p>
+
+<p>We appreciate your time as a volunteer tester. We don’t expect you to spend hours testing a theme and reporting in detail failures on every row. It’s ok to document representative issues, stop testing, and share the already identified failures with the theme developer, requesting fixes before you continue testing.</p>
+
+<p>Go with your gut. If you suspect the developer has not read the documentation, you can kindly ask them to review the requirements and self-test their theme before passing it back for re-review.</p>
 
 
 
@@ -500,7 +593,7 @@ The content is not finished yet and the website needs an accessibility audit.</p
 
     
     <p class="text-small">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/index.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/testing-themes/theme-testing-workflow.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 

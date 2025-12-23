@@ -10,7 +10,7 @@
 
 
 
-<title>Home, WP Accessibility Knowledge Base</title>
+<title>Reporting sheet overview, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-253/assets/css/styles.css">
@@ -466,27 +466,234 @@
     <div class="main-content-wrap">
 
       
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/'>Testing for accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/testing/testing-themes/'>Testing WordPress themes</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Reporting sheet overview</li>
+    </ol>
+</nav>
+
+      
       <div id="main-content" class="main-content">
 
         <main>
 
-          <h1 id="wp-accessibility-knowledge-base">WP Accessibility Knowledge Base</h1>
+          <h1 id="reporting-sheet-overview">Reporting sheet overview</h1>
 
-<p class="lead">Documentation about accessibility for WordPress users and creators. For the community, by the community.</p>
+<p>As described in <em><a href="/pr-preview/pr-253/docs/testing/testing-themes/setup/">Getting set up to test</a></em>, accessibility ready reports are generated using a Google Sheets template. This ensures that all reports are consistent between testers and helps guide the testing process so nothing is missed. The reporting sheet has three tabs which are described in detail below.</p>
 
-<hr />
+<p><a href="https://docs.google.com/spreadsheets/d/1sIHAPwwQIoJVj1ODg2FX2L_wf_CLNMLekQ2D-MvWGq4/edit?usp=sharing">View the Accessibility Ready Test Report Template</a></p>
 
-<p class="callout alert"><strong>Please note</strong>: This documentation is a work in progress.<br />
-The content is not finished yet and the website needs an accessibility audit.</p>
+<h2 id="summary-tab">Summary tab</h2>
+<p>The summary tab provides a high-level overview of the accessibility review. Most fields on this tab are populated automatically based on results entered in the “Full Review” tab.</p>
 
-<p>This documentation aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation?</p>
+<p>This tab is intended to:</p>
 
-<p>We’ll provide documentation, effective examples (both what to do and what to avoid) and more reliable, up-to-date resources. Additionally, we are developing a pattern library with code examples.</p>
+<ul>
+  <li>Identify the theme and testing context.</li>
+  <li>Summarize pass/fail outcomes for each Accessibility Ready requirement.</li>
+  <li>Communicate whether testing was completed or stopped early.</li>
+  <li>Clearly outline next steps for the theme developer.</li>
+</ul>
 
-<p>Did we miss a topic? Did you find an error or have a great idea? Please <a href="https://wpaccessibility.org/docs/contact/">share your thoughts</a>.</p>
+<h3 id="theme-test-metadata-section">Theme test metadata section</h3>
 
-<p>We would like to <a href="/docs/contribute/">invite you to contribute</a> to this documentation. Let’s make the web for everyone.</p>
+<p>The top section captures identifying information for the review, when it was completed and who by. This information is filled in during the test setup process and is described in greater detail in <a href="/pr-preview/pr-253/docs/testing/testing-themes/setup/">setup documentation</a>.</p>
 
+<h3 id="status-explanation-section">Status explanation section</h3>
+
+<p>A reference cell explains the meaning of each status used throughout the report:</p>
+<ul>
+  <li><strong>Pass:</strong> All relevant aspects of the theme fully meet the requirements.</li>
+  <li><strong>Fail:</strong> At least one aspect of the theme does not meet the requirement.</li>
+  <li><strong>Not Applicable:</strong> This requirement does not apply to the page.</li>
+  <li><strong>Not Evaluated/Test Incomplete:</strong> This requirement has not yet been tested. Completed reports should not have this status.</li>
+</ul>
+
+<p>If a requirement fails, testers are expected to add explanatory notes describing what fails and why.</p>
+
+<h3 id="requirements-summary-table">Requirements summary table</h3>
+
+<p>This table lists all Accessibility Ready requirements and provides a snapshot of their testing status. Columns in the table are:</p>
+
+<ul>
+  <li>Requirement: The name of the accessibility requirement (linked to detailed testing instructions on this site).</li>
+  <li>Status: One of Pass, Fail, Not Applicable, or Test Incomplete, which is automatically assigned based on data entered in the “Full Review” tab.</li>
+  <li>Notes: Brief explanations for failures or relevant clarifications, which are added in list format from relevant notes fields on the “Full Review” tab.</li>
+</ul>
+
+<p>At the start of testing, requirements are marked Test Incomplete. As testing progresses, statuses and notes will update automatically.</p>
+
+<p>If testing is stopped early due to significant failures, remaining items may remain incomplete until the theme developer fixes issues and another review is started.</p>
+
+<h3 id="next-steps-section">Next steps section</h3>
+<p>The next steps section is automatically populated with relevant information based upon if the statuses are all “Pass” or if there are failures present.</p>
+
+<h3 id="tester-responsibilities-for-the-summary-tab">Tester responsibilities for the summary tab</h3>
+
+<p>Testers should:</p>
+
+<ul>
+  <li>Ensure identifying information is accurate.</li>
+  <li>Verify that statuses align with test results entered on the “Full Review” tab.</li>
+  <li>Confirm that reviews for approved themes contain no “Not Evaluated” statuses.</li>
+</ul>
+
+<p>This tab serves as the official summary record of the Accessibility Ready review and is used to generate the report on the “Markdown for Trac” tab.</p>
+
+<h2 id="full-review-tab">Full review tab</h2>
+<p>The Full Review tab is the primary workspace for conducting and documenting Accessibility Ready testing. All accessibility checks are performed and recorded on this tab. Results entered here automatically populate the Summary tab and form the basis of the final review outcome.</p>
+
+<p>This tab is designed to support systematic, page-by-page testing across required templates while keeping results consistent, repeatable, and auditable.</p>
+
+<p>The Full Review tab enables testers to:</p>
+
+<ul>
+  <li>Evaluate each Accessibility Ready requirement in detail.</li>
+  <li>Record pass/fail outcomes using standardized statuses and all required page templates.</li>
+  <li>Add concise notes explaining failures or relevant findings.</li>
+  <li>Identify patterns of failure that may justify stopping testing early.</li>
+</ul>
+
+<p>All accessibility-ready approval decisions should be based on evidence recorded in this tab.</p>
+
+<h3 id="table-structure">Table structure</h3>
+
+<p>The Full Review tab consists of a series of tables for each accessibility-ready requirement.</p>
+
+<h4 id="columns-pages-and-templates">Columns (pages and templates)</h4>
+
+<p>Column A in the sheet lists the tests for each accessibility-ready requirement. Each requirement is broken into specific, testable assertions (a “check”) that will result in a clear “pass” or “fail” result. The checks in each group are identical to the numbered steps in accessibility-ready requirement testing documentation.</p>
+
+<p>There are eight (8) additional columns, each of which represents a required page or template that must be tested:</p>
+
+<ul>
+  <li>Front Page</li>
+  <li>Blog Page - <code class="language-plaintext highlighter-rouge">/blog/</code></li>
+  <li>Post with Comments - <code class="language-plaintext highlighter-rouge">/template-comments/</code></li>
+  <li>Category Archive - <code class="language-plaintext highlighter-rouge">/category/block/</code></li>
+  <li>Page Markup and Formatting - <code class="language-plaintext highlighter-rouge">/accessibility-ready-test-pages/page-markup-and-formatting/</code></li>
+  <li>Block Patterns - <code class="language-plaintext highlighter-rouge">/accessibility-ready-test-pages/block-patterns/</code></li>
+  <li>Search Results Page - <code class="language-plaintext highlighter-rouge">/?s=block</code></li>
+  <li>404 Page</li>
+</ul>
+
+<p>The slugs/page paths for these templates are provided in row 1 to make it easier to find these pages for testing. These slugs/paths map to content in the testing sites.</p>
+
+<h4 id="rows-results">Rows (results)</h4>
+
+<p>Each cell contains a dropdown with the following status options:</p>
+
+<ul>
+  <li>Pass – The check passes on that page with no exceptions.</li>
+  <li>Fail – At least one instance fails on that page.</li>
+  <li>Not Applicable – The check does not apply to that page or template.</li>
+  <li>Not Evaluated – Testing has not yet been performed.</li>
+</ul>
+
+<p>A single failure on a page is sufficient to mark a check as Fail.</p>
+
+<h4 id="notes-rows">Notes rows</h4>
+
+<p>Each requirement group includes a Notes row spanning all columns. Use Notes to:</p>
+
+<ul>
+  <li>Briefly describe what failed and why.</li>
+  <li>Identify repeated or global issues.</li>
+  <li>Provide clarifying context when needed</li>
+</ul>
+
+<p>All notes across a row will be automatically combined into a single notes cell on the summary tab. For this reason, when adding notes, it is important to avoid duplicating identical notes and only document global issues once.</p>
+
+<h3 id="tester-responsibilities-for-the-full-review-tab">Tester responsibilities for the full review tab</h3>
+
+<p>When entering information in the full review tab, testers should:</p>
+
+<ul>
+  <li>Apply statuses consistently and accurately.</li>
+  <li>Provide concise but detailed notes with enough information for theme developer to understand what elements they need to fix to pass and failed checks. It can be helpful to use IDs or classes when describing problematic elements to they are easy for the developer to located.</li>
+  <li>Ensuring the recorded results are sufficient to support the review outcome.</li>
+</ul>
+
+<h2 id="markdown-for-trac-tab">Markdown for Trac tab</h2>
+
+<p>The Markdown for Trac tab provides a preformatted, copy-and-paste–ready report for posting Accessibility Ready test results directly to the theme’s WordPress.org Trac ticket.</p>
+
+<p>This tab is automatically generated from data entered on the Summary tab using a <code class="language-plaintext highlighter-rouge">concatenate</code> formula. Testers can not manually edit the Markdown content itself with in the sheet but can do so after pasting the cell contents into a Trac comment.</p>
+
+<h3 id="purpose-of-the-markdown-for-trac-tab">Purpose of the markdown for Trac tab</h3>
+
+<p>This tab exists to:</p>
+
+<ul>
+  <li>Standardize how Accessibility Ready results are communicated in Trac.</li>
+  <li>Reduce manual formatting work for testers.</li>
+  <li>Ensure consistency, clarity, and completeness across all reports</li>
+  <li>Provide developers with a readable, scannable summary of results that includes links to both the full Google sheet and also documentation for each accessibility ready requirement on this website.</li>
+</ul>
+
+<h3 id="structure-of-the-generated-markdown">Structure of the generated markdown</h3>
+
+<p>The output on this tab is intentionally formatted to work with Trac’s Markdown-like syntax, and includes the correct heading levels when pasted into a Trac comment, which starts with an H3 heading.</p>
+
+<p>In order for the report to fully function, the following fields must be completed:</p>
+
+<ul>
+  <li>Theme developer username (starting with an <code class="language-plaintext highlighter-rouge">@</code> symbol) on the Summary tab, cell B5.</li>
+  <li>Sharing URL, cell C1, on the Markdown for Trac tab.</li>
+</ul>
+
+<p>This report documents the results of the Accessibility Ready review and summarizes pass, fail, and incomplete findings for each requirement, with notes and links to relevant documentation. It includes a direct link to the full Google Sheets report and recommended next steps.</p>
+
+<h3 id="sharing-workflow">Sharing workflow</h3>
+
+<p>To share the results of your review, follow the steps outlined at the top of the tab:</p>
+
+<ol>
+  <li>Find the sharing link to the Google Sheet.
+    <ol>
+      <li>Click Quick Sharing Actions (upper-right corner of Google Sheets).</li>
+      <li>Copy the shareable link to the spreadsheet.</li>
+    </ol>
+  </li>
+  <li>Paste the URL into cell C1 (“Sharing URL”).</li>
+  <li>Click on cell A2, which holds the generated report, and copy it to your clipboard.</li>
+  <li>Log into WordPress.org.</li>
+  <li>Open the theme’s Trac ticket.</li>
+  <li>Paste the report into a new comment on the Trac ticket.</li>
+</ol>
+
+<p>No additional formatting is required, however you are welcome to modify the introduction and next steps as needed.</p>
 
 
           
@@ -500,7 +707,7 @@ The content is not finished yet and the website needs an accessibility audit.</p
 
     
     <p class="text-small">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/index.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/testing-themes/reporting-sheet.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
