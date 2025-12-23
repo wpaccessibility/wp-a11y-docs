@@ -10,7 +10,7 @@
 
 
 
-<title>Images as links, WP Accessibility Knowledge Base</title>
+<title>Must not recommend or require inaccessible plugins, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-253/assets/css/styles.css">
@@ -488,16 +488,6 @@
 
         
             
-            
-            
-        
-
-    
-
-        
-
-        
-            
 
 
 
@@ -505,7 +495,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/content/'>Content and images</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/content/links/'>Links</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Images as links</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-253/docs/topics/theme-guidelines/'>Theme accessibility guidelines</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Must not recommend or require inaccessible plugins</li>
     </ol>
 </nav>
 
@@ -514,22 +504,34 @@
 
         <main>
 
-          <h1 id="images-as-links">Images as links</h1>
+          <h1 id="must-not-recommend-or-require-inaccessible-plugins">Must not recommend or require inaccessible plugins</h1>
 
-<p class="callout alert">This content will be reviewed, restructured and expanded.
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/117">GitHub #117 Topic Images as links</a>.</p>
+<h2 id="basic-principle">Basic principle</h2>
 
-<p>For linked images, the <code class="language-plaintext highlighter-rouge">alt</code> attribute (the alternative text) will be the link text.</p>
+<p>Accessibility Ready themes must not recommend, promote, bundle, or require plugins that introduce known accessibility barriers as part of the theme’s setup process or ongoing use within the WordPress admin.</p>
 
-<ul>
-  <li>If the alt attribute describes the image: the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.</li>
-  <li>If there is no alt attribute: the link text will be the image file name.</li>
-  <li>If there is an Empty alt attribute: the link will have no link text and will be announced as “link”.</li>
-</ul>
+<p>Themes play a significant role in shaping how site owners build and extend their websites. When a theme directs users toward inaccessible plugins — whether through onboarding screens, admin notices, documentation, or demo imports — it undermines the goal of providing an accessible foundation and can result in inaccessible websites even when the theme itself meets accessibility requirements.</p>
 
-<p>So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”.</p>
+<p>Accessibility Ready themes should guide users toward accessible choices by default, not place accessibility barriers directly in their recommended setup paths.</p>
 
-<p>It is not necessary to ever use the word ‘link’ in your alt text; that will already be announced by the screen reader.</p>
+<p>Themes should either:</p>
+<ol>
+  <li>Not recommend plugins at all or,</li>
+  <li>If recommending plugins, only recommend plugins that similarly pass accessibility-ready requirements.</li>
+</ol>
+
+<h2 id="testing">Testing</h2>
+
+<p><strong>Tools:</strong> browser</p>
+
+<ol>
+  <li>Look for admin banners or notices recommending or requiring plugins after activating the theme.</li>
+  <li>If prompted to install “recommended” or “required” plugins, install and activate those plugins.</li>
+  <li>Conduct all accessibility-ready tests with the “recommended” or “required” plugins active.</li>
+  <li>If accessibility problems are identified related to the plugins, this is considered a failure.</li>
+</ol>
+
+<p class="callout alert"><strong>Note:</strong> When evaluating accessibility, responsibility for the issue is not relevant to the review outcome. Testers are not required to determine whether an accessibility problem originates in the theme or in a third-party plugin. If an accessibility barrier is present, it should be reported. It is then up to the theme developer to determine whether the issue can be addressed within the theme, needs to be reported upstream, or requires removing the plugin recommendation altogether.</p>
 
 
           
@@ -543,7 +545,7 @@ Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues
 
     
     <p class="text-small">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/content/links/link-image.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/theme-guidelines/no-inaccessible-plugins.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
