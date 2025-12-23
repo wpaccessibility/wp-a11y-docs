@@ -25,7 +25,7 @@ Additionally, specific pages and URLs from this site are referenced in the repor
 ### How to create your site
 
 {: .callout .alert }
-**Notice**: We are aware of some missing focus indicators and other accessibility issues with InstaWP's launcher. These issues will be reported to them for remediation. If you are unable to create a test site due to accessibility issues tag Amber Hinds and Joe Dolson (`@alh0319 @joedolson`) in #accessibility in Make WordPress Slack, and one of them will create a site for you.
+**Notice**: We are aware of some missing focus indicators and other accessibility issues with InstaWP's launcher. These issues will be reported to them for remediation. If you are unable to create a test site due to accessibility issues, tag Amber Hinds and Joe Dolson (`@alh0319 @joedolson`) in #accessibility in Make WordPress Slack, and one of them will create a site for you.
 
 Here's how to create a testing site from our template:
 
@@ -60,7 +60,7 @@ After creating the site, you need to install and setup the theme for testing. He
         1. In WP-admin, go to Appearance \> Themes.
         2. Click the "Add theme" link (visually styled as a button).
         3. Search for the theme by name.
-        4. Once you have found the theme, click the "Install" link (visually styled as a button). on the theme tile.
+        4. Once you have found the theme, click the "Install" link (visually styled as a button) on the theme tile.
 3. After installing the theme, click the "Activate" link (visually styled as a button) to activate it.
 
 #### Configuring the theme
