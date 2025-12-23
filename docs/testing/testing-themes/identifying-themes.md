@@ -8,7 +8,7 @@ nav_order: 1
 
 # Identifying themes that need to be tested
 
-There are two ways to find themes that need an accessibility ready review, depending on if the theme has already been published in the Themes directory or if it is still under review.
+There are two ways to find themes that need an accessibility ready review. How you find them varies based on if the theme has already been published in the Themes directory or if it is still under review.
 
 ## New Themes
 
