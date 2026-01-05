@@ -526,7 +526,7 @@ When you put care into preventing errors and clearly indicating when something g
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>has_video: true
 </code></pre></div></div>
 
-<p>This loads the CSS and Javascript for the Able media player. 
+<p>This loads the CSS and Javascript for the Able media player.
 Please read the <a href="https://ableplayer.github.io/ableplayer/">Able Player documentation</a> for information on all available settings and how to add caption and subtitle tracks.</p>
 
 <p>Add the video itself in the page with:</p>
@@ -535,14 +535,25 @@ Please read the <a href="https://ableplayer.github.io/ableplayer/">Able Player d
 </code></pre></div></div>
 <video data-able-player="" data-youtube-nocookie="true" data-youtube-id="Xj1P0Z6I2Wk" data-heading-level="0"></video>
 
+<p>You can add captions and navigable transcripts by placing <code class="language-plaintext highlighter-rouge">.vtt</code> files in the <code class="language-plaintext highlighter-rouge">/assets/captions/</code> directory and referencing them in the HTML:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;video</span> <span class="na">data-able-player</span> <span class="na">data-youtube-nocookie=</span><span class="s">"true"</span> <span class="na">data-youtube-id=</span><span class="s">"6brKmJfDtNQ"</span> <span class="na">data-heading-level=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"captions"</span> <span class="na">src=</span><span class="s">"/assets/captions/captions-6brKmJfDtNQ.vtt"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+</code></pre></div></div>
+
+<video data-able-player="" data-youtube-nocookie="true" data-youtube-id="6brKmJfDtNQ" data-heading-level="0">
+	<track kind="captions" src="/assets/captions/captions-6brKmJfDtNQ.vtt" />
+</video>
+
 <h2 id="code-examples-in-the-text">Code examples in the text</h2>
 
-<p>A line of code starts and ends with a ` on the same line.<br />
+<p>A line of code starts and ends with a ` on the same line.
 <code class="language-plaintext highlighter-rouge">&lt;img src="alice.jpg" alt="White rabbit" /&gt;</code></p>
 
 <p>A block of code starts and ends with ```.</p>
 
-<p>If you want to highlight the text for a programming language, add the language after the 3 quotes. <br />
+<p>If you want to highlight the text for a programming language, add the language after the 3 quotes.
 For example: ```html.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- html --&gt;</span>
@@ -563,10 +574,10 @@ For example: ```html.</p>
 </code></pre></div></div>
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// php</span>
-<span class="k">function</span> <span class="n">themename_custom_excerpt_length</span><span class="p">(</span> <span class="nv">$length</span> <span class="p">)</span> <span class="p">{</span> 
+<span class="k">function</span> <span class="n">themename_custom_excerpt_length</span><span class="p">(</span> <span class="nv">$length</span> <span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="mi">40</span><span class="p">;</span> <span class="c1">//number of words in excerpt.</span>
-<span class="p">}</span> 
-<span class="nf">add_filter</span><span class="p">(</span><span class="s1">'excerpt_length'</span><span class="p">,</span><span class="s1">'themename_custom_excerpt_length'</span><span class="p">,</span> <span class="mi">99</span> <span class="p">);</span> 
+<span class="p">}</span>
+<span class="nf">add_filter</span><span class="p">(</span><span class="s1">'excerpt_length'</span><span class="p">,</span><span class="s1">'themename_custom_excerpt_length'</span><span class="p">,</span> <span class="mi">99</span> <span class="p">);</span>
 </code></pre></div></div>
 
 <h2 id="language-switch-in-the-content-text">Language switch in the content text</h2>
@@ -602,7 +613,7 @@ For example: ```html.</p>
 <span class="gs">**Warning:**</span> When something is particularly precarious, use the “warning” callout.
 
 {: .callout  .example }
-<span class="gs">**Example:**</span> Give an example with the "example" callout. 
+<span class="gs">**Example:**</span> Give an example with the "example" callout.
 The title of the callout will be "Example".
 
 {: .callout  .do }

@@ -380,7 +380,7 @@
     "doc": "Content kitchen sink",
     "title": "Videos",
     "description": null,
-    "content": "This site uses the accessible media player Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able media player. Please read the Able Player documentation for information on all available settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . ",
+    "content": "This site uses the accessible media player Able Player. Add to the variables at the top of the page: . has_video: true . This loads the CSS and Javascript for the Able media player. Please read the Able Player documentation for information on all available settings and how to add caption and subtitle tracks. Add the video itself in the page with: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"Xj1P0Z6I2Wk\" data-heading-level=\"0\"&gt;&lt;/video&gt; . You can add captions and navigable transcripts by placing .vtt files in the /assets/captions/ directory and referencing them in the HTML: . &lt;video data-able-player data-youtube-nocookie=\"true\" data-youtube-id=\"6brKmJfDtNQ\" data-heading-level=\"0\"&gt; &lt;track kind=\"captions\" src=\"/assets/captions/captions-6brKmJfDtNQ.vtt\"/&gt; &lt;/video&gt; . ",
     "url": "/docs/contribute/github/content-kitchen-sink/#videos",
     "relUrl": "/docs/contribute/github/content-kitchen-sink/#videos"
   },"55": {
