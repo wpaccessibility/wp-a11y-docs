@@ -33,12 +33,13 @@ The Paciello Group has a good [overview of PDF inaccessibility](https://develope
 The list of software which are able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar.
 
 {: .callout .warning }
-**Warning**: Google Docs doesn’t yet support the export of a tagged and accessible PDF yet without any help of a plugin.
+**Warning**: Google Docs doesn’t support the export of a tagged and accessible PDF yet without any help of a plugin.
 
-### Resources
+### PDF Resources
 
 - [Defining PDF Accessibility](https://webaim.org/techniques/acrobat/) on WebAIM.
 - [Overview of PDF inaccessibility](https://developer.paciellogroup.com/blog/2017/02/pdf-inaccessibility/), by the Paciello Group.
+- [Techniques for Accessible PDF](https://pdfa.org/techniques-for-accessible-pdf/), by the PDF Association.
 - [PDF Accessibility Overview](https://www.adobe.com/accessibility/pdf/pdf-accessibility-overview.html), by Adobe.
 - [Create and verify PDF accessibility](https://helpx.adobe.com/ie/acrobat/using/create-verify-pdf-accessibility.html), by Acrobat Pro
 - [PDF/UA in a Nutshell (PDF)](https://pdfa.org/wp-content/until2016_uploads/2013/08/PDFUA-in-a-Nutshell-PDFUA.pdf), by the PDF association.
