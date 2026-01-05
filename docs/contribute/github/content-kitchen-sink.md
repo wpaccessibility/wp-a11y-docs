@@ -82,7 +82,7 @@ An image: ![Alt text](url)
 ```
 ![Library]({{site.baseurl}}/assets/images/small-image.jpg)
 
-{: .callout  .tip } 
+{: .callout  .tip }
 **Tip:** For more text options with Markdown read: [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) on GitHub.
 
 ## Videos
@@ -93,8 +93,8 @@ Add to the variables at the top of the page:
 has_video: true
 ```
 
-This loads the CSS and Javascript for the Able media player. 
-Please read the [Able Player documentation](https://ableplayer.github.io/ableplayer/) for information on all available settings and how to add caption and subtitle tracks.  
+This loads the CSS and Javascript for the Able media player.
+Please read the [Able Player documentation](https://ableplayer.github.io/ableplayer/) for information on all available settings and how to add caption and subtitle tracks.
 
 Add the video itself in the page with:
 
@@ -103,14 +103,26 @@ Add the video itself in the page with:
 ```
 <video data-able-player data-youtube-nocookie="true" data-youtube-id="Xj1P0Z6I2Wk" data-heading-level="0"></video>
 
+You can add captions and navigable transcripts by placing `.vtt` files in the `/assets/captions/` directory and referencing them in the HTML:
+
+```markdown
+<video data-able-player data-youtube-nocookie="true" data-youtube-id="6brKmJfDtNQ" data-heading-level="0">
+	<track kind="captions" src="{{site.baseurl}}/assets/captions/captions-6brKmJfDtNQ.vtt"/>
+</video>
+```
+
+<video data-able-player data-youtube-nocookie="true" data-youtube-id="6brKmJfDtNQ" data-heading-level="0">
+	<track kind="captions" src="{{site.baseurl}}/assets/captions/captions-6brKmJfDtNQ.vtt"/>
+</video>
+
 ## Code examples in the text
 
-A line of code starts and ends with a &#96; on the same line.  
+A line of code starts and ends with a &#96; on the same line.
 `<img src="alice.jpg" alt="White rabbit" />`
 
 A block of code starts and ends with &#96;&#96;&#96;.
 
-If you want to highlight the text for a programming language, add the language after the 3 quotes.   
+If you want to highlight the text for a programming language, add the language after the 3 quotes.
 For example: &#96;&#96;&#96;html.
 
 ```html
@@ -135,10 +147,10 @@ button {
 
 ```php
 // php
-function themename_custom_excerpt_length( $length ) { 
+function themename_custom_excerpt_length( $length ) {
     return 40; //number of words in excerpt.
-} 
-add_filter('excerpt_length','themename_custom_excerpt_length', 99 ); 
+}
+add_filter('excerpt_length','themename_custom_excerpt_length', 99 );
 ```
 
 ## Language switch in the content text
@@ -163,7 +175,7 @@ For larger pieces of content, you can add to a `<p>`, `<div>`or even a landmark,
 ```
 
 ## Callouts
- 
+
 ```markdown
 {: .callout  .info }
 **Info:** This is an informational message and uses the “info” callout.
@@ -178,7 +190,7 @@ For larger pieces of content, you can add to a `<p>`, `<div>`or even a landmark,
 **Warning:** When something is particularly precarious, use the “warning” callout.
 
 {: .callout  .example }
-**Example:** Give an example with the "example" callout. 
+**Example:** Give an example with the "example" callout.
 The title of the callout will be "Example".
 
 {: .callout  .do }
@@ -208,7 +220,7 @@ The title of the callout will be "Example".
 **Do:** Example of how to do something.
 
 {: .callout  .dont }
-**Don't:** Example of how not to do something. 
+**Don't:** Example of how not to do something.
 
 ### Labels
 
