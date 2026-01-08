@@ -7,8 +7,8 @@ nav_order: 4
 
 # Place descriptions between label and form field
 
-{: .info }
-Note: this is best practice and not a WCAG requirement.
+{: .callout .info }
+Note: this is best practice and not a WCAG requirement. 
 
 Users read from the top down in a form. Place descriptions in a consistent location, preferably between the label and the text form field. Then information appears after the label at a logical point in the reading order.
 
@@ -120,7 +120,7 @@ Read more on: [Gravity Forms Accessibility Guide for Content Providers](https://
 
 ### Other form plugins
 
-{: .info }
+{: .callout .info }
 We'd like to invite people familiar with other plugins to add instructions for those plugins.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with additional content.
 
