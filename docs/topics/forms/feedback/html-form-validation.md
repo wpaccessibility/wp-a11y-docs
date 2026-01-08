@@ -7,7 +7,7 @@ nav_order: 2
 
 # Avoid HTML form validation
 
-![Example of HTML validation: a small tooltip above the form field with the text: “Fill out this field.”](/assets/images/html-validation.png)
+![Example of HTML validation: a small tooltip above the form field with the text: “Fill out this field.”]({{site.baseurl}}/assets/images/html-validation.png)
 
 Most browsers can automatically check whether a required field has been filled out. This happens when the HTML attribute `required` is present on the form field.
 

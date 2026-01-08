@@ -7,7 +7,7 @@ nav_order: 4
 
 # Write out an error message in text.
 
-![Example of using a red border, an error icon and text as indicators of a form field that is not filled out.”](/assets/images/error-message-in-text.png)
+![Example of using a red border, an error icon and text as indicators of a form field that is not filled out.”]({{site.baseurl}}/assets/images/error-message-in-text.png)
 
 Always write out the error message in text. Not just add a red border around the field or only use an exclamation mark icon, but always write out the message in clear, plain language.
 
