@@ -25,7 +25,7 @@ To specifically communicate to assistive technologies that a field is required, 
 <input type="text" id="example" name="example" aria-required="true" />
 ```
 
-Find more information about the use of `aria-required` in [Indicate required fields for screen readers]({{site.baseurl}}//docs/topics/forms/required/required-screen-readers/).
+Find more information about the use of `aria-required` in [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
 
 ## Progressive enhancement
 

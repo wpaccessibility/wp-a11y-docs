@@ -20,5 +20,5 @@ Validate a field when the user leaves the input field (on blur and input), or wh
 ## Resources
 
 - For more information about the drawbacks of “live” validation, read [The problem with live validation and what to do instead](https://adamsilver.io/blog/the-problem-with-live-validation-and-what-to-do-instead/) by Adam Silver.
-- HTML form validation still has accessibility issues in 2026, please read [HTML form validation]({{site.baseurl}}//docs/topics/forms/feedback/html-form-validation/) for more context.
+- HTML form validation still has accessibility issues in 2026, please read [HTML form validation]({{site.baseurl}}/docs/topics/forms/feedback/html-form-validation/) for more context.
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
