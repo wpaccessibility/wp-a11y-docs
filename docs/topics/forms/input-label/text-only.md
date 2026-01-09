@@ -34,7 +34,7 @@ Example implicit form field:
 
 Read [MDN about label accessibility](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label#accessibility).
 
-{: .info }
+{: {: .callout .info }
 The populair [WordPress form plugin Contact Form 7](https://wordpress.org/plugins/contact-form-7/) uses implicitly associated form fields as its default template to create a form. Joe Dolson created the plugin [Contact Form 7: Accessible Defaults](https://wordpress.org/plugins/contact-form-7-accessible-defaults/) that provides an accessible template for your form.
 
 

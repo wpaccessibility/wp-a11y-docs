@@ -11,7 +11,7 @@ A description should be short and to-the-point. But what if you need to add long
 
 ## Description decision tree in 6 questions.
 
-{: .info }
+{: {: .callout .info }
 Rich text in this context means: additional structure or interactive functionality like links, buttons, lists, headings or for example tooltips.
 
 ### Question 1: Does the information apply to all form fields?
