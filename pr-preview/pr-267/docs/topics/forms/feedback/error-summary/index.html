@@ -478,6 +478,8 @@
 
 <p>Each error message in the summary is also a link to the corresponding form field. This allows keyboard users to jump directly to the field with the error.</p>
 
+<h2 id="set-up-of-an-error-summary">Set up of an error summary</h2>
+
 <p>The structure is as follows:</p>
 
 <ul>
@@ -487,11 +489,15 @@
   <li>The heading above the errors receives keyboard focus. This ensures it is immediately visible, read aloud by screen readers, and that the tab order is logical: the links to the relevant fields are the next focusable items.</li>
 </ul>
 
-<p>GOV.UK provides several clear examples of the [Error summary component](https://design-system.service.gov.uk/components/error-summary/.</p>
+<p>GOV.UK provides several clear examples of the <a href="https://design-system.service.gov.uk/components/error-summary/">Error summary component</a>.</p>
+
+<p><img src="/pr-preview/pr-267/assets/images/error-summary.png" alt="Screenshot of an error summary of the GOC.UK pattern library" /></p>
+
+<p class="callout info">For very short forms with one or two fields, this way of error indication may be overkill. But always make sure also a <a href="/pr-preview/pr-267/docs/topics/forms/feedback/screen-reader-feedback/">screen reader users knows there is an error</a> and the keyboard focus is placed on a convenient spot.</p>
 
 <p>Clear error messages are required to meet WCAG success criterion <a href="https://www.w3.org/WAI/WCAG22/quickref/#error-identification">3.3.1 Error Identification</a> (Level A).</p>
 
-<h2 id="setting-error-summary-in-wordpress-plugins">Setting Error summary in WordPress Plugins</h2>
+<h2 id="setting-an-error-summary-in-wordpress-plugins">Setting an error summary in WordPress Plugins</h2>
 
 <h3 id="gravity-forms">Gravity Forms</h3>
 
@@ -507,6 +513,7 @@ Please <a href="/pr-preview/pr-267/docs/contact/">contact us</a> if you want to 
 <ul>
   <li>NL Design System <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
 </ul>
+
 
 
           
