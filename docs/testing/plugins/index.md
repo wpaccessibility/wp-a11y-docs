@@ -9,13 +9,15 @@ nav_order: 8
 
 We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use in your own accessible WordPress site.
 
-## Criteria for inclusion:
+## Criteria for inclusion on this page:
 
-- The plugin must have a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team
-- The plugin must be primarily dedicated to accessibility testing
-- The plugin must not provide [overlay functionality](https://overlayfactsheet.com/en/) that cannot be fully disabled.
-- The plugin must have an accessible admin interface
-- The plugin must have been updated within the last year
+The plugin:
+
+- has a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team
+- is primarily dedicated to accessibility testing
+- does not provide [overlay functionality](https://overlayfactsheet.com/en/) that cannot be fully disabled.
+- has an accessible admin interface
+- has been updated within the last year
 
 {: .callout  .warning }
 **Warning:** Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
