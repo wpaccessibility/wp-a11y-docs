@@ -23,33 +23,32 @@ The plugin:
 
 ## Accessible Features
 
-**Criteria:** Plugins that add a commonly used feature, but with a specific focus on accessibility.
+Plugins that add a commonly used feature, but with a specific focus on accessibility.
 
 - [Able Player for WordPress](https://wordpress.org/plugins/ableplayer/). Able Player is a media player that offers extensive support for accessible features such as Audio Description, speed adjustment, and interactive transcriptions.
 - [My Calendar - Accessible Event Manager](https://wordpress.org/plugins/my-calendar/). My Calendar is a full-featured event management plugin that includes support for event and location accessibility features and has a robustly accessible interface.
 
 ## Editing Tools
 
-**Criteria:** Plugins that add options in the editor that help improve the accessibility of your content.
+Plugins that add options in the editor that help improve the accessibility of your content.
 
 - [Screen Reader Text Format](https://wordpress.org/plugins/screen-reader-text-format/). Adds a block editor text control to set content as screen reader only.
 
 ## Front-end Features
 
-**Criteria:** Plugins that provide users with information about existing characteristics of your content.
+Plugins that provide users with information about existing characteristics of your content.
 
 - [Accessibility New Window Warnings](https://wordpress.org/plugins/accessibility-new-window-warnings/).  Automatically adds visible warnings on links that open in new tabs or windows
 
 ## Plugin or Theme Specific Patterns
 
-**Criteria:** Plugins that improve the accessibility of a specific theme or plugin.
+Plugins that improve the accessibility of a specific theme or plugin.
 
 - [Contact Form 7: Accessible defaults](https://wordpress.org/plugins/contact-form-7-accessible-defaults/) – generates accessible contact form defaults in Contact Form 7.
--
 
 ## General Purpose
 
-**Criteria:** Multi-purpose accessibility plugins not easily placed in another category, but not primarily focused on testing.
+Multi-purpose accessibility plugins that are not easily placed in another category, and are not primarily focused on testing.
 
 - [WP Accessibility](https://wordpress.org/extend/plugins/wp-accessibility/). Helps with a variety of common accessibility problems in WordPress themes. While most accessibility issues can’t be addressed without directly changing your theme, WP Accessibility adds a number of helpful accessibility features with a minimum amount of setup or expert knowledge.
 
