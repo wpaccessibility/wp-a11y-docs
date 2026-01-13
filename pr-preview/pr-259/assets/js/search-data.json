@@ -1589,11 +1589,11 @@
     "relUrl": "/docs/testing/plugins/#wordpress-plugins-for-accessibility-testing"
   },"227": {
     "doc": "WP plugins for testing",
-    "title": "Criteria for inclusion:",
+    "title": "Criteria for inclusion on this page:",
     "description": null,
-    "content": ". | The plugin must have a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team | The plugin must be primarily dedicated to accessibility testing | The plugin must not provide overlay functionality that cannot be fully disabled. | The plugin must have an accessible admin interface | The plugin must have been updated within the last year | . Warning: Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
-    "url": "/pr-preview/pr-259/docs/testing/plugins/#criteria-for-inclusion",
-    "relUrl": "/docs/testing/plugins/#criteria-for-inclusion"
+    "content": "The plugin: . | has a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team | is primarily dedicated to accessibility testing | does not provide overlay functionality that cannot be fully disabled. | has an accessible admin interface | has been updated within the last year | . Warning: Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
+    "url": "/pr-preview/pr-259/docs/testing/plugins/#criteria-for-inclusion-on-this-page",
+    "relUrl": "/docs/testing/plugins/#criteria-for-inclusion-on-this-page"
   },"228": {
     "doc": "WP plugins for testing",
     "title": "Testing Tools",
@@ -1988,11 +1988,11 @@
     "relUrl": "/docs/start/wp-plugins/#wordpress-accessibility-plugins"
   },"284": {
     "doc": "WP Plugins",
-    "title": "Criteria for inclusion:",
+    "title": "Criteria for inclusion on this page:",
     "description": null,
-    "content": ". | The plugin must have a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team | The plugin must not be primarily dedicated to accessibility testing | The plugin must not provide overlay functionality that cannot be fully disabled. | The plugin must have an accessible admin interface | The plugin must have been updated within the last year | . Alert: Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
-    "url": "/pr-preview/pr-259/docs/start/wp-plugins/#criteria-for-inclusion",
-    "relUrl": "/docs/start/wp-plugins/#criteria-for-inclusion"
+    "content": "The plugin: . | has a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team | is not primarily dedicated to accessibility testing. Testing plugins are listed in WordPress plugins for accessibility testing. | doesn’t provide overlay functionality that cannot be fully disabled. | has an accessible admin interface | has been updated within the last year | . Alert: Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
+    "url": "/pr-preview/pr-259/docs/start/wp-plugins/#criteria-for-inclusion-on-this-page",
+    "relUrl": "/docs/start/wp-plugins/#criteria-for-inclusion-on-this-page"
   },"285": {
     "doc": "WP Plugins",
     "title": "Accessible Features",
