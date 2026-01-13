@@ -9,6 +9,10 @@ nav_order: 2
 
 ![Example of HTML validation: a small tooltip above the form field with the text: “Fill out this field.”]({{site.baseurl}}/assets/images/html-validation.png)
 
+At this moment, form validation by the browser only, is not accessible enough. Add custom client-side validation to make for errors understandable for all users.
+
+## required versus aria-required
+
 Most browsers can automatically check whether a required field has been filled out. This happens when the HTML attribute `required` is present on the form field.
 
 ```html

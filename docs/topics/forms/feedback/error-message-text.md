@@ -9,6 +9,8 @@ nav_order: 5
 
 “This field is required” or "Fill out this field" doesn't provide enough information for a user. A custom-written error message gives the user much more guidance.
 
+## Help the user
+
 Never blame the user for not getting it. Most people struggle with the amount of information and functionality on the web. Help users as much as possible to successfully submit the form.
 
 Therefore, make error messages as descriptive and tailored as possible. Instead of “Invalid input” or “This field is required,” for example, write:

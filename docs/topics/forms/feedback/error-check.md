@@ -7,15 +7,17 @@ nav_order: 1
 
 # Check for form errors at the right moment
 
-It’s important to choose the right moment to validate user input of a form field.
+It’s important to choose the right moment to validate user input of a form field. To help users and not confuse them. 
 
-## Validate when the user is finished filling out a form field
+The best moment is to validate input when the user is finished filling out a form field or after submitting the form.
+
+## Avoid confusion or irritation
 
 Imagine you’re typing an email address and, after entering just the first character, already an error message appears saying “Invalid email address.”
 
-That message only disappears when the entire email address is filled out. This is not only annoying, it can also cause uncertainty and confusion: “What am I doing wrong? I’m not even finished yet, and it’s already wrong!”
+That message only disappears when the entire email address is filled out. This is not only annoying, it can also cause uncertainty and confusion: “What am I doing wrong? I’m not even finished yet, and it’s already wrong!”.
 
-Validate a field when the user leaves the input field (on blur and input), or when the form is submitted.
+Validate a field when the user leaves the input field (on `blur` and `input`), or after the complete form is submitted.
 
 ## Resources
 

@@ -12,6 +12,8 @@ A very user-friendly way to display errors is a combination of a summary above t
 
 Each error message in the summary is also a link to the corresponding form field. This allows keyboard users to jump directly to the field with the error.
 
+## Set up of an error summary
+
 The structure is as follows:
 
 - After submitting a form with errors, a list of errors is displayed above the form.
@@ -19,11 +21,16 @@ The structure is as follows:
 - Below the heading is a list of error messages. Each error message is also a link to the corresponding form field.
 - The heading above the errors receives keyboard focus. This ensures it is immediately visible, read aloud by screen readers, and that the tab order is logical: the links to the relevant fields are the next focusable items.
 
-GOV.UK provides several clear examples of the [Error summary component](https://design-system.service.gov.uk/components/error-summary/.
+GOV.UK provides several clear examples of the [Error summary component](https://design-system.service.gov.uk/components/error-summary/).
+
+![Screenshot of an error summary of the GOC.UK pattern library]({{site.baseurl}}/assets/images/error-summary.png)
+
+{: .callout .info }
+For very short forms with one or two fields, this way of error indication may be overkill. But always make sure also a [screen reader users knows there is an error]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/) and the keyboard focus is placed on a convenient spot.
 
 Clear error messages are required to meet WCAG success criterion [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
 
-## Setting Error summary in WordPress Plugins
+## Setting an error summary in WordPress Plugins
 
 ### Gravity Forms
 
@@ -38,3 +45,4 @@ Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with 
 ## Resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
+
