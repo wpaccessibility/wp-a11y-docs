@@ -11,6 +11,8 @@ nav_order: 2
 
 At this moment, form validation by the browser only, is not accessible enough. Add custom client-side validation to make for errors understandable for all users.
 
+
+
 ## required versus aria-required
 
 Most browsers can automatically check whether a required field has been filled out. This happens when the HTML attribute `required` is present on the form field.
@@ -19,11 +21,14 @@ Most browsers can automatically check whether a required field has been filled o
 <input type="text" id="example" name="example" required />
 ```
 
-This type of error handling provides insufficient information. In many browsers, not all users are informed that the field is required, and there is no explanation when a specified pattern is not met, as Adrian Roselli points out in [Avoid default field validation](https://adrianroselli.com/2019/02/avoid-default-field-validation.html).
+Using required triggers the client-side form validation of the browser.
+At the time of writing, this validation may have accessibility and translation issues. The error messages are not specific enough, they disappear after a few seconds, and they currently lack sufficient screen reader support.
 
-It is preferable to add custom client-side validation.
+In many browsers, not all users are informed that the field is required, and there is no explanation when a specified pattern is not met, as Adrian Roselli points out in [Avoid default field validation](https://adrianroselli.com/2019/02/avoid-default-field-validation.html).
 
-To specifically communicate to assistive technologies that a field is required, `aria-required="true"` can be used. If you use `aria-required` instead of `required`, the browser will not perform validation or provide feedback on its own.
+It is preferable to add custom client-side validation. If you decide to use `required`, also use `novalidate` on the form element to prevent the browser's form validation from kicking in and enable you to handle validation server-side.
+
+To specifically communicate to assistive technologies that a field is required, use `aria-required="true"`.
 
 ```html
 <input type="text" id="example" name="example" aria-required="true" />
