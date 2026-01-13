@@ -15,15 +15,15 @@ nav_order: 12
 
 ### Content and reviews
 
-[Joe Dolson](https://joedolson.com), [Gary Jones](https://garyjones.io/), [Amber Hinds](https://equalizedigital.com/), [Wendie Huis in't Veld](https://wendiehuisintveld.nl/) and [Rian Rietveld](https://rianrietveld.com) write content for and review the documentation.
+[Joe Dolson](https://joedolson.com), [Gary Jones](https://garyjones.io/), [Amber Hinds](https://equalizedigital.com/), [Wendie Huis in't Veld](https://wendiehuisintveld.nl/) and [Rian Rietveld](https://rianrietveld.com) write and review the documentation.
 
-The content about [web forms]({{site.baseurl}}/docs/topics/forms/) was taken, with permission, from the [NL Design System](https://nldesignsystem.nl/richtlijnen/formulieren/) and adjusted for WorPress and for a global audience.
+The content about [web forms]({{site.baseurl}}/docs/topics/forms/) was taken, with permission, from the [NL Design System](https://nldesignsystem.nl/richtlijnen/formulieren/) and adjusted for WordPress and for a global audience.
 
 ### Website build and GitHub setup
-People how build and maintain the Knowledge Base website, including the implementation on GitHub pages.
+People who build and maintain the Knowledge Base website, including the implementation on GitHub pages.
 [Yoren Chang](https://github.com/yoren), [Joe Dolson](https://joedolson.com), [Gary Jones](https://garyjones.io/) and [Rian Rietveld](https://rianrietveld.com).
 
-Thank you, [Just The Docs](https://just-the-docs.com/) for proving the starter theme on which this site is build upon.
+Thank you, [Just The Docs](https://just-the-docs.com/) for providing the starter theme on which this site is build upon.
 
 ### Design website
 
