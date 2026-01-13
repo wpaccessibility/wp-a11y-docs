@@ -485,11 +485,14 @@
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"example"</span> <span class="na">name=</span><span class="s">"example"</span> <span class="na">required</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p>This type of error handling provides insufficient information. In many browsers, not all users are informed that the field is required, and there is no explanation when a specified pattern is not met, as Adrian Roselli points out in <a href="https://adrianroselli.com/2019/02/avoid-default-field-validation.html">Avoid default field validation</a>.</p>
+<p>Using required triggers the client-side form validation of the browser.
+At the time of writing, this validation may have accessibility and translation issues. The error messages are not specific enough, they disappear after a few seconds, and they currently lack sufficient screen reader support.</p>
 
-<p>It is preferable to add custom client-side validation.</p>
+<p>In many browsers, not all users are informed that the field is required, and there is no explanation when a specified pattern is not met, as Adrian Roselli points out in <a href="https://adrianroselli.com/2019/02/avoid-default-field-validation.html">Avoid default field validation</a>.</p>
 
-<p>To specifically communicate to assistive technologies that a field is required, <code class="language-plaintext highlighter-rouge">aria-required="true"</code> can be used. If you use <code class="language-plaintext highlighter-rouge">aria-required</code> instead of <code class="language-plaintext highlighter-rouge">required</code>, the browser will not perform validation or provide feedback on its own.</p>
+<p>It is preferable to add custom client-side validation. If you decide to use <code class="language-plaintext highlighter-rouge">required</code>, also use <code class="language-plaintext highlighter-rouge">novalidate</code> on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side.</p>
+
+<p>To specifically communicate to assistive technologies that a field is required, use <code class="language-plaintext highlighter-rouge">aria-required="true"</code>.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"example"</span> <span class="na">name=</span><span class="s">"example"</span> <span class="na">aria-required=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
