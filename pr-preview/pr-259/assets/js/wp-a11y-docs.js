@@ -344,7 +344,7 @@ jtd.onReady(function() {
     var results = index.query(function(queryObj) {
       var tokens = lunr.tokenizer(input);
       queryObj.term(tokens, { boost: 10 });
-      queryObj.term(tokens, { wildcard: lunr.Query.wildcard.TRAILING });
+      queryObj.term(tokens, { wildcard: lunr.Query.wildcard.TRAILING | lunr.Query.wildcard.LEADING });
     });
 
     // Fuzzy fallback
