@@ -2,7 +2,7 @@
 title: Plugins
 layout: default
 parent: Standards and best practice
-nav_order: 9
+nav_order: 10
 ---
 
 # WordPress plugins and accessibility
