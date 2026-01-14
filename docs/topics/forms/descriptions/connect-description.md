@@ -44,7 +44,7 @@ It's possible to add multiple descriptions to one form field. You can combine th
         autocomplete="name" />
 ```
 
-{: .info }
+{: {: .callout .info }
 For the documentation about descriptions in fieldsets read [Description with a fieldset]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/).
 
 ## Examples
