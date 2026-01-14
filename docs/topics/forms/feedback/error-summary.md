@@ -8,7 +8,7 @@ nav_order: 6
 
 # Provide a summary with form errors above the form
 
-A very user-friendly way to display errors is a combination of a summary above the form and repeating the error message for each form field.
+A user-friendly way to display errors is a combination of a summary above the form and repeating the error message for each form field.
 
 Each error message in the summary is also a link to the corresponding form field. This allows keyboard users to jump directly to the field with the error.
 
@@ -26,7 +26,7 @@ GOV.UK provides several clear examples of the [Error summary component](https://
 ![Screenshot of an error summary of the GOC.UK pattern library]({{site.baseurl}}/assets/images/error-summary.png)
 
 {: .callout .info }
-For very short forms with one or two fields, this way of error indication may be overkill. But always make sure also a [screen reader users knows there is an error]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/) and the keyboard focus is placed on a convenient spot.
+For very short forms with one or two fields, this way of error indication may be overkill. But always make sure [screen reader users know there is an error]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/) and the keyboard focus is placed in a convenient spot.
 
 Clear error messages are required to meet WCAG success criterion [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
 

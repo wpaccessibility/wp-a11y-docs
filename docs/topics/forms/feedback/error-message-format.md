@@ -9,15 +9,17 @@ nav_order: 4
 
 ![Example of using a red border, an error icon and text as indicators of a form field that is not filled out.”]({{site.baseurl}}/assets/images/error-message-in-text.png)
 
-Always write out the error message in text. Not just add a red border around the field or only use an exclamation mark icon, but always write out the message in clear, plain language. You can certainly use color and icons, but not as the only indication of an error.
+Always write out the error message in text. Don't just add a border around the field or add an icon, but always write out the message in clear, plain language. 
+
+You can certainly use color and icons as decoration, and they will be helpful to many users, but they should not be the only indication of an error.
 
 ## Make the message clear for all users
 
-Color blind and visually impaired users may miss the red border, red isn't understood as a warning in every culture and not all people understand what icons mean. By adding text you make sure all visitors understand the error message.
+By adding text you make sure all visitors understand the error message. Color blind or visually impaired users may miss borders. Your choice of color may not be understood as a warning in every culture, and not all people understand what icons mean.
 
 Connecting the error message text to an input field works the same as connecting description texts: [Connect the description to the form field]({{site.baseurl}}/docs/topics/forms/descriptions/connect-description/).
 
-Describing form errors also in text is required to meet the WCAG success criteria:
+Describing form errors in text is required to meet the WCAG success criteria:
 
 - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color) (Level A).

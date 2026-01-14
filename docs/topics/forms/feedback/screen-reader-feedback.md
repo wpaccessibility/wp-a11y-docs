@@ -11,7 +11,7 @@ We provide you with several additional ways to give feedback about error message
 
 ## Use ARIA for feedback on a form field
 
-Use ARIA to provide additional information and feedback to screen reader users, information that is needed to properly use and understand the form.
+Use ARIA to provide additional information and feedback to screen reader users that is needed to properly use and understand the form.
 
 Two ARIA attributes are important for screen reader feedback:
 
@@ -41,7 +41,7 @@ Providing feedback about error messages to screen reader users is required to me
 
 ## Screen reader feedback after submit
 
-When a form is submitted unsuccessfully a screen reader user must get this information this too. For keyboard and screen reader users, it is important that after submitting a form, the visual focus and keyboard focus move to a logical location and the information about what happened is announced.
+When a form is submitted unsuccessfully a screen reader user must get this information. For keyboard and screen reader users, it is important that after submitting a form, the visual focus and keyboard focus move to a logical location and information about what happened is announced.
 
 ### Update the title element
 
@@ -57,7 +57,7 @@ For example:
 
 ```html
 <head>
-  <title>2 error messages, Step 1 of 4: Your question, City of London</title>
+  <title>2 error messages, Step 1 of 4: Your question | Site Name</title>
   [...]
 </head>
 ```
@@ -65,7 +65,7 @@ For example:
 Or:
 ```html
 <head>
-  <title>Your question has been successfully send, City of London</title>
+  <title>Your question has been successfully send | Site Name</title>
   [...]
 </head>
 ```
