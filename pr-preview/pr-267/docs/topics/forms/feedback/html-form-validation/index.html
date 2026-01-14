@@ -474,21 +474,21 @@
 
           <h1 id="avoid-html-form-validation">Avoid HTML form validation</h1>
 
-<p><img src="/pr-preview/pr-267/assets/images/html-validation.png" alt="Example of HTML validation: a small tooltip above the form field with the text: “Fill out this field.”" /></p>
+<p><img src="/pr-preview/pr-267/assets/images/html-validation.png" alt="Example of HTML validation: a small tooltip above the form field with the text: Fill out this field." /></p>
 
-<p>At this moment, form validation by the browser only, is not accessible enough. Add custom client-side validation to make for errors understandable for all users.</p>
+<p>At this time (January 2026), form validation by the browser is not sufficiently accessible. Add custom client-side validation to make for errors understandable for all users.</p>
 
 <h2 id="required-versus-aria-required">required versus aria-required</h2>
 
-<p>Most browsers can automatically check whether a required field has been filled out. This happens when the HTML attribute <code class="language-plaintext highlighter-rouge">required</code> is present on the form field.</p>
+<p>Modern browsers can automatically check whether a required field has been filled out. This happens when the HTML attribute <code class="language-plaintext highlighter-rouge">required</code> is present on the form field.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"example"</span> <span class="na">name=</span><span class="s">"example"</span> <span class="na">required</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p>Using required triggers the client-side form validation of the browser.
-At the time of writing, this validation may have accessibility and translation issues. The error messages are not specific enough, they disappear after a few seconds, and they currently lack sufficient screen reader support.</p>
+<p>Using <code class="language-plaintext highlighter-rouge">required</code> triggers client-side form validation of the browser.
+Native HTML validation has accessibility and internationalization issues. The error messages are not specific enough, they disappear after a few seconds, and they currently lack sufficient screen reader support.</p>
 
-<p>In many browsers, not all users are informed that the field is required, and there is no explanation when a specified pattern is not met, as Adrian Roselli points out in <a href="https://adrianroselli.com/2019/02/avoid-default-field-validation.html">Avoid default field validation</a>.</p>
+<p>In many browsers, native messages about required fields are not communicated consistently to all users. There is also no explanation when specific patterns are not met, as Adrian Roselli points out in <a href="https://adrianroselli.com/2019/02/avoid-default-field-validation.html">Avoid default field validation</a>.</p>
 
 <p>It is preferable to add custom client-side validation. If you decide to use <code class="language-plaintext highlighter-rouge">required</code>, also use <code class="language-plaintext highlighter-rouge">novalidate</code> on the form element to prevent the browser’s form validation from kicking in and enable you to handle validation server-side.</p>
 
@@ -505,7 +505,7 @@ At the time of writing, this validation may have accessibility and translation i
 
 <p>This option applies only to forms where error messages are handled by JavaScript.</p>
 
-<p>The setup is as follows:</p>
+<p>If you are using accessible client-side validation, you can handle these cases by following these steps:</p>
 
 <ul>
   <li>Use the required attribute on form fields instead of aria-required.</li>
@@ -514,7 +514,7 @@ At the time of writing, this validation may have accessibility and translation i
 
 <p>This prevents users with a poor internet connection from not being informed about form errors in time.</p>
 
-<p>This is an option, not a requirement. Ultimately, a custom server-side final validation of form fields is the most reliable and accessible solution, and therefore the recommended way to handle form validation.</p>
+<p>This is an option, not a requirement. Ultimately, a server-side final validation of form fields is the most secure and accessible solution, and therefore the recommended way to handle form validation.</p>
 
 <h2 id="resources">Resources</h2>
 

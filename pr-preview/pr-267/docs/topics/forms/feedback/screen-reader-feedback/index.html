@@ -478,7 +478,7 @@
 
 <h2 id="use-aria-for-feedback-on-a-form-field">Use ARIA for feedback on a form field</h2>
 
-<p>Use ARIA to provide additional information and feedback to screen reader users, information that is needed to properly use and understand the form.</p>
+<p>Use ARIA to provide additional information and feedback to screen reader users that is needed to properly use and understand the form.</p>
 
 <p>Two ARIA attributes are important for screen reader feedback:</p>
 
@@ -510,7 +510,7 @@
 
 <h2 id="screen-reader-feedback-after-submit">Screen reader feedback after submit</h2>
 
-<p>When a form is submitted unsuccessfully a screen reader user must get this information this too. For keyboard and screen reader users, it is important that after submitting a form, the visual focus and keyboard focus move to a logical location and the information about what happened is announced.</p>
+<p>When a form is submitted unsuccessfully a screen reader user must get this information. For keyboard and screen reader users, it is important that after submitting a form, the visual focus and keyboard focus move to a logical location and information about what happened is announced.</p>
 
 <h3 id="update-the-title-element">Update the title element</h3>
 
@@ -527,14 +527,14 @@
 <p>For example:</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span>2 error messages, Step 1 of 4: Your question, City of London<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;title&gt;</span>2 error messages, Step 1 of 4: Your question | Site Name<span class="nt">&lt;/title&gt;</span>
   [...]
 <span class="nt">&lt;/head&gt;</span>
 </code></pre></div></div>
 
 <p>Or:</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;title&gt;</span>Your question has been successfully send, City of London<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Your question has been successfully send | Site Name<span class="nt">&lt;/title&gt;</span>
   [...]
 <span class="nt">&lt;/head&gt;</span>
 </code></pre></div></div>
