@@ -1,9 +1,9 @@
 Thank you for your contribution to the WP Accessibility Knowledge Base.
 
-**Please note:**
-Content committed without contacting the project leads @rianrietveld or @joedolson first, will not be reviewed.
-
 The related issue number: #
+
+**Please note:**
+Content committed without [contacting the project leads](https://wpaccessibility.org/docs/contact/) first, will not be reviewed.
 
 Before submitting this PR, please make sure:
 - [ ] One of the project leads assigned this task to you.
