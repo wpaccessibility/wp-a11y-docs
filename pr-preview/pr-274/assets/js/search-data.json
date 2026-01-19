@@ -2606,7 +2606,7 @@
     "doc": "About this website",
     "title": "About this website",
     "description": null,
-    "content": "WPaccessibility.org is a documentation website about web accessibility, for the WordPress community and beyond. We aim to make this website, including it’s content, WCAG 2.2 AA accessible. Three licences are included: For this documentation, for WordPress and for the software and theme of wpaccessibility.org. The changelog describes the changes made on the original Just The Docs Jekyll theme. ",
+    "content": "WPaccessibility.org is a documentation website about web accessibility, for the WordPress community and beyond. We aim to make this website, including its content, WCAG 2.2 AA accessible. Three licences are included: For this documentation, for WordPress and for the software and theme of wpaccessibility.org. The changelog describes the changes made on the original Just The Docs Jekyll theme. ",
     "url": "/pr-preview/pr-274/docs/about/",
     "relUrl": "/docs/about/"
   },"373": {
