@@ -293,6 +293,8 @@
 
           <a href="/pr-preview/pr-276/docs/topics/forms/help/be-flexible/" class="nav-list-link">Be flexible</a></li><li class="nav-list-item">
 
+          <a href="/pr-preview/pr-276/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
+
           <a href="/pr-preview/pr-276/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-276/docs/topics/forms/required/" class="nav-list-link">Required fields</a><button class="nav-list-expander btn-reset" aria-label="Required fields submenu" aria-expanded="false">
@@ -553,7 +555,7 @@
 
           <h1 id="avoid-input-patterns-on-form-fields">Avoid input patterns on form fields</h1>
 
-<p>Make it as easy as possible for users to enter a value flexibly. A fixed input pattern (mask) may not be suitable for the answer a user wants to provide.</p>
+<p>Make it as easy as possible for users to enter a value. A fixed input pattern (mask) may not be suitable for the answer a user wants to provide. Screen reader users may miss the visual information about how to fill out the form.</p>
 
 <h2 id="what-is-the-issue-about-input-patterns">What is the issue about input patterns?</h2>
 
@@ -567,10 +569,10 @@
   <li>The phone number does not match the required pattern: the user wants to enter a foreign number, but that is not allowed.</li>
   <li>The user wants to add important information such as “call only in the afternoon,” but cannot.</li>
   <li>The user doesn’t understand what is going wrong because, for example, letters cannot be entered and there is no good feedback explaining the error.</li>
-  <li>Screen reader users may miss the visual information about how to fill out the form.</li>
+  <li>Screen reader users may miss the visual information about how to fill out the form because the pattern and placeholder are not announced comprehensible.</li>
 </ul>
 
-<p>Note: There are situations where an exact input is required. In those cases, always clearly explain in the description how the field should be filled in.</p>
+<p>Note: There are situations where an exact input is required. In those cases, always clearly explain in the description how the field should be filled out.</p>
 
 <h2 id="what-is-a-pattern-on-an-input-field">What is a pattern on an input field?</h2>
 
@@ -582,7 +584,7 @@
 
 <p>You can restrict a first-name input field to, for example, a minimum of 3 and a maximum of 12 characters. Too bad if your name is Jo or Claus-Casimir.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Incorrect code, do not use --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Inaccessible code, do not use --&gt;</span>
 <span class="nt">&lt;input</span> 
         <span class="na">id=</span><span class="s">"firstname"</span> 
         <span class="na">name=</span><span class="s">"firstname"</span> 
@@ -594,7 +596,7 @@
 
 <p>You can require a specific format for a phone number input field. Too bad if you no longer have a landline or want to provide an international number.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Incorrect code, do not use --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Inaccessible code, do not use --&gt;</span>
 <span class="nt">&lt;input</span>
     <span class="na">type=</span><span class="s">"tel"</span>
     <span class="na">id=</span><span class="s">"telephone"</span>
@@ -636,6 +638,11 @@
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion">3.3.3 Error Suggestion</a> (Level AA)</li>
 </ul>
 
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li>NL Design System <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
+</ul>
 
 
           

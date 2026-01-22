@@ -10,7 +10,7 @@
 
 
 
-<title>Meaningful landmark roles and names, WP Accessibility Knowledge Base</title>
+<title>Review, modify, undo, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-276/assets/css/styles.css">
@@ -522,6 +522,16 @@
 
         
             
+            
+            
+        
+
+    
+
+        
+
+        
+            
 
 
 
@@ -529,7 +539,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-276/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-276/docs/topics/theme-guidelines/'>Theme accessibility guidelines</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Meaningful landmark roles and names</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-276/docs/topics/forms/'>Web forms</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-276/docs/topics/forms/help/'>Provide help</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Review, modify, undo</li>
     </ol>
 </nav>
 
@@ -538,60 +548,55 @@
 
         <main>
 
-          <h1 id="meaningful-landmark-roles-and-names">Meaningful landmark roles and names</h1>
+          <h1 id="make-it-possible-for-a-user-to-review-modify-or-undo-a-submission">Make it possible for a user to review, modify or undo a submission</h1>
 
-<h2 id="basic-principle">Basic principle</h2>
+<p>When a user fills out a form with legal, financial, or personal information, it is especially important that the information is correct and that the user can carefully review what has been entered. Make sure users can review the information they have entered and correct it if needed. And if that is not possible, offer the option to cancel a submission or transaction.</p>
 
-<p>Landmark navigation is a navigational tool available to screen reader users that helps identify and move between the larger structural sections of a website. There are six standard landmark roles available in HTML.</p>
+<p>An incorrectly or incompletely filled-out form can have serious consequences for the person submitting it.</p>
 
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">role="banner"</code>, the <code class="language-plaintext highlighter-rouge">header</code> element when nested in the context of the <code class="language-plaintext highlighter-rouge">body</code> element.</li>
-  <li><code class="language-plaintext highlighter-rouge">role="main"</code>, the <code class="language-plaintext highlighter-rouge">main</code> element.</li>
-  <li><code class="language-plaintext highlighter-rouge">role="complementary"</code>, the <code class="language-plaintext highlighter-rouge">aside</code> element.</li>
-  <li><code class="language-plaintext highlighter-rouge">role="contentinfo"</code>, the <code class="language-plaintext highlighter-rouge">footer</code> element when nested in the context of the <code class="language-plaintext highlighter-rouge">body</code> element.</li>
-  <li><code class="language-plaintext highlighter-rouge">role="search"</code>, a search form.</li>
-  <li><code class="language-plaintext highlighter-rouge">role="navigation"</code>, the <code class="language-plaintext highlighter-rouge">nav</code> element.</li>
-</ul>
+<p>This is not only important for people with disabilities, but for everyone. You would want to double-check that you entered the correct arrival and departure dates when booking an expensive trip, or that you provided complete and truthful information when filing a tax return.</p>
 
-<p>Most of these roles can be represented directly by their dedicated element; the <code class="language-plaintext highlighter-rouge">search</code> role must be assigned to the <code class="language-plaintext highlighter-rouge">form</code> element.</p>
+<p>Provide at least one of the following options: <strong>reversible</strong>, <strong>checked</strong>, or <strong>confirmed</strong>.</p>
 
-<p>Screen reader users are able to generate a list of landmarks on the page and navigate between them.</p>
+<h2 id="reversible">Reversible</h2>
 
-<p>The <code class="language-plaintext highlighter-rouge">banner</code>, <code class="language-plaintext highlighter-rouge">main</code>, and <code class="language-plaintext highlighter-rouge">contentinfo</code> landmarks should appear only once on a page. Other landmarks may appear multiple times, but each appearance should be accessibly named in a way that allows a screen reader user to identify it uniquely and usefully.</p>
+<p>Allow the user to undo or modify an online application, cancellation, or financial transaction after submission.</p>
 
-<p>There are additional optional landmark regions, such as the <code class="language-plaintext highlighter-rouge">region</code> role, which is a generic region that is only exposed if it has an accessible name.</p>
-
-<h2 id="testing">Testing</h2>
-
-<p><strong>Tools:</strong> Browser extensions (<a href="https://chromewebstore.google.com/detail/landmark-navigation-via-k/ddpokpbjopmeeiiolheejjpkonlkklgp">Chrome Landmarks</a>, <a href="https://addons.mozilla.org/en-US/firefox/addon/landmarks/?utm_source=addons.mozilla.org&amp;utm_medium=referral&amp;utm_content=search">Firefox Landmarks</a>); Bookmarklet (<a href="https://accessibility-bookmarklets.org/install.html">Accessibility Bookmarklets)</a>;  (optional) text editor (free examples include <a href="https://code.visualstudio.com/">Visual Studio Code</a> (VS Code) or <a href="https://www.sublimetext.com/">Sublime Text</a>).</p>
-
-<ol>
-  <li>Using one of the suggested testing tools, expose all of the landmarks on the page.</li>
-  <li>Verify that all content on the page is wrapped inside at least one landmark region.
-    <ol>
-      <li>Note: The skip link is allowed to be outside of a landmark region immediately before the header. This does not constitute a failure.</li>
-    </ol>
-  </li>
-  <li>Verify that all navigation menus are contained in a navigation landmark (I.e., button blocks should not be used to create navigation).</li>
-  <li>Verify that the <code class="language-plaintext highlighter-rouge">banner</code>, <code class="language-plaintext highlighter-rouge">main</code>, and <code class="language-plaintext highlighter-rouge">contentinfo</code> landmarks only appear once each.</li>
-  <li>Verify that any duplicated landmark regions have unique accessible names. Accessible names can be provided via <code class="language-plaintext highlighter-rouge">aria-label</code> attributes or via <code class="language-plaintext highlighter-rouge">aria-labelledby</code> pointing to the ID of an element with the relevant text.</li>
-  <li>Verify that the landmark region’s accessible name does not include the type of landmark region. E.g. “Primary navigation” is not a good landmark name for <code class="language-plaintext highlighter-rouge">nav</code>; “Primary” is better.</li>
-  <li>Check to see if the theme has a <code class="language-plaintext highlighter-rouge">functions.php</code> file with a text editor or the <a href="https://developer.wordpress.org/advanced-administration/wordpress/edit-files/">theme file editor</a>.</li>
-  <li>If the theme has a <code class="language-plaintext highlighter-rouge">functions.php</code> file, verify that the theme declares support for <code class="language-plaintext highlighter-rouge">navigation-widgets</code> in its <code class="language-plaintext highlighter-rouge">add_theme_support( 'html5' )</code> array.
-    <ol>
-      <li>If the theme does not have a <code class="language-plaintext highlighter-rouge">functions.php</code> file, then this requirement is “Not Applicable”.</li>
-    </ol>
-  </li>
-</ol>
-
-<h2 id="wcag-resources">WCAG resources</h2>
+<p>For example:</p>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H97.html">Technique: Grouping related links using the nav element</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA11">Technique: Using ARIA landmarks to identify regions of a page</a></li>
+  <li>An order can be canceled within 24 hours.</li>
+  <li>The user has a one-week cooling-off period before data is permanently deleted.</li>
+  <li>Personal data can be changed in a “My Account” environment.</li>
 </ul>
 
-<p><strong>Note on these resources</strong>: while the guidance regarding why and how to use these is good, the code examples pre-date wide availability of native roles for HTML5 elements. It is preferred to use the HTML elements directly, not the role attributes.</p>
+<h2 id="checked">Checked</h2>
+
+<p>Validate the entered data during completion and give the user the opportunity to correct any input errors.</p>
+
+<p>Good error handling while filling out a form helps users prevent and correct mistakes. Read also the documentation about <a href="/pr-preview/pr-276/docs/topics/forms/feedback/">feedback on form errors</a> and our blog post <a href="/pr-preview/pr-276/blog/2025/accessible-error-messages-forms/">Accessible error messages in forms</a>.</p>
+
+<h2 id="confirmed">Confirmed</h2>
+
+<p>Before submission, give the user the opportunity to read and revise the entered information.</p>
+
+<p>For complex forms, and when legal, financial, or personal data is requested, it is essential that the user can verify that everything has been entered correctly before submitting.</p>
+
+<p>For a multistep form: present all entered information in the final step of the form, with the option to make corrections.</p>
+
+<p>GOV.UK explains how to support users in <a href="https://design-system.service.gov.uk/patterns/check-answers/">Help users to check answers</a>.</p>
+
+<h2 id="resources">Resources</h2>
+
+<h3 id="wcag-success-criteria-on-error-prevention">WCAG Success Criteria on error prevention</h3>
+
+<p>Providing reversibility, validation, or confirmation in forms that request legal, financial, or personal information is required to comply with <a href="https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-legal-financial-data">WCAG Success Criterion 3.3.4 Error Prevention (Legal, Financial, Data)</a> (Level AA).</p>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li>NL Design System <a href="https://nldesignsystem.nl/richtlijnen/formulieren/">Guidelines for web forms (Dutch content)</a>.</li>
+</ul>
 
 
           
@@ -605,7 +610,7 @@
 
     
     <p class="text-small">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/theme-guidelines/meaningful-landmark-roles.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/forms/help/check-correct.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
