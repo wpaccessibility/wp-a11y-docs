@@ -3,6 +3,7 @@ title: Review, modify, undo
 layout: default
 parent: Provide help
 nav_order: 3
+description: Make sure users can review legal, financial, or personal information and correct it if needed.
 ---
 
 # Make it possible for a user to review, modify or undo a submission

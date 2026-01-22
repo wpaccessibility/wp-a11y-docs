@@ -3,6 +3,7 @@ title: Provide valid values
 layout: default
 parent: Provide help
 nav_order: 4
+description: Provide valid values for an input field in the description.
 ---
 
 # Provide valid values for a form field

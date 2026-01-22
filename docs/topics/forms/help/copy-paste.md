@@ -3,6 +3,7 @@ title: Allow copy/paste
 layout: default
 parent: Provide help
 nav_order: 2
+description: Copying and pasting from a password manager is a much easier and safer way for users to enter a password.
 ---
 
 # Allow copying and pasting of passwords
