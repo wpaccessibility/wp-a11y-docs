@@ -83,14 +83,17 @@ Connection between a form field and its description.
 />
 ```
 
-## WCAG Success Criteria
+## Resources
+
+### WCAG Success Criteria for descriptions
 
 Connecting a description to a form field is necessary to meet the WCAG success criteria:
 
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
-## Resources
+
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - MDN: [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby).

@@ -34,11 +34,6 @@ The screen reader VoiceOver announces: “Example, required, edit text”.
 
 VoiceOver announces: “Example, required, invalid data, edit text”.
 
-Providing feedback about error messages to screen reader users is required to meet the WCAG success criteria:
-
-- [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
-- [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
-
 ## Screen reader feedback after submit
 
 When a form is submitted unsuccessfully a screen reader user must get this information. For keyboard and screen reader users, it is important that after submitting a form, the visual focus and keyboard focus move to a logical location and information about what happened is announced.
@@ -70,8 +65,6 @@ Or:
 </head>
 ```
 
-Providing a descriptive `<title>` element is required to meet WCAG success criterion [2.4.2 Page Titled](https://www.w3.org/WAI/WCAG22/quickref/#page-titled) (Level A).
-
 ### Keyboard focus and aria-live
 
 There are 2 ways to inform a screen reader about errors:
@@ -79,5 +72,17 @@ There are 2 ways to inform a screen reader about errors:
 - When the form is submitted dynamically without a page reload, inform the user of what happened by using `aria-live`. The topic [Feedback on dynamic changes](/docs/topics/code/dynamic-changes/) explains how to use the WordPress JavaScript method `wp.a11y.speak()` for this.
 
 ## Resources
+
+### WCAG Success Criteria for screen reader feedback on errors
+
+Providing feedback about error messages to screen reader users is required to meet the WCAG success criteria:
+
+- [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+- [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
+
+Providing a descriptive `<title>` element is required to meet WCAG success criterion [2.4.2 Page Titled](https://www.w3.org/WAI/WCAG22/quickref/#page-titled) (Level A).
+
+
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

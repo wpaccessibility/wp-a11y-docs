@@ -18,11 +18,16 @@ Also consider whether it is really important that, for example, a date of birth 
 
 ## Resources
 
-### Related WCAG Success Criteria
- - Helping users to understand better what they need to fill out is necessary to meet the WCAG success criterion [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).
+### WCAG Success Criteria for helpful instructions
 
-### Related info in this documentation
+Helping users to understand better what they need to fill out is necessary to meet the WCAG success criterion [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).
+
+### Related documentation
 
 - [Placeholders]({{site.baseurl}}/docs/topics/forms/input-label/placeholders/)
 - [Input field and description]({{site.baseurl}}/docs/topics/forms/descriptions/)
 - [Description with a fieldset]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/)
+
+### Other resources
+
+- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

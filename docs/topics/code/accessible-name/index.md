@@ -80,8 +80,9 @@ The accessibility tree of Firefox shows the following relevant information: The 
 
 ![Screenshot accessible name link in FireFox]({{site.baseurl}}/assets/images/accessible-name-link.png)
 
+## Resources
 
-## WCAG Success Criteria
+### WCAG Success Criteria for an accessible name
 
 Giving interactive elements a well-defined, accessible name is necessary to meet the WCAG success criteria:
 
@@ -90,10 +91,11 @@ Giving interactive elements a well-defined, accessible name is necessary to meet
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 - [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
-
-## Resources
+### Related pages in this documentation
 
 How to provide a proper accessible name for each use case is documented with the specific topics in this documentation, like for example on [Give a form field an accessible name with a label]({{site.baseurl}}/docs/topics/forms/input-label/accessible-name/) in forms.
+
+### Other resources
 
 - Abdulqudus Abubakre [Understanding Accessible Names in HTML](https://dev.to/ibn_abubakre/understanding-accessible-names-in-html-562).
 - MDN: [Accessible name](https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name).

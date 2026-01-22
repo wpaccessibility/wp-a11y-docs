@@ -11,6 +11,12 @@ A password needs to be secure. If you prevent copying and pasting of passwords, 
 
 Copying and pasting from a password manager is a much easier and safer way for users to enter a password. As explained by the UK National Cyber Security Centre in [Top tips for staying secure online](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online).
 
-## Related WCAG Success Criteria
+## Resources
+
+### WCAG Success Criteria for accessible authentication
 
 - [3.3.8 Accessible Authentication (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-minimum) Level AA (added in version 2.2)
+
+### Other resources
+
+- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

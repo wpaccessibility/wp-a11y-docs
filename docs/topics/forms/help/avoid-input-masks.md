@@ -4,11 +4,12 @@ layout: default
 parent: Provide help
 nav_order: 3
 has_video: true
+description: Make it as easy as possible for users to enter a value.
 ---
 
 # Avoid input patterns on form fields
 
-Make it as easy as possible for users to enter a value flexibly. A fixed input pattern (mask) may not be suitable for the answer a user wants to provide.
+Make it as easy as possible for users to enter a value. A fixed input pattern (mask) may not be suitable for the answer a user wants to provide. Screen reader users may miss the visual information about how to fill out the form.
 
 ## What is the issue about input patterns?
 
@@ -21,9 +22,9 @@ For example:
 - The phone number does not match the required pattern: the user wants to enter a foreign number, but that is not allowed.
 - The user wants to add important information such as “call only in the afternoon,” but cannot.
 - The user doesn't understand what is going wrong because, for example, letters cannot be entered and there is no good feedback explaining the error.
-- Screen reader users may miss the visual information about how to fill out the form.
+- Screen reader users may miss the visual information about how to fill out the form because the pattern and placeholder are not announced comprehensible.
 
-Note: There are situations where an exact input is required. In those cases, always clearly explain in the description how the field should be filled in.
+Note: There are situations where an exact input is required. In those cases, always clearly explain in the description how the field should be filled out.
 
 ## What is a pattern on an input field?
 
@@ -36,7 +37,7 @@ The pattern specifies what the value must look like exactly. JavaScript then che
 You can restrict a first-name input field to, for example, a minimum of 3 and a maximum of 12 characters. Too bad if your name is Jo or Claus-Casimir.
 
 ```html
-<!-- Incorrect code, do not use -->
+<!-- Inaccessible code, do not use -->
 <input 
         id="firstname" 
         name="firstname" 
@@ -49,7 +50,7 @@ You can restrict a first-name input field to, for example, a minimum of 3 and a 
 You can require a specific format for a phone number input field. Too bad if you no longer have a landline or want to provide an international number.
 
 ```html
-<!-- Incorrect code, do not use -->
+<!-- Inaccessible code, do not use -->
 <input
     type="tel"
     id="telephone"
@@ -87,3 +88,6 @@ Providing good feedback about correctly entering data in form fields is necessar
 - [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A)
 - [3.3.3 Error Suggestion](https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion) (Level AA)
 
+### Other resources
+
+- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

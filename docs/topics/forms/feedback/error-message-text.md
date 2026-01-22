@@ -25,11 +25,15 @@ For example:
 
 The GOV.UK design system provides clear (English-language) guidance on error message text: [Be clear and concise](https://design-system.service.gov.uk/components/error-message/). In the video [Help Users Recognize, Diagnose, and Recover from Errors](https://www.nngroup.com/videos/usability-heuristic-recognize-errors/), the Nielsen Norman Group gives tips on how to effectively help users fix errors.
 
+## Resources
+
+### WCAG Success Criteria for clear error message texts
+
 Writing error message texts that clearly explain what went wrong is required to meet the following WCAG success criteria:
 
 - [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
 - [3.3.3 Error Suggestion](https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion) (Level AA).
 
-## Resources
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
