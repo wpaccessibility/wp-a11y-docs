@@ -421,35 +421,35 @@
   },"60": {
     "doc": "Be flexible",
     "title": "Don’t reject a form entry too quickly",
-    "description": null,
+    "description": "Be flexible accepting the data a user fills out a field.",
     "content": "Be flexible accepting the data a user fills out a field. If it’s not exactly in the format you want, change it for them in the code. Note: this is best practice and not a WCAG requirement. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/be-flexible/#dont-reject-a-form-entry-too-quickly",
     "relUrl": "/docs/topics/forms/help/be-flexible/#dont-reject-a-form-entry-too-quickly"
   },"61": {
     "doc": "Be flexible",
     "title": "Date formats",
-    "description": null,
+    "description": "Be flexible accepting the data a user fills out a field.",
     "content": "Users may unknowingly enter a different separation character then planned and then get the warning “Invalid date”. While actually it’s not invalid, it’s not in your preferred format. For example January 1, 2026 can be entered as: . | 01.01.2026 | 01-01-2026 | 01/01/2026 | . Why not help the user and transform the separation character in your software for them? . ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/be-flexible/#date-formats",
     "relUrl": "/docs/topics/forms/help/be-flexible/#date-formats"
   },"62": {
     "doc": "Be flexible",
     "title": "Email addresses",
-    "description": null,
+    "description": "Be flexible accepting the data a user fills out a field.",
     "content": "Some people use a + in their email address, for example to make it easier to group emails. They might use name+school@example.com for school-related emails and name+work@example.com for work emails. These are valid email addresses, so don’t reject them. Email addresses with a plus sign are valid. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/be-flexible/#email-addresses",
     "relUrl": "/docs/topics/forms/help/be-flexible/#email-addresses"
   },"63": {
     "doc": "Be flexible",
     "title": "Postal codes",
-    "description": null,
+    "description": "Be flexible accepting the data a user fills out a field.",
     "content": "Postal codes can be written in different ways, for example in the Netherlands as: “1234 AA” (with a space), “1234AA” (without a space), or “1234aa” (lowercase). Extra spaces at the beginning or end can also be included when text is copied and pasted. In code, these variations can easily be normalized to a single format. By accepting all valid ways and letting the software correct them, you prioritize the user instead of your software. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/be-flexible/#postal-codes",
     "relUrl": "/docs/topics/forms/help/be-flexible/#postal-codes"
   },"64": {
     "doc": "Be flexible",
     "title": "Be flexible",
-    "description": null,
+    "description": "Be flexible accepting the data a user fills out a field.",
     "content": " ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/be-flexible/",
     "relUrl": "/docs/topics/forms/help/be-flexible/"
@@ -491,42 +491,42 @@
   },"70": {
     "doc": "Review, modify, undo",
     "title": "Make it possible for a user to review, modify or undo a submission",
-    "description": null,
+    "description": "Make sure users can review legal, financial, or personal information and correct it if needed.",
     "content": "When a user fills out a form with legal, financial, or personal information, it is especially important that the information is correct and that the user can carefully review what has been entered. Make sure users can review the information they have entered and correct it if needed. And if that is not possible, offer the option to cancel a submission or transaction. An incorrectly or incompletely filled-out form can have serious consequences for the person submitting it. This is not only important for people with disabilities, but for everyone. You would want to double-check that you entered the correct arrival and departure dates when booking an expensive trip, or that you provided complete and truthful information when filing a tax return. Provide at least one of the following options: reversible, checked, or confirmed. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/check-correct/#make-it-possible-for-a-user-to-review-modify-or-undo-a-submission",
     "relUrl": "/docs/topics/forms/help/check-correct/#make-it-possible-for-a-user-to-review-modify-or-undo-a-submission"
   },"71": {
     "doc": "Review, modify, undo",
     "title": "Reversible",
-    "description": null,
+    "description": "Make sure users can review legal, financial, or personal information and correct it if needed.",
     "content": "Allow the user to undo or modify an online application, cancellation, or financial transaction after submission. For example: . | An order can be canceled within 24 hours. | The user has a one-week cooling-off period before data is permanently deleted. | Personal data can be changed in a “My Account” environment. | . ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/check-correct/#reversible",
     "relUrl": "/docs/topics/forms/help/check-correct/#reversible"
   },"72": {
     "doc": "Review, modify, undo",
     "title": "Checked",
-    "description": null,
+    "description": "Make sure users can review legal, financial, or personal information and correct it if needed.",
     "content": "Validate the entered data during completion and give the user the opportunity to correct any input errors. Good error handling while filling out a form helps users prevent and correct mistakes. Read also the documentation about feedback on form errors and our blog post Accessible error messages in forms. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/check-correct/#checked",
     "relUrl": "/docs/topics/forms/help/check-correct/#checked"
   },"73": {
     "doc": "Review, modify, undo",
     "title": "Confirmed",
-    "description": null,
+    "description": "Make sure users can review legal, financial, or personal information and correct it if needed.",
     "content": "Before submission, give the user the opportunity to read and revise the entered information. For complex forms, and when legal, financial, or personal data is requested, it is essential that the user can verify that everything has been entered correctly before submitting. For a multistep form: present all entered information in the final step of the form, with the option to make corrections. GOV.UK explains how to support users in Help users to check answers. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/check-correct/#confirmed",
     "relUrl": "/docs/topics/forms/help/check-correct/#confirmed"
   },"74": {
     "doc": "Review, modify, undo",
     "title": "Resources",
-    "description": null,
+    "description": "Make sure users can review legal, financial, or personal information and correct it if needed.",
     "content": "WCAG Success Criteria on error prevention . Providing reversibility, validation, or confirmation in forms that request legal, financial, or personal information is required to comply with WCAG Success Criterion 3.3.4 Error Prevention (Legal, Financial, Data) (Level AA). Other resources . | NL Design System Guidelines for web forms (Dutch content). | . ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/check-correct/#resources",
     "relUrl": "/docs/topics/forms/help/check-correct/#resources"
   },"75": {
     "doc": "Review, modify, undo",
     "title": "Review, modify, undo",
-    "description": null,
+    "description": "Make sure users can review legal, financial, or personal information and correct it if needed.",
     "content": " ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/check-correct/",
     "relUrl": "/docs/topics/forms/help/check-correct/"
@@ -806,21 +806,21 @@
   },"115": {
     "doc": "Allow copy/paste",
     "title": "Allow copying and pasting of passwords",
-    "description": null,
+    "description": "Copying and pasting from a password manager is a much easier and safer way for users to enter a password.",
     "content": "A password needs to be secure. If you prevent copying and pasting of passwords, you force users to choose simple, easy-to-remember passwords. That is exactly what you want to avoid. Copying and pasting from a password manager is a much easier and safer way for users to enter a password. As explained by the UK National Cyber Security Centre in Top tips for staying secure online. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/copy-paste/#allow-copying-and-pasting-of-passwords",
     "relUrl": "/docs/topics/forms/help/copy-paste/#allow-copying-and-pasting-of-passwords"
   },"116": {
     "doc": "Allow copy/paste",
     "title": "Resources",
-    "description": null,
+    "description": "Copying and pasting from a password manager is a much easier and safer way for users to enter a password.",
     "content": "WCAG Success Criteria for accessible authentication . | 3.3.8 Accessible Authentication (Minimum) Level AA (added in version 2.2) | . Other resources . | NL Design System Guidelines for web forms (Dutch content). | . ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/copy-paste/#resources",
     "relUrl": "/docs/topics/forms/help/copy-paste/#resources"
   },"117": {
     "doc": "Allow copy/paste",
     "title": "Allow copy/paste",
-    "description": null,
+    "description": "Copying and pasting from a password manager is a much easier and safer way for users to enter a password.",
     "content": " ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/copy-paste/",
     "relUrl": "/docs/topics/forms/help/copy-paste/"
@@ -3900,21 +3900,21 @@
   },"557": {
     "doc": "Provide valid values",
     "title": "Provide valid values for a form field",
-    "description": null,
+    "description": "Provide valid values for an input field in the description.",
     "content": "Provide valid values for an input field (for example, date or password requirements) in the description and not only in the placeholder. Also consider whether it is really important that, for example, a date of birth or phone number must meet exact input requirements. ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/valid-values/#provide-valid-values-for-a-form-field",
     "relUrl": "/docs/topics/forms/help/valid-values/#provide-valid-values-for-a-form-field"
   },"558": {
     "doc": "Provide valid values",
     "title": "Resources",
-    "description": null,
+    "description": "Provide valid values for an input field in the description.",
     "content": "WCAG Success Criteria for helpful instructions . Helping users to understand better what they need to fill out is necessary to meet the WCAG success criterion 3.3.2 Labels or Instructions (Level AA). Related documentation . | Placeholders | Input field and description | Description with a fieldset | . Other resources . | NL Design System Guidelines for web forms (Dutch content). | . ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/valid-values/#resources",
     "relUrl": "/docs/topics/forms/help/valid-values/#resources"
   },"559": {
     "doc": "Provide valid values",
     "title": "Provide valid values",
-    "description": null,
+    "description": "Provide valid values for an input field in the description.",
     "content": " ",
     "url": "/pr-preview/pr-276/docs/topics/forms/help/valid-values/",
     "relUrl": "/docs/topics/forms/help/valid-values/"
