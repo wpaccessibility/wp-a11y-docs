@@ -10,7 +10,7 @@
 
 
 
-<title>Be flexible, WP Accessibility Knowledge Base</title>
+<title>, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-276/assets/css/styles.css">
@@ -286,8 +286,6 @@
 
           <a href="/pr-preview/pr-276/docs/topics/forms/help/avoid-input-masks/" class="nav-list-link">Avoid input patterns</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-276/docs/topics/forms/help/be-flexible/" class="nav-list-link">Be flexible</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-276/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-276/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
@@ -498,48 +496,11 @@
       
         
 
-        
-
-        
-            
-            
-            
-        
-
-    
-
-        
-
-        
-            
-            
-            
-        
-
-    
-
-        
-
-        
-            
-            
-            
-        
-
-    
-
-        
-
-        
-            
-
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
-        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-276/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-276/docs/topics/forms/'>Web forms</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-276/docs/topics/forms/help/'>Provide help</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Be flexible</li>
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li><li class="breadcrumb-nav-list-item" aria-current="page"></li>
     </ol>
 </nav>
 
@@ -550,15 +511,15 @@
 
           <h1 id="dont-reject-a-form-entry-too-quickly">Don’t reject a form entry too quickly</h1>
 
-<p>Be flexible accepting the data a user fills out a field. If it’s not exactly in the format you want, change it for them in the code.</p>
+<p>“Be flexible in accepting the data a user fills out in a field. If it’s not exactly in the format you want, change it for them in the code.</p>
 
 <p class="info callout"><strong>Note</strong>: this is best practice and not a WCAG requirement.</p>
 
 <h2 id="date-formats">Date formats</h2>
 
-<p>Users may unknowingly enter a different separation character then planned and then get the warning “Invalid date”. While actually it’s not invalid, it’s not in your preferred format.</p>
+<p>Users may enter a different separation character than you expected and get the warning “Invalid date”. Though it’s actually not invalid; it’s just not in your expected format.</p>
 
-<p>For example January 1, 2026 can be entered as:</p>
+<p>For example, January 1, 2026 can be entered as:</p>
 
 <ul>
   <li>01.01.2026</li>
@@ -567,6 +528,8 @@
 </ul>
 
 <p>Why not help the user and transform the separation character in your software for them?</p>
+
+<p>Be sure to make it clear in your field description or label whether the data is expected as “Month-Day” or as “Day-Month”, as these can be ambiguous.</p>
 
 <h2 id="email-addresses">Email addresses</h2>
 
@@ -578,7 +541,11 @@
 
 <h2 id="postal-codes">Postal codes</h2>
 
-<p><a href="https://en.wikipedia.org/wiki/List_of_postal_codes">Postal codes</a> can be written in different ways, for example in the Netherlands as: “1234 AA” (with a space), “1234AA” (without a space), or “1234aa” (lowercase). Extra spaces at the beginning or end can also be included when text is copied and pasted.</p>
+<p><a href="https://en.wikipedia.org/wiki/List_of_postal_codes">Postal codes</a> can be written in many ways, for example in the Netherlands as: “1234 AA” (with a space), “1234AA” (without a space), or “1234aa” (lowercase).</p>
+
+<p>US postal codes can either be five digits or five digits, a hyphen, and four digits, e.g. ‘12345-2345’ or ‘12345’. UK Postal codes vary in length between 5 and 7 characters in two parts, with both parts able to contain a mix of letters and numbers.</p>
+
+<p>Extra spaces at the beginning or end can also be included when text is copied and pasted.</p>
 
 <p>In code, these variations can easily be normalized to a single format. By accepting all valid ways and letting the software correct them, you prioritize the user instead of your software.</p>
 

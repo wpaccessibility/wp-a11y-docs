@@ -291,8 +291,6 @@
 
           <a href="/pr-preview/pr-276/docs/topics/forms/help/avoid-input-masks/" class="nav-list-link">Avoid input patterns</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-276/docs/topics/forms/help/be-flexible/" class="nav-list-link">Be flexible</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-276/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-276/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
@@ -589,12 +587,12 @@
         <span class="na">id=</span><span class="s">"firstname"</span> 
         <span class="na">name=</span><span class="s">"firstname"</span> 
         <span class="na">type=</span><span class="s">"text"</span> 
-        <span class="na">pattern=</span><span class="s">"\w{3,16}"</span> 
+        <span class="na">pattern=</span><span class="s">"\w{3,12}"</span> 
         <span class="na">autocomplete=</span><span class="s">"given-name"</span> 
 <span class="nt">/&gt;</span>
 </code></pre></div></div>
 
-<p>You can require a specific format for a phone number input field. Too bad if you no longer have a landline or want to provide an international number.</p>
+<p>You can require a specific format for a phone number input field. This can fail if you want to provide a number outside the expected parameters, such as an international number.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Inaccessible code, do not use --&gt;</span>
 <span class="nt">&lt;input</span>
@@ -631,7 +629,7 @@
 
 <h3 id="wcag-success-criteria-for-descriptions">WCAG Success Criteria for descriptions</h3>
 
-<p>Providing good feedback about correctly entering data in form fields is necessary to meet the WCAG success criteria:</p>
+<p>Providing good feedback about how to correctly enter data in form fields is necessary to meet the WCAG success criteria:</p>
 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#error-identification">3.3.1 Error Identification</a> (Level A)</li>

@@ -291,8 +291,6 @@
 
           <a href="/pr-preview/pr-276/docs/topics/forms/help/avoid-input-masks/" class="nav-list-link">Avoid input patterns</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-276/docs/topics/forms/help/be-flexible/" class="nav-list-link">Be flexible</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-276/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-276/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
@@ -555,7 +553,7 @@
 
           <h1 id="autocomplete-in-a-form">Autocomplete in a form</h1>
 
-<p>The HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete">autocomplete</a> attribute tells the browser what type of value is expected when filling out form field. Browsers store what users have entered before. Browsers can then use those saved values to automatically fill out fields.</p>
+<p>The HTML <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete">autocomplete</a> attribute tells the browser what type of value is expected when filling out a form field. Browsers store what users have entered before. Browsers can then use those saved values to automatically complete fields.</p>
 
 <p>Data such as names, addresses, and phone numbers can then be filled in automatically by the browser.</p>
 
@@ -563,9 +561,9 @@
 
 <h2 id="use-autocomplete-when-a-value-is-defined">Use autocomplete when a value is defined</h2>
 
-<p>WCAG contains a complete <a href="https://www.w3.org/TR/WCAG22/#input-purposes">list of values for autocomplete</a>. Always use an <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute if a value for a form field is defined in this list.</p>
+<p>WCAG contains a complete <a href="https://www.w3.org/TR/WCAG22/#input-purposes">list of values for autocomplete</a>. Always use an <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute if a value for a form field is defined in this list and the value to be added is information about the current user.</p>
 
-<p>When using <code class="language-plaintext highlighter-rouge">autocomplete</code>, it is important that the label always remains visible. The user needs to know whether the correct value has been entered in the according field.</p>
+<p>When using <code class="language-plaintext highlighter-rouge">autocomplete</code>, it is important that the label always remains visible. The user needs to know whether the correct value has been entered in the related field.</p>
 
 <p class="callout tip"><strong>Tip</strong>: The autocomplete value for City is <code class="language-plaintext highlighter-rouge">address-level2</code>.</p>
 
@@ -583,7 +581,7 @@
 
 <h2 id="pre-fill-known-information-where-possible">Pre-fill known information where possible</h2>
 
-<p>This doesn’t address ‘autocomplete’, but it is related: if the user is logged in, use known information to pre-fill fields. For example, if a session already contains available information that could be used to pre-fill fields or make it available for the user to select. Like, for example, a shipping address for an online order.</p>
+<p>This doesn’t address ‘autocomplete’, but it is related: if the user is logged in, use known information to pre-fill fields. For example, if a session already contains information that could be used to pre-fill fields, such as a shipping address for an online order.</p>
 
 <h2 id="resources">Resources</h2>
 
