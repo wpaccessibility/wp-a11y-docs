@@ -3,14 +3,16 @@ title: Allow copy/paste
 layout: default
 parent: Provide help
 nav_order: 2
-description: Copying and pasting from a password manager is a much easier and safer way for users to enter a password.
+description: Copying and pasting is a much easier and safer way for users to enter secure data.
 ---
 
-# Allow copying and pasting of passwords
+# Allow copying and pasting of data in a form field
 
-A password needs to be secure. If you prevent copying and pasting of passwords, you force users to choose simple, easy-to-remember passwords. That is exactly what you want to avoid.
+Personal data needs to be secure. This includes any personal or private information, including bank account numbers, national identification numbers, or any complex data where accuracy is paramount.
 
-Copying and pasting from a password manager is a much easier and safer way for users to enter a password. As explained by the UK National Cyber Security Centre in [Top tips for staying secure online](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online).
+If you prevent copying and pasting of, for example, a password, you force users to choose simple, easy-to-remember passwords. That is exactly what you want to avoid.
+
+Copying and pasting from a password manager is a much easier and safer way for users to enter data. As explained by the UK National Cyber Security Centre in [Top tips for staying secure online](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online).
 
 ## Resources
 

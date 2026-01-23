@@ -3,27 +3,29 @@ title: Be flexible
 layout: default
 parent: Provide help
 nav_order: 3
-description: Be flexible accepting the data a user fills out a field.
+description: "Be flexible in accepting the data a user fills out in a field.
 ---
 
 # Don’t reject a form entry too quickly
 
-Be flexible accepting the data a user fills out a field. If it's not exactly in the format you want, change it for them in the code.
+"Be flexible in accepting the data a user fills out in a field. If it's not exactly in the format you want, change it for them in the code.
 
 {: .info .callout}
 **Note**: this is best practice and not a WCAG requirement.
 
 ## Date formats
 
-Users may unknowingly enter a different separation character then planned and then get the warning "Invalid date". While actually it's not invalid, it's not in your preferred format.
+Users may enter a different separation character than you expected and get the warning "Invalid date". Though it's actually not invalid; it's just not in your expected format.
 
-For example January 1, 2026 can be entered as: 
+For example, January 1, 2026 can be entered as: 
 
 - 01.01.2026
 - 01-01-2026
 - 01/01/2026
 
 Why not help the user and transform the separation character in your software for them?
+
+Be sure to make it clear in your field description or label whether the data is expected as "Month-Day" or as "Day-Month", as these can be ambiguous.
 
 ## Email addresses
 
@@ -35,6 +37,10 @@ Email addresses with a plus sign are valid.
 
 ## Postal codes
 
-[Postal codes](https://en.wikipedia.org/wiki/List_of_postal_codes) can be written in different ways, for example in the Netherlands as: “1234 AA” (with a space), “1234AA” (without a space), or “1234aa” (lowercase). Extra spaces at the beginning or end can also be included when text is copied and pasted.
+[Postal codes](https://en.wikipedia.org/wiki/List_of_postal_codes) can be written in many ways, for example in the Netherlands as: “1234 AA” (with a space), “1234AA” (without a space), or “1234aa” (lowercase). 
+
+US postal codes can either be five digits or five digits, a hyphen, and four digits, e.g. '12345-2345' or '12345'. UK Postal codes vary in length between 5 and 7 characters in two parts, with both parts able to contain a mix of letters and numbers.
+
+Extra spaces at the beginning or end can also be included when text is copied and pasted.
 
 In code, these variations can easily be normalized to a single format. By accepting all valid ways and letting the software correct them, you prioritize the user instead of your software.

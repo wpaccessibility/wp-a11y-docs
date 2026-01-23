@@ -42,12 +42,12 @@ You can restrict a first-name input field to, for example, a minimum of 3 and a 
         id="firstname" 
         name="firstname" 
         type="text" 
-        pattern="\w{3,16}" 
+        pattern="\w{3,12}" 
         autocomplete="given-name" 
 />
 ```
 
-You can require a specific format for a phone number input field. Too bad if you no longer have a landline or want to provide an international number.
+You can require a specific format for a phone number input field. This can fail if you want to provide a number outside the expected parameters, such as an international number.
 
 ```html
 <!-- Inaccessible code, do not use -->
@@ -83,7 +83,7 @@ If exact input is required, for example for a date of birth, provide an option t
 
 ### WCAG Success Criteria for descriptions
 
-Providing good feedback about correctly entering data in form fields is necessary to meet the WCAG success criteria:
+Providing good feedback about how to correctly enter data in form fields is necessary to meet the WCAG success criteria:
 
 - [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A)
 - [3.3.3 Error Suggestion](https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion) (Level AA)

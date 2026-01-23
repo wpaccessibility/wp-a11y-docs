@@ -4,12 +4,12 @@ layout: default
 parent: Provide help
 nav_order: 3
 has_video: true
-description: The HTML autocomplete attribute tells the browser what type of value is expected when filling out form field.
+description: The HTML autocomplete attribute tells the browser what type of value is expected when filling out a form field.
 ---
 
 # Autocomplete in a form
 
-The HTML [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete) attribute tells the browser what type of value is expected when filling out form field. Browsers store what users have entered before. Browsers can then use those saved values to automatically fill out fields. 
+The HTML [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete) attribute tells the browser what type of value is expected when filling out a form field. Browsers store what users have entered before. Browsers can then use those saved values to automatically complete fields. 
 
 Data such as names, addresses, and phone numbers can then be filled in automatically by the browser.
 
@@ -17,9 +17,9 @@ Autocomplete is helpful for users who have difficulty typing, have memory issues
 
 ## Use autocomplete when a value is defined
 
-WCAG contains a complete [list of values for autocomplete](https://www.w3.org/TR/WCAG22/#input-purposes). Always use an `autocomplete` attribute if a value for a form field is defined in this list.
+WCAG contains a complete [list of values for autocomplete](https://www.w3.org/TR/WCAG22/#input-purposes). Always use an `autocomplete` attribute if a value for a form field is defined in this list and the value to be added is information about the current user.
 
-When using `autocomplete`, it is important that the label always remains visible. The user needs to know whether the correct value has been entered in the according field.
+When using `autocomplete`, it is important that the label always remains visible. The user needs to know whether the correct value has been entered in the related field.
 
 {: .callout .tip }
 **Tip**: The autocomplete value for City is `address-level2`.
@@ -40,7 +40,7 @@ Note: `aria-autocomplete` has a different purpose and usage than autocomplete on
 
 ## Pre-fill known information where possible
 
-This doesn't address 'autocomplete', but it is related: if the user is logged in, use known information to pre-fill fields. For example, if a session already contains available information that could be used to pre-fill fields or make it available for the user to select. Like, for example, a shipping address for an online order.
+This doesn't address 'autocomplete', but it is related: if the user is logged in, use known information to pre-fill fields. For example, if a session already contains information that could be used to pre-fill fields, such as a shipping address for an online order.
 
 ## Resources
 
