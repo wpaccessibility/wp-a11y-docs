@@ -25,22 +25,25 @@ Assuming that you only request essential information in forms, most fields will 
 {: .callout .alert }
 **Note for developers**: for screen reader users, the indication if a field is required must be added in the code with a form field. Learn how to [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
 
-## Indication of optional fields in WordPress form plugins
+
+## Resources
+
+### Related WCAG Success Criteria for required fields
+
+By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
+
+### Related pages in this documentation
+
+-  [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/).
+- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
+
+### Indication of optional fields in WordPress form plugins
 
 {: .callout .info }
 **Help wanted:** We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
-## Related WCAG Success Criteria
-
-By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
-
-## Related pages in this documentation
-
--  [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/).
-- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
-
-## Resources
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - Faizan Ahmed on UX Design World [Optimizing Form Design: Marking Required and Optional Fields in a Better Way](https://uxdworld.com/form-design-required-and-optional-fields/)

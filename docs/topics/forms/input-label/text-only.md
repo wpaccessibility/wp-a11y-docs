@@ -69,8 +69,9 @@ Place the link to the terms of delivery inside the label.
 <label for="alv2">I agree with the <a href="#">terms of delivery</a></label>
 
 ```
+## Resources
 
-## WCAG Success Criteria
+### WCAG Success Criteria for accessible names
 
 Giving a form control an accessible name is necessary to meet the WCAG success criteria:
 
@@ -78,11 +79,11 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 - [1.3.2 Meaningful sequence](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence) (Level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (Level A).
 
-## Related pages in this documentation
+### Related pages in this documentation
 
 - Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
-## Resources
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - [MDN about label accessibility](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label#accessibility)

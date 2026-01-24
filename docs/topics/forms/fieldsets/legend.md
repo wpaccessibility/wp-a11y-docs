@@ -69,19 +69,21 @@ A legend can contain a heading. Make sure that the heading level fits correctly 
 </fieldset>
 ```
 
-## WCAG Success Criteria for naming grouped form fields
+## Resources
+
+### WCAG Success Criteria for naming grouped form fields
 
 Naming grouped form fields is necessary to meet the WCAG success criteria:
 
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).
 
-## Related pages in this documentation
+### Related pages in this documentation
 
 - [Group form fields]({{site.baseurl}}docs/topics/forms/fieldsets/).
 - [Fieldset description]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/).
 
-## Resources
+### Other resources
 
 - W3C: [Grouping Controls](https://www.w3.org/WAI/tutorials/forms/grouping/)
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

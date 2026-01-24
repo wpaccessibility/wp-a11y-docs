@@ -60,17 +60,19 @@ In HTML, simplified
 />
 ```
 
-## WCAG Success Criteria for descriptions
+## Resources 
+
+### WCAG Success Criteria for descriptions
 
 A description is optional, but it can help users to understand better what they need to fill out.
 Then a description with a fieldset is necessary to meet the WCAG success criterion [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).
 
-## Related pages in this documentation
+### Related pages in this documentation
 
 - [Group form fields]({{site.baseurl}}docs/topics/forms/fieldsets/).
 - [Fieldset legend]({{site.baseurl}}/docs/topics/forms/fieldsets/legend/).
 
-## Resources
+### Other Resources
 
 - MDN: [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby).
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
