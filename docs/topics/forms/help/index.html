@@ -276,7 +276,19 @@
 
           <a href="/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
 
-          <a href="/docs/topics/forms/help/" class="nav-list-link">Provide help</a></li><li class="nav-list-item">
+          <a href="/docs/topics/forms/help/" class="nav-list-link">Provide help</a><button class="nav-list-expander btn-reset" aria-label="Provide help submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/help/copy-paste/" class="nav-list-link">Allow copy/paste</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/help/autocomplete/" class="nav-list-link">Autocomplete</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/help/avoid-input-masks/" class="nav-list-link">Avoid input patterns</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
+
+          <a href="/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
 
           <a href="/docs/topics/forms/required/" class="nav-list-link">Required fields</a><button class="nav-list-expander btn-reset" aria-label="Required fields submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -526,28 +538,34 @@
 
           <h1 id="provide-help-filling-out-a-form">Provide help filling out a form</h1>
 
-<p class="callout alert"><strong>Alert:</strong> This content will be rewritten and expanded.<br />
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/159">GitHub #159 Topic Provide help filling out a form</a>.</p>
-
-<h3 id="provide-instructions-to-help-users-with-complex-forms">Provide instructions to help users with complex forms</h3>
-
-<p>Strong semantic structure, like what is provided by <code class="language-plaintext highlighter-rouge">fieldset</code> and <code class="language-plaintext highlighter-rouge">legend</code> is very helpful in understanding complex forms. However, providing assistance to users can sometimes make the difference between having a user complete a process and abandon it.</p>
-
-<p>Instructions can range anywhere from an <code class="language-plaintext highlighter-rouge">aria-describedby</code> description associated with a single input, to a modal dialog that gives additional context or provides a worksheet to help the user calculate a value.</p>
-
-<p>Importantly, the line between understandable and…not can be very blurry; and you should always be looking at your form with an empathetic eye. Your knowledge of the form is likely much greater than your user’s.</p>
-
-<h3 id="validate-user-input">Validate user input</h3>
-
-<p>If it is possible to know whether a value is acceptable before the form is submitted, you should provide accessible validation as soon as possible. That validation should do more than simply notifying the user there is a problem with the field; it should also tell them how to fix it, if you’re able to provide that information.</p>
-
-<p>For example, in a required email field, you should be able to quickly identify the difference between a missing email and an invalid format, and provide feedback accordingly.</p>
-
-<p>That feedback should be provided in an accessible notification. And on that point…</p>
+<p>Filling out a form should be as easy as possible. How can you best help your user?</p>
 
 
           
-            
+            <h2 class="no_toc" id="table-of-contents">Pages in this section</h2>
+<ul>
+  
+  <li>
+    <a href="/docs/topics/forms/help/copy-paste/">Allow copy/paste</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/help/autocomplete/">Autocomplete</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/help/avoid-input-masks/">Avoid input patterns</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/help/check-correct/">Review, modify, undo</a>
+  </li>
+  
+  <li>
+    <a href="/docs/topics/forms/help/valid-values/">Provide valid values</a>
+  </li>
+  
+</ul>
           
 
           
@@ -557,7 +575,7 @@ Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues
 
     
     <p class="text-small">
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/forms/help.md" id="edit-this-page">View this page on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/forms/help/index.md" id="edit-this-page">View this page on GitHub</a>
     </p>
     
 
