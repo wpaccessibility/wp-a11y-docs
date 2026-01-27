@@ -1,0 +1,746 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+
+
+<title>Prototype Accessible error messages in forms, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/pr-preview/pr-277/assets/css/styles.css">
+  <link rel="icon" href="/pr-preview/pr-277/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/pr-preview/pr-277/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <div class="lh-wrapper">
+      <a href="/pr-preview/pr-277/" class="site-title lh-tight" aria-label="WP Accessibility logo, to the homepage">
+        <img src="/pr-preview/pr-277/assets/images/logo-wa11ypuu.png" alt="WP Accessibility logo">
+        Prototype WP Accessibility Knowledge Base
+      </a>
+    </div>
+
+    <div class="menu-button-wrapper">
+      <button id="menu-button" class="site-button" aria-expanded="false">
+        <span>Menu</span>
+        <svg viewBox="0 0 24 24" class="icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#svg-menu"></use>
+        </svg>
+      </button>
+    </div>
+
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav" tabindex="0">
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/" class="nav-list-link">Start with accessibility</a><button class="nav-list-expander btn-reset" aria-label="Start with accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/why-accessibility/" class="nav-list-link">Why?</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/business/" class="nav-list-link">Accessibility for your business</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/wp-a11y-plugins/" class="nav-list-link">WP accessibility plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/overlays/" class="nav-list-link">Overlays</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/guide/" class="nav-list-link">Reading guide</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/" class="nav-list-link">Standards and best practice</a><button class="nav-list-expander btn-reset" aria-label="Standards and best practice submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/" class="nav-list-link">Content and images</a><button class="nav-list-expander btn-reset" aria-label="Content and images submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/alt-text/" class="nav-list-link">Alt text for images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/headings/" class="nav-list-link">Headings</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/links/" class="nav-list-link">Links</a><button class="nav-list-expander btn-reset" aria-label="Links submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/links/link-text/" class="nav-list-link">Link texts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/links/link-image/" class="nav-list-link">Images as links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/tables/" class="nav-list-link">Tables in content</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/focus-hover/" class="nav-list-link">Styling hover and focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/color-contrast-icons/" class="nav-list-link">Color contrast of icons</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/color-contrast-forms/" class="nav-list-link">Color contrast in forms</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/meaningful-sequence/" class="nav-list-link">Meaningful sequence</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/resources/" class="nav-list-link">Resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/" class="nav-list-link">Frontend code</a><button class="nav-list-expander btn-reset" aria-label="Frontend code submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/semantics/" class="nav-list-link">Semantic HTML</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/tables/" class="nav-list-link">Tables in code</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/screen-reader-text/" class="nav-list-link">CSS screen-reader-text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/dynamic-changes/" class="nav-list-link">Feedback on dynamic changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/components/" class="nav-list-link">Components</a><button class="nav-list-expander btn-reset" aria-label="Components submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/components/skip-links/" class="nav-list-link">Skip links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/components/excerpt/" class="nav-list-link">Post Excerpts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/components/link-logo/" class="nav-list-link">Link on a logo</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/code/components/pagination/" class="nav-list-link">Pagination</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/input-label/" class="nav-list-link">Input and label</a><button class="nav-list-expander btn-reset" aria-label="Input and label submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/input-label/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/input-label/placeholders/" class="nav-list-link">Placeholders</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/input-label/text-only/" class="nav-list-link">Label has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/input-label/label-location/" class="nav-list-link">Best label location</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a><button class="nav-list-expander btn-reset" aria-label="Input and description submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/descriptions/connect-description/" class="nav-list-link">Connect the description</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/descriptions/content-description/" class="nav-list-link">Description has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a><button class="nav-list-expander btn-reset" aria-label="Group form fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/fieldsets/legend/" class="nav-list-link">Fieldset legend</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/fieldsets/fieldset-descriptions/" class="nav-list-link">Fieldset description</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/help/" class="nav-list-link">Provide help</a><button class="nav-list-expander btn-reset" aria-label="Provide help submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/help/copy-paste/" class="nav-list-link">Allow copy/paste</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/help/autocomplete/" class="nav-list-link">Autocomplete</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/help/avoid-input-masks/" class="nav-list-link">Avoid input patterns</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/required/" class="nav-list-link">Required fields</a><button class="nav-list-expander btn-reset" aria-label="Required fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/required/mark-required-fields/" class="nav-list-link">Mark required form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/required/mark-optional-fields/" class="nav-list-link">Mark optional form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/required/required-screen-readers/" class="nav-list-link">Indicate required fields for screen readers</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a><button class="nav-list-expander btn-reset" aria-label="Feedback on errors submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/error-check/" class="nav-list-link">Check at the right moment</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/html-form-validation/" class="nav-list-link">HTML form validation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/error-message-location/" class="nav-list-link">Best message location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/error-message-format/" class="nav-list-link">Use text for error messages</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/error-message-text/" class="nav-list-link">Write clear error messages</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/error-summary/" class="nav-list-link">Error summary</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/feedback/screen-reader-feedback/" class="nav-list-link">Screen reader feedback</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/wp-form-plugins/" class="nav-list-link">WP form plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/forms/resources/" class="nav-list-link">Form resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/" class="nav-list-link">Theme accessibility guidelines</a><button class="nav-list-expander btn-reset" aria-label="Theme accessibility guidelines submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/skip-to-content/" class="nav-list-link">Skip to Content Link</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/meaningful-landmark-roles/" class="nav-list-link">Meaningful landmark roles and names</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/keyboard-navigation-support/" class="nav-list-link">Keyboard navigation support</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/controls-with-accessible-names/" class="nav-list-link">Controls with accessible names, roles, and states</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/labelled-form-fields/" class="nav-list-link">Labelled form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/headings-structure/" class="nav-list-link">Headings with meaningful structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/underlined-links/" class="nav-list-link">Underlined links in text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/no-ambiguous-link-text/" class="nav-list-link">No ambiguous link text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/sufficient-color-contrast/" class="nav-list-link">Sufficient color contrast of text and UI controls</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/alternative-text/" class="nav-list-link">Alternative text on images and graphics</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/accessible-animation/" class="nav-list-link">Accessible audio, video, and animations</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/reflow-resize/" class="nav-list-link">Support for reflow, resize, and text spacing changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/unexpected-changes-of-context/" class="nav-list-link">No unexpected changes of context</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/new-windows-tabs/" class="nav-list-link">No links opening new windows or tabs without warning</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/content-hover-focus/" class="nav-list-link">Content on hover or focus is accessible</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/no-inaccessible-plugins/" class="nav-list-link">Must not recommend or require inaccessible plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/screen-reader-text/" class="nav-list-link">Screen reader text supported</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/documenting-accessibility/" class="nav-list-link">Documenting accessibility</a><button class="nav-list-expander btn-reset" aria-label="Documenting accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/documenting-accessibility/accessibility-statements/" class="nav-list-link">Accessibility statements</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/documenting-accessibility/accessibility-txt/" class="nav-list-link">accessibility.txt files</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/documenting-accessibility/acr/" class="nav-list-link">Accessibility Conformance Reports</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/legislation/" class="nav-list-link">Legislation</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/" class="nav-list-link">Test for accessibility</a><button class="nav-list-expander btn-reset" aria-label="Test for accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/checklists/" class="nav-list-link">Overall checklists</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/keyboard/" class="nav-list-link">Keyboard testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/screen-readers/" class="nav-list-link">Screen reader testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/testing-themes/" class="nav-list-link">Testing WordPress themes</a><button class="nav-list-expander btn-reset" aria-label="Testing WordPress themes submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/testing-themes/identifying-themes/" class="nav-list-link">Identifying themes that need to be tested</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/testing-themes/setup/" class="nav-list-link">Getting set up to test</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/testing-themes/reporting-sheet/" class="nav-list-link">Reporting sheet overview</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/testing-themes/theme-testing-workflow/" class="nav-list-link">Testing workflow tips</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/wp-a11y/" class="nav-list-link">WordPress and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WordPress and Accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wcag/" class="nav-list-link">WCAG and WordPress</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wcag/core/" class="nav-list-link">WordPress Core</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-themes/" class="nav-list-link">Themes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-plugins/" class="nav-list-link">Plugins</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/" class="nav-list-link">About this documentation</a><button class="nav-list-expander btn-reset" aria-label="About this documentation submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/sponsors/" class="nav-list-link">Sponsors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/improve-website/" class="nav-list-link">Improve this website</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/github/" class="nav-list-link">Technical documentation website</a><button class="nav-list-expander btn-reset" aria-label="Technical documentation website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/github/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/github/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/github/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/github/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contact/" class="nav-list-link">Contact</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li></ul></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    <section class="search" aria-label="Search">
+  <form class="search-input-wrap" role="search" action="/pr-preview/pr-277/search/" method="get">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <use xlink:href="#svg-search"></use>
+      </svg>
+    </label>
+
+    <input
+      type="search"
+      id="search-input"
+      name="q"
+      class="search-input"
+      autocomplete="off"
+    >
+
+    <button type="submit" class="search-submit">Search</button>
+  </form>
+
+  <div id="search-results" class="search-results"></div>
+</section>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/blog/'>Blog</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Accessible error messages in forms</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1> Accessible error messages in forms </h1>
+
+<p class="post-meta">Published on August 16, 2025
+     by Rian Rietveld
+</p>
+
+<h2 id="summary">Summary</h2>
+
+<p class="lead">When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. In this post, we’ll walk step-by-step through how to prevent errors, indicate them clearly, and offer help with error messages in forms for different types of users.</p>
+
+<h2 id="when-designing-a-form-ask-yourself-the-following-questions">When designing a form, ask yourself the following questions</h2>
+
+<ul>
+  <li>What do I really need to know?</li>
+  <li>How will I ask for this information?</li>
+  <li>What information can I provide in advance to help the user?</li>
+  <li>How do I show which fields are required?</li>
+  <li>When do I check for errors?</li>
+  <li>How do I indicate that an answer is incomplete or filled out incorrectly?</li>
+  <li>What makes a helpful error message?</li>
+  <li>How do I confirm that a form has been submitted successfully?</li>
+  <li>How can I offer help when a user gets stuck?</li>
+</ul>
+
+<p>No one enjoys filling out forms, and all the help you can give is useful. Keep that goal in mind. You want to learn something from your user, or your user wants to tell you something. Make that process as easy as possible.</p>
+
+<h3 id="what-do-i-really-need-to-know">What do I really need to know?</h3>
+
+<p>Handling errors starts with the questions you ask. Some questions are difficult to answer. Is it really essential to know whether someone is male or female? Do you only want to contact them by phone? What if a user’s answer to a question isn’t an available option, or they don’t want to answer a question? They may just give up.</p>
+
+<p>Only ask for information you truly need in order to process the request. The fewer questions you ask, the lower the barrier for filling out the form.</p>
+
+<p>Be clear about why you need sensitive personal information, such as an identification number, race, religion or medical data. Check your local legislation to see if you are allowed to request such private information in an open online form.</p>
+
+<p class="callout info">In the Netherlands there are strict rules about <a href="https://www.rijksoverheid.nl/onderwerpen/privacy-en-persoonsgegevens/vraag-en-antwoord/welke-organisaties-mogen-mijn-burgerservicenummer-bsn-gebruiken#:~:text=Alle%20overheidsorganisaties%20mogen%20gebruik%20maken%20van%20uw%20burgerservicenummer%20(BSN)">when to ask for a citizen service number</a>. Canada has similar rules governing <a href="https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/">how you can request Personally Identifying Information (PII)</a>.</p>
+
+<h3 id="how-will-i-ask-for-this-information">How will I ask for this information?</h3>
+
+<p>The input mechanism you use to ask for information has a profound impact on your users. Should you design new custom input fields or use recognizable, familiar patterns? Please don’t reinvent the web for something as essential as form fields. As Heydon Pickering explains in his talk <a href="https://www.youtube.com/watch?v=ediHVy0869c">Get Your Priorities Straight</a>: “Real people aren’t looking to be delighted. People want to get the task done and get on with their lives”.</p>
+
+<p class="callout example">For example: users recognize radio buttons as circles and checkboxes as squares. They know from experience they can choose one option from the radio buttons and multiple options from the checkboxes. Also, the <a href="https://webaim.org/techniques/keyboard/#testing">keyboard interaction</a> for radio buttons and checkboxes differs from each other.</p>
+
+<p>Some field types are better avoided due to poor usability, such as multi-selects. Using date pickers? Check the experience for keyboard or screen reader users.</p>
+
+<p>Sometimes a simple solution works best for everyone. For example, KLM’s method for selecting a date with a text input for the day, a dropdown for the month, and another text input for the year:
+<img src="/assets/images/blog_toegankelijker-foutmeldingen-date-picker.png" alt="Date selection with a text field for day, a select for month, and a text field for year" /></p>
+
+<p>For a deep dive into asking for dates in forms, see the GOV.UK Design System pattern library: <a href="https://design-system.service.gov.uk/patterns/dates/">Ask users for Dates</a>.</p>
+
+<p>Don’t force the user to enter information (like an email address) more than once, or expect them to remember entries entered on previous screens, like in a multistep form.</p>
+
+<p class="callout info">This success criterion was added in <a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">WCAG 2.2: 3.3.7 Redundant Entry</a>.</p>
+
+<h3 id="what-information-can-i-provide-in-advance-to-help-the-user">What information can I provide in advance to help the user?</h3>
+
+<p>We’ve all been there: you enter a new password, click submit, and <em>then</em> you’re told what the password requirements are. You yell at the screen: “Why didn’t you tell me that before?”.</p>
+
+<p>The blog post <a href="https://www.a11y-collective.com/blog/blind-people-dont-visit-my-website/">Blind people don’t visit my website</a> lists frustrations from web users, such as:</p>
+<blockquote>
+  <p>“Error messages that come afterwards and eventually don’t explain what you need to change.”</p>
+</blockquote>
+
+<p>Don’t make users guess — offer clear help in plain language, at the right moment. Tell users in advance which documents they’ll need, and which fields are or aren’t required. Add descriptions to fields where necessary.</p>
+
+<h3 id="how-do-i-show-which-fields-are-required">How do I show which fields are required?</h3>
+
+<p>If you only ask what’s really needed, all fields could technically be required — but that’s not always the case. Different types of forms have different needs. For example, if you’re creating content in the admin of a website, all the content fields you might use need to be available; but most of them won’t be required.</p>
+
+<p>Learn how to do this in <a href="/pr-preview/pr-277//docs/topics/forms/required/">Indicate required fields in forms</a></p>
+
+<h4 id="whats-the-best-way-to-indicate-required">What’s the best way to indicate required?</h4>
+
+<p>Many websites use indicators like “required”, “optional”, or an asterisk (*). But which is clearest?</p>
+
+<p>Do user research for your language. For example in Dutch the word “optioneel” (optional) is hard to understand for people with low literacy, and “niet verplicht” (not required) is a better choice. This may be different for your language.</p>
+
+<p>Prefer <strong>“required”</strong> over an asterisk, because an asterisk assumes prior knowledge of the meaning of that icon. If you do use an asterisk, explain its meaning above the form.</p>
+
+<h4 id="should-i-mark-required-or-non-required-fields">Should I mark required or non-required fields?</h4>
+
+<p>Which is better? Indicate required or non-required fields? It depends. Your choice should be based on the form’s function, your CMS or plugin, and user research.</p>
+
+<p>One option could be that when most fields are required, mark the <em>optional</em> ones. If most fields are not required, mark the <em>required</em> ones.</p>
+
+<p>But, keep the way you indicate required/non-required fields consistent with all forms in your site.</p>
+
+<p class="callout example">For example: “Please complete all fields. If a field is not required, it will be labeled “(Optional)”.</p>
+
+<p>Whatever you choose, be consistent within the form and across all forms on your website. Inform users above the form how field requirements are indicated.</p>
+
+<h3 id="when-should-i-check-for-errors">When should I check for errors?</h3>
+
+<p>Websites commonly check for errors while typing, after the focus moves out of a field, or after the form is submitted. Which approach is most user-friendly?</p>
+
+<p>Checking during typing can be confusing. Imagine typing an email address and seeing “Invalid email address” after the first letter. Of course, it’s invalid, you haven’t finished yet!</p>
+
+<p>That leaves two options: check after leaving a field, or after submission. These can be combined. For certain fields, like dates that must be in the future, immediate checking is helpful. But checking after submission is always necessary.</p>
+
+<p class="callout warning">HTML5 form validation is not accessible at this moment (in 2025). The W3C summarizes the options in <a href="https://www.w3.org/WAI/tutorials/forms/validation/">Validating Input </a>. “If your web browser supports HTML5, it will not allow you to submit the form without entering text into the input field. Instead, it will display a message that is generated by the web browser itself”.  Write custom error messages and provide server side generated error messages. The W3C explains the options in <a href="https://www.w3.org/WAI/tutorials/forms/validation/">Validating Input </a>.</p>
+
+<h3 id="how-do-i-indicate-that-an-answer-is-incomplete-or-filled-out-incorrectly">How do I indicate that an answer is incomplete or filled out incorrectly?</h3>
+
+<p>Use more than color alone to indicate errors. A user with visual impairments or color blindness may not notice a red outline. Color is helpful but always include an error message in text too.</p>
+
+<ul>
+  <li>Clearly state whether a field is required.</li>
+  <li>Show errors with more than just color or an icon.</li>
+  <li>Write out the error in text above the form field.</li>
+  <li>Add a summary of all errors above the form to help the user quickly see what needs to be corrected.</li>
+</ul>
+
+<h3 id="what-makes-a-helpful-error-message">What makes a helpful error message?</h3>
+
+<p>Messages like “This field is required” or “Invalid value” don’t offer much help. Write clear error messages that explain what’s missing or needs changing.</p>
+
+<p class="callout example">“Enter your first name”<br />
+“Your chosen password is too short. It must be at least 12 characters long.”<br />
+“The expiration date must be in the future.”</p>
+
+<p>This is far more helpful than a generic message.</p>
+
+<h3 id="how-do-i-confirm-a-form-was-successfully-submitted">How do I confirm a form was successfully submitted?</h3>
+
+<p>You click “Send” and… nothing happens. Or you’re redirected to the homepage. Was the form actually sent? How do you know?</p>
+
+<p>Give users clear confirmation that their form has been submitted and what will happen next. You can also include this messsage in a confirmation email.</p>
+
+<p class="callout example">A confirmation text could be:<br />
+Thank you for your registration for our workshop “Knitting socks”. A confirmation email has been sent to user@example.com with the time and location of the workshop. If you haven’t received an email? <a href="#">Please contact us</a>.</p>
+
+<h3 id="how-can-i-offer-help-if-a-user-gets-stuck">How can I offer help if a user gets stuck?</h3>
+
+<p>If a user gets stuck filling out a complex form, they need to be able to easily request help.</p>
+
+<p>Don’t hide contact details. They shouldn’t be buried at the bottom of the form, or isolated on just one page of your site. Include a short sentence at the top of your form, and place contact information in predictable places in your site design. The footer is a common place to include additional contact information.</p>
+
+<p>Always offer multiple ways to get in touch on your contact page — not everyone can make a phone call.</p>
+
+<p class="callout example">A help text could be:<br />
+Do you need help filling out this form or do you have questions? <a href="#">Please contact us</a>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Help your users as much as possible when filling out a form. Don’t ask unnecessary questions just to collect for your statistics. Use standard input form fields wherever possible. Make it clear what is required and how to fill out a field. Use clear, timely error messages. And make sure it’s easy to ask for help when needed.</p>
+
+<p>Remember: people want to get through a form quickly and move on with their lives. Make that task as easy as possible.</p>
+
+<h2 id="credits">Credits</h2>
+<p>This post was first published in Dutch on the <a href="https://nldesignsystem.nl/blog/toegankelijke-foutmeldingen-formulieren/">NL Design Systems blog</a> and is used with permission. The text has been modified for a global audience.</p>
+
+
+
+          
+            
+          
+
+        </main>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+  <footer>
+
+    <nav aria-label="Footer">
+      <h2 class="screen-reader-text">Footer navigation</h2>
+
+      <div class="container">
+
+        <div class="column">
+        <h3>Quick links</h3>
+        <ul>
+          <li><a href="/pr-preview/pr-277/docs/about/contact/">Contact us</a></li>
+          <li><a href="/pr-preview/pr-277/docs/topics/theme-guidelines/">Theme accessibility-ready tag</a></li>
+          <li><a href="/pr-preview/pr-277/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a></li>
+          <li><a href="/pr-preview/pr-277/docs/about/sponsors/">Sponsors</a></li>
+          <li><a href="/pr-preview/pr-277/docs/topics/legislation/">Legislation worldwide</a></li>
+          <li><a href="/pr-preview/pr-277/blog/">Blog</a></li>
+        </ul>
+        </div>
+
+        <div class="column">
+        <h3>Content</h3>
+          <ul>
+            <li><a href="/pr-preview/pr-277/docs/start/guide/">Find the documentation for you</a></li>
+            <li><a href="/pr-preview/pr-277/docs/start/">Start with accessibility</a></li>
+            <li><a href="/pr-preview/pr-277/docs/topics/">Standards and best practice</a></li>
+            <li><a href="/pr-preview/pr-277/docs/testing/">Test for accessibility</a></li>
+            <li><a href="/pr-preview/pr-277/docs/wp-a11y/">WordPress and Accessibility</a></li>
+            <li><a href="/pr-preview/pr-277/docs/about/">About this documentation</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <p>
+        <span aria-hidden="true">&#x2191;</span>
+        <a href="#top" id="back-to-top" class="back-to-top">
+          Back to top
+        </a>
+      </p>
+
+    </nav>
+
+  </footer>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
