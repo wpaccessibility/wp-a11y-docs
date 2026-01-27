@@ -2,7 +2,7 @@
 title: Training
 layout: default
 parent: Start with accessibility
-nav_order: 3
+nav_order: 5
 ---
 
 # Training, learn web accessibility

@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/media-query" as *;
+
+// Page footer.
+
+footer {
+
+    padding-bottom: $sp-8;
+    border-top: $border $border-color;
+
+  nav {
+
+    .container {
+      display:flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+
+      .column {
+        margin: 0;
+        padding:0 1em 0 0;
+        min-width: 50%;
+
+        :last-child {
+          padding: 0;
+        }
+
+      }
+    }
+  }
+}

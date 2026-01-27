@@ -1,10 +1,10 @@
 ---
-title: About this website
+title: About this documentation
 layout: default
 nav_order: 14
 ---
 
-# About this website
+# About this knowledge base
 
 WPaccessibility.org is a documentation website about web accessibility, for the WordPress community and beyond.
 

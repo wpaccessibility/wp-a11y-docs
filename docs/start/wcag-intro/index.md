@@ -87,3 +87,9 @@ Decide which browser and versions your theme or plugin will support. Some WCAG t
 TODO: what is the WP baseline now? A link may be better.
 
 TODO: Link to Standards and best practice/ WCAG (to be written) for more in dept info
+
+# The difference between WCAG and best practice
+
+{: .callout  .alert }
+**Alert:** This content will be written.
+Related issue on [GitHub #98 Topic WCAG and best practice](https://github.com/wpaccessibility/wp-a11y-docs/issues/98).  

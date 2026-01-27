@@ -2,7 +2,7 @@
 title: Design & user experience
 layout: default
 parent: Standards and best practice
-nav_order: 4
+nav_order: 2
 ---
 
 # Design and user experience

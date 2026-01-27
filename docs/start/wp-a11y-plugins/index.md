@@ -1,8 +1,8 @@
 ---
-title: WP Plugins
+title: WP accessibility plugins
 layout: default
 parent: Start with accessibility
-nav_order: 2
+nav_order: 5
 ---
 
 # WordPress accessibility plugins

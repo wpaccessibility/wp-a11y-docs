@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/media-query" as *;
+
+// In-page next previous page navigation.
+
+.prev-next {
+
+  border-top: $border $border-color;
+  margin-top: 2em;
+
+  h2 {
+    font-size: var(--text-font-size-lg);
+  }
+
+  ul {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin: 0;
+      padding:0 1em 0 0;
+      min-width: 50%;
+      a {
+        display: block;
+      }
+
+      :last-child {
+        padding: 0;
+      }
+
+    }
+  }
+}

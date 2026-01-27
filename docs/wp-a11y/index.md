@@ -1,12 +1,12 @@
 ---
-title: WordPress Accessibility Team
+title: WordPress and Accessibility
 layout: default
-description: "About the WordPress Accessibility Team"
+description: About the WordPress, accessibility and the accessibility team.
 nav_order: 10
 has_video: true
 ---
 
-# The WordPress Accessibility Team
+# WordPress and Accessibility
 
 WordPress is always changing and improving, it’s never truly finished. The same goes for making WordPress accessible to everyone. As the design, user experience, and code change, they need to be checked for accessibility.
 

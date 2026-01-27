@@ -1,8 +1,9 @@
 ---
 title: Legislation
 layout: default
+parent: Standards and best practice
 description: Information about Accessibility Legislation, including brief comments about the ADA and the EAA.
-nav_order: 7
+nav_order: 8
 ---
 
 # Accessibility Legislation

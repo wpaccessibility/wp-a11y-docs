@@ -1,7 +1,7 @@
 ---
 title: WP plugins for testing
 layout: default
-parent: Testing for accessibility
+parent: Test for accessibility
 nav_order: 8
 ---
 

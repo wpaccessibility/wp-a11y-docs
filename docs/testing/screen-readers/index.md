@@ -1,7 +1,7 @@
 ---
 title: Screen reader testing
 layout: default
-parent: Testing for accessibility
+parent: Test for accessibility
 nav_order: 7
 ---
 

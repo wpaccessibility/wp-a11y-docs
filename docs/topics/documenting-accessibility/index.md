@@ -2,7 +2,7 @@
 title: Documenting accessibility
 layout: default
 parent: Standards and best practice
-nav_order: 3
+nav_order: 7
 ---
 
 # Documenting Accessibility

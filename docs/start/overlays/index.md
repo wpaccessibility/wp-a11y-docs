@@ -1,8 +1,8 @@
 ---
 title: Overlays
 layout: default
-parent: Debunking myths
-nav_order: 3
+parent: Start with accessibility
+nav_order: 6
 ---
 
 # Accessibility Overlays

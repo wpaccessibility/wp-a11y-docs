@@ -1,7 +1,7 @@
 ---
 title: WordPress Core
 layout: default
-parent: Standards and best practice
+parent: WordPress and Accessibility
 nav_order: 7
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Testing for accessibility
+title: Test for accessibility
 layout: default
 nav_order: 5
 ---

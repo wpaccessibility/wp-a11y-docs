@@ -1,7 +1,8 @@
 ---
 title: How to contribute
+parent: About this documentation
 layout: default
-nav_order: 11
+nav_order: 2
 ---
 
 # How to contribute to this documentation
