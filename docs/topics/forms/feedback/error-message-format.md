@@ -19,12 +19,16 @@ By adding text you make sure all visitors understand the error message. Color bl
 
 Connecting the error message text to an input field works the same as connecting description texts: [Connect the description to the form field]({{site.baseurl}}/docs/topics/forms/descriptions/connect-description/).
 
+## Resources
+
+### WCAG Success Criteria for text in error messages
+
 Describing form errors in text is required to meet the WCAG success criteria:
 
 - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color) (Level A).
 - [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
 
-## Resources
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

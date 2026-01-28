@@ -52,30 +52,30 @@ If you decide to use `required`, also use `novalidate` on the form element to pr
 ```
 
 {: .callout .info }
-**Note:** The use of `aria-invalid` will be addressed later in the section Feedback on form errors.
+**Note:** The use of `aria-invalid` is addressed in [Provide feedback to screen reader users on form errors]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/). 
 
-## Using aria-required or required in WordPress plugins
 
-### Gravity Forms
+## Resources
+
+### WCAG Success Criteria for required fields.
+
+By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
+
+### Related pages in this documentation
+
+- [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/).
+- [Option 2: Marking only the optional form fields]({{site.baseurl}}/docs/topics/forms/required/mark-optional-fields/).
+- [Provide feedback to screen reader users on form errors]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/).
+
+### Using aria-required or required in WordPress plugins
 
 Gravity Forms adds `aria-required="true"` to required fields.
-
-### Other WordPress form plugins
 
 {: .callout .info }
 **Help wanted:** We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
-## WCAG Success Criteria
-
-By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
-
-## Related pages in this documentation
-
--  [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/).
--  [Option 2: Marking only the optional form fields]({{site.baseurl}}/docs/topics/forms/required/mark-optional-fields/).
-
-## Resources
+### Other resources
 - MDN [aria-required](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-required).
 - MDN [HTML attribute: required](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required).
 - W3C [Validating Input](https://www.w3.org/WAI/tutorials/forms/validation/).

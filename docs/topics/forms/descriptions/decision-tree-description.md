@@ -44,12 +44,14 @@ Rich text in this context means: additional structure or interactive functionali
 **Yes**: Consider a multistep form, where the information is placed directly above the form for each step.  
 **No**: Rewrite the description so that it only contains plain text. This ensures that all users can read the information.
 
-## WCAG Success Criteria
+## Resources
+
+### WCAG Success Criteria for descriptions 
 
 - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
 - [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
 
-## Resources
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
 - MDN: [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby).

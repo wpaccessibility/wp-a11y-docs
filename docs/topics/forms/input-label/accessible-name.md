@@ -146,7 +146,9 @@ Good tools to check the accessible name of a form input:
 - Your browser's [accessibility tree]({{site.baseurl}}/docs/topics/code/accessible-name/).
 - A screen reader, such as NVDA for Windows or VoiceOver/Safari for macOS.
 
-## WCAG Success Criteria
+## Resources 
+
+### WCAG Success Criteria for accessible names in forms
 
 Giving a form control an accessible name is necessary to meet the WCAG success criteria:
 
@@ -155,12 +157,19 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 - [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
-## Related pages in this documentation
+### Related pages in this documentation
 
 -  Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
-## Resources
+### Accessible names in WP Form plugins
+
+Gravity Forms accessibility documentation: [Labels and Placeholders](https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&irgwc=1#h-labels-and-placeholders).
+
+{: .callout .info }
+**Help wanted:** We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
+Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
+
+### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- Gravity Forms accessibility documentation: [Labels and Placeholders](https://docs.gravityforms.com/accessibility-for-developers/?partner_id=5477304&irgwc=1#h-labels-and-placeholders).
 - WebAIM: [Decoding Label and Name for Accessibility](https://webaim.org/articles/label-name).
