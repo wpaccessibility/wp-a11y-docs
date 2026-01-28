@@ -8,10 +8,6 @@ nav_order: 4
 
 # Link destinations
 
-{: .callout .alert }
-This content will be reviewed, restructured and expanded.
-Related issue on [GitHub #118 Topic Link destinations](https://github.com/wpaccessibility/wp-a11y-docs/issues/118).  
-
 {: .tip }
 **Rule of thumb**: Always tell a visitor what to expect when selecting a link.
 

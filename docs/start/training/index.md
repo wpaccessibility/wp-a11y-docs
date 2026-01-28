@@ -2,14 +2,10 @@
 title: Training
 layout: default
 parent: Start with accessibility
-nav_order: 3
+nav_order: 5
 ---
 
 # Training, learn web accessibility
-
-{: .callout  .alert }
-**Alert:** This content will to be reviewed and expanded. The links need to be checked and updated.
-Related issue on [GitHub #93 Training](https://github.com/wpaccessibility/wp-a11y-docs/issues/93).  
 
 ## Online events
 

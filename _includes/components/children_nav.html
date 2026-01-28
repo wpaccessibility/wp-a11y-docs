@@ -83,7 +83,7 @@
 <ul>
   {% for nav_child in nav_children %}
   <li>
-    <a href="{{ nav_child.url | relative_url }}">{{ nav_child.title }}</a>{% if nav_child.summary %} - {{ nav_child.summary }}{% endif %}
+    <a href="{{ nav_child.url | relative_url }}">{{ nav_child.title }}</a>
   </li>
   {% endfor %}
 </ul>

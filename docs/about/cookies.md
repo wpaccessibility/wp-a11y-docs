@@ -2,8 +2,8 @@
 title: Cookie Statement
 description: Explanation of Able Player's use of functional cookies
 layout: default
-parent: About this website
-nav_order: 3
+parent: About this documentation
+nav_order: 7
 ---
 
 # Cookie Statement

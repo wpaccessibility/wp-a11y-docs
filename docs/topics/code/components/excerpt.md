@@ -8,8 +8,7 @@ nav_order: 3
 # Post Excerpts
 
 {: .callout .alert }
-**Alert:** This content will be reviewed, modernized and restructured.  
-Related issue on [GitHub #151 Topic Post Excerpts](https://github.com/wpaccessibility/wp-a11y-docs/issues/151).  
+**Alert:** This content will be updated with more modern ways to address accessibility in post excerpts.
 
 ## Excerpt block
 
@@ -133,6 +132,6 @@ the_content( sprintf(
 
 Removing a visible link from the tab order could be confusing for keyboard users.
 
-Adding a link inside a heading is open to debate. But the link will show up in the headings list too this way, so that’s probably not a bad thing. As we are all used to the heading being a link, it has become a WordPress convention. Removing the “continue reading” link could be an option to cleanup the link clutter.
+Adding a link inside a heading is open to debate. But the link will show up in the headings list too this way, so that’s probably not a bad thing. As we are all used to the heading being a link, it has become a WordPress convention. Removing the “continue reading” link could be an option to clean up the link clutter.
 
 The “continue reading” link is hidden for screen readers, but it has screen reader text. This is useful because, if a user has her own stylesheet, or watches the sites without stylesheet, the link text is still understandable. Also adding the screen-reader-text class improves the quality of the link text, important for SEO (search engine optimization).

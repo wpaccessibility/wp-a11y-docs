@@ -34,10 +34,9 @@ layout: table_wrappers
             {% include components/children_nav.html %}
           {% endif %}
 
-          {% if site.last_edit_timestamp or site.gh_edit_link %}
-            {% include components/github.html %}
-          {% endif %}
         </main>
+
+        {% include components/prev_next.html %}
 
         {% include components/footer.html %}
       </div>

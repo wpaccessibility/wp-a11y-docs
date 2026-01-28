@@ -2,7 +2,7 @@
 title: Links
 layout: default
 parent: Content and images
-nav_order: 4
+nav_order: 3
 ---
 
 # Web links

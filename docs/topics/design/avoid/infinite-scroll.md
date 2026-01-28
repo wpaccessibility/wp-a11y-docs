@@ -7,10 +7,6 @@ nav_order: 2
 
 # Patterns to avoid: Infinite scroll
 
-{: .callout .alert }
-This content will be reviewed and restructured.
-Related issue on [GitHub #132 Topic Patterns to avoid: Infinite scroll](https://github.com/wpaccessibility/wp-a11y-docs/issues/132).  
-
 We don’t recommend using infinite scroll because it has many significant accessibility issues:
 
 - You can’t go back to your previous place using browser “back” button.

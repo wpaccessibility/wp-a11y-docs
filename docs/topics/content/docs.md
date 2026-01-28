@@ -2,14 +2,10 @@
 title: Digital documents
 layout: default
 parent: Content and images
-nav_order: 7
+nav_order: 5
 ---
 
 # Digital documents
-
-{: .callout .alert }
-**Alert:** This content will be reviewed, restructured and expanded.  
-Related issue on [GitHub #119 Topic Digital document](https://github.com/wpaccessibility/wp-a11y-docs/issues/119).  
 
 ## Accessible PDFs 
 
