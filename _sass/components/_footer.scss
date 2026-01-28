@@ -4,14 +4,12 @@
 // Page footer.
 
 footer {
-
-    padding-bottom: $sp-8;
-    border-top: $border $border-color;
+  padding-bottom: $sp-8;
+  border-top: $border $border-color;
 
   nav {
-
     .container {
-      display:flex;
+      display: flex;
       flex-wrap: wrap;
       margin: 0;
       padding: 0;
@@ -20,7 +18,6 @@ footer {
         margin: 0;
         padding-right: 1em;
         max-width: 50%;
-
       }
     }
   }

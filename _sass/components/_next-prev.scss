@@ -4,7 +4,6 @@
 // In-page next previous page navigation.
 
 .prev-next {
-
   border-top: $border $border-color;
   margin: 1.25em 0;
 
@@ -13,7 +12,7 @@
   }
 
   ul {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
@@ -31,7 +30,6 @@
       p {
         padding: 0;
       }
-
     }
   }
 }
