@@ -10,7 +10,7 @@
 
 
 
-<title>Prototype WordPress Core, WP Accessibility Knowledge Base</title>
+<title>Prototype Frontend code checks, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-277/assets/css/styles.css">
@@ -106,15 +106,15 @@
 
           <a href="/pr-preview/pr-277/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/start/why-accessibility/" class="nav-list-link">Why?</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-277/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/start/business/" class="nav-list-link">Accessibility for your business</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/start/business/" class="nav-list-link">Accessibility, the business case</a><button class="nav-list-expander btn-reset" aria-label="Accessibility, the business case submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/start/wp-a11y-plugins/" class="nav-list-link">WP accessibility plugins</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/start/overlays/" class="nav-list-link">Overlays</a></li><li class="nav-list-item">
 
@@ -142,41 +142,9 @@
 
           <a href="/pr-preview/pr-277/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/topics/content/tables/" class="nav-list-link">Tables in content</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-277/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/focus-hover/" class="nav-list-link">Styling hover and focus</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/color/color-contrast-icons/" class="nav-list-link">Color contrast of icons</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/color/color-contrast-forms/" class="nav-list-link">Color contrast in forms</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/meaningful-sequence/" class="nav-list-link">Meaningful sequence</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/topics/design/resources/" class="nav-list-link">Resources</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/topics/code/" class="nav-list-link">Frontend code</a><button class="nav-list-expander btn-reset" aria-label="Frontend code submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -212,11 +180,29 @@
 
           <a href="/pr-preview/pr-277/docs/topics/code/components/excerpt/" class="nav-list-link">Post Excerpts</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/topics/code/components/link-logo/" class="nav-list-link">Link on a logo</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li></ul></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/topics/code/components/pagination/" class="nav-list-link">Pagination</a></li></ul></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/focus-hover/" class="nav-list-link">Styling hover and focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -298,8 +284,6 @@
 
           <a href="/pr-preview/pr-277/docs/topics/forms/feedback/screen-reader-feedback/" class="nav-list-link">Screen reader feedback</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/topics/forms/wp-form-plugins/" class="nav-list-link">WP form plugins</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-277/docs/topics/forms/resources/" class="nav-list-link">Form resources</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/" class="nav-list-link">Theme accessibility guidelines</a><button class="nav-list-expander btn-reset" aria-label="Theme accessibility guidelines submenu" aria-expanded="false">
@@ -358,19 +342,23 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/testing/checklists/" class="nav-list-link">Overall checklists</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/testing/checklists/" class="nav-list-link">Checklists</a><button class="nav-list-expander btn-reset" aria-label="Checklists submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/testing/checklists/overall/" class="nav-list-link">Overall</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/testing/checklists/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/testing/checklists/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/testing/checklists/code/" class="nav-list-link">Frontend code checks</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/testing/keyboard/" class="nav-list-link">Keyboard testing</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/testing/automated/" class="nav-list-link">Automated validation</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/testing/screen-readers/" class="nav-list-link">Screen reader testing</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/testing/keyboard/" class="nav-list-link">Keyboard only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/testing/screen-readers/" class="nav-list-link">Screen reader</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li><li class="nav-list-item">
 
@@ -392,11 +380,11 @@
 
           <a href="/pr-preview/pr-277/docs/wp-a11y/wcag/" class="nav-list-link">WCAG and WordPress</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/wp-a11y/wcag/core/" class="nav-list-link">WordPress Core</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-a11y-plugins/" class="nav-list-link">WP accessibility plugins</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-themes/" class="nav-list-link">Themes</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-themes/" class="nav-list-link">WordPres Themes</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-plugins/" class="nav-list-link">Plugins</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-plugins/" class="nav-list-link">WP Plugins</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/about/" class="nav-list-link">About this documentation</a><button class="nav-list-expander btn-reset" aria-label="About this documentation submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -408,15 +396,15 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/about/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/about/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-277/docs/about/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/about/contribute/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/about/contribute/improve-website/" class="nav-list-link">Improve this website</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/about/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-277/docs/about/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/about/contribute/github/" class="nav-list-link">Technical documentation website</a><button class="nav-list-expander btn-reset" aria-label="Technical documentation website submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -430,9 +418,9 @@
 
           <a href="/pr-preview/pr-277/docs/about/contribute/github/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/about/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/about/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/about/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/about/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/about/contact/" class="nav-list-link">Contact</a></li><li class="nav-list-item">
 
@@ -498,14 +486,24 @@
 
         
             
+            
+            
+        
+
+    
+
+        
+
+        
+            
 
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/docs/wp-a11y/'>WordPress and Accessibility</a></li>
-            <li class="breadcrumb-nav-list-item" aria-current="page">WordPress Core</li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/docs/testing/'>Test for accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/docs/testing/checklists/'>Checklists</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Frontend code checks</li>
     </ol>
 </nav>
 
@@ -514,143 +512,47 @@
 
         <main>
 
-          <h1 id="wordpress-core-accessibility-standards">WordPress Core Accessibility Standards</h1>
+          <h1 id="frontend-checks-for-web-accessibility">Frontend checks for web accessibility</h1>
 
-<p class="callout alert"><strong>Alert:</strong> This content will be reviewed and restructured. 
-Related issue on <a href="https://github.com/wpaccessibility/wp-a11y-docs/issues/122">GitHub #122 Topic WordPress Core Accessibility Standards</a>.</p>
+<p>Testing for valid, semantic HTML is essential for the accessibility of your work. In this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development and before you commit your work.</p>
 
-<p class="callout warning"><strong>Warning:</strong> This is duplicate content? see also <a href="https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/">Accessibility Coding Standards </a>in the coding standards handbook WCAG 2.0 must be WCAG 2.2?
-The content should be reviewed for modern code and the links adjusted and divided between the topics.</p>
+<p>While you develop, always check the following items while developing: keyboard navigation, W3C validation, WCAG 2 AA validation and then announcement of dynamic changes for screen readers.</p>
 
-<p>When creating new interfaces in core, the output and interactions are expected to conform to WCAG 2.0 at level AA. But beyond that, there are some specific patterns that the accessibility team and core team have agreed on as the preferred method for structure.</p>
+<p><strong>Note</strong>: automated testing is not perfect. Automated testing rarely catchies more than about 30% of types of issues. They also give false positives. Manual testing is required to find most issues.</p>
 
-<p>Though there are many patterns that meet accessibility standards, being consistent across the platform is a key method to ensure that WordPress as a whole is easier to use.</p>
+<h2 id="what-is-web-accessibility">What is web accessibility?</h2>
 
-<p>This document is supplemental guidance to help developers meet the <a href="https://developer.wordpress.org/coding-standards/wordpress-coding-standards/accessibility/">WordPress Accessibility Coding Standards</a>.</p>
+<p><em>Using semantic, meaningful, valid HTML5</em>.</p>
 
-<p><strong>TODO:</strong> should this stay or should it go?</p>
+<p>The way all devices, browsers and users can understand and interact with the functionality on a web page. The best resource for HTML5 are the <a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network web docs</a>.</p>
 
-<h2 id="html-semantics">HTML Semantics</h2>
+<p>For WordPress, we aim to meet <a href="https://www.w3.org/WAI/">WCAG accessibility guidelines</a> at level AA and the <a href="https://www.w3.org/standards/webdesign/htmlcss">W3C standards</a>. In the WordPress Accessibility handbook section <a href="https://make.wordpress.org/accessibility/handbook/best-practices/">Best Practices</a> you’ll find examples and resources.</p>
 
-<p>Take a pragmatic approach to HTML semantics. Don’t add semantics purely for the sake of semantics; but if there is an HTML structure that clearly matches the content, use that element. For example, if you have a group of links, it should most likely use a list element.</p>
+<p>You need to do two different checks, one for <strong>keyboard navigation</strong> and one for <strong>DOM validation</strong>.</p>
 
-<h3 id="heading-structure">Heading structure</h3>
-
-<p>The H1 is the main heading representing the page title on every core page. For subsections, use a reasonable HTML heading structure — including the use of heading elements for page subsections. Heading markup should not be used for presentational purposes.</p>
+<h3 id="key-topics-to-check">Key topics to check</h3>
 
 <ul>
-  <li>Use H2 through H6 to give internal structure to the page.</li>
-  <li>Don’t skip heading levels.</li>
-  <li>Don’t add extra functionality inside a heading, like links or buttons.</li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/semantic-html/">Write semantic, meaningful HTML</a>
+    <ul>
+      <li>Use a <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> to invoke an action and an <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> for a change of location.</li>
+      <li>A <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> doesn’t natively provide interactivity, and should not be used for links or buttons.</li>
+    </ul>
+  </li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/heading-structure-in-theme-development/">Heading text and level matter</a></li>
+  <li><a href="https://make.wordpress.org/accessibility/handbook/best-practices/content/good-link-texts/">Make link and button text meaningful</a></li>
+  <li>Use the <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/">.screen-reader-text</a> class, a CSS class to hide text visually while leaving it available to screen readers.</li>
+  <li>Always give images a proper alt attribute following the <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">alt decision tree</a></li>
+  <li>Forms:
+    <ul>
+      <li>always explicitly link <a href="https://webaim.org/techniques/forms/controls">labels to an input control</a>. If the label must be invisible for the design, hide it with the screen-reader-text class</li>
+      <li>Wrap check box groups and radio buttons in a <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code> and add a <code class="language-plaintext highlighter-rouge">&lt;legend&gt;</code> describing the group of controls</li>
+    </ul>
+  </li>
+  <li>Always define both a <code class="language-plaintext highlighter-rouge">:hover</code> and <code class="language-plaintext highlighter-rouge">:focus</code> states in your CSS</li>
+  <li>Announce dynamic changes with <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">aria-live</a> or <a href="https://make.wordpress.org/accessibility/handbook/best-practices/markup/wp-a11y-speak/">wp.a11y.speak()</a></li>
 </ul>
 
-<h3 id="semantics-for-controls">Semantics for Controls</h3>
-
-<p>Controls with a native keyboard interaction (buttons or links) are always preferred. If there is a valid target link for the control, either an in-page reference or a link, then the control should use an <code class="language-plaintext highlighter-rouge">&lt;a href="{your-valid-target}"&gt;</code>. If there isn’t, it should use a <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code>.</p>
-
-<p>If you’re updating an existing control, button or link decision logic:</p>
-
-<div class="table-wrapper"><table>
-    <caption>Semantics for Controls</caption>
-    <tr>
-        <th>Scenario</th>
-        <th>Choice</th>
-    </tr>
-    <tr>
-        <td>Anchors with null or meaningless HREF values: href=’#’, no href, href=’#something’ where #something does not exist</td>
-        <td><code>button</code></td>
-    </tr>
-    <tr>
-        <td>Anchors with meaningful on-page HREF values href=’#something’ where #something does existAnchors with meaningful on-page HREF values href=’#something’ where #something does exist</td>
-        <td><code>button</code> or <code>a href='#target'</code></td>
-    </tr>
-    <tr>
-        <td>Anchors with meaningful off-page HREF values that are renderable (but actual behavior is AJAX)</td>
-        <td>Link when JS not available, button the rest of the time.</td>
-    </tr>
-    <tr>
-        <td>Anchors with meaningful off-page HREF values that are <strong>not</strong> renderable</td>
-        <td>Should be a button, but perhaps the target should be made renderable</td>
-    </tr>
-    <tr>
-        <td>Buttons that direct to new locations on the same page</td>
-        <td>Could be either a button or a link.</td>
-    </tr>
-    <tr>
-        <td>Buttons that direct to new locations on different pages.</td>
-        <td>Should be a link.</td>
-    </tr>
-</table></div>
-
-<h2 id="dynamic-content">Dynamic Content</h2>
-
-<p>When there are dynamic changes within a page without a page reload you must provide audible feedback with ARIA for important changes, like a successful save event, for example.</p>
-
-<p>Use wp.a11y.speak() for all simple AJAX responses. If you are doing a complex interaction, wp.a11y.speak() may not be the best choice. In that case, discuss your usage with the Accessibility team to determine whether extending wp.a11y.speak() or coding your own ARIA live regions is the best choice.</p>
-
-<ul>
-  <li><a href="https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/">Let WordPress Speak: introduction to wp.a11y.speak()</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Guides/Live_regions">Mozilla developer documentation on ARIA Live Regions</a></li>
-</ul>
-
-<h2 id="color-contrast">Color Contrast</h2>
-
-<p>In most cases, feature plug-ins are not expected to add or modify colors in core. However, if a feature plug-in needs to add new color combinations, those combinations must meet minimum contrast requirements. Minimum contrast requirements are 4.5:1 for font sizes rendering smaller than 24px or smaller and 3.0:1 for font sizes larger than 24px or 19px and bold.</p>
-
-<ul>
-  <li><a href="https://make.wordpress.org/accessibility/handbook/quick-start-guide/#color-contrast">WordPress Accessibility Quick Start: Color Contrast</a></li>
-</ul>
-
-<h2 id="links-underline-or-no-underline">Links: underline or no underline?</h2>
-
-<p>When links can be identified clearly by context, for example because they’re part of a menu, or a set of links clearly identified as user interface controls, they don’t need to be underlined. In other cases, especially for links surrounded by other text (in a line or block of text), links should be underlined.
-Keyboard Accessibility</p>
-
-<p>Users must be able to reach and successfully interact with all elements on the page that are actionable, including all form inputs, buttons and links by using the keyboard. They must be able to see a visual indicator of keyboard focus. You should be aware that keyboard events may operate differently when a screen reader is running.</p>
-
-<p>If you can complete an action with a mouse, you must also be able to complete that action using the keyboard.</p>
-
-<p>Be aware of where keyboard focus is traveling. When a modal dialog is opened, focus should be moved into the dialog. When a disclosure is toggled, the next tab press should move the user inside the content of the disclosure container.</p>
-
-<ul>
-  <li><a href="https://webaim.org/techniques/keyboard/">Keyboard testing techniques</a> on WebAIM</li>
-  <li><a href="https://adrianroselli.com/2023/08/where-to-put-focus-when-deleting-a-thing.html#:~:text=TL%3BDR%3A%20When%20deleting%20something,control%20or%20its%20grouping%20container.">Where to place focus when deleting a thing</a> by Adrian Roselli</li>
-</ul>
-
-<h2 id="images-and-icons">Images and Icons</h2>
-
-<p>Any image resource must include an accessible name. In some cases, the accessible name should be an empty string. An image can be an <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> element, an icon font, or an svg element; but any graphical representation is considered an image for these purposes. Different types of graphics use different types of accessible names.</p>
-
-<p>For <code class="language-plaintext highlighter-rouge">&lt;img&gt;</code> elements, the accessible name should be in the alt attribute. If the img is ornamental, the alt attribute should still be included, but left empty.</p>
-
-<p>For icon fonts, the icon itself should have the aria-hidden attribute, with screen-reader-text in a neighbor element. If the icon is ornamental, the font icon should still have the aria-hidden attribute, but the screen reader text should be omitted.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"this.html"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dashicons dashicon-thumbs-up"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"screen-reader-text"</span><span class="nt">&gt;</span>Something<span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/a&gt;</span>
-</code></pre></div></div>
-
-<p>For SVG, the SVG should be inline, so that accessible information isn’t hidden from assistive technology. SVG elements should contain a <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> element with the accessible name of the image. For cross-technology support, the title element should be associated with the svg element via <code class="language-plaintext highlighter-rouge">aria-labelledby</code>. For maximum compatibility, all SVG elements used to represent an image should carry the role attribute with a value of <code class="language-plaintext highlighter-rouge">img</code>.</p>
-
-<p>If the SVG element is ornamental, then the title element should be omitted and no aria-labelledby attribute should be present. The SVG element should also carry the aria-hidden attribute.</p>
-
-<ul>
-  <li><a href="http://www.sitepoint.com/tips-accessible-svg/">More information on SVG Accessibility</a> by Léonie Watson</li>
-</ul>
-
-<h3 id="labeling">Labeling</h3>
-
-<p>Existing code uses a mixture of explicitly and implicitly labeled fields, but all new code must use an explicitly associated <label> element (using for/id attributes and not wrapping the form control). Labels are not required to be visible, but must use the .screen-reader-text class when hidden. Placeholders are fine, but are not a substitute for labels. For all labels, clicking on the field label should cause the associated field to receive focus or, for checkboxes and radio selectors, select that choice.</label></p>
-
-<p>Don’t introduce new title attributes to convey information. Use <code class="language-plaintext highlighter-rouge">aria-label</code> when you need to provide an alternate label and <code class="language-plaintext highlighter-rouge">.screen-reader-text</code> if you’re appending additional data.</p>
-
-<p>When using <code class="language-plaintext highlighter-rouge">aria-label</code>, be sure that the <code class="language-plaintext highlighter-rouge">aria-label</code> value contains any visible text on the control. The visible text should be the first part of the <code class="language-plaintext highlighter-rouge">aria-label</code> text. E.g.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"Delete this post"</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/button&gt;</span>
-</code></pre></div></div>
-
-<p>When creating forms, use <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;legend&gt;</code> to group logically related form elements inside complex forms or to group radio buttons and checkboxes under a heading.</p>
 
 
           
@@ -679,21 +581,23 @@ Keyboard Accessibility</p>
 <nav class="prev-next">
     <h2>Next and previous pages</h2>
     <ul>
+        
         <li>
-            
-            <a class="prev" href="/docs/wp-a11y/wcag/">Previous: WCAG and WordPress</a>
-            
+            <p>
+                <a class="prev" href="/docs/testing/checklists/design/">Previous: Design checks</a>
+                
+            </p>
         </li>
+        
+        
+        
         <li>
-            
-            <a class="next" href="/docs/wp-a11y/wp-themes/">Next: Themes</a>
-            
+            <p>
+            <a href="/docs/testing/checklists/">Back to: Checklists</a>
+                
+            </p>
         </li>
-        <li>
-            
-            <a href="/docs/wp-a11y/">Back to: WordPress and Accessibility</a>
-            
-        </li>
+        
     </ul>
 </nav>
 
@@ -710,12 +614,12 @@ Keyboard Accessibility</p>
         <div class="column">
         <h3>Quick links</h3>
         <ul>
-          <li><a href="/pr-preview/pr-277/docs/about/contact/">Contact us</a></li>
           <li><a href="/pr-preview/pr-277/docs/topics/theme-guidelines/">Theme accessibility-ready tag</a></li>
           <li><a href="/pr-preview/pr-277/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a></li>
-          <li><a href="/pr-preview/pr-277/docs/about/sponsors/">Sponsors</a></li>
           <li><a href="/pr-preview/pr-277/docs/topics/legislation/">Legislation worldwide</a></li>
           <li><a href="/pr-preview/pr-277/blog/">Blog</a></li>
+          <li><a href="/pr-preview/pr-277/docs/about/sponsors/">Sponsors</a></li>
+          <li><a href="/pr-preview/pr-277/docs/about/contact/">Contact us</a></li>
         </ul>
         </div>
 
