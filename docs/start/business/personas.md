@@ -1,7 +1,7 @@
 ---
 title: They're not my visitors
 layout: default
-parent: Debunking myths
+parent: Accessibility, the business case
 nav_order: 2
 ---
 

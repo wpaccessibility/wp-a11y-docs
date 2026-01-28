@@ -1,5 +1,5 @@
 ---
-title: Plugins
+title: WP Plugins
 layout: default
 parent: WordPress and Accessibility
 nav_order: 10
@@ -7,9 +7,7 @@ nav_order: 10
 
 # WordPress plugins and accessibility
 
-{: .callout .alert }
-**Alert:** The accessibility content should be moved to the related topics, this page should only contain practical info. Which info that will be is open for discussion.  
-Related issue on [GitHub #165 Topic WordPress plugins and accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/165).  
+
 
 There are no plugin accessibility requirements in the WordPress plugin directory. This is because of the labor required to test plugins for accessibility. However, you are strongly encouraged to consider accessibility when creating or updating your plugins.
 

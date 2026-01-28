@@ -18,12 +18,8 @@ footer {
 
       .column {
         margin: 0;
-        padding:0 1em 0 0;
-        min-width: 50%;
-
-        :last-child {
-          padding: 0;
-        }
+        padding-right: 1em;
+        max-width: 50%;
 
       }
     }

@@ -1,7 +1,7 @@
 ---
 title: About this documentation
 layout: default
-nav_order: 14
+nav_order: 6
 ---
 
 # About this knowledge base

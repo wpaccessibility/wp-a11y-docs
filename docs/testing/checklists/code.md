@@ -1,15 +1,11 @@
 ---
 title: Frontend code checks
 layout: default
-parent: Test for accessibility
+parent: Checklists
 nav_order: 5
 ---
 
 # Frontend checks for web accessibility
-
-{: .callout  .alert }
-**Alert:** This content will be reviewed and expanded.  
-Related issue on [GitHub #173 Topic Frontend checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/173).     
 
 Testing for valid, semantic HTML is essential for the accessibility of your work. In this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development and before you commit your work.
 

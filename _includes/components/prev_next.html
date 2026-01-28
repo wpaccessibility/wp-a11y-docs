@@ -22,21 +22,30 @@
 <nav class="prev-next">
     <h2>Next and previous pages</h2>
     <ul>
+        {% if prev and currentPage.title != "Home" %}
         <li>
-            {% if prev and currentPage.title != "Home" %}
-            <a class="prev" href="{{ prev.url }}">Previous: {{ prev.title }}</a>
-            {% endif %}
+            <p>
+                <a class="prev" href="{{ prev.url }}">Previous: {{ prev.title }}</a>
+                {{ prev.description }}
+            </p>
         </li>
+        {% endif %}
+        {% if next %}
         <li>
-            {% if next %}
+            <p>
             <a class="next" href="{{ next.url }}">Next: {{ next.title }}</a>
-            {% endif %}
+                {{ next.description }}
+            </p>
         </li>
+        {% endif %}
+        {% if introPage.title %}
         <li>
-            {% if introPage.title %}
+            <p>
             <a href="{{ introPage.url }}">Back to: {{introPage.title }}</a>
-            {% endif %}
+                {{ introPage.description }}
+            </p>
         </li>
+        {% endif %}
     </ul>
 </nav>
 {% endif %}

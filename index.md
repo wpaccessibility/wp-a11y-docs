@@ -2,11 +2,11 @@
 title: Home
 layout: home
 nav_order: 1
-description: "WP Accessibility Knowledge Base. Documentation about accessibility for WordPress."
+description: "Accessibility Knowledge Base for WordPress users and creators."
 permalink: /
 ---
 
-# [Prototype] WP Accessibility Knowledge Base
+# WP Accessibility Knowledge Base
 
 {: .lead }
 Documentation about accessibility for WordPress users and creators. For the community, by the community.
@@ -17,4 +17,5 @@ This documentation aims to provide you with answers about WordPress and accessib
 
 {% include components/guide.md %}
 
-Did we miss a topic? Did you find an error or have a great idea? Please [share your thoughts](https://wpaccessibility.org/docs/contact/).
+Did we miss a topic? Did you find an error or have a great idea?  
+Please [share your thoughts](https://wpaccessibility.org/docs/contact/).

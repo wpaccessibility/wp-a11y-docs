@@ -2,7 +2,7 @@
 title: Report an error
 layout: default
 parent: How to contribute
-nav_order: 5
+nav_order: 4
 ---
 
 # Report an error

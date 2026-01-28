@@ -6,7 +6,7 @@
 .prev-next {
 
   border-top: $border $border-color;
-  margin-top: 2em;
+  margin: 1.25em 0;
 
   h2 {
     font-size: var(--text-font-size-lg);
@@ -21,13 +21,14 @@
     li {
       list-style: none;
       margin: 0;
-      padding:0 1em 0 0;
-      min-width: 50%;
+      padding-right: 1em;
+      width: 50%;
+
       a {
         display: block;
       }
 
-      :last-child {
+      p {
         padding: 0;
       }
 

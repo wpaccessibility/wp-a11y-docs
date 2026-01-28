@@ -2,7 +2,7 @@
 title: Improve this website
 layout: default
 parent: How to contribute
-nav_order: 5
+nav_order: 3
 ---
 
 # Improve the website wpaccessibility.org

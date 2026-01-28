@@ -1,22 +1,13 @@
 ---
 title: WP accessibility plugins
 layout: default
-parent: Start with accessibility
+parent: WordPress and Accessibility
 nav_order: 5
 ---
 
-# WordPress accessibility plugins
+# Accessibility plugins for WordPress
 
 There are many plugins available for WordPress that can help support accessibility. These tools work in many ways. Some are website features built in a way that's specifically designed for accessibility, others help you create accessible content, and others help ensure that other plugins are more accessible.
-
-## Criteria for inclusion on this page:
-The plugin:
-
-- has a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team
-- is not primarily dedicated to accessibility testing. Testing plugins are listed in [WordPress plugins for accessibility testing]().
-- doesn't provide [overlay functionality](https://overlayfactsheet.com/en/) that cannot be fully disabled.
-- has an accessible admin interface
-- has been updated within the last year
 
 {: .callout  .alert }
 **Alert:** Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of [accessibility overlays](https://overlayfactsheet.com/en/).
@@ -51,6 +42,16 @@ Plugins that improve the accessibility of a specific theme or plugin.
 Multi-purpose accessibility plugins that are not easily placed in another category, and are not primarily focused on testing.
 
 - [WP Accessibility](https://wordpress.org/extend/plugins/wp-accessibility/). Helps with a variety of common accessibility problems in WordPress themes. While most accessibility issues can’t be addressed without directly changing your theme, WP Accessibility adds a number of helpful accessibility features with a minimum amount of setup or expert knowledge.
+
+
+## Criteria for inclusion on this page:
+The plugin:
+
+- has a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team
+- is not primarily dedicated to accessibility testing. Testing plugins are listed in [WordPress plugins for accessibility testing]().
+- doesn't provide [overlay functionality](https://overlayfactsheet.com/en/) that cannot be fully disabled.
+- has an accessible admin interface
+- has been updated within the last year
 
 {: .callout  .info }
 Do you want to add your plugin to this list?

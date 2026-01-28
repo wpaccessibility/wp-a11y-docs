@@ -2,7 +2,7 @@
 title: WordPress and Accessibility
 layout: default
 description: About the WordPress, accessibility and the accessibility team.
-nav_order: 10
+nav_order: 5
 has_video: true
 ---
 

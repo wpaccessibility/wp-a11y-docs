@@ -7,10 +7,6 @@ nav_order: 4
 
 # ARIA Landmarks
 
-{: .callout .alert }
-**Alert:** This content will be reviewed and restructured.  
-Related issue on [GitHub #143 Topic ARIA Landmarks](https://github.com/wpaccessibility/wp-a11y-docs/issues/143).  
-
 ARIA landmark roles provide a method for screen reader users to navigate structural regions of a site. By default, many HTML5 elements define ARIA landmark roles which identify these regions.
 
 All content should be inside these semantically meaningful elements so content is not missed by the user.

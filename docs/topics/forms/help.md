@@ -7,10 +7,6 @@ nav_order: 7
 
 # Provide help filling out a form
 
-{: .callout .alert }
-**Alert:** This content will be rewritten and expanded.  
-Related issue on [GitHub #159 Topic Provide help filling out a form](https://github.com/wpaccessibility/wp-a11y-docs/issues/159).
-
 ### Provide instructions to help users with complex forms
 
 Strong semantic structure, like what is provided by `fieldset` and `legend` is very helpful in understanding complex forms. However, providing assistance to users can sometimes make the difference between having a user complete a process and abandon it.

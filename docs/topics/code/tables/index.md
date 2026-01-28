@@ -8,10 +8,6 @@ nav_order: 5
 
 # Tables in theme and plugin development
 
-{: .callout .alert }
-**Alert:** This content will be reviewed and restructured.
-Related issue on [GitHub #144 Topic Tables in theme and plugin development](https://github.com/wpaccessibility/wp-a11y-docs/issues/144).
-
 Tables are the recommended way to display tabular data. Tabular data is any data that is best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not a good idea for layout, however.
 
 Well-coded tables are important for screen reader users, so they can read, navigate, and understand the data.

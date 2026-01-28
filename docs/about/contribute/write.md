@@ -2,7 +2,7 @@
 title: Write documentation
 layout: default
 parent: How to contribute
-nav_order: 3
+nav_order: 7
 ---
 
 # Write documentation

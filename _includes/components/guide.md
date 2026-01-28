@@ -3,8 +3,8 @@ Find the documentation for your work field and expertise.
 <details markdown="block">
 <summary>Getting Started</summary>
 
-- [Contact us]({{site.baseurl}}/docs/about/contact/")
-- etc etc
+- [Start with accessibility]({{site.baseurl}}/docs/start/")
+- [WHat is WCAG]({{site.baseurl}}/docs/topics/legislation/")
 
 </details>
 

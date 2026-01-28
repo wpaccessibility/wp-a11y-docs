@@ -1,16 +1,12 @@
 ---
 title: Design checks
 layout: default
-parent: Test for accessibility
+parent: Checklists
 nav_order: 4
 ---
 
 
 # Design checks for web accessibility
-
-{: .callout  .alert }
-**Alert:** This content will be reviewed and expanded.
-Related issue on [GitHub #172 Topic Design checks for web accessibility](https://github.com/wpaccessibility/wp-a11y-docs/issues/172).    
 
 The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design.
 
