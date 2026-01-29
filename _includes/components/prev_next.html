@@ -30,7 +30,7 @@
         {% if prev and prev.nav_exclude != true %}
         <li>
             <p>
-                <a class="prev" href="{{ prev.url }}">Previous: {{ prev.title }}</a>
+                <a class="prev" href="{{site.baseurl}}/{{ prev.url }}">Previous: {{ prev.title }}</a>
                 {{ prev.description }}
             </p>
         </li>
@@ -38,7 +38,7 @@
         {% if next and next.nav_exclude != true %}
         <li>
             <p>
-            <a class="next" href="{{ next.url }}">Next: {{ next.title }}</a>
+            <a class="next" href="{{site.baseurl}}/{{ next.url }}">Next: {{ next.title }}</a>
                 {{ next.description }}
             </p>
         </li>
@@ -46,7 +46,7 @@
         {% if introPage.title %}
         <li>
             <p>
-            <a href="{{ introPage.url }}">Back to: {{introPage.title }}</a>
+            <a href="{{site.baseurl}}/{{ introPage.url }}">Back to: {{introPage.title }}</a>
                 {{ introPage.description }}
             </p>
         </li>
