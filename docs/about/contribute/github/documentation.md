@@ -2,6 +2,7 @@
 title: Add a topic
 parent: Technical documentation website
 nav_order: 1
+description: Add or change a page in this documentation.
 ---
 
 # Add or change a topic in the documentation
@@ -17,7 +18,7 @@ The documentation files live in the directory /docs/ and are named [title].md.
 For example contribute.md. Keep the name short and unique. Use `-` instead of spaces in the filename.
 
 Each directory has an `index.md` which is the file that directly links to the directory topic. For example: 
-`/docs/about/index.md` displays [About this website]({{site.baseurl}}/docs/about/).
+`/docs/about/index.md` displays [About this documentation]({{site.baseurl}}/docs/about/).
 Other files for this topic are also placed in this directory and assigned a 'parent' with the variables.
 
 ## The variables at the top of the file for a topic

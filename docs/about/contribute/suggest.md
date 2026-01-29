@@ -2,6 +2,7 @@
 title: Suggest documentation
 layout: default
 parent: How to contribute
+description: How to suggest new content for this documentation.
 nav_order: 6
 ---
 

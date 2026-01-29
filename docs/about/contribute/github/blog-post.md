@@ -1,7 +1,8 @@
 ---
 title: Add a blog post
-parent: Technical documentation website
+parent: Technical documentation
 nav_order: 2
+description: How to Add or change blog post in this documentation.
 ---
 
 # Add or change blog post.
@@ -22,9 +23,8 @@ layout: post
 title: "The Able Player is now available for videos"
 permalink: /blog/2025/able-player-available-for-videos/
 author: Joe Dolson
-categories: video
 parent: Blog
-excerpt: "Able Player is now available for YouTube videos in the WP Accessibility documentation."
+description: "Able Player is now available for YouTube videos in the WP Accessibility documentation."
 date: 2025-08-16
 ---
 ```
@@ -34,20 +34,18 @@ The layout must be `post`, the parent `Blog`,  use for the `permalink` the struc
 The `date`, `author` and `excerpt` will show up below the title on the [Blog archive page]({{site.baseurl}}/blog/) and below the title on the blog post itself.
 The `date` can be in the future, the post will show up from that date and not before.
 
-The option for listings of `categories` hasn't been implemented yet, but please use it already.
-
 ## The content of post
 
 The theme inserts your title, author, and the date of publication for you, so you should not include these in the content of your post.
 
-The page [Content kitchen sink]({{site.baseurl}}/docs/contribute/github/content-kitchen-sink/) describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text.
+The page [Content kitchen sink]({{site.baseurl}}/docs/about/contribute/github/content-kitchen-sink/) describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text.
 
 ## How to start
 
 If you have an idea for a blog post, please open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) and share your idea first.
 If you want to work on a blog post (yay!) please let us know by adding a comment with the issue.
 
-Need help? Feel free to [contact us]({{site.baseurl}}/docs/contact/).
+Need help? Feel free to [contact us]({{site.baseurl}}/docs/about/contact/).
 
 
 

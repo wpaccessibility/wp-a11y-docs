@@ -18,11 +18,16 @@
 {% assign nextIndex = index | plus: 1 %}
 {% assign next = siblings[nextIndex]  %}
 
-{% if prev and currentPage.title != "Home" %}
+{% if prev
+    and currentPage.title != "Home"
+    and currentPage.title != "Blog"
+    and currentPage.nav_exclude != true
+%}
+
 <nav class="prev-next">
     <h2>Next and previous pages</h2>
     <ul>
-        {% if prev and currentPage.title != "Home" %}
+        {% if prev and prev.nav_exclude != true %}
         <li>
             <p>
                 <a class="prev" href="{{ prev.url }}">Previous: {{ prev.title }}</a>
@@ -30,7 +35,7 @@
             </p>
         </li>
         {% endif %}
-        {% if next %}
+        {% if next and next.nav_exclude != true %}
         <li>
             <p>
             <a class="next" href="{{ next.url }}">Next: {{ next.title }}</a>

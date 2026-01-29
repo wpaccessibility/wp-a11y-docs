@@ -1,6 +1,6 @@
 ---
 title: Cookie Statement
-description: Explanation of Able Player's use of functional cookies
+description: wpaccessibility.org doesn't use cookies for advertising, analytics, or behavioral tracking. Your privacy is respected, and no information is shared with third parties.
 layout: default
 parent: About this documentation
 nav_order: 7

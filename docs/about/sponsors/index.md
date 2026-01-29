@@ -3,6 +3,7 @@ title: Sponsors
 parent: About this documentation
 layout: default
 nav_order: 1
+description: Thank you sponsors for helping us create accessibility documentation for WordPress.
 ---
 
 # Sponsors

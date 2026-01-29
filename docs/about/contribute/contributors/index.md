@@ -2,7 +2,7 @@
 title: Contributors
 layout: default
 parent: How to contribute
-description: "Thank you to the contributors of WP accessibility documentation"
+description: Contributors of the WP Accessibility Knowledge Base.
 nav_order: 1
 ---
 

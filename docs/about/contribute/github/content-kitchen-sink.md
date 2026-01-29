@@ -1,8 +1,9 @@
 ---
 title: Content kitchen sink
-parent: Technical documentation website
+parent: Technical documentation
 nav_order: 4
 has_video: true
+description: Options and code available for creating content in this documentation.
 ---
 
 # Kitchen sink: options available for content

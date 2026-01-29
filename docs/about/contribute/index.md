@@ -2,6 +2,7 @@
 title: How to contribute
 parent: About this documentation
 layout: default
+description: How to help improve and extend to this documentation.
 nav_order: 2
 ---
 
@@ -11,13 +12,13 @@ Do you want to help maintain and extend the accessibility documentation for Word
 Let us know you want to work on the WordPress accessibility documentation and share your ideas, write or review content, report or fix bugs in this documentation.
 
 There are several ways you can contribute:
-- [Suggest]({{site.baseurl}}/docs/contribute/suggest/) new content or resources
-- [Write]({{site.baseurl}}/docs/contribute/write/) new content, contact us first before starting to write.
-- [Review]({{site.baseurl}}/docs/contribute/review/) content someone else wrote
-- [Report]({{site.baseurl}}/docs/contribute/report-error) an error
-- [Fix code]({{site.baseurl}}/docs/contribute/improve-website) issues in wpaccessibility.org
+- [Suggest]({{site.baseurl}}/docs/about/contribute/suggest/) new content or resources
+- [Write]({{site.baseurl}}/docs/about/contribute/write/) new content, contact us first before starting to write.
+- [Review]({{site.baseurl}}/docs/about/contribute/review/) content someone else wrote
+- [Report]({{site.baseurl}}/docs/about/contribute/report-error) an error
+- [Fix code]({{site.baseurl}}/docs/about/contribute/improve-website) issues in wpaccessibility.org
 
-Respect our [Code of Conduct]({{site.baseurl}}/docs/contribute/CODE_OF_CONDUCT/).
+Respect our [Code of Conduct]({{site.baseurl}}/docs/about/contribute/CODE_OF_CONDUCT/).
 
 ## Ways to communicate 
 

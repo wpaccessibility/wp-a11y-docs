@@ -2,6 +2,7 @@
 title: Report an error
 layout: default
 parent: How to contribute
+description: How to report an error or bug in the website or documentation
 nav_order: 4
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Pull requests
 layout: default
-parent: Technical documentation website
+parent: Technical documentation
 nav_order: 3
 ---
 
@@ -23,7 +23,7 @@ GitHub offers good documentation on how to create a pull request using a fork on
 
 ## Create a pull request from a fork using a local install
 
-WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content. Please read [Local install of wpaccessibility.org](https://github.com/wpaccessibility/wp-a11y-docs?tab=readme-ov-file#local-install-of-the-website) in wp-a11y-docs/README.md.
+wpaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content. Please read [Local install of wpaccessibility.org](https://github.com/wpaccessibility/wp-a11y-docs?tab=readme-ov-file#local-install-of-the-website) in wp-a11y-docs/README.md.
 
 ## Pull Request Previews
 When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging.

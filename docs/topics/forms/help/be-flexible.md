@@ -3,7 +3,7 @@ title: Be flexible
 layout: default
 parent: Provide help
 nav_order: 3
-description: "Be flexible in accepting the data a user fills out in a field.
+description: Be flexible in accepting the data a user fills out in a field.
 ---
 
 # Don’t reject a form entry too quickly

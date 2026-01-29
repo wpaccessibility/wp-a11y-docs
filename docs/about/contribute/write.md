@@ -3,6 +3,7 @@ title: Write documentation
 layout: default
 parent: How to contribute
 nav_order: 7
+description: How to write new content for this documentation.
 ---
 
 # Write documentation
@@ -43,8 +44,6 @@ One page per topic. This makes it easier to read and also to refer to in other d
   - Related WCAG Success Criteria
   - Related info in this documentation
   - Other relevant resources
-
-
 
 ## Share for review
 
