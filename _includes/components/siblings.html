@@ -7,11 +7,7 @@
                         sort: "nav_order"
 %}
 
-{% if siblings and page.title != "Home" %}
-
-    {% if parentTitle == null %}
-        {% assign parentTitle = "Home" %}
-    {% endif %}
+{% if siblings and page.title != "Home" and parentTitle != null %}
 
     <nav class="siblings" aria-label="Pages in {{ parentTitle }}">
         <h2>Pages in {{ parentTitle }}</h2>
