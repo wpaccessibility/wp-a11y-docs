@@ -1,8 +1,8 @@
 ---
-title: WordPres Themes
+title: Accessible WP themes
 layout: default
 parent: WordPress and Accessibility
-nav_order: 8
+nav_order: 4
 ---
 
 # WordPress themes and accessibility

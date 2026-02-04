@@ -2,10 +2,10 @@
 title: WP accessibility plugins
 layout: default
 parent: WordPress and Accessibility
-nav_order: 5
+nav_order: 3
 ---
 
-# Accessibility plugins for WordPress
+# WordPress accessibility plugins
 
 There are many plugins available for WordPress that can help support accessibility. These tools work in many ways. Some are website features built in a way that's specifically designed for accessibility, others help you create accessible content, and others help ensure that other plugins are more accessible.
 

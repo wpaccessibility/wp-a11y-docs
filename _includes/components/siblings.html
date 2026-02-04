@@ -1,0 +1,39 @@
+{% assign parentTitle = page.parent %}
+{% assign introPage   = site.pages | where: "title", parentTitle | first %}
+{% assign currentPage = page %}
+
+{% assign siblings    = site.pages |
+                        where: "parent", parentTitle |
+                        sort: "nav_order"
+%}
+
+{% if siblings and page.title != "Home" %}
+
+    {% if parentTitle == null %}
+        {% assign parentTitle = "Home" %}
+    {% endif %}
+
+    <nav class="siblings" aria-label="Pages in {{ parentTitle }}">
+        <h2>Pages in {{ parentTitle }}</h2>
+        <ul>
+            {% if introPage.nav_order > 0 %}
+            <li>
+                <p>
+                    <a href="{{ introPage.url | relative_url }}">Introduction: {{ introPage.title }}</a>
+                    {{ introPage.description }}
+                </p>
+            </li>
+            {% endif %}
+            {% for p in siblings %}
+            {% if p.nav_order > 0 %}
+            <li>
+                <p>
+                    <a href="{{p.url | relative_url }}"> {{ p.title }}</a> {{ p.description }}
+                </p>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </nav>
+
+{% endif %}

@@ -4,12 +4,12 @@ Find the documentation for your work field and expertise.
 <summary>Getting Started</summary>
 
 - [Start with accessibility]({{site.baseurl}}/docs/start/")
-- [WHat is WCAG]({{site.baseurl}}/docs/topics/legislation/")
+- [What is WCAG]({{site.baseurl}}/docs/topics/legislation/")
 
 </details>
 
 <details markdown="block">
-<summary>Content writers</summary>
+<summary>Content managers and writers</summary>
 
 - [Contact us]({{site.baseurl}}/docs/about/contact/")
 - etc etc

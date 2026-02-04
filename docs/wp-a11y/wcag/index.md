@@ -2,6 +2,7 @@
 title: WCAG and WordPress
 layout: default
 parent: WordPress and Accessibility
+description: All new and updated code released in WordPress must conform with WCAG version 2.2 at level AA.
 nav_order: 1
 ---
 
@@ -27,7 +28,7 @@ More in the WordPress Coding Standards Handbook: [Accessibility Coding Standards
 Quoting:
 > All new and updated code released in WordPress must conform with these guidelines as per the WordPress Accessibility Coding Standards. Some current features and functionality in development may not yet fully comply, and known issues are listed in the WordPress Trac “accessibility” focus.
 
-> The WordPress accessibility coding standards require new or updated code to meet the standards of the Web Content Accessibility Guidelines (WCAG) version 2.0 at level AA. ATAG conformance is an additional goal beyond WCAG compliance.
+> The WordPress accessibility coding standards require new or updated code to meet the standards of the Web Content Accessibility Guidelines (WCAG) version 2.2 at level AA. ATAG conformance is an additional goal beyond WCAG compliance.
 
 {: .callout .alert }
 **Alert:** WordPress is not currently conforming with ATAG 2.0, but pledges to pursue features that are accessible and which help users create accessible content in pursuit of the long-term goal of ATAG compliance.
