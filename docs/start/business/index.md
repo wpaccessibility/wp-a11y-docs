@@ -2,6 +2,7 @@
 title: Accessibility, the business case
 layout: default
 parent: Start with accessibility
+description: The website you build is not for you, or even your client. It’s for the users.
 nav_order: 3
 ---
 

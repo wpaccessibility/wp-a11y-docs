@@ -2,6 +2,7 @@
 title: They're not my visitors
 layout: default
 parent: Accessibility, the business case
+description: We often design and build for a perfect user in a perfect setting. But is that your visitor, is that even you?
 nav_order: 2
 ---
 

@@ -2,10 +2,13 @@
 title: Training
 layout: default
 parent: Start with accessibility
+description: An overview of training, meetups and conferences to learn accessibility.
 nav_order: 5
 ---
 
 # Training, learn web accessibility
+
+An overview of training, meetups and conferences to learn accessibility.
 
 ## Online events
 
