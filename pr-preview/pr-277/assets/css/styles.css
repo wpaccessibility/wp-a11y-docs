@@ -1359,29 +1359,41 @@ footer nav .container .column {
   background-color: var(--color-negative-bg-default);
 }
 
-.prev-next, .siblings, .toc {
+.prev-next,
+.siblings,
+.toc {
   border-top: 1px solid var(--color-neutral-border-default);
   margin: 1.25em 0;
 }
-.prev-next h2, .siblings h2, .toc h2 {
+.prev-next h2,
+.siblings h2,
+.toc h2 {
   font-size: var(--text-font-size-lg);
 }
-.prev-next ul, .siblings ul, .toc ul {
+.prev-next ul,
+.siblings ul,
+.toc ul {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
-.prev-next ul li, .siblings ul li, .toc ul li {
+.prev-next ul li,
+.siblings ul li,
+.toc ul li {
   list-style: none;
   margin: 0;
   padding-right: 1em;
   width: 50%;
 }
-.prev-next ul li a, .siblings ul li a, .toc ul li a {
+.prev-next ul li a,
+.siblings ul li a,
+.toc ul li a {
   display: block;
 }
-.prev-next ul li p, .siblings ul li p, .toc ul li p {
+.prev-next ul li p,
+.siblings ul li p,
+.toc ul li p {
   padding: 0;
 }
 
