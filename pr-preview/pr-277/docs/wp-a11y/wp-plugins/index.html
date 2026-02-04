@@ -10,7 +10,7 @@
 
 
 
-<title>Prototype WP Plugins, WP Accessibility Knowledge Base</title>
+<title>Prototype Accessible WP plugins, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-277/assets/css/styles.css">
@@ -382,11 +382,13 @@
 
           <a href="/pr-preview/pr-277/docs/wp-a11y/wcag/" class="nav-list-link">WCAG and WordPress</a></li><li class="nav-list-item">
 
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-a11y-team/" class="nav-list-link">WordPress Accessibility Team</a></li><li class="nav-list-item">
+
           <a href="/pr-preview/pr-277/docs/wp-a11y/wp-a11y-plugins/" class="nav-list-link">WP accessibility plugins</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-themes/" class="nav-list-link">WordPres Themes</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-themes/" class="nav-list-link">Accessible WP themes</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-plugins/" class="nav-list-link">WP Plugins</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-277/docs/wp-a11y/wp-plugins/" class="nav-list-link">Accessible WP plugins</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-277/docs/about/" class="nav-list-link">About this documentation</a><button class="nav-list-expander btn-reset" aria-label="About this documentation submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -493,7 +495,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/docs/wp-a11y/'>WordPress and Accessibility</a></li>
-            <li class="breadcrumb-nav-list-item" aria-current="page">WP Plugins</li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Accessible WP plugins</li>
     </ol>
 </nav>
 
@@ -505,88 +507,6 @@
           <h1 id="wordpress-plugins-and-accessibility">WordPress plugins and accessibility</h1>
 
 <p>There are no plugin accessibility requirements in the WordPress plugin directory. This is because of the labor required to test plugins for accessibility. However, you are strongly encouraged to consider accessibility when creating or updating your plugins.</p>
-
-<h2 id="why-is-plugin-accessibility-important">Why is plugin accessibility important?</h2>
-
-<p>Accessibility is the key to making your plug-in usable by people with disabilities. The accessibility of your user interface has an impact on what countries and organizations can legally use your plugin. Accessibility is required by many governments for any commercial site, and by even more for sites within governmentally supported institutions such as schools. The laws governing accessibility are variable, but most laws reference a set of guidelines called the Web Content Accessibility Guidelines (WCAG), authored by the World Wide Web Consortium (W3C).</p>
-
-<p>The most common guidelines in current use are <a href="https://www.w3.org/WAI/WCAG22/quickref/?currentsidebar=%23col_customize&amp;levels=aaa">WCAG version 2.2 at level AA</a>. While many of these guidelines are specific to content, there are many aspects of accessibility that your plugin can and should employ.</p>
-
-<h2 id="resources">Resources:</h2>
-
-<ul>
-  <li><a href="https://inclusive-components.design/">Inclusive Design Components by Heydon Pickering</a></li>
-  <li><a href="https://design-system.service.gov.uk/">United Kingdom’s Design System library</a></li>
-  <li><a href="https://designsystem.digital.gov/">United States’ Design System library</a></li>
-  <li><a href="https://github.com/scottaohara/accessible_components">Accessible Components by Scott O’Hara</a></li>
-</ul>
-
-<h2 id="interactive-elements">Interactive Elements</h2>
-
-<p>Forms, buttons, toggles, tabs – these are all elements commonly used both in the admin of your plugin and in public-facing interfaces. They’re also some of the most critical pieces for achieving a basic level of accessibility.</p>
-
-<p>At minimum, you should be considering:</p>
-
-<h3 id="fields-should-be-labeled">Fields should be labeled</h3>
-
-<p>Every form input needs to have an associated <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code> element. Those labels should be an accurate representation of the information required for that form. The label should be associated with the field using a for/id relationship:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"my_field"</span><span class="nt">&gt;</span>Share your story<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"my_field"</span> <span class="na">name=</span><span class="s">"my_story"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
-</code></pre></div></div>
-
-<p>Avoid hiding your labels visually. If you do need to hide a label, use a standard <code class="language-plaintext highlighter-rouge">.screen-reader-text</code> class to do so.</p>
-
-<p><a href="https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/">Learn more about visually hidden text</a>.</p>
-
-<h3 id="form-groups-need-group-names">Form groups need group names</h3>
-
-<p>If you’re providing a group of checkboxes or radio buttons, the label for the input isn’t usually enough information: it tells you the value you’re selecting, but not the question you’re trying to answer. Checkboxes and radio buttons should be grouped inside a <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code> with a <code class="language-plaintext highlighter-rouge">&lt;legend&gt;</code>.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;fieldset&gt;</span>
-    <span class="nt">&lt;legend&gt;</span>Why do you love WordPress plugins?<span class="nt">&lt;/legend&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"radio1"</span> <span class="na">value=</span><span class="s">"money"</span><span class="nt">&gt;</span> <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio1"</span><span class="nt">&gt;</span>Money<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"radio2"</span> <span class="na">value=</span><span class="s">"fame"</span><span class="nt">&gt;</span> <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio2"</span><span class="nt">&gt;</span>Fame<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">id=</span><span class="s">"radio3"</span> <span class="na">value=</span><span class="s">"respect"</span><span class="nt">&gt;</span> <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio3"</span><span class="nt">&gt;</span>Respect<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;/fieldset&gt;</span>
-</code></pre></div></div>
-
-<h3 id="buttons-should-be-button-or-input-elements">Buttons should be <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> elements</h3>
-
-<p>Attaching JavaScript to <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> elements can work great for mouse users, but leaves a ton of gaps for anybody using a screen reader or keyboard to use your site. Using standard form elements helps ensure that forms and toggles work for everybody.</p>
-
-<p>You can use an anchor element for button-like behavior, but this creates accessibility problems, such as <a href="https://adrianroselli.com/2016/01/links-buttons-submits-and-divs-oh-hell.html?Theme=Light#Keyboard">preventing the user from cancelling the action</a>.</p>
-
-<h3 id="announce-dynamic-changes-audibly">Announce dynamic changes audibly</h3>
-
-<p>When an AJAX action runs, announce it audibly or move focus to an appropriate new location on the page.</p>
-
-<p>WordPress contains a useful method called <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> that you can use to announce results audibly. This gives screen reader users important feedback that something is happening, and what they can do next. If you’d show a result visually, you should also announce it audibly.
-<a href="https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/">Learn more about wp.a11y.speak()</a>.</p>
-
-<p>Moving focus to a new location on the page will also generate new information for screen readers. This is appropriate when the action taken changes the user’s view, and they need to be informed of the change.</p>
-
-<h3 id="make-it-easy-to-identify-and-correct-errors">Make it easy to identify and correct errors</h3>
-
-<p>When users input data into a form, provide them with feedback when a submission is made and notify them when they have entered something incorrectly. The error message should clearly describe the error and provide them with suggestions for correcting the error. Errors must be indicated by more than just a change of color.</p>
-
-<p>You can use icons and error lists to present this visually but make sure you audibly announce it.</p>
-
-<h3 id="use-color-appropriately">Use Color Appropriately</h3>
-
-<p>Good color contrast is important to make sure that users with a variety of visual impairments can use your interface. The most common problem cited is color blindness, but presbyopia (age-related vision impairments) are even more common, and most specifically impacted by low contrast. As eyes age, their ability to perceive low contrast differences decreases.</p>
-
-<p>The WCAG 2.1 guidelines measure contrast using a ratio comparing the relative luminosity of the colors. The guidelines stipulate a minimum contrast of 4.5:1 for normal text and 3.0:1 for large text using this ratio.</p>
-
-<p>You can test your colors using many tools:</p>
-
-<ul>
-  <li><a href="https://www.joedolson.com/tools/color-contrast.php">Joe Dolson’s Color Contrast Tool</a></li>
-  <li><a href="https://webaim.org/resources/contrastchecker/color">WebAIM’s ContrastChecker</a></li>
-  <li><a href="https://contrast-ratio.com/">Lea Verou’s Contrast Ratio</a></li>
-</ul>
-
-<p>Good color contrast doesn’t mean extremely high contrast; the guidelines set a minimum baseline, and any contrast that meets that baseline is acceptable.</p>
 
 
 
@@ -604,38 +524,62 @@
 
 
 
+    
 
-
-
-
-
-
-
-
-
-
-<nav class="prev-next">
-    <h2>Next and previous pages</h2>
-    <ul>
-        
-        <li>
-            <p>
-                <a class="prev" href="/pr-preview/pr-277//docs/wp-a11y/wp-themes/">Previous: WordPres Themes</a>
-                
-            </p>
-        </li>
-        
-        
-        
-        <li>
-            <p>
-            <a href="/pr-preview/pr-277//docs/wp-a11y/">Back to: WordPress and Accessibility</a>
-                About the WordPress, accessibility and the accessibility team.
-            </p>
-        </li>
-        
-    </ul>
-</nav>
+    <nav class="siblings" aria-label="Pages in WordPress and Accessibility">
+        <h2>Pages in WordPress and Accessibility</h2>
+        <ul>
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-277/docs/wp-a11y/">Introduction: WordPress and Accessibility</a>
+                    About the WordPress, accessibility and the accessibility team.
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-277/docs/wp-a11y/wcag/"> WCAG and WordPress</a> All new and updated code released in WordPress must conform with WCAG version 2.2 at level AA.
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-277/docs/wp-a11y/wp-a11y-team/"> WordPress Accessibility Team</a> The Accessibility Team helps to improve the accessibility of WordPress core and resources.
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-277/docs/wp-a11y/wp-a11y-plugins/"> WP accessibility plugins</a> 
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-277/docs/wp-a11y/wp-themes/"> Accessible WP themes</a> 
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-277/docs/wp-a11y/wp-plugins/"> Accessible WP plugins</a> 
+                </p>
+            </li>
+            
+            
+        </ul>
+    </nav>
 
 
 
