@@ -1373,8 +1373,6 @@ footer nav .container .column {
 .prev-next ul,
 .siblings ul,
 .toc ul {
-  display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }

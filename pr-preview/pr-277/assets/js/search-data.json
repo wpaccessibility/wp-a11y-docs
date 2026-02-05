@@ -967,21 +967,21 @@
   },"138": {
     "doc": "The dialog modal",
     "title": "The dialog modal",
-    "description": null,
+    "description": "How to set up an accessible dialog modal.",
     "content": "A dialog is a window that separates content from the main content of a page. It can ask questions or require user input. When the dialog is active and opened, only the content inside the dialog should be available for interaction. Visually it’s usually overlaid on top of main content. There are two main practices for achieving an accessible modal dialog: . | The use of appropriate WAI-ARIA roles, states, and properties markup for dialog helps assistive technology identify the content as grouped and separated from the rest of the page. | Providing keyboard interaction and restricting focus within the modal helps keyboard users to navigate the content inside the dialog, and only navigate back to the main content when they’re ready. | . Detailed information can be found in the WAI-ARIA authoring practices for modals. The HTML 5.2 specification will include a native &lt;dialog&gt; element which is being implemented by browser vendors. See caniuse.com for up-to-date information on support. ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/dialog/",
     "relUrl": "/docs/topics/code/components/dialog/"
   },"139": {
     "doc": "The dialog modal",
     "title": "Resources",
-    "description": null,
+    "description": "How to set up an accessible dialog modal.",
     "content": ". | WAI-ARIA authoring practices for dialog modal. | Making modals accessible by Andrea Fercia | Understanding screen reader interaction modes by Léonie Watson | Using the dialog role (MDN web docs). | Advanced ARIA Tips for Accessible modal dialogs. | Mozilla Developer Network page for the HTML native dialog element. | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/dialog/#resources",
     "relUrl": "/docs/topics/code/components/dialog/#resources"
   },"140": {
     "doc": "The dialog modal",
     "title": "Accessible modal dialog scripts",
-    "description": null,
+    "description": "How to set up an accessible dialog modal.",
     "content": ". | A11y dialog script for creating accessible dialog windows. | Launchy is another script for accessible modal dialog. | Accessible and flexible React modal dialog. | W3C Modal Dialog Example | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/dialog/#accessible-modal-dialog-scripts",
     "relUrl": "/docs/topics/code/components/dialog/#accessible-modal-dialog-scripts"
@@ -1184,35 +1184,35 @@
   },"169": {
     "doc": "Post Excerpts",
     "title": "Post Excerpts",
-    "description": null,
+    "description": "How to set up an accessible excerpt.",
     "content": "Alert: This content will be updated with more modern ways to address accessibility in post excerpts. ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/excerpt/",
     "relUrl": "/docs/topics/code/components/excerpt/"
   },"170": {
     "doc": "Post Excerpts",
     "title": "Excerpt block",
-    "description": null,
+    "description": "How to set up an accessible excerpt.",
     "content": "In an archive template it is common to have a list of posts with the following elements for each post: . | the post title | a thumbnail | the excerpt | a read more link | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/excerpt/#excerpt-block",
     "relUrl": "/docs/topics/code/components/excerpt/#excerpt-block"
   },"171": {
     "doc": "Post Excerpts",
     "title": "Issues",
-    "description": null,
+    "description": "How to set up an accessible excerpt.",
     "content": "There are a few things to watch out for to make this usable for everyone. | avoid multiple / duplicate links to the same location (see examples below) | avoid meaningless link texts (see examples below) | make sure that the thumbnail has an appropriate link text | avoid block level links | . A screen reader user can call a list of links to quickly navigate a site. Then duplicate and meaningless links are annoying and time-consuming. Duplicate links . How many links per block will go to the same location? Is the post title, the thumbnail and the read more all linked to the same destination? That will cause a great deal of link clutter on your page. If you have, for example, 3 links to the same destination, consider removing 2 from the link list by adding the attribute aria-hidden=\"true\". Then the link is removed from the screen readers link list. But adding aria-hidden=\"true\" alone might be confusing because you can tab into it, but it doesn’t announce anything for the screen reader users. So: take the link also out of the tab order by using tabindex=\"-1\": . &lt;a href=\"your-url\" aria-hidden=\"true\" tabindex=\"-1\"&gt; link text &lt;/a&gt; . Meaningless link text . Link text like “Read more…” or “Continue reading…” are meaningless, especially in a link list for screen reader users. Read more about what? It’s best to give context to links. Include the post title for your “read more” links so screen readers understand what’s being linked to, and optionally hide this by using the CSS class .screen-reader-text. For example: . &lt;a href=\"your-url\"&gt;Continue reading &lt;span class=\"screen-reader-text\"&gt; Your post title&lt;/span&gt; &lt;/a&gt; . Notice the blank space inside the .screen-reader-text? This separates teh words so the text is read out as “continue reading your” instead of “continue readingyour”. The alt text of the thumbnail . If the thumbnail is placed inside a link, the alt attribute serves as the link text. So it’s important that the alt text is not empty and contains the post title of the post it’s linking to. For example: . &lt;a href=\"your-url\"&gt; &lt;img src=\"img-url\" alt=\"Your post title\"&gt; &lt;/a&gt; . Block level links . Wrapping a block level element, for example a heading and an image, inside a link is not helpful for screen readers. The whole content is read and there is no indication if an element inside the block is a heading or an image. Therefore, do not wrap the block level element in a link but place the link inside the child elements of the block. For example: . &lt;div class=\"your-card\"&gt; &lt;h3&gt; &lt;a href=\"your-url\"&gt;Your post title&lt;/a&gt; &lt;/h3&gt; &lt;img src=\"img-url\" alt=\"Your post title\"&gt; &lt;/div&gt; . ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/excerpt/#issues",
     "relUrl": "/docs/topics/code/components/excerpt/#issues"
   },"172": {
     "doc": "Post Excerpts",
     "title": "Proposed solution",
-    "description": null,
+    "description": "How to set up an accessible excerpt.",
     "content": "Putting this all together, the following code will have one link in the link list and one tab stop per block. Note: this HTML/PHP is only basic, without the styling that a theme may need. In HTML . &lt;h2&gt; &lt;a href=\"your-url\"&gt;Your post title&lt;/a&gt; &lt;/h2&gt; &lt;a href=\"your-url\" tabindex=\"-1\" aria-hidden=\"true\"&gt; &lt;img src=\"img-url\" alt=\"Your post title\"&gt; &lt;/a&gt; &lt;?php the_excerpt(); ?&gt; &lt;a href=\"your-url\" tabindex=\"-1\" aria-hidden=\"true\"&gt; Continue reading &lt;span class=\"screen-reader-text\"&gt; Your post title&lt;/span&gt; &lt;/a&gt; . In PHP . For example for the Twenty Seventeen theme we can remove one tab stop: . &lt;?php the_title( '&lt;h2&gt;&lt;a href=\"' . esc_url( get_permalink() ) . '\" rel=\"bookmark\"&gt;', '&lt;/a&gt;&lt;/h2&gt;' ); ?&gt; &lt;a href=\"&lt;?php the_permalink(); ?&gt;\"tabindex=\"-1\" aria-hidden=\"true\"&gt; &lt;?php the_post_thumbnail( 'twentyseventeen-featured-image', [ 'alt' =&gt; get_the_title() ] ); ?&gt; &lt;/a&gt; &lt;?php the_content( sprintf( __( 'Continue reading&lt;span class=\"screen-reader-text\"&gt; \"%s\"&lt;/span&gt;', 'twentyseventeen' ), get_the_title() ) ); ?&gt; . ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/excerpt/#proposed-solution",
     "relUrl": "/docs/topics/code/components/excerpt/#proposed-solution"
   },"173": {
     "doc": "Post Excerpts",
     "title": "Discussion",
-    "description": null,
+    "description": "How to set up an accessible excerpt.",
     "content": "Removing a visible link from the tab order could be confusing for keyboard users. Adding a link inside a heading is open to debate. But the link will show up in the headings list too this way, so that’s probably not a bad thing. As we are all used to the heading being a link, it has become a WordPress convention. Removing the “continue reading” link could be an option to clean up the link clutter. The “continue reading” link is hidden for screen readers, but it has screen reader text. This is useful because, if a user has her own stylesheet, or watches the sites without stylesheet, the link text is still understandable. Also adding the screen-reader-text class improves the quality of the link text, important for SEO (search engine optimization). ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/excerpt/#discussion",
     "relUrl": "/docs/topics/code/components/excerpt/#discussion"
@@ -1737,7 +1737,7 @@
   },"248": {
     "doc": "Components",
     "title": "Components",
-    "description": null,
+    "description": "Recommendations and set up of web components for WordPress.",
     "content": "There are a number of common patterns used inside WordPress or in many third party applications that the Accessibility Team has had reason to comment on at various times. For each pattern, we have specific recommendations for what to avoid and how to implement best practices for that pattern. ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/",
     "relUrl": "/docs/topics/code/components/"
@@ -1786,42 +1786,42 @@
   },"255": {
     "doc": "Accessible name",
     "title": "The accessible name",
-    "description": null,
+    "description": "Give an (interactive) HTML element the correct accessible name.",
     "content": "Give an (interactive) HTML element the correct accessible name. Accessible names convey the purpose or intent of the element. This helps users understand what the element is for and how they can interact with it. - Accessible name on MDN. ",
     "url": "/pr-preview/pr-277/docs/topics/code/accessible-name/#the-accessible-name",
     "relUrl": "/docs/topics/code/accessible-name/#the-accessible-name"
   },"256": {
     "doc": "Accessible name",
     "title": "Why is this important?",
-    "description": null,
+    "description": "Give an (interactive) HTML element the correct accessible name.",
     "content": ". | Screen readers will announce the name, role, value or status when an interactive element gets keyboard focus. | Voice recognition (voice control) users can focus an interactive element by announcing its name. | . A proper accessible name for HTML elements is essential for screen reader users to understand and operate functionality on a web page. Abdulqudus Abubakre gives an excellent, detailed writeup of the accessible name Understanding Accessible Names in HTML. Please note: An aria-label attribute on a link or a button overrides all textual content within. For example, the accessible name of the button &lt;button aria-label=\"Close\"&gt;Open&lt;/button&gt; is “Close”. ",
     "url": "/pr-preview/pr-277/docs/topics/code/accessible-name/#why-is-this-important",
     "relUrl": "/docs/topics/code/accessible-name/#why-is-this-important"
   },"257": {
     "doc": "Accessible name",
     "title": "The accessibility tree shows the accessible name",
-    "description": null,
+    "description": "Give an (interactive) HTML element the correct accessible name.",
     "content": "Next to the DOM-tree a browser also generates an accessibility tree. Both are available in the inspector of every browser. Assistive technology, like a screen reader, gets the information it needs from that accessibility tree. The way browsers show the accessibility tree differs: . | In Edge: Test accessibility using the Accessibility tab. | In Chrome: Full accessibility tree in Chrome DevTools Tools. | In FireFox: Accessibility inspector. | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/accessible-name/#the-accessibility-tree-shows-the-accessible-name",
     "relUrl": "/docs/topics/code/accessible-name/#the-accessibility-tree-shows-the-accessible-name"
   },"258": {
     "doc": "Accessible name",
     "title": "Examples clarifying the accessible name of interactive elements",
-    "description": null,
+    "description": "Give an (interactive) HTML element the correct accessible name.",
     "content": "Menu button: . Menu . &lt;button aria-expanded=\"false\"&gt;Menu&lt;/button&gt; . The accessibility tree of Chrome shows the following relevant information: the accessible name is taken from the content, the role is button, the element is focusable, has focus and the menu is not expanded: . | Name . | aria-labelledby: Not specified | aria-label: Not specified | From label: Not specified | Contents: “Menu” | title: Not specified | . | Role: button | Invalid user entry: false | Focusable: true | Focused: true | Expanded: false | . Info: In this example the accessible name is taken from “Contents”. The other options are not specified. An accessible name can be overwritten. Here the different steps for defining an accessible name are shown and sorted in order of the computation. A value for the aria-label will overwrite the Contents value. Link: . Contact . &lt;a href=\"https://wpaccessibility.org/docs/contact/\"&gt;Contact&lt;/a&gt; . The accessibility tree of Firefox shows the following relevant information: The accessible name is contact, the role is link and the value is the url. | name:”Contact” | role:”link” | value:”https://wpaccessibility.org/docs/contact/” | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/accessible-name/#examples-clarifying-the-accessible-name-of-interactive-elements",
     "relUrl": "/docs/topics/code/accessible-name/#examples-clarifying-the-accessible-name-of-interactive-elements"
   },"259": {
     "doc": "Accessible name",
     "title": "Resources",
-    "description": null,
+    "description": "Give an (interactive) HTML element the correct accessible name.",
     "content": "WCAG Success Criteria for an accessible name . Giving interactive elements a well-defined, accessible name is necessary to meet the WCAG success criteria: . | 1.3.1 Info and relationships (Level A). | 2.4.6 Headings and labels (Level AA). | 3.3.2 Labels or instructions (Level A). | 4.1.2 Name, role, value (Level A). | . Related pages in this documentation . How to provide a proper accessible name for each use case is documented with the specific topics in this documentation, like for example on Give a form field an accessible name with a label in forms. Other resources . | Abdulqudus Abubakre Understanding Accessible Names in HTML. | MDN: Accessible name. | W3C: Providing Accessible Names and Descriptions . | W3C: 5 rules of ARIA. | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/accessible-name/#resources",
     "relUrl": "/docs/topics/code/accessible-name/#resources"
   },"260": {
     "doc": "Accessible name",
     "title": "Accessible name",
-    "description": null,
+    "description": "Give an (interactive) HTML element the correct accessible name.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/code/accessible-name/",
     "relUrl": "/docs/topics/code/accessible-name/"
@@ -1870,28 +1870,28 @@
   },"267": {
     "doc": "Feedback on dynamic changes",
     "title": "Feedback on dynamic changes",
-    "description": null,
+    "description": "The explanation of wp.a11y.speak.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/code/dynamic-changes/",
     "relUrl": "/docs/topics/code/dynamic-changes/"
   },"268": {
     "doc": "Feedback on dynamic changes",
     "title": "Using ARIA Live in WordPress",
-    "description": null,
+    "description": "The explanation of wp.a11y.speak.",
     "content": "wp.a11y.speak() is a JavaScript method included into WordPress core as off version 4.2. When content changes dynamically in a web page, wp.a11y.speak() can announce a message using aria-live. Then users who depend on a screen reader will be notified of any change to the content on the page. Joe Dolson and Andrea Fercia wrote a clear introduction and manual on the method in Let WordPress Speak, new in WordPress 4.2 . Example of a wp.a11y.speak() implementation . In this example a table with data is displayed. The user can select for example a category and the table with the data below will be updated dynamically. With wp.a11y.speak() we can announce that the table has been updated with new data. Note: for wp.a11y.speak() to work best, the .screen-reader-text CSS class should be added to your theme CSS. Also, wp.a11y.speak() is only available after DOM ready, so be sure not to call it earlier! . In functions.php . add_action( 'wp_enqueue_scripts', 'yourprefix_ajax' ); function yourprefix_ajax() { // Register the script. wp_register_script( 'your-prefix-ajax', get_template_directory_uri() . '/assets/js/your-ajax-file.js', array( 'wp-a11y', ), false, true ); // Localization. wp_localize_script( 'your-prefix-ajax', 'yourData', array( strings' =&gt; array( 'resultsFound' =&gt; esc_html__( 'New results found and displayed in the table below', 'your-theme' ) ), ) ); wp_enqueue_script( 'your-prefix-ajax' ); } . In your-ajax-file.js . Within the js method generating the dynamic changes you can call: . // Announce change of data in the table. wp.a11y.speak( yourData.strings.resultsFound, 'polite' ); . The generated output . &lt;div id=\"wp-a11y-speak-polite\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"true\" class=\"screen-reader-text wp-a11y-speak-region\"&gt; New results found and displayed in the table below &lt;/div&gt; . This &lt;div&gt; will be added to the bottom of the web page. ",
     "url": "/pr-preview/pr-277/docs/topics/code/dynamic-changes/#using-aria-live-in-wordpress",
     "relUrl": "/docs/topics/code/dynamic-changes/#using-aria-live-in-wordpress"
   },"269": {
     "doc": "Feedback on dynamic changes",
     "title": "Using the npm package",
-    "description": null,
+    "description": "The explanation of wp.a11y.speak.",
     "content": "The wp.a11y.speak() functionality is also available from the NPM package @wordpress/a11y. Install the module: . npm install @wordpress/a11y --save . Example usage: . import { speak } from '@wordpress/a11y'; // For polite messages that shouldn't interrupt what screen readers are currently announcing. speak( 'The message you want to send to the ARIA live region' ); // For assertive messages that should interrupt what screen readers are currently announcing. speak( 'The message you want to send to the ARIA live region', 'assertive' ); . ",
     "url": "/pr-preview/pr-277/docs/topics/code/dynamic-changes/#using-the-npm-package",
     "relUrl": "/docs/topics/code/dynamic-changes/#using-the-npm-package"
   },"270": {
     "doc": "Feedback on dynamic changes",
     "title": "Resources",
-    "description": null,
+    "description": "The explanation of wp.a11y.speak.",
     "content": ". | WordPress speaks with wp.a11y.speak by Sami Keijonen, explanation, examples in GitHub and a demo site | Let WordPress Speak, new in WordPress 4.2 by Joe Dolson and Andrea Fercia, introducing and explaining the method | The NPM Module @wordpress/a11y that has the “speak” method that allows you to easily announce dynamic interface updates to screen readers using ARIA live regions. This module is inspired by the speak function in wp-a11y.js | a11y-speak, a Github repository by Yoast containing a dedicated JS module, called A11ySpeak which makes the wp.a11y.speak functionality more universally available | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/dynamic-changes/#resources",
     "relUrl": "/docs/topics/code/dynamic-changes/#resources"
@@ -3410,28 +3410,28 @@
   },"487": {
     "doc": "Skip links",
     "title": "Skip links",
-    "description": null,
+    "description": "How to set up an accessible skip link.",
     "content": "Navigation links, search forms, social media links, or other elements commonly appear on the page before the main content. When navigating using the keyboard, it can be frustrating to get to the main content of a page because of these elements if you need to tab through everything on each page. A skip link provides users (particularly keyboard users) with a means to skip all these elements and jump to the content. ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/skip-links/",
     "relUrl": "/docs/topics/code/components/skip-links/"
   },"488": {
     "doc": "Skip links",
     "title": "Best practices",
-    "description": null,
+    "description": "How to set up an accessible skip link.",
     "content": ". | The link should be the first focusable element in the page. | The link is not required to be visible all the time for all users, but making it visible will increase accessibility. | If the link is visually hidden at first, it must become visible when keyboard focus moves to the link. | When the link is clicked, it should move focus to the main content. The next tab press should continue navigation inside the main content. | . Skip to content link when focused . Even though all content should be inside a landmark region, skip links can be outside any landmarks. If a user is navigating using landmark regions, having skip links inside a landmark may be excessively verbose. Since the skip link is the first item on the page, it is always easily findable. Skip links should be the first focusable element on a page. In this example, the skip link is inside the &lt;header&gt; landmark, but this is not a requirement – and if there is content above the site header, it would be incorrect. Being the first item on the page is much more important than being inside a landmark. &lt;body&gt; &lt;header&gt; &lt;a class=\"screen-reader-text skip-link\" href=\"#content\"&gt;Skip to content&lt;/a&gt; &lt;h1&gt;Site title&lt;/h1&gt; &lt;/header&gt; &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"/\"&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/accessibility\"&gt;Accessibility&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/blog\"&gt;Blog&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;main id=\"content\"&gt; &lt;!-- Content of the page --&gt; &lt;/main&gt; &lt;/body&gt; . Read more about the .screen-reader-text class. ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/skip-links/#best-practices",
     "relUrl": "/docs/topics/code/components/skip-links/#best-practices"
   },"489": {
     "doc": "Skip links",
     "title": "Example: Skip link in wrong place",
-    "description": null,
+    "description": "How to set up an accessible skip link.",
     "content": "In this example, the skip link has been placed inside the navigation region, and moved to the top left corner using CSS. The result is that a user must travel through the navigation in order to reach the skip link. It appears visually in the correct place, but is useless to a user. &lt;html&gt; &lt;style&gt;.skiplink { position: absolute; top: 0; left: 0; }&lt;/style&gt; &lt;body&gt; &lt;nav&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"/\"&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/accessibility\"&gt;Accessibility&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"/blog\"&gt;Blog&lt;/a&gt;&lt;/li&gt; &lt;li class=\"skiplink\"&gt;&lt;a href=\"#content\"&gt;Skip to Content&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/nav&gt; &lt;main id=\"content\"&gt; &lt;!-- Content of the page --&gt; &lt;/main&gt; &lt;/body&gt; . ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/skip-links/#example-skip-link-in-wrong-place",
     "relUrl": "/docs/topics/code/components/skip-links/#example-skip-link-in-wrong-place"
   },"490": {
     "doc": "Skip links",
     "title": "Additional resources for skip links",
-    "description": null,
+    "description": "How to set up an accessible skip link.",
     "content": ". | Skip navigation links in webaim. In this article there is also information about having multiple skip links and the most common wording for skip to content. | How–to: Use Skip Navigation links. | Skip links guideline for accessibility ready themes. | .screen-reader-text class article in the handbook. | . ",
     "url": "/pr-preview/pr-277/docs/topics/code/components/skip-links/#additional-resources-for-skip-links",
     "relUrl": "/docs/topics/code/components/skip-links/#additional-resources-for-skip-links"
