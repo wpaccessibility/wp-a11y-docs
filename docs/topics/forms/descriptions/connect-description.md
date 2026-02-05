@@ -2,6 +2,7 @@
 title: Connect the description
 layout: default
 parent: Input and description
+description: For screen reader users, it's important that the description is announced along with the form field.
 nav_order: 2
 ---
 

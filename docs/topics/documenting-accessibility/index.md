@@ -2,7 +2,7 @@
 title: Documenting accessibility
 layout: default
 parent: Standards and best practice
-description: Recommended ways for documenting accessibility in WordPress themes and plugins
+description: Recommended ways for documenting accessibility in WordPress themes and plugins.
 nav_order: 7
 ---
 

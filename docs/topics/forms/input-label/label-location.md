@@ -2,6 +2,7 @@
 title: Best label location
 layout: default
 parent: Input and label
+description: Place the label above the form field, like a text input, textarea or select.
 nav_order: 7
 ---
 
