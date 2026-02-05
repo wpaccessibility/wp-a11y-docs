@@ -2,6 +2,7 @@
 title: Link texts
 layout: default
 parent: Links
+description: A link text should describe the resource that it links to.
 nav_order: 2
 ---
 

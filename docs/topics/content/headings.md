@@ -2,6 +2,7 @@
 title: Headings
 layout: default
 parent: Content and images
+description: A heading should simply and concisely describe the content that follows.
 nav_order: 3
 ---
 

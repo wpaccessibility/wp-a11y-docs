@@ -2,6 +2,7 @@
 title: Alt text for images
 layout: default
 parent: Content and images
+description: The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.
 nav_order: 2
 ---
 

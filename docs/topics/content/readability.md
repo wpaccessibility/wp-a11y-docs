@@ -2,6 +2,7 @@
 title: Readability
 layout: default
 parent: Content and images
+description: Make the text scannable and easy to read.
 nav_order: 4
 ---
 

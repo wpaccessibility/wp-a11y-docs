@@ -2,7 +2,7 @@
 title: Content and images
 layout: default
 parent: Standards and best practice
-description: What is important to create accessible content with WordPress
+description: What is important to create accessible content with WordPress.
 nav_order: 1
 ---
 

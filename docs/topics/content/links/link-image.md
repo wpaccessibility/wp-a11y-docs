@@ -2,6 +2,7 @@
 title: Images as links
 layout: default
 parent: Links
+description: For linked images, the alt attribute (the alternative text) will be the link text.
 nav_order: 3
 ---
 

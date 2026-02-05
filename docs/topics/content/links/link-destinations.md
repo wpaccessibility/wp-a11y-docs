@@ -2,6 +2,7 @@
 title: Link destinations
 layout: default
 parent: Links
+description: Always tell a visitor what to expect when selecting a link.
 nav_order: 4
 ---
 
