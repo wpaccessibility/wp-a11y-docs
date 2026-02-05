@@ -2,6 +2,7 @@
 title: Post Excerpts
 layout: default
 parent: Components
+description: How to set up an accessible excerpt.
 nav_order: 3
 ---
 

@@ -2,6 +2,7 @@
 title: Feedback on dynamic changes
 layout: default
 parent: Frontend code
+description: The explanation of wp.a11y.speak.
 nav_order: 7
 ---
 

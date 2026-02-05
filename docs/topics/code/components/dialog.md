@@ -2,6 +2,7 @@
 title: The dialog modal
 layout: default
 parent: Components
+description: How to set up an accessible dialog modal.
 nav_order: 5
 ---
 

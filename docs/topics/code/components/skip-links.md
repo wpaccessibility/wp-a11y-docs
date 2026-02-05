@@ -2,6 +2,7 @@
 title: Skip links
 layout: default
 parent: Components
+description: How to set up an accessible skip link.
 nav_order: 2
 ---
 
