@@ -88,7 +88,31 @@
     </p>
   </li>
   {% endfor %}
+
+  {% if page.parent %}
+  {% assign introPage   = site.pages | where: "title", page.parent | first %}
+
+  <li>
+    <p>
+      <a href="{{ introPage.url | relative_url }}">Back to: {{ introPage.title }}</a>
+      {{ introPage.description }}
+    </p>
+  </li>
+
+  {% else %}
+
+  <li>
+    <p>
+      <a href="{{ site.url | relative_url }}">Back to: Home</a>
+      WP Accessibility Knowledge Base.
+    </p>
+  </li>
+
+  {% endif %}
 </ul>
 </nav>
+
+{% else %}
+ {% include components/siblings.html %}
 
 {%- endif -%}
