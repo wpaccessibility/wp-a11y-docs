@@ -917,6 +917,7 @@ body {
 .nav-list .nav-list-item .nav-list-link.active {
   font-weight: 600;
   text-decoration: none;
+  color: var(--color-wa11ypuu-yellow);
 }
 .nav-list .nav-list-item .nav-list-link:hover, .nav-list .nav-list-item .nav-list-link.focus {
   text-decoration: underline;
@@ -954,6 +955,9 @@ body {
 }
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
   color: var(--color-neutral-inverse-color-subtle);
+}
+.nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link.active {
+  color: var(--color-wa11ypuu-yellow);
 }
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-expander {
   color: var(--color-neutral-inverse-color-subtle);
@@ -1042,11 +1046,6 @@ body {
 
 .site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(1) > ul.nav-list {
   display: block;
-}
-
-[aria-current] {
-  color: var(--color-neutral-color-default);
-  font-weight: 600;
 }
 
 /* Text meant only for screen readers. */
@@ -1374,15 +1373,6 @@ footer nav .container .column {
 .siblings ul,
 .toc ul {
   margin: 0;
-  padding: 0;
-}
-.prev-next ul li,
-.siblings ul li,
-.toc ul li {
-  list-style: none;
-  margin: 0;
-  padding-right: 1em;
-  width: 50%;
 }
 .prev-next ul li a,
 .siblings ul li a,

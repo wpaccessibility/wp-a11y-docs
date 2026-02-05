@@ -246,42 +246,42 @@
   },"35": {
     "doc": "Alt text for images",
     "title": "Alternative text for images",
-    "description": null,
+    "description": "The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.",
     "content": "Note: The alt attribute (“alt text”) is used to provide an alternative to the image for users who can’t see it. ",
     "url": "/pr-preview/pr-277/docs/topics/content/alt-text/#alternative-text-for-images",
     "relUrl": "/docs/topics/content/alt-text/#alternative-text-for-images"
   },"36": {
     "doc": "Alt text for images",
     "title": "Best practice",
-    "description": null,
+    "description": "The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.",
     "content": ". | Give all HTML &lt;img&gt; elements an alt attribute. | Give any decorative images an empty alt attribute ( alt=\"\" ). | Describe (for non-visual readers) the contents and purpose of the image in the alternate text. | If an alt attribute is not inserted in the Media Library, this will be interpreted as alt=\"\" in the front end. | If an image contains a link, the alt attribute should contain the target of that link (e.g. the post title), and not a description of the image. | When possible, use CSS to insert images that are only decorative, like an icon or ornament. | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/alt-text/#best-practice",
     "relUrl": "/docs/topics/content/alt-text/#best-practice"
   },"37": {
     "doc": "Alt text for images",
     "title": "Code examples",
-    "description": null,
+    "description": "The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.",
     "content": "Correct examples . &lt;img src=\"../../gallery/illustration.png\" alt=\"description of the illustration\"&gt; Correct: will be interpreted as \"description of the illustration, image\" (example by Apple VoiceOver). &lt;img src=\"../../gallery/illustration.png\" alt=\"\"&gt; Correct: will be interpreted as \"image\" (example by Apple VoiceOver). &lt;a href=\"blog.html\"&gt;&lt;img src=\"icon.png\" alt=\"Blog Postings\"&gt;&lt;/a&gt; Correct: will be interpreted as \"link, image Blog Postings, image\" (example by Apple VoiceOver). Incorrect examples . &lt;img src=\"../../gallery/illustration.png\"&gt; &lt;img src=\"illustration.png\"&gt; Incorrect: will both be interpreted as \"illustration.png, image\" (example by Apple VoiceOver). ",
     "url": "/pr-preview/pr-277/docs/topics/content/alt-text/#code-examples",
     "relUrl": "/docs/topics/content/alt-text/#code-examples"
   },"38": {
     "doc": "Alt text for images",
     "title": "Visual example",
-    "description": null,
+    "description": "The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.",
     "content": "Image from WordPress Media Library where you can insert various meta-information for an image. An alternative text can be inserted in the Alt Text-field: . Inserting alt attributes . An alt attribute should always be present. The content of the alt attribute depends on the relevance of the image for understanding that context. An alt attribute with a description should be added: . | images that contain text that is not provided nearby | images that illustrate the content in the broadest sense | images with complex information should be described briefly in the alt attribute, and the information should be provided elsewhere on the page | . An alt attribute with text describing the target should be added: . | images that contain a link | . An empty alt attribute (alt=\"\") should be added: . | when images are decorative; but it is better to insert such images using CSS | . If an alt attribute is not present, the filename of that image may be used instead. Read more on Are alt attributes required? Always? . On the Web Accessibility Tutorials of the W3C the alt Decision Tree tool is an almost comprehensive guide that describes how to use the alt attribute of an image in various situations. Benefits . Blind, people with visual and readability limitations will benefit when using a screen reader. The alt attribute helps with Search Engine Optimization. Google uses alt text along with computer vision algorithms and the contents of the page to understand the subject of the image. WCAG 2.1 Success Criterion . | 1.1.1 Non-text Content (level A) | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/alt-text/#visual-example",
     "relUrl": "/docs/topics/content/alt-text/#visual-example"
   },"39": {
     "doc": "Alt text for images",
     "title": "Resources and external links",
-    "description": null,
+    "description": "The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.",
     "content": ". | Alt Decision Tree tool | Image SEO: alt tag and title tag optimization | The Rules of ALT | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/alt-text/#resources-and-external-links",
     "relUrl": "/docs/topics/content/alt-text/#resources-and-external-links"
   },"40": {
     "doc": "Alt text for images",
     "title": "Alt text for images",
-    "description": null,
+    "description": "The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/content/alt-text/",
     "relUrl": "/docs/topics/content/alt-text/"
@@ -988,21 +988,21 @@
   },"141": {
     "doc": "Digital documents",
     "title": "Digital documents",
-    "description": null,
+    "description": "Similar accessibility rules applies for PDFs as HTML documents.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/content/docs/",
     "relUrl": "/docs/topics/content/docs/"
   },"142": {
     "doc": "Digital documents",
     "title": "Accessible PDFs",
-    "description": null,
+    "description": "Similar accessibility rules applies for PDFs as HTML documents.",
     "content": "PDFs (Portable Document Format) are often referred as tagged PDFs. Similar accessibility rules applies for PDFs as HTML documents: . | headings structure. | appropriate link texts. | color contrast. | alternative text for images. | . Tagged PDF . PDF tags are the semantic content marks and indicate the logical document structure and reading order. Compared to HTML tags, PDF tags look similar, but are not the same. In the source document (e.g. Microsoft Word, Adobe InDesign) you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside &lt;p&gt; tags. It also important to format your lists and tables correctly to get good results while exporting your PDF. The Paciello Group has a good overview of PDF inaccessibility. Export as accessible PDF . The list of software which are able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar. Warning: Google Docs doesn’t support the export of a tagged and accessible PDF yet without any help of a plugin. ",
     "url": "/pr-preview/pr-277/docs/topics/content/docs/#accessible-pdfs",
     "relUrl": "/docs/topics/content/docs/#accessible-pdfs"
   },"143": {
     "doc": "Digital documents",
     "title": "Resources",
-    "description": null,
+    "description": "Similar accessibility rules applies for PDFs as HTML documents.",
     "content": ". | Defining PDF Accessibility on WebAIM. | Overview of PDF inaccessibility, by the Paciello Group. | Techniques for Accessible PDF, by the PDF Association. | PDF Accessibility Overview, by Adobe. | Create and verify PDF accessibility, by Acrobat Pro | PDF/UA in a Nutshell (PDF), by the PDF association. | Tagged PDF 508 help center, by Tagged PDF. | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/docs/#resources",
     "relUrl": "/docs/topics/content/docs/#resources"
@@ -1282,42 +1282,42 @@
   },"183": {
     "doc": "Headings",
     "title": "Headings in the content",
-    "description": null,
+    "description": "A heading should simply and concisely describe the content that follows.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/content/headings/#headings-in-the-content",
     "relUrl": "/docs/topics/content/headings/#headings-in-the-content"
   },"184": {
     "doc": "Headings",
     "title": "What are headings?",
-    "description": null,
+    "description": "A heading should simply and concisely describe the content that follows.",
     "content": "Headings are the framework of your content. A good heading should simply and concisely describe the content that follows. The heading level is important. The H1 (heading 1) is reserved for the post or page title. For most themes that is the title you give a page or post. Use heading 2, 3 and 4 to divide your content into meaningful sections, like the index of a book. Choose heading levels by meaning, not by visible size. This way search engines and screen readers (software used by your blind visitors) understand the structure and meaning of the content better. Headings are the index of your content. Content with a good heading structure ranks better with the search engines. Use it to divide content into scannable blocks; both Google and your visitor will like it. If you don’t like the sizes of the headings in your content, you should adjust the design of the heading rather than selecting a different heading. This helps with accessibility as well as with content adaptability. Selecting a heading based on size might make a change of theme more difficult. ",
     "url": "/pr-preview/pr-277/docs/topics/content/headings/#what-are-headings",
     "relUrl": "/docs/topics/content/headings/#what-are-headings"
   },"185": {
     "doc": "Headings",
     "title": "Examples of Heading Structures",
-    "description": null,
+    "description": "A heading should simply and concisely describe the content that follows.",
     "content": "Your page’s headings might resemble a structure similar to this one on a complex page: . Heading 1 (post title) Heading 2 (major section) Heading 3 (subsection) Heading 2 (additional major section) Heading 3 Heading 4 Heading 3 Heading 4 Heading 2 Heading 3 (post sub-heading) Heading 3 (post sub-heading) . If we use this post as an example, the heading structure for the content looks like this: . Heading 1: Using Headings in Content (main post topic) Heading 2: What are Headings? (subsection) Heading 2: Examples of Heading Structures (subsection) Heading 2: Test tools (subsection) Heading 2: Resources (subsection) . ",
     "url": "/pr-preview/pr-277/docs/topics/content/headings/#examples-of-heading-structures",
     "relUrl": "/docs/topics/content/headings/#examples-of-heading-structures"
   },"186": {
     "doc": "Headings",
     "title": "Test tools",
-    "description": null,
+    "description": "A heading should simply and concisely describe the content that follows.",
     "content": "With these tools you can get an overview of the heading structure of your webpage. | WAVE | Headings map for Chrome | a11yTools Extension for Safari MacOS | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/headings/#test-tools",
     "relUrl": "/docs/topics/content/headings/#test-tools"
   },"187": {
     "doc": "Headings",
     "title": "Resources",
-    "description": null,
+    "description": "A heading should simply and concisely describe the content that follows.",
     "content": ". | Use proper heading elements to indicate the page’s content structure | Writing Accessible Content | Headings and why you should use them | Accessible heading structure | TODO: this needs a new home Heading structure in theme development | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/headings/#resources",
     "relUrl": "/docs/topics/content/headings/#resources"
   },"188": {
     "doc": "Headings",
     "title": "Headings",
-    "description": null,
+    "description": "A heading should simply and concisely describe the content that follows.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/content/headings/",
     "relUrl": "/docs/topics/content/headings/"
@@ -1905,21 +1905,21 @@
   },"272": {
     "doc": "Links",
     "title": "Web links",
-    "description": null,
+    "description": "What is important to create accessible links and how to write proper link texts for the web.",
     "content": "These pages in this section inform you about what is important to create accessible links and how to write proper link texts for the web. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/#web-links",
     "relUrl": "/docs/topics/content/links/#web-links"
   },"273": {
     "doc": "Links",
     "title": "Links",
-    "description": null,
+    "description": "What is important to create accessible links and how to write proper link texts for the web.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/",
     "relUrl": "/docs/topics/content/links/"
   },"274": {
     "doc": "Content and images",
     "title": "Content and images",
-    "description": "What is important to create accessible content with WordPress",
+    "description": "What is important to create accessible content with WordPress.",
     "content": "The pages in this section inform content managers about what is important to create accessible content with WordPress. ",
     "url": "/pr-preview/pr-277/docs/topics/content/",
     "relUrl": "/docs/topics/content/"
@@ -2780,56 +2780,56 @@
   },"397": {
     "doc": "Link destinations",
     "title": "Link destinations",
-    "description": null,
+    "description": "Always tell a visitor what to expect when selecting a link.",
     "content": "Rule of thumb: Always tell a visitor what to expect when selecting a link. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-destinations/",
     "relUrl": "/docs/topics/content/links/link-destinations/"
   },"398": {
     "doc": "Link destinations",
     "title": "Open a link in a new window or tab?",
-    "description": null,
+    "description": "Always tell a visitor what to expect when selecting a link.",
     "content": "Opening a link in a new window or tab unexpectedly can disorient users. It also breaks the “back button”. The best practice is to let the user decide if she wants to open a link in a new tab or window. Not all screen readers alert users when a new window or tab has opened and for those with cognitive disabilities, they may have trouble interpreting what’s happened. This can be prevented by not checking “open link in a new target” on links, so they don’t trigger new windows or tabs to open. But what if you insist? . If you absolutely need to open a link in a new window, you need to tell your visitor in the link text. For example: I love cats, so I watch cat videos (opens in a new tab) on YouTube. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-destinations/#open-a-link-in-a-new-window-or-tab",
     "relUrl": "/docs/topics/content/links/link-destinations/#open-a-link-in-a-new-window-or-tab"
   },"399": {
     "doc": "Link destinations",
     "title": "Link to a document",
-    "description": null,
+    "description": "Always tell a visitor what to expect when selecting a link.",
     "content": "If the link opens a document, add the format of the document in the link text. You can download the manual as PDF. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-destinations/#link-to-a-document",
     "relUrl": "/docs/topics/content/links/link-destinations/#link-to-a-document"
   },"400": {
     "doc": "Images as links",
     "title": "Images as links",
-    "description": null,
+    "description": "For linked images, the alt attribute (the alternative text) will be the link text.",
     "content": "For linked images, the alt attribute (the alternative text) will be the link text. | If the alt attribute describes the image: the link text will be the description of the image, which is unlikely to clearly communicate the link purpose. | If there is no alt attribute: the link text will be the image file name. | If there is an Empty alt attribute: the link will have no link text and will be announced as “link”. | . So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”. It is not necessary to ever use the word ‘link’ in your alt text; that will already be announced by the screen reader. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-image/",
     "relUrl": "/docs/topics/content/links/link-image/"
   },"401": {
     "doc": "Link texts",
     "title": "Write a meaningful link text",
-    "description": null,
+    "description": "A link text should describe the resource that it links to.",
     "content": "Rule of thumb: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise. Link text should stand on its own. Some assistive software scans a page for links and presents them to the user as a simple list. In these situations, all the links will be read out of context. So it is important the text used in a link is descriptive and meaningful. It also makes your text easier to scan visually, so that sighted users can more quickly find the information they’re looking for. Descriptive, meaningful link text in the Apple VoiceOver link list. Make links texts descriptive . Avoid meaningless link text like: click here, download, info, more, here, this. With these types of links, users have to read the whole sentence to understand the purpose of the link. This makes your content less browsable, and harder to engage with. Screen reader users cannot navigate by links, because those links are not useful without additional context. Useless, non-descriptive link text in the Apple VoiceOver link list. Poor qualify (non-descriptive) link texts: If you are interested in our work, click here to subscribe to our newsletter. You can download the manual of the espresso machine, or contact us for more info. Helpful (descriptive) link texts: Subscribe to our newsletter if you are interested in our work. You can download the manual as a PDF of the espresso machine, or contact us for more info. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-text/#write-a-meaningful-link-text",
     "relUrl": "/docs/topics/content/links/link-text/#write-a-meaningful-link-text"
   },"402": {
     "doc": "Link texts",
     "title": "Avoid fancy character combinations in your links",
-    "description": null,
+    "description": "A link text should describe the resource that it links to.",
     "content": "Avoid for example in your link texts: . | ASCII art, example: \\ō͡≡o˞̶ | Emoticons, example: &lt;3 | Leetspeak, example: m8ts | Excessive use of Emoji | . ASCII art is invariably meaningless to screen reader users. Emoticons may occasionally be interpretable, but are confusing and difficult to understand. “Leetspeak” is unpronounceable, and creates difficult in comprehension. Emoji are independently accessible; they do have text alternatives. However, a large number of emoji can make the text effectively impossible to comprehend. Avoid writing links in all caps . Sequences of all capital letters are harder to read for people with dyslexia, screen readers may interpret short capitalized words as abbreviations, and read the words out character by character. This is also true if text is capitalized using CSS. Avoid using complete URLs as link text . Some URLs are highly readable, such as “wordpress.org”. Others are almost impossible to parse as language. In most cases, you should avoid using a URL as the visible link text. If you are explicitly referring to a web address, keep it short: wordpress.org instead of https://www.wordpress.org. Poor quality (non-descriptive) link texts: If you are interested in our work, click here to subscribe to our newsletter. You can download the manual of the espresso machine, or contact us for more info. Helpful (descriptive) link texts: Subscribe to our newsletter if you are interested in our work. You can download the manual as a PDF of the espresso machine, or contact us for more info. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-text/#avoid-fancy-character-combinations-in-your-links",
     "relUrl": "/docs/topics/content/links/link-text/#avoid-fancy-character-combinations-in-your-links"
   },"403": {
     "doc": "Link texts",
     "title": "Avoid the title attribute on links",
-    "description": null,
+    "description": "A link text should describe the resource that it links to.",
     "content": "You should not use the title attribute on links, because the title attribute is only available for sighted users on desktop using a mouse. Other users will miss that information. In addition, screen readers announce the title attribute inconsistently. You must be sure that all users get the information they need and the title attribute doesn’t provide that. ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-text/#avoid-the-title-attribute-on-links",
     "relUrl": "/docs/topics/content/links/link-text/#avoid-the-title-attribute-on-links"
   },"404": {
     "doc": "Link texts",
     "title": "Link texts",
-    "description": null,
+    "description": "A link text should describe the resource that it links to.",
     "content": " ",
     "url": "/pr-preview/pr-277/docs/topics/content/links/link-text/",
     "relUrl": "/docs/topics/content/links/link-text/"
@@ -3151,35 +3151,35 @@
   },"450": {
     "doc": "Readability",
     "title": "Readability",
-    "description": null,
+    "description": "Make the text scannable and easy to read.",
     "content": "People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read. Good practice: . | Start with a short summary of the content | Divide the rest of the text in short blocks | Use headings and lists and meaningful link text | Avoid large blocks of text | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/readability/",
     "relUrl": "/docs/topics/content/readability/"
   },"451": {
     "doc": "Readability",
     "title": "Make text easy to read",
-    "description": null,
+    "description": "Make the text scannable and easy to read.",
     "content": "Nobody ever complains that text is too easy to read. Not everyone reads under perfect conditions and for some readers your language may not be their native language. For most documents, aim for a Flesch readability score of 60-70. This range isn’t fixed; it depends on your target audience. There are many WordPress plugins that measure the readability of your text. ",
     "url": "/pr-preview/pr-277/docs/topics/content/readability/#make-text-easy-to-read",
     "relUrl": "/docs/topics/content/readability/#make-text-easy-to-read"
   },"452": {
     "doc": "Readability",
     "title": "Break your text down",
-    "description": null,
+    "description": "Make the text scannable and easy to read.",
     "content": "Use meaningful headings, good link texts, lists, quotes and short paragraphs. This makes text more scannable and easier to read. Important points in the text should stand alone, so don’t hide important information in large text blocks. ",
     "url": "/pr-preview/pr-277/docs/topics/content/readability/#break-your-text-down",
     "relUrl": "/docs/topics/content/readability/#break-your-text-down"
   },"453": {
     "doc": "Readability",
     "title": "Text style and layout",
-    "description": null,
+    "description": "Make the text scannable and easy to read.",
     "content": ". | Centered or fully justified text is harder to read | Use uppercase carefully. Uppercase obscures the shape of the word and can make it harder to understand. Screen readers will announce some short words as abbreviations | Use italic and bold text carefully, as it interrupts the reading flow. If the information is important, think about making it stand alone | Use enough line-height and a large enough font-size | Limit the content width to between 50 and 75 characters | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/readability/#text-style-and-layout",
     "relUrl": "/docs/topics/content/readability/#text-style-and-layout"
   },"454": {
     "doc": "Readability",
     "title": "Good reads on content readability",
-    "description": null,
+    "description": "Make the text scannable and easy to read.",
     "content": ". | Writing Accessible Content | Plain Language Is for Everyone, Even Experts | Tips on Writing for Web Accessibility | Dos and don’ts on designing for accessibility, designing for people with dyslexia | 1Up Your Writing with Plain Language (slides) | . ",
     "url": "/pr-preview/pr-277/docs/topics/content/readability/#good-reads-on-content-readability",
     "relUrl": "/docs/topics/content/readability/#good-reads-on-content-readability"
