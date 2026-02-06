@@ -22,7 +22,7 @@ Preview URLs follow the format: `https://wpaccessibility.org/pr-preview/pr-{numb
 
 ## Local install of the website
 
-WPaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content.
+wpaccessibility.org is written in [Jekyll](https://jekyllrb.com), a static site generator in Ruby using [markdown](https://www.markdownguide.org/) for content.
 Please read the [Guide and requirements for Jekyll](https://jekyllrb.com/docs/installation/#requirements).
 
 Then, in the terminal, install Jekyll:

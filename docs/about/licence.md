@@ -1,9 +1,9 @@
 ---
 title: Licences
 layout: default
-parent: About this website
-description: "Licences of the documentation, WordPress and the Jekyll theme."
-nav_order: 2
+parent: About this documentation
+description: Licences of the documentation, WordPress and the Jekyll theme.
+nav_order: 5
 ---
 
 # Licenses

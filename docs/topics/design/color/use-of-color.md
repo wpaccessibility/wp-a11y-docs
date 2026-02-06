@@ -2,14 +2,10 @@
 title: Use of color
 layout: default
 parent: Color
-nav_order: 4
+nav_order: 3
 ---
 
 # Using color
-
-{: .callout .alert }
-This content will be reviewed and restructured.
-Related issue on [GitHub #130 Topic Color Use of color](https://github.com/wpaccessibility/wp-a11y-docs/issues/130).  
 
 Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example,
 
@@ -34,14 +30,11 @@ Underline your links, which are placed between text.
 Underlined links are easier to see.
 ![underlined links in body text](../../assets/Bildschirmfoto-2017-08-05-um-15.01.29-768x497.png)
 
-
 Use symbols and colors in graphics.
 
 Graphic with differently shaped symbols in black in white.
 ![graphic in color with differently shaped symbols]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.27.20-768x588.png)
 ![Graphic with differently shaped symbols in black in white]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.33.58-Kopie-768x629.png)
-
-
 
 ### Incorrect
 

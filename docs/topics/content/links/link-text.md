@@ -2,14 +2,11 @@
 title: Link texts
 layout: default
 parent: Links
+description: A link text should describe the resource that it links to.
 nav_order: 2
 ---
 
 # Write a meaningful link text
-
-{: .callout .alert }
-This content will be reviewed, restructured and expanded.
-Related issue on [GitHub #110 Topic Write a meaningful link text](https://github.com/wpaccessibility/wp-a11y-docs/issues/110).  
 
 {: .callout .tip }
 **Rule of thumb**: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise.

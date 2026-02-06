@@ -5,7 +5,7 @@ permalink: /blog/2025/offer-multiple-ways-of-contact/
 author: Rian Rietveld
 categories: contact
 parent: Blog
-excerpt: "It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you."
+description: "It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you."
 date: 2025-08-27
 ---
 

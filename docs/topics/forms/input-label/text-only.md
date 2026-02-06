@@ -2,6 +2,7 @@
 title: Label has text only
 layout: default
 parent: Input and label
+description: Use only plain text in a label. Avoid including interactive elements such as links, buttons or tooltips inside the label content.
 nav_order: 6
 ---
 

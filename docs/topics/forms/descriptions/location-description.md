@@ -2,6 +2,7 @@
 title: Description location
 layout: default
 parent: Input and description
+description: Place descriptions in a consistent location, preferably between the label and the text form field.
 nav_order: 4
 ---
 

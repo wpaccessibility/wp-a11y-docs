@@ -1,0 +1,56 @@
+{% assign parentTitle = page.parent %}
+{% assign introPage   = site.pages | where: "title", parentTitle | first %}
+{% assign currentPage = page %}
+
+{% assign siblings    = site.pages | where: "parent", parentTitle | sort: "nav_order" %}
+
+{% for p in siblings %}
+{% if p.title == currentPage.title %}
+{% assign index = forloop.index0 %}
+{% endif %}
+{% endfor %}
+
+{% assign thisPage = siblings[index]  %}
+
+{% assign prevIndex = index | minus: 1 %}
+{% assign prev = siblings[prevIndex]  %}
+
+{% assign nextIndex = index | plus: 1 %}
+{% assign next = siblings[nextIndex]  %}
+
+{% if prev
+    and currentPage.title != "Home"
+    and currentPage.title != "Blog"
+    and currentPage.nav_exclude != true
+%}
+
+<nav class="prev-next" aria-label="Related content">
+    <h2>Next and previous pages</h2>
+    <ul>
+        {% if prev and prev.nav_exclude != true %}
+        <li>
+            <p>
+                <a class="prev" href="{{site.baseurl}}/{{ prev.url }}">Previous: {{ prev.title }}</a>
+                {{ prev.description }}
+            </p>
+        </li>
+        {% endif %}
+        {% if next and next.nav_exclude != true %}
+        <li>
+            <p>
+            <a class="next" href="{{site.baseurl}}/{{ next.url }}">Next: {{ next.title }}</a>
+                {{ next.description }}
+            </p>
+        </li>
+        {% endif %}
+        {% if introPage.title %}
+        <li>
+            <p>
+            <a href="{{site.baseurl}}/{{ introPage.url }}">Back to: {{introPage.title }}</a>
+                {{ introPage.description }}
+            </p>
+        </li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}

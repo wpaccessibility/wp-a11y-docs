@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/media-query" as *;
+
+// In-page next previous page navigation.
+
+.prev-next,
+.siblings,
+.toc {
+  border-top: $border $border-color;
+  margin: 1.25em 0;
+
+  h2 {
+    font-size: var(--text-font-size-lg);
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      a {
+        display: block;
+      }
+
+      p {
+        padding: 0;
+      }
+    }
+  }
+}

@@ -2,14 +2,11 @@
 title: The dialog modal
 layout: default
 parent: Components
+description: How to set up an accessible dialog modal.
 nav_order: 5
 ---
 
 # The dialog modal
-
-{: .callout .alert }
-**Alert:** This content will be reviewed, modernized and restructured.  
-Related issue on [GitHub #152 Topic The dialog modal](https://github.com/wpaccessibility/wp-a11y-docs/issues/152).  
 
 A dialog is a window that separates content from the main content of a page. It can ask questions or require user input. When the dialog is active and opened, only the content inside the dialog should be available for interaction. Visually it’s usually overlaid on top of main content.
 

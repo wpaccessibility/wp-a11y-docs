@@ -5,7 +5,7 @@ permalink: /blog/2025/accessible-error-messages-forms/
 author: Rian Rietveld
 categories: forms
 parent: Blog
-excerpt: "When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form."
+description: "When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form."
 date: 2025-08-16
 ---
 

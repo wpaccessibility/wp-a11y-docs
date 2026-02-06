@@ -62,6 +62,7 @@
       &.active {
         font-weight: 600;
         text-decoration: none;
+        color: var(--color-wa11ypuu-yellow);
       }
 
       &:hover,
@@ -108,6 +109,10 @@
 
         .nav-list-link {
           color: $nav-child-link-color;
+
+          &.active {
+            color: var(--color-wa11ypuu-yellow);
+          }
         }
 
         .nav-list-expander {
@@ -227,11 +232,6 @@
   > li.nav-list-item:nth-child(1)
   > ul.nav-list {
   display: block;
-}
-
-[aria-current] {
-  color: var(--color-neutral-color-default);
-  font-weight: 600;
 }
 
 /* Text meant only for screen readers. */

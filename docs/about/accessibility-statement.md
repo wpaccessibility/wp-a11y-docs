@@ -1,9 +1,9 @@
 ---
 title: Accessibility statement
 layout: default
-parent: About this website
-description: "Accessibility statement of the website wpaccessibility.org."
-nav_order: 2
+parent: About this documentation
+description: Accessibility statement of the website wpaccessibility.org.
+nav_order: 6
 ---
 
 # Accessibility statement

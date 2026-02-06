@@ -3,6 +3,7 @@ title: Description has text only
 layout: default
 parent: Input and description
 nav_order: 3
+description: aria-describedby must only contain text and no additional structure or interactive functionality.
 has_video: true
 ---
 

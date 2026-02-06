@@ -7,15 +7,9 @@ nav_order: 6
 
 # The CSS class screen-reader-text
 
-{: .callout .alert }
-**Alert:** This content will be reviewed and restructured.
-Related issue on [GitHub #145 Topic The CSS class screen-reader-text](https://github.com/wpaccessibility/wp-a11y-docs/issues/145).
-
-# The CSS class screen-reader-text
-
 WordPress introduced the class `.screen-reader-text` in 2009 and extended the use in 2015. Joe Dolson wrote a good post about the [extended use of the screen-reader-text](https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/) class in WordPress 4.2.
 
-## Use
+## Use of screen-reader-text
 
 The screen-reader-text class is used:
 
@@ -28,7 +22,7 @@ The :focus style is primarily used by skip links. The colors, borders and paddin
 
 If you’re using the class ‘.screen-reader-text’ on any other focusable element (buttons, links, or form fields), then these focus styles will also apply. If this is the case, you may need to change the positioning rules, depending on the location of the focusable element.
 
-## The CSS
+## The CSS of screen-reader-text
 
 The below CSS will hide elements visually but keep them available to screen readers.
 
@@ -126,8 +120,7 @@ get_the_title()
 
 ## Resources
 
-- [The introduction of the screen-reader-text class](https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core) by @joedolson
+- [The introduction of the screen-reader-text class](https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core) by Joe Dolson
 - [WordPress Codex on CSS](https://codex.wordpress.org/CSS#WordPress_Generated_Classes)
-- [Supporting Screen Reader Text](https://make.wordpress.org/themes/2015/01/26/supporting-screen-reader-text/) by @obenland
-- [The screen reader text class, why and how](http://rianrietveld.com/2015/04/04/the-screen-reader-text-class-why-and-how/), by @rianrietveld
-- [Text for Screen Readers Only (Updated)](http://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/), @grahamarmfield
+- [Supporting Screen Reader Text](https://make.wordpress.org/themes/2015/01/26/supporting-screen-reader-text/) by Konstantin Obenland
+- [Text for Screen Readers Only (Updated)](http://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/), by Graham Armfield

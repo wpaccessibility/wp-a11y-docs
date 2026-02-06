@@ -7,10 +7,6 @@ nav_order: 2
 
 # Images in theme development
 
-{: .callout .alert }
-**Alert:** This content will be reviewed and restructured.  
-Related issue on [GitHub #147 Topic Images in theme development](https://github.com/wpaccessibility/wp-a11y-docs/issues/147).  
-
 You may think that you’re not including any images in your project. Possibly this is true; but are you using [dashicons](https://developer.wordpress.org/resource/dashicons/) or other icon fonts? Are you using SVG graphics?
 
 For accessibility, “images” doesn’t only refer to the `img` element. It means any non-text graphical elements on the page.

@@ -2,14 +2,11 @@
 title: Introduction to WCAG
 layout: default
 parent: Start with accessibility
+description: What are the Web Content Accessibility Guidelines and how to use them.
 nav_order: 2
 ---
 
 # Introduction to WCAG
-
-{: .callout  .alert }
-**Alert:** Starter content. This content will to be reviewed and expanded.  
-Related issue on [GitHub #92 Introduction to WCAG](https://github.com/wpaccessibility/wp-a11y-docs/issues/92).  
 
 The primary guidance for web accessibility on a global basis are the Web Content Accessibility Guidelines, commonly referred to as WCAG. WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. 
 
@@ -74,16 +71,13 @@ There are 3 levels of accessibility:
 - AA (the global accessibility standard)
 - AAA (for dedicated software)
 
-TODO: add content about version
-
-TODO: add info about different principle/ guideline/Success Criteria/technique.
-
-Most European Union and many other countries use the accessibility standard WCAG 2.1 AA or equivalent for their government websites. Some countries require compliance with these guidelines for commercial websites, so the accessibility team uses these guidelines to improve WordPress core. [Overview of government accessibility laws and policies](Web Accessibility Laws & Policies) from the Web Accessibility Initiative.
+Most European Union and many other countries use the accessibility standard WCAG 2.2 AA or equivalent for their government websites. Some countries require compliance with these guidelines for commercial websites, so the accessibility team uses these guidelines to improve WordPress core. [Overview of government accessibility laws and policies](Web Accessibility Laws & Policies) from the Web Accessibility Initiative.
 
 The [WCAG Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) is a good starting to read the guidelines. Use common sense when following WCAG techniques. Pick the one(s) that work well with your theme or plugin.
 
-Decide which browser and versions your theme or plugin will support. Some WCAG techniques apply only to older browsers, e.g, Internet Explorer 7 and below. WordPress no longer supports Internet Explorer as of version 5.8.
+## Browser support
 
-TODO: what is the WP baseline now? A link may be better.
+Decide which browser and versions your theme or plugin will support. Some [WCAG techniques](https://www.w3.org/WAI/WCAG20/Understanding/understanding-techniques) apply only to older browsers, e.g, Internet Explorer 7 and below. 
 
-TODO: Link to Standards and best practice/ WCAG (to be written) for more in dept info
+WordPress no longer supports Internet Explorer as of version 5.8.
+

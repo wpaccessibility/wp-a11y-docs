@@ -7,11 +7,6 @@ nav_order: 3
 
 # Heading structure in theme development
 
-{: .callout .alert }
-**Alert:** This content will be reviewed and restructured.  
-Related issue on [GitHub #142 Topic Heading structure in theme development](https://github.com/wpaccessibility/wp-a11y-docs/issues/142).  
-
-
 Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As a sighted user, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content.
 
 Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense.
@@ -24,23 +19,26 @@ Visually, it only matters that these are set off in design. Using appropriate he
 
 Use HTML headings to meaningfully describe the content that follows, not as a design element. A heading means “this text describes the information that follows it.” There should not be text before the heading that is part of what that heading describes, and there must be content following the heading.
 
+{: .callout .info }
 **Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard.
 
-## Testing Tools
+## Resources
+
+### Testing tools for headings
 
 - [WAVE](http://wave.webaim.org/extension/)
 - [Headings map for Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en)
 - [a11yTools Extension for Safari macOS](http://www.pauljadam.com/extension.html)
 - [Tota11y](http://khan.github.io/tota11y/)
 
-## Heading semantics
+### Heading semantics
 
 - [Semantic Structure on WebAIM](https://webaim.org/techniques/semanticstructure/)
 - [The HTML5 Document Outline](https://developer.paciellogroup.com/blog/2013/10/html5-document-outline/)
 - [Heading Tags (H1, H2, H3, P) in HTML](http://accessibility.psu.edu/headingshtml/)
 - [Computer says NO to HTML5 document outline](http://html5doctor.com/computer-says-no-to-html5-document-outline/)
 
-## Heading structure best practices
+### Heading structure best practices
 
 - [Web Accessibility Tutorials: Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/)
 - [Web Accessibility Tutorials: Labeling Regions](https://www.w3.org/WAI/tutorials/page-structure/labels/#using-aria-labelledby)
@@ -50,7 +48,7 @@ Use HTML headings to meaningfully describe the content that follows, not as a de
 - [MRW web: H1 Headings Are Important](https://mrwweb.com/use-html-headings-for-accessibility/)
 - [MRW web: Common heading-mistakes](https://mrwweb.com/common-heading-mistakes/)
 
-## Heading structure in WordPress
+### Heading structure in WordPress
 
 - [The Headings Hierarchy Challenge](https://www.joedolson.com/2014/11/headings-hierarchy-problem/)
 - [Accessible HTML5 heading structure in WordPress](http://rianrietveld.com/2014/11/21/html5-headings-in-wordpress-lets-fight/)
