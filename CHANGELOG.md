@@ -1,7 +1,8 @@
 ---
 title: Changelog website
 layout: default
-parent: About this website
+nav_exclude: true
+search_exclude: true
 ---
 
 # Changelog
@@ -16,7 +17,7 @@ Copyright (c) 2016 Patrick Marsceill.
 
 In this initial release the theme is renamed into WP A11y Docs.
 
-The URL for the GitHib pages is wpaccessibility.org.
+The URL for the GitHib pages is [wpaccessibility.org](https://wpaccessibility.org/).
 
 ### File organisation
 This will be a one design theme only, so all the changes will be done directly in the files itself. This simplifies the code and makes the theme better maintainable. 

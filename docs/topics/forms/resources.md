@@ -2,6 +2,7 @@
 title: Form resources
 layout: default
 parent: Web forms
+description: General resources about form accessibility.
 nav_order: 11
 ---
 

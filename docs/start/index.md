@@ -1,6 +1,7 @@
 ---
 title: Start with accessibility
 layout: default
+description: The Web is for everyone, not just those who see, hear and move well. Where to start to improve your work?
 nav_order: 2
 ---
 

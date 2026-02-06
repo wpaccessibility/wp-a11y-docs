@@ -2,6 +2,7 @@
 title: Accessible name
 layout: default
 parent: Input and label
+description: Give a form field an accessible name with a label
 nav_order: 2
 ---
 

@@ -2,6 +2,7 @@
 title: Input and description
 layout: default
 parent: Web forms
+description: A description provides extra information about how to fill out a form field.
 nav_order: 4
 ---
 

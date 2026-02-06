@@ -2,6 +2,7 @@
 title: Components
 layout: default
 parent: Frontend code
+description: Recommendations and set up of web components for WordPress.
 nav_order: 8
 ---
 

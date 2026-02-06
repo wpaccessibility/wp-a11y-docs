@@ -1,7 +1,8 @@
 ---
 title: Error summary
 layout: default
-parent: Feedback on errors 
+parent: Feedback on errors
+description: A user-friendly way to display errors is a combination of a summary above the form and repeating the error message for each form field.
 nav_order: 6
 ---
 

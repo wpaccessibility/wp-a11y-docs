@@ -2,6 +2,7 @@
 title: Placeholders
 layout: default
 parent: Input and label
+description: The placeholder represents a short hint to inform the user on how to fill out a form field.
 nav_order: 3
 ---
 

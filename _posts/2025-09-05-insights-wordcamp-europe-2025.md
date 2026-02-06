@@ -5,7 +5,7 @@ permalink: /blog/2025/insights-wordcamp-europe-2025/
 author: Wendie Huis in't Veld
 categories: EAA, WordCamp, business
 parent: Blog
-excerpt: "One topic that really stands out on WordCamp Europe 2025, is accessibility. With the European Accessibility Act (EAA) coming into effect in June, it's clear that this is something we all need to pay attention to. While the Act isn’t specific to WordPress, it affects all website owners, especially those running businesses online."
+description: "One topic that really stands out on WordCamp Europe 2025, is accessibility. With the European Accessibility Act (EAA) coming into effect in June, it's clear that this is something we all need to pay attention to. While the Act isn’t specific to WordPress, it affects all website owners, especially those running businesses online."
 date: 2025-09-08
 ---
 

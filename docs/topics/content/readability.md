@@ -2,14 +2,11 @@
 title: Readability
 layout: default
 parent: Content and images
-nav_order: 6
+description: Make the text scannable and easy to read.
+nav_order: 4
 ---
 
 # Readability
-
-{: .callout .alert }
-**Alert:** This content will be reviewed, restructured and expanded.  
-Related issue on [GitHub #120 Topic Readability](https://github.com/wpaccessibility/wp-a11y-docs/issues/120).  
 
 People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read.
 

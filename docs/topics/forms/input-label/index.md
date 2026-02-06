@@ -2,6 +2,7 @@
 title: Input and label
 layout: default
 parent: Web forms
+description: A form label indicates what data the user can fill out in an input field.
 nav_order: 2
 ---
 

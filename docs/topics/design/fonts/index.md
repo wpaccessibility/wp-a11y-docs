@@ -7,10 +7,6 @@ nav_order: 2
 
 # Fonts
 
-{: .callout .alert }
-This content will be reviewed and restructured and probably divided into separate topics.
-Related issue on [GitHub #124 Topic Fonts](https://github.com/wpaccessibility/wp-a11y-docs/issues/124).  
-
 ## Font sizes and resize text
 
 The [WCAG 2.0 requirements](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html) for resizing text are quite loose:

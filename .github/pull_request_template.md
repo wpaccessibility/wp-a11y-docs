@@ -11,6 +11,6 @@ Before submitting this PR, please make sure:
 
 If you submit code or documentation using a local build:
 - [ ] Your code builds clean without any errors or warnings while running `npm run test`.
-- [ ] You read the documentation in [How to contribute to this documentation](https://wpaccessibility.org/docs/contribute/).
+- [ ] You read the documentation in [How to contribute to this documentation](https://wpaccessibility.org/docs/about/contribute/).
 - [ ] You checked the modified pages with an accessibility tool like [Axe Devtools](https://www.deque.com/axe/devtools/edge-browser-extension/) or [WAVE](https://wave.webaim.org/).
 

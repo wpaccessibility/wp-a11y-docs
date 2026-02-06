@@ -2,6 +2,7 @@
 title: Use text for error messages
 layout: default
 parent: Feedback on errors
+description: Always write out the error message in text with clear, plain language.
 nav_order: 4
 ---
 

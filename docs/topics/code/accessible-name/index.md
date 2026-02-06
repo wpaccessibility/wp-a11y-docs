@@ -2,6 +2,7 @@
 title: Accessible name
 layout: default
 parent: Frontend code
+description: Give an (interactive) HTML element the correct accessible name.
 nav_order: 2
 ---
 
