@@ -11,7 +11,7 @@ Headings are the backbone of your content structure and describe the content on 
 
 Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense.
 
-Rules of thumb for headings in theme development:
+## Rules of thumb for headings in theme development:
 
 - One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post -, page – or archive title.
 - Use H2 through H6 to divide major sections of the page, such as widget areas, comment sections, or other major segments of the page.

@@ -2,7 +2,7 @@
 title: Digital documents
 layout: default
 parent: Content and images
-description: Similar accessibility rules applies for PDFs as HTML documents.
+description: Similar accessibility rules apply to both PDFs and HTML documents
 nav_order: 5
 ---
 

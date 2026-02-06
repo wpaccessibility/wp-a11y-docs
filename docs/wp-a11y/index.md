@@ -1,9 +1,8 @@
 ---
 title: WordPress and Accessibility
 layout: default
-description: About the WordPress, accessibility and the accessibility team.
+description: About WordPress, accessibility, and the WordPress Accessibility Team.
 nav_order: 5
-has_video: true
 ---
 
 # WordPress and Accessibility
@@ -12,6 +11,6 @@ WordPress is always changing and improving, it’s never truly finished. The sam
 
 The community also needs ongoing help and education to keep up with accessibility best practices. The Accessibility Team helps to improve the accessibility of WordPress core and resources.
 
-Visit [Make WordPress Accessibility](https://make.wordpress.org/accessibility/) to read the blog about the current work of the team.
+Visit [Make WordPress Accessible](https://make.wordpress.org/accessibility/) to read the blog about the current work of the team.
 
 In the [WordPress Accessibility Handbook](https://make.wordpress.org/accessibility/handbook/) you can find more about the team itself and how to help or join in.

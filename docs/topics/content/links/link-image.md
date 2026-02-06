@@ -2,13 +2,13 @@
 title: Images as links
 layout: default
 parent: Links
-description: For linked images, the alt attribute (the alternative text) will be the link text.
+description: For linked images, the alt attribute (the alternative text) can be used as the link text.
 nav_order: 3
 ---
 
 # Images as links
 
-For linked images, the `alt` attribute (the alternative text) will be the link text.
+For linked images, the `alt` attribute (the alternative text) can be used as the link text.
 
 - If the alt attribute describes the image: the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.
 - If there is no alt attribute: the link text will be the image file name.
