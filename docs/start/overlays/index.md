@@ -3,7 +3,7 @@ title: Overlays
 layout: default
 parent: Start with accessibility
 description: Do not use overlays. Here's why.
-nav_order: 6
+nav_order: 5
 ---
 
 # Accessibility Overlays
