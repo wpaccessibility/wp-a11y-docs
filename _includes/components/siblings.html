@@ -10,7 +10,7 @@
 
 {% if siblings and page.title != "Home" and parentTitle != null %}
 
-    <nav class="siblings" aria-label="Other pages in: {{ parentTitle }}">
+    <nav class="siblings" aria-label="Related content">
         <h2>Other pages in: {{ parentTitle }}</h2>
         <ul>
             {% for p in siblings %}
