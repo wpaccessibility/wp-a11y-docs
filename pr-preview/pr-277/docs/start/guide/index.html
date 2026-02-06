@@ -10,7 +10,7 @@
 
 
 
-<title>Alternative text on images and graphics, WP Accessibility Knowledge Base</title>
+<title>Reading guide, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-277/assets/css/styles.css">
@@ -486,24 +486,14 @@
 
         
             
-            
-            
-        
-
-    
-
-        
-
-        
-            
 
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/docs/topics/theme-guidelines/'>Theme accessibility guidelines</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Alternative text on images and graphics</li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-277/docs/start/'>Start with accessibility</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Reading guide</li>
     </ol>
 </nav>
 
@@ -512,49 +502,11 @@
 
         <main>
 
-          <h1 id="alternative-text-on-images-and-graphics">Alternative text on images and graphics</h1>
+          <h1 id="reading-guide">Reading guide</h1>
 
-<h2 id="basic-principle">Basic principle</h2>
+<p>Find the documentation for your role.</p>
 
-<p>All non-text content must have an accessible name. Non-text content includes all font icons, images, SVG elements, non-standard usages of extended ASCII characters, or CSS used to construct interactive element graphics.</p>
-
-<p>Different types of graphics require different implementations; the most common is the <code class="language-plaintext highlighter-rouge">img</code> element and the <code class="language-plaintext highlighter-rouge">alt</code> attribute. All graphics require some form of alternative text, however.</p>
-
-<p><strong>Note:</strong> This requirement does not mean “must have text”; it means “must be explicitly defined.” An empty alt attribute specifically defines the alternative text for an image as empty. This is different from a <em>missing</em> alt attribute, which leaves alternative text undefined. Some icons and images may be decorative.</p>
-
-<p>Decorative graphics may include:</p>
-
-<ul>
-  <li>Graphics used purely ornamentally.</li>
-  <li>Supplemental graphics associated with links or buttons where the link or button has a name already defined.</li>
-</ul>
-
-<h2 id="testing">Testing</h2>
-
-<p><strong>Tools:</strong> Browser inspector, screen reader (recommended)</p>
-
-<ol>
-  <li>For each non-text graphic, inspect the image using the browser inspector.</li>
-  <li>In the inspector, determine whether the image has an accessible name.
-    <ol>
-      <li>If yes, determine whether the accessible name is appropriate.</li>
-      <li>If the image is inside a control, identify whether the control already has a name. If the control already has a name, this image may be decorative.</li>
-      <li>If the image is decorative, verify that it is hidden from screen readers. For <code class="language-plaintext highlighter-rouge">img</code> elements, this is done via <code class="language-plaintext highlighter-rouge">alt=""</code>. For font icons or extended ASCII, this is done using <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> on a wrapping element. The wrapping element must not be interactive. For <code class="language-plaintext highlighter-rouge">svg</code>, this is done using <code class="language-plaintext highlighter-rouge">aria-hidden="true"</code> on the <code class="language-plaintext highlighter-rouge">svg</code> element or a wrapping parent that is not interactive.</li>
-    </ol>
-  </li>
-  <li>Verify accessibility of extended ASCII characters if present.
-    <ol>
-      <li>Extended ASCII characters will not display text in the browser’s accessibility inspector. Most characters have a standard reading value, but not all. If a theme uses ASCII characters in the design, use the article “<a href="https://elevenways.be/en/articles/screenreaders-special-characters">How Screen Readers read Special Characters</a>” as a reference to know what the screen reader will say, or (recommended) listen to the element with a screen reader.</li>
-      <li>If the read text would not be appropriate in context, verify the character is wrapped in a <code class="language-plaintext highlighter-rouge">span</code> that either hides the character or provides it with a more appropriate <code class="language-plaintext highlighter-rouge">aria-label</code>, depending on context.</li>
-    </ol>
-  </li>
-</ol>
-
-<h2 id="wcag-resources">WCAG resources</h2>
-
-<ul>
-  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html">Understanding: Non-text content</a></li>
-</ul>
+<p>This content will follow soon.</p>
 
 
           
@@ -569,13 +521,13 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Theme accessibility guidelines</h2>
+        <h2>Other pages in: Start with accessibility</h2>
         <ul>
             
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/skip-to-content/"> Skip to Content Link</a> The requirements for a Skip to Content link on accessibility-ready themes.
+                    <a href="/pr-preview/pr-277/docs/start/quick-wins/"> Quick wins</a> 6 Quick wins to improve the accessibility of your website
                 </p>
             </li>
             
@@ -583,7 +535,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/meaningful-landmark-roles/"> Meaningful landmark roles and names</a> Accessibility-ready themes requirements for meaningful landmark roles and names
+                    <a href="/pr-preview/pr-277/docs/start/wcag-intro/"> Introduction to WCAG</a> What are the Web Content Accessibility Guidelines and how to use them.
                 </p>
             </li>
             
@@ -591,7 +543,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/keyboard-navigation-support/"> Keyboard navigation support</a> The requirements for keyboard navigation in accessibility-ready themes
+                    <a href="/pr-preview/pr-277/docs/start/business/"> Accessibility, the business case</a> The website you build is not for you, or even your client. It’s for the users.
                 </p>
             </li>
             
@@ -599,7 +551,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/controls-with-accessible-names/"> Controls with accessible names, roles, and states</a> Accessibility-ready theme requirements for accessible controls
+                    <a href="/pr-preview/pr-277/docs/start/training/"> Training</a> An overview of training, meetups and conferences to learn accessibility.
                 </p>
             </li>
             
@@ -607,7 +559,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/labelled-form-fields/"> Labelled form fields</a> Accessibility-ready theme requirements for how to label form fields
+                    <a href="/pr-preview/pr-277/docs/start/overlays/"> Overlays</a> Do not use overlays. Here's why.
                 </p>
             </li>
             
@@ -615,103 +567,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/headings-structure/"> Headings with meaningful structure</a> Accessibility-ready theme requirements for how to use headings
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/underlined-links/"> Underlined links in text</a> Accessibility-ready theme requirements for how to indicate links in text
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/no-ambiguous-link-text/"> No ambiguous link text</a> Accessibility-ready theme requirements for ambiguous link text
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/sufficient-color-contrast/"> Sufficient color contrast of text and UI controls</a> Color contrast requirements in accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/alternative-text/"> Alternative text on images and graphics</a> Use of alternative text requirements for accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/accessible-animation/"> Accessible audio, video, and animations</a> Support for audio, video, and animations in accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/reflow-resize/"> Support for reflow, resize, and text spacing changes</a> Requirements for handling reflow, resize, and text spacing in accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/unexpected-changes-of-context/"> No unexpected changes of context</a> Requirements for changes of context in accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/new-windows-tabs/"> No links opening new windows or tabs without warning</a> Requirements for opening new windows or tabs in accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/content-hover-focus/"> Content on hover or focus is accessible</a> How to handle content revealed on hover or focus in accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/accessibility-statement/"> Accessibility statement</a> Accessibility Statement requirements for Accessibility-ready themes
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/no-inaccessible-plugins/"> Must not recommend or require inaccessible plugins</a> Accessibility-ready themes must not recommend or require inaccessible plugins.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/screen-reader-text/"> Screen reader text supported</a> How screen reader text must be supported on an accessibility-ready theme
+                    <a href="/pr-preview/pr-277/docs/start/guide/"> Reading guide</a> Find the documentation for your role.
                 </p>
             </li>
             
@@ -720,7 +576,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-277/docs/topics/theme-guidelines/">Back to: Theme accessibility guidelines</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-277/docs/start/">Back to: Start with accessibility</a>
             </p>
 
         
