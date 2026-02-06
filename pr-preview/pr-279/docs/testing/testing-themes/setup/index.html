@@ -1,0 +1,726 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+
+
+<title>Getting set up to test, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/pr-preview/pr-279/assets/css/styles.css">
+  <link rel="icon" href="/pr-preview/pr-279/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/pr-preview/pr-279/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <div class="lh-wrapper">
+      <a href="/pr-preview/pr-279/" class="site-title lh-tight" aria-label="WP Accessibility logo, to the homepage">
+        <img src="/pr-preview/pr-279/assets/images/logo-wa11ypuu.png" alt="WP Accessibility logo">
+        WP Accessibility Knowledge Base
+      </a>
+    </div>
+
+    <div class="menu-button-wrapper">
+      <button id="menu-button" class="site-button" aria-expanded="false">
+        <span>Menu</span>
+        <svg viewBox="0 0 24 24" class="icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#svg-menu"></use>
+        </svg>
+      </button>
+    </div>
+
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav" tabindex="0">
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/" class="nav-list-link">Start with accessibility</a><button class="nav-list-expander btn-reset" aria-label="Start with accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/wp-plugins/" class="nav-list-link">WP Plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/business/" class="nav-list-link">Accessibility for your business</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/at/" class="nav-list-link">Assistive technology</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/myths/" class="nav-list-link">Debunking myths</a><button class="nav-list-expander btn-reset" aria-label="Debunking myths submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/myths/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/start/myths/overlays/" class="nav-list-link">Overlays</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/" class="nav-list-link">Standards and best practice</a><button class="nav-list-expander btn-reset" aria-label="Standards and best practice submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/wcag/" class="nav-list-link">WCAG and compliance</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/best-practice/" class="nav-list-link">WCAG vs best practice</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/documenting-accessibility/" class="nav-list-link">Documenting accessibility</a><button class="nav-list-expander btn-reset" aria-label="Documenting accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/documenting-accessibility/accessibility-statements/" class="nav-list-link">Accessibility statements</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/documenting-accessibility/accessibility-txt/" class="nav-list-link">accessibility.txt files</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/documenting-accessibility/acr/" class="nav-list-link">Accessibility Conformance Reports</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/" class="nav-list-link">Content and images</a><button class="nav-list-expander btn-reset" aria-label="Content and images submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/alt-text/" class="nav-list-link">Alt text for images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/headings/" class="nav-list-link">Headings</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/links/" class="nav-list-link">Links</a><button class="nav-list-expander btn-reset" aria-label="Links submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/links/link-text/" class="nav-list-link">Link texts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/links/link-image/" class="nav-list-link">Images as links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/tables/" class="nav-list-link">Tables in content</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/focus-hover/" class="nav-list-link">Styling hover and focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/color/color-contrast-icons/" class="nav-list-link">Color contrast of icons</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/color/color-contrast-forms/" class="nav-list-link">Color contrast in forms</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/meaningful-sequence/" class="nav-list-link">Meaningful sequence</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/design/resources/" class="nav-list-link">Resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/" class="nav-list-link">Frontend code</a><button class="nav-list-expander btn-reset" aria-label="Frontend code submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/semantics/" class="nav-list-link">Semantic HTML</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/tables/" class="nav-list-link">Tables in code</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/screen-reader-text/" class="nav-list-link">CSS screen-reader-text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/dynamic-changes/" class="nav-list-link">Feedback on dynamic changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/components/" class="nav-list-link">Components</a><button class="nav-list-expander btn-reset" aria-label="Components submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/components/skip-links/" class="nav-list-link">Skip links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/components/excerpt/" class="nav-list-link">Post Excerpts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/components/link-logo/" class="nav-list-link">Link on a logo</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/code/components/pagination/" class="nav-list-link">Pagination</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/input-label/" class="nav-list-link">Input and label</a><button class="nav-list-expander btn-reset" aria-label="Input and label submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/input-label/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/input-label/placeholders/" class="nav-list-link">Placeholders</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/input-label/text-only/" class="nav-list-link">Label has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/input-label/label-location/" class="nav-list-link">Best label location</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a><button class="nav-list-expander btn-reset" aria-label="Input and description submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/descriptions/connect-description/" class="nav-list-link">Connect the description</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/descriptions/content-description/" class="nav-list-link">Description has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a><button class="nav-list-expander btn-reset" aria-label="Group form fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/fieldsets/legend/" class="nav-list-link">Fieldset legend</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/fieldsets/fieldset-descriptions/" class="nav-list-link">Fieldset description</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/focus/" class="nav-list-link">Focus handling</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/help/" class="nav-list-link">Provide help</a><button class="nav-list-expander btn-reset" aria-label="Provide help submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/help/copy-paste/" class="nav-list-link">Allow copy/paste</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/help/autocomplete/" class="nav-list-link">Autocomplete</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/help/avoid-input-masks/" class="nav-list-link">Avoid input patterns</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/required/" class="nav-list-link">Required fields</a><button class="nav-list-expander btn-reset" aria-label="Required fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/required/mark-required-fields/" class="nav-list-link">Mark required form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/required/mark-optional-fields/" class="nav-list-link">Mark optional form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/required/required-screen-readers/" class="nav-list-link">Indicate required fields for screen readers</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a><button class="nav-list-expander btn-reset" aria-label="Feedback on errors submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/error-check/" class="nav-list-link">Check at the right moment</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/html-form-validation/" class="nav-list-link">HTML form validation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/error-message-location/" class="nav-list-link">Best message location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/error-message-format/" class="nav-list-link">Use text for error messages</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/error-message-text/" class="nav-list-link">Write clear error messages</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/error-summary/" class="nav-list-link">Error summary</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/feedback/screen-reader-feedback/" class="nav-list-link">Screen reader feedback</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/wp-form-plugins/" class="nav-list-link">WP form plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/forms/resources/" class="nav-list-link">Form resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/core/" class="nav-list-link">WordPress Core</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/themes/" class="nav-list-link">Themes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/" class="nav-list-link">Theme accessibility guidelines</a><button class="nav-list-expander btn-reset" aria-label="Theme accessibility guidelines submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/skip-to-content/" class="nav-list-link">Skip to Content Link</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/meaningful-landmark-roles/" class="nav-list-link">Meaningful landmark roles and names</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/keyboard-navigation-support/" class="nav-list-link">Keyboard navigation support</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/controls-with-accessible-names/" class="nav-list-link">Controls with accessible names, roles, and states</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/labelled-form-fields/" class="nav-list-link">Labelled form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/headings-structure/" class="nav-list-link">Headings with meaningful structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/underlined-links/" class="nav-list-link">Underlined links in text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/no-ambiguous-link-text/" class="nav-list-link">No ambiguous link text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/sufficient-color-contrast/" class="nav-list-link">Sufficient color contrast of text and UI controls</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/alternative-text/" class="nav-list-link">Alternative text on images and graphics</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/accessible-animation/" class="nav-list-link">Accessible audio, video, and animations</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/reflow-resize/" class="nav-list-link">Support for reflow, resize, and text spacing changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/unexpected-changes-of-context/" class="nav-list-link">No unexpected changes of context</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/new-windows-tabs/" class="nav-list-link">No links opening new windows or tabs without warning</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/content-hover-focus/" class="nav-list-link">Content on hover or focus is accessible</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/no-inaccessible-plugins/" class="nav-list-link">Must not recommend or require inaccessible plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/theme-guidelines/screen-reader-text/" class="nav-list-link">Screen reader text supported</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/topics/plugins/" class="nav-list-link">Plugins</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/" class="nav-list-link">Testing for accessibility</a><button class="nav-list-expander btn-reset" aria-label="Testing for accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/checklists/" class="nav-list-link">Overall checklists</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/keyboard/" class="nav-list-link">Keyboard testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/screen-readers/" class="nav-list-link">Screen reader testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/testing-themes/" class="nav-list-link">Testing WordPress themes</a><button class="nav-list-expander btn-reset" aria-label="Testing WordPress themes submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/testing-themes/identifying-themes/" class="nav-list-link">Identifying themes that need to be tested</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/testing-themes/setup/" class="nav-list-link">Getting set up to test</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/testing-themes/reporting-sheet/" class="nav-list-link">Reporting sheet overview</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/testing/testing-themes/theme-testing-workflow/" class="nav-list-link">Testing workflow tips</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/legislation/" class="nav-list-link">Legislation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/resources/" class="nav-list-link">Resources</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/blog/" class="nav-list-link">Blog</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/wp-a11y-team/" class="nav-list-link">WordPress Accessibility Team</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/improve-website/" class="nav-list-link">Improve this website</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/github/" class="nav-list-link">Technical documentation website</a><button class="nav-list-expander btn-reset" aria-label="Technical documentation website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/github/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/github/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/github/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/github/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/sponsors/" class="nav-list-link">Sponsors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/about/" class="nav-list-link">About this website</a><button class="nav-list-expander btn-reset" aria-label="About this website submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/CHANGELOG/" class="nav-list-link">Changelog website</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-279/docs/contact/" class="nav-list-link">Contact</a></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    <section class="search" aria-label="Search">
+  <form class="search-input-wrap" role="search" action="/pr-preview/pr-279/search/" method="get">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <use xlink:href="#svg-search"></use>
+      </svg>
+    </label>
+
+    <input
+      type="search"
+      id="search-input"
+      name="q"
+      class="search-input"
+      autocomplete="off"
+    >
+
+    <button type="submit" class="search-submit">Search</button>
+  </form>
+
+  <div id="search-results" class="search-results"></div>
+</section>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-279/docs/testing/'>Testing for accessibility</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-279/docs/testing/testing-themes/'>Testing WordPress themes</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Getting set up to test</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1 id="getting-set-up-to-test">Getting set up to test</h1>
+
+<h2 id="creating-the-test-site">Creating the test site</h2>
+<p>To accessibility-ready test a theme, you will first need to set up a testing environment.</p>
+
+<p>It is important to note that browser extensions for accessibility testing do not current work in WordPress Playground. As a result, you can’t use Playground for accessibility-ready reviews.</p>
+
+<p>Outside of Playground, reviews can be done in any WordPress environment you prefer. For convenience, we have a template site available for quick spin-up via <a href="https://instawp.com">InstaWP</a>.</p>
+
+<h3 id="why-use-our-instawp-testing-site">Why use our InstaWP testing site</h3>
+<p>You may be wondering why we recommend using our InstaWP template for testing rather than loading the theme up on any other WordPress site. Here’s why:</p>
+
+<p>Our InstaWP template has demo content including pages, posts, media, and navigation menus already configured so you can get started testing faster. We have also gone through the standard <a href="https://make.wordpress.org/themes/handbook/review/theme-unit-test/">WordPress theme unit test data</a> and remediated accessibility issues to avoid false positives.</p>
+
+<p>Additionally, specific pages and URLs from this site are referenced in the report template. For this reason, we recommend starting with an InstaWP testing site. If you prefer to test elsewhere, you can export the InstaWP content and import it into a different site using the <a href="https://wordpress.org/plugins/wordpress-importer/">WordPress Importer plugin.</a></p>
+
+<h3 id="how-to-create-your-site">How to create your site</h3>
+
+<p class="callout alert"><strong>Notice</strong>: We are aware of some missing focus indicators and other accessibility issues with InstaWP’s launcher. These issues will be reported to them for remediation. If you are unable to create a test site due to accessibility issues, tag Amber Hinds and Joe Dolson (<code class="language-plaintext highlighter-rouge">@alh0319 @joedolson</code>) in #accessibility in Make WordPress Slack, and one of them will create a site for you.</p>
+
+<p>Here’s how to create a testing site from our template:</p>
+
+<ol>
+  <li>Go to the <a href="https://app.instawp.io/launch?s=wp-accessibility-ready-test-sites&amp;d=v2">WordPress Accessibility-ready Test Sites launcher on InstaWP.</a></li>
+  <li>Click the “launch demo” button.</li>
+  <li>Enter your email address in the email field.</li>
+  <li>Check the box acknowledging the privacy notice.</li>
+  <li>Click the “proceed” button.</li>
+</ol>
+
+<p>The website should be created in a matter of minutes and you will be automatically logged into the site.</p>
+
+<p>An email will be sent to you with the web address and admin credentials for logging into the website should you need to revisit the site later.</p>
+
+<p><strong>Note:</strong> These sites expire after seven (7) days. You can extend them for three (3) additional days if needed. If you need a testing site to be available longer than 10 days, you’ll need to migrate it to your own hosting or local development environment.</p>
+
+<h3 id="install-activate-and-configure-the-theme">Install, activate, and configure the theme</h3>
+
+<p>After creating the site, you need to install and setup the theme for testing. Here are the steps to make sure you’re ready to test:</p>
+
+<h4 id="installing-and-activating-the-theme">Installing and activating the theme</h4>
+
+<ol>
+  <li>Determine if you’re testing a new theme or existing theme. (<a href="/pr-preview/pr-279/docs/testing/testing-themes/identifying-themes/">See Identifying themes that need to be tested</a>)</li>
+  <li>Install the theme in the testing site following these instructions:
+    <ol>
+      <li>If the theme is a new theme or an existing theme with an unreleased new version:
+        <ol>
+          <li>Go to the Trac ticket for the theme.</li>
+          <li>Download the latest zip file for the theme from the Trac ticket. There will be a zip file linked in the ticket, but check all comments to make sure a newer zip file has not been provided.</li>
+          <li>In WP-admin, go to Appearance &gt; Themes.</li>
+          <li>Click the “Add theme” link (visually styled as a button).</li>
+          <li>Click the “Upload Theme” button.</li>
+          <li>Upload your theme and click the “Install Now” button.</li>
+        </ol>
+      </li>
+      <li>If the theme is already approved:
+        <ol>
+          <li>In WP-admin, go to Appearance &gt; Themes.</li>
+          <li>Click the “Add theme” link (visually styled as a button).</li>
+          <li>Search for the theme by name.</li>
+          <li>Once you have found the theme, click the “Install” link (visually styled as a button) on the theme tile.</li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+  <li>After installing the theme, click the “Activate” link (visually styled as a button) to activate it.</li>
+</ol>
+
+<h4 id="configuring-the-theme">Configuring the theme</h4>
+
+<p>Once the theme is active, you need to configure the theme content for testing. The following steps assume you’re starting with our InstaWP template content, in which case the setup work should be minimal.</p>
+
+<p>After activating the theme, do the following:</p>
+
+<ol>
+  <li>If prompted to install “required” plugins, install and activate those plugins.</li>
+  <li>If prompted to import demo content, import the content. Important: Add demo content to the existing content rather than overwriting it.</li>
+  <li>Set up the menus:
+    <ol>
+      <li>Set the primary menu in the header to the menu named “Primary”.</li>
+      <li>If a “mobile” menu exists, also assign the Primary menu to this menu area.</li>
+      <li>If a footer or other menu area exists, assign the “Social menu” or “All Pages Flat” menu to these areas.</li>
+    </ol>
+  </li>
+  <li>Set up the Block Patterns page:
+    <ol>
+      <li>Go to the Block Patterns page (<code class="language-plaintext highlighter-rouge">/accessibility-ready-test-pages/block-patterns/</code>).</li>
+      <li>Edit the Block Patterns page.</li>
+      <li>In the editing screen, click the Block inserter (+) in the top-left corner.</li>
+      <li>Click the Patterns tab.</li>
+      <li>Insert all available patterns into the page. Do not change any content or settings for the patterns.</li>
+      <li>Save the page.</li>
+    </ol>
+  </li>
+  <li>Configure any other available settings.
+    <ol>
+      <li>If the theme supports the Customizer, open the Customizer and check for theme settings that need to be configured.</li>
+      <li>Check for a theme settings page and enable settings there as needed.</li>
+    </ol>
+  </li>
+</ol>
+
+<p>Examples of other settings you may need to enable in the theme Customizer or settings pages include:</p>
+<ul>
+  <li>Show search in header.</li>
+  <li>Enable comments.</li>
+  <li>Add related posts below content on post single.</li>
+  <li>Adding URLs to fields for social media profiles.</li>
+</ul>
+
+<p>Note: Each theme is different so the exact configuration process will vary by theme. Use these steps to guide you, however you may need to do something different if prompted by the theme. Ultimately the goal is to configure the theme in a way that is representative of how a typical website owner might configure it and to cover as many of the possible settings as is reasonably possible.</p>
+
+<h2 id="creating-the-report">Creating the report</h2>
+
+<p>Accessibility-ready reports are generated with a Google Sheet template. This ensures that all reports are consistent and provides a template for your audit.</p>
+
+<h3 id="copy-the-template">Copy the template</h3>
+<ol>
+  <li>Open the <a href="https://drive.google.com/drive/folders/1z3v3U02W1WFt38Kvzb4aaVVkqzUq9pnP?usp=sharing">Theme Testing Reports Google Drive folder</a>.</li>
+  <li>Find the Google Sheet titled “** Template ** Accessibility-Ready Test Report”.</li>
+  <li>On the template report, click the “More Actions” button (three dots) located at the far right in the list layout or in the upper right corner in the grid layout.</li>
+  <li>Click “Make a Copy” to duplicate the template. Your copy should stay in the Theme Testing Reports folder.</li>
+  <li>Rename your copy following this format: <code class="language-plaintext highlighter-rouge">YYYY-MM [Theme Name] Accessibility-Ready Test Report</code>.</li>
+  <li>Now your report is ready to edit.</li>
+</ol>
+
+<p class="callout warning"><strong>Warning:</strong> Do not edit the template. Always make a copy of the template and then edit only your copy.</p>
+
+<h3 id="fill-in-the-report-summary">Fill in the report summary</h3>
+<p>After creating a <strong>copy</strong> of the Google Sheets template and renaming it, open the file to get started. Before testing fill in the following information on the Summary tab:</p>
+
+<ol>
+  <li><strong>Theme Name:</strong> the name of the theme found in the Trac ticket or themes directory.</li>
+  <li><strong>Theme URL:</strong> if the theme is published, this is the URL to the theme in the directory. If the theme has not been published, this is not applicable and may be left blank.</li>
+  <li><strong>Theme Version Number:</strong> the number of the version you’re testing.</li>
+  <li><strong>Trac Ticket URL:</strong> the URL to the Trac ticket for the theme and version you’re testing.</li>
+  <li><strong>Theme developer:</strong> WordPress.org username of the developer, formatted with an <code class="language-plaintext highlighter-rouge">@</code> symbol before it (e.g. <code class="language-plaintext highlighter-rouge">@alh0319</code>). Including the <code class="language-plaintext highlighter-rouge">@</code> symbol will ensure they get tagged when you paste in the final report on Trac. This cell supports multiple usernames so long as they each start with an <code class="language-plaintext highlighter-rouge">@</code> and are separated by spaces and/or commas.</li>
+  <li><strong>Tested by:</strong> Your WordPress.org username so you can get credit for the contribution.</li>
+  <li><strong>Test Date:</strong> The current date in YYYY-MM-DD format.</li>
+  <li><strong>Tested on URL:</strong> The URL to your test site, if applicable. This is provided for convenience only and is not expected to be permanent. Leave blank if testing on a local site.</li>
+</ol>
+
+<p class="callout alert"><strong>Alert:</strong> Do not edit any other content on the Summary tab. This content will update dynamically as you change content on the “Full Review” tab.</p>
+
+<p>After filling in the information on the Summary tab, you’re ready to start testing!</p>
+
+
+          
+            
+          
+
+          
+            
+<div class="d-flex mt-2">
+    
+
+    
+    <p class="text-small">
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/testing-themes/setup.md" id="edit-this-page">View this page on GitHub</a>
+    </p>
+    
+
+</div>
+
+
+          
+        </main>
+
+        
+  <footer>
+
+    <p>
+      <span aria-hidden="true">&#x2191;</span>
+      <a href="#top" id="back-to-top" class="back-to-top">
+        Back to top
+      </a>
+    </p>
+
+  </footer>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
