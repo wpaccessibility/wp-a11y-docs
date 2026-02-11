@@ -2,6 +2,7 @@
 title: Code of Conduct
 layout: default
 parent: How to contribute
+description: Standards for behavior when contributing to this website.
 nav_order: 9
 ---
 
