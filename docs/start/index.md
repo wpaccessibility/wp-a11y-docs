@@ -22,7 +22,7 @@ Accessibility is often abbreviated as a11y; “a” is the first character of th
 
 ## Include everyone
 
-By adopting the accessibility best practices you can ensure your website can be used by a large group of different people. Don't create for perfect people only. More about this in [They're not my visitors]({{site.baseurl}}/docs/start/myths/personas/).
+By adopting the accessibility best practices you can ensure your website can be used by a large group of different people. Don't create for perfect people only. More about this in [They're not my visitors]({{site.baseurl}}/docs/start/business/personas/).
 
 ## Consider your business
 

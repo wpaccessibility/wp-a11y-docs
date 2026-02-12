@@ -72,7 +72,7 @@ Don’t make users guess — offer clear help in plain language, at the right mo
 
 If you only ask what's really needed, all fields could technically be required — but that’s not always the case. Different types of forms have different needs. For example, if you're creating content in the admin of a website, all the content fields you might use need to be available; but most of them won't be required. 
 
-Learn how to do this in [Indicate required fields in forms]({{site.baseurl}}//docs/topics/forms/required/)
+Learn how to do this in [Indicate required fields in forms]({{site.baseurl}}/docs/topics/forms/required/)
 
 #### What’s the best way to indicate required?
 
