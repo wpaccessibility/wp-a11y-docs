@@ -3,7 +3,7 @@ title: Quick wins
 layout: default
 parent: Start with accessibility
 description: 6 Quick wins to improve the accessibility of your website
-nav_order: 1
+nav_order: 2
 ---
 
 # Quick wins

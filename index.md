@@ -15,3 +15,9 @@ This documentation aims to provide you with answers about WordPress and accessib
 
 Did we miss a topic? Did you find an error or have a great idea?  
 Please [share your thoughts](https://wpaccessibility.org/docs/contact/).
+
+## Reading guide
+
+Find the documentation for your work role, work field and expertise.
+
+{% include components/guide.md %}

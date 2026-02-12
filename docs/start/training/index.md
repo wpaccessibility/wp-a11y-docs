@@ -3,7 +3,7 @@ title: Training
 layout: default
 parent: Start with accessibility
 description: An overview of training, meetups and conferences to learn accessibility.
-nav_order: 4
+nav_order: 5
 ---
 
 # Training, learn web accessibility

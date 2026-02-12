@@ -2,12 +2,12 @@
 title: Reading guide
 layout: default
 parent: Start with accessibility
-description: Find the documentation for your role.
-nav_order: 6
+description: Find documentation for your work role, work field and expertise.
+nav_order: 2
 ---
 
 # Reading guide
 
-Find the documentation for your role.
+Find the documentation for your work role, work field and expertise.
 
-This content will follow soon.
+{% include components/guide.md %}

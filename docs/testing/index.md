@@ -4,7 +4,7 @@ layout: default
 nav_order: 4
 ---
 
-# Accessibility testing
+# Test for accessibility
 
 How to test your work and check for accessibility issues? How to test for the WCAG guidelines and for best practices?
 

@@ -142,9 +142,17 @@
     }
   }
 
-  details > summary {
-    color: $link-color;
-    cursor: pointer;
+
+  details {
+
+    summary {
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    p, ul {
+      margin-left: 1em;
+    }
   }
 
   h1,
