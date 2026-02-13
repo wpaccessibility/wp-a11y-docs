@@ -23,7 +23,7 @@ Nobody ever complains that text is too easy to read. Not everyone reads under pe
 
 ## Break your text down
 
-Use [meaningful headings](https://make.wordpress.org/accessibility/handbook/best-practices/content/using-headings-in-content/), [good link texts](https://make.wordpress.org/accessibility/handbook/best-practices/content/good-link-texts/), lists, quotes and short paragraphs. This makes text more scannable and easier to read. Important points in the text should stand alone, so don’t hide important information in large text blocks.
+Use [meaningful headings]({{site.baseurl}}/docs/topics/content/headings/), [good link texts]({{site.baseurl}}/docs/topics/content/links/), lists, quotes and short paragraphs. This makes text more scannable and easier to read. Important points in the text should stand alone, so don’t hide important information in large text blocks.
 
 ## Text style and layout
 

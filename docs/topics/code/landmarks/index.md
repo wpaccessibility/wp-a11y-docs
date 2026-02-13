@@ -43,7 +43,7 @@ All content should be inside these semantically meaningful elements so content i
 
 Note that older browsers and assistive technology combinations don’t always recognize HTML5 elements and map them to the correct landmark role. In these cases you can add the role manually, like this: `<header role="banner">`. All browsers supported by WordPress Core support native  HTML5 elements.
 
-More information can be found at the W3C [ARIA landmark example page](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html). You can also review the WordPress theme accessibility guidelines, as [WordPress themes are required to use landmark roles](https://make.wordpress.org/themes/handbook/review/accessibility/required/#aria-landmark-roles) in order to apply the accessibility-ready tag.
+More information can be found at the W3C [ARIA landmark example page](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html). You can also review the WordPress theme accessibility guidelines, as [WordPress themes are required to use landmark roles]({{site.baseurl}}/docs/topics/theme-guidelines/meaningful-landmark-roles/) in order to apply the accessibility-ready tag.
 
 ## Good example of HTML5 sectional elements
 
@@ -113,4 +113,4 @@ Note that the word navigation is already announced by assistive technologies. Th
 
 - [W3C ARIA landmark example page](https://www.w3.org/TR/2017/NOTE-wai-aria-practices-1.1-20171214/examples/landmarks/index.html)
 - [Tutorial of page regions](https://www.w3.org/WAI/tutorials/page-structure/regions/)
-- [ARIA landmark role guideline](https://make.wordpress.org/themes/handbook/review/accessibility/required/#aria-landmark-roles) for accessibility-ready themes.
+- [ARIA landmark role guideline]({{site.baseurl}}/docs/topics/theme-guidelines/meaningful-landmark-roles/) for accessibility-ready themes.

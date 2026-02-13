@@ -13,9 +13,18 @@ While we know that many developers work primarily on MacOS, testing only with Ap
 
 ### Screen reader testing
 
-- [Testing with Screen Readers: Questions and Answers](https://webaim.org/articles/screenreader_testing/)
-- [Screen reader keyboard shortcuts and gestures](https://dequeuniversity.com/screenreaders/)
-- [Basic screen reader commands for accessibility testing](https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/)
+There are numerous excellent articles on how to test with and for a screen reader. Keep in mind that the best screen reader testing is by users who use a screen reader on a regular basis for their interactions with the web; you can do your own testing, but it is not a substitute for real user tests.
+
+- [Testing with Screen Readers: Questions and Answers](https://webaim.org/articles/screenreader_testing/) on WebAIM.
+- For Mac (native for iOS): [Using VoiceOver to Evaluate Web Accessibility](https://webaim.org/articles/voiceover/) on WebAIM.
+- [VoiceOver cheat sheet](http://pauljadam.com/demos/iosvocheatsheet.html) by Paul J. Adam
+- [VoiceOver Getting Started](https://help.apple.com/voiceover/info/guide/10.8/English.lproj/index.html) by Apple.
+- For Windows (free, open source): [Using NVDA to Evaluate Web Accessibility](http://webaim.org/articles/nvda/) on WebAIM.
+- For Windows: [Using JAWS to Evaluate Web Accessibility](http://webaim.org/articles/jaws/) on WebAIM.
+- [Screen reader keyboard shortcuts and gestures](https://dequeuniversity.com/screenreaders/) by Deque.
+- [Basic screen reader commands for accessibility testing](https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/) by Léonie Watson.
+- [Five Screen Reader Accessibility Tests Your QA Team Should Do](https://vispero.com/resources/five-screen-reader-accessibility-tests-your-qa-team-should-do/) – An introduction to fundamental screen reader tests by Charlie Pike.
+
 
 ### Best screen reader / browser combinations
 
@@ -25,11 +34,3 @@ While we know that many developers work primarily on MacOS, testing only with Ap
 - Windows Narrator with Edge
 
 The screen readers ChromeVox and Orca don’t perform well enough as a screen reader, at this moment, to give representative test information.
-
-### How to use a screen reader
-
-- [List of screen reader test tools](https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/useful-tools/#screen-reader-testing) in the Accessibility Handbook
-- [VoiceOver Getting Started](https://help.apple.com/voiceover/info/guide/10.8/English.lproj/index.html)
-- [VoiceOver cheat sheet](http://pauljadam.com/demos/iosvocheatsheet.html) by Paul J. Adam
-- [NVDA](https://www.nvaccess.org/)
-- [NVDA shortcuts](https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts)
