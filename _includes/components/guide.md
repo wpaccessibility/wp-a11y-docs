@@ -13,7 +13,7 @@
 <details markdown="block">
 <summary>Content managers and writers</summary>
 
-- [Training, learn web accessibility]({{site.baseurl}}/docs/start/training/).
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
 - Standards and best practice: [Content and images]({{site.baseurl}}/topics/content/).
 - Checklists for accessibility testing: [Content checks]({{site.baseurl}}/docs/testing/content/).
 - [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/).
@@ -21,9 +21,9 @@
 </details>
 
 <details markdown="block">
-<summary>Designers and UX-ers</summary>
+<summary>Design & user experience specialists</summary>
 
-- [Training, learn web accessibility]({{site.baseurl}}/docs/start/training/).
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
 - Standards and best practice: [Design & user experience]({{site.baseurl}}/docs/topics/design/).
 - [Web forms]({{site.baseurl}}/docs/topics/forms/input-label/placeholders/).
   - [Placeholders in form fields]({{site.baseurl}}/docs/topics/forms/input-label/placeholders/).
@@ -36,9 +36,9 @@
 </details>
 
 <details markdown="block">
-<summary>Web developers and plugin developers</summary>
+<summary>Website and plugin developers</summary>
 
-- [Find a training that fits your needs]({{site.baseurl}}/docs/start/training/).
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
 - Standards and best practice: [Frontend code]({{site.baseurl}}docs/topics/code/).
 - [How to build accessible web forms]({{site.baseurl}}docs/topics/forms/).
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
@@ -47,9 +47,9 @@
 </details>
 
 <details markdown="block">
-<summary>Theme creators</summary>
+<summary>Theme developers</summary>
 
-- [Find a training that fits your needs]({{site.baseurl}}/docs/start/training/).
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
 - [Standards and best practice]({{site.baseurl}}/docs/topics/).
   - [Theme accessibility guidelines]({{site.baseurl}}/docs/topics/theme-guidelines/).
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
@@ -58,9 +58,9 @@
 </details>
 
 <details markdown="block">
-<summary>QA-testers and auditors</summary>
+<summary>Quality assurance and auditing</summary>
 
-- [Documenting Accessibility]({{site.baseurl}}docs/topics/documenting-accessibility/).
+- [Documenting accessibility]({{site.baseurl}}docs/topics/documenting-accessibility/).
 - [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/).
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
   - [WordPress plugins for testing]({{site.baseurl}}/docs/testing/plugins/).
@@ -71,7 +71,7 @@
 <details markdown="block">
 <summary>WordPress core contributors</summary>
 
-- [Training, learn web accessibility]({{site.baseurl}}/docs/start/training/).
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
 - [Standards and best practice]({{site.baseurl}}/docs/topics/).
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
 - [WordPress and accessibility]({{site.baseurl}}/docs/wp-a11y/).
@@ -82,7 +82,7 @@
 <summary>Management</summary>
 
 - [Start with accessibility]({{site.baseurl}}/docs/start/).
-  - [Training, learn web accessibility]({{site.baseurl}}/docs/start/training/).
+  - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
   - [Introduction to WCAG]({{site.baseurl}}/docs/start/wcag-intro/).
   - [Accessibility for your business]({{site.baseurl}}/docs/start/business/).
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
@@ -96,7 +96,7 @@
 <summary>Stakeholders and site owners</summary>
 
 - [Start with accessibility]({{site.baseurl}}/docs/start/).
-  - [Training, learn web accessibility]({{site.baseurl}}/docs/start/training/).
+  - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
   - [Introduction to WCAG]({{site.baseurl}}/docs/start/wcag-intro/).
   - [Accessibility for your business]({{site.baseurl}}/docs/start/business/).
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
