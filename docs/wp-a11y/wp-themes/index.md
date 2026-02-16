@@ -2,6 +2,7 @@
 title: Accessible WP themes
 layout: default
 parent: WordPress and Accessibility
+description: Learn to create an accessible theme or how to find one that is accessibility-ready.
 nav_order: 4
 ---
 
