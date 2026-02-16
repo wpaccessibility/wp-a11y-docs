@@ -18,7 +18,7 @@ Tab through your pages, links and forms to do the following tests:
 
 - Confirm all links can be reached and activated via keyboard, including any inside drop downs
 - Confirm all links have a strong visible focus indicator
-- Confirm all focusable [visually hidden content](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/) (such as [skip links](https://make.wordpress.org/accessibility/handbook/best-practices/markup/skip-links/)) become visible when in focus.
+- Confirm all focusable [visually hidden content]({{site.baseurl}}/docs/topics/code/screen-reader-text/) (such as [skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/)) becomes visible when in focus.
 - Confirm all interactions – form fields, buttons, and other controls – can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.
 - Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting.
 

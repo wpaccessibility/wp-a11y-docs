@@ -20,7 +20,7 @@ Navigation links, search forms, social media links, or other elements commonly a
 Skip to content link when focused
 ![Skip to content link]({{site.baseurl}}/assets/images/skip-link.png)
 
-Even though [all content should be inside a landmark region](https://make.wordpress.org/accessibility/handbook/best-practices/markup/aria-landmarks/), skip links can be outside any landmarks. If a user is navigating using landmark regions, having skip links inside a landmark may be excessively verbose. Since the skip link is the first item on the page, it is always easily findable.
+Even though [all content should be inside a landmark region]({{site.baseurl}}/docs/topics/code/landmarks/), skip links can be outside any landmarks. If a user is navigating using landmark regions, having skip links inside a landmark may be excessively verbose. Since the skip link is the first item on the page, it is always easily findable.
 
 Skip links should be the first focusable element on a page. In this example, the skip link is inside the <header> landmark, but this is not a requirement – and if there is content above the site header, it would be incorrect. Being the first item on the page is much more important than being inside a landmark.
 
@@ -43,7 +43,7 @@ Skip links should be the first focusable element on a page. In this example, the
 </body>
 ```
 
-Read more about [the .screen-reader-text class](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/).
+Read more about the [.screen-reader-text class]({{site.baseurl}}/docs/topics/code/screen-reader-text/).
 
 ## Example: Skip link in wrong place
 
@@ -73,5 +73,4 @@ In this example, the skip link has been placed inside the navigation region, and
 - [Skip navigation links in webaim](https://webaim.org/techniques/skipnav/).  
   In this article there is also information about having multiple skip links and the most common wording for skip to content.
 - [How–to: Use Skip Navigation links](https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/).
-- [Skip links guideline for accessibility ready themes](https://make.wordpress.org/themes/handbook/review/accessibility/required/#skip-links%E2%80%9D).
-- [.screen-reader-text class article in the handbook](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/).
+- [Skip link guidelines]({{site.baseurl}}/docs/topics/theme-guidelines/skip-to-content/).
