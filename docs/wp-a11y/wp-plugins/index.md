@@ -2,6 +2,7 @@
 title: Accessible WP plugins
 layout: default
 parent: WordPress and Accessibility
+description: There are no accessible plugins in the plugin directory.
 nav_order: 5
 ---
 
