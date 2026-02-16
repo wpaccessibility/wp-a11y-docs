@@ -2,12 +2,13 @@
 title: Keyboard only
 layout: default
 parent: Test for accessibility
+description: Learn how to test for accessibility with your keyboard only.
 nav_order: 6
 ---
 
 # Keyboard navigation testing
 
-All functionality should work using a **keyboard only**. This essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.
+All functionality should work using a **keyboard only**. This is essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.
 
 ## How to keyboard test:
 
