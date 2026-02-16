@@ -39,9 +39,9 @@ Documentation about heading structure:
 - Avoid “click here”, “read more”, ”download”, ”continue reading” as link text. It’s meaningless and people have to read around the link to see what’s it about
 - If you use an image as link, use the alternative text as link text
 
-Documentation about links texts:
+Documentation about link texts:
 
-- [Write a meaningful link text]({{site.baseurl}}/docs/topics/content/links/link-text/)
+- [Write meaningful link text]({{site.baseurl}}/docs/topics/content/links/link-text/)
 
 ## Video and audio
 

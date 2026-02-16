@@ -73,4 +73,4 @@ In this example, the skip link has been placed inside the navigation region, and
 - [Skip navigation links in webaim](https://webaim.org/techniques/skipnav/).  
   In this article there is also information about having multiple skip links and the most common wording for skip to content.
 - [How–to: Use Skip Navigation links](https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/).
-- [Skip links guideline for accessibility-ready themes]({{site.baseurl}}/docs/topics/theme-guidelines/skip-to-content/).
+- [Skip link guidelines]({{site.baseurl}}/docs/topics/theme-guidelines/skip-to-content/).

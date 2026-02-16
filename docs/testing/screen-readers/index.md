@@ -18,11 +18,11 @@ There are numerous excellent articles on how to test with and for a screen reade
 - [Testing with Screen Readers: Questions and Answers](https://webaim.org/articles/screenreader_testing/) on WebAIM.
 - For Mac (native for iOS): [Using VoiceOver to Evaluate Web Accessibility](https://webaim.org/articles/voiceover/) on WebAIM.
 - [VoiceOver cheat sheet](http://pauljadam.com/demos/iosvocheatsheet.html) by Paul J. Adam
-- [VoiceOver Getting Started](https://help.apple.com/voiceover/info/guide/10.8/English.lproj/index.html) by Apple.
+- [VoiceOver Getting Started](https://help.apple.com/voiceover/info/guide/10.8/English.lproj/) by Apple.
 - For Windows (free, open source): [Using NVDA to Evaluate Web Accessibility](http://webaim.org/articles/nvda/) on WebAIM.
 - For Windows: [Using JAWS to Evaluate Web Accessibility](http://webaim.org/articles/jaws/) on WebAIM.
 - [Screen reader keyboard shortcuts and gestures](https://dequeuniversity.com/screenreaders/) by Deque.
-- [Basic screen reader commands for accessibility testing](https://developer.paciellogroup.com/blog/2015/01/basic-screen-reader-commands-for-accessibility-testing/) by Léonie Watson.
+- [Basic screen reader commands for accessibility testing](https://www.tpgi.com/basic-screen-reader-commands-for-accessibility-testing/) by Léonie Watson.
 - [Five Screen Reader Accessibility Tests Your QA Team Should Do](https://vispero.com/resources/five-screen-reader-accessibility-tests-your-qa-team-should-do/) – An introduction to fundamental screen reader tests by Charlie Pike.
 
 

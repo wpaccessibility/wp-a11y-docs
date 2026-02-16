@@ -29,7 +29,7 @@ There are a few things to watch out for to make this usable for everyone.
 - make sure that the thumbnail has an appropriate link text
 - avoid block level links
 
-A screen reader user can call a list of links to quickly navigate a site. Then [duplicate and meaningless links]({{site.baseurl}}/docs/topics/content/links/link-text/) are annoying and time-consuming.
+A screen reader user can call a list of links to quickly navigate a site. [Duplicate and meaningless links]({{site.baseurl}}/docs/topics/content/links/link-text/) are annoying and time-consuming.
 
 ### Duplicate links
 
@@ -47,7 +47,7 @@ So: take the link also out of the tab order by using `tabindex="-1"`:
 
 ### Meaningless link text
 
-Link text like “Read more…” or “Continue reading…” are meaningless, especially in a link list for screen reader users. Read more about what? It’s best to give context to links. Include the post title for your “read more” links so screen readers understand what’s being linked to, and optionally hide this by using the CSS class [.screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text).
+Link texts like “Read more…” or “Continue reading…” are meaningless, especially in a link list for screen reader users. Read more about what? It’s best to give context to links. Include the post title for your “read more” links so screen readers understand what’s being linked to, and optionally hide this by using the CSS class [.screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text).
 
 For example:
 

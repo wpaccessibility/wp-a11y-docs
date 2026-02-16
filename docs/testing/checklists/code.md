@@ -12,15 +12,15 @@ Testing for valid, semantic HTML is essential for the accessibility of your work
 While you develop, always check the following items while developing: keyboard navigation, W3C validation, WCAG 2 AA validation and then announcement of dynamic changes for screen readers.
 
 {: .callout .info }
-**Note**: automated testing is not perfect. Automated testing rarely catches more than about 30% of types of issues. They also give false positives. Manual testing is required to find most issues.
+**Note**: automated testing is not perfect. Automated testing rarely catches more than about 30% of types of issues. It also gives false positives. Manual testing is required to find most issues.
 
 ## What is web accessibility?
 
 _Using semantic, meaningful, valid HTML5_.
 
-The way all devices, browsers and users can understand and interact with the functionality on a web page. The best resource for HTML5 are the [Mozilla Developer Network web docs](https://developer.mozilla.org/en-US/).
+The way all devices, browsers and users can understand and interact with the functionality on a web page. The best resource for HTML5 is the [Mozilla Developer Network web docs](https://developer.mozilla.org/en-US/).
 
-For WordPress, we aim to meet [WCAG accessibility guidelines](https://www.w3.org/WAI/) at level AA and the [W3C standards](https://www.w3.org/standards/webdesign/htmlcss). In the section [Accessibility standards and best practice]({{site.baseurl}}/docs/topics/) you’ll find documentations and resources.
+For WordPress, we aim to meet [WCAG accessibility guidelines](https://www.w3.org/WAI/) at level AA and the [W3C standards](https://www.w3.org/standards/webdesign/htmlcss). In the section [Accessibility standards and best practice]({{site.baseurl}}/docs/topics/) you’ll find documentation and resources.
 
 You need to do two different checks, one for **keyboard navigation** and one for **DOM validation**.
 

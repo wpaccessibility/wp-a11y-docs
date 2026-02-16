@@ -22,7 +22,7 @@ In this example a table with data is displayed. The user can select for example 
 
 With `wp.a11y.speak()` we can announce that the table has been updated with new data.
 
-**Note**: for `wp.a11y.speak()` to work best, the [.screen-reader-text] CSS class ({{site.baseurl}}/docs/topics/code/screen-reader-text/) should be added to your theme CSS. Also, `wp.a11y.speak()` is only available after DOM ready, so be sure not to call it earlier!
+**Note**: `wp.a11y.speak()` is only available after DOM ready, so be sure not to call it earlier!
 
 ### In functions.php
 
