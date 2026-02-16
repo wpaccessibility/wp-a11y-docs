@@ -24,7 +24,7 @@ The DOM in the browser inspector
 
 Most HTML elements have specific meanings:
 
-- [HTML5 landmarks](https://make.wordpress.org/accessibility/handbook/markup/aria-landmarks/) like `<header>`, `<nav>`, `<main>`, `<aside>` and `<footer>` give structure to a page.
+- [HTML5 landmarks]({{site.baseurl}}/docs/topics/code/landmarks/) like `<header>`, `<nav>`, `<main>`, `<aside>` and `<footer>` give structure to a page.
 - Headings (`<h1>` up to `<h6>`), paragraphs (`<p>`), images (`<img>`), lists (`<ul>` and `<ol>`), and quotes (`<blockquote>`) tell the interpreter what this content is for.
 - Buttons (`<button>`) and links(`<a href="link">`) add interactions on a page.
 
@@ -66,7 +66,7 @@ Not all semantic elements are directly interpreted by assistive technology, stro
 </button>
 ```
 
-Read more on the [.screen-reader-text class](https://make.wordpress.org/accessibility/handbook/best-practices/markup/the-css-class-screen-reader-text/).
+Read more on the [.screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) CSS class.
 
 ## Test Tools
 

@@ -32,7 +32,7 @@ There are many tools to calculate this easily, see [Color contrast checkers](htt
 
 ## Not by color alone
 
-- [Don’t depend on color for meaning](https://make.wordpress.org/accessibility/handbook/best-practices/design/use-of-color/) – it’s fine to use color, as long as that isn’t the only identifying characteristic
+- [Don’t depend on color for meaning]({{site.baseurl}}/docs/topics/design/color/use-of-color/) – it’s fine to use color, as long as that isn’t the only identifying characteristic
 - Links in text must stand out as links, make them underlined
 - Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds; include clear text messages or icons, as well.
 
@@ -67,9 +67,8 @@ Make the order of things logical, most users read from top to bottom. For exampl
 - Users must be able to pause animations, or the animations must automatically stop after 3 seconds
 - Avoid using too many elements that distract the user from reading the text or using the navigation.
 
-## Resources
+## Resources about accessible design
 
-- Section [Use of color](https://make.wordpress.org/accessibility/handbook/best-practices/design/use-of-color/) in this handbook
 - [Inclusive Components](https://inclusive-components.design/)
 - [Inclusive Design Patterns – Heydon Pickering](https://shop.smashingmagazine.com/products/inclusive-design-patterns)
 - [Inclusive Design Checklist – Heydon Pickering](https://github.com/Heydon/inclusive-design-checklist)
@@ -84,9 +83,3 @@ Make the order of things logical, most users read from top to bottom. For exampl
 - [Accessibility for everyone – Laura Kalbag (book)](https://abookapart.com/products/accessibility-for-everyone)
 - [WebAIM: on fonts](https://webaim.org/techniques/fonts/)
 - [Pennsylvania State University: about Font Face](http://accessibility.psu.edu/legibility/fontface/)
-
-## Related posts
-
-- [Test for web accessibility: introduction](https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility/)
-- [Test for web accessibility: content](https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility-content/)
-- [Test for web accessibility: frontend code (DOM)](https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility/test-for-web-accessibility-frontend-code/)

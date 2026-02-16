@@ -6,7 +6,7 @@ description: A link text should describe the resource that it links to.
 nav_order: 2
 ---
 
-# Write a meaningful link text
+# Write meaningful link text
 
 {: .callout .tip }
 **Rule of thumb**: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise.
