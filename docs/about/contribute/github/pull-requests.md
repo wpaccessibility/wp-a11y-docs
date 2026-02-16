@@ -2,6 +2,7 @@
 title: Pull requests
 layout: default
 parent: Technical documentation
+description: Learn how to make a pull request for this documentation.
 nav_order: 3
 ---
 
