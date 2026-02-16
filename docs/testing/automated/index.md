@@ -2,6 +2,7 @@
 title: Automated validation
 layout: default
 parent: Test for accessibility
+description: Learn about automated accessibility testing and validation
 nav_order: 5
 ---
 
