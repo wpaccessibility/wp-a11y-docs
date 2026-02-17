@@ -532,9 +532,13 @@ small,
 .main-content h6:hover > .anchor-heading svg {
   visibility: visible;
 }
-.main-content details > summary {
-  color: var(--color-informative-color-default);
+.main-content details summary {
   cursor: pointer;
+  font-weight: 500;
+}
+.main-content details p,
+.main-content details ul {
+  margin-left: 1em;
 }
 .main-content h1,
 .main-content h2,
@@ -1312,6 +1316,7 @@ p.do > strong {
 
 footer {
   padding-bottom: 3rem;
+  margin-top: 1.5rem;
   border-top: 1px solid var(--color-neutral-border-default);
 }
 footer nav .container {
