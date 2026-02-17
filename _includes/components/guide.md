@@ -5,7 +5,7 @@
 - [Start with accessibility]({{site.baseurl}}/docs/start/).
 - [Checklists for accessibility testing]({{site.baseurl}}/docs/testing/checklists/).
 - [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/).
-- [Accessibility Legislation]({{site.baseurl}}/docs/topics/legislation/).
+- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/).
 - [Find accessible WordPress themes]({{site.baseurl}}/docs/wp-a11y/wp-themes/).
 
 </details>
