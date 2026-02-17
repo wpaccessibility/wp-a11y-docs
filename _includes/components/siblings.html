@@ -14,7 +14,7 @@
         <h2>Other pages in: {{ parentTitle }}</h2>
         <ul>
             {% for p in siblings %}
-            {% if p.nav_order > 0 %}
+            {% if p.nav_order > 0 and p.title != page.title %}
             <li>
                 <p>
                     <a href="{{p.url | relative_url }}"> {{ p.title }}</a> {{ p.description }}
