@@ -28,7 +28,7 @@ According to the MDN [HTML tabindex global attribute](https://developer.mozilla.
 
 - A positive value means the element should be focusable in sequential keyboard navigation, with its order defined by the value of the number. 
 
-## How to test
+## How to test the tab order
 
 How to test with a keyboard is described with [Keyboard navigation testing]({{site.baseurl}}/docs/testing/keyboard/) in this documentation. 
 
