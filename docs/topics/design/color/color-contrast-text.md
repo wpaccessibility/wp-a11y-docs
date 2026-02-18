@@ -2,6 +2,7 @@
 title: Color contrast of text
 layout: default
 parent: Color
+description: Learn about color contrast and how to do it right.
 nav_order: 2
 ---
 
