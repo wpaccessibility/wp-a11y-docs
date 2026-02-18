@@ -2,6 +2,7 @@
 title: Styling hover and focus
 layout: default
 parent: Design & user experience
+description: Do not remove focus styling, be bold instead.
 nav_order: 3
 ---
 

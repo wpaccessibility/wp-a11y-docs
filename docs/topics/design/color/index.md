@@ -2,6 +2,7 @@
 title: Color
 layout: default
 parent: Design & user experience
+description: Using color is important and fun, but do it right.
 nav_order: 3
 ---
 

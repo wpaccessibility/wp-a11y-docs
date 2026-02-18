@@ -2,16 +2,17 @@
 title: Content checks
 layout: default
 parent: Checklists
+description: Find an overview of content checks for accessibility.
 nav_order: 3
 ---
 
 # Content checks for web accessibility
 
-This page gives an overview of practical approaches and best practices for to keep your content as readable for as many users as possible.
+This page gives an overview of practical approaches and best practices to keep your content as readable as possible for as many users as possible.
 
 ## Reading level
 
-People don’t read on the internet. They scan a page for keywords and only start reading when they  find what they are looking for. That’s why it’s important to make the text scannable and easy to read.
+People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read.
 
 Resources:
 

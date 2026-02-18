@@ -2,6 +2,7 @@
 title: Semantic HTML
 layout: default
 parent: Frontend code
+description: Why accessibility comes down to using semantic HTML and more.
 nav_order: 2
 ---
 

@@ -2,6 +2,7 @@
 title: Images
 layout: default
 parent: Images and animations
+description: What is an image and how does it relate to accessible theme development?
 nav_order: 2
 ---
 

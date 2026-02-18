@@ -2,6 +2,7 @@
 title: Reduced motion
 layout: default
 parent: Images and animations
+description: Learn what to do with reduced motion settings.
 nav_order: 3
 ---
 

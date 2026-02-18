@@ -2,6 +2,7 @@
 title: Screen reader
 layout: default
 parent: Test for accessibility
+description: Learn how to use a screen reader to test for accessibility.
 nav_order: 7
 ---
 
