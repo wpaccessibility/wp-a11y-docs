@@ -3,7 +3,7 @@ title: Introduction to WCAG
 layout: default
 parent: Start with accessibility
 description: What are the Web Content Accessibility Guidelines and how to use them.
-nav_order: 2
+nav_order: 3
 ---
 
 # Introduction to WCAG

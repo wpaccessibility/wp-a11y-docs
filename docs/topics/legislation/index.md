@@ -2,11 +2,11 @@
 title: Legislation
 layout: default
 parent: Standards and best practice
-description: Information about Accessibility Legislation, including brief comments about the ADA and the EAA.
+description: Information about accessibility legislation, including brief comments about the ADA and the EAA.
 nav_order: 8
 ---
 
-# Accessibility Legislation
+# Accessibility legislation
 
 Website accessibility is tested against the WCAG (Web Content Accessibility Guidelines), which are a standard created by the W3C (World Web Consortium). Accessibility legislation sets the requirements websites must meet for different countries and localities. Many of these laws require websites to meet WCAG guidelines, but the specifics are highly variable from country to country.
 

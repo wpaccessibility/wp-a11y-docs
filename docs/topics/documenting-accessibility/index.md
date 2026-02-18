@@ -6,6 +6,6 @@ description: Recommended ways for documenting accessibility in WordPress themes 
 nav_order: 7
 ---
 
-# Documenting Accessibility
+# Documenting accessibility
 
 The pages in this section describe recommended ways for documenting accessibility in WordPress themes and plugins.
