@@ -2,6 +2,7 @@
 title: Use of color
 layout: default
 parent: Color
+description: There's a lot to consider when using color.
 nav_order: 3
 ---
 
