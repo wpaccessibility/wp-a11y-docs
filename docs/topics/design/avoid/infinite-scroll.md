@@ -2,6 +2,7 @@
 title: Infinite scroll
 layout: default
 parent: Patterns to avoid
+description: Using infinite scroll is not recommended. 
 nav_order: 2
 ---
 
