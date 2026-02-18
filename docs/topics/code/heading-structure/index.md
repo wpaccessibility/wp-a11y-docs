@@ -2,12 +2,13 @@
 title: Heading structure
 layout: default
 parent: Frontend code
+description: How to insert headings in your content and make them accessible.
 nav_order: 3
 ---
 
 # Heading structure in theme development
 
-Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As a sighted user, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content.
+Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As sighted users, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content.
 
 Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense.
 
