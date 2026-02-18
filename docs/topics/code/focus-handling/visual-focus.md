@@ -75,7 +75,6 @@ button {
 button:focus-visible {
     border: 2px solid #757575;
 }
-
 ```
 
 ## Resources
@@ -89,6 +88,7 @@ button:focus-visible {
 ### Other resources
 
 - [Beautiful focus outlines](https://medienbaecker.com/articles/focus-outlines) by Thomas Günther.
-- [WCAG 2.2 misses mark on defining visible focus](https://yatil.net/blog/wcag22-visible-focus) by Eric Eggert.
+- [WCAG 2.2 misses the mark on defining visible focus](https://yatil.net/blog/wcag22-visible-focus) by Eric Eggert.
+- [Avoid Default Browser Focus Styles](https://adrianroselli.com/2017/02/avoid-default-browser-focus-styles.html) by Adrian Roselli.
 - [A guide to designing accessible, WCAG-conformant focus indicators](https://www.sarasoueidan.com/blog/focus-indicators/) by Sara Soueidan.
 - [Managing Focus and Visible Focus Indicators: Practical Accessibility Guidance for the Web](https://vispero.com/resources/managing-focus-and-visible-focus-indicators-practical-accessibility-guidance-for-the-web/) by Kirby Tucker.
