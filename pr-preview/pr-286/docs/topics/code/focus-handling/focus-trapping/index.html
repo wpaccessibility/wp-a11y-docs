@@ -10,7 +10,7 @@
 
 
 
-<title>Sustain focus, WP Accessibility Knowledge Base</title>
+<title>Focus trapping, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-286/assets/css/styles.css">
@@ -104,6 +104,8 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
+          <a href="/pr-preview/pr-286/docs/start/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
+
           <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
@@ -116,9 +118,7 @@
 
           <a href="/pr-preview/pr-286/docs/start/training/" class="nav-list-link">Training</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/start/overlays/" class="nav-list-link">Overlays</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-286/docs/start/guide/" class="nav-list-link">Reading guide</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/start/overlays/" class="nav-list-link">Overlays</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/" class="nav-list-link">Standards and best practice</a><button class="nav-list-expander btn-reset" aria-label="Standards and best practice submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -186,7 +186,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/" class="nav-list-link">Visual focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/sustain-focus/" class="nav-list-link">Sustain focus</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Focus trapping</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
@@ -535,7 +535,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Sustain focus</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Focus trapping</li>
     </ol>
 </nav>
 
@@ -544,9 +544,63 @@
 
         <main>
 
-          <h1 id="sustain-focus-within-a-responsive-menu-or-dialog-component">Sustain focus within a responsive menu or dialog component</h1>
+          <h1 id="sustain-keyboard-focus-within-a-responsive-menu-or-dialog-component">Sustain keyboard focus within a responsive menu or dialog component</h1>
 
-<p>exit with button or esc key</p>
+<p>When moving the keyboard focus inside a component like a responsive menu or modal, make sure that the focus doesn’t drop out of the modal when the user tabs further after the last focusable element. This is called <strong>focus trapping</strong>, and unlike a <a href="/pr-preview/pr-286/docs/code/focus-handling/keyboard-trap/">keyboard trap</a>, it gives the user a way out.</p>
+
+<p>Focus trapping is failing when a component stays open while the keyboard focus moves out of the component to the underlying content. The focus then may be invisible or unfinable to the user.</p>
+
+<p>Keep the focus while tabbing within the component:</p>
+
+<ul>
+  <li>Move the keyboard focus to the first tabable element after the last focusable element.</li>
+  <li>Give the user a clear way out of the component by, for example, a close (X) or a confirmation button and also by using the Escape key.</li>
+  <li>Bonus functionality, if there is space: the component also closes when a mouse user clicks outside the component.</li>
+</ul>
+
+<p class="info callout"><strong>Note</strong>: The HTML element <code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> can be dismissed by pressing the Esc key by default. More info about its accessibility on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">dialog element</a>.</p>
+
+<h2 id="how-to-test-focus-trapping-within-a-component">How to test focus trapping within a component</h2>
+
+<ol>
+  <li>Open the component.</li>
+  <li>Tab through the component.</li>
+  <li>Verify that the focus stays within the component, after the last focusable element the focus should return to the first focusable element in the component.</li>
+  <li>Check if there is a close button or other way to close the component.</li>
+  <li>Check if the component also closes with the Escape key.</li>
+</ol>
+
+<h2 id="examples-of-focus-trapping">Examples of focus trapping</h2>
+
+<p>The responsive menu on <a href="https://wordpress.org/">WordPress.org</a> is an example of a component that has focus trapping.</p>
+
+<ul>
+  <li>After tabbing through all the links, the focus returns on the close button at the top of the menu.</li>
+  <li>The menu also closes with the Escape key.</li>
+</ul>
+
+<p>The <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/">Modal Dialog Example</a> on ARIA Authoring Practices Guide by the W3C gives examples of an accessible dialog which uses focus trapping.</p>
+
+<h2 id="resources">Resources</h2>
+
+<h3 id="wcag-success-criteria-for-keyboard-focus">WCAG Success Criteria for keyboard focus</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard">2.1.1 Keyboard</a> (Level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-order">2.4.3 Focus Order</a> (Level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-visible">2.4.7 Focus Visible</a> (Level AA).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-minimum">2.4.11 Focus Not Obscured (Minimum)</a> (Level AA).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured">2.4.12 Focus Not Obscured (Enhanced)</a> (Level <strong>AAA</strong>).</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://css-tricks.com/a-primer-on-focus-trapping/">A Primer on Focus Trapping</a> by Zell Liew on CSS-Tricks.</li>
+  <li><a href="https://css-tricks.com/there-is-no-need-to-trap-focus-on-a-dialog-element/">There is No Need to Trap Focus on a Dialog Element </a> b by Zell Liew on CSS-Tricks.</li>
+  <li><a href="https://react-refocus.mallikcheripally.com/">React Refocus</a> by Mallik Cheripally.</li>
+  <li><a href="https://www.xjavascript.com/blog/how-to-detect-esc-key-press-in-react-and-how-to-handle-it/">How to detect esc key press in React and how to handle it</a> on XJavascript.com.</li>
+</ul>
 
 
           
@@ -580,12 +634,6 @@
             </li>
             
             
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/sustain-focus/"> Sustain focus</a> Sustain focus within a responsive menu or dialog component.
-                </p>
-            </li>
             
             
             
