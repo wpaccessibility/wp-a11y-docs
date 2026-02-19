@@ -14,7 +14,7 @@
 <summary>Content managers and writers</summary>
 
 - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
-- Standards and best practice: [Content and images]({{site.baseurl}}/topics/content/).
+- Standards and best practice: [Content and images]({{site.baseurl}}/docs/topics/content/).
 - Checklists for accessibility testing: [Content checks]({{site.baseurl}}/docs/testing/content/).
 - [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/).
 

@@ -2,7 +2,7 @@
 title: Group form fields
 layout: default
 parent: Web forms
-nav_order: 5
+nav_order: 3
 description: Use fieldset and legend to group form fields.
 ---
 
