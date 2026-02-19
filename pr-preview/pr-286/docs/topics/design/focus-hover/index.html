@@ -534,13 +534,66 @@
 
         <main>
 
-          <h1 id="styling-hover-and-focus">Styling hover and focus</h1>
+          <h1 id="styling-focus-and-hover-states-of-interactive-html-elements">Styling focus and hover states of interactive HTML elements</h1>
 
-<h2 id="dont-remove-native-focus-styling">Don’t remove native :focus styling</h2>
+<p>Design interactive HTML elements so keyboard users can always clearly see which element is currently has the <strong>focus</strong> as they tab through the page.</p>
 
-<p>Most modern browsers have strong default <code class="language-plaintext highlighter-rouge">:focus</code> styling, making it easy for a user to tab from control to control and see clearly where they are on the page.</p>
+<p>For mouse users a clear <strong>hover</strong> state, next to the pointer changing into a hand, is helpful and regarded best practice and not a WCAG requirement.</p>
 
-<p>If you remove this, it is very easy for a sighted user to get lost and abandon the page. Custom <code class="language-plaintext highlighter-rouge">:focus</code> states are just fine; but avoid subtlety. Focus is an undirected action – meaning that the user does not know in advance where they are going, and will need to locate focus after it moves. Strong states make this easier.</p>
+<p>WCAG 2.2 AA doesn’t require visual hover or focus states other than the browser defaults. But if a custom design for hover or focus state is provided, it must meet accessibility requirements.</p>
+
+<p>The styling of the hover and focus state can be the same but doesn’t have to.</p>
+
+<h2 id="option-1-use-the-default-focus-outline-of-the-browser">Option 1: Use the default focus outline of the browser</h2>
+
+<p>The advantage of keeping that the default focus outline is that you don’t have to do anything.</p>
+
+<p>The disadvantage is that each browser displays this outline differently, and that it may be hard to discover in your design. Adrian Roselli gives a clear explanation about this in <a href="https://adrianroselli.com/2017/02/avoid-default-browser-focus-styles.html">Avoid Default Browser Focus Styles</a></p>
+
+<h2 id="option-2-design-your-own-outline-or-border">Option 2: Design your own outline or border</h2>
+
+<p>A more reliable way to add an outline or border of hover or focus is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the states differently for dark and light mode.</p>
+
+<h3 id="guidelines-for-custom-hover-and-focus-styles">Guidelines for custom hover and focus styles</h3>
+
+<p>The color contrast the custom focus or hover indicator should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.</p>
+
+<p>Best practice is to follow <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance">WGAC 2.4.13 Focus Appearance</a>] level <strong>AAA</strong>.</p>
+
+<p>Provide the outline or border with:</p>
+
+<ul>
+  <li>a thickness of at least 2 <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel">CSS pixels</a>;</li>
+  <li>a color contrast ratio of at least 3:1 against adjacent colors;</li>
+  <li>a color contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states.</li>
+</ul>
+
+<p>Another option is to skip the outline and instead change the color of the entire element. For example, a button that changes color when it receives keyboard focus. In this case as well, there must be a color contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states.</p>
+
+<p>Make sure that the text inside the element always must have a color contrast ratio of at least 4.5:1 against its background color.</p>
+
+<p class="info callout">The topic <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/">Visibility of the keyboard focus</a>, in the section Frontend code of this documentation, addresses the CSS and possibilities of styling keyboard focus in more detail.</p>
+
+<h2 id="resources">Resources</h2>
+
+<h3 id="wcag-success-criteria-for-visual-focus">WCAG Success Criteria for visual focus</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-visible">2.4.7 Focus Visible</a>, (Level AA).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance">2.4.13 Focus Appearance</a> (Level <strong>AAA</strong>).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">1.4.11 Non-Text Contrast</a> (Level AA).</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://medienbaecker.com/articles/focus-outlines">Beautiful focus outlines</a> by Thomas Günther.</li>
+  <li><a href="https://yatil.net/blog/wcag22-visible-focus">WCAG 2.2 misses the mark on defining visible focus</a> by Eric Eggert.</li>
+  <li><a href="https://adrianroselli.com/2017/02/avoid-default-browser-focus-styles.html">Avoid Default Browser Focus Styles</a> by Adrian Roselli.</li>
+  <li><a href="https://www.sarasoueidan.com/blog/focus-indicators/">A guide to designing accessible, WCAG-conformant focus indicators</a> by Sara Soueidan.</li>
+  <li><a href="https://vispero.com/resources/managing-focus-and-visible-focus-indicators-practical-accessibility-guidance-for-the-web/">Managing Focus and Visible Focus Indicators: Practical Accessibility Guidance for the Web</a> by Kirby Tucker.</li>
+</ul>
+
 
 
           

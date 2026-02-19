@@ -564,18 +564,19 @@
 
 <h2 id="design-your-own-outline-or-border">Design your own outline or border</h2>
 
-<p>A more reliable way to add an outline, is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode.</p>
+<p>A more reliable way to add an outline is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode.</p>
 
-<p>When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. For example for a button or input field that has a custom background color.</p>
+<p>When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.</p>
 
-<p>Best practice is to follow WGAC <a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance">2.4.13 Focus Appearance</a> level AAA.</p>
+<p>Provide the outline or border with:</p>
 
 <ul>
-  <li>The focus outline is at least 2px wide</li>
-  <li>The focus outline color has a contrast ratio of at least 3:1</li>
+  <li>a thickness of at least 2 <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel">CSS pixels</a>;</li>
+  <li>a color contrast ratio of at least 3:1 against adjacent colors;</li>
+  <li>a color contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states.</li>
 </ul>
 
-<p>The topic <a href="/pr-preview/pr-286/docs/topics/design/focus-hover/">Styling hover and focus</a>, in the section Design and user experience of this documentation, addresses the design guidelines of keyboard focus in more detail.</p>
+<p class="info callout">The topic <a href="/pr-preview/pr-286/docs/topics/design/focus-hover/">Styling hover and focus</a>, in the section Design and user experience of this documentation, also addresses the design guidelines of keyboard focus and mouse hover.</p>
 
 <h2 id="css-focus-within">CSS :focus-within</h2>
 
