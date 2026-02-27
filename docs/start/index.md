@@ -37,7 +37,7 @@ For developers web accessibility means a way of thinking often called progressiv
 - Let the JavaScript interact with the content.
 
 This division helps you create websites that are easier to maintain and update, and is considered to be a (c)lean approach to web development.
-[Standards and best practice]({{site.baseurl}}/docs/topics/) explains how to code with sematics and accessibility in mind.
+[Standards and best practice]({{site.baseurl}}/docs/topics/) explains how to code with semantics and accessibility in mind.
 
 ## In Summary
 
