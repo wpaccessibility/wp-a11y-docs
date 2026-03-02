@@ -64,28 +64,28 @@
   },"9": {
     "doc": "Accessibility statements",
     "title": "Accessibility statements",
-    "description": "What you should put into an accessibility statement.",
+    "description": "What you should include in an accessibility statement.",
     "content": "An accessibility statement is a public document on a website that explains the site’s current level of accessibility, the standards it aims to meet, and how users can report accessibility issues or request assistance. Accessibility statements are not limited to describing website accessibility. Some WordPress plugin or theme developers may also include information about their plugins or themes in an accessibility statement on their website. ",
     "url": "/pr-preview/pr-287/docs/topics/documenting-accessibility/accessibility-statements/",
     "relUrl": "/docs/topics/documenting-accessibility/accessibility-statements/"
   },"10": {
     "doc": "Accessibility statements",
     "title": "What an accessibility statement includes",
-    "description": "What you should put into an accessibility statement.",
+    "description": "What you should include in an accessibility statement.",
     "content": "Typically, an accessibility statement includes: . | A commitment statement: a clear statement that the organization is working to make its website accessible or a philosophical statement about their approach to accessibility. | Standards or guidelines followed: such as WCAG 2.1 or 2.2, and the targeted conformance level (e.g., AA). | Scope and status: what parts of the site are covered and whether the site is fully, partially, or not yet compliant. | Known limitations: any accessibility issues that are known and not yet fixed. | Feedback and contact information: how users can report barriers or request alternative formats. | Enforcement or escalation information (in some regions): how users can file a complaint if issues are not addressed. | . An accessibility statement is not an audit report or an Accessibility Conformance Report (ACR). Instead, it’s a shorter document or more designed page that provides transparency, helps set expectations, and indicates a path for support. If you have an audit report or ACR for your product, that can be linked to from your accessibility statement page. ",
     "url": "/pr-preview/pr-287/docs/topics/documenting-accessibility/accessibility-statements/#what-an-accessibility-statement-includes",
     "relUrl": "/docs/topics/documenting-accessibility/accessibility-statements/#what-an-accessibility-statement-includes"
   },"11": {
     "doc": "Accessibility statements",
     "title": "Are accessibility statements required by law?",
-    "description": "What you should put into an accessibility statement.",
+    "description": "What you should include in an accessibility statement.",
     "content": "Whether an accessibility statement is legally required depends on geographic location, the website type, and who you serve. Most commonly accessibility statements are required for public sector or enterprise organizations in Europe. If you are not sure whether your website, plugin, or theme needs an accessibility statement, ask an attorney or legal expert in your area. ",
     "url": "/pr-preview/pr-287/docs/topics/documenting-accessibility/accessibility-statements/#are-accessibility-statements-required-by-law",
     "relUrl": "/docs/topics/documenting-accessibility/accessibility-statements/#are-accessibility-statements-required-by-law"
   },"12": {
     "doc": "Accessibility statements",
     "title": "How to create an accessibility statement",
-    "description": "What you should put into an accessibility statement.",
+    "description": "What you should include in an accessibility statement.",
     "content": "Many organizations use templates to generate their accessibility statement. Popular templates or accessibility statement generators include: . | W3C accessibility statement generator | Gov.uk public sector accessibility statement template (UK-specific legal format) | European Commission model accessibility statement under the EU Web Accessibility Directive. | Equalize Digital Accessibility Checker WordPress plugin generates an accessibility statement draft page upon activation. | . Because accessibility statements can have legal implications in certain parts of the world, it is recommended that you have a legal professional review your statement before publication. ",
     "url": "/pr-preview/pr-287/docs/topics/documenting-accessibility/accessibility-statements/#how-to-create-an-accessibility-statement",
     "relUrl": "/docs/topics/documenting-accessibility/accessibility-statements/#how-to-create-an-accessibility-statement"
@@ -2059,21 +2059,21 @@
   },"294": {
     "doc": "Color",
     "title": "Color",
-    "description": "Using color is important and fun, but do it right.",
+    "description": "Using color is important, but avoid using it as the only visual means of conveying information.",
     "content": "Color is important to make a beautiful website, but not everyone sees colors the same way. The pages in this section inform you about the accessibility guidelines and best practices for color contrast and the use of color. ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/",
     "relUrl": "/docs/topics/design/color/"
   },"295": {
     "doc": "Styling hover and focus",
     "title": "Styling hover and focus",
-    "description": "Do not remove focus styling, be bold instead.",
+    "description": "How to style focus and hover states of interactive HTML elements.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/topics/design/focus-hover/",
     "relUrl": "/docs/topics/design/focus-hover/"
   },"296": {
     "doc": "Styling hover and focus",
     "title": "Don’t remove native :focus styling",
-    "description": "Do not remove focus styling, be bold instead.",
+    "description": "How to style focus and hover states of interactive HTML elements.",
     "content": "Most modern browsers have strong default :focus styling, making it easy for a user to tab from control to control and see clearly where they are on the page. If you remove this, it is very easy for a sighted user to get lost and abandon the page. Custom :focus states are just fine; but avoid subtlety. Focus is an undirected action – meaning that the user does not know in advance where they are going, and will need to locate focus after it moves. Strong states make this easier. ",
     "url": "/pr-preview/pr-287/docs/topics/design/focus-hover/#dont-remove-native-focus-styling",
     "relUrl": "/docs/topics/design/focus-hover/#dont-remove-native-focus-styling"
@@ -3648,28 +3648,28 @@
   },"521": {
     "doc": "Use of color",
     "title": "Using color",
-    "description": "There's a lot to consider when using color.",
+    "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": "Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example, . | error, success, or note messages | links in the content | active, hover or focus states | display information updates | . Use additional styling to indicate types of information including a change of shape or decoration. For example: . | Change symbols in addition to color | Underline links that are embedded in text | . Grouped links in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that the text is a link, underlines are not required. However, in many cases underlining can increase the usability of your website. ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/use-of-color/#using-color",
     "relUrl": "/docs/topics/design/color/use-of-color/#using-color"
   },"522": {
     "doc": "Use of color",
     "title": "Examples",
-    "description": "There's a lot to consider when using color.",
+    "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": "Correct . Underline your links, which are placed between text. Underlined links are easier to see. Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white. Incorrect . Links not underlined – color blind users may have trouble distinguish links from text. Can you see the links now? . Color used as the only indicator for information or functionality . The easiest way to check whether your website is usable for colorblind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
   },"523": {
     "doc": "Use of color",
     "title": "Resources",
-    "description": "There's a lot to consider when using color.",
+    "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": ". | Adrian Roselli: On link underlines | WebAxe: Keep the underline | . ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/use-of-color/#resources",
     "relUrl": "/docs/topics/design/color/use-of-color/#resources"
   },"524": {
     "doc": "Use of color",
     "title": "Use of color",
-    "description": "There's a lot to consider when using color.",
+    "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/use-of-color/",
     "relUrl": "/docs/topics/design/color/use-of-color/"
