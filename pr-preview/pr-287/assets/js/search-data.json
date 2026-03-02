@@ -883,77 +883,77 @@
   },"126": {
     "doc": "Design checks",
     "title": "Design checks for web accessibility",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": "The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design. Here are a few major issues to address. At the end of the page you’ll find links to good resources with more examples and solutions. ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#design-checks-for-web-accessibility",
     "relUrl": "/docs/testing/checklists/design/#design-checks-for-web-accessibility"
   },"127": {
     "doc": "Design checks",
     "title": "Color contrast",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": "Check the color contrast ratio between text and its background. The rules in WCAG 2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold. There are many tools to calculate this easily, see Color contrast checkers. Tip: Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway. ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#color-contrast",
     "relUrl": "/docs/testing/checklists/design/#color-contrast"
   },"128": {
     "doc": "Design checks",
     "title": "Color Contrast",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": ". | contrastchecker.com (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast | Color Contrast Analyser (Windows and OSX)– checks foreground/background contrast levels and preview designs as they might be seen by color blind users. | Sim Daltonism — a color blindness simulator for Mac OS X. | Colorblind Web Page Filter — apply a color blindness emulating filter to a web page. | Color Palette Accessibility Evaluator — analyze color combinations for conformance to accessibility guidelines. | . ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#color-contrast-1",
     "relUrl": "/docs/testing/checklists/design/#color-contrast-1"
   },"129": {
     "doc": "Design checks",
     "title": "Not by color alone",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": ". | Don’t depend on color for meaning – it’s fine to use color, as long as that isn’t the only identifying characteristic | Links in text must stand out as links, make them underlined | Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds; include clear text messages or icons, as well. | . Color blindness check tools: . | Look at your design only in grey scale colors, remove all color. Can you still understand it? | Sim Daltonism tool for color blindness check. | Coblis – Color Blindness Simulator | . ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#not-by-color-alone",
     "relUrl": "/docs/testing/checklists/design/#not-by-color-alone"
   },"130": {
     "doc": "Design checks",
     "title": "Not by icon alone",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": "Add text with icons, if they are an essential part of the functionality. Make sure interactive elements such as navigation menus are labelled correctly. Not every user understands the icons (hamburgers) that are obvious to you. ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#not-by-icon-alone",
     "relUrl": "/docs/testing/checklists/design/#not-by-icon-alone"
   },"131": {
     "doc": "Design checks",
     "title": "For users with dyslexia",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": ". | No large blocks of text, e.g. use short paragraphs, headings and lists to divide the information | Uppercase font is harder to read | Handwritten font is harder to read | A font size of 16 pixels minimum, is best for most devices | Make the line height not too small | . ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#for-users-with-dyslexia",
     "relUrl": "/docs/testing/checklists/design/#for-users-with-dyslexia"
   },"132": {
     "doc": "Design checks",
     "title": "For users with limited vision",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": "Keep together what belongs together: place related links or controls near each other. Some people don’t have an overview of everything that’s on a page, like people with glaucoma. Don’t make them search for a submit button that’s on the bottom right, while the input fields is on the top left, for example. Make the order of things logical, most users read from top to bottom. For example, do not put required check boxes below the submit button in a form. ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#for-users-with-limited-vision",
     "relUrl": "/docs/testing/checklists/design/#for-users-with-limited-vision"
   },"133": {
     "doc": "Design checks",
     "title": "For users with an attention disorder",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": ". | Users must be able to pause animations, or the animations must automatically stop after 3 seconds | Avoid using too many elements that distract the user from reading the text or using the navigation. | . ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#for-users-with-an-attention-disorder",
     "relUrl": "/docs/testing/checklists/design/#for-users-with-an-attention-disorder"
   },"134": {
     "doc": "Design checks",
     "title": "Resources",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": ". | Section Use of color in this handbook | Inclusive Components | Inclusive Design Patterns – Heydon Pickering | Inclusive Design Checklist – Heydon Pickering | Web Accessibility for Designers | Accessible design: a process | 7 Things Every Designer Needs to Know about Accessibility – Jesse Hausler | Tips for Getting Started Designing for Web Accessibility – W3C | Writing accessible content – Sami Keijonen | 6 Principles Of Visual Accessibility Design – Jenna Erickson | Designing for Accessibility, Step 1: Color Contrast – Neil Shankar | Accessible Design – Maja Benke (presentation) | Accessibility for everyone – Laura Kalbag (book) | WebAIM: on fonts | Pennsylvania State University: about Font Face | . ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#resources",
     "relUrl": "/docs/testing/checklists/design/#resources"
   },"135": {
     "doc": "Design checks",
     "title": "Related posts",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": ". | Test for web accessibility: introduction | Test for web accessibility: content | Test for web accessibility: frontend code (DOM) | . ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/#related-posts",
     "relUrl": "/docs/testing/checklists/design/#related-posts"
   },"136": {
     "doc": "Design checks",
     "title": "Design checks",
-    "description": "Find what design checks you can do to enhance accessibility.",
+    "description": "Learn about some design checks you can do to enhance accessibility.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/design/",
     "relUrl": "/docs/testing/checklists/design/"
