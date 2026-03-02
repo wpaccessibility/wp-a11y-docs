@@ -3039,14 +3039,14 @@
   },"434": {
     "doc": "Overall",
     "title": "Overall testing",
-    "description": "Checklists for WCAG conformance and other overall accessibility checklists.",
+    "description": "Find content, design, and frontend code checklists about accessibility.",
     "content": "Accessibility testing guide by the British Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion. Check your WCAG compliance by the A11y Project. The checks are ordered by topic. WebAIM’s WCAG 2 Checklist, a checklist that presents recommendations for implementing the most common accessibility principles and techniques for those seeking WCAG conformance. ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/overall/#overall-testing",
     "relUrl": "/docs/testing/checklists/overall/#overall-testing"
   },"435": {
     "doc": "Overall",
     "title": "Overall",
-    "description": "Checklists for WCAG conformance and other overall accessibility checklists.",
+    "description": "Find content, design, and frontend code checklists about accessibility.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/testing/checklists/overall/",
     "relUrl": "/docs/testing/checklists/overall/"
