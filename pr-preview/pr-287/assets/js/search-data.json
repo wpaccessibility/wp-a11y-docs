@@ -1569,14 +1569,14 @@
   },"224": {
     "doc": "Test for accessibility",
     "title": "Accessibility testing",
-    "description": "Find ways to test for accessibility yourself",
+    "description": "Find ways to test for accessibility yourself.",
     "content": "How to test your work and check for accessibility issues? How to test for the WCAG guidelines and for best practices? . In the pages of this section, you can find several ways to test accessibility for different topics and workflows. ",
     "url": "/pr-preview/pr-287/docs/testing/#accessibility-testing",
     "relUrl": "/docs/testing/#accessibility-testing"
   },"225": {
     "doc": "Test for accessibility",
     "title": "Test for accessibility",
-    "description": "Find ways to test for accessibility yourself",
+    "description": "Find ways to test for accessibility yourself.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/testing/",
     "relUrl": "/docs/testing/"
