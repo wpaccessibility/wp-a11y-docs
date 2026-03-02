@@ -2,7 +2,7 @@
 title: Accessible WP plugins
 layout: default
 parent: WordPress and Accessibility
-description: There are no accessible plugins in the plugin directory.
+description: Free WordPress plugins in the repository are not checked for accessibility at the moment.
 nav_order: 5
 ---
 
