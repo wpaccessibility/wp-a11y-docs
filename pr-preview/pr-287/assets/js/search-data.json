@@ -1548,21 +1548,21 @@
   },"221": {
     "doc": "Keyboard only",
     "title": "Keyboard navigation testing",
-    "description": "Learn how to test for accessibility with your keyboard only.",
+    "description": "Learn how to test for accessibility with your keyboard.",
     "content": "All functionality should work using a keyboard only. This is essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development. ",
     "url": "/pr-preview/pr-287/docs/testing/keyboard/#keyboard-navigation-testing",
     "relUrl": "/docs/testing/keyboard/#keyboard-navigation-testing"
   },"222": {
     "doc": "Keyboard only",
     "title": "How to keyboard test:",
-    "description": "Learn how to test for accessibility with your keyboard only.",
+    "description": "Learn how to test for accessibility with your keyboard.",
     "content": ". | Keyboard Accessibility by WebAIM | Workshop keyboard accessibility | . Tab through your pages, links and forms to do the following tests: . | Confirm all links can be reached and activated via keyboard, including any inside drop downs | Confirm all links have a strong visible focus indicator | Confirm all focusable visually hidden content (such as skip links) become visible when in focus. | Confirm all interactions – form fields, buttons, and other controls – can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard. | Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting. | . ",
     "url": "/pr-preview/pr-287/docs/testing/keyboard/#how-to-keyboard-test",
     "relUrl": "/docs/testing/keyboard/#how-to-keyboard-test"
   },"223": {
     "doc": "Keyboard only",
     "title": "Keyboard only",
-    "description": "Learn how to test for accessibility with your keyboard only.",
+    "description": "Learn how to test for accessibility with your keyboard.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/testing/keyboard/",
     "relUrl": "/docs/testing/keyboard/"
