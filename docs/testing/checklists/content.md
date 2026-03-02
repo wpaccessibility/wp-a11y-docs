@@ -8,7 +8,7 @@ nav_order: 3
 
 # Content checks for web accessibility
 
-This page gives an overview of practical approaches and best practices to keep your content as readable as possible for as many users as possible.
+This page gives an overview of practical approaches and best practices to keep your content readable for as many users as possible.
 
 ## Reading level
 
@@ -25,7 +25,7 @@ Resources:
 Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book:
 
 - One H1 per page, describing what the page is about
-- Use the other headings meaningful by their level and not by their font size
+- Use the other headings meaningfully by their level and not by their font size
 - A good heading describes in short the content that follows
 - Do not skip a heading level
 
