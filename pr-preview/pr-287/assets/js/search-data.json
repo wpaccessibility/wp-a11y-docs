@@ -3116,42 +3116,42 @@
   },"445": {
     "doc": "Pull requests",
     "title": "GitHub pull requests for the documentation",
-    "description": "Learn how to make a pull request for this documentation.",
+    "description": "Learn how to make a pull request to contribute to this documentation.",
     "content": "First, find the issue you want to help with on our project board WP A11y Docs in the Todo column, that is not assigned to someone else. Comment with the issues that you want to work on this, and you will be assigned to the issue. This prevents double work. ",
     "url": "/pr-preview/pr-287/docs/about/contribute/github/pull-requests/#github-pull-requests-for-the-documentation",
     "relUrl": "/docs/about/contribute/github/pull-requests/#github-pull-requests-for-the-documentation"
   },"446": {
     "doc": "Pull requests",
     "title": "How to make a good pull request",
-    "description": "Learn how to make a pull request for this documentation.",
+    "description": "Learn how to make a pull request to contribute to this documentation.",
     "content": "Describe in the title and description of the pull request what the change or addition is about and which related issue the content belongs to. All documentation files live in the /docs/ directory. For Markdown, we use the Markdown Style Guide. Please check for grammar and spelling errors before submitting the PR. ",
     "url": "/pr-preview/pr-287/docs/about/contribute/github/pull-requests/#how-to-make-a-good-pull-request",
     "relUrl": "/docs/about/contribute/github/pull-requests/#how-to-make-a-good-pull-request"
   },"447": {
     "doc": "Pull requests",
     "title": "Create a pull request from a fork on GitHub with your text.",
-    "description": "Learn how to make a pull request for this documentation.",
+    "description": "Learn how to make a pull request to contribute to this documentation.",
     "content": "GitHub offers good documentation on how to create a pull request using a fork on: Creating a pull request from a fork. ",
     "url": "/pr-preview/pr-287/docs/about/contribute/github/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text",
     "relUrl": "/docs/about/contribute/github/pull-requests/#create-a-pull-request-from-a-fork-on-github-with-your-text"
   },"448": {
     "doc": "Pull requests",
     "title": "Create a pull request from a fork using a local install",
-    "description": "Learn how to make a pull request for this documentation.",
+    "description": "Learn how to make a pull request to contribute to this documentation.",
     "content": "wpaccessibility.org is written in Jekyll, a static site generator in Ruby using markdown for content. Please read Local install of wpaccessibility.org in wp-a11y-docs/README.md. ",
     "url": "/pr-preview/pr-287/docs/about/contribute/github/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install",
     "relUrl": "/docs/about/contribute/github/pull-requests/#create-a-pull-request-from-a-fork-using-a-local-install"
   },"449": {
     "doc": "Pull requests",
     "title": "Pull Request Previews",
-    "description": "Learn how to make a pull request for this documentation.",
+    "description": "Learn how to make a pull request to contribute to this documentation.",
     "content": "When you create a pull request, a preview of your changes will be automatically deployed and a comment will be added to your PR with a link to the preview site. This allows you and reviewers to see how your changes will look before merging. Preview URLs follow the format: https://wpaccessibility.org/pr-preview/pr-{number}/. ",
     "url": "/pr-preview/pr-287/docs/about/contribute/github/pull-requests/#pull-request-previews",
     "relUrl": "/docs/about/contribute/github/pull-requests/#pull-request-previews"
   },"450": {
     "doc": "Pull requests",
     "title": "Pull requests",
-    "description": "Learn how to make a pull request for this documentation.",
+    "description": "Learn how to make a pull request to contribute to this documentation.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/about/contribute/github/pull-requests/",
     "relUrl": "/docs/about/contribute/github/pull-requests/"
