@@ -2,7 +2,7 @@
 title: Keyboard only
 layout: default
 parent: Test for accessibility
-description: Learn how to test for accessibility with your keyboard only.
+description: Learn how to test for accessibility with your keyboard.
 nav_order: 6
 ---
 
