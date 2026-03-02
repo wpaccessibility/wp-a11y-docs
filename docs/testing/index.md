@@ -2,7 +2,7 @@
 title: Test for accessibility
 layout: default
 nav_order: 4
-description: Find ways to test for accessibility yourself
+description: Find ways to test for accessibility yourself.
 ---
 
 # Accessibility testing
