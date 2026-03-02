@@ -533,21 +533,21 @@
   },"76": {
     "doc": "Color contrast of text",
     "title": "Color contrast of text against its background",
-    "description": "Learn about color contrast and how to do it right.",
+    "description": "Learn about color contrast and how to comply to accessibility guidelines.",
     "content": "Color contrast is an important issue to address for the accessibility of your website. It should be considered for foreground (text and other elements) and background colors (or images), but also between elements and hover or focus states. Color contrast should be high enough for good readability, but should not be too bright for people with sensitive eyes or cognitive problems.There are no WCAG criteria defining excessively high contrast, but very high contrast should be used selectively. The WordPress project follows the accessibility level “AA” of WCAG. This requires that the contrast between background and foreground colors has a luminosity contrast ratio of: . | 4.5:1 for normal text | 3:1 for large text (24px equivalent or 19px equivalent and bold) | . There are many tools to check color contrast ratios. WebAxe published an overview of contrast checkers. You can test color contrast with these color checkers: . | Overview of all sorts of contrast checkers | WebAIM Contrast Checker | Background Image &amp; Text Contrast Checker | . ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/color-contrast-text/#color-contrast-of-text-against-its-background",
     "relUrl": "/docs/topics/design/color/color-contrast-text/#color-contrast-of-text-against-its-background"
   },"77": {
     "doc": "Color contrast of text",
     "title": "Resources",
-    "description": "Learn about color contrast and how to do it right.",
+    "description": "Learn about color contrast and how to comply to accessibility guidelines.",
     "content": "WCAG Success Criteria for color contrast . | 1.4.3 Contrast Minimum(Level AA). | 1.4.6 Contrast (Enhanced) (Level AAA) | 1.4.11 Non-text Contrast (Level AA) | . Other resources . | Assistive Technology Experiment: High Contrast | Color Contrast And Why You Should Rethink It | WCAG Color Contrast Guideline | Color Contrast and why you should rethink it | . ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/color-contrast-text/#resources",
     "relUrl": "/docs/topics/design/color/color-contrast-text/#resources"
   },"78": {
     "doc": "Color contrast of text",
     "title": "Color contrast of text",
-    "description": "Learn about color contrast and how to do it right.",
+    "description": "Learn about color contrast and how to comply to accessibility guidelines.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/topics/design/color/color-contrast-text/",
     "relUrl": "/docs/topics/design/color/color-contrast-text/"
