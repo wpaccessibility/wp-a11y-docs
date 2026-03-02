@@ -1835,70 +1835,70 @@
   },"262": {
     "doc": "Accessible WP plugins",
     "title": "WordPress plugins and accessibility",
-    "description": "There are no accessible plugins in the plugin directory.",
+    "description": "Free WordPress plugins in the repository are not checked for accessibility at the moment.",
     "content": "There are no plugin accessibility requirements in the WordPress plugin directory. This is because of the labor required to test plugins for accessibility. However, you are strongly encouraged to consider accessibility when creating or updating your plugins. ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-plugins/#wordpress-plugins-and-accessibility",
     "relUrl": "/docs/wp-a11y/wp-plugins/#wordpress-plugins-and-accessibility"
   },"263": {
     "doc": "Accessible WP plugins",
     "title": "Accessible WP plugins",
-    "description": "There are no accessible plugins in the plugin directory.",
+    "description": "Free WordPress plugins in the repository are not checked for accessibility at the moment.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-plugins/",
     "relUrl": "/docs/wp-a11y/wp-plugins/"
   },"264": {
     "doc": "WP accessibility plugins",
     "title": "WordPress accessibility plugins",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": "There are many plugins available for WordPress that can help support accessibility. These tools work in many ways. Some are website features built in a way that’s specifically designed for accessibility, others help you create accessible content, and others help ensure that other plugins are more accessible. Alert: Note that while many plugins in the WordPress plugin repository are overlays or widgets, none of those are listed here. The WordPress Accessibility team does not recommend the usage of accessibility overlays. ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/#wordpress-accessibility-plugins",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/#wordpress-accessibility-plugins"
   },"265": {
     "doc": "WP accessibility plugins",
     "title": "Accessible Features",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": "Plugins that add a commonly used feature, but with a specific focus on accessibility. | Able Player for WordPress. Able Player is a media player that offers extensive support for accessible features such as Audio Description, speed adjustment, and interactive transcriptions. | My Calendar - Accessible Event Manager. My Calendar is a full-featured event management plugin that includes support for event and location accessibility features and has a robustly accessible interface. | . ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/#accessible-features",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/#accessible-features"
   },"266": {
     "doc": "WP accessibility plugins",
     "title": "Editing Tools",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": "Plugins that add options in the editor that help improve the accessibility of your content. | Screen Reader Text Format. Adds a block editor text control to set content as screen reader only. | . ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/#editing-tools",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/#editing-tools"
   },"267": {
     "doc": "WP accessibility plugins",
     "title": "Front-end Features",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": "Plugins that provide users with information about existing characteristics of your content. | Accessibility New Window Warnings. Automatically adds visible warnings on links that open in new tabs or windows | . ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/#front-end-features",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/#front-end-features"
   },"268": {
     "doc": "WP accessibility plugins",
     "title": "Plugin or Theme Specific Patterns",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": "Plugins that improve the accessibility of a specific theme or plugin. | Contact Form 7: Accessible defaults – generates accessible contact form defaults in Contact Form 7. | . ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/#plugin-or-theme-specific-patterns",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/#plugin-or-theme-specific-patterns"
   },"269": {
     "doc": "WP accessibility plugins",
     "title": "General Purpose",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": "Multi-purpose accessibility plugins that are not easily placed in another category, and are not primarily focused on testing. | WP Accessibility. Helps with a variety of common accessibility problems in WordPress themes. While most accessibility issues can’t be addressed without directly changing your theme, WP Accessibility adds a number of helpful accessibility features with a minimum amount of setup or expert knowledge. | . ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/#general-purpose",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/#general-purpose"
   },"270": {
     "doc": "WP accessibility plugins",
     "title": "Criteria for inclusion on this page:",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": "The plugin: . | has a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team | is not primarily dedicated to accessibility testing. Testing plugins are listed in WordPress plugins for accessibility testing. | doesn’t provide overlay functionality that cannot be fully disabled. | has an accessible admin interface | has been updated within the last year | . Do you want to add your plugin to this list? Please contact the Documentation Team or open an issue on GitHub with your request. ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/#criteria-for-inclusion-on-this-page",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/#criteria-for-inclusion-on-this-page"
   },"271": {
     "doc": "WP accessibility plugins",
     "title": "WP accessibility plugins",
-    "description": "Learn what plugins can help with improving accessibility.",
+    "description": "Learn which plugins can help with improving the accessibility of a WordPress website.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/wp-a11y/wp-a11y-plugins/",
     "relUrl": "/docs/wp-a11y/wp-a11y-plugins/"
