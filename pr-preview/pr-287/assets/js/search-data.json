@@ -2241,28 +2241,28 @@
   },"320": {
     "doc": "Heading structure",
     "title": "Heading structure in theme development",
-    "description": "How to insert headings in your content and make them accessible.",
-    "content": "Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. As sighted users, we’re accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content. Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense. ",
+    "description": "How to use headings in your content in an accessible way.",
+    "content": "Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. Sighted users are accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content. Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense. ",
     "url": "/pr-preview/pr-287/docs/topics/code/heading-structure/#heading-structure-in-theme-development",
     "relUrl": "/docs/topics/code/heading-structure/#heading-structure-in-theme-development"
   },"321": {
     "doc": "Heading structure",
     "title": "Rules of thumb for headings in theme development:",
-    "description": "How to insert headings in your content and make them accessible.",
+    "description": "How to use headings in your content in an accessible way.",
     "content": ". | One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post -, page – or archive title. | Use H2 through H6 to divide major sections of the page, such as widget areas, comment sections, or other major segments of the page. | Use headings in a logical and hierarchical structure. | . Use HTML headings to meaningfully describe the content that follows, not as a design element. A heading means “this text describes the information that follows it.” There should not be text before the heading that is part of what that heading describes, and there must be content following the heading. Note: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard. ",
     "url": "/pr-preview/pr-287/docs/topics/code/heading-structure/#rules-of-thumb-for-headings-in-theme-development",
     "relUrl": "/docs/topics/code/heading-structure/#rules-of-thumb-for-headings-in-theme-development"
   },"322": {
     "doc": "Heading structure",
     "title": "Resources",
-    "description": "How to insert headings in your content and make them accessible.",
+    "description": "How to use headings in your content in an accessible way.",
     "content": "Testing tools for headings . | WAVE | Headings map for Chrome | a11yTools Extension for Safari macOS | Tota11y | . Heading semantics . | Semantic Structure on WebAIM | The HTML5 Document Outline | Heading Tags (H1, H2, H3, P) in HTML | Computer says NO to HTML5 document outline | . Heading structure best practices . | Web Accessibility Tutorials: Headings | Web Accessibility Tutorials: Labeling Regions | Web Page Mistakes: Heading Structure – Heading Tag | Nomensa: How to structure headings for web accessibility | Using headings to improve accessibility (Drupal). Note class=”element-invisible” is in WP class=”screen-reader-text” | MRW web: H1 Headings Are Important | MRW web: Common heading-mistakes | . Heading structure in WordPress . | The Headings Hierarchy Challenge | Accessible HTML5 heading structure in WordPress | . ",
     "url": "/pr-preview/pr-287/docs/topics/code/heading-structure/#resources",
     "relUrl": "/docs/topics/code/heading-structure/#resources"
   },"323": {
     "doc": "Heading structure",
     "title": "Heading structure",
-    "description": "How to insert headings in your content and make them accessible.",
+    "description": "How to use headings in your content in an accessible way.",
     "content": " ",
     "url": "/pr-preview/pr-287/docs/topics/code/heading-structure/",
     "relUrl": "/docs/topics/code/heading-structure/"
