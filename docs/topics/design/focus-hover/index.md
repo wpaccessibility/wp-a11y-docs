@@ -2,7 +2,7 @@
 title: Styling hover and focus
 layout: default
 parent: Design & user experience
-description: Do not remove focus styling, be bold instead.
+description: How to style focus and hover states of interactive HTML elements.
 nav_order: 3
 ---
 
