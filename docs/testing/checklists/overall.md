@@ -2,7 +2,7 @@
 title: Overall
 layout: default
 parent: Checklists
-description: Checklists for WCAG conformance and other overall accessibility checklists.
+description: Find content, design, and frontend code checklists about accessibility.
 nav_order: 2
 ---
 
