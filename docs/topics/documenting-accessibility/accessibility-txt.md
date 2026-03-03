@@ -2,12 +2,13 @@
 title: accessibility.txt files
 layout: default
 parent: Documenting accessibility
+description: Learn about the accessibility.txt file in your theme or plugin.
 nav_order: 2
 ---
 
 # Accessibility.txt files
 
-An `accessibility.txt` file is a file that can be included in plugins and themes to provide information about accessibility of the plugin or theme in a standardized format.
+An `accessibility.txt` file is a file that can be included in plugins and themes to provide information about the accessibility of the plugin or theme in a standardized format.
 
 When completed thoroughly, this file helps website owners make informed decisions when choosing plugins and themes. The file is most helpful when it clearly describes accessibility audit status, testing methodology, and included accessibility features. It also provides information on reporting accessibility issues, making it easier to ensure websites remain compliant with accessibility standards over time, and developers can be notified of issues as they are identified.
 

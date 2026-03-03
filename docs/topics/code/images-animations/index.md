@@ -2,6 +2,7 @@
 title: Images and animations
 layout: default
 parent: Frontend code
+description: What is important for developers regarding images and animations?
 nav_order: 4
 ---
 
