@@ -2,16 +2,17 @@
 title: Content checks
 layout: default
 parent: Checklists
+description: Find an overview of content checks for accessibility.
 nav_order: 3
 ---
 
 # Content checks for web accessibility
 
-This page gives an overview of practical approaches and best practices for to keep your content as readable for as many users as possible.
+This page gives an overview of practical approaches and best practices to keep your content readable for as many users as possible.
 
 ## Reading level
 
-People don’t read on the internet. They scan a page for keywords and only start reading when they  find what they are looking for. That’s why it’s important to make the text scannable and easy to read.
+People don’t read on the internet. They scan a page for keywords and only start reading when they find what they are looking for. That’s why it’s important to make the text scannable and easy to read.
 
 Documentation about readability
 
@@ -24,7 +25,7 @@ Documentation about readability
 Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book:
 
 - One H1 per page, describing what the page is about
-- Use the other headings meaningful by their level and not by their font size
+- Use the other headings meaningfully by their level and not by their font size
 - A good heading describes in short the content that follows
 - Do not skip a heading level
 

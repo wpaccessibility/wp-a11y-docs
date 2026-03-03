@@ -2,6 +2,7 @@
 title: WP accessibility plugins
 layout: default
 parent: WordPress and Accessibility
+description: Learn which plugins can help with improving the accessibility of a WordPress website.
 nav_order: 3
 ---
 

@@ -2,6 +2,7 @@
 title: Design checks
 layout: default
 parent: Checklists
+description: Learn about some design checks you can do to enhance accessibility.
 nav_order: 4
 ---
 

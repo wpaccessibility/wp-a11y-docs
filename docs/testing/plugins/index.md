@@ -2,6 +2,7 @@
 title: WP plugins for testing
 layout: default
 parent: Test for accessibility
+description: Find WordPress plugins that can help you test for accessibility on your website.
 nav_order: 8
 ---
 

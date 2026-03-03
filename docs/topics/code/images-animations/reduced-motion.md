@@ -2,6 +2,7 @@
 title: Reduced motion
 layout: default
 parent: Images and animations
+description: Learn how to handle the prefers-reduced-motion CSS media feature.
 nav_order: 3
 ---
 
