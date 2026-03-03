@@ -2,6 +2,7 @@
 title: Landmarks
 layout: default
 parent: Frontend code
+description: Learn what ARIA landmarks are and how to use them.
 nav_order: 4
 ---
 

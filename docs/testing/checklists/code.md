@@ -2,6 +2,7 @@
 title: Frontend code checks
 layout: default
 parent: Checklists
+description: Learn how to perform frontend code checks for web accessibility.
 nav_order: 5
 ---
 

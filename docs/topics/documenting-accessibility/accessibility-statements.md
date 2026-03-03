@@ -2,6 +2,7 @@
 title: Accessibility statements
 layout: default
 parent: Documenting accessibility
+description: What you should include in an accessibility statement.
 nav_order: 1
 ---
 

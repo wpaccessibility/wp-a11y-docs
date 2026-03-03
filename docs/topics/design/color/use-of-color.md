@@ -2,6 +2,7 @@
 title: Use of color
 layout: default
 parent: Color
+description: Learn best practices for how to use color while also considering accessibility.
 nav_order: 3
 ---
 

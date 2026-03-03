@@ -2,6 +2,7 @@
 title: Fonts
 layout: default
 parent: Design & user experience
+description: Everything there is to know about using fonts.
 nav_order: 2
 ---
 

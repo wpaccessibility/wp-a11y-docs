@@ -2,6 +2,7 @@
 title: Overall
 layout: default
 parent: Checklists
+description: Find content, design, and frontend code checklists about accessibility.
 nav_order: 2
 ---
 
