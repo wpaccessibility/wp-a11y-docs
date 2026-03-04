@@ -2,7 +2,7 @@
 title: Focus trapping
 layout: default
 parent:  Focus handling
-nav_order: 4
+nav_order: 3
 description: Sustain focus within a responsive menu or dialog component.
 ---
 
@@ -21,6 +21,12 @@ Keep the focus while tabbing within the component:
 {: .info .callout}
 **Note**: The HTML element `<dialog>` can be dismissed by pressing the Esc key by default. More info about its accessibility on MDN: [dialog element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog).  
 
+A keyboard trap and a focus trap are two different patterns:
+- **Keyboard trap** is a WCAG violation, the keyboard user is stuck and cannot escape.
+- **Focus trap** is a feature, the keyboard focus is intentionally contained, but the user can always move away.
+
+More about the keyboard trap on: [Avoid a keyboard trap]({{site.baseurl}}/docs/topics/code/focus-handling/keyboard-trap/).
+
 ## How to test focus trapping within a component
 
 1. Open the component.
@@ -35,6 +41,8 @@ The responsive menu on [WordPress.org](https://wordpress.org/) is an example of 
 
 - After tabbing through all the links, the focus returns on the close button at the top of the menu. 
 - The menu also closes with the Escape key.
+
+The responsive menu with the WordPress [Navigation Block](https://wordpress.org/documentation/article/navigation-block/) handles the keyboard focus correctly. But always check the keyboard interaction yourself when installing this block on a site.
 
 The [Modal Dialog Example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/) on ARIA Authoring Practices Guide by the W3C gives examples of an accessible dialog which uses focus trapping.
 
