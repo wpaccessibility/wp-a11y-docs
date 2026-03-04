@@ -10,7 +10,7 @@
 
 
 
-<title>Focus on hover or change, WP Accessibility Knowledge Base</title>
+<title>On input and on hover, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-286/assets/css/styles.css">
@@ -190,11 +190,9 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/" class="nav-list-link">Focus in status messages</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/" class="nav-list-link">Focus on hover or change</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input and on hover</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
 
@@ -535,7 +533,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Focus on hover or change</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">On input and on hover</li>
     </ol>
 </nav>
 
@@ -544,7 +542,95 @@
 
         <main>
 
-          <h1 id="focus-on-hover-or-change">Focus on hover or change</h1>
+          <h1 id="predictable-behavior-on-input-and-on-hover">Predictable behavior on input and on hover</h1>
+
+<p>Give users the choice when to start an action, like open a modal or submit a form. Do not surprise them with unexpected behavior or a sudden change of context. Make functionality predictable and therefore easy to understand.</p>
+
+<p>This concerns focus and hover:</p>
+
+<ul>
+  <li>If a user gives focus to a component with the keyboard or by hovering over it with the mouse, ensure that this action doesn’t automatically trigger a context change.</li>
+  <li>When a user selects a form component or option, or fills in an input field with the keyboard or mouse, this doesn’t automatically trigger a context change.</li>
+</ul>
+
+<p>A <strong>context</strong> change unexpectedly changes the layout, information, keyboard focus, or functionality. For example, by immediately submitting a form after choosing a select option, after which the user is redirected to another page.</p>
+
+<p><strong>Context</strong> change is not the same as <strong>content</strong> change. Instantly adjusting search results, while keeping the user on the same page, is perfectly fine because it’s expected.</p>
+
+<p class="info callout"><strong>Note</strong>: When a dialog opens unexpectedly without user interaction, for example, with an advertisement or a request to sign up for a newsletter, is not a WCAG violation. But it’s still confusing for screen reader users and annoying for everyone.</p>
+
+<h2 id="how-to-test-for-behavior-on-input-and-on-hover">How to test for behavior on input and on hover</h2>
+
+<p>First, determine if there are any interactive elements on the page, such as form fields, buttons, or links. Then:</p>
+
+<ul>
+  <li>Tab through each interactive element with the keyboard, also give keyboard focus to any radio buttons and select options.</li>
+  <li>Click on interactive elements with the mouse, including any select options.</li>
+  <li>Test for unexpected behavior, such as submitting the form, shifting focus, or opening a new window or tab.</li>
+</ul>
+
+<p>Is there a form on the page?</p>
+
+<ul>
+  <li>Select/activate each form element.</li>
+  <li>If applicable: fill out a form field and then leave it (remove focus).</li>
+  <li>Test whether any unexpected behavior occurs, such as submitting the form without using the submit button, shifting focus, or opening a new window or tab.</li>
+  <li>Test this with the mouse and then with the keyboard.</li>
+</ul>
+
+<h2 id="examples">Examples</h2>
+
+<p class="callout dont"><strong>Don’t</strong>: Surprise your user by opening a dialog unexpectedly after hovering over or tabbing to a button.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> 
+        <span class="na">onfocus=</span><span class="s">"toggleDialog('dialog')"</span> 
+        <span class="na">onmousemove=</span><span class="s">"toggleDialog('dialog')"</span><span class="nt">&gt;</span>
+    On Sale!
+<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p class="callout do"><strong>Do</strong>: Give the user the choice if they want to open a dialog.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"toggleDialog('dialog')"</span><span class="nt">&gt;</span>On Sale!<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p class="callout dont"><strong>Don’t</strong>: Already submit the form after the user selects an option.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"number"</span><span class="nt">&gt;</span>Choose a number<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"number"</span> <span class="na">id=</span><span class="s">"number"</span> <span class="na">onchange=</span><span class="s">"this.form.submit();"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<p class="callout do"><strong>Do</strong>: Give the user the control over when to submit the form by adding a submit button.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"number"</span><span class="nt">&gt;</span>Choose a number<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;select</span> <span class="na">name=</span><span class="s">"number"</span> <span class="na">id=</span><span class="s">"number"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"1"</span><span class="nt">&gt;</span>One<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"2"</span><span class="nt">&gt;</span>Two<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"3"</span><span class="nt">&gt;</span>Three<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;/select&gt;</span>
+    <span class="nt">&lt;button&gt;</span>Order<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<h2 id="resources">Resources</h2>
+
+<h3 id="wcag-success-criteria-for-predictable-behavior-on-input-and-on-focus">WCAG Success Criteria for predictable behavior on input and on focus</h3>
+
+<p>Maintaining predictable behavior on input and on focus is necessary to meet the WCAG success criteria:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#on-focus">3.2.1 On Focus</a> (Level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#on-input">3.2.2 On Input</a> (Level A).</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
 
 
           
@@ -597,14 +683,6 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/"> Focus in status messages</a> Focus in status and error messages
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
                     <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Autofocus can be confusing and unwanted.
                 </p>
             </li>
@@ -615,7 +693,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/"> Keyboard trap</a> Avoid a keyboard trap.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/"> Keyboard trap</a> Make sure keyboard users are always able to navigate away from components on a web page.
                 </p>
             </li>
             

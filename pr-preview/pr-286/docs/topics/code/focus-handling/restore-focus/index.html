@@ -190,11 +190,9 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/" class="nav-list-link">Focus in status messages</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/" class="nav-list-link">Focus on hover or change</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input and on hover</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
 
@@ -544,7 +542,45 @@
 
         <main>
 
-          <h1 id="restore-focus-after-completing-a-task-or-action">Restore focus after completing a task or action</h1>
+          <h1 id="restore-the-keyboard-focus-after-completing-a-task-or-action">Restore the keyboard focus after completing a task or action</h1>
+
+<p>Make sure the keyboard focus returns to a predictable spot after completing a task or action. Like closing a modal or menu. The best place to return to is the button that triggered the action in the first place.</p>
+
+<p>One common mistake with keyboard focus handling is that the focus is lost after completing a task. Make sure the keyboard user can predict where the keyboard focus ends up.</p>
+
+<p>When that control is no longer available, put yourself in the place of a user and find the best alternative spot. Avoid that the user has to tab all the way from the top of the page to where they were before.</p>
+
+<p class="info callout">For <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog"><code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code></a> the correct focus management is handled automatically when you invoke the JavaScript method <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal"><code class="language-plaintext highlighter-rouge">showModal()</code></a>.</p>
+
+<h2 id="how-to-test-for-a-predictable-keyboard-focus">How to test for a predictable keyboard focus</h2>
+
+<ol>
+  <li>Open the component.</li>
+  <li>Close the component with the available close option.</li>
+  <li>Check if the focus returns to the button that triggered the action</li>
+  <li>Also check if the focus returns properly when the component is closed with the Escape key.</li>
+</ol>
+
+<h2 id="examples">Examples</h2>
+
+<p>The responsive menu with the WordPress <a href="https://wordpress.org/documentation/article/navigation-block/">Navigation Block</a> handles the keyboard focus correctly. But always check the keyboard interaction yourself when installing this block on a site.</p>
+
+<h2 id="resources">Resources</h2>
+
+<h3 id="wcag-success-criterion-for-predictable-keyboard-focus">WCAG Success Criterion for predictable keyboard focus</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#focus-order">2.4.3 Focus Order</a> (Level A).</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://vispero.com/resources/managing-focus-and-visible-focus-indicators-practical-accessibility-guidance-for-the-web/">Managing Focus and Visible Focus Indicators</a>, a practical Accessibility Guidance for the Web by Kirby Tucker.</li>
+  <li><a href="https://www.uxpin.com/studio/blog/restore-focus-after-modal-dialogs/">How to Restore Focus After Modal Dialogs</a> by Andrew Martin.</li>
+  <li><a href="https://www.javaspring.net/blog/how-to-set-the-focus-on-a-javascript-modal-window/">How to Set Focus on a JavaScript Modal Window</a>, Accessibility Guide for First Element Focus, on JavaSpring.</li>
+  <li><a href="https://react-refocus.mallikcheripally.com/">React Refocus</a> by Mallik Cheripally.</li>
+</ul>
 
 
           
@@ -591,14 +627,6 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/"> Focus in status messages</a> Focus in status and error messages
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
                     <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Autofocus can be confusing and unwanted.
                 </p>
             </li>
@@ -607,7 +635,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/"> Focus on hover or change</a> Focus change on hover or change can be unexpected and confusing.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/"> On input and on hover</a> Do not surprise users with unexpected behavior on focus or hover.
                 </p>
             </li>
             
@@ -615,7 +643,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/"> Keyboard trap</a> Avoid a keyboard trap.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/"> Keyboard trap</a> Make sure keyboard users are always able to navigate away from components on a web page.
                 </p>
             </li>
             

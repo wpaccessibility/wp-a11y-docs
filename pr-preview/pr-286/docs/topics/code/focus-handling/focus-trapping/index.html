@@ -190,11 +190,9 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/" class="nav-list-link">Focus in status messages</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/" class="nav-list-link">Focus on hover or change</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input and on hover</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
 
@@ -560,6 +558,14 @@
 
 <p class="info callout"><strong>Note</strong>: The HTML element <code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> can be dismissed by pressing the Esc key by default. More info about its accessibility on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">dialog element</a>.</p>
 
+<p>A keyboard trap and a focus trap are two different patterns:</p>
+<ul>
+  <li><strong>Keyboard trap</strong> is a WCAG violation, the keyboard user is stuck and cannot escape.</li>
+  <li><strong>Focus trap</strong> is a feature, the keyboard focus is intentionally contained, but the user can always move away.</li>
+</ul>
+
+<p>More about the keyboard trap on: <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/">Avoid a keyboard trap</a>.</p>
+
 <h2 id="how-to-test-focus-trapping-within-a-component">How to test focus trapping within a component</h2>
 
 <ol>
@@ -578,6 +584,8 @@
   <li>After tabbing through all the links, the focus returns on the close button at the top of the menu.</li>
   <li>The menu also closes with the Escape key.</li>
 </ul>
+
+<p>The responsive menu with the WordPress <a href="https://wordpress.org/documentation/article/navigation-block/">Navigation Block</a> handles the keyboard focus correctly. But always check the keyboard interaction yourself when installing this block on a site.</p>
 
 <p>The <a href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/">Modal Dialog Example</a> on ARIA Authoring Practices Guide by the W3C gives examples of an accessible dialog which uses focus trapping.</p>
 
@@ -647,14 +655,6 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/"> Focus in status messages</a> Focus in status and error messages
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
                     <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Autofocus can be confusing and unwanted.
                 </p>
             </li>
@@ -663,7 +663,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/"> Focus on hover or change</a> Focus change on hover or change can be unexpected and confusing.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/"> On input and on hover</a> Do not surprise users with unexpected behavior on focus or hover.
                 </p>
             </li>
             
@@ -671,7 +671,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/"> Keyboard trap</a> Avoid a keyboard trap.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/"> Keyboard trap</a> Make sure keyboard users are always able to navigate away from components on a web page.
                 </p>
             </li>
             

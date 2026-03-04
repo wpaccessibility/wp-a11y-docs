@@ -133,9 +133,6 @@
 <loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/forms/fieldsets/fieldset-descriptions/</loc>
 </url>
 <url>
-<loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/</loc>
-</url>
-<url>
 <loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/</loc>
 </url>
 <url>
@@ -334,6 +331,9 @@
 <loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/design/avoid/infinite-scroll/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/theme-guidelines/keyboard-navigation-support/</loc>
 </url>
 <url>
@@ -437,9 +437,6 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/theme-guidelines/skip-to-content/</loc>
-</url>
-<url>
-<loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//pr-preview/pr-286/docs/topics/theme-guidelines/sufficient-color-contrast/</loc>

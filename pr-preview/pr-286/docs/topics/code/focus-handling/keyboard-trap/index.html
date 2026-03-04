@@ -190,11 +190,9 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/" class="nav-list-link">Focus in status messages</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/" class="nav-list-link">Focus on hover or change</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input and on hover</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
 
@@ -546,6 +544,40 @@
 
           <h1 id="avoid-a-keyboard-trap">Avoid a keyboard trap</h1>
 
+<p>A keyboard trap is when keyboard users get stuck in a part of a page and can’t navigate out using the keyboard alone.
+Make sure keyboard are always able to navigate away from components on a web page.</p>
+
+<p>According to <a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html">Understanding SC 2.1.2: No Keyboard Trap</a>: If the keyboard focus can be moved to a component of the page using a keyboard interface, then the focus can be moved away from that component using only the keyboard.</p>
+
+<p>When you develop a custom component and the keyboard focus cannot be moved using standard keys such as escape, arrows, or tabs, then inform the user about how they can operate and leave the component by keyboard.</p>
+
+<p>A keyboard trap and a focus trap are two different patterns:</p>
+<ul>
+  <li><strong>Keyboard trap</strong> is a WCAG violation, the keyboard user is stuck and cannot escape.</li>
+  <li><strong>Focus trap</strong> is a feature, the keyboard focus is intentionally contained, but the user can always move away.</li>
+</ul>
+
+<p>More about the focus trap on: <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/">Sustain keyboard focus within a responsive menu or dialog component</a>.</p>
+
+<h2 id="how-to-test">How to test</h2>
+
+<p>How to test with a keyboard is described with <a href="/pr-preview/pr-286/docs/testing/keyboard/">Keyboard navigation testing</a> in this documentation.</p>
+
+<ul>
+  <li>Navigate the page using the keyboard.</li>
+  <li>Especially test forms, filters, modals, menus and tabular interfaces.</li>
+  <li>If you can’t navigate further or back out of the component, check for instructions on how to do so.</li>
+</ul>
+
+<h2 id="resources">Resources</h2>
+
+<h3 id="wcag-success-criteria-for-keyboard-focus">WCAG Success Criteria for keyboard focus</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard">2.1.1 Keyboard</a> (Level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus">2.1.2 No Keyboard Trap</a> (Level A).</li>
+</ul>
+
 
           
             
@@ -597,14 +629,6 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/status-messages/"> Focus in status messages</a> Focus in status and error messages
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
                     <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Autofocus can be confusing and unwanted.
                 </p>
             </li>
@@ -613,7 +637,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-on-change/"> Focus on hover or change</a> Focus change on hover or change can be unexpected and confusing.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/"> On input and on hover</a> Do not surprise users with unexpected behavior on focus or hover.
                 </p>
             </li>
             
