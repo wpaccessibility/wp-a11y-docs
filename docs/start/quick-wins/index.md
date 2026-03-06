@@ -17,7 +17,7 @@ Like:
 
 ## Seven quick accessibility wins
 
-There is a lot you can do to improve a website without digging into code. Improvements that dramatically will improve the accessibility of your website. Here's six of them.
+There is a lot you can do to improve a website without digging into code. Improvements that dramatically will improve the accessibility of your website. Here's seven of them.
 
 ### 1: Set the correct site language
 
