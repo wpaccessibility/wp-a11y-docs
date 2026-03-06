@@ -20,7 +20,8 @@
   },
   "stylelint": {
     "ignoreFiles": [
-      "assets/css/styles.scss"
+      "assets/css/styles.scss",
+      "assets/js/ableplayer.js"
     ],
     "extends": [
       "stylelint-config-standard-scss"
