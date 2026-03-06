@@ -25,7 +25,7 @@ Check if the site language is set correctly. Then screen readers know how to pro
 
 In the WordPress Admin. go to: Settings > General and look for the dropdown Site Language. Select the language of the website. 
 
-If the language is spoken in more countries, select the language and in applicable the country. For example English (United Stated) for US English, and English (UK) if the site is written in British English.
+If the language is spoken in more countries, select the language and if applicable the country. For example English (United Stated) for US English, and English (UK) if the site is written in British English.
 
 ![Screenshot of the language settings in the WordPress Admin]({{site.baseurl}}/assets/images/language-settings.png)
 
