@@ -9,12 +9,12 @@ nav_order: 4
 
 # Link destinations
 
-{: .tip }
+{: .tip .callout }
 **Rule of thumb**: Always tell a visitor what to expect when selecting a link.
 
 ## Open a link in a new window or tab?
 
-Opening a link in a new window or tab unexpectedly can disorient users. It also breaks the “back button”. The best practice is to let the user decide if she wants to open a link in a new tab or window.
+Opening a link in a new window or tab unexpectedly can disorient users. It also breaks the “back button”. The best practice is to let users decide if they want to open a link in a new tab or window.
 
 ![Screenshot of the WP Admin modal to insert or edit a link]({{site.baseurl}}/assets/images/new-tab.png)
 
