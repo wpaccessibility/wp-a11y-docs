@@ -27,20 +27,28 @@ In the WordPress Admin. go to: Settings > General and look for the dropdown Site
 
 If the language is spoken in more countries, select the language and in applicable the country. For example English (United Stated) for US English, and English (UK) if the site is written in Britisch English.
 
+![Screenshot of the language settings in the WordPress Admin]({{site.baseurl}}/assets/images/language-settings.png)
+
 ### 2: Write descriptive, unique page titles
 
 Write a descriptive, unique page titles for every page. Make sure the page title describes what the page is about. 
 
 For WordPress, add the page title in the field "Add Title" when you create a new page of post. This also will be the main heading (H1) of a page.
 
+![Screenshot adding a page title in the WordPress Admin]({{site.baseurl}}/assets/images/add-title.png)
+
 The page title is the first text that is announced by a screen reader after a page is loaded and is also shown in the tab of the browser.
 
-### 3: Use headings in a meaningful way
+![Screenshot the title in a browser tab]({{site.baseurl}}/assets/images/tab-with-title.png)
+
+### 3: Use headings in a structured way
 
 Structure content with proper heading levels (H1, H2, H3) in logical order. 
 One H1 that tells what the page is about, the rest of the headings structure the content. Do not use heading only to make text big, use them to describe the text that follows below.
 
-In WordPress, you can check if the heading structure is ok in the document outline. The button 
+In WordPress, you can check if the heading structure in the tab "Outline", after clicking the button "Document Overview" in the top bar of the editor.
+
+![Screenshot of the document outline of the page get started at a contributor day]({{site.baseurl}}/assets/images/document-outline.png)
 
 More on headings in: 
 - [Headings in the content]({{site.baseurl}}/docs/topics/content/headings/).
@@ -49,6 +57,10 @@ More on headings in:
 ### 4: Add alternative texts to images
 
 Add descriptive alternative text to all meaningful images. Screen readers will announce that alternative text, so visitors that can not see the images also know what's on it and don't miss information.
+
+In WordPress, you can add an alternative text with the attachment details of an image.
+
+![Screenshot of the attachment details of the WP A11y wapuu]({{site.baseurl}}/assets/images/attachment-details.png)
 
 More on alternative texts for images in: [Alternative text for images]({{site.baseurl}}/docs/topics/content/alt-text/).
 
@@ -68,6 +80,10 @@ More about meaningful link texts in: [Write meaningful link text]({{site.baseurl
 
 Check that text has sufficient color contrast against its background, people should be able to read your content with ease. Not everyone has perfect eyesight.
 
+In WordPress, when you set a color and or background color yourself in the editor, the software checks if the contrast meets accessibility guidelines.
+
+![Warning in the WP Editor: This color combination may be hard for people to read. Try using a brighter background color and/or a darker text color.]({{site.baseurl}}/assets/images/color-contrast-warning-editor.png)
+
 More about how to calculate and test the color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/).
 
 ### 7: Add captions to videos
@@ -75,9 +91,10 @@ More about how to calculate and test the color contrast: [Color contrast of text
 Add captions to all videos with spoken word (or lyrics for songs). That way people who are deaf or hard of hearing don't miss out on information.
 
 {: .tip .callout }
-**Fun fact**: Most users who turn on captioning or subtitles while watching a video or TV are not deaf. Like people that are not native speakers of the language in the video and need the supporting text; people who are in a noisy environment or don't want to wake their partner in bed. Source: [Survey: Why America is obsessed with subtitles](https://preply.com/en/blog/americas-subtitles-use/).
+**Fun fact**: Most users who turn on captioning or subtitles while watching a video or TV are not deaf. Like people that are not native speakers of the language in the video and need the supporting text; people who are in a noisy environment or don't want to wake their partner in bed.   
+Source: [Survey: Why America is obsessed with subtitles](https://preply.com/en/blog/americas-subtitles-use/).
 
-## Quick checks you can do right now
+## Quick check you can do right now
 
 Run your site through a free tool like the [WAVE browser extension](https://wave.webaim.org/extension/) and check for accessibility errors.
 
