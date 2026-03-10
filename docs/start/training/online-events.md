@@ -20,6 +20,6 @@ The [WordPress Accessibility Meetup](https://www.meetup.com/wordpress-accessibil
 [Inclusive Design 24](http://www.id24.org/) (#ID24) is a streamed conference featuring twenty-four hours of free accessibility content, ranging from basic accessibility to advanced topics. Almost all talks include detailed examples of how to solve a particular problem accessibly, along with general advice for designers, developers and accessibility advocates. All the talks from previous years are archived and captioned.
 
 ## Axe-con
-[Axe-con](https://www.deque.com/axe-con/), organized by Deque Systems. Two days of free multi-track sessions about digital accessibility.
+[Axe-con](https://www.deque.com/axe-con/), organized annually by Deque Systems. Two days of free, multi-track sessions covering all things digital accessibility. Topics range from accessible coding and inclusive design to WCAG compliance, assistive technologies, and accessibility testing tools.
 
 Do you know a good resource to add to this list? Please [let us know]({{site.baseurl}}/docs/about/contact/).
