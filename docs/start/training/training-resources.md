@@ -1,5 +1,5 @@
 ---
-title: Knowledge Resources
+title: Knowledge resources
 layout: default
 parent: Training
 description: Knowledge resources and newsletters on web accessibility.
