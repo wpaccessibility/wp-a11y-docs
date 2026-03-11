@@ -1,7 +1,7 @@
 ---
 title: Keyboard trap
 layout: default
-parent:  Focus handling
+parent:  Handling focus
 nav_order: 7
 description: Make sure keyboard users are always able to navigate away from components on a web page.
 ---
@@ -9,7 +9,7 @@ description: Make sure keyboard users are always able to navigate away from comp
 # Avoid a keyboard trap
 
 A keyboard trap is when keyboard users get stuck in a part of a page and can't navigate out using the keyboard alone.
-Make sure keyboard are always able to navigate away from components on a web page.
+Make sure keyboard users are always able to navigate away from components on a web page.
 
 According to [Understanding SC 2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html): If the keyboard focus can be moved to a component of the page using a keyboard interface, then the focus can be moved away from that component using only the keyboard. 
 

@@ -1,7 +1,7 @@
 ---
 title: On input and on hover
 layout: default
-parent:  Focus handling
+parent:  Handling focus
 nav_order: 6
 description: Do not surprise users with unexpected behavior on focus or hover.
 ---
@@ -20,7 +20,7 @@ A **context** change unexpectedly changes the layout, information, keyboard focu
 **Context** change is not the same as **content** change. Instantly adjusting search results, while keeping the user on the same page, is perfectly fine because it's expected.
 
 {: .info .callout}
-**Note**: When a dialog opens unexpectedly without user interaction, for example, with an advertisement or a request to sign up for a newsletter, is not a WCAG violation. But it's still confusing for screen reader users and annoying for everyone.
+**Note**: When a dialog opens unexpectedly without any user interaction, is is not a WCAG violation. For example, a popup with an advertisement or a request to sign up for a newsletter. But it's still confusing for screen reader users and annoying for everyone.
 
 ## How to test for behavior on input and on hover
 
@@ -28,7 +28,7 @@ First, determine if there are any interactive elements on the page, such as form
 
 - Tab through each interactive element with the keyboard, also give keyboard focus to any radio buttons and select options.
 - Click on interactive elements with the mouse, including any select options.
-- Test for unexpected behavior, such as submitting the form, shifting focus, or opening a new window or tab.
+- Watch for unexpected behavior, such as submitting the form, shifting focus, or opening a new window or tab.
 
 Is there a form on the page?
 
@@ -58,7 +58,7 @@ Is there a form on the page?
 ```
 
 {: .callout .dont }
-**Don't**: Already submit the form after the user selects an option.
+**Don't**: Submit the form as soon as the user selects an option.
 
 ```html
 <form>
@@ -72,7 +72,7 @@ Is there a form on the page?
 ```
 
 {: .callout .do }
-**Do**: Give the user the control over when to submit the form by adding a submit button.
+**Do**: Give the user control over when to submit the form by adding a submit button.
 
 ```html
 <form>
@@ -94,7 +94,3 @@ Maintaining predictable behavior on input and on focus is necessary to meet the 
 
 - [3.2.1 On Focus](https://www.w3.org/WAI/WCAG22/quickref/#on-focus) (Level A).
 - [3.2.2 On Input](https://www.w3.org/WAI/WCAG22/quickref/#on-input) (Level A).
-
-
-
-### Other resources

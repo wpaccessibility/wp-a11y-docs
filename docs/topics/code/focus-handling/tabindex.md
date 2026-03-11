@@ -1,7 +1,7 @@
 ---
 title: Tabindex and tab order
 layout: default
-parent:  Focus handling
+parent:  Handling focus
 nav_order: 1
 description: Make the tab order of the keyboard focus predictable and sequential.
 ---
@@ -14,9 +14,9 @@ Elements that get keyboard focus natively are `<a>` or `<area>` with a href attr
 
 ## About tabindex
 
-Avoid tabindex values greater than 0 or CSS techniques (such as reordering flex items) that alter the expected focus order of interactive elements. The order of the focusable elements in HTML is important for keyboard and screen reader users.
+Avoid tabindex values greater than 0 or CSS techniques (such as reordering flex items) that alter the expected focus order of interactive elements. The order of focusable elements in HTML is important for keyboard and screen reader users.
 
-A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source, make them appear in a logical and predictable order.
+A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source so they appear in a logical and predictable order.
 
 ### Values of tabindex and their behaviour
 
@@ -73,7 +73,7 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 ```
 
 {: .do .callout }
-**Do**: present the elements in the right order in de document source.
+**Do**: present the elements in the right order in the document source.
 
 ```html
 <ul>
@@ -93,7 +93,7 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 ```
 
 {: .callout .do }
-**Do**: leave to natural tab order of a web page intact.
+**Do**: leave the natural tab order of a web page intact.
 
 ```html
 <label for="first-name">First name</label>

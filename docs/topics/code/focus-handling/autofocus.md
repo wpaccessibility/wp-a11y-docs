@@ -1,16 +1,16 @@
 ---
 title: Autofocus
 layout: default
-parent:  Focus handling
+parent:  Handling focus
 nav_order: 5
 description: Autofocus can be confusing and unwanted.
 ---
 
 # The attribute autofocus
 
-With the attribute `autofocus` added to a focusable HTML element, the element will get automatically focus after a webpage loads. Then the natural visual and keyboard focus is overruled. This can be confusing for keyboard and screen reader users. 
+With the attribute `autofocus` added to a focusable HTML element, the element will automatically receive focus after a webpage loads. This overrides the natural order of visual and keyboard focus. This can be confusing for keyboard and screen reader users. 
 
-> The screen reader will not announce anything before the element that gets autofocus, and the sighted user on a small device will equally miss the context created by the preceding content. [MDN on autofocus](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus).
+> The screen reader will not announce anything before the element that gets autofocus, and sighted users on small devices will miss the context set by the preceding content. [MDN on autofocus](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus).
 
 Do not make decisions for your users on how to read or operate a web page. Make the visible and keyboard focus predictable and sequential.
 
@@ -34,7 +34,7 @@ The only possible accessible use for the attribute `autofocus` can be by moving 
 ```
 
 {: .callout .do }
-**Do**: leave to natural visual and keyboard focus of a web page intact.
+**Do**: leave the natural visual and keyboard focus order of a web page intact.
 
 ```html
 <label for="first-name">First name</label>

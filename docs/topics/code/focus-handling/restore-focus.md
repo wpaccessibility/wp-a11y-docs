@@ -1,18 +1,18 @@
 ---
 title: Restore focus
 layout: default
-parent:  Focus handling
+parent:  Handling focus
 nav_order: 4
 description: Restore the keyboard focus after completing a task or action.
 ---
 
 # Restore the keyboard focus after completing a task or action
 
-Make sure the keyboard focus returns to a predictable spot after completing a task or action. Like closing a modal or menu. The best place to return to is the button that triggered the action in the first place. 
+Make sure the keyboard focus returns to a predictable spot after completing a task or action (such as closing a modal or menu). The best place to return to is the button that triggered the action in the first place. 
 
 One common mistake with keyboard focus handling is that the focus is lost after completing a task. Make sure the keyboard user can predict where the keyboard focus ends up.
 
-When that control is no longer available, put yourself in the place of a user and find the best alternative spot. Avoid that the user has to tab all the way from the top of the page to where they were before.
+If the original control is no longer available (like when a dialog deletes a resource), put yourself in the place of a user and find the best alternative spot. Try to set focus near the original point of focus, so the user doesn't have to tab all the way from the top of the page to where they were before.
 
 {: .info .callout }
 For [`<dialog>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog) the correct focus management is handled automatically when you invoke the JavaScript method [`showModal()`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal).

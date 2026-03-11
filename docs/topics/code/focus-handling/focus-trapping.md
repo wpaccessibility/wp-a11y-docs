@@ -1,31 +1,31 @@
 ---
-title: Focus trapping
+title: Trapping focus
 layout: default
-parent:  Focus handling
+parent:  Handling focus
 nav_order: 3
-description: Sustain focus within a responsive menu or dialog component.
+description: Constrain focus within a responsive menu or dialog component.
 ---
 
-# Sustain keyboard focus within a responsive menu or dialog component
+# Constrain keyboard focus within a responsive menu or dialog component
 
-When moving the keyboard focus inside a component like a responsive menu or modal, make sure that the focus doesn't drop out of the modal when the user tabs further after the last focusable element. This is called **focus trapping**, and unlike a [keyboard trap]({{site.baseurl}}/docs/code/focus-handling/keyboard-trap/), it gives the user a way out.
+When moving keyboard focus inside a component like a responsive menu or modal, make sure that the focus doesn't drop out of the modal when the user tabs past the last focusable element. This is called **focus trapping**, and unlike a [keyboard trap]({{site.baseurl}}/docs/code/focus-handling/keyboard-trap/), it gives the user a way out of the component.
 
-Focus trapping is failing when a component stays open while the keyboard focus moves out of the component to the underlying content. The focus then may be invisible or unfinable to the user. 
+When focus trapping fails, the component stays open while keyboard focus moves out of the component to the underlying content. The focus location may then be invisible or unfindable to the user. 
 
 Keep the focus while tabbing within the component:
 
-- Move the keyboard focus to the first tabable element after the last focusable element.
-- Give the user a clear way out of the component by, for example, a close (X) or a confirmation button and also by using the Escape key.
-- Bonus functionality, if there is space: the component also closes when a mouse user clicks outside the component.
+- When focus leaves the last tabbable element in the component, move it to the first tabbable element in the component.
+- Give the user a clear way out of the component. For example, a close or confirmation button and also by using the Escape key.
+- Bonus functionality: the component closes when a mouse user clicks outside the component.
 
-{: .info .callout}
-**Note**: The HTML element `<dialog>` can be dismissed by pressing the Esc key by default. More info about its accessibility on MDN: [dialog element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog).  
+{: .tip .callout}
+**Tip**: The HTML element `<dialog>` can be dismissed by pressing the Esc key by default. More info about its accessibility on MDN: [dialog element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog).  
 
 A keyboard trap and a focus trap are two different patterns:
 - **Keyboard trap** is a WCAG violation, the keyboard user is stuck and cannot escape.
 - **Focus trap** is a feature, the keyboard focus is intentionally contained, but the user can always move away.
 
-More about the keyboard trap on: [Avoid a keyboard trap]({{site.baseurl}}/docs/topics/code/focus-handling/keyboard-trap/).
+More about keyboard traps: [Avoid a keyboard trap]({{site.baseurl}}/docs/topics/code/focus-handling/keyboard-trap/).
 
 ## How to test focus trapping within a component
 

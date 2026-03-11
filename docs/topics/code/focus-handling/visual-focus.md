@@ -1,14 +1,14 @@
 ---
 title: Visual focus
 layout: default
-parent:  Focus handling
+parent:  Handling focus
 nav_order: 2
-description: Make sure a keyboard focus is clearly visible while navigating through a web page.
+description: Make sure keyboard focus is clearly visible while navigating through a web page.
 ---
 
 # Visibility of the keyboard focus
 
-Make sure a keyboard user clearly sees where the focus is while navigation through a web page. Without a visible focus, it is very easy for a sighted user to get lost and abandon the page.
+Make sure a keyboard user can clearly see where the focus is while navigating through a web page. Without a visible focus indication, it is very easy for a sighted user to get lost and abandon the page.
 
 There are two ways to show an interactive HTML element has keyboard focus:
 - keep the outline of the browser intact;
@@ -26,10 +26,10 @@ The disadvantage of using the native outline is that each browser displays the o
 
 A more reliable way to add an outline is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode. 
 
-When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.
+When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.
 
 
-Provide the outline or border with:
+Provide an outline or border with:
 
 - a thickness of at least 2 [CSS pixels](https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel);
 - a color contrast ratio of at least 3:1 against adjacent colors;
@@ -38,7 +38,7 @@ Provide the outline or border with:
 {: .info .callout }
 The topic [Styling hover and focus]({{site.baseurl}}/docs/topics/design/focus-hover/), in the section Design and user experience of this documentation, also addresses the design guidelines of keyboard focus and mouse hover.
 
-## CSS :focus-within
+## CSS :focus-visible
 
 `:focus-visible` is a CSS pseudo-class that only applies focus styles when users navigate with the keyboard. Mouse users won’t see a focus outline when they click on an element.
 Read more in [MDN: focus-visible](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible).
