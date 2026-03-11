@@ -106,7 +106,7 @@
 
           <a href="/pr-preview/pr-286/docs/start/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">7 Quick wins</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
 
@@ -178,7 +178,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Focus handling</a><button class="nav-list-expander btn-reset" aria-label="Focus handling submenu" aria-expanded="false">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Handling focus</a><button class="nav-list-expander btn-reset" aria-label="Handling focus submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
@@ -186,7 +186,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/" class="nav-list-link">Visual focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Focus trapping</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Trapping focus</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
@@ -448,7 +448,9 @@
 
           <a href="/pr-preview/pr-286/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li></ul></li></ul>
+          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-286/docs/about/disclaimer/" class="nav-list-link">Disclaimer</a></li></ul></li></ul>
     
 
 </nav>
@@ -533,7 +535,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Tabindex and tab order</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Handling focus</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Tabindex and tab order</li>
     </ol>
 </nav>
 
@@ -550,9 +552,9 @@
 
 <h2 id="about-tabindex">About tabindex</h2>
 
-<p>Avoid tabindex values greater than 0 or CSS techniques (such as reordering flex items) that alter the expected focus order of interactive elements. The order of the focusable elements in HTML is important for keyboard and screen reader users.</p>
+<p>Avoid tabindex values greater than 0 or CSS techniques (such as reordering flex items) that alter the expected focus order of interactive elements. The order of focusable elements in HTML is important for keyboard and screen reader users.</p>
 
-<p>A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source, make them appear in a logical and predictable order.</p>
+<p>A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source so they appear in a logical and predictable order.</p>
 
 <h3 id="values-of-tabindex-and-their-behaviour">Values of tabindex and their behaviour</h3>
 
@@ -605,7 +607,7 @@
 <span class="nt">&lt;/ul&gt;</span>
 </code></pre></div></div>
 
-<p class="do callout"><strong>Do</strong>: present the elements in the right order in de document source.</p>
+<p class="do callout"><strong>Do</strong>: present the elements in the right order in the document source.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
     <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"some-url"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
@@ -621,7 +623,7 @@
 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">'first-name" tabindex="1" autocomplete="given-name" &gt;
 </span></code></pre></div></div>
 
-<p class="callout do"><strong>Do</strong>: leave to natural tab order of a web page intact.</p>
+<p class="callout do"><strong>Do</strong>: leave the natural tab order of a web page intact.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"first-name"</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
 <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">'first-name" autocomplete="given-name" &gt;
@@ -659,7 +661,7 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Focus handling</h2>
+        <h2>Other pages in: Handling focus</h2>
         <ul>
             
             
@@ -667,7 +669,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/"> Visual focus</a> Make sure a keyboard focus is clearly visible while navigating through a web page.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/"> Visual focus</a> Make sure keyboard focus is clearly visible while navigating through a web page.
                 </p>
             </li>
             
@@ -675,7 +677,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/"> Focus trapping</a> Sustain focus within a responsive menu or dialog component.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/"> Trapping focus</a> Constrain focus within a responsive menu or dialog component.
                 </p>
             </li>
             
@@ -716,7 +718,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Focus handling</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Handling focus</a>
             </p>
 
         
@@ -761,6 +763,8 @@
         </div>
 
       </div>
+
+      <p class="text-small"><strong>Disclaimer</strong>: This documentation is intended to help the WordPress community understand and implement accessible practices. It is not a replacement for the official Web Content Accessibility Guidelines. Please read the <a href="/pr-preview/pr-286/docs/about/disclaimer/"> full disclaimer</a>.</p>
 
       <p>
         <span aria-hidden="true">&uarr;</span>

@@ -10,7 +10,7 @@
 
 
 
-<title>Focus trapping, WP Accessibility Knowledge Base</title>
+<title>Trapping focus, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-286/assets/css/styles.css">
@@ -106,7 +106,7 @@
 
           <a href="/pr-preview/pr-286/docs/start/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">7 Quick wins</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
 
@@ -178,7 +178,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Focus handling</a><button class="nav-list-expander btn-reset" aria-label="Focus handling submenu" aria-expanded="false">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Handling focus</a><button class="nav-list-expander btn-reset" aria-label="Handling focus submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
@@ -186,7 +186,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/" class="nav-list-link">Visual focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Focus trapping</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Trapping focus</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
@@ -448,7 +448,9 @@
 
           <a href="/pr-preview/pr-286/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li></ul></li></ul>
+          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-286/docs/about/disclaimer/" class="nav-list-link">Disclaimer</a></li></ul></li></ul>
     
 
 </nav>
@@ -533,7 +535,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Focus trapping</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Handling focus</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Trapping focus</li>
     </ol>
 </nav>
 
@@ -542,21 +544,21 @@
 
         <main>
 
-          <h1 id="sustain-keyboard-focus-within-a-responsive-menu-or-dialog-component">Sustain keyboard focus within a responsive menu or dialog component</h1>
+          <h1 id="constrain-keyboard-focus-within-a-responsive-menu-or-dialog-component">Constrain keyboard focus within a responsive menu or dialog component</h1>
 
-<p>When moving the keyboard focus inside a component like a responsive menu or modal, make sure that the focus doesn’t drop out of the modal when the user tabs further after the last focusable element. This is called <strong>focus trapping</strong>, and unlike a <a href="/pr-preview/pr-286/docs/code/focus-handling/keyboard-trap/">keyboard trap</a>, it gives the user a way out.</p>
+<p>When moving keyboard focus inside a component like a responsive menu or modal, make sure that the focus doesn’t drop out of the modal when the user tabs past the last focusable element. This is called <strong>focus trapping</strong>, and unlike a <a href="/pr-preview/pr-286/docs/code/focus-handling/keyboard-trap/">keyboard trap</a>, it gives the user a way out of the component.</p>
 
-<p>Focus trapping is failing when a component stays open while the keyboard focus moves out of the component to the underlying content. The focus then may be invisible or unfinable to the user.</p>
+<p>When focus trapping fails, the component stays open while keyboard focus moves out of the component to the underlying content. The focus location may then be invisible or unfindable to the user.</p>
 
 <p>Keep the focus while tabbing within the component:</p>
 
 <ul>
-  <li>Move the keyboard focus to the first tabable element after the last focusable element.</li>
-  <li>Give the user a clear way out of the component by, for example, a close (X) or a confirmation button and also by using the Escape key.</li>
-  <li>Bonus functionality, if there is space: the component also closes when a mouse user clicks outside the component.</li>
+  <li>When focus leaves the last tabbable element in the component, move it to the first tabbable element in the component.</li>
+  <li>Give the user a clear way out of the component. For example, a close or confirmation button and also by using the Escape key.</li>
+  <li>Bonus functionality: the component closes when a mouse user clicks outside the component.</li>
 </ul>
 
-<p class="info callout"><strong>Note</strong>: The HTML element <code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> can be dismissed by pressing the Esc key by default. More info about its accessibility on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">dialog element</a>.</p>
+<p class="tip callout"><strong>Tip</strong>: The HTML element <code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> can be dismissed by pressing the Esc key by default. More info about its accessibility on MDN: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">dialog element</a>.</p>
 
 <p>A keyboard trap and a focus trap are two different patterns:</p>
 <ul>
@@ -564,7 +566,7 @@
   <li><strong>Focus trap</strong> is a feature, the keyboard focus is intentionally contained, but the user can always move away.</li>
 </ul>
 
-<p>More about the keyboard trap on: <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/">Avoid a keyboard trap</a>.</p>
+<p>More about keyboard traps: <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/">Avoid a keyboard trap</a>.</p>
 
 <h2 id="how-to-test-focus-trapping-within-a-component">How to test focus trapping within a component</h2>
 
@@ -623,7 +625,7 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Focus handling</h2>
+        <h2>Other pages in: Handling focus</h2>
         <ul>
             
             
@@ -637,7 +639,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/"> Visual focus</a> Make sure a keyboard focus is clearly visible while navigating through a web page.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/"> Visual focus</a> Make sure keyboard focus is clearly visible while navigating through a web page.
                 </p>
             </li>
             
@@ -680,7 +682,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Focus handling</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Handling focus</a>
             </p>
 
         
@@ -725,6 +727,8 @@
         </div>
 
       </div>
+
+      <p class="text-small"><strong>Disclaimer</strong>: This documentation is intended to help the WordPress community understand and implement accessible practices. It is not a replacement for the official Web Content Accessibility Guidelines. Please read the <a href="/pr-preview/pr-286/docs/about/disclaimer/"> full disclaimer</a>.</p>
 
       <p>
         <span aria-hidden="true">&uarr;</span>

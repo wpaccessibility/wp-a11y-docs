@@ -106,7 +106,7 @@
 
           <a href="/pr-preview/pr-286/docs/start/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">7 Quick wins</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
 
@@ -178,7 +178,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Focus handling</a><button class="nav-list-expander btn-reset" aria-label="Focus handling submenu" aria-expanded="false">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Handling focus</a><button class="nav-list-expander btn-reset" aria-label="Handling focus submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
@@ -186,7 +186,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/" class="nav-list-link">Visual focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Focus trapping</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Trapping focus</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
@@ -448,7 +448,9 @@
 
           <a href="/pr-preview/pr-286/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li></ul></li></ul>
+          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-286/docs/about/disclaimer/" class="nav-list-link">Disclaimer</a></li></ul></li></ul>
     
 
 </nav>
@@ -533,7 +535,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Restore focus</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Handling focus</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Restore focus</li>
     </ol>
 </nav>
 
@@ -544,11 +546,11 @@
 
           <h1 id="restore-the-keyboard-focus-after-completing-a-task-or-action">Restore the keyboard focus after completing a task or action</h1>
 
-<p>Make sure the keyboard focus returns to a predictable spot after completing a task or action. Like closing a modal or menu. The best place to return to is the button that triggered the action in the first place.</p>
+<p>Make sure the keyboard focus returns to a predictable spot after completing a task or action (such as closing a modal or menu). The best place to return to is the button that triggered the action in the first place.</p>
 
 <p>One common mistake with keyboard focus handling is that the focus is lost after completing a task. Make sure the keyboard user can predict where the keyboard focus ends up.</p>
 
-<p>When that control is no longer available, put yourself in the place of a user and find the best alternative spot. Avoid that the user has to tab all the way from the top of the page to where they were before.</p>
+<p>If the original control is no longer available (like when a dialog deletes a resource), put yourself in the place of a user and find the best alternative spot. Try to set focus near the original point of focus, so the user doesn’t have to tab all the way from the top of the page to where they were before.</p>
 
 <p class="info callout">For <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog"><code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code></a> the correct focus management is handled automatically when you invoke the JavaScript method <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal"><code class="language-plaintext highlighter-rouge">showModal()</code></a>.</p>
 
@@ -595,7 +597,7 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Focus handling</h2>
+        <h2>Other pages in: Handling focus</h2>
         <ul>
             
             
@@ -609,7 +611,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/"> Visual focus</a> Make sure a keyboard focus is clearly visible while navigating through a web page.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/"> Visual focus</a> Make sure keyboard focus is clearly visible while navigating through a web page.
                 </p>
             </li>
             
@@ -617,7 +619,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/"> Focus trapping</a> Sustain focus within a responsive menu or dialog component.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/"> Trapping focus</a> Constrain focus within a responsive menu or dialog component.
                 </p>
             </li>
             
@@ -652,7 +654,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Focus handling</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Handling focus</a>
             </p>
 
         
@@ -697,6 +699,8 @@
         </div>
 
       </div>
+
+      <p class="text-small"><strong>Disclaimer</strong>: This documentation is intended to help the WordPress community understand and implement accessible practices. It is not a replacement for the official Web Content Accessibility Guidelines. Please read the <a href="/pr-preview/pr-286/docs/about/disclaimer/"> full disclaimer</a>.</p>
 
       <p>
         <span aria-hidden="true">&uarr;</span>

@@ -106,7 +106,7 @@
 
           <a href="/pr-preview/pr-286/docs/start/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">Quick wins</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/start/quick-wins/" class="nav-list-link">7 Quick wins</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
 
@@ -178,7 +178,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Focus handling</a><button class="nav-list-expander btn-reset" aria-label="Focus handling submenu" aria-expanded="false">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/" class="nav-list-link">Handling focus</a><button class="nav-list-expander btn-reset" aria-label="Handling focus submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
@@ -186,7 +186,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/" class="nav-list-link">Visual focus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Focus trapping</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Trapping focus</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
 
@@ -448,7 +448,9 @@
 
           <a href="/pr-preview/pr-286/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li></ul></li></ul>
+          <a href="/pr-preview/pr-286/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-286/docs/about/disclaimer/" class="nav-list-link">Disclaimer</a></li></ul></li></ul>
     
 
 </nav>
@@ -533,7 +535,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Focus handling</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Visual focus</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Handling focus</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Visual focus</li>
     </ol>
 </nav>
 
@@ -544,7 +546,7 @@
 
           <h1 id="visibility-of-the-keyboard-focus">Visibility of the keyboard focus</h1>
 
-<p>Make sure a keyboard user clearly sees where the focus is while navigation through a web page. Without a visible focus, it is very easy for a sighted user to get lost and abandon the page.</p>
+<p>Make sure a keyboard user can clearly see where the focus is while navigating through a web page. Without a visible focus indication, it is very easy for a sighted user to get lost and abandon the page.</p>
 
 <p>There are two ways to show an interactive HTML element has keyboard focus:</p>
 <ul>
@@ -564,9 +566,9 @@
 
 <p>A more reliable way to add an outline is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode.</p>
 
-<p>When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.</p>
+<p>When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.</p>
 
-<p>Provide the outline or border with:</p>
+<p>Provide an outline or border with:</p>
 
 <ul>
   <li>a thickness of at least 2 <a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS_pixel">CSS pixels</a>;</li>
@@ -576,7 +578,7 @@
 
 <p class="info callout">The topic <a href="/pr-preview/pr-286/docs/topics/design/focus-hover/">Styling hover and focus</a>, in the section Design and user experience of this documentation, also addresses the design guidelines of keyboard focus and mouse hover.</p>
 
-<h2 id="css-focus-within">CSS :focus-within</h2>
+<h2 id="css-focus-visible">CSS :focus-visible</h2>
 
 <p><code class="language-plaintext highlighter-rouge">:focus-visible</code> is a CSS pseudo-class that only applies focus styles when users navigate with the keyboard. Mouse users won’t see a focus outline when they click on an element.
 Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-visible">MDN: focus-visible</a>.</p>
@@ -645,7 +647,7 @@ Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Focus handling</h2>
+        <h2>Other pages in: Handling focus</h2>
         <ul>
             
             
@@ -661,7 +663,7 @@ Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/"> Focus trapping</a> Sustain focus within a responsive menu or dialog component.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/focus-trapping/"> Trapping focus</a> Constrain focus within a responsive menu or dialog component.
                 </p>
             </li>
             
@@ -702,7 +704,7 @@ Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Focus handling</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/">Back to: Handling focus</a>
             </p>
 
         
@@ -747,6 +749,8 @@ Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
         </div>
 
       </div>
+
+      <p class="text-small"><strong>Disclaimer</strong>: This documentation is intended to help the WordPress community understand and implement accessible practices. It is not a replacement for the official Web Content Accessibility Guidelines. Please read the <a href="/pr-preview/pr-286/docs/about/disclaimer/"> full disclaimer</a>.</p>
 
       <p>
         <span aria-hidden="true">&uarr;</span>
