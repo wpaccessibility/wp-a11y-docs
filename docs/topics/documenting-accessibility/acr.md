@@ -51,4 +51,4 @@ When filling out a VPAT for a WordPress plugin or theme, it is important to note
 
 Be clear about how it was tested, including the environment, configurations, and assistive technologies used, and clearly document any assumptions, dependencies, or known limitations. This helps set accurate expectations, clarifies shared responsibility between your product and the site owner, and ensures the report is an honest, useful disclosure rather than a blanket claim of compliance.
 
-Typically ACRs are published on your website and linked to from an accessibility statement page, documentation, or an [accessibility.txt file.]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/)
+Typically ACRs are published on your website and linked to from an accessibility statement page, documentation, or an [accessibility.txt file]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/).

@@ -3,7 +3,7 @@ title: Feedback on errors
 layout: default
 parent: Web forms
 description: Use understandable, well-timed error messages and logical validation rules.
-nav_order: 9
+nav_order: 5
 ---
 
 # Feedback on form errors
