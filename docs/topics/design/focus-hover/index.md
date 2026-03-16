@@ -10,7 +10,7 @@ nav_order: 3
 
 Design interactive HTML elements so keyboard users can always clearly see which element is currently has **focus** as they tab through the page. 
 
-For mouse users a clear **hover** state, next to the pointer changing into a hand, is helpful and regarded best practice and not a WCAG requirement.
+For mouse users, a clear **hover** state, in addition to the pointer changing into a hand, is considered a helpful best practice, and not a WCAG requirement.
 
 WCAG 2.2 AA doesn’t require visual hover or focus states other than the browser defaults. But if a custom design for hover or focus state is provided, it must meet accessibility requirements.
 
