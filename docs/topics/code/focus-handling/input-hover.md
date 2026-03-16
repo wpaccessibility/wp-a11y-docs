@@ -1,12 +1,12 @@
 ---
-title: On input and on hover
+title: On input, focus and hover
 layout: default
 parent:  Handling focus
 nav_order: 6
-description: Do not surprise users with unexpected behavior on focus or hover.
+description: Do not surprise users with unexpected behavior on input, focus or hover.
 ---
 
-# Predictable behavior on input and on hover
+# Predictable behavior on input, focus and on hover
 
 Give users the choice when to start an action, like open a modal or submit a form. Do not surprise them with unexpected behavior or a sudden change of context. Make functionality predictable and therefore easy to understand.
 
@@ -26,14 +26,14 @@ A **context** change unexpectedly changes the layout, information, keyboard focu
 
 First, determine if there are any interactive elements on the page, such as form fields, buttons, or links. Then:
 
-- Tab through each interactive element with the keyboard, also give keyboard focus to any radio buttons and select options.
+- Tab through each interactive element with the keyboard and give keyboard focus to all radio buttons and select options.
 - Click on interactive elements with the mouse, including any select options.
 - Watch for unexpected behavior, such as submitting the form, shifting focus, or opening a new window or tab.
 
 Is there a form on the page?
 
 - Select/activate each form element.
-- If applicable: fill out a form field and then leave it (remove focus).
+- If applicable: fill out a form field and then leave it (remove focus). Check also if this doesn't automatically submit the form.
 - Test whether any unexpected behavior occurs, such as submitting the form without using the submit button, shifting focus, or opening a new window or tab.
 - Test this with the mouse and then with the keyboard.
 

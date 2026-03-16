@@ -13,7 +13,7 @@ Make sure keyboard users are always able to navigate away from components on a w
 
 According to [Understanding SC 2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html): If the keyboard focus can be moved to a component of the page using a keyboard interface, then the focus can be moved away from that component using only the keyboard. 
 
-When you develop a custom component and the keyboard focus cannot be moved using standard keys such as escape, arrows, or tabs, then inform the user about how they can operate and leave the component by keyboard. 
+When you develop a custom component and the keyboard focus cannot be moved using standard keys such as escape, arrows, or tabs, then inform the user about how they can operate and leave the component by keyboard. For example in a content editor where the user may need to use arrows and tabs to navigate the content.
 
 A keyboard trap and a focus trap are two different patterns:
 - **Keyboard trap** is a WCAG violation, the keyboard user is stuck and cannot escape.

@@ -11,8 +11,8 @@ description: Make sure keyboard focus is clearly visible while navigating throug
 Make sure a keyboard user can clearly see where the focus is while navigating through a web page. Without a visible focus indication, it is very easy for a sighted user to get lost and abandon the page.
 
 There are two ways to show an interactive HTML element has keyboard focus:
-- keep the outline of the browser intact;
-- design your own outline or border.
+- keep the default outline added by the browser intact;
+- design your own focus indicator.
 
 ## Keep the outline of the browser intact
 
@@ -20,11 +20,11 @@ Most modern browsers have strong default `:focus` styling, making it easy for a 
 
 This also passes WCAG Success criterion 2.4.7 Focus Visible, as explained in [Technique G149: Using user interface components that are highlighted by the user agent when they receive focus](https://www.w3.org/WAI/WCAG22/Techniques/general/G149).
 
-The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to discover in your design.
+The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to see with your design.
 
-## Design your own outline or border
+## Design your own focus indicator
 
-A more reliable way to add an outline is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode. 
+A more reliable way to add a focus indicator is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode. 
 
 When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.
 
@@ -67,7 +67,7 @@ button {
 ```
 
 {: .do .callout }
-**Do**: when you remove the outline, also add custom styling.
+**Do**: add custom styling when you remove the default outline.
 
 ```css
 button {

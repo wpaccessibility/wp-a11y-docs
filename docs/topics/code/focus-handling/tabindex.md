@@ -10,7 +10,7 @@ description: Make the tab order of the keyboard focus predictable and sequential
 
 Make the tab order of the keyboard focus predictable and sequential. Then keyboard users understand better how to navigate through menus, forms and the links and other interactive elements in a web page.
 
-Elements that get keyboard focus natively are `<a>` or `<area>` with a href attribute, `<button>`, `<iframe>`, `<input>` including checkboxes and radio buttons, `<object>`, `<select>`, `<textarea>`, and the `<summary>` element that provides summary for a `<details>` element.  You do not need to add a tabindex to these elements.
+Elements that get keyboard focus natively are `<a>` or `<area>` with a href attribute, `<button>`, `<iframe>`, `<input>` including checkboxes and radio buttons, `<object>`, `<select>`, `<textarea>`, and the `<summary>` element that provides the summary for a `<details>` element. Including elements with the [contenteditable attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable). You do not need to add a tabindex to these elements.
 
 ## About tabindex
 
@@ -18,7 +18,7 @@ Avoid tabindex values greater than 0 or CSS techniques (such as reordering flex 
 
 A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source so they appear in a logical and predictable order.
 
-### Values of tabindex and their behaviour
+### Values of tabindex and their behavior
 
 According to the MDN [HTML tabindex global attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex) (summarized):
 
@@ -54,7 +54,7 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 ```
 
 {: .do  .callout }
-**Do**: depend on the native behaviour of an HTML element.
+**Do**: depend on the native behavior of an HTML element.
 
 ```html
 <button>Click me</button>
@@ -89,7 +89,7 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 ```html
 <!-- do not copy, this is not keyboard user-friendly -->
 <label for="first-name">First name</label>
-<input id='first-name" tabindex="1" autocomplete="given-name" >
+<input id="first-name" tabindex="1" autocomplete="given-name" >
 ```
 
 {: .callout .do }
@@ -97,7 +97,7 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 
 ```html
 <label for="first-name">First name</label>
-<input id='first-name" autocomplete="given-name" >
+<input id="first-name" autocomplete="given-name">
 ```
 
 ## Resources

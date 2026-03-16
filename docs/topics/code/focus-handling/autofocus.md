@@ -3,12 +3,14 @@ title: Autofocus
 layout: default
 parent:  Handling focus
 nav_order: 5
-description: Autofocus can be confusing and unwanted.
+description: Automatically setting a focus location when a page loads can be confusing and unwanted.
 ---
 
-# The attribute autofocus
+# The attribute autofocus 
 
-With the attribute `autofocus` added to a focusable HTML element, the element will automatically receive focus after a webpage loads. This overrides the natural order of visual and keyboard focus. This can be confusing for keyboard and screen reader users. 
+With the attribute `autofocus` added to a focusable HTML element, the element will automatically receive focus after a webpage loads. Focus can be set programmatically using JS, for example by using the `focus()` method.
+
+This overrides the natural order of visual and keyboard focus and can be confusing for keyboard and screen reader users.
 
 > The screen reader will not announce anything before the element that gets autofocus, and sighted users on small devices will miss the context set by the preceding content. [MDN on autofocus](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/autofocus).
 
@@ -19,13 +21,14 @@ The only possible accessible use for the attribute `autofocus` can be by moving 
 
 ## How to test for autofocus
 
-1. Load a web page and check where the keyboard focus is.
-2. Open the inspector in the web page and search the DOM for the attribute `autofocus`.
+Load a web page and check if the keyboard and visible focus is not set to a specific element by using the `autofocus` attribute or by JavaScript. 
+
+
 
 ## Examples
 
 {: .callout .dont }
-**Don't**: add autofocus to a form field. Not everyone may want to fill out the form, maybe they want to read or access information above the form.
+**Don't**: add autofocus to a form field. Not everyone may want to fill out the form, maybe they want to user the main menu or read content above the form.
 
 ```html
 <!-- do not copy, this is not accessible and user-friendly -->
@@ -38,7 +41,7 @@ The only possible accessible use for the attribute `autofocus` can be by moving 
 
 ```html
 <label for="first-name">First name</label>
-<input id='first-name" autocomplete="given-name" >
+<input id="first-name" autocomplete="given-name" >
 ```
 
 ## Resources
