@@ -10,7 +10,7 @@
 
 
 
-<title>On input and on hover, WP Accessibility Knowledge Base</title>
+<title>On input, focus and hover, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-286/assets/css/styles.css">
@@ -192,7 +192,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input and on hover</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input, focus and hover</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
 
@@ -535,7 +535,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Handling focus</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">On input and on hover</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-286/docs/topics/code/focus-handling/'>Handling focus</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">On input, focus and hover</li>
     </ol>
 </nav>
 
@@ -544,7 +544,7 @@
 
         <main>
 
-          <h1 id="predictable-behavior-on-input-and-on-hover">Predictable behavior on input and on hover</h1>
+          <h1 id="predictable-behavior-on-input-focus-and-on-hover">Predictable behavior on input, focus and on hover</h1>
 
 <p>Give users the choice when to start an action, like open a modal or submit a form. Do not surprise them with unexpected behavior or a sudden change of context. Make functionality predictable and therefore easy to understand.</p>
 
@@ -566,7 +566,7 @@
 <p>First, determine if there are any interactive elements on the page, such as form fields, buttons, or links. Then:</p>
 
 <ul>
-  <li>Tab through each interactive element with the keyboard, also give keyboard focus to any radio buttons and select options.</li>
+  <li>Tab through each interactive element with the keyboard and give keyboard focus to all radio buttons and select options.</li>
   <li>Click on interactive elements with the mouse, including any select options.</li>
   <li>Watch for unexpected behavior, such as submitting the form, shifting focus, or opening a new window or tab.</li>
 </ul>
@@ -575,7 +575,7 @@
 
 <ul>
   <li>Select/activate each form element.</li>
-  <li>If applicable: fill out a form field and then leave it (remove focus).</li>
+  <li>If applicable: fill out a form field and then leave it (remove focus). Check also if this doesn’t automatically submit the form.</li>
   <li>Test whether any unexpected behavior occurs, such as submitting the form without using the submit button, shifting focus, or opening a new window or tab.</li>
   <li>Test this with the mouse and then with the keyboard.</li>
 </ul>
@@ -683,7 +683,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Autofocus can be confusing and unwanted.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Automatically setting a focus location when a page loads can be confusing and unwanted.
                 </p>
             </li>
             

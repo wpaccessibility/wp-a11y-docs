@@ -192,7 +192,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input and on hover</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input, focus and hover</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
 
@@ -550,8 +550,8 @@
 
 <p>There are two ways to show an interactive HTML element has keyboard focus:</p>
 <ul>
-  <li>keep the outline of the browser intact;</li>
-  <li>design your own outline or border.</li>
+  <li>keep the default outline added by the browser intact;</li>
+  <li>design your own focus indicator.</li>
 </ul>
 
 <h2 id="keep-the-outline-of-the-browser-intact">Keep the outline of the browser intact</h2>
@@ -560,11 +560,11 @@
 
 <p>This also passes WCAG Success criterion 2.4.7 Focus Visible, as explained in <a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G149">Technique G149: Using user interface components that are highlighted by the user agent when they receive focus</a>.</p>
 
-<p>The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to discover in your design.</p>
+<p>The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to see with your design.</p>
 
-<h2 id="design-your-own-outline-or-border">Design your own outline or border</h2>
+<h2 id="design-your-own-focus-indicator">Design your own focus indicator</h2>
 
-<p>A more reliable way to add an outline is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode.</p>
+<p>A more reliable way to add a focus indicator is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode.</p>
 
 <p>When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.</p>
 
@@ -603,7 +603,7 @@ Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p class="do callout"><strong>Do</strong>: when you remove the outline, also add custom styling.</p>
+<p class="do callout"><strong>Do</strong>: add custom styling when you remove the default outline.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">button</span> <span class="p">{</span>
  <span class="nl">outline</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
@@ -679,7 +679,7 @@ Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Autofocus can be confusing and unwanted.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Automatically setting a focus location when a page loads can be confusing and unwanted.
                 </p>
             </li>
             
@@ -687,7 +687,7 @@ Read more in <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/"> On input and on hover</a> Do not surprise users with unexpected behavior on focus or hover.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/"> On input, focus and hover</a> Do not surprise users with unexpected behavior on input, focus or hover.
                 </p>
             </li>
             

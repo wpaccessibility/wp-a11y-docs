@@ -358,35 +358,35 @@
   },"51": {
     "doc": "Autofocus",
     "title": "The attribute autofocus",
-    "description": "Autofocus can be confusing and unwanted.",
-    "content": "With the attribute autofocus added to a focusable HTML element, the element will automatically receive focus after a webpage loads. This overrides the natural order of visual and keyboard focus. This can be confusing for keyboard and screen reader users. The screen reader will not announce anything before the element that gets autofocus, and sighted users on small devices will miss the context set by the preceding content. MDN on autofocus. Do not make decisions for your users on how to read or operate a web page. Make the visible and keyboard focus predictable and sequential. The only possible accessible use for the attribute autofocus can be by moving the focus after opening a &lt;dialog&gt;. ",
+    "description": "Automatically setting a focus location when a page loads can be confusing and unwanted.",
+    "content": "With the attribute autofocus added to a focusable HTML element, the element will automatically receive focus after a webpage loads. Focus can be set programmatically using JS, for example by using the focus() method. This overrides the natural order of visual and keyboard focus and can be confusing for keyboard and screen reader users. The screen reader will not announce anything before the element that gets autofocus, and sighted users on small devices will miss the context set by the preceding content. MDN on autofocus. Do not make decisions for your users on how to read or operate a web page. Make the visible and keyboard focus predictable and sequential. The only possible accessible use for the attribute autofocus can be by moving the focus after opening a &lt;dialog&gt;. ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/#the-attribute-autofocus",
     "relUrl": "/docs/topics/code/focus-handling/autofocus/#the-attribute-autofocus"
   },"52": {
     "doc": "Autofocus",
     "title": "How to test for autofocus",
-    "description": "Autofocus can be confusing and unwanted.",
-    "content": ". | Load a web page and check where the keyboard focus is. | Open the inspector in the web page and search the DOM for the attribute autofocus. | . ",
+    "description": "Automatically setting a focus location when a page loads can be confusing and unwanted.",
+    "content": "Load a web page and check if the keyboard and visible focus is not set to a specific element by using the autofocus attribute or by JavaScript. ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/#how-to-test-for-autofocus",
     "relUrl": "/docs/topics/code/focus-handling/autofocus/#how-to-test-for-autofocus"
   },"53": {
     "doc": "Autofocus",
     "title": "Examples",
-    "description": "Autofocus can be confusing and unwanted.",
-    "content": "Don’t: add autofocus to a form field. Not everyone may want to fill out the form, maybe they want to read or access information above the form. &lt;!-- do not copy, this is not accessible and user-friendly --&gt; &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id='first-name\" autofocus autocomplete=\"given-name\" &gt; . Do: leave the natural visual and keyboard focus order of a web page intact. &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id='first-name\" autocomplete=\"given-name\" &gt; . ",
+    "description": "Automatically setting a focus location when a page loads can be confusing and unwanted.",
+    "content": "Don’t: add autofocus to a form field. Not everyone may want to fill out the form, maybe they want to user the main menu or read content above the form. &lt;!-- do not copy, this is not accessible and user-friendly --&gt; &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id='first-name\" autofocus autocomplete=\"given-name\" &gt; . Do: leave the natural visual and keyboard focus order of a web page intact. &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id=\"first-name\" autocomplete=\"given-name\" &gt; . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/#examples",
     "relUrl": "/docs/topics/code/focus-handling/autofocus/#examples"
   },"54": {
     "doc": "Autofocus",
     "title": "Resources",
-    "description": "Autofocus can be confusing and unwanted.",
+    "description": "Automatically setting a focus location when a page loads can be confusing and unwanted.",
     "content": "WCAG Success Criteria for focus order . Maintaining a meaningful and predictable focus order is necessary to meet the WCAG success criteria: . | 1.3.2 Meaningful Sequence (Level A). | 2.4.3 Focus Order (Level A). | . Other resources . | Source Order Matters by Adrian Roselli. | HTML autofocus global attribute by the MDN. | Keyboard Accessibility Tabindex on WebAIM | . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/#resources",
     "relUrl": "/docs/topics/code/focus-handling/autofocus/#resources"
   },"55": {
     "doc": "Autofocus",
     "title": "Autofocus",
-    "description": "Autofocus can be confusing and unwanted.",
+    "description": "Automatically setting a focus location when a page loads can be confusing and unwanted.",
     "content": " ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/",
     "relUrl": "/docs/topics/code/focus-handling/autofocus/"
@@ -2612,14 +2612,14 @@
   },"373": {
     "doc": "Handling focus",
     "title": "Handling visual and keyboard focus",
-    "description": "Make the keyboard focus visible, predictable and meaningful.",
-    "content": "How to create the best experience for users when navigate a web page? Keyboard users rely on keyboard focus to interact with the interactive elements on a web page. Make that focus visible, predictable and meaningful. ",
+    "description": "Make the keyboard focus visible, predictable, and meaningful.",
+    "content": "How to create the best experience for users when navigate a web page? Keyboard users rely on keyboard focus to interact with the interactive elements on a web page. Make that focus visible, predictable, and meaningful. ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/#handling-visual-and-keyboard-focus",
     "relUrl": "/docs/topics/code/focus-handling/#handling-visual-and-keyboard-focus"
   },"374": {
     "doc": "Handling focus",
     "title": "Handling focus",
-    "description": "Make the keyboard focus visible, predictable and meaningful.",
+    "description": "Make the keyboard focus visible, predictable, and meaningful.",
     "content": " ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/",
     "relUrl": "/docs/topics/code/focus-handling/"
@@ -2806,37 +2806,37 @@
     "url": "/pr-preview/pr-286/docs/topics/design/avoid/infinite-scroll/",
     "relUrl": "/docs/topics/design/avoid/infinite-scroll/"
   },"401": {
-    "doc": "On input and on hover",
-    "title": "Predictable behavior on input and on hover",
-    "description": "Do not surprise users with unexpected behavior on focus or hover.",
+    "doc": "On input, focus and hover",
+    "title": "Predictable behavior on input, focus and on hover",
+    "description": "Do not surprise users with unexpected behavior on input, focus or hover.",
     "content": "Give users the choice when to start an action, like open a modal or submit a form. Do not surprise them with unexpected behavior or a sudden change of context. Make functionality predictable and therefore easy to understand. This concerns focus and hover: . | If a user gives focus to a component with the keyboard or by hovering over it with the mouse, ensure that this action doesn’t automatically trigger a context change. | When a user selects a form component or option, or fills in an input field with the keyboard or mouse, this doesn’t automatically trigger a context change. | . A context change unexpectedly changes the layout, information, keyboard focus, or functionality. For example, by immediately submitting a form after choosing a select option, after which the user is redirected to another page. Context change is not the same as content change. Instantly adjusting search results, while keeping the user on the same page, is perfectly fine because it’s expected. Note: When a dialog opens unexpectedly without any user interaction, is is not a WCAG violation. For example, a popup with an advertisement or a request to sign up for a newsletter. But it’s still confusing for screen reader users and annoying for everyone. ",
-    "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/#predictable-behavior-on-input-and-on-hover",
-    "relUrl": "/docs/topics/code/focus-handling/input-hover/#predictable-behavior-on-input-and-on-hover"
+    "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/#predictable-behavior-on-input-focus-and-on-hover",
+    "relUrl": "/docs/topics/code/focus-handling/input-hover/#predictable-behavior-on-input-focus-and-on-hover"
   },"402": {
-    "doc": "On input and on hover",
+    "doc": "On input, focus and hover",
     "title": "How to test for behavior on input and on hover",
-    "description": "Do not surprise users with unexpected behavior on focus or hover.",
-    "content": "First, determine if there are any interactive elements on the page, such as form fields, buttons, or links. Then: . | Tab through each interactive element with the keyboard, also give keyboard focus to any radio buttons and select options. | Click on interactive elements with the mouse, including any select options. | Watch for unexpected behavior, such as submitting the form, shifting focus, or opening a new window or tab. | . Is there a form on the page? . | Select/activate each form element. | If applicable: fill out a form field and then leave it (remove focus). | Test whether any unexpected behavior occurs, such as submitting the form without using the submit button, shifting focus, or opening a new window or tab. | Test this with the mouse and then with the keyboard. | . ",
+    "description": "Do not surprise users with unexpected behavior on input, focus or hover.",
+    "content": "First, determine if there are any interactive elements on the page, such as form fields, buttons, or links. Then: . | Tab through each interactive element with the keyboard and give keyboard focus to all radio buttons and select options. | Click on interactive elements with the mouse, including any select options. | Watch for unexpected behavior, such as submitting the form, shifting focus, or opening a new window or tab. | . Is there a form on the page? . | Select/activate each form element. | If applicable: fill out a form field and then leave it (remove focus). Check also if this doesn’t automatically submit the form. | Test whether any unexpected behavior occurs, such as submitting the form without using the submit button, shifting focus, or opening a new window or tab. | Test this with the mouse and then with the keyboard. | . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/#how-to-test-for-behavior-on-input-and-on-hover",
     "relUrl": "/docs/topics/code/focus-handling/input-hover/#how-to-test-for-behavior-on-input-and-on-hover"
   },"403": {
-    "doc": "On input and on hover",
+    "doc": "On input, focus and hover",
     "title": "Examples",
-    "description": "Do not surprise users with unexpected behavior on focus or hover.",
+    "description": "Do not surprise users with unexpected behavior on input, focus or hover.",
     "content": "Don’t: Surprise your user by opening a dialog unexpectedly after hovering over or tabbing to a button. &lt;button onfocus=\"toggleDialog('dialog')\" onmousemove=\"toggleDialog('dialog')\"&gt; On Sale! &lt;/button&gt; . Do: Give the user the choice if they want to open a dialog. &lt;button onclick=\"toggleDialog('dialog')\"&gt;On Sale!&lt;/button&gt; . Don’t: Submit the form as soon as the user selects an option. &lt;form&gt; &lt;label for=\"number\"&gt;Choose a number&lt;/label&gt; &lt;select name=\"number\" id=\"number\" onchange=\"this.form.submit();\"&gt; &lt;option value=\"1\"&gt;One&lt;/option&gt; &lt;option value=\"2\"&gt;Two&lt;/option&gt; &lt;option value=\"3\"&gt;Three&lt;/option&gt; &lt;/select&gt; &lt;/form&gt; . Do: Give the user control over when to submit the form by adding a submit button. &lt;form&gt; &lt;label for=\"number\"&gt;Choose a number&lt;/label&gt; &lt;select name=\"number\" id=\"number\"&gt; &lt;option value=\"1\"&gt;One&lt;/option&gt; &lt;option value=\"2\"&gt;Two&lt;/option&gt; &lt;option value=\"3\"&gt;Three&lt;/option&gt; &lt;/select&gt; &lt;button&gt;Order&lt;/button&gt; &lt;/form&gt; . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/#examples",
     "relUrl": "/docs/topics/code/focus-handling/input-hover/#examples"
   },"404": {
-    "doc": "On input and on hover",
+    "doc": "On input, focus and hover",
     "title": "Resources",
-    "description": "Do not surprise users with unexpected behavior on focus or hover.",
+    "description": "Do not surprise users with unexpected behavior on input, focus or hover.",
     "content": "WCAG Success Criteria for predictable behavior on input and on focus . Maintaining predictable behavior on input and on focus is necessary to meet the WCAG success criteria: . | 3.2.1 On Focus (Level A). | 3.2.2 On Input (Level A). | . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/#resources",
     "relUrl": "/docs/topics/code/focus-handling/input-hover/#resources"
   },"405": {
-    "doc": "On input and on hover",
-    "title": "On input and on hover",
-    "description": "Do not surprise users with unexpected behavior on focus or hover.",
+    "doc": "On input, focus and hover",
+    "title": "On input, focus and hover",
+    "description": "Do not surprise users with unexpected behavior on input, focus or hover.",
     "content": " ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/",
     "relUrl": "/docs/topics/code/focus-handling/input-hover/"
@@ -2872,7 +2872,7 @@
     "doc": "Keyboard trap",
     "title": "Avoid a keyboard trap",
     "description": "Make sure keyboard users are always able to navigate away from components on a web page.",
-    "content": "A keyboard trap is when keyboard users get stuck in a part of a page and can’t navigate out using the keyboard alone. Make sure keyboard users are always able to navigate away from components on a web page. According to Understanding SC 2.1.2: No Keyboard Trap: If the keyboard focus can be moved to a component of the page using a keyboard interface, then the focus can be moved away from that component using only the keyboard. When you develop a custom component and the keyboard focus cannot be moved using standard keys such as escape, arrows, or tabs, then inform the user about how they can operate and leave the component by keyboard. A keyboard trap and a focus trap are two different patterns: . | Keyboard trap is a WCAG violation, the keyboard user is stuck and cannot escape. | Focus trap is a feature, the keyboard focus is intentionally contained, but the user can always move away. | . More about the focus trap on: Sustain keyboard focus within a responsive menu or dialog component. ",
+    "content": "A keyboard trap is when keyboard users get stuck in a part of a page and can’t navigate out using the keyboard alone. Make sure keyboard users are always able to navigate away from components on a web page. According to Understanding SC 2.1.2: No Keyboard Trap: If the keyboard focus can be moved to a component of the page using a keyboard interface, then the focus can be moved away from that component using only the keyboard. When you develop a custom component and the keyboard focus cannot be moved using standard keys such as escape, arrows, or tabs, then inform the user about how they can operate and leave the component by keyboard. For example in a content editor where the user may need to use arrows and tabs to navigate the content. A keyboard trap and a focus trap are two different patterns: . | Keyboard trap is a WCAG violation, the keyboard user is stuck and cannot escape. | Focus trap is a feature, the keyboard focus is intentionally contained, but the user can always move away. | . More about the focus trap on: Sustain keyboard focus within a responsive menu or dialog component. ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/#avoid-a-keyboard-trap",
     "relUrl": "/docs/topics/code/focus-handling/keyboard-trap/#avoid-a-keyboard-trap"
   },"411": {
@@ -3768,14 +3768,14 @@
     "doc": "Tabindex and tab order",
     "title": "Tabindex and tab order",
     "description": "Make the tab order of the keyboard focus predictable and sequential.",
-    "content": "Make the tab order of the keyboard focus predictable and sequential. Then keyboard users understand better how to navigate through menus, forms and the links and other interactive elements in a web page. Elements that get keyboard focus natively are &lt;a&gt; or &lt;area&gt; with a href attribute, &lt;button&gt;, &lt;iframe&gt;, &lt;input&gt; including checkboxes and radio buttons, &lt;object&gt;, &lt;select&gt;, &lt;textarea&gt;, and the &lt;summary&gt; element that provides summary for a &lt;details&gt; element. You do not need to add a tabindex to these elements. ",
+    "content": "Make the tab order of the keyboard focus predictable and sequential. Then keyboard users understand better how to navigate through menus, forms and the links and other interactive elements in a web page. Elements that get keyboard focus natively are &lt;a&gt; or &lt;area&gt; with a href attribute, &lt;button&gt;, &lt;iframe&gt;, &lt;input&gt; including checkboxes and radio buttons, &lt;object&gt;, &lt;select&gt;, &lt;textarea&gt;, and the &lt;summary&gt; element that provides the summary for a &lt;details&gt; element. Including elements with the contenteditable attribute. You do not need to add a tabindex to these elements. ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/tabindex/",
     "relUrl": "/docs/topics/code/focus-handling/tabindex/"
   },"539": {
     "doc": "Tabindex and tab order",
     "title": "About tabindex",
     "description": "Make the tab order of the keyboard focus predictable and sequential.",
-    "content": "Avoid tabindex values greater than 0 or CSS techniques (such as reordering flex items) that alter the expected focus order of interactive elements. The order of focusable elements in HTML is important for keyboard and screen reader users. A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source so they appear in a logical and predictable order. Values of tabindex and their behaviour . According to the MDN HTML tabindex global attribute (summarized): . | A negative value, usually tabindex=\"-1\", means that the element is not reachable via sequential keyboard navigation. But the element can be focused with JavaScript (by calling the focus() method). | tabindex=\"0\" means that the element should be focusable in sequential keyboard navigation, after any positive tabindex values. The focus navigation order of these elements is defined by their order in the document source. | A positive value means the element should be focusable in sequential keyboard navigation, with its order defined by the value of the number. | . ",
+    "content": "Avoid tabindex values greater than 0 or CSS techniques (such as reordering flex items) that alter the expected focus order of interactive elements. The order of focusable elements in HTML is important for keyboard and screen reader users. A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source so they appear in a logical and predictable order. Values of tabindex and their behavior . According to the MDN HTML tabindex global attribute (summarized): . | A negative value, usually tabindex=\"-1\", means that the element is not reachable via sequential keyboard navigation. But the element can be focused with JavaScript (by calling the focus() method). | tabindex=\"0\" means that the element should be focusable in sequential keyboard navigation, after any positive tabindex values. The focus navigation order of these elements is defined by their order in the document source. | A positive value means the element should be focusable in sequential keyboard navigation, with its order defined by the value of the number. | . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/tabindex/#about-tabindex",
     "relUrl": "/docs/topics/code/focus-handling/tabindex/#about-tabindex"
   },"540": {
@@ -3789,7 +3789,7 @@
     "doc": "Tabindex and tab order",
     "title": "Examples",
     "description": "Make the tab order of the keyboard focus predictable and sequential.",
-    "content": "Don’t: add a tabindex to an element that has already native keyboard focus. &lt;!-- No not copy, this is incorrect code --&gt; &lt;button tabindex=\"0\"&gt;Click me&lt;/button&gt; . Don’t: add tabindex=\"-1\" to a focusable element. Keyboard users can not access that element, only mouse users can. &lt;!-- No not copy, this is incorrect code --&gt; &lt;button tabindex=\"-1\"&gt;Click me&lt;/button&gt; . Do: depend on the native behaviour of an HTML element. &lt;button&gt;Click me&lt;/button&gt; . Don’t: decide the tab order for your user. &lt;!-- No not copy, this is user unfriendly code --&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;About us&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;Services&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\" tabindex=\"1\"&gt;Contact&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; . Do: present the elements in the right order in the document source. &lt;ul&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;Contact&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;About us&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;Services&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; . Don’t: add a positive tabindex to a form field. Not everyone may want to fill out the form, more about this with Avoid using a positive tabindex on a form field in this documentation. &lt;!-- do not copy, this is not keyboard user-friendly --&gt; &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id='first-name\" tabindex=\"1\" autocomplete=\"given-name\" &gt; . Do: leave the natural tab order of a web page intact. &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id='first-name\" autocomplete=\"given-name\" &gt; . ",
+    "content": "Don’t: add a tabindex to an element that has already native keyboard focus. &lt;!-- No not copy, this is incorrect code --&gt; &lt;button tabindex=\"0\"&gt;Click me&lt;/button&gt; . Don’t: add tabindex=\"-1\" to a focusable element. Keyboard users can not access that element, only mouse users can. &lt;!-- No not copy, this is incorrect code --&gt; &lt;button tabindex=\"-1\"&gt;Click me&lt;/button&gt; . Do: depend on the native behavior of an HTML element. &lt;button&gt;Click me&lt;/button&gt; . Don’t: decide the tab order for your user. &lt;!-- No not copy, this is user unfriendly code --&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;About us&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;Services&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\" tabindex=\"1\"&gt;Contact&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; . Do: present the elements in the right order in the document source. &lt;ul&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;Contact&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;About us&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=\"some-url\"&gt;Services&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; . Don’t: add a positive tabindex to a form field. Not everyone may want to fill out the form, more about this with Avoid using a positive tabindex on a form field in this documentation. &lt;!-- do not copy, this is not keyboard user-friendly --&gt; &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id=\"first-name\" tabindex=\"1\" autocomplete=\"given-name\" &gt; . Do: leave the natural tab order of a web page intact. &lt;label for=\"first-name\"&gt;First name&lt;/label&gt; &lt;input id=\"first-name\" autocomplete=\"given-name\"&gt; . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/tabindex/#examples",
     "relUrl": "/docs/topics/code/focus-handling/tabindex/#examples"
   },"542": {
@@ -3985,23 +3985,23 @@
     "doc": "Visual focus",
     "title": "Visibility of the keyboard focus",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
-    "content": "Make sure a keyboard user can clearly see where the focus is while navigating through a web page. Without a visible focus indication, it is very easy for a sighted user to get lost and abandon the page. There are two ways to show an interactive HTML element has keyboard focus: . | keep the outline of the browser intact; | design your own outline or border. | . ",
+    "content": "Make sure a keyboard user can clearly see where the focus is while navigating through a web page. Without a visible focus indication, it is very easy for a sighted user to get lost and abandon the page. There are two ways to show an interactive HTML element has keyboard focus: . | keep the default outline added by the browser intact; | design your own focus indicator. | . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/#visibility-of-the-keyboard-focus",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#visibility-of-the-keyboard-focus"
   },"570": {
     "doc": "Visual focus",
     "title": "Keep the outline of the browser intact",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
-    "content": "Most modern browsers have strong default :focus styling, making it easy for a user to tab from control to control and see clearly where they are on the page. The advantage of keeping that outline is that you don’t have to do anything. The browser handles it all. This also passes WCAG Success criterion 2.4.7 Focus Visible, as explained in Technique G149: Using user interface components that are highlighted by the user agent when they receive focus. The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to discover in your design. ",
+    "content": "Most modern browsers have strong default :focus styling, making it easy for a user to tab from control to control and see clearly where they are on the page. The advantage of keeping that outline is that you don’t have to do anything. The browser handles it all. This also passes WCAG Success criterion 2.4.7 Focus Visible, as explained in Technique G149: Using user interface components that are highlighted by the user agent when they receive focus. The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to see with your design. ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/#keep-the-outline-of-the-browser-intact",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#keep-the-outline-of-the-browser-intact"
   },"571": {
     "doc": "Visual focus",
-    "title": "Design your own outline or border",
+    "title": "Design your own focus indicator",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
-    "content": "A more reliable way to add an outline is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode. When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color. Provide an outline or border with: . | a thickness of at least 2 CSS pixels; | a color contrast ratio of at least 3:1 against adjacent colors; | a color contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states. | . The topic Styling hover and focus, in the section Design and user experience of this documentation, also addresses the design guidelines of keyboard focus and mouse hover. ",
-    "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/#design-your-own-outline-or-border",
-    "relUrl": "/docs/topics/code/focus-handling/visual-focus/#design-your-own-outline-or-border"
+    "content": "A more reliable way to add a focus indicator is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode. When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color. Provide an outline or border with: . | a thickness of at least 2 CSS pixels; | a color contrast ratio of at least 3:1 against adjacent colors; | a color contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states. | . The topic Styling hover and focus, in the section Design and user experience of this documentation, also addresses the design guidelines of keyboard focus and mouse hover. ",
+    "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/#design-your-own-focus-indicator",
+    "relUrl": "/docs/topics/code/focus-handling/visual-focus/#design-your-own-focus-indicator"
   },"572": {
     "doc": "Visual focus",
     "title": "CSS :focus-visible",
@@ -4020,7 +4020,7 @@
     "doc": "Visual focus",
     "title": "Examples",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
-    "content": "Don’t: remove the outline without adding custom styling. button { outline: 0; } . Do: when you remove the outline, also add custom styling. button { outline: 0; } button:focus-visible { border: 2px solid #757575; } . ",
+    "content": "Don’t: remove the outline without adding custom styling. button { outline: 0; } . Do: add custom styling when you remove the default outline. button { outline: 0; } button:focus-visible { border: 2px solid #757575; } . ",
     "url": "/pr-preview/pr-286/docs/topics/code/focus-handling/visual-focus/#examples",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#examples"
   },"575": {

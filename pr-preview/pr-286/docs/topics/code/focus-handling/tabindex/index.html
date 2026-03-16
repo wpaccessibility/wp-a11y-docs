@@ -192,7 +192,7 @@
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input and on hover</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input, focus and hover</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
 
@@ -548,7 +548,7 @@
 
 <p>Make the tab order of the keyboard focus predictable and sequential. Then keyboard users understand better how to navigate through menus, forms and the links and other interactive elements in a web page.</p>
 
-<p>Elements that get keyboard focus natively are <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;area&gt;</code> with a href attribute, <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> including checkboxes and radio buttons, <code class="language-plaintext highlighter-rouge">&lt;object&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;textarea&gt;</code>, and the <code class="language-plaintext highlighter-rouge">&lt;summary&gt;</code> element that provides summary for a <code class="language-plaintext highlighter-rouge">&lt;details&gt;</code> element.  You do not need to add a tabindex to these elements.</p>
+<p>Elements that get keyboard focus natively are <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> or <code class="language-plaintext highlighter-rouge">&lt;area&gt;</code> with a href attribute, <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;iframe&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> including checkboxes and radio buttons, <code class="language-plaintext highlighter-rouge">&lt;object&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;textarea&gt;</code>, and the <code class="language-plaintext highlighter-rouge">&lt;summary&gt;</code> element that provides the summary for a <code class="language-plaintext highlighter-rouge">&lt;details&gt;</code> element. Including elements with the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable">contenteditable attribute</a>. You do not need to add a tabindex to these elements.</p>
 
 <h2 id="about-tabindex">About tabindex</h2>
 
@@ -556,7 +556,7 @@
 
 <p>A positive tabindex hijacks the natural tab order of a page. An unexpected tab order makes it difficult for keyboard users and people who rely on assistive technologies to navigate a page or use a form. Structure the focusable elements in the document source so they appear in a logical and predictable order.</p>
 
-<h3 id="values-of-tabindex-and-their-behaviour">Values of tabindex and their behaviour</h3>
+<h3 id="values-of-tabindex-and-their-behavior">Values of tabindex and their behavior</h3>
 
 <p>According to the MDN <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/tabindex">HTML tabindex global attribute</a> (summarized):</p>
 
@@ -592,7 +592,7 @@
 <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Click me<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
-<p class="do callout"><strong>Do</strong>: depend on the native behaviour of an HTML element.</p>
+<p class="do callout"><strong>Do</strong>: depend on the native behavior of an HTML element.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;button&gt;</span>Click me<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
@@ -620,14 +620,14 @@
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- do not copy, this is not keyboard user-friendly --&gt;</span>
 <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"first-name"</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">'first-name" tabindex="1" autocomplete="given-name" &gt;
-</span></code></pre></div></div>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"first-name"</span> <span class="na">tabindex=</span><span class="s">"1"</span> <span class="na">autocomplete=</span><span class="s">"given-name"</span> <span class="nt">&gt;</span>
+</code></pre></div></div>
 
 <p class="callout do"><strong>Do</strong>: leave the natural tab order of a web page intact.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"first-name"</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">'first-name" autocomplete="given-name" &gt;
-</span></code></pre></div></div>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"first-name"</span> <span class="na">autocomplete=</span><span class="s">"given-name"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
 
 <h2 id="resources">Resources</h2>
 
@@ -693,7 +693,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Autofocus can be confusing and unwanted.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/autofocus/"> Autofocus</a> Automatically setting a focus location when a page loads can be confusing and unwanted.
                 </p>
             </li>
             
@@ -701,7 +701,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/"> On input and on hover</a> Do not surprise users with unexpected behavior on focus or hover.
+                    <a href="/pr-preview/pr-286/docs/topics/code/focus-handling/input-hover/"> On input, focus and hover</a> Do not surprise users with unexpected behavior on input, focus or hover.
                 </p>
             </li>
             
