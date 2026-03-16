@@ -2151,7 +2151,7 @@
     "doc": "Styling hover and focus",
     "title": "Styling focus and hover states of interactive HTML elements",
     "description": "How to style focus and hover states of interactive HTML elements.",
-    "content": "Design interactive HTML elements so keyboard users can always clearly see which element is currently has focus as they tab through the page. For mouse users a clear hover state, next to the pointer changing into a hand, is helpful and regarded best practice and not a WCAG requirement. WCAG 2.2 AA doesn’t require visual hover or focus states other than the browser defaults. But if a custom design for hover or focus state is provided, it must meet accessibility requirements. The styling of the hover and focus state can be the same but doesn’t have to. ",
+    "content": "Design interactive HTML elements so keyboard users can always clearly see which element is currently has focus as they tab through the page. For mouse users, a clear hover state, in addition to the pointer changing into a hand, is considered a helpful best practice, and not a WCAG requirement. WCAG 2.2 AA doesn’t require visual hover or focus states other than the browser defaults. But if a custom design for hover or focus state is provided, it must meet accessibility requirements. The styling of the hover and focus state can be the same but doesn’t have to. ",
     "url": "/pr-preview/pr-286/docs/topics/design/focus-hover/#styling-focus-and-hover-states-of-interactive-html-elements",
     "relUrl": "/docs/topics/design/focus-hover/#styling-focus-and-hover-states-of-interactive-html-elements"
   },"308": {
