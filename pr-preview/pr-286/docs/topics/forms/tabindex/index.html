@@ -536,24 +536,24 @@
 
           <h1 id="avoid-using-a-positive-tabindex-on-a-form-field">Avoid using a positive tabindex on a form field</h1>
 
-<p>A common pattern is to give the first input field in a form a <code class="language-plaintext highlighter-rouge">tabindex="1"</code>. Easy for sighed mouse users, they can start filling out the form right away.</p>
+<p>A common pattern is to give the first input field in a form a <code class="language-plaintext highlighter-rouge">tabindex="1"</code>. Easy for sighted mouse users, they can start filling out the form right away.</p>
 
 <p>But the main disadvantage for keyboard users is, that a positive tabindex hijacks the natural tab order of a page. Maybe they don’t want to fill out the form, but access the top menu. Don’t make decisions for your user.</p>
 
-<p>So: avoid using a positive tabindex in your forms, leave the natural tab order of a web page intact. Learn more about keyboard focus in the section about <a href="/pr-preview/pr-286/docs/topics/code/focus-handling">Focus handling</a>.</p>
+<p>Avoid using a positive tabindex in your forms, and leave the natural tab order of a web page intact. Learn more about keyboard focus in the section about <a href="/pr-preview/pr-286/docs/topics/code/focus-handling">Focus handling</a>.</p>
 
 <h2 id="examples">Examples</h2>
 
 <p class="callout dont"><strong>Don’t</strong>: add a positive tabindex to a form field.</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- do not copy, this is not keyboard user-friendly --&gt;</span>
 <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"first-name"</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">'first-name" tabindex="1" autocomplete="given-name" &gt;
-</span></code></pre></div></div>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"first-name"</span> <span class="na">tabindex=</span><span class="s">"1"</span> <span class="na">autocomplete=</span><span class="s">"given-name"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
 
 <p class="callout do"><strong>Do</strong>: leave to natural tab order of a web page intact.</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"first-name"</span><span class="nt">&gt;</span>First name<span class="nt">&lt;/label&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">'first-name" autocomplete="given-name" &gt;
-</span></code></pre></div></div>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"first-name"</span> <span class="na">autocomplete=</span><span class="s">"given-name"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
 
 <h2 id="resources">Resources</h2>
 
