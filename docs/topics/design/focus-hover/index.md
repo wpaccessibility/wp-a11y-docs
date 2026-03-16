@@ -8,7 +8,7 @@ nav_order: 3
 
 # Styling focus and hover states of interactive HTML elements
 
-Design interactive HTML elements so keyboard users can always clearly see which element is currently has the **focus** as they tab through the page. 
+Design interactive HTML elements so keyboard users can always clearly see which element is currently has **focus** as they tab through the page. 
 
 For mouse users a clear **hover** state, next to the pointer changing into a hand, is helpful and regarded best practice and not a WCAG requirement.
 
