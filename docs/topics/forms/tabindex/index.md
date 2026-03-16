@@ -8,11 +8,11 @@ description: When accessing and filling out and submitting a form, the keyboard 
 
 # Avoid using a positive tabindex on a form field
 
-A common pattern is to give the first input field in a form a `tabindex="1"`. Easy for sighed mouse users, they can start filling out the form right away.
+A common pattern is to give the first input field in a form a `tabindex="1"`. Easy for sighted mouse users, they can start filling out the form right away.
 
 But the main disadvantage for keyboard users is, that a positive tabindex hijacks the natural tab order of a page. Maybe they don't want to fill out the form, but access the top menu. Don't make decisions for your user.
 
-So: avoid using a positive tabindex in your forms, leave the natural tab order of a web page intact. Learn more about keyboard focus in the section about [Focus handling]({{site.baseurl}}/docs/topics/code/focus-handling).
+Avoid using a positive tabindex in your forms, and leave the natural tab order of a web page intact. Learn more about keyboard focus in the section about [Focus handling]({{site.baseurl}}/docs/topics/code/focus-handling).
 
 ## Examples
 
@@ -21,14 +21,14 @@ So: avoid using a positive tabindex in your forms, leave the natural tab order o
 ```html
 <!-- do not copy, this is not keyboard user-friendly -->
 <label for="first-name">First name</label>
-<input id='first-name" tabindex="1" autocomplete="given-name" >
+<input id="first-name" tabindex="1" autocomplete="given-name">
 ```
 
 {: .callout .do }
 **Do**: leave to natural tab order of a web page intact.
 ```html
 <label for="first-name">First name</label>
-<input id='first-name" autocomplete="given-name" >
+<input id="first-name" autocomplete="given-name">
 ```
 
 ## Resources

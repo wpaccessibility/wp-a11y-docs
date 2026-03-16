@@ -8,9 +8,9 @@ nav_order: 3
 
 # Styling focus and hover states of interactive HTML elements
 
-Design interactive HTML elements so keyboard users can always clearly see which element is currently has the **focus** as they tab through the page. 
+Design interactive HTML elements so keyboard users can always clearly see which element is currently has **focus** as they tab through the page. 
 
-For mouse users a clear **hover** state, next to the pointer changing into a hand, is helpful and regarded best practice and not a WCAG requirement.
+For mouse users, a clear **hover** state, in addition to the pointer changing into a hand, is considered a helpful best practice, and not a WCAG requirement.
 
 WCAG 2.2 AA doesn’t require visual hover or focus states other than the browser defaults. But if a custom design for hover or focus state is provided, it must meet accessibility requirements.
 
@@ -20,7 +20,7 @@ The styling of the hover and focus state can be the same but doesn't have to.
 
 The advantage of keeping that the default focus outline is that you don’t have to do anything.
 
-The disadvantage is that each browser displays this outline differently, and that it may be hard to discover in your design. Adrian Roselli gives a clear explanation about this in [Avoid Default Browser Focus Styles](https://adrianroselli.com/2017/02/avoid-default-browser-focus-styles.html)
+The disadvantage is that each browser displays this outline differently, and that it may be hard to see in your design. Adrian Roselli gives a clear explanation about this in [Avoid Default Browser Focus Styles](https://adrianroselli.com/2017/02/avoid-default-browser-focus-styles.html)
 
 ## Option 2: Design your own outline or border
 
@@ -28,7 +28,7 @@ A more reliable way to add an outline or border of hover or focus is by designin
 
 ### Guidelines for custom hover and focus styles
 
-The color contrast the custom focus or hover indicator should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.
+A custom focus or hover indicator should have a contrast ratio of at least 3:1.  The contrast applies against the background, but also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.
 
 Best practice is to follow [WGAC 2.4.13 Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance)] level **AAA**.
 
