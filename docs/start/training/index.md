@@ -6,6 +6,6 @@ description: An overview of online training, books, events, knowledges bases and
 nav_order: 5
 ---
 
-# Training, learn web accessibility
+# How to get training to learn web accessibility
 
 An overview of online training, books, events, knowledges bases and peer support to learn accessibility.

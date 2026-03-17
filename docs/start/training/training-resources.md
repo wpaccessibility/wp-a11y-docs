@@ -12,10 +12,10 @@ nav_order: 4
 
 - [Design and Develop Overview](https://www.w3.org/WAI/design-develop/) by the W3C. Guidance for writing, designing, and developing for accessibility.
 - [MDN Resources for Developers](https://developer.mozilla.org/), documentation about CSS, HTML, and JavaScript. MDN is an open-source, collaborative project by Mozilla, in partnership with a global community of volunteers and partners.
-- [Nielson Norman Group](https://www.nngroup.com/), provides research-based, results-driven UX guidance and training.
+- [Nielsen Norman Group](https://www.nngroup.com/), provides research-based, results-driven UX guidance and training.
 - [WebAIM articles and resources](https://webaim.org/) (web accessibility in mind) is a US nonprofit organization that focuses on web accessibility. They provide resources and guides and also well known for their contrast checker tool and regular surveys of screen reader use.
-- [Vispero resources](https://www.tpgi.com/blog/), provides resources on web accessibility. Vispero used to be TPGi.
-- [Dutch NL Design System guidelines](https://nldesignsystem.nl/richtlijnen/), guidelines for developing digital services and an overview of WCAG in plain language.
+- [Vispero resources](https://vispero.com/resources/category/blog/), provides resources on web accessibility.
+- [NL Design System guidelines, Dutch text](https://nldesignsystem.nl/richtlijnen/), guidelines for developing digital services and an overview of WCAG in plain language.
 
 ## Newsletters
 
