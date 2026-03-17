@@ -471,7 +471,7 @@
     "doc": "Books",
     "title": "Books on web accessibility",
     "description": "Recommended books about web accessibility.",
-    "content": "Recommended books about web accessibility. | Web Accessibility Cookbook by Manuel Matuzovic, provides you with dozens of recipes to help you build common components on the web, such as navigations, forms, filters, tables, and dialogs, in an accessible manner. | Accessible UX Research, by Michele Williams. About research, assistive technology, different types of disability, and how to build accessibility into the entire design process. | Inclusive Design Patterns, by Heydon Pickering. How to craft accessible interfaces without extra effort, and what front-end design patterns to use to create inclusive experiences. | Inclusive Components, by Heydon Pickering. A detailed, practical handbook for building fully accessible interfaces. | Form Design Patterns, by Adam Silver. The bible about accessible and usable web forms. | Accessibility for Everyone, by Laura Kalbag. A beginners guide: from understanding disability and impairment to navigating key laws and guidelines. Plus how to plan, evaluate, and test for accessible design. | Structured Negotiation: A Winning Alternative to Lawsuits by Lainey Feingold. This book shares the stories and strategies behind the push for accessible technology and beyond. | Giving a Damn About Accessibility, by Sheri Byrne-Haber. A candid and practical handbook for designers. | A11y Unraveled: Become a Web Accessibility Ninja, by Dimitris Georgakas. Covering web accessibility and WCAG 2.1 and 2.2 guidelines — what they are, who they’re for, and how designers can apply them to create better experiences. | . The Accessibility Book Club maintains an Annual reading lists, with books that dive into accessibility, inclusive design, and firsthand perspectives from people with disabilities. Do you know a good resource to add to this list? Please let us know. ",
+    "content": "Recommended books about web accessibility. | Web Accessibility Cookbook by Manuel Matuzovic, provides you with dozens of recipes to help you build common components on the web, such as navigations, forms, filters, tables, and dialogs, in an accessible manner. | Accessible UX Research, by Michele Williams. About research, assistive technology, different types of disability, and how to build accessibility into the entire design process. | Inclusive Design Patterns, by Heydon Pickering. How to craft accessible interfaces without extra effort, and what front-end design patterns to use to create inclusive experiences. | Inclusive Components, by Heydon Pickering. A detailed, practical handbook for building fully accessible interfaces. | Form Design Patterns, by Adam Silver. The bible about accessible and usable web forms. | Accessibility for Everyone, by Laura Kalbag. A beginners guide: from understanding disability and impairment to navigating key laws and guidelines. Plus how to plan, evaluate, and test for accessible design. | Digital Accessibility Ethics: Disability Inclusion in All Things Tech by Lainey Feingold, about why digital accessibility must be part of everyone’s ethics and introduces the Digital Accessibility Ethics Framework. | Structured Negotiation: A Winning Alternative to Lawsuits by Lainey Feingold. This book shares the stories and strategies behind the push for accessible technology and beyond. | Giving a Damn About Accessibility, by Sheri Byrne-Haber. A candid and practical handbook for designers. | A11y Unraveled: Become a Web Accessibility Ninja, by Dimitris Georgakas. Covering web accessibility and WCAG 2.1 and 2.2 guidelines — what they are, who they’re for, and how designers can apply them to create better experiences. | . The Accessibility Book Club maintains an Annual reading lists, with books that dive into accessibility, inclusive design, and firsthand perspectives from people with disabilities. Do you know a good resource to add to this list? Please let us know. ",
     "url": "/pr-preview/pr-297/docs/start/training/books/#books-on-web-accessibility",
     "relUrl": "/docs/start/training/books/#books-on-web-accessibility"
   },"68": {
@@ -986,29 +986,29 @@
     "url": "/pr-preview/pr-297/docs/about/disclaimer/",
     "relUrl": "/docs/about/disclaimer/"
   },"141": {
-    "doc": "Educational & Discussion",
-    "title": "Educational &amp; Discussion about web accessibility",
+    "doc": "Education & Discussion Groups",
+    "title": "Education &amp; Discussions about web accessibility",
     "description": "How to find peer support and meet people to learn accessibility.",
-    "content": "Sometimes, what you’re building doesn’t have an already-available accessible pattern on the web. In cases like these, it can be helpful to consult someone who works day-to-day in the accessibility field in order to save yourself the pain of having to figure it out all on your own. There are a few resources you may find helpful. ",
-    "url": "/pr-preview/pr-297/docs/start/training/discussion/#educational--discussion-about-web-accessibility",
-    "relUrl": "/docs/start/training/discussion/#educational--discussion-about-web-accessibility"
+    "content": "Sometimes, what you’re building doesn’t have an already-available accessible pattern on the web. In cases like these, it can be helpful to consult someone who works day-to-day in the accessibility field in order to save yourself the pain of having to figure it out all on your own. Here are a few resources you may find helpful. ",
+    "url": "/pr-preview/pr-297/docs/start/training/discussion/#education--discussions-about-web-accessibility",
+    "relUrl": "/docs/start/training/discussion/#education--discussions-about-web-accessibility"
   },"142": {
-    "doc": "Educational & Discussion",
+    "doc": "Education & Discussion Groups",
     "title": "The WebAIM mailing list",
     "description": "How to find peer support and meet people to learn accessibility.",
-    "content": "The WebAIM mailing list is a long-running community forum for everyone who wants to grow in their accessibility journey, from beginner to expert. The archives span decades, and are available to search through. if you need to find the solution to a problem, or need help creating one, and you don’t know what question to ask when searching the archives, list members are very friendly and always willing to help, without judgment. ",
+    "content": "The WebAIM mailing list is a long-running community forum for everyone who wants to grow in their accessibility journey, from beginner to expert. The archives span decades, and are available for everyone to search. List members are very friendly and always willing to help you in finding solutions to your issue. ",
     "url": "/pr-preview/pr-297/docs/start/training/discussion/#the-webaim-mailing-list",
     "relUrl": "/docs/start/training/discussion/#the-webaim-mailing-list"
   },"143": {
-    "doc": "Educational & Discussion",
+    "doc": "Education & Discussion Groups",
     "title": "Slack channels",
     "description": "How to find peer support and meet people to learn accessibility.",
     "content": ". | The main WordPress #accessibility Slack channel. You must have or create an account for WordPress.org first, to be able to join. | A11y Slack account. A space to ask questions, help other people figure stuff out or chat about accessibility in general. Members can invite others. | . Do you know a good resource to add to this list? Please let us know. ",
     "url": "/pr-preview/pr-297/docs/start/training/discussion/#slack-channels",
     "relUrl": "/docs/start/training/discussion/#slack-channels"
   },"144": {
-    "doc": "Educational & Discussion",
-    "title": "Educational & Discussion",
+    "doc": "Education & Discussion Groups",
+    "title": "Education & Discussion Groups",
     "description": "How to find peer support and meet people to learn accessibility.",
     "content": " ",
     "url": "/pr-preview/pr-297/docs/start/training/discussion/",
@@ -1638,11 +1638,11 @@
     "relUrl": "/docs/start/wcag-intro/#browser-support"
   },"234": {
     "doc": "Training",
-    "title": "Training, learn web accessibility",
+    "title": "How to get training to learn web accessibility",
     "description": "An overview of online training, books, events, knowledges bases and peer support to learn accessibility.",
     "content": "An overview of online training, books, events, knowledges bases and peer support to learn accessibility. ",
-    "url": "/pr-preview/pr-297/docs/start/training/#training-learn-web-accessibility",
-    "relUrl": "/docs/start/training/#training-learn-web-accessibility"
+    "url": "/pr-preview/pr-297/docs/start/training/#how-to-get-training-to-learn-web-accessibility",
+    "relUrl": "/docs/start/training/#how-to-get-training-to-learn-web-accessibility"
   },"235": {
     "doc": "Training",
     "title": "Training",
@@ -3684,7 +3684,7 @@
     "doc": "Knowledge resources",
     "title": "Knowledge resources",
     "description": "Knowledge resources and newsletters on web accessibility.",
-    "content": ". | Design and Develop Overview by the W3C. Guidance for writing, designing, and developing for accessibility. | MDN Resources for Developers, documentation about CSS, HTML, and JavaScript. MDN is an open-source, collaborative project by Mozilla, in partnership with a global community of volunteers and partners. | Nielson Norman Group, provides research-based, results-driven UX guidance and training. | WebAIM articles and resources (web accessibility in mind) is a US nonprofit organization that focuses on web accessibility. They provide resources and guides and also well known for their contrast checker tool and regular surveys of screen reader use. | Vispero resources, provides resources on web accessibility. Vispero used to be TPGi. | Dutch NL Design System guidelines, guidelines for developing digital services and an overview of WCAG in plain language. | . ",
+    "content": ". | Design and Develop Overview by the W3C. Guidance for writing, designing, and developing for accessibility. | MDN Resources for Developers, documentation about CSS, HTML, and JavaScript. MDN is an open-source, collaborative project by Mozilla, in partnership with a global community of volunteers and partners. | Nielsen Norman Group, provides research-based, results-driven UX guidance and training. | WebAIM articles and resources (web accessibility in mind) is a US nonprofit organization that focuses on web accessibility. They provide resources and guides and also well known for their contrast checker tool and regular surveys of screen reader use. | Vispero resources, provides resources on web accessibility. | NL Design System guidelines, Dutch text, guidelines for developing digital services and an overview of WCAG in plain language. | . ",
     "url": "/pr-preview/pr-297/docs/start/training/training-resources/",
     "relUrl": "/docs/start/training/training-resources/"
   },"527": {
