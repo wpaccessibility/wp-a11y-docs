@@ -21,7 +21,7 @@ The only possible accessible use for the attribute `autofocus` can be by moving 
 
 ## How to test for autofocus
 
-Load a web page and check if the keyboard and visible focus is not set to a specific element by using the `autofocus` attribute or by JavaScript. 
+Load a web page and verify that keyboard and visible focus is not automatically set, either by using the `autofocus` attribute or by assignment using JavaScript. 
 
 
 
