@@ -52,6 +52,9 @@
 <loc>https://wpaccessibility.org//docs/topics/forms/help/autocomplete/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/autofocus/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/forms/help/avoid-input-masks/</loc>
 </url>
 <url>
@@ -137,6 +140,9 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/forms/fieldsets/fieldset-descriptions/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/focus-trapping/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/theme-guidelines/headings-structure/</loc>
@@ -259,6 +265,9 @@
 <loc>https://wpaccessibility.org//docs/topics/forms/fieldsets/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/forms/tabindex/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/forms/input-label/</loc>
 </url>
 <url>
@@ -304,6 +313,9 @@
 <loc>https://wpaccessibility.org//docs/topics/code/semantics/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/code/screen-reader-text/</loc>
 </url>
 <url>
@@ -331,7 +343,13 @@
 <loc>https://wpaccessibility.org//docs/topics/design/avoid/infinite-scroll/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/input-hover/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/theme-guidelines/keyboard-navigation-support/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/keyboard-trap/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/forms/input-label/label-location/</loc>
@@ -415,6 +433,9 @@
 <loc>https://wpaccessibility.org//docs/topics/forms/resources/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/restore-focus/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/about/contribute/review/</loc>
 </url>
 <url>
@@ -442,6 +463,9 @@
 <loc>https://wpaccessibility.org//docs/about/contribute/suggest/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/tabindex/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/forms/input-label/text-only/</loc>
 </url>
 <url>
@@ -461,6 +485,9 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/forms/help/valid-values/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/topics/code/focus-handling/visual-focus/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/about/contribute/write/</loc>
