@@ -56,7 +56,7 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 {: .do  .callout }
 **Do**: depend on the native behavior of an HTML element.
 
-There are exceptions to this rule, such as the floating tabindex pattern used in patterns like tab lists, like [Tabs with Manual Activation(https://www.w3.org/WAI/ARIA/apg/patterns/tabs/examples/tabs-manual/) (example by the W3C.)
+There are exceptions to this rule, such as the floating tabindex pattern used in patterns like tab lists, like [Tabs with Manual Activation](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/examples/tabs-manual/) (example by the W3C.)
 
 ```html
 <button>Click me</button>

@@ -18,7 +18,7 @@ We do not specifically endorse any of the plugins listed here but offer them as 
 These are tools designed to provide front-end accessibility testing.
 
 - [Accessibility Checker](https://wordpress.org/plugins/accessibility-checker/) – Accessibility testing tool that runs directly in your WordPress site.
-- [WP ADA Compliance Check Basic](https://wordpress.org/plugins/wp-ada-compliance-check-basic/) – Accessibility testing tool that runs directly in your WordPress site. (Limit 15 posts or pages)
+- [WP ADA Compliance Check Basic](https://wordpress.org/plugins/wp-ada-compliance-check-basic/) – Accessibility testing tool that runs directly in your WordPress site. Limit 15 posts or pages.
 - [Editoria11y](https://wordpress.org/plugins/editoria11y-accessibility-checker/) – Accessibility checking tool geared towards content authors.
 - [Sa11y](https://wordpress.org/plugins/sa11y/) – Accessibility checking tool geared towards content authors.
 - [Tota11y WP](https://wordpress.org/plugins/wp-tota11y/) - Visualize how your site performs with assistive technologies.
