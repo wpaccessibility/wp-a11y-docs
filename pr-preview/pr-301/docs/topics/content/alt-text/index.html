@@ -567,21 +567,19 @@
 
 <p>Images with complex information, like infographics, should be described briefly in the alt text, and the information should be provided elsewhere on the page.</p>
 
-<p>If an image is used as a link, use the link target as alt text. More about linking images in <a href="/pr-preview/pr-301/docs/topics/content/links/link-image/">Images as links</a></p>
+<p>If an image is used as a link, use the link target as alt text. More about linking images in <a href="/pr-preview/pr-301/docs/topics/content/links/link-image/">Images as links</a>.</p>
 
-<p>Leave the alt text empty for images that are decorative and add no information to the content. Then a screen reader will skip that image and not announce it.</p>
+<p>You can leave the alt text empty for images that are decorative and add no information to the content. Then a screen reader will skip that image and not announce it.</p>
 
 <p>On the <em>Web Accessibility Tutorials</em> of the W3C the <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">alt Decision Tree tool</a> is an almost comprehensive guide that describes how to use the alt attribute of an image in various situations.</p>
 
 <h2 id="alt-text-in-wordpress">Alt text in WordPress</h2>
 
-<p>In WordPress, add alternative text in the attachment details of an image.</p>
+<p>In WordPress, add the alt text for an image in the Media Library, with the Attachment Details of an image. This alt text will be used for all embedding of this image in the content.</p>
 
 <p><img src="/pr-preview/pr-301/assets/images/attachment-details.png" alt="Screenshot of the attachment details of the WP A11y wapuu" /></p>
 
-<p>This alt text can be added in the Media Library, and will be used for all embedding of this image in the content.</p>
-
-<p>Make sure, when you add the image in the content with the image block, the alt text still matches the purpose if the image in the content. The alt text can be altered with the block settings and will only be used for this block.</p>
+<p>Make sure, when you add the image in the content with the Image Block, the alt text still matches the purpose if the image in the content. The alt text that image can be altered with the Block Settings and will only be used for this block.</p>
 
 <p><img src="/pr-preview/pr-301/assets/images/img-block-alt-text.png" alt="Screenshot of the Image block settings for alt text" /></p>
 
@@ -595,6 +593,25 @@
 
 <p>Alt text also is useful for <a href="https://dubbot.com/dubblog/2025/alt-text-and-answer-engine-optimization.html">Answer Engine Optimisation</a> (AEO), it provides essential information about the content in an image.</p>
 
+<h2 id="examples">Examples</h2>
+
+<h3 id="dont-add-image-of">Don’t add “Image of”</h3>
+
+<p>When announcing an image, the screen reader announces the alt text and the fact that it is an image.</p>
+
+<p class="dont callout"><strong>Don’t</strong>: Add the alt text <code class="language-plaintext highlighter-rouge">Image of a nest of kittens.</code>. Screen readers already add the information that it’s an image.</p>
+
+<p class="do callout"><strong>Do:</strong> Be brief and to the point, Add the alt text <code class="language-plaintext highlighter-rouge">A nest of kittens.</code>.</p>
+
+<h3 id="explain-the-essence-of-an-image">Explain the essence of an image</h3>
+
+<p>Think about what you want to tell with an image and capture that in the alt text.</p>
+
+<p class="dont callout"><strong>Don’t</strong>: Describe everything that’s on the image, like the alt text:
+<code class="language-plaintext highlighter-rouge">A photo of Jane, she is wearing a blue dress, at the background is her office, she is smiling into the camera while holding a cup of coffee.</code>.</p>
+
+<p class="do callout">Be to the point, like the alt text: <code class="language-plaintext highlighter-rouge">Jane, smiling into the camera.</code>.</p>
+
 <h2 id="resources">Resources</h2>
 
 <h3 id="related-wcag-success-criterion-for-alternative-text-for-images">Related WCAG Success Criterion for alternative text for images</h3>
@@ -604,10 +621,12 @@
 <h3 id="other-resources">Other resources</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">An alt Decision Tree</a></li>
-  <li><a href="https://www.joedolson.com/2015/03/are-alt-attributes-required-always/">Are alt attributes required? Always?</a></li>
-  <li><a href="https://yoast.com/image-seo-alt-tag-and-title-tag-optimization/">Image SEO: alt tag and title tag optimization</a></li>
-  <li><a href="https://html.com/images/rules-of-alt/">The Rules of ALT</a></li>
+  <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">An alt Decision Tree</a> by the W3C.</li>
+  <li><a href="https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text">Write helpful alt text</a> by Google.</li>
+  <li><a href="https://www.joedolson.com/2015/03/are-alt-attributes-required-always/">Are alt attributes required? Always?</a>, by Joe DOlson.</li>
+  <li><a href="https://yoast.com/image-seo-alt-tag-and-title-tag-optimization/">Image SEO: alt tag and title tag optimization</a>, by Yoast.</li>
+  <li><a href="https://html.com/images/rules-of-alt/">The Rules of ALT</a> by Jon Penland.</li>
+  <li><a href="https://tink.uk/text-descriptions-emotion-rich-images/">Text descriptions and emotion rich images</a> by Léonie Watson.</li>
 </ul>
 
 
