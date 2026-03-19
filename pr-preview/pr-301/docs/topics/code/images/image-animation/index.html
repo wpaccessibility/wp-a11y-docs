@@ -10,7 +10,7 @@
 
 
 
-<title>Fonts, WP Accessibility Knowledge Base</title>
+<title>Image animation, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-301/assets/css/styles.css">
@@ -542,6 +542,26 @@
 
         
             
+            
+            
+        
+
+    
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
 
 
 
@@ -549,7 +569,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/design/'>Design & user experience</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Fonts</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/images-animations/'>Images and animations</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/images-animations/images/'>Images</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Image animation</li>
     </ol>
 </nav>
 
@@ -558,95 +578,60 @@
 
         <main>
 
-          <h1 id="fonts">Fonts</h1>
+          <h1 id="image-animation-and-accessibility">Image animation and accessibility</h1>
 
-<h2 id="font-sizes-and-resize-text">Font sizes and resize text</h2>
-
-<p>The <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html">WCAG 2.0 requirements</a> for resizing text are quite loose:</p>
-
-<blockquote>
-  <p>Resize text: Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. (Level AA).<br />
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html">Success Criterion 1.4.4, Resize Text</a></p>
-</blockquote>
-
-<p>In <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a>, there is an additional requirement for text size:</p>
-
-<blockquote>
-  <p>Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:</p>
-  <ul>
-    <li>Vertical scrolling content at a width equivalent to 320 <a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html#dfn-css-pixel">CSS pixels</a>;</li>
-    <li>Horizontal scrolling content at a height equivalent to 256 <a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html#dfn-css-pixel">CSS pixels</a>.Except for parts of the content which require two-dimensional layout for usage or meaning.
-      <blockquote>
-        <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html">Success Criterion 1.4.10, Reflow</a></p>
-      </blockquote>
-    </li>
-  </ul>
-</blockquote>
-
-<p>Success Criterion 1.4.10 impacts font resizing because increases of font size must not trigger multidimensional scrolling.</p>
-
-<h2 id="best-practice">Best practice</h2>
+<p>For moving, blinking, scrolling, or auto-updating animation that starts automatically, make sure that:</p>
 
 <ul>
-  <li><strong>Text can be enlarged</strong> without text becoming unreadable or hidden.</li>
-  <li><strong>Line heights and overflows</strong>: test this with various browsers and screen widths.</li>
-  <li><strong>Start with a reasonable font size</strong>. A font size of at least 16 pixels is works well for body copy.</li>
-  <li><strong>How to define font size is no big deal</strong>. Whether a font size is defined in pixels, rem, rem or % units for resizing doesn’t really matter. Modern browsers adequately resize text regardless of how the size has been defined.</li>
+  <li>the animation doesn’t last longer than 5 seconds and then stops,</li>
+  <li>or the user can stop an animation themselves.</li>
 </ul>
 
-<h3 id="relative-units-vs-absolute-units">Relative units vs. absolute units</h3>
+<p>Make sure your animation doesn’t contain anything that flashes more than three times in any one-second period.</p>
 
-<p>There is much research and debate about whether text elements should be defined in pixels, em, rem or % units for resizing, and whether only the text or also other elements on a page should scale.</p>
+<p>These animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines, nausea, and seizures.</p>
 
-<p>Operating systems, browsers and devices have various ways to enlarge text:</p>
+<p>Also, it’s really hard to concentrate on reading text, when an animation next to it is screaming for attention and there is no way to stop it.</p>
 
-<ul>
-  <li>with the OS settings</li>
-  <li>with assistive technology, like Zoom Text</li>
-  <li>browser settings to enlarge text</li>
-  <li>a plugin that changes the default text size</li>
-  <li>zoom in and out with they keys Control plus and minus in the browser</li>
-  <li>using your fingers on touch devices</li>
-  <li>reader view in browsers</li>
-</ul>
+<h2 id="setting-reduced-motion-for-animations">Setting reduced motion for animations</h2>
 
-<p>The WordPress Accessibility Team agrees with <a href="http://webaim.org/techniques/fonts/#font_size">WebAim on font size</a>:</p>
+<p>You can help users avoid these problems by making all of your animations support the <code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> flag.</p>
 
-<blockquote>
-  <p>For development purposes, it is best to use relative units (such as percentages or ems) to specify font sizes rather than absolute units (such as pixels or points). This provides much flexibility in modifying the visual presentation using CSS. For accessibility, because modern browsers adequately resize text regardless of how the size has been defined, it is not vital that text sizes be defined in relative sizes.</p>
-</blockquote>
+<p><code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> is a system preference that allows the user to indicate that they would prefer not to see animations. But this only works if the code properly supports it!</p>
 
-<h3 id="viewport">Viewport</h3>
+<p>You can check for this system preference using the CSS media feature:</p>
 
-<ul>
-  <li>Always give the user the opportunity to scale the display.</li>
-  <li>Never set the viewport to user-scalable=no; this setting prevents the user from using the browser’s zoom on mobile devices. Many mobile devices will ignore this meta setting because of its accessibility impact.</li>
-</ul>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-reduced-motion</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nc">.animation</span> <span class="p">{</span>
+        <span class="c">/*  adjust your animations if reduced motion is requested.  */</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Reduced motion doesn’t have to mean no animation at all, but it should be very minimal – no more than is absolutely necessary. When in doubt, eliminate the animation entirely.</p>
+
+<p>You can check for the media query in JavaScript by checking the value of the media query:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">mediaQuery</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nf">matchMedia</span><span class="p">(</span><span class="dl">"</span><span class="s2">(prefers-reduced-motion: reduce)</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p class="warning callout"><strong>Please note</strong>: Not everyone is web savvy enough to activate reduced motion on their browser. Adding reduced motion only, is not enough to meet WCAG requirements.</p>
 
 <h2 id="resources">Resources</h2>
 
-<h3 id="the-pxremem-debate">The px/rem/em debate</h3>
+<h3 id="wcag-success-criteria-for-animations">WCAG Success Criteria for animations</h3>
 
 <ul>
-  <li><a href="https://alastairc.ac/2017/11/is-text-sizing-dead/">Is text sizing dead?</a></li>
-  <li><a href="https://mindtheshift.wordpress.com/2015/04/02/r-i-p-rem-viva-css-reference-pixel/">R.I.P. REM, Viva CSS Reference Pixel!</a></li>
-  <li><a href="https://css-tricks.com/rems-ems/">Font Size Idea: px at the Root, rem for Components, em for Text Elements</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide">2.2.2 Pause, Stop, Hide</a> Level A</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold">2.3.1 Three Flashes or Below Threshold</a> Level A.</li>
 </ul>
 
-<h3 id="on-readability">On readability</h3>
+<h3 id="other-resources">Other resources</h3>
 
 <ul>
-  <li><a href="https://developers.google.com/speed/docs/insights/UseLegibleFontSizes">Use Legible Font Sizes by Google</a></li>
-  <li><a href="https://blog.marvelapp.com/body-text-small/">Your Body Text Is Too Small</a></li>
-  <li><a href="http://www.telegraph.co.uk/science/2016/10/23/internet-is-becoming-unreadable-because-of-a-trend-towards-light/">Internet is becoming unreadable because of a trend towards lighter, thinner fonts</a></li>
-  <li><a href="https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/">16 Pixels Font Size: For Body Copy. Anything Less Is A Costly Mistake</a></li>
-</ul>
-
-<h3 id="on-viewport">On Viewport</h3>
-
-<ul>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">Using the viewport meta tag to control layout on mobile browsers</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta">The meta element on developer.mozilla.org</a></li>
+  <li><a href="https://since1979.dev/respecting-prefers-reduced-motion-with-javascript-and-react/">Respecting “Prefers Reduced Motion” with JavaScript and React</a>, by Stephan Nijman</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">Prefers-reduced-motion</a>from MDN Web Docs</li>
+  <li><a href="https://trace.umd.edu/peat/">Photosensitive Epilepsy Analysis Tool (PEAT)</a>, by TRACE RERC.</li>
 </ul>
 
 
@@ -663,40 +648,16 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Design & user experience</h2>
+        <h2>Other pages in: Images</h2>
         <ul>
             
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-301/docs/topics/design/color/"> Color</a> Using color is important, but avoid using it as the only visual means of conveying information.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-301/docs/topics/design/focus-hover/"> Styling hover and focus</a> How to style focus and hover states of interactive HTML elements.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-301/docs/topics/design/avoid/"> Patterns to avoid</a> Learn which design patterns you should avoid for accessibility.
-                </p>
-            </li>
             
             
         </ul>
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-301/docs/topics/design/">Back to: Design & user experience</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-301/docs/topics/code/images-animations/images/">Back to: Images</a>
             </p>
 
         
