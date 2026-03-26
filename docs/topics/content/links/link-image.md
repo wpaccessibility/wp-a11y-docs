@@ -19,3 +19,12 @@ The post [Creating the perfect link](https://www.a11y-collective.com/blog/the-pe
 So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”.
 
 It is not necessary to ever use the word ‘link’ or 'this link goes to' in your alt text; that will already be sufficient announced by the screen reader.
+
+## Resources
+
+### Related WCAG Success Criteria for links on images
+
+By giving a meaningful image a proper alternative text, you meet WCAG success criteria
+- [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
+- [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
+- [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).

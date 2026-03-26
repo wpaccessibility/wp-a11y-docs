@@ -13,11 +13,31 @@ For moving, blinking, scrolling, or auto-updating animation that starts automati
 - the animation doesn't last longer than 5 seconds and then stops,
 - or the user can stop an animation themselves.
 
+<svg role="img" aria-label="bouncing blue ball" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display:block">
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .ball { animation: bounce 0.5s cubic-bezier(0.33,0,0.66,0) 10 alternate both; }
+    }
+    @keyframes bounce {
+      from { transform: translateY(0px); }
+      to   { transform: translateY(58px); }
+    }
+
+  </style>
+
+  <ellipse cx="50" cy="90" rx="4" ry="2" fill="#000" opacity="0.18"/>
+
+  <circle class="ball" cx="50" cy="22" r="14" fill="#3B82F6"/>
+  <circle class="ball" cx="45" cy="18" r="4" fill="#93C5FD" opacity="0.6"/>
+</svg>
+
 Make sure your animation doesn't contain anything that flashes more than three times in any one-second period.
 
-These animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines, nausea, and seizures.
+Animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines, nausea, and in the case of flashes even seizures.
 
 Also, it's really hard to concentrate on reading text, when an animation next to it is screaming for attention and there is no way to stop it.
+
+
 
 ## Setting reduced motion for animations
 
@@ -56,6 +76,6 @@ const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 ### Other resources
 
 - [Respecting “Prefers Reduced Motion” with JavaScript and React](https://since1979.dev/respecting-prefers-reduced-motion-with-javascript-and-react/), by Stephan Nijman
-- [Prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)from MDN Web Docs
+- [Prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) from MDN Web Docs.
 - [Photosensitive Epilepsy Analysis Tool (PEAT)](https://trace.umd.edu/peat/), by TRACE RERC.
 

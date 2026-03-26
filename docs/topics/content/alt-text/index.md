@@ -68,10 +68,13 @@ Think about what you want to tell with an image and capture that in the alt text
 
 {: .dont .callout}
 **Don't**: Describe everything that's on the image, like the alt text:
-`A photo of Jane, she is wearing a blue dress, at the background is her office, she is smiling into the camera while holding a cup of coffee.`.
+`A photo of Jane, she is wearing her vintage dress by Dior, at the background is her garden, the sun is shining, she is smiling into the camera while holding a cup of coffee.`.
 
 {: .do .callout}
 Be to the point, like the alt text: `Jane, smiling into the camera.`.
+
+{: .do .callout}
+Describe what's important in the image: `Jane, in vintage Dior.`.
 
 ## Resources
 
@@ -83,7 +86,7 @@ By giving a meaningful image the proper alternative text, you meet WCAG success 
 
 - [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) by the W3C.
 - [Write helpful alt text](https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text) by Google.
-- [Are alt attributes required? Always?](https://www.joedolson.com/2015/03/are-alt-attributes-required-always/), by Joe DOlson.
+- [Are alt attributes required? Always?](https://www.joedolson.com/2015/03/are-alt-attributes-required-always/), by Joe Dolson.
 - [Image SEO: alt tag and title tag optimization](https://yoast.com/image-seo-alt-tag-and-title-tag-optimization/), by Yoast.
 - [The Rules of ALT](https://html.com/images/rules-of-alt/) by Jon Penland.
 - [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/) by Léonie Watson.
