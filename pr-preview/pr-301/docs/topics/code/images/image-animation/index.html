@@ -210,23 +210,13 @@
 
           <a href="/pr-preview/pr-301/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-301/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a><button class="nav-list-expander btn-reset" aria-label="Images submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-301/docs/topics/code/images/image-animation/" class="nav-list-link">Image animation</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-301/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-301/docs/topics/code/pattern-libraries/" class="nav-list-link">Pattern libraries</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/code/images/" class="nav-list-link">Images</a><button class="nav-list-expander btn-reset" aria-label="Images submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/code/images/alt-text/" class="nav-list-link">Alt text images</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/code/images/image-animation/" class="nav-list-link">Image animation</a></li></ul></li><li class="nav-list-item">
 
@@ -552,16 +542,6 @@
 
         
             
-            
-            
-        
-
-    
-
-        
-
-        
-            
 
 
 
@@ -569,7 +549,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/images-animations/'>Images and animations</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/images-animations/images/'>Images</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Image animation</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/images/'>Images</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Image animation</li>
     </ol>
 </nav>
 
@@ -587,9 +567,27 @@
   <li>or the user can stop an animation themselves.</li>
 </ul>
 
+<svg role="img" aria-label="bouncing blue ball" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display:block">
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .ball { animation: bounce 0.5s cubic-bezier(0.33,0,0.66,0) 10 alternate both; }
+    }
+    @keyframes bounce {
+      from { transform: translateY(0px); }
+      to   { transform: translateY(58px); }
+    }
+
+  </style>
+
+  <ellipse cx="50" cy="90" rx="4" ry="2" fill="#000" opacity="0.18" />
+
+  <circle class="ball" cx="50" cy="22" r="14" fill="#3B82F6" />
+  <circle class="ball" cx="45" cy="18" r="4" fill="#93C5FD" opacity="0.6" />
+</svg>
+
 <p>Make sure your animation doesn’t contain anything that flashes more than three times in any one-second period.</p>
 
-<p>These animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines, nausea, and seizures.</p>
+<p>Animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines, nausea, and in the case of flashes even seizures.</p>
 
 <p>Also, it’s really hard to concentrate on reading text, when an animation next to it is screaming for attention and there is no way to stop it.</p>
 
@@ -630,7 +628,7 @@
 
 <ul>
   <li><a href="https://since1979.dev/respecting-prefers-reduced-motion-with-javascript-and-react/">Respecting “Prefers Reduced Motion” with JavaScript and React</a>, by Stephan Nijman</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">Prefers-reduced-motion</a>from MDN Web Docs</li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">Prefers-reduced-motion</a> from MDN Web Docs.</li>
   <li><a href="https://trace.umd.edu/peat/">Photosensitive Epilepsy Analysis Tool (PEAT)</a>, by TRACE RERC.</li>
 </ul>
 
@@ -652,12 +650,20 @@
         <ul>
             
             
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-301/docs/topics/code/images/alt-text/"> Alt text images</a> How to add alternative text for images, SVGs and icons in development.
+                </p>
+            </li>
+            
+            
+            
             
         </ul>
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-301/docs/topics/code/images-animations/images/">Back to: Images</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-301/docs/topics/code/images/">Back to: Images</a>
             </p>
 
         

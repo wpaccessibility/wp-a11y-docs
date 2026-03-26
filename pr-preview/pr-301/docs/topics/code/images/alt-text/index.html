@@ -10,7 +10,7 @@
 
 
 
-<title>Reduced motion, WP Accessibility Knowledge Base</title>
+<title>Alt text images, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-301/assets/css/styles.css">
@@ -210,23 +210,13 @@
 
           <a href="/pr-preview/pr-301/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-301/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a><button class="nav-list-expander btn-reset" aria-label="Images submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-301/docs/topics/code/images/image-animation/" class="nav-list-link">Image animation</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-301/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-301/docs/topics/code/pattern-libraries/" class="nav-list-link">Pattern libraries</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/code/images/" class="nav-list-link">Images</a><button class="nav-list-expander btn-reset" aria-label="Images submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/code/images/alt-text/" class="nav-list-link">Alt text images</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/code/images/image-animation/" class="nav-list-link">Image animation</a></li></ul></li><li class="nav-list-item">
 
@@ -559,7 +549,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/images-animations/'>Images and animations</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Reduced motion</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/'>Frontend code</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-301/docs/topics/code/images/'>Images</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Alt text images</li>
     </ol>
 </nav>
 
@@ -568,33 +558,191 @@
 
         <main>
 
-          <h1 id="setting-reduced-motion-for-animations">Setting reduced motion for animations</h1>
+          <h1 id="alternative-text-for-images-svgs-and-icons-in-development">Alternative text for images, SVGs and icons in development</h1>
 
-<p>Animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines and nausea. You can help users avoid these problems by making all of your animations support the <code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> flag.</p>
+<p>When a user can not see an image and that image has meaning, adds information, that image needs an alternative in text. Screen readers will announce that alternative text, so visitors that can not see the image will also know what it shows and won’t miss information.</p>
 
-<p><code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> is a system preference that allows the user to indicate that they would prefer not to see animations. But this only works if the code properly supports it!</p>
+<p>You may think that you’re not including any images in your project. Possibly this is true; but are you using <a href="https://developer.wordpress.org/resource/dashicons/">dashicons</a> or other icon fonts? Are you using SVG graphics? For accessibility, “images” doesn’t only refer to the <code class="language-plaintext highlighter-rouge">img</code> element. It means any non-text graphical elements on the page.</p>
 
-<p>You can check for this system preference using the CSS media feature:</p>
+<p>All of these images require accessibility considerations. The W3C offers a <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">useful decision tree to help you decide</a> what kind of text you need for an image. If your image is conveying information or activating a control, it’s going to need some form of <a href="/pr-preview/pr-301/docs/topics/code/accessible-name">accessible name</a>.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-reduced-motion</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nc">.animation</span> <span class="p">{</span>
-        <span class="c">/*  adjust your animations if reduced motion is requested.  */</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+<p class="info callout">This page addresses the alternative text and accessible names for images in development. How to write a good alt text and add them in the content is addressed in the “Content and Images” section <a href="/pr-preview/pr-301/docs/topics/content/alt-text/">Alternative text for images in the content</a> of this documentation.</p>
+
+<h2 id="alternative-text-on-an-img">Alternative text on an img</h2>
+
+<p>Always add the img attribute to an img element. The alt attribute can:</p>
+
+<ul>
+  <li>contain the alternative text, this will be announced by a screen reader</li>
+  <li>be empty, the image will be omitted by a screen reader.</li>
+</ul>
+
+<p>When the alt attribute is not present, the screen reader will announce the <strong>filename</strong> instead. Blind users miss the information that is on the image.</p>
+
+<p class="dont callout"><strong>Don’t</strong>: Remove the <code class="language-plaintext highlighter-rouge">alt</code> attribute</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- Do not copy,this is incorrect code --&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"IMG_123.jpg"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+<p>Will be announced in VoiceOver as “IMG_123, image”.</p>
+
+<p class="do callout">Do: Add an <code class="language-plaintext highlighter-rouge">alt</code> attribute, describing the purpose of the image.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"IMG_123.jpg"</span> <span class="na">alt=</span><span class="s">"All T-shirts are on sale"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+<p>Will be announced in VoiceOver as “All T-shirts are on sale, image”.</p>
+
+<h2 id="alternative-text-on-an-svg">Alternative text on an svg</h2>
+
+<p class="tip callout"><strong>Tip</strong>: Carie Fisher published extensive research on how to <a href="https://www.smashingmagazine.com/author/carie-fisher/">create accessible SVGs</a>.</p>
+
+<p>For accessibility: add <code class="language-plaintext highlighter-rouge">role="img"</code> to an SVG that serves as an image. Then the element is recognized and announced as an image by screen readers.</p>
+
+<p>There are several ways to give an SVG an alt text (an accessible name). We name 3, all are valid.</p>
+
+<p>1: Use the attribute <code class="language-plaintext highlighter-rouge">aria-label</code>:</p>
+
+<svg aria-label="WordPress logo" role="img" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 96.24 96.24">
+<g>
+	<path d="M48.122,0C21.587,0,0.001,21.585,0.001,48.118c0,26.535,21.587,48.122,48.12,48.122c26.532,0,48.117-21.587,48.117-48.122   C96.239,21.586,74.654,0,48.122,0z M4.857,48.118c0-6.271,1.345-12.227,3.746-17.606l20.638,56.544   C14.81,80.042,4.857,65.243,4.857,48.118z M48.122,91.385c-4.247,0-8.346-0.623-12.222-1.763L48.88,51.903l13.301,36.433   c0.086,0.215,0.191,0.411,0.308,0.596C57.992,90.514,53.16,91.385,48.122,91.385z M54.083,27.834   c2.604-0.137,4.953-0.412,4.953-0.412c2.33-0.276,2.057-3.701-0.277-3.564c0,0-7.007,0.549-11.532,0.549   c-4.25,0-11.396-0.549-11.396-0.549c-2.332-0.137-2.604,3.427-0.273,3.564c0,0,2.208,0.275,4.537,0.412l6.74,18.469l-9.468,28.395   L21.615,27.835c2.608-0.136,4.952-0.412,4.952-0.412c2.33-0.275,2.055-3.702-0.278-3.562c0,0-7.004,0.549-11.53,0.549   c-0.813,0-1.77-0.021-2.784-0.052C19.709,12.611,33.008,4.856,48.122,4.856c11.265,0,21.519,4.306,29.215,11.357   c-0.187-0.01-0.368-0.035-0.562-0.035c-4.248,0-7.264,3.702-7.264,7.679c0,3.564,2.055,6.582,4.248,10.146   c1.647,2.882,3.567,6.585,3.567,11.932c0,3.704-1.422,8-3.293,13.986l-4.315,14.421L54.083,27.834z M69.871,85.516l13.215-38.208   c2.471-6.171,3.29-11.106,3.29-15.497c0-1.591-0.104-3.07-0.292-4.449c3.38,6.163,5.303,13.236,5.301,20.758   C91.384,64.08,82.732,78.016,69.871,85.516z" />
+</g>
+</svg>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;svg</span> <span class="na">aria-label=</span><span class="s">"WordPress logo"</span> <span class="na">role=</span><span class="s">"img"</span><span class="nt">&gt;</span>
+    [...]
+<span class="nt">&lt;/svg&gt;</span>
 </code></pre></div></div>
 
-<p>Reduced motion doesn’t have to mean no animation at all, but it should be very minimal – no more than is absolutely necessary. When in doubt, eliminate the animation entirely.</p>
+<p>2: Use the element <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code>:</p>
 
-<p>You can check for the media query in JavaScript by checking the value of the media query:</p>
+<svg aria-labelledby="titleID" role="img" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 96.24 96.24">
+<title id="titleID">WordPress logo</title>
+<g>
+	<path d="M48.122,0C21.587,0,0.001,21.585,0.001,48.118c0,26.535,21.587,48.122,48.12,48.122c26.532,0,48.117-21.587,48.117-48.122   C96.239,21.586,74.654,0,48.122,0z M4.857,48.118c0-6.271,1.345-12.227,3.746-17.606l20.638,56.544   C14.81,80.042,4.857,65.243,4.857,48.118z M48.122,91.385c-4.247,0-8.346-0.623-12.222-1.763L48.88,51.903l13.301,36.433   c0.086,0.215,0.191,0.411,0.308,0.596C57.992,90.514,53.16,91.385,48.122,91.385z M54.083,27.834   c2.604-0.137,4.953-0.412,4.953-0.412c2.33-0.276,2.057-3.701-0.277-3.564c0,0-7.007,0.549-11.532,0.549   c-4.25,0-11.396-0.549-11.396-0.549c-2.332-0.137-2.604,3.427-0.273,3.564c0,0,2.208,0.275,4.537,0.412l6.74,18.469l-9.468,28.395   L21.615,27.835c2.608-0.136,4.952-0.412,4.952-0.412c2.33-0.275,2.055-3.702-0.278-3.562c0,0-7.004,0.549-11.53,0.549   c-0.813,0-1.77-0.021-2.784-0.052C19.709,12.611,33.008,4.856,48.122,4.856c11.265,0,21.519,4.306,29.215,11.357   c-0.187-0.01-0.368-0.035-0.562-0.035c-4.248,0-7.264,3.702-7.264,7.679c0,3.564,2.055,6.582,4.248,10.146   c1.647,2.882,3.567,6.585,3.567,11.932c0,3.704-1.422,8-3.293,13.986l-4.315,14.421L54.083,27.834z M69.871,85.516l13.215-38.208   c2.471-6.171,3.29-11.106,3.29-15.497c0-1.591-0.104-3.07-0.292-4.449c3.38,6.163,5.303,13.236,5.301,20.758   C91.384,64.08,82.732,78.016,69.871,85.516z" />
+</g>
+</svg>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">mediaQuery</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nf">matchMedia</span><span class="p">(</span><span class="dl">"</span><span class="s2">(prefers-reduced-motion: reduce)</span><span class="dl">"</span><span class="p">);</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>WordPress logo<span class="nt">&lt;/title&gt;</span>
+    [...]
+<span class="nt">&lt;/svg&gt;</span>
+</code></pre></div></div>
+<p>The content of <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> isn’t displayed but browsers usually show the <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> as a tooltip.</p>
+
+<p>3: Assign the accessible name to the content of <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> of the SVG, using <code class="language-plaintext highlighter-rouge">aria-labelledby</code>:</p>
+
+<svg aria-labelledby="titleID" role="img" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 96.24 96.24">
+<title id="titleID">WordPress logo</title>
+<g>
+	<path d="M48.122,0C21.587,0,0.001,21.585,0.001,48.118c0,26.535,21.587,48.122,48.12,48.122c26.532,0,48.117-21.587,48.117-48.122   C96.239,21.586,74.654,0,48.122,0z M4.857,48.118c0-6.271,1.345-12.227,3.746-17.606l20.638,56.544   C14.81,80.042,4.857,65.243,4.857,48.118z M48.122,91.385c-4.247,0-8.346-0.623-12.222-1.763L48.88,51.903l13.301,36.433   c0.086,0.215,0.191,0.411,0.308,0.596C57.992,90.514,53.16,91.385,48.122,91.385z M54.083,27.834   c2.604-0.137,4.953-0.412,4.953-0.412c2.33-0.276,2.057-3.701-0.277-3.564c0,0-7.007,0.549-11.532,0.549   c-4.25,0-11.396-0.549-11.396-0.549c-2.332-0.137-2.604,3.427-0.273,3.564c0,0,2.208,0.275,4.537,0.412l6.74,18.469l-9.468,28.395   L21.615,27.835c2.608-0.136,4.952-0.412,4.952-0.412c2.33-0.275,2.055-3.702-0.278-3.562c0,0-7.004,0.549-11.53,0.549   c-0.813,0-1.77-0.021-2.784-0.052C19.709,12.611,33.008,4.856,48.122,4.856c11.265,0,21.519,4.306,29.215,11.357   c-0.187-0.01-0.368-0.035-0.562-0.035c-4.248,0-7.264,3.702-7.264,7.679c0,3.564,2.055,6.582,4.248,10.146   c1.647,2.882,3.567,6.585,3.567,11.932c0,3.704-1.422,8-3.293,13.986l-4.315,14.421L54.083,27.834z M69.871,85.516l13.215-38.208   c2.471-6.171,3.29-11.106,3.29-15.497c0-1.591-0.104-3.07-0.292-4.449c3.38,6.163,5.303,13.236,5.301,20.758   C91.384,64.08,82.732,78.016,69.871,85.516z" />
+</g>
+</svg>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;svg</span> <span class="na">aria-labelledby=</span><span class="s">"titleID"</span> <span class="na">role=</span><span class="s">"img"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title</span> <span class="na">id=</span><span class="s">"titleID"</span><span class="nt">&gt;</span>WordPress logo<span class="nt">&lt;/title&gt;</span>
+    [...]
+<span class="nt">&lt;/svg&gt;</span>
+</code></pre></div></div>
+<p>The value <code class="language-plaintext highlighter-rouge">aria-labelledby</code> points to the <code class="language-plaintext highlighter-rouge">id</code> of the <code class="language-plaintext highlighter-rouge">title</code>.</p>
+
+<h2 id="image-or-svg-in-a-link">Image or SVG in a link</h2>
+
+<p>When adding an image inside a link, the alt text will be added to the link text. Make sure the link text still makes sense. Repeat text that is visible in the image, also in the link text.</p>
+
+<p>For example when you create a link to Instagram, showing only the icon.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"[some-url]"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo-insta.png"</span> <span class="na">alt=</span><span class="s">"Instagram"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>“Instagram” will be the link text, the accessible name of the link, announced by a screen reader when the link gets focus. So, in this case don’t add the word “Logo”, even if it’s a logo. Describe the link target.</p>
+
+<h3 id="special-case-a-link-on-the-logo-in-the-header">Special case: A link on the logo in the header</h3>
+
+<p>The alt text on a logo in the header od a website needs more than just the target, also the fact that the image displays the logo of the website/company.</p>
+
+<p>For example:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.png"</span> <span class="na">alt=</span><span class="s">"Company name logo, to the homepage"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<p>Read the full explanation:</p>
+
+<ul>
+  <li><a href="https://www.htmhell.dev/adventcalendar/2024/1/">A link on a logo in the header, what should the alt-text be?</a> by Rian Rietveld on HTMhell.</li>
+  <li><a href="https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header/">The accessible name of a link on a logo in the header, in Dutch</a> on NL Design System.</li>
+</ul>
+
+<p class="alert callout"><strong>Please note</strong>: In the EU, this way of adding an alt text to the logo in the header is required to pass WCAG 2.2 AA. In other parts of the world only adding the link target may be sufficient to pass an audit. Ask your local accessibility auditor for advice in this case.</p>
+
+<h2 id="icons">Icons</h2>
+
+<p>Make sure screen readers users also know what’s on the icon, if you use it in a meaningful way.
+This is particularly crucial if you’re using images to represent controls, like a hamburger menu icon, an arrow, or a plus or minus icon. These images are used to represent information.</p>
+
+<p>For example, if you use a close button with an “X”-icon, make sure that button is announced by a screen reader as “Close”.</p>
+
+<h3 id="examples-for-icons">Examples for icons</h3>
+
+<p class="dont callout"><strong>Don’t</strong> Forget giving button with a menu icon an accessible name.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 
+Do not copy,this is incorrect code.
+This button has no accessible name and 
+is announced just as "Button" by a screen reader. 
+--&gt;</span>
+<span class="nt">&lt;button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dashicons dashicons-menu"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p class="do callout"><strong>Do:</strong> Provide an accessible name to the button.</p>
+
+<p>Use an aria-label on the button, this will be the accessible name.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- This button is announced as "menu" by a screen reader. --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"Menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dashicons dashicons-menu"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p>Add text, hidden from sight but announced by a screenreader using the <a href="/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a>.</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- This button is announced as "menu" by a screen reader. --&gt;</span>
+<span class="nt">&lt;button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dashicons dashicons-menu"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"screen-reader-text"</span><span class="nt">&gt;</span>Menu<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<p>Or, the best option: add visible text. Because not everyone understands an icon.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- This button is announced as "menu" by a screen reader. --&gt;</span>
+<span class="nt">&lt;button&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"dashicons dashicons-menu"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span&gt;</span>Menu<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
 <h2 id="resources">Resources</h2>
 
+<h3 id="related-wcag-success-criteria-for-alternative-text-for-images">Related WCAG Success Criteria for alternative text for images</h3>
+
+<p>By giving a meaningful image a proper alternative text, you meet WCAG success criteria</p>
 <ul>
-  <li><a href="https://since1979.dev/respecting-prefers-reduced-motion-with-javascript-and-react/">Respecting “Prefers Reduced Motion” with JavaScript and React</a>, by Stephan Nijman</li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">Prefers-reduced-motion </a>from MDN Web Docs</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-content">1.1.1 Non-text Content</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context">2.4.4 Link Purpose (In Context)</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#label-in-name">2.5.3 Label in Name</a> (level A).</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/tutorials/images/">Images Tutorial</a>, by the W3C.</li>
+  <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">An alt Decision Tree</a>, by the W3C.</li>
+  <li><a href="https://www.smashingmagazine.com/2020/05/accessible-images/">Accessible Images For When They Matter Most</a>, by Carie Fisher on Smashing Magazine.</li>
+  <li><a href="https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/">Accessible SVGs: Perfect Patterns For Screen Reader Users</a>, by Carie Fisher on Smashing Magazine.</li>
+  <li><a href="https://css-tricks.com/accessible-svgs/">Accessible SVGS from CSS Tricks</a>, by Heather Migliorisi on CSS Tricks.</li>
+  <li><a href="https://fontawesome.com/docs/web/dig-deeper/accessibility">Font Icon accessibility from Font Awesome</a> by Font Awesome.</li>
 </ul>
 
 
@@ -610,24 +758,24 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Images and animations</h2>
+        <h2>Other pages in: Images</h2>
         <ul>
+            
+            
             
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-301/docs/topics/code/images-animations/images/"> Images</a> What is an image and how does it relate to accessible theme development?
+                    <a href="/pr-preview/pr-301/docs/topics/code/images/image-animation/"> Image animation</a> Learn what is important for animation in images.
                 </p>
             </li>
-            
-            
             
             
         </ul>
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-301/docs/topics/code/images-animations/">Back to: Images and animations</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-301/docs/topics/code/images/">Back to: Images</a>
             </p>
 
         
