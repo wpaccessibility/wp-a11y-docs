@@ -69,3 +69,11 @@ Helpful (descriptive) link texts:
 ## Avoid the title attribute on links
 
 You should not use the title attribute on links, because the title attribute is only available for sighted users on desktop using a mouse. Other users will miss that information. In addition, screen readers announce the title attribute inconsistently. You must be sure that all users get the information they need and the title attribute doesn’t provide that.
+
+# Resources
+
+### Related WCAG Success Criteria for links
+
+By giving a meaningful link text, you meet WCAG success criteria
+- [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
+- [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
