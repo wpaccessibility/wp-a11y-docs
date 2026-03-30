@@ -2242,7 +2242,7 @@
     "doc": "Feedback on errors",
     "title": "Feedback on form errors",
     "description": "Use understandable, well-timed error messages and logical validation rules.",
-    "content": "Use understandable, well-timed error messages and logical validation rules. If a form field is not filled out correctly, it should be clear to everyone what is wrong. Please also read our blog post Accessible error messages in forms, which explains step by step how to prevent errors, indicate them, and provide help with error messages in a form for different types of users. Another good writeups are A Guide To Accessible Form Validation by Sandrina Pereira on Smashing Magazine and 10 Design Guidelines for Reporting Errors in Forms by Rachel Krause for the NN Group. ",
+    "content": "Use understandable, well-timed error messages and logical validation rules. If a form field is not filled out correctly, it should be clear to everyone what is wrong. Please read Accessible feedback in forms, step-by-step first, which explains how to prevent errors, indicate them, and provide help with error messages in a form for different types of users. Another good writeups are A Guide To Accessible Form Validation by Sandrina Pereira on Smashing Magazine and 10 Design Guidelines for Reporting Errors in Forms by Rachel Krause for the NN Group. ",
     "url": "/pr-preview/pr-304/docs/topics/forms/feedback/#feedback-on-form-errors",
     "relUrl": "/docs/topics/forms/feedback/#feedback-on-form-errors"
   },"321": {
