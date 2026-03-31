@@ -3,7 +3,7 @@ title: Best message location
 layout: default
 parent: Feedback on errors
 description: For error messages, the best location is above the form field.
-nav_order: 3
+nav_order: 4
 ---
 
 # The best location for error messages
