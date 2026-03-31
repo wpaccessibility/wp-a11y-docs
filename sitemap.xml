@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://wpaccessibility.org//blog/2025/accessible-error-messages-forms/</loc>
-<lastmod>2025-08-16T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://wpaccessibility.org//blog/2025/offer-multiple-ways-of-contact/</loc>
-<lastmod>2025-08-27T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://wpaccessibility.org//blog/2025/insights-wordcamp-europe-2025/</loc>
-<lastmod>2025-09-08T00:00:00+00:00</lastmod>
-</url>
-<url>
 <loc>https://wpaccessibility.org//404</loc>
 </url>
 <url>
@@ -35,6 +23,9 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/theme-guidelines/accessible-animation/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/topics/forms/feedback/accessible-error-messages/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/forms/input-label/accessible-name/</loc>
@@ -385,6 +376,9 @@
 <loc>https://wpaccessibility.org//docs/topics/theme-guidelines/meaningful-landmark-roles/</loc>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/content/multiple-ways-contact/</loc>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/theme-guidelines/new-windows-tabs/</loc>
 </url>
 <url>
@@ -407,6 +401,9 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/forms/input-label/placeholders/</loc>
+</url>
+<url>
+<loc>https://wpaccessibility.org//docs/start/business/priority/</loc>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/about/contribute/github/pull-requests/</loc>
