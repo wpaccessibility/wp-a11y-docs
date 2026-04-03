@@ -12,9 +12,13 @@ nav_order: 3
 
 Headings are the framework of your content. A good heading should simply and concisely describe the content that follows.
 
-The heading level is important. The H1 (heading level 1) is reserved for the post or page title. For most themes that is the title you give a page or post. Use heading level 2, 3 and 4 to divide your content into meaningful sections, like the index of a book.
+The heading level is important. The H1 (heading level 1) is reserved for the post or page title. For most themes that is the title you give a page or post. 
 
-Choose heading levels by meaning, not by visible size. This way artificial intelligents (AI), search engines and screen readers (software used by your blind visitors) understand the structure and meaning of the content better. 
+![Screenshot adding a page title in the WordPress Admin]({{site.baseurl}}/assets/images/add-title.png)
+
+Use other heading levels H2 upto H6 to divide your content into meaningful sections, like the index of a book.
+
+Choose heading levels by their meaning, not by their visible size. This way artificial intelligents (AI), search engines and screen readers understand the structure and meaning of the content better. 
 
 {: .info .callout }
 How to implement headings in development is addressed in the “Frontend code” section [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/).
@@ -23,14 +27,14 @@ How to implement headings in development is addressed in the “Frontend code”
 
 - The H1 (heading level 1) is reserved for the post or page title.
 - Use the other headings to divide content into scannable blocks.
-- Headings to describe the content below. Do not use a heading just to make the text appear bigger or stand out.
+- Use headings to describe the content below. Do not use a heading just to make the text appear bigger or stand out.
 - Don't skip a heading level from the top down.
-- Use a real heading instead of making text only bold or large.
+- Use a real HTML heading instead of making text only bold or large.
 
 A heading means “this text describes the information that follows it.” There should not be text before the heading that is part of what that heading describes, and there must be content following the heading.
 
 {: .tip .callout }
-**Tip:** If you don’t like the sizes of the headings in your content, you should adjust the design of the heading rather than selecting a different heading level. This helps with accessibility as well as with content adaptability. Selecting a heading based on size might make a change of theme more difficult.
+**Tip:** If you don’t like the sizes of the headings in your content, you should adjust the design of the heading rather than selecting a different heading level. Ask your web developer if needed. This helps with accessibility as well as with content adaptability. Selecting a heading based on size might make a change of theme more difficult.
 
 ## Examples of heading structures
 
@@ -53,7 +57,7 @@ Heading 1 (post title)
 If we use this post as an example, the heading structure for the content looks like this:
 
 ```text
-    Heading 1: Using Headings in Content (main post topic)
+    Heading 1: Using Headings in the content (main post topic)
         Heading 2: What are headings? (subsection)
             Heading 3: Best practices for headings summarized
         Heading 2: Examples of heading structures (subsection)

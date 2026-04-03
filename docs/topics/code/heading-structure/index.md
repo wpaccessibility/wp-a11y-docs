@@ -23,8 +23,7 @@ How to use headings in the editor is addressed in the “Content and images” s
 - Do not skip a heading level. 
 - Use headings to meaningfully describe the content that follows, not as a design element.
 
-{: .callout .info }
-**Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard.
+
 
 WPBeginner published a practical guide on headings for WordPress: [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/), also addressing the impact of a good heading structure on SEO.
 
@@ -53,7 +52,10 @@ Use the browser tool **HeadingsMap** to test the heading structure of an entire 
 - [Headings Map toolbar for Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en)
 - [Headings Map toolbar for Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/)
 
-For testing headings in an accessibility-ready WordPress theme, follow the testing procedure with the Theme accessibility guidelines for [Headings with meaningful structure]({{site.baseurl}}/docs/topics/theme-guidelines/headings-structure/).
+Are you testing the heading structure for an accessibility-ready WordPress theme? Please follow the testing procedure outlined in the Theme Accessibility Guidelines under [Headings with meaningful structure]({{site.baseurl}}/docs/topics/theme-guidelines/headings-structure/).
+
+{: .callout .info }
+**Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard.
 
 ## Resources
 
