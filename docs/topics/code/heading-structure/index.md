@@ -23,8 +23,6 @@ How to use headings in the editor is addressed in the “Content and images” s
 - Do not skip a heading level. 
 - Use headings to meaningfully describe the content that follows, not as a design element.
 
-
-
 WPBeginner published a practical guide on headings for WordPress: [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/), also addressing the impact of a good heading structure on SEO.
 
 ### Sections and headings

@@ -96,5 +96,3 @@ Using a meaningful heading structure is necessary to meet the WCAG success crite
 - [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://www.wpbeginner.com/wp-tutorials/how-to-properly-use-heading-tags-in-wordpress-explained/) by WPBeginner.
 - [Accessible heading structure](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) by Rian Rietveld on the A11y Project.
 - [Headings and why you should use them](https://yoast.com/headings-use/) by Brendan Reid on Yoast.
-
-
