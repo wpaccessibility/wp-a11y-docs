@@ -16,7 +16,10 @@ Proper heading structure improves navigation and understanding for screen reader
 
 ## Testing
 
-**Tools:** [Headings Map toolbar for Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en), [Headings Map toolbar for Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/)
+Use the browser tool **HeadingsMap** to test the heading structure:
+- [Headings Map toolbar for Edge](https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo)
+- [Headings Map toolbar for Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en)
+- [Headings Map toolbar for Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/)
 
 For each page template, assess the heading structure to confirm that it accurately reflects the hierarchy of content on the page.
 
@@ -33,7 +36,16 @@ For each page template, assess the heading structure to confirm that it accurate
 
 Note: Heading elements for structure may be positioned off-screen if they would appear redundant to sighted users. It is not a failure, for example, to have a screen-reader-only heading in the footer (`<h2 class="screen-reader-text">Footer</h2>`) if that helps structure the page content and provides meaning for screen reader users.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)  
-* [Understanding: Headings and Labels](https://www.w3.org/WAI/WCAG22/Understanding/headings-and-labels.html%20)
+### WCAG Success Criteria for the heading structure
+
+Using a meaningful heading structure is necessary to meet the WCAG success criteria:
+
+- [WCAG 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+- [WCAG 2.4.6 Headings and Labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) (Level AA).
+
+### Related pages in this documentation
+
+- [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/)
+- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/).
