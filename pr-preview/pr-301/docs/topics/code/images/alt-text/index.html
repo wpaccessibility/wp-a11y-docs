@@ -114,7 +114,9 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/start/business/priority/" class="nav-list-link">Why accessibility should be your next priority</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/start/training/" class="nav-list-link">Training</a><button class="nav-list-expander btn-reset" aria-label="Training submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -154,9 +156,11 @@
 
           <a href="/pr-preview/pr-301/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/topics/content/multiple-ways-contact/" class="nav-list-link">Multiple ways to contact</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/content/readability/" class="nav-list-link">Readability</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -285,6 +289,8 @@
           <a href="/pr-preview/pr-301/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a><button class="nav-list-expander btn-reset" aria-label="Feedback on errors submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/forms/feedback/accessible-error-messages/" class="nav-list-link">Accessible feedback in forms</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/forms/feedback/error-check/" class="nav-list-link">Check at the right moment</a></li><li class="nav-list-item">
 
@@ -560,24 +566,24 @@
 
           <h1 id="alternative-text-for-images-svgs-and-icons-in-development">Alternative text for images, SVGs and icons in development</h1>
 
-<p>When a user can not see an image and that image has meaning, adds information, that image needs an alternative in text. Screen readers will announce that alternative text, so visitors that can not see the image will also know what it shows and won’t miss information.</p>
+<p>When an image has meaning or adds information on a page, that image needs a text alternative. Screen r`eaders will announce that alternative text, so visitors using assistive technology will also know what it shows and won’t miss information.</p>
 
 <p>You may think that you’re not including any images in your project. Possibly this is true; but are you using <a href="https://developer.wordpress.org/resource/dashicons/">dashicons</a> or other icon fonts? Are you using SVG graphics? For accessibility, “images” doesn’t only refer to the <code class="language-plaintext highlighter-rouge">img</code> element. It means any non-text graphical elements on the page.</p>
 
 <p>All of these images require accessibility considerations. The W3C offers a <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">useful decision tree to help you decide</a> what kind of text you need for an image. If your image is conveying information or activating a control, it’s going to need some form of <a href="/pr-preview/pr-301/docs/topics/code/accessible-name">accessible name</a>.</p>
 
-<p class="info callout">This page addresses the alternative text and accessible names for images in development. How to write a good alt text and add them in the content is addressed in the “Content and Images” section <a href="/pr-preview/pr-301/docs/topics/content/alt-text/">Alternative text for images in the content</a> of this documentation.</p>
+<p class="info callout">This page addresses the alternative text and accessible names for images in development. How to write good alt text and add them to content is addressed in the “Content and Images” section <a href="/pr-preview/pr-301/docs/topics/content/alt-text/">Alternative text for images in the content</a> of this documentation.</p>
 
 <h2 id="alternative-text-on-an-img">Alternative text on an img</h2>
 
-<p>Always add the img attribute to an img element. The alt attribute can:</p>
+<p>Always add the <code class="language-plaintext highlighter-rouge">alt</code> attribute to an <code class="language-plaintext highlighter-rouge">img</code> element. The <code class="language-plaintext highlighter-rouge">alt</code> attribute can:</p>
 
 <ul>
-  <li>contain the alternative text, this will be announced by a screen reader</li>
-  <li>be empty, the image will be omitted by a screen reader.</li>
+  <li>contain the alternative text that will be announced by a screen reader</li>
+  <li>be empty, so the image will be omitted by a screen reader.</li>
 </ul>
 
-<p>When the alt attribute is not present, the screen reader will announce the <strong>filename</strong> instead. Blind users miss the information that is on the image.</p>
+<p>When the alt attribute is not present, a screen reader may announce the <strong>filename</strong> or other information instead. Blind users will miss information that is on the image.</p>
 
 <p class="dont callout"><strong>Don’t</strong>: Remove the <code class="language-plaintext highlighter-rouge">alt</code> attribute</p>
 
@@ -598,7 +604,7 @@
 
 <p>For accessibility: add <code class="language-plaintext highlighter-rouge">role="img"</code> to an SVG that serves as an image. Then the element is recognized and announced as an image by screen readers.</p>
 
-<p>There are several ways to give an SVG an alt text (an accessible name). We name 3, all are valid.</p>
+<p>There are several ways to give an SVG an alt text (an accessible name). Here are three valid options:</p>
 
 <p>1: Use the attribute <code class="language-plaintext highlighter-rouge">aria-label</code>:</p>
 
@@ -627,9 +633,9 @@
     [...]
 <span class="nt">&lt;/svg&gt;</span>
 </code></pre></div></div>
-<p>The content of <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> isn’t displayed but browsers usually show the <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> as a tooltip.</p>
+<p>The content of <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> doesn’t render as visual text, but browsers usually show the <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> as a tooltip.</p>
 
-<p>3: Assign the accessible name to the content of <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> of the SVG, using <code class="language-plaintext highlighter-rouge">aria-labelledby</code>:</p>
+<p>3: Assign the accessible name to the content of <code class="language-plaintext highlighter-rouge">&lt;title&gt;</code> of the SVG, using <code class="language-plaintext highlighter-rouge">aria-labelledby</code> to explicitly connect the <code class="language-plaintext highlighter-rouge">svg</code> to its name:</p>
 
 <svg aria-labelledby="titleID" role="img" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 96.24 96.24">
 <title id="titleID">WordPress logo</title>
@@ -647,7 +653,9 @@
 
 <h2 id="image-or-svg-in-a-link">Image or SVG in a link</h2>
 
-<p>When adding an image inside a link, the alt text will be added to the link text. Make sure the link text still makes sense. Repeat text that is visible in the image, also in the link text.</p>
+<p>When adding an image inside a link, the alt text will be added to the link text, to the accessible name of the link. Make sure the link text still makes sense.</p>
+
+<p>If an image of, for example, a logo also contains text, like a byline, make sure that text is also added to the link text. Then no information gets lost.</p>
 
 <p>For example when you create a link to Instagram, showing only the icon.</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"[some-url]"</span><span class="nt">&gt;</span>
@@ -659,7 +667,7 @@
 
 <h3 id="special-case-a-link-on-the-logo-in-the-header">Special case: A link on the logo in the header</h3>
 
-<p>The alt text on a logo in the header od a website needs more than just the target, also the fact that the image displays the logo of the website/company.</p>
+<p>The alt text on a logo in the header of a website needs more information than just the link target. It must also show that the image displays the logo of the website/company.</p>
 
 <p>For example:</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
@@ -674,18 +682,18 @@
   <li><a href="https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header/">The accessible name of a link on a logo in the header, in Dutch</a> on NL Design System.</li>
 </ul>
 
-<p class="alert callout"><strong>Please note</strong>: In the EU, this way of adding an alt text to the logo in the header is required to pass WCAG 2.2 AA. In other parts of the world only adding the link target may be sufficient to pass an audit. Ask your local accessibility auditor for advice in this case.</p>
+<p class="alert callout"><strong>Please note</strong>: There are regional differences on how to interpret the WCAG success criterion <a href="https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context">2.4.4 Link Purpose (In Context)</a> in this case. Please consult your accessibility expert on their opinion about what the accessible name of a link to home on a logo in the header should be.</p>
 
 <h2 id="icons">Icons</h2>
 
-<p>Make sure screen readers users also know what’s on the icon, if you use it in a meaningful way.
+<p>Make sure screen readers users also know what’s shown in the icon, if you use it in a meaningful way.
 This is particularly crucial if you’re using images to represent controls, like a hamburger menu icon, an arrow, or a plus or minus icon. These images are used to represent information.</p>
 
 <p>For example, if you use a close button with an “X”-icon, make sure that button is announced by a screen reader as “Close”.</p>
 
 <h3 id="examples-for-icons">Examples for icons</h3>
 
-<p class="dont callout"><strong>Don’t</strong> Forget giving button with a menu icon an accessible name.</p>
+<p class="dont callout"><strong>Don’t</strong> Forget giving a button, containing only a menu icon, an accessible name.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- 
 Do not copy,this is incorrect code.
@@ -714,7 +722,7 @@ is announced just as "Button" by a screen reader.
 <span class="nt">&lt;/button&gt;</span>
 </code></pre></div></div>
 
-<p>Or, the best option: add visible text. Because not everyone understands an icon.</p>
+<p>The best option is to add visible text. An icon alone may not be universally understood.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- This button is announced as "menu" by a screen reader. --&gt;</span>
 <span class="nt">&lt;button&gt;</span>
@@ -727,10 +735,10 @@ is announced just as "Button" by a screen reader.
 
 <h3 id="related-wcag-success-criteria-for-alternative-text-for-images">Related WCAG Success Criteria for alternative text for images</h3>
 
-<p>By giving a meaningful image a proper alternative text, you meet WCAG success criteria</p>
+<p>By giving meaningful images proper alternative text, you meet WCAG success criteria:</p>
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-content">1.1.1 Non-text Content</a> (level A).</li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context">2.4.4 Link Purpose (In Context)</a> (level A).</li>
+  <li>To be honest, this topic  (level A).</li>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#label-in-name">2.5.3 Label in Name</a> (level A).</li>
 </ul>
 
@@ -801,7 +809,7 @@ is announced just as "Button" by a screen reader.
             <li><a href="/pr-preview/pr-301/docs/topics/theme-guidelines/">Theme accessibility-ready tag</a></li>
             <li><a href="/pr-preview/pr-301/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a></li>
             <li><a href="/pr-preview/pr-301/docs/topics/legislation/">Legislation worldwide</a></li>
-            <li><a href="/pr-preview/pr-301/blog/">Blog</a></li>
+            <li><a href="/pr-preview/pr-301/docs/start/overlays/">Accessibility Overlays</a></li>
             <li><a href="/pr-preview/pr-301/docs/about/sponsors/">Sponsors</a></li>
             <li><a href="/pr-preview/pr-301/docs/about/contact/">Contact us</a></li>
           </ul>

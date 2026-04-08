@@ -114,7 +114,9 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/start/business/priority/" class="nav-list-link">Why accessibility should be your next priority</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/start/training/" class="nav-list-link">Training</a><button class="nav-list-expander btn-reset" aria-label="Training submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -154,9 +156,11 @@
 
           <a href="/pr-preview/pr-301/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/topics/content/multiple-ways-contact/" class="nav-list-link">Multiple ways to contact</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/content/readability/" class="nav-list-link">Readability</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -285,6 +289,8 @@
           <a href="/pr-preview/pr-301/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a><button class="nav-list-expander btn-reset" aria-label="Feedback on errors submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/forms/feedback/accessible-error-messages/" class="nav-list-link">Accessible feedback in forms</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/forms/feedback/error-check/" class="nav-list-link">Check at the right moment</a></li><li class="nav-list-item">
 
@@ -550,20 +556,15 @@
 
           <h1 id="alternative-text-for-images-in-the-content">Alternative text for images in the content</h1>
 
-<p>The alternative text or “alt text” is used to provide an alternative to an image for users who can’t see it. Screen readers will announce that alternative text, so visitors that can not see the image will also know what it shows and won’t miss information. How to add a good alt text in the content in WordPress?</p>
+<p>The alternative text or “alt text” is used to provide an alternative to an image for users who can’t see it. Screen readers will announce that alternative text, so visitors that can not see the image will also know what it shows and won’t miss information. How do you add good alt text in your WordPress content?</p>
 
 <p class="info callout">How to implement and name images in development is addressed in the “Frontend code” section <a href="/pr-preview/pr-301/docs/topics/code/images/">Images</a> of this documentation.</p>
 
 <h2 id="the-alternative-text-describes-the-purpose-of-an-image">The alternative text describes the purpose of an image</h2>
 
-<p>What should the alt text be? Describe (for non-visual readers) the contents and purpose of the image in the alternate text. And that purpose can depend on the context in which an image is used.</p>
+<p>Describe (for non-visual readers) the contents and purpose of the image in your alternate text. That purpose may depend on the context in which an image is used.</p>
 
-<p>Add alt text for:</p>
-
-<ul>
-  <li>Images that contain text that is not provided nearby.</li>
-  <li>Images that illustrate content in the broadest sense.</li>
-</ul>
+<p>Add alt text for images that contain text that is not contained in nearby text content.</p>
 
 <p>Images with complex information, like infographics, should be described briefly in the alt text, and the information should be provided elsewhere on the page.</p>
 
@@ -571,23 +572,23 @@
 
 <p>You can leave the alt text empty for images that are decorative and add no information to the content. Then a screen reader will skip that image and not announce it.</p>
 
-<p>On the <em>Web Accessibility Tutorials</em> of the W3C the <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">alt Decision Tree tool</a> is an almost comprehensive guide that describes how to use the alt attribute of an image in various situations.</p>
+<p>In the <em>Web Accessibility Tutorials</em> documentation of the W3C, the <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">alt text Decision Tree tool</a> is an almost comprehensive guide that describes how to provide alternative text in various situations.</p>
 
 <h2 id="alt-text-in-wordpress">Alt text in WordPress</h2>
 
-<p>In WordPress, add the alt text for an image in the Media Library, with the Attachment Details of an image. This alt text will be used for all embedding of this image in the content.</p>
+<p>In WordPress, you an add <code class="language-plaintext highlighter-rouge">alt</code> text for an image in the Media Library, in the Attachment Details panel for an image. This alt text will be used by default when embedding this image in content.</p>
 
 <p><img src="/pr-preview/pr-301/assets/images/attachment-details.png" alt="Screenshot of the attachment details of the WP A11y wapuu" /></p>
 
-<p>Make sure, when you add the image in the content with the Image Block, the alt text still matches the purpose if the image in the content. The alt text that image can be altered with the Block Settings and will only be used for this block.</p>
+<p>When you add an image in the content using the Image Block, make sure the alt text still matches the purpose of the image as you are using it. The alt text for the image can be altered in the Block Settings and will only be used for this block.</p>
 
 <p><img src="/pr-preview/pr-301/assets/images/img-block-alt-text.png" alt="Screenshot of the Image block settings for alt text" /></p>
 
 <h2 id="overall-benefits-of-using-a-proper-alt-text">Overall benefits of using a proper alt text.</h2>
 
-<p>People who can’t fully see or hear content can understand it by using a screen reader.</p>
+<p>People who can’t see your image can get equivalent information about it using their assistive technology, such as a screen reader or a Braille display.</p>
 
-<p>The alt text shows when the images are still loading, in the case of a slow internet connection.</p>
+<p>The alt text also shows when the images are still loading, in the case of a slow internet connection.</p>
 
 <p>The <code class="language-plaintext highlighter-rouge">alt</code> attribute helps with Search Engine Optimization. Google uses alt text along with computer vision algorithms and the contents of the page to understand the <a href="https://support.google.com/webmasters/answer/114016">subject of the image</a>.</p>
 
@@ -599,20 +600,27 @@
 
 <p>When announcing an image, the screen reader announces the alt text and the fact that it is an image.</p>
 
-<p class="dont callout"><strong>Don’t</strong>: Add the alt text <code class="language-plaintext highlighter-rouge">Image of a nest of kittens.</code>. Screen readers already add the information that it’s an image.</p>
+<p class="dont callout"><strong>Don’t</strong>: Add the words “Image of”, <code class="language-plaintext highlighter-rouge">Image of a nest of kittens.</code>. <br />
+Screen readers already add the information that it’s an image.</p>
 
-<p class="do callout"><strong>Do:</strong> Be brief and to the point, Add the alt text <code class="language-plaintext highlighter-rouge">A nest of kittens.</code>.</p>
+<p class="do callout"><strong>Do:</strong> Be brief and to the point.<br />
+Add the alt text <code class="language-plaintext highlighter-rouge">A nest of kittens.</code>.</p>
 
 <h3 id="explain-the-essence-of-an-image">Explain the essence of an image</h3>
 
 <p>Think about what you want to tell with an image and capture that in the alt text.</p>
 
-<p class="dont callout"><strong>Don’t</strong>: Describe everything that’s on the image, like the alt text:
-<code class="language-plaintext highlighter-rouge">A photo of Jane, she is wearing her vintage dress by Dior, at the background is her garden, the sun is shining, she is smiling into the camera while holding a cup of coffee.</code>.</p>
+<p class="dont callout"><strong>Don’t</strong>: Describe everything that’s on the image, like the alt text:<br />
+“A photo of Jane, she is wearing her vintage dress by Dior, in her garden in full bloom, the sun is shining, she is smiling into the camera while holding a cup of coffee.”.</p>
 
-<p class="do callout">Be to the point, like the alt text: <code class="language-plaintext highlighter-rouge">Jane, smiling into the camera.</code>.</p>
+<p>In a fashion blog, the relevant information might be “wearing a vintage dress by Dior”, on a gardening page the background garden might be most important, describe what’s important in the image.</p>
 
-<p class="do callout">Describe what’s important in the image: <code class="language-plaintext highlighter-rouge">Jane, in vintage Dior.</code>.</p>
+<p class="do callout">Be to the point, like the alt text for a portrait:<br />
+“Jane, smiling into the camera.”.<br />
+The alt text for a photo of Jane, showing off her dress: <br />
+“Jane, in vintage Dior.”.  <br />
+The alt text for a photo of Jane in het garden:  <br />
+“Jane, in her garden in full bloom.”.</p>
 
 <h2 id="resources">Resources</h2>
 
@@ -668,7 +676,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-301/docs/topics/content/readability/"> Readability</a> Make the text scannable and easy to read.
+                    <a href="/pr-preview/pr-301/docs/topics/content/multiple-ways-contact/"> Multiple ways to contact</a> It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you.
                 </p>
             </li>
             
@@ -677,6 +685,14 @@
             <li>
                 <p>
                     <a href="/pr-preview/pr-301/docs/topics/content/docs/"> Digital documents</a> Similar accessibility rules apply to both PDFs and HTML documents
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-301/docs/topics/content/readability/"> Readability</a> Make the text scannable and easy to read.
                 </p>
             </li>
             
@@ -711,7 +727,7 @@
             <li><a href="/pr-preview/pr-301/docs/topics/theme-guidelines/">Theme accessibility-ready tag</a></li>
             <li><a href="/pr-preview/pr-301/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a></li>
             <li><a href="/pr-preview/pr-301/docs/topics/legislation/">Legislation worldwide</a></li>
-            <li><a href="/pr-preview/pr-301/blog/">Blog</a></li>
+            <li><a href="/pr-preview/pr-301/docs/start/overlays/">Accessibility Overlays</a></li>
             <li><a href="/pr-preview/pr-301/docs/about/sponsors/">Sponsors</a></li>
             <li><a href="/pr-preview/pr-301/docs/about/contact/">Contact us</a></li>
           </ul>

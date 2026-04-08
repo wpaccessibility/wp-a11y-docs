@@ -114,7 +114,9 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/start/business/priority/" class="nav-list-link">Why accessibility should be your next priority</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/start/training/" class="nav-list-link">Training</a><button class="nav-list-expander btn-reset" aria-label="Training submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -154,9 +156,11 @@
 
           <a href="/pr-preview/pr-301/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/content/readability/" class="nav-list-link">Readability</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/topics/content/multiple-ways-contact/" class="nav-list-link">Multiple ways to contact</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-301/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-301/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/content/readability/" class="nav-list-link">Readability</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -285,6 +289,8 @@
           <a href="/pr-preview/pr-301/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a><button class="nav-list-expander btn-reset" aria-label="Feedback on errors submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-301/docs/topics/forms/feedback/accessible-error-messages/" class="nav-list-link">Accessible feedback in forms</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-301/docs/topics/forms/feedback/error-check/" class="nav-list-link">Check at the right moment</a></li><li class="nav-list-item">
 
@@ -563,8 +569,8 @@
 <p>For moving, blinking, scrolling, or auto-updating animation that starts automatically, make sure that:</p>
 
 <ul>
-  <li>the animation doesn’t last longer than 5 seconds and then stops,</li>
-  <li>or the user can stop an animation themselves.</li>
+  <li>the animation doesn’t last longer than 5 seconds before stopping,</li>
+  <li>or the user can easily stop the animation themselves.</li>
 </ul>
 
 <svg role="img" aria-label="bouncing blue ball" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display:block">
@@ -580,7 +586,6 @@
   </style>
 
   <ellipse cx="50" cy="90" rx="4" ry="2" fill="#000" opacity="0.18" />
-
   <circle class="ball" cx="50" cy="22" r="14" fill="#3B82F6" />
   <circle class="ball" cx="45" cy="18" r="4" fill="#93C5FD" opacity="0.6" />
 </svg>
@@ -589,49 +594,50 @@
 
 <p>Animations can cause a variety of symptoms in many users, ranging from mild dizziness to triggering migraines, nausea, and in the case of flashes even seizures.</p>
 
-<p>Also, it’s really hard to concentrate on reading text, when an animation next to it is screaming for attention and there is no way to stop it.</p>
+<p>It can be very hard for many users to concentrate on reading text when an animation next to it is screaming for attention and there is no way to stop it.</p>
 
 <h2 id="setting-reduced-motion-for-animations">Setting reduced motion for animations</h2>
 
 <p>You can help users avoid these problems by making all of your animations support the <code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> flag.</p>
 
-<p><code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> is a system preference that allows the user to indicate that they would prefer not to see animations. But this only works if the code properly supports it!</p>
+<p><code class="language-plaintext highlighter-rouge">prefers-reduced-motion</code> is a system preference that allows the user to indicate that they would prefer not to see animations. But this only works if your code properly supports it!</p>
 
-<p>You can check for this system preference using the CSS media feature:</p>
+<p>Check for this system preference using the CSS media feature:</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-reduced-motion</span><span class="p">)</span> <span class="p">{</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">@media</span> <span class="p">(</span><span class="n">prefers-reduced-motion</span><span class="p">)</span> <span class="p">{</span>
     <span class="nc">.animation</span> <span class="p">{</span>
-        <span class="c">/*  adjust your animations if reduced motion is requested.  */</span>
+        <span class="c">/*  adjust the animations if reduced motion is requested.  */</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Reduced motion doesn’t have to mean no animation at all, but it should be very minimal – no more than is absolutely necessary. When in doubt, eliminate the animation entirely.</p>
-
-<p>You can check for the media query in JavaScript by checking the value of the media query:</p>
+<p>Check for the media query in JavaScript by checking the value of the media query:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">mediaQuery</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nf">matchMedia</span><span class="p">(</span><span class="dl">"</span><span class="s2">(prefers-reduced-motion: reduce)</span><span class="dl">"</span><span class="p">);</span>
 </code></pre></div></div>
+<p>Reduced motion doesn’t have to mean no animation at all, but it should be very minimal – no more than is absolutely necessary. When in doubt, eliminate the animation entirely.</p>
 
-<p class="warning callout"><strong>Please note</strong>: Not everyone is web savvy enough to activate reduced motion on their browser. Adding reduced motion only, is not enough to meet WCAG requirements.</p>
+<p class="tip callout"><strong>Tip</strong>: Hidde de Vries wrote a comprehensive blog post about the implementation and accessibility aspects of prefers-reduced-motion in <a href="https://hidde.blog/meeting-2-22-pause-stop-hide-with-prefers-reduced-motion/">Meeting “2.2.2 Pause, Stop, Hide” with prefers-reduced-motion </a>.</p>
 
 <h2 id="resources">Resources</h2>
 
 <h3 id="wcag-success-criteria-for-animations">WCAG Success Criteria for animations</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide">2.2.2 Pause, Stop, Hide</a> Level A</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide">2.2.2 Pause, Stop, Hide</a> Level A.</li>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold">2.3.1 Three Flashes or Below Threshold</a> Level A.</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions">2.3.3 Animation from Interactions</a> <strong>Level AAA</strong>.</li>
 </ul>
 
 <h3 id="other-resources">Other resources</h3>
 
 <ul>
-  <li><a href="https://since1979.dev/respecting-prefers-reduced-motion-with-javascript-and-react/">Respecting “Prefers Reduced Motion” with JavaScript and React</a>, by Stephan Nijman</li>
+  <li><a href="https://hidde.blog/meeting-2-22-pause-stop-hide-with-prefers-reduced-motion/">Meeting “2.2.2 Pause, Stop, Hide” with prefers-reduced-motion </a>, by Hidde de Vries.</li>
+  <li><a href="https://since1979.dev/respecting-prefers-reduced-motion-with-javascript-and-react/">Respecting “Prefers Reduced Motion” with JavaScript and React</a>, by Stephan Nijman.</li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion">Prefers-reduced-motion</a> from MDN Web Docs.</li>
   <li><a href="https://trace.umd.edu/peat/">Photosensitive Epilepsy Analysis Tool (PEAT)</a>, by TRACE RERC.</li>
 </ul>
-
 
 
           
@@ -689,7 +695,7 @@
             <li><a href="/pr-preview/pr-301/docs/topics/theme-guidelines/">Theme accessibility-ready tag</a></li>
             <li><a href="/pr-preview/pr-301/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a></li>
             <li><a href="/pr-preview/pr-301/docs/topics/legislation/">Legislation worldwide</a></li>
-            <li><a href="/pr-preview/pr-301/blog/">Blog</a></li>
+            <li><a href="/pr-preview/pr-301/docs/start/overlays/">Accessibility Overlays</a></li>
             <li><a href="/pr-preview/pr-301/docs/about/sponsors/">Sponsors</a></li>
             <li><a href="/pr-preview/pr-301/docs/about/contact/">Contact us</a></li>
           </ul>
