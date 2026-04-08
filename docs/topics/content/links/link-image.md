@@ -24,7 +24,7 @@ It is not necessary to ever use the word ‘link’ or 'this link goes to' in yo
 
 ### Related WCAG Success Criteria for links on images
 
-By giving a meaningful image a proper alternative text, you meet WCAG success criteria
+By giving a meaningful image proper alternative text, you meet WCAG success criteria
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 - [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
