@@ -40,6 +40,6 @@ You can [download the manual as PDF](#).
 
 ### Related WCAG Success Criteria for links
 
-By giving a meaningful link text, you meet WCAG success criteria
+By adding meaningful link text, you meet WCAG success criteria
 - [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
