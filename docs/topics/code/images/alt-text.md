@@ -8,23 +8,23 @@ nav_order: 2
 
 # Alternative text for images, SVGs and icons in development
 
-When a user can not see an image and that image has meaning, adds information, that image needs an alternative in text. Screen readers will announce that alternative text, so visitors that can not see the image will also know what it shows and won’t miss information.
+When an image has meaning or adds information on a page, that image needs a text alternative. Screen r`eaders will announce that alternative text, so visitors using assistive technology will also know what it shows and won’t miss information.
 
 You may think that you’re not including any images in your project. Possibly this is true; but are you using [dashicons](https://developer.wordpress.org/resource/dashicons/) or other icon fonts? Are you using SVG graphics? For accessibility, “images” doesn’t only refer to the `img` element. It means any non-text graphical elements on the page.
 
 All of these images require accessibility considerations. The W3C offers a [useful decision tree to help you decide](https://www.w3.org/WAI/tutorials/images/decision-tree/) what kind of text you need for an image. If your image is conveying information or activating a control, it’s going to need some form of [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name).
 
 {: .info .callout }
-This page addresses the alternative text and accessible names for images in development. How to write a good alt text and add them in the content is addressed in the "Content and Images" section [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) of this documentation.
+This page addresses the alternative text and accessible names for images in development. How to write good alt text and add them to content is addressed in the "Content and Images" section [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) of this documentation.
 
 ## Alternative text on an img
 
-Always add the img attribute to an img element. The alt attribute can:
+Always add the `alt` attribute to an `img` element. The `alt` attribute can:
 
-- contain the alternative text, this will be announced by a screen reader
-- be empty, the image will be omitted by a screen reader.
+- contain the alternative text that will be announced by a screen reader
+- be empty, so the image will be omitted by a screen reader.
 
-When the alt attribute is not present, the screen reader will announce the **filename** instead. Blind users miss the information that is on the image.
+When the alt attribute is not present, a screen reader may announce the **filename** or other information instead. Blind users will miss information that is on the image.
 
 {: .dont .callout }
 **Don't**: Remove the `alt` attribute
@@ -51,7 +51,7 @@ Will be announced in VoiceOver as "All T-shirts are on sale, image".
 
 For accessibility: add `role="img"` to an SVG that serves as an image. Then the element is recognized and announced as an image by screen readers.
 
-There are several ways to give an SVG an alt text (an accessible name). We name 3, all are valid.
+There are several ways to give an SVG an alt text (an accessible name). Here are three valid options:
 
 1: Use the attribute `aria-label`:
 
@@ -82,9 +82,9 @@ There are several ways to give an SVG an alt text (an accessible name). We name 
     [...]
 </svg>
 ```
-The content of `<title>` isn't displayed but browsers usually show the `<title>` as a tooltip.
+The content of `<title>` doesn't render as visual text, but browsers usually show the `<title>` as a tooltip.
 
-3: Assign the accessible name to the content of `<title>` of the SVG, using `aria-labelledby`:
+3: Assign the accessible name to the content of `<title>` of the SVG, using `aria-labelledby` to explicitly connect the `svg` to its name:
 
 <svg aria-labelledby="titleID" role="img" xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 96.24 96.24">
 <title id="titleID">WordPress logo</title>
@@ -103,7 +103,9 @@ The value `aria-labelledby` points to the `id` of the `title`.
 
 ## Image or SVG in a link
 
-When adding an image inside a link, the alt text will be added to the link text. Make sure the link text still makes sense. Repeat text that is visible in the image, also in the link text. 
+When adding an image inside a link, the alt text will be added to the link text, to the accessible name of the link. Make sure the link text still makes sense.
+
+If an image of, for example, a logo also contains text, like a byline, make sure that text is also added to the link text. Then no information gets lost.
 
 For example when you create a link to Instagram, showing only the icon.
 ```html
@@ -116,7 +118,7 @@ For example when you create a link to Instagram, showing only the icon.
 
 ### Special case: A link on the logo in the header
 
-The alt text on a logo in the header od a website needs more than just the target, also the fact that the image displays the logo of the website/company.
+The alt text on a logo in the header of a website needs more information than just the link target. It must also show that the image displays the logo of the website/company.
 
 For example:
 ```html
@@ -131,11 +133,12 @@ Read the full explanation:
 - [The accessible name of a link on a logo in the header, in Dutch](https://nldesignsystem.nl/blog/toegankelijke-naam-link-logo-header/) on NL Design System.
 
 {: .alert .callout }
-**Please note**: In the EU, this way of adding an alt text to the logo in the header is required to pass WCAG 2.2 AA. In other parts of the world only adding the link target may be sufficient to pass an audit. Ask your local accessibility auditor for advice in this case.
+**Please note**: There are regional differences on how to interpret the WCAG success criterion [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) in this case. Please consult your accessibility expert on their opinion about what the accessible name of a link to home on a logo in the header should be. 
+
 
 ## Icons
 
-Make sure screen readers users also know what's on the icon, if you use it in a meaningful way.
+Make sure screen readers users also know what's shown in the icon, if you use it in a meaningful way.
 This is particularly crucial if you’re using images to represent controls, like a hamburger menu icon, an arrow, or a plus or minus icon. These images are used to represent information.
 
 For example, if you use a close button with an "X"-icon, make sure that button is announced by a screen reader as "Close".
@@ -144,7 +147,7 @@ For example, if you use a close button with an "X"-icon, make sure that button i
 ### Examples for icons
 
 {: .dont .callout }
-**Don't** Forget giving button with a menu icon an accessible name.
+**Don't** Forget giving a button, containing only a menu icon, an accessible name.
 
 ```html
 <!-- 
@@ -178,7 +181,7 @@ Add text, hidden from sight but announced by a screenreader using the [CSS class
 </button>
 ```
 
-Or, the best option: add visible text. Because not everyone understands an icon.
+The best option is to add visible text. An icon alone may not be universally understood.
 
 ```html
 <!-- This button is announced as "menu" by a screen reader. -->
@@ -192,9 +195,9 @@ Or, the best option: add visible text. Because not everyone understands an icon.
 
 ### Related WCAG Success Criteria for alternative text for images
 
-By giving a meaningful image a proper alternative text, you meet WCAG success criteria
+By giving meaningful images proper alternative text, you meet WCAG success criteria:
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
-- [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
+- To be honest, this topic  (level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
 
 ### Other resources
