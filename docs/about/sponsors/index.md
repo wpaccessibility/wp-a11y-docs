@@ -10,7 +10,7 @@ description: Thank you sponsors for helping us create accessibility documentatio
 
 Thank you sponsors for helping Rian and Joe work on the accessibility documentation for WordPress.
 
-<img src="/assets/images/Kinsta_black.svg" alt="Logo Kinsta" class="sponsor">
+<img src="{{site.baseurl}}/assets/images/Kinsta_black.svg" alt="Logo Kinsta" class="sponsor">
 
 **<a href="https://kinsta.com/">Kinsta</a>**: Simply better hosting for WordPress. Trusted by agencies and businesses worldwide for unmatched performance, security, and support.
 
@@ -25,13 +25,13 @@ Thank you sponsors for helping Rian and Joe work on the accessibility documentat
 **<a href="https://www.godaddy.com/">GoDaddy</a>** provides services for domain registration, web hosting, website building, and online marketing.
 Joe Dolson is sponsored by GoDaddy to work on WordPress' accessibility and the WP Accessibility Knowledge Base.
 
-<img src="/assets/images/HumanMade-horizontal-white.png" alt="Logo Human Made" class="sponsor">
+<img src="{{site.baseurl}}/assets/images/HumanMade-horizontal-white.png" alt="Logo Human Made" class="sponsor">
 
 **<a href="https://humanmade.com/">Human Made</a>** is the world’s leading enterprise WordPress agency, creating content platforms for global brands since 2011.
 
 > The web should be a place where everyone feels welcome and included, no matter how they access it. At Human Made, we know accessibility is about more than ticking boxes – it’s about empowering people and removing barriers. Supporting Rian’s work on the Accessibility Knowledge Hub is one way we’re helping the WordPress community step up, learn, and take real action. Together, we can make the web a better place for everyone. - Tom Willmot, CEO, Human Made.
 
-<img src="/assets/images/aiwos-logo.svg" alt="Logo Aiwos" class="sponsor">
+<img src="{{site.baseurl}}/assets/images/aiwos-logo.svg" alt="Logo Aiwos" class="sponsor">
 
 **<a href="https://aiwos.com/" hreflang="nl">Aiwos</a>** provides open source custom solutions using WordPress software to create the best workflows, websites, platforms, and portals.
 
