@@ -17,17 +17,17 @@ How to use headings in the editor is addressed in the “Content and images” s
 
 ## Rules of thumb for headings in theme development
 
-- One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post -, page – or archive title.
+- One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post, page, or archive title.
 - Use H2 through H6 to divide major sections of the page, such as widget areas, comment sections, or other major segments of the page.
 - Use headings in a logical and hierarchical structure.
 - Do not skip a heading level. 
 - Use headings to meaningfully describe the content that follows, not as a design element.
 
-WPBeginner published a practical guide on headings for WordPress: [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/), also addressing the impact of a good heading structure on SEO.
+WPBeginner published a practical guide on headings for WordPress: [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/). The guide also addresses the impact of a good heading structure on SEO.
 
 ### Sections and headings
 
-The practice to use an H1 for each `<section>` is outdated and harming accessibility, as multiple H1s don't give structure to the content. If everything is an H1, there is no indication about what the main content is about. Read more about this on [Computer says NO to HTML5 document outline](http://html5doctor.com/computer-says-no-to-html5-document-outline/) by Steve Faulkner.
+The obsolete practice of using an H1 for each `<section>`  harms accessibility, as the algorithm to structure the document outline was never implemented. If everything is an H1, there is no indication about what the main content is about. Read more about this in [Computer says NO to HTML5 document outline](http://html5doctor.com/computer-says-no-to-html5-document-outline/) by Steve Faulkner.
 
 If you want to give a section an [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/), use `aria-labelledby`, linking the heading to the section. For example:
 ```html
@@ -37,11 +37,11 @@ If you want to give a section an [accessible name]({{site.baseurl}}/docs/topics/
 </section>
 ```
 
-### Heading levels in components, it depends
+### Heading levels in components depend on context
 
 Take extra care when including a heading in a component or block. The heading level may depend on the way or location a component is included in the page. 
 
-Make it possible to change a heading level, depending on the semantics of the heading structure on that specific web page. A widget may need a different heading level in the sidebar than when it's used in the content.
+Make it possible to change a heading level based on the semantics of the heading structure on that specific web page. A widget may need a different heading level in the sidebar than when it's used in the content.
 
 ## How to test for a proper heading structure
 
@@ -53,7 +53,7 @@ Use the browser tool **HeadingsMap** to test the heading structure of an entire 
 Are you testing the heading structure for an accessibility-ready WordPress theme? Please follow the testing procedure outlined in the Theme Accessibility Guidelines under [Headings with meaningful structure]({{site.baseurl}}/docs/topics/theme-guidelines/headings-structure/).
 
 {: .callout .info }
-**Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard.
+**Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (such as in the navigation) is allowed at the AA standard.
 
 ## Resources
 

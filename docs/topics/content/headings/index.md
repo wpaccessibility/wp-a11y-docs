@@ -12,13 +12,13 @@ nav_order: 3
 
 Headings are the framework of your content. A good heading should simply and concisely describe the content that follows.
 
-The heading level is important. The H1 (heading level 1) is reserved for the post or page title. For most themes that is the title you give a page or post. 
+The heading level is important. The H1 (heading level 1) is reserved for the post or page title. In most themes that is the title you give a page or post. 
 
 ![Screenshot adding a page title in the WordPress Admin]({{site.baseurl}}/assets/images/add-title.png)
 
-Use other heading levels H2 upto H6 to divide your content into meaningful sections, like the index of a book.
+Use other heading levels from `h2` to `h6` to divide your content into meaningful sections, like the index of a book.
 
-Choose heading levels by their meaning, not by their visible size. This way artificial intelligents (AI), search engines and screen readers understand the structure and meaning of the content better. 
+Choose heading levels by their meaning, not by their visible size. This way, artificial intelligence (AI) agents, search engines and screen readers understand the structure and meaning of the content better. 
 
 {: .info .callout }
 How to implement headings in development is addressed in the “Frontend code” section [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/).
@@ -29,7 +29,7 @@ How to implement headings in development is addressed in the “Frontend code”
 - Use the other headings to divide content into scannable blocks.
 - Use headings to describe the content below. Do not use a heading just to make the text appear bigger or stand out.
 - Don't skip a heading level from the top down.
-- Use a real HTML heading instead of making text only bold or large.
+- Use real HTML heading elements instead of making text bold or large.
 
 A heading means “this text describes the information that follows it.” There should not be text before the heading that is part of what that heading describes, and there must be content following the heading.
 
@@ -79,7 +79,7 @@ Use the browser tool **HeadingsMap** to test the heading structure of an entire 
 - [Headings Map toolbar for Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/)
 
 {: .callout .info }
-**Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard.
+**Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (such as in the navigation) is allowed at the AA standard.
 
 ## Resources
 
