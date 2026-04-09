@@ -8,7 +8,7 @@ nav_order: 2
 
 # Alternative text for images, SVGs and icons in development
 
-When an image has meaning or adds information on a page, that image needs a text alternative. Screen r`eaders will announce that alternative text, so visitors using assistive technology will also know what it shows and won’t miss information.
+When an image has meaning or adds information on a page, that image needs a text alternative. Screen readers will announce that alternative text, so visitors using assistive technology will also know what it shows and won’t miss information.
 
 You may think that you’re not including any images in your project. Possibly this is true; but are you using [dashicons](https://developer.wordpress.org/resource/dashicons/) or other icon fonts? Are you using SVG graphics? For accessibility, “images” doesn’t only refer to the `img` element. It means any non-text graphical elements on the page.
 

@@ -37,7 +37,7 @@ When you add an image in the content using the Image Block, make sure the alt te
 
 ![Screenshot of the Image block settings for alt text]({{site.baseurl}}/assets/images/img-block-alt-text.png)
 
-## Overall benefits of using a proper alt text.
+## Overall benefits of using a proper alt text
 
 People who can't see your image can get equivalent information about it using their assistive technology, such as a screen reader or a Braille display.
 
@@ -76,7 +76,7 @@ Be to the point, like the alt text for a portrait:
 "Jane, smiling into the camera.".  
 The alt text for a photo of Jane, showing off her dress:   
 "Jane, in vintage Dior.".    
-The alt text for a photo of Jane in het garden:    
+The alt text for a photo of Jane in her garden:    
 "Jane, in her garden in full bloom.".  
 
 ## Resources
