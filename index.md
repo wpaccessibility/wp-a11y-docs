@@ -24,7 +24,11 @@ Find the documentation for your work role, work field and expertise.
 
 ## New and updated content
 
-Added on April 8, 2026:
-- Content and Images: [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/).
-- Frontend code: [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/).
-- Frontend code: [Image animation and accessibility]({{site.baseurl}}docs/topics/code/images/image-animation/).
+Added in April 2026:
+- Content and images: 
+  - [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/).
+  - [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/).
+- Frontend code: 
+  - [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/).
+  - [Image animation and accessibility]({{site.baseurl}}docs/topics/code/images/image-animation/).
+  - [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/).
