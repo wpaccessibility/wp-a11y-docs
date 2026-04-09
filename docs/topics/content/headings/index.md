@@ -12,6 +12,8 @@ nav_order: 3
 
 Headings are the framework of your content. A good heading should simply and concisely describe the content that follows.
 
+There should not be text before the heading that is part of what that heading describes, and there must be content following the heading.
+
 The heading level is important. The H1 (heading level 1) is reserved for the post or page title. In most themes that is the title you give a page or post. 
 
 ![Screenshot adding a page title in the WordPress Admin]({{site.baseurl}}/assets/images/add-title.png)
@@ -30,8 +32,6 @@ How to implement headings in development is addressed in the “Frontend code”
 - Use headings to describe the content below. Do not use a heading just to make the text appear bigger or stand out.
 - Don't skip a heading level from the top down.
 - Use real HTML heading elements instead of making text bold or large.
-
-A heading means “this text describes the information that follows it.” There should not be text before the heading that is part of what that heading describes, and there must be content following the heading.
 
 {: .tip .callout }
 **Tip:** If you don’t like the sizes of the headings in your content, you should adjust the design of the heading rather than selecting a different heading level. Ask your web developer if needed. This helps with accessibility as well as with content adaptability. Selecting a heading based on size might make a change of theme more difficult.

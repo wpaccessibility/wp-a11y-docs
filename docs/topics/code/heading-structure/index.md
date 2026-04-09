@@ -20,7 +20,7 @@ How to use headings in the editor is addressed in the “Content and images” s
 - One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post, page, or archive title.
 - Use H2 through H6 to divide major sections of the page, such as widget areas, comment sections, or other major segments of the page.
 - Use headings in a logical and hierarchical structure.
-- Do not skip a heading level. 
+- Don't skip a heading level from the top down. 
 - Use headings to meaningfully describe the content that follows, not as a design element.
 
 WPBeginner published a practical guide on headings for WordPress: [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/). The guide also addresses the impact of a good heading structure on SEO.
