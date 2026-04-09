@@ -212,15 +212,15 @@
 
           <a href="/pr-preview/pr-305/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-305/docs/topics/code/images-animations/" class="nav-list-link">Images and animations</a><button class="nav-list-expander btn-reset" aria-label="Images and animations submenu" aria-expanded="false">
+          <a href="/pr-preview/pr-305/docs/topics/code/pattern-libraries/" class="nav-list-link">Pattern libraries</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-305/docs/topics/code/images/" class="nav-list-link">Images</a><button class="nav-list-expander btn-reset" aria-label="Images submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-305/docs/topics/code/images-animations/images/" class="nav-list-link">Images</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-305/docs/topics/code/images/alt-text/" class="nav-list-link">Alt text images</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-305/docs/topics/code/images-animations/reduced-motion/" class="nav-list-link">Reduced motion</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-305/docs/topics/code/pattern-libraries/" class="nav-list-link">Pattern libraries</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-305/docs/topics/code/images/image-animation/" class="nav-list-link">Image animation</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-305/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
 
@@ -565,18 +565,18 @@
 <h2 id="rules-of-thumb-for-headings-in-theme-development">Rules of thumb for headings in theme development</h2>
 
 <ul>
-  <li>One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post -, page – or archive title.</li>
+  <li>One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post, page, or archive title.</li>
   <li>Use H2 through H6 to divide major sections of the page, such as widget areas, comment sections, or other major segments of the page.</li>
   <li>Use headings in a logical and hierarchical structure.</li>
   <li>Do not skip a heading level.</li>
   <li>Use headings to meaningfully describe the content that follows, not as a design element.</li>
 </ul>
 
-<p>WPBeginner published a practical guide on headings for WordPress: <a href="https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/">How to Properly Use Heading Tags in WordPress (H1-H6 Explained)</a>, also addressing the impact of a good heading structure on SEO.</p>
+<p>WPBeginner published a practical guide on headings for WordPress: <a href="https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/">How to Properly Use Heading Tags in WordPress (H1-H6 Explained)</a>. The guide also addresses the impact of a good heading structure on SEO.</p>
 
 <h3 id="sections-and-headings">Sections and headings</h3>
 
-<p>The practice to use an H1 for each <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> is outdated and harming accessibility, as multiple H1s don’t give structure to the content. If everything is an H1, there is no indication about what the main content is about. Read more about this on <a href="http://html5doctor.com/computer-says-no-to-html5-document-outline/">Computer says NO to HTML5 document outline</a> by Steve Faulkner.</p>
+<p>The obsolete practice of using an H1 for each <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code>  harms accessibility, as the algorithm to structure the document outline was never implemented. If everything is an H1, there is no indication about what the main content is about. Read more about this in <a href="http://html5doctor.com/computer-says-no-to-html5-document-outline/">Computer says NO to HTML5 document outline</a> by Steve Faulkner.</p>
 
 <p>If you want to give a section an <a href="/pr-preview/pr-305/docs/topics/code/accessible-name/">accessible name</a>, use <code class="language-plaintext highlighter-rouge">aria-labelledby</code>, linking the heading to the section. For example:</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;section</span> <span class="na">aria-labelledby=</span><span class="s">"news-heading"</span><span class="nt">&gt;</span>
@@ -585,11 +585,11 @@
 <span class="nt">&lt;/section&gt;</span>
 </code></pre></div></div>
 
-<h3 id="heading-levels-in-components-it-depends">Heading levels in components, it depends</h3>
+<h3 id="heading-levels-in-components-depend-on-context">Heading levels in components depend on context</h3>
 
 <p>Take extra care when including a heading in a component or block. The heading level may depend on the way or location a component is included in the page.</p>
 
-<p>Make it possible to change a heading level, depending on the semantics of the heading structure on that specific web page. A widget may need a different heading level in the sidebar than when it’s used in the content.</p>
+<p>Make it possible to change a heading level based on the semantics of the heading structure on that specific web page. A widget may need a different heading level in the sidebar than when it’s used in the content.</p>
 
 <h2 id="how-to-test-for-a-proper-heading-structure">How to test for a proper heading structure</h2>
 
@@ -602,7 +602,7 @@
 
 <p>Are you testing the heading structure for an accessibility-ready WordPress theme? Please follow the testing procedure outlined in the Theme Accessibility Guidelines under <a href="/pr-preview/pr-305/docs/topics/theme-guidelines/headings-structure/">Headings with meaningful structure</a>.</p>
 
-<p class="callout info"><strong>Note</strong>: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (for e.g. the navigation) is allowed at the AA standard.</p>
+<p class="callout info"><strong>Note</strong>: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (such as in the navigation) is allowed at the AA standard.</p>
 
 <h2 id="resources">Resources</h2>
 
@@ -686,7 +686,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-305/docs/topics/code/images-animations/"> Images and animations</a> What is important for developers regarding images and animations?
+                    <a href="/pr-preview/pr-305/docs/topics/code/pattern-libraries/"> Pattern libraries</a> Libraries with accessible patterns for web components.
                 </p>
             </li>
             
@@ -694,7 +694,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-305/docs/topics/code/pattern-libraries/"> Pattern libraries</a> Libraries with accessible patterns for web components.
+                    <a href="/pr-preview/pr-305/docs/topics/code/images/"> Images</a> What is important to for developers when they implement images in a theme, plugin or in WordPress core.
                 </p>
             </li>
             
