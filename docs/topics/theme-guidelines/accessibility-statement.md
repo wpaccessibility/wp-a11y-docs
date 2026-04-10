@@ -4,6 +4,9 @@ layout: default
 parent: Theme accessibility guidelines
 nav_order: 16
 description: Accessibility Statement requirements for Accessibility-ready themes
+contributors:
+  - Amber Hinds 
+  - Joe Dolson
 ---
 
 # Accessibility statement

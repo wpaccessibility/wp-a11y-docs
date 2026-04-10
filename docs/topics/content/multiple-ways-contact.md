@@ -4,6 +4,9 @@ layout: default
 parent: Content and images
 description: It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you.
 nav_order: 4
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
 # Offer multiple ways to get in touch

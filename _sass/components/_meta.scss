@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+@use "../base/colors" as *;
+@use "../abstracts/mixins" as *;
+
+@use "sass:color";
+
+.meta {
+  padding-top: 1.25em;
+  border-top: $border $border-color;
+  font-size: var(--text-font-size-sm);
+
+  ul {
+    display: flex;
+    padding-left: 0;
+
+    ul {
+      display: block;
+    }
+
+    li {
+      list-style: none;
+      padding-right: 2em;
+    }
+
+  }
+
+  span {
+    display: block;
+    font-weight: 600;
+  }
+
+}

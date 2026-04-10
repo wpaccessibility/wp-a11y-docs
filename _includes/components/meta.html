@@ -1,0 +1,38 @@
+<section aria-label="Meta data of this page" class="meta">
+
+    <ul>
+
+        {% if page.date_created %}
+        <li><span>First published:</span> {{ page.date_created }}</li>
+        {% else %}
+        <li><span>First published:</span> October 10, 2025</li>
+        {% endif %}
+
+        <li><span>Last updated:</span> {% last_modified_at %B %d, %Y %}</li>
+
+        {% if
+        site.gh_edit_link and
+        site.gh_edit_link_text and
+        site.gh_edit_repository and
+        site.gh_edit_branch and
+        site.gh_edit_view_mode
+        %}
+
+        <li><span>Edit article:</span>
+        <a href="{{ site.gh_edit_repository }}/{{ site.gh_edit_view_mode }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/{{ page.path }}" id="edit-this-page">{{ site.gh_edit_link_text }}</a>
+        </li>
+
+        {% endif %}
+
+    </ul>
+
+    {% if page.contributors %}
+    <p><span>Contributors:</span>
+            {% for item in page.contributors %}
+                {{ item }},
+            {% endfor %}
+            read <a href="{{site.baseurl}}/docs/about/contribute/">how to contribute to this documentation</a>.
+    </p>
+    {% endif %}
+
+</section>
