@@ -11,3 +11,4 @@ gem "jekyll-sitemap", group: :jekyll_plugins
 gem "jekyll-paginate", group: :jekyll_plugins
 gem "jekyll-sass-converter", "~> 3.1.0"
 gem "html-proofer", "~> 5.0", :group => :development
+gem "jekyll-last-modified-at", group: :jekyll_plugins

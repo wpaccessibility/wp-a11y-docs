@@ -6,7 +6,7 @@ nav_order: 4
 description: Contact the WordPress Accessibility Team.
 ---
 
-# Contact the Contact the WordPress Accessibility Team.
+# Contact the WordPress Accessibility Team.
 
 There are several ways to contact us:
 - [Open an issue](https://github.com/wpaccessibility/wp-a11y-docs/issues) on GitHub with your question.
