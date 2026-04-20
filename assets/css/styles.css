@@ -1362,6 +1362,28 @@ footer nav .container .column {
   background-color: var(--color-negative-bg-default);
 }
 
+.meta {
+  padding-top: 1.25em;
+  border-top: 1px solid var(--color-neutral-border-default);
+  font-size: var(--text-font-size-sm);
+}
+.meta ul {
+  display: flex;
+  padding-left: 0;
+  gap: 2em;
+}
+.meta ul ul {
+  display: block;
+}
+.meta ul li {
+  list-style: none;
+  padding: 0;
+}
+.meta span {
+  display: block;
+  font-weight: 600;
+}
+
 .prev-next,
 .siblings,
 .toc {
