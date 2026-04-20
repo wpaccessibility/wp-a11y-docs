@@ -12,6 +12,7 @@
   ul {
     display: flex;
     padding-left: 0;
+    gap: 2em;
 
     ul {
       display: block;
@@ -19,7 +20,7 @@
 
     li {
       list-style: none;
-      padding-right: 2em;
+      padding: 0;
     }
 
   }

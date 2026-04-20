@@ -1,4 +1,4 @@
-<section aria-label="Meta data of this page" class="meta">
+<section aria-label="Page meta data" class="meta">
 
     <ul>
 
@@ -29,10 +29,16 @@
     {% if page.contributors %}
     <p><span>Contributors:</span>
             {% for item in page.contributors %}
-                {{ item }},
+                {{ item }}
+                {%- if forloop.index < forloop.length -%}
+                    ,
+                {% else %}
+                    .
+                {% endif %}
             {% endfor %}
-            read <a href="{{site.baseurl}}/docs/about/contribute/">how to contribute to this documentation</a>.
     </p>
     {% endif %}
+    <p>Read <a href="{{site.baseurl}}/docs/about/contribute/">how to contribute to this documentation</a>.</p>
+
 
 </section>

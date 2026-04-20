@@ -30,15 +30,16 @@ layout: table_wrappers
 
           {{ content }}
 
-          {% include components/meta.html %}
-
           {% if page.has_toc != false %}
             {% include components/children_nav.html %}
           {% endif %}
 
+          {% include components/meta.html %}
+
         </main>
 
         {% include components/footer.html %}
+
       </div>
     </div>
   </div>
