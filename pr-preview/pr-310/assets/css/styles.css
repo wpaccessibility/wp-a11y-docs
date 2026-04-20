@@ -1370,13 +1370,14 @@ footer nav .container .column {
 .meta ul {
   display: flex;
   padding-left: 0;
+  gap: 2em;
 }
 .meta ul ul {
   display: block;
 }
 .meta ul li {
   list-style: none;
-  padding-right: 2em;
+  padding: 0;
 }
 .meta span {
   display: block;
