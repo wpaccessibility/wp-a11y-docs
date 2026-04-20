@@ -30,10 +30,8 @@
     <p><span>Contributors:</span>
             {% for item in page.contributors %}
                 {{ item }}
-                {%- if forloop.index < forloop.length -%}
-                    ,
-                {% else %}
-                    .
+                {%- if forloop.index < forloop.length -%},
+                {% else %}.
                 {% endif %}
             {% endfor %}
     </p>
