@@ -1,18 +1,17 @@
 ---
-layout: post
-title: "I have a question, but I don’t have WhatsApp!"
-permalink: /blog/2025/offer-multiple-ways-of-contact/
-author: Rian Rietveld
-categories: contact
-parent: Blog
-description: "It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you."
-date: 2025-08-27
+title: Multiple ways to contact
+layout: default
+parent: Content and images
+description: It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you.
+nav_order: 4
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
-## Summary
+# Offer multiple ways to get in touch
 
-{: .lead }
-You want to reach out to customer service, and they say  *“Send us a WhatsApp message.”* What if you don’t use WhatsApp, or cannot make a phone call, or use the chatbox? By offering multiple contact options, you make sure every customer has a way to connect.
+You want to reach out to customer service, and they say  *“Send us a WhatsApp message”*. What if you don’t use WhatsApp, or cannot make a phone call, nor use the chatbox? By offering multiple contact options, you make sure every customer has a way to connect.
 
 ## Don’t make getting in touch their problem
 

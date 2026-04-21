@@ -10,6 +10,7 @@ nav_order: 4
 
 ## Knowledge resources
 
+- [A11Y Style Guide](https://a11y-style-guide.com/style-guide/), by [Carie Fisher](https://cariefisher.com/).
 - [Design and Develop Overview](https://www.w3.org/WAI/design-develop/) by the W3C. Guidance for writing, designing, and developing for accessibility.
 - [MDN Resources for Developers](https://developer.mozilla.org/), documentation about CSS, HTML, and JavaScript. MDN is an open-source, collaborative project by Mozilla, in partnership with a global community of volunteers and partners.
 - [Nielsen Norman Group](https://www.nngroup.com/), provides research-based, results-driven UX guidance and training.

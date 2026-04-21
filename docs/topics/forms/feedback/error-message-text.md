@@ -3,7 +3,7 @@ title: Write clear error messages
 layout: default
 parent: Feedback on errors
 description: A custom-written error message gives the user the most guidance.
-nav_order: 5
+nav_order: 6
 ---
 
 # Write a clear error message

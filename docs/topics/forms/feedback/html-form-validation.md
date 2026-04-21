@@ -3,7 +3,7 @@ title: HTML form validation
 layout: default
 parent: Feedback on errors
 description: At this time (2026), form validation by the browser is not sufficiently accessible.
-nav_order: 2
+nav_order: 3
 ---
 
 # Avoid HTML form validation

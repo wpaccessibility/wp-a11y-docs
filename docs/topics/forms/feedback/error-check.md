@@ -3,7 +3,7 @@ title: Check at the right moment
 layout: default
 parent: Feedback on errors
 description: To help users and not confuse them, it’s important to choose the right moment to validate user input.
-nav_order: 1
+nav_order: 2
 ---
 
 # Check for form errors at the right moment

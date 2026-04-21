@@ -2,7 +2,7 @@
 title: Theme accessibility guidelines
 layout: default
 parent: Standards and best practice
-description: Learn about the guidelines for the accessibility-ready tag on WordPress.org
+description: Learn about the guidelines for the accessibility-ready tag on WordPress.org.
 nav_order: 6
 ---
 

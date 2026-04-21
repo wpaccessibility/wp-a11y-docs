@@ -2,7 +2,7 @@
 title: Required fields
 layout: default
 parent: Web forms
-nav_order: 8
+nav_order: 4
 description: Clearly indicate to the user whether a form field is required. Then the user can tell what information they must provide to submit a form.
 ---
 

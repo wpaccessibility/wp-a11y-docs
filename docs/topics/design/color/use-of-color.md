@@ -29,7 +29,7 @@ Grouped links in sidebars, footers, or in navigation menus frequently don’t ne
 Underline your links, which are placed between text.
 
 Underlined links are easier to see.
-![underlined links in body text](../../assets/Bildschirmfoto-2017-08-05-um-15.01.29-768x497.png)
+![underlined links in body text]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-05-um-15.01.29-768x497.png)
 
 Use symbols and colors in graphics.
 

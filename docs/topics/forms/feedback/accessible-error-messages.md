@@ -1,18 +1,14 @@
 ---
-layout: post
-title: "Accessible error messages in forms"
-permalink: /blog/2025/accessible-error-messages-forms/
-author: Rian Rietveld
-categories: forms
-parent: Blog
-description: "When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form."
-date: 2025-08-16
+title: Accessible feedback in forms
+layout: default
+parent: Feedback on errors
+description: How to offer feedback in forms in an accessible way. When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form.
+nav_order: 1
 ---
 
-## Summary
+# Accessible feedback in forms, step-by-step
 
-{: .lead }
-When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. In this post, we’ll walk step-by-step through how to prevent errors, indicate them clearly, and offer help with error messages in forms for different types of users.
+When you put care into preventing errors and clearly indicating when something goes wrong, users are much more likely to successfully submit a form. In this page, we’ll walk step-by-step through how to prevent errors, indicate them clearly, and offer help with error messages in forms for different types of users.
 
 ## When designing a form, ask yourself the following questions
 
@@ -50,7 +46,7 @@ For example: users recognize radio buttons as circles and checkboxes as squares.
 Some field types are better avoided due to poor usability, such as multi-selects. Using date pickers? Check the experience for keyboard or screen reader users.
 
 Sometimes a simple solution works best for everyone. For example, KLM’s method for selecting a date with a text input for the day, a dropdown for the month, and another text input for the year:
-![Date selection with a text field for day, a select for month, and a text field for year](/assets/images/blog_toegankelijker-foutmeldingen-date-picker.png)
+![Date selection with a text field for day, a select for month, and a text field for year]({{site.baseurl}}/assets/images/blog_toegankelijker-foutmeldingen-date-picker.png)
 
 For a deep dive into asking for dates in forms, see the GOV.UK Design System pattern library: [Ask users for Dates](https://design-system.service.gov.uk/patterns/dates/).
 
@@ -64,7 +60,7 @@ This success criterion was added in [WCAG 2.2: 3.3.7 Redundant Entry](https://ww
 We’ve all been there: you enter a new password, click submit, and *then* you’re told what the password requirements are. You yell at the screen: “Why didn't you tell me that before?”.
 
 The blog post [Blind people don't visit my website](https://www.a11y-collective.com/blog/blind-people-dont-visit-my-website/) lists frustrations from web users, such as:
-> "Error messages that come afterwards and eventually don't explain what you need to change."
+> "Error messages that come afterward and eventually don't explain what you need to change."
 
 Don’t make users guess — offer clear help in plain language, at the right moment. Tell users in advance which documents they'll need, and which fields are or aren't required. Add descriptions to fields where necessary.
 
