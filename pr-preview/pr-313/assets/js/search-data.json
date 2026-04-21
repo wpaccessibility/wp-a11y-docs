@@ -2403,7 +2403,7 @@
     "doc": "Introduction to WCAG",
     "title": "WordPress theme guidelines and relation to WCAG",
     "description": "What are the Web Content Accessibility Guidelines and how to use them.",
-    "content": "The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme. You can find the WordPress theme guidelines at: https://wpaccessibility.org/docs/topics/theme-guidelines/. ",
+    "content": "The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme. You can find the WordPress theme guidelines at: Theme accessibility guidelines. ",
     "url": "/pr-preview/pr-313/docs/start/wcag-intro/#wordpress-theme-guidelines-and-relation-to-wcag",
     "relUrl": "/docs/start/wcag-intro/#wordpress-theme-guidelines-and-relation-to-wcag"
   },"344": {
