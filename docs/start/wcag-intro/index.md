@@ -76,7 +76,7 @@ Can visitors use any device?
 - Content must be able to be interpreted reliably by a wide variety of user agents, including assistive technologies.
 - All user interface components should have programmatically determinable names and roles.
 
-#### Non-interference section 5.2.5
+### Non-interference section 5.2.5
 
 Although when following guidelines you will often stay within chapters 1 to 4 (the four principles) of WCAG, it's necessary to read through [section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5) as well. It's about non-interference, meaning your techniques cannot block users' ability to access any part of a page. 
 
@@ -160,10 +160,13 @@ Under [ISO/IEC 40500:2025](https://www.iso.org/standard/91029.html), WCAG 2.2 is
 In most laws in Europe that have the [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) implemented, the European norm for accessibility [EN 301 549](https://accessible-eu-centre.ec.europa.eu/content-corner/digital-library/en-3015492021-accessibility-requirements-ict-products-and-services_en) is mentioned for accessibility requirements. This document explains accessibility requirements for all ICT products and services and uses WCAG 2.1 as its basis. It's expected to be updated to WCAG 2.2 late 2026.
 
 ## WordPress theme guidelines and relation to WCAG
-The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme. You can find the WordPress theme guidelines at: [https://wpaccessibility.org/docs/topics/theme-guidelines/](wpaccessibility.org/docs/topics/theme-guidelines/).
+
+The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme. You can find the WordPress theme guidelines at: [Theme accessibility guidelines](wpaccessibility.org/docs/topics/theme-guidelines/).
 
 ## Resources
+
 External resources mentioned in this article:
+
 * [WordPress Accessibility Coding Standard](https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/)
 * [Non-interference section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5)
 * [WCAG version 2.1](https://www.w3.org/TR/WCAG21/)
