@@ -19,44 +19,6 @@ It's worth mentioning that WCAG in itself is not a law. They are guidelines for 
 
 However, there's more nuance to that. Correctly following these guidelines and techniques will likely help ensure compliance with accessibility laws and legislation. [More about legislation and laws for accessibility](https://wpaccessibility.org/docs/topics/legislation/).
 
-## WCAG Versions
-
-At this point (early 2026) in most countries that have legislation about web accessibility, [WCAG version 2.1](https://www.w3.org/TR/WCAG21/) is the version being referred to when they speak of web accessibility standards. It contains 78 criteria, divided into 13 general guidelines. 
-
-Many countries are starting to use [version 2.2](https://www.w3.org/TR/WCAG22/) as the version of choice. The main difference is that this one has slightly more criteria (86) and a few were removed or changed levels. In this documentation, we use version 2.2 as our point of reference.
-
-The current versions are mainly focused on complete websites and apps. There is a newer version (WCAG 3.0) in development that should provide an outcomes-based conformance model, aiming to better cover cognitive and low-vision disabilities. It will also cover a broader scope, including mobile apps, AR/VR software, and apps for other devices, such as TVs.
-
-As of version WCAG 3.0, the abbreviation will reflect the wide scale it can be used for. It will then be named the W3C Accessibility Guidelines. [More on version 3.0](https://www.w3.org/TR/wcag-3.0-explainer/).
-
-## WCAG success criteria
-
-The success criteria can be seen as a set of rules for complying with a guideline. Some of them are very specific; others are more open to interpretation. 
-
-Each success criterion has a number, a name and a level.
-
-The number is composed of:
-
-- the number of the principle
-- the number of the guideline
-- the number of the criterion itself
-
-For example, the success criterion 2.1.1 Keyboard, Level A means it's part of principle 2 (Operable), guideline 2.1 (Keyboard Accessible) and the first criterion for that guideline.
-
-## WCAG Levels of accessibility
-
-There are 3 levels of accessibility:
-
-- A (basic)
-- AA (the global accessibility standard)
-- AAA (for dedicated assistive support)
-
-The success criteria can have one of 3 levels, A, AA or AAA. In general, level A criteria consist of basic rules that should lead to a technically functional website or app. Nothing too special. Level AA consist of criteria that, if you follow them correctly, will lead to a website or app that works for most known assistive devices. 
-
-Passing tests for the success criteria of level A and AA is what most legislation asks of you, and is what is meant when people say you are WCAG compliant. Level AAA adds additional success criteria that are necessary for most disabled people to use your website or app. 
-
-They're not necessarily harder to implement, but they're useful for a smaller group and sometimes require more work to maintain. Also, it is implied that when you say you (need to) comply with level AA, you automatically comply with A as well.
-
 ## WCAG and WordPress
 
 WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. 
@@ -114,7 +76,7 @@ Can visitors use any device?
 - Content must be able to be interpreted reliably by a wide variety of user agents, including assistive technologies.
 - All user interface components should have programmatically determinable names and roles.
 
-### Non-interference section 5.2.5
+#### Non-interference section 5.2.5
 
 Although when following guidelines you will often stay within chapters 1 to 4 (the four principles) of WCAG, it's necessary to read through [section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5) as well. It's about non-interference, meaning your techniques cannot block users' ability to access any part of a page. 
 
@@ -126,6 +88,44 @@ Example: if you have a background video at the top of a page, without buttons to
 - 2.2.2: Pause, stop, hide
 
 Not passing these success criteria can make it hard, if not impossible, for some users to continue browsing or using your app. It will interfere with their physical or mental health or assistive devices.
+
+### WCAG success criteria
+
+The success criteria can be seen as a set of rules for complying with a guideline. Some of them are very specific; others are more open to interpretation. 
+
+Each success criterion has a number, a name and a level.
+
+The number is composed of:
+
+- the number of the principle
+- the number of the guideline
+- the number of the criterion itself
+
+For example, the success criterion 2.1.1 Keyboard, Level A means it's part of principle 2 (Operable), guideline 2.1 (Keyboard Accessible) and the first criterion for that guideline.
+
+### WCAG Levels of accessibility
+
+There are 3 levels of accessibility:
+
+- A (basic)
+- AA (the global accessibility standard)
+- AAA (for dedicated assistive support)
+
+The success criteria can have one of 3 levels, A, AA or AAA. In general, level A criteria consist of basic rules that should lead to a technically functional website or app. Nothing too special. Level AA consist of criteria that, if you follow them correctly, will lead to a website or app that works for most known assistive devices. 
+
+Passing tests for the success criteria of level A and AA is what most legislation asks of you, and is what is meant when people say you are WCAG compliant. Level AAA adds additional success criteria that are necessary for most disabled people to use your website or app. 
+
+They're not necessarily harder to implement, but they're useful for a smaller group and sometimes require more work to maintain. Also, it is implied that when you say you (need to) comply with level AA, you automatically comply with A as well.
+
+### WCAG Versions
+
+At this point (early 2026) in most countries that have legislation about web accessibility, [WCAG version 2.1](https://www.w3.org/TR/WCAG21/) is the version being referred to when they speak of web accessibility standards. It contains 78 criteria, divided into 13 general guidelines. 
+
+Many countries are starting to use [version 2.2](https://www.w3.org/TR/WCAG22/) as the version of choice. The main difference is that this one has slightly more criteria (86) and a few were removed or changed levels. In this documentation, we use version 2.2 as our point of reference.
+
+The current versions are mainly focused on complete websites and apps. There is a newer version (WCAG 3.0) in development that should provide an outcomes-based conformance model, aiming to better cover cognitive and low-vision disabilities. It will also cover a broader scope, including mobile apps, AR/VR software, and apps for other devices, such as TVs.
+
+As of version WCAG 3.0, the abbreviation will reflect the wide scale it can be used for. It will then be named the W3C Accessibility Guidelines. [More on version 3.0](https://www.w3.org/TR/wcag-3.0-explainer/).
 
 ## Implementing the guidelines
 
@@ -158,3 +158,21 @@ WordPress no longer supports Internet Explorer as of version 5.8.
 Under [ISO/IEC 40500:2025](https://www.iso.org/standard/91029.html), WCAG 2.2 is an approved standard. This means you can use WCAG free from ISO. 
 
 In most laws in Europe that have the [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en) implemented, the European norm for accessibility [EN 301 549](https://accessible-eu-centre.ec.europa.eu/content-corner/digital-library/en-3015492021-accessibility-requirements-ict-products-and-services_en) is mentioned for accessibility requirements. This document explains accessibility requirements for all ICT products and services and uses WCAG 2.1 as its basis. It's expected to be updated to WCAG 2.2 late 2026.
+
+## WordPress theme guidelines and relation to WCAG
+The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme. You can find the WordPress theme guidelines at: [https://wpaccessibility.org/docs/topics/theme-guidelines/](wpaccessibility.org/docs/topics/theme-guidelines/).
+
+## Resources
+External resources mentioned in this article:
+* [WordPress Accessibility Coding Standard](https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/)
+* [Non-interference section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5)
+* [WCAG version 2.1](https://www.w3.org/TR/WCAG21/)
+* [WCAG version 2.2](https://www.w3.org/TR/WCAG22/)
+* [More on WCAG version 3.0](https://www.w3.org/TR/wcag-3.0-explainer/)
+* [W3C quick reference guide for techniques](https://www.w3.org/WAI/WCAG22/quickref/)
+* [WCAG Evaluation Method](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
+* [Accessibility Standards ISO/IEC 40500:2025](https://www.iso.org/standard/91029.html)
+* [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en)
+* [Standard norms for Accessibility of ICT: EN 301 549](https://accessible-eu-centre.ec.europa.eu/content-corner/digital-library/en-3015492021-accessibility-requirements-ict-products-and-services_en)
+
+If you have any articles you want us to share here, regarding WCAG, the versions, the success criteria and how to interpret them, please share them with our team.
