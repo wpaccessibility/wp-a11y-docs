@@ -15,7 +15,7 @@ When designing, writing, developing or testing a web page, plugin, theme, app or
 
 The guidelines are globally used in legislation and normative documents, and are created and maintained by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C).
 
-It's worth mentioning that WCAG in itself is not a law. They are guidelines for proper web development, as there are guidelines to use HTML, PHP and other programming languages as well. Be aware that it's very often referred to as something that's legally mandatory. 
+It's worth mentioning that WCAG in itself is not a law. They are guidelines for proper web development. Be aware that it's very often referred to as something that's legally mandatory. 
 
 However, there's more nuance to that. Correctly following these guidelines and techniques will likely help ensure compliance with accessibility laws and legislation. [More about legislation and laws for accessibility](https://wpaccessibility.org/docs/topics/legislation/).
 
@@ -25,17 +25,25 @@ At this point (early 2026) in most countries that have legislation about web acc
 
 Many countries are starting to use [version 2.2](https://www.w3.org/TR/WCAG22/) as the version of choice. The main difference is that this one has slightly more criteria (86) and a few were removed or changed levels. In this documentation, we use version 2.2 as our point of reference.
 
-The current versions are mainly focused on complete websites and apps. There is a newer version (WCAG 3.0) in development that should provide an outcomes-based conformance model, aiming to better cover cognitive and low-vision disabilities. It will also cover a broader scope, including mobile apps, AR/VR software, and apps for other devices, such as TVs
+The current versions are mainly focused on complete websites and apps. There is a newer version (WCAG 3.0) in development that should provide an outcomes-based conformance model, aiming to better cover cognitive and low-vision disabilities. It will also cover a broader scope, including mobile apps, AR/VR software, and apps for other devices, such as TVs.
 
-As of version WCAG 3.0, the abbreviation will reflect the wide scale it can be used for. It will then be named the W3C Accessibility Guidelines. [More on version 3.0(https://www.w3.org/TR/wcag-3.0-explainer/).
+As of version WCAG 3.0, the abbreviation will reflect the wide scale it can be used for. It will then be named the W3C Accessibility Guidelines. [More on version 3.0](https://www.w3.org/TR/wcag-3.0-explainer/).
 
 ## WCAG success criteria
 
-The success criteria can be seen as a set of rules to follow. Some of them are very specific; others are more open to interpretation, because otherwise there would be no room for creativity. 
+The success criteria can be seen as a set of rules for complying with a guideline. Some of them are very specific; others are more open to interpretation. 
 
-They describe a general focus, like "Make sure text has sufficient contrast", exceptions, specifics, and/or use cases. The criteria are numbered, for example, 2.1.1 Keyboard, meaning it's part of Chapter/Principle 2 and guideline 2.1 (Keyboard Accessible).
+Each success criterion has a number, a name and a level.
 
-## WCAG Levels of WCAG
+The number is composed of:
+
+- the number of the principle
+- the number of the guideline
+- the number of the criterion itself
+
+For example, the success criterion 2.1.1 Keyboard, Level A means it's part of principle 2 (Operable), guideline 2.1 (Keyboard Accessible) and the first criterion for that guideline.
+
+## WCAG Levels of accessibility
 
 There are 3 levels of accessibility:
 
@@ -133,7 +141,7 @@ Example:
 
 ## Testing or getting tested
 
-You may have seen audit reports in which a website was tested for accessibility. The audits mostly follow the [WCAG Evaluation Method](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/). This method provides auditors and testers with guidelines for checking whether a success criterion has been met (and thus whether a guideline has been followed correctly). 
+You may have seen audit reports in which a website was tested for accessibility. The audits mostly follow the [WCAG Evaluation Method](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/). This method provides auditors and testers with guidelines for checking whether a success criterion has been met (and thus whether a guideline has been followed correctly). [More about testing](https://wpaccessibility.org/docs/testing}.
 
 Per success criterion, usually many findings can be reported. That's why a report could be overwhelming, especially when you haven't done any work on the website yet. It's recommended to try to implement techniques and follow the guidelines before you get it audited. 
 
