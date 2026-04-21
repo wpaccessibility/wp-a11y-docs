@@ -4,6 +4,9 @@ layout: default
 parent: Links
 description: For linked images, the alt attribute (the alternative text) can be used as the link text.
 nav_order: 3
+contributors:
+  - Joe Dolson
+  - Rian Rietveld
 ---
 
 # Images as links
@@ -27,4 +30,9 @@ It is not necessary to ever use the word ‘link’ or 'this link goes to' in yo
 By giving a meaningful image proper alternative text, you meet WCAG success criteria
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 - [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
+- [2.4.9 Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-link-only) (level **AAA**).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
+
+### Other resources
+
+- [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/), by The A11Y Collective.
