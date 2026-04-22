@@ -55,21 +55,26 @@ Avoid for example in your link texts:
 
 ASCII art is invariably meaningless to screen reader users. Emoticons may occasionally be interpretable, but are confusing and difficult to understand. “Leetspeak” is unpronounceable, and creates difficult in comprehension. Emoji are independently accessible; they do have text alternatives. However, a large number of emoji can make the text effectively impossible to comprehend.
 
+{: .callout .dont }
+**Don't**: overload your link text with emoji.     
+[I 👏 approve 👏 this 👏 message 👏 ](#).
+
+{: .callout .do }
+**Do**: keep your link text clean, to the point and simple.  
+[I approve this message](#) 👏 .
+
+
 ## Avoid writing links in all caps
 
 Sequences of all capital letters are harder to read for people with dyslexia, screen readers may interpret short capitalized words as abbreviations, and read the words out character by character. This is also true if text is capitalized using CSS.
 
 {: .callout .dont }
-**Don't**: use all caps as link text.   
-`<a href="some-url">ACT NOW</a>`    
-<a href="#">ACT NOW</a>
+**Don't**: use all caps as link text.      
+<a href="#">ACT NOW</a>.
 
 {: .callout .do }
-**Do**: use sentence case or title case as link text.   
-`<a href="some-url">Act now</a>`     
-<a href="#">Act now</a>     
-`<a href="some-url">Act Now</a>`     
-<a href="#">Act Now</a>   
+**Do**: use sentence case or title case as link text.    
+<a href="#">Act now</a> or <a href="#">Act Now</a>.   
 
 ## Avoid using complete URLs as link text
 
@@ -95,7 +100,7 @@ In addition, screen readers announce the title attribute inconsistently. You mus
 <a href="#" title="download the PDF">manual</a>
 
 {: .callout .do }
-**Do**: add all into in the link text, so everyone had the dame information and the inforlation is aways visible.  
+**Do**: add all into in the link text, so everyone had the dame information and the information is always visible.  
 `<a href="some-url">download the manual as PDF</a>`    
 <a href="#">download the manual as PDF</a>
 
