@@ -5,7 +5,7 @@ nav_order: 1
 description: "Accessibility Knowledge Base for WordPress users and creators."
 permalink: /
 ---
-
+{{site.baseurl}}
 # WP Accessibility Knowledge Base
 
 {: .lead }
