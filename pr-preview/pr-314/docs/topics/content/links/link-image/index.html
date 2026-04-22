@@ -568,8 +568,9 @@
 
           <h1 id="images-as-links">Images as links</h1>
 
-<p>For linked images, the <code class="language-plaintext highlighter-rouge">alt</code> attribute (the alternative text) can be used as the link text.
-If the alt attribute describes the image: the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.</p>
+<p>For linked images, the <code class="language-plaintext highlighter-rouge">alt</code> attribute (the alternative text) can be used as the link text. Screen readers will announce the alt text when the link gets focus.</p>
+
+<p>But: if the alt attribute describes the image, the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.</p>
 
 <p>The post <a href="https://www.a11y-collective.com/blog/the-perfect-link/h-embedding-an-image-in-a-link">Creating the perfect link</a> by The A11Y Collective gives an example of this.</p>
 
@@ -581,6 +582,21 @@ If the alt attribute describes the image: the link text will be the description 
 <p>So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”.</p>
 
 <p>It is not necessary to ever use the word ‘link’ or ‘this link goes to’ in your alt text; that will already be sufficient announced by the screen reader.</p>
+
+<p class="callout dont"><strong>Don’t</strong>: leave the alt text out for an image that is used as link.</p>
+
+<p><a href="/pr-preview/pr-314"><img src="/pr-preview/pr-314/assets/images/logo-wa11ypuu.png" alt="" /></a></p>
+
+<p>The screen reader VoiceOver announces this as: “<strong>Link, link image</strong>”. So there is no info at all about where the link leads to.</p>
+
+<p class="callout do"><strong>Do</strong>: use the alt text as link text.</p>
+
+<p>With alt text:    <br />
+<a href="/pr-preview/pr-314"><img src="/pr-preview/pr-314/assets/images/logo-wa11ypuu.png" alt="WP Accessibility Knowledge Base" /></a></p>
+
+<p>The screen reader VoiceOver announces this as: “<strong>Link, image, WP Accessibility Knowledge Base</strong>”. The user now knows it’s a link with an image, and the link leads to the WP Accessibility Knowledge Base.</p>
+
+<p>Read <a href="/pr-preview/pr-314/docs/topics/content/alt-text/">Alternative text for images in the content</a> about how to add a custom alt text on an image in WordPress.</p>
 
 <h2 id="resources">Resources</h2>
 
@@ -656,7 +672,7 @@ If the alt attribute describes the image: the link text will be the description 
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> April 21, 2026</li>
+        <li><span>Last updated:</span> April 22, 2026</li>
 
         
 
