@@ -117,5 +117,5 @@ By giving a meaningful link text, you meet WCAG success criteria
 
 - [Descriptive Link Text: The Art of Clear Digital Signposting](https://www.greadme.com/blog/accessibility/how-to-write-descriptive-link-text-complete-guide) by Saar Twito.
 - [Writing for Web Accessibility ](https://www.w3.org/WAI/tips/writing/), by the W3C.
-- [Links and Hypertext](https://webaim.org/techniques/hypertext/hypertext_links), by WebAIM
+- [Links and Hypertext](https://webaim.org/techniques/hypertext/link_text), by WebAIM
 - [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/), by The A11Y Collective.
