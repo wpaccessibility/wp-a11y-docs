@@ -3,7 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow" />
 
+  {% unless
+    site.baseurl contains "pr-preview" or
+    site.host contains "127.0.0.1" or
+    site.host contains "localhost"
+  %}
   <script defer src="https://cloud.umami.is/script.js" data-website-id="0fcce273-672f-4868-a5d7-d7ef2c05ac1b"></script>
+  {% endunless %}
 
   {%- include components/title.html -%}
 
