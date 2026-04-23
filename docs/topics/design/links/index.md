@@ -20,7 +20,7 @@ Joe Dolson wrote [Why WordPress Themes Require Underlines on Links](https://www.
 
 For styling hover and focus states of links, read [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/).
 
-When you custom style the underlining with CSS, make sure the underlining has a color contrast ratio of at least 3:1 against it's background color.
+When you custom style the underlining with CSS, make sure the underlining has a color contrast ratio of at least 3:1 against its background color.
 
 {: .callout .dont }
 **Don't**: remove the underlining from links and use only a different color. Color-blind visitors (about 8%) may miss the link.   
