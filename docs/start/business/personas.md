@@ -20,7 +20,7 @@ For example: did you ever watch a video in a full, noisy train, and you forgot y
 - Carel has Parkinson’s disease. His hands are not steady enough to mouse-click on a link with tiny text.
 - Louis uses a screen reader. He struggles to understand a page’s content because its markup has no logical heading structure.
 - Kaia is blind. Links that are an image or an icon font, with no link text, are effectively invisible to her.
-- Carlos is color blind. He can’t distinguish the red links from the black text.
+- Carlos is color-blind. He can’t distinguish the red links from the black text.
 - Ray is in his 60s. His eyesight has degraded. He can no longer read small grey text on top a darker grey background.
 - Braiden has ADD (Attention Deficit Disorder). A distracting animation in the sidebar, with no user-control for stopping, prevents her from focusing on the page content.
 - Alyssa is deaf. A video without subtitles is unusable to her.
