@@ -1,0 +1,909 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow" />
+
+  
+
+
+
+<title>Introduction to WCAG, WP Accessibility Knowledge Base</title>
+
+
+  <link rel="stylesheet" href="/pr-preview/pr-316/assets/css/styles.css">
+  <link rel="icon" href="/pr-preview/pr-316/assets/images/favicon.ico">
+
+  <script src="https://unpkg.com/lunr/lunr.js"></script>
+  <script src="/pr-preview/pr-316/assets/js/wp-a11y-docs.js"></script>
+
+  
+
+</head>
+
+<body id="top">
+  <a class="skip-to-main" href="#main-content">Skip menu</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+  <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+</svg>
+
+  
+    <div class="side-bar">
+  <header class="site-header">
+
+    <div class="lh-wrapper">
+      <a href="/pr-preview/pr-316/" class="site-title lh-tight" aria-label="WP Accessibility logo, to the homepage">
+        <img src="/pr-preview/pr-316/assets/images/logo-wa11ypuu.png" alt="WP Accessibility logo">
+        WP Accessibility Knowledge Base
+      </a>
+    </div>
+
+    <div class="menu-button-wrapper">
+      <button id="menu-button" class="site-button" aria-expanded="false">
+        <span>Menu</span>
+        <svg viewBox="0 0 24 24" class="icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#svg-menu"></use>
+        </svg>
+      </button>
+    </div>
+
+  </header>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav" tabindex="0">
+
+    
+
+    
+        <ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/" class="nav-list-link">Home</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/" class="nav-list-link">Start with accessibility</a><button class="nav-list-expander btn-reset" aria-label="Start with accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/quick-wins/" class="nav-list-link">7 Quick wins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/guide/" class="nav-list-link">Reading guide</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/wcag-intro/" class="nav-list-link">Introduction to WCAG</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/business/" class="nav-list-link">Accessibility, the business case</a><button class="nav-list-expander btn-reset" aria-label="Accessibility, the business case submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/business/personas/" class="nav-list-link">They're not my visitors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/business/priority/" class="nav-list-link">Why accessibility should be your next priority</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/training/" class="nav-list-link">Training</a><button class="nav-list-expander btn-reset" aria-label="Training submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/training/online-training/" class="nav-list-link">Online training</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/training/books/" class="nav-list-link">Books</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/training/online-events/" class="nav-list-link">Online events</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/training/training-resources/" class="nav-list-link">Knowledge resources</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/training/discussion/" class="nav-list-link">Education & Discussion Groups</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/start/overlays/" class="nav-list-link">Overlays</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/" class="nav-list-link">Standards and best practice</a><button class="nav-list-expander btn-reset" aria-label="Standards and best practice submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/" class="nav-list-link">Content and images</a><button class="nav-list-expander btn-reset" aria-label="Content and images submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/alt-text/" class="nav-list-link">Alt text for images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/headings/" class="nav-list-link">Headings</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/links/" class="nav-list-link">Links</a><button class="nav-list-expander btn-reset" aria-label="Links submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/links/link-text/" class="nav-list-link">Link texts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/links/link-image/" class="nav-list-link">Images as links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/links/link-destinations/" class="nav-list-link">Link destinations</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/multiple-ways-contact/" class="nav-list-link">Multiple ways to contact</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/docs/" class="nav-list-link">Digital documents</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/content/readability/" class="nav-list-link">Readability</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/" class="nav-list-link">Frontend code</a><button class="nav-list-expander btn-reset" aria-label="Frontend code submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/semantics/" class="nav-list-link">Semantic HTML</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/heading-structure/" class="nav-list-link">Heading structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/" class="nav-list-link">Handling focus</a><button class="nav-list-expander btn-reset" aria-label="Handling focus submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/tabindex/" class="nav-list-link">Tabindex and tab order</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/visual-focus/" class="nav-list-link">Visual focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/focus-trapping/" class="nav-list-link">Trapping focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/restore-focus/" class="nav-list-link">Restore focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/autofocus/" class="nav-list-link">Autofocus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/input-hover/" class="nav-list-link">On input, focus and hover</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/focus-handling/keyboard-trap/" class="nav-list-link">Keyboard trap</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/images/" class="nav-list-link">Images</a><button class="nav-list-expander btn-reset" aria-label="Images submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/images/alt-text/" class="nav-list-link">Alt text images</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/images/image-animation/" class="nav-list-link">Image animation</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/landmarks/" class="nav-list-link">Landmarks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/pattern-libraries/" class="nav-list-link">Pattern libraries</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/tables/" class="nav-list-link">Tables in code</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/screen-reader-text/" class="nav-list-link">CSS screen-reader-text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/dynamic-changes/" class="nav-list-link">Feedback on dynamic changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/components/" class="nav-list-link">Components</a><button class="nav-list-expander btn-reset" aria-label="Components submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/components/skip-links/" class="nav-list-link">Skip links</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/components/excerpt/" class="nav-list-link">Post Excerpts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/code/components/dialog/" class="nav-list-link">The dialog modal</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/" class="nav-list-link">Design & user experience</a><button class="nav-list-expander btn-reset" aria-label="Design & user experience submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/fonts/" class="nav-list-link">Fonts</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/color/color-contrast-text/" class="nav-list-link">Color contrast of text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/color/use-of-color/" class="nav-list-link">Use of color</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/focus-hover/" class="nav-list-link">Styling hover and focus</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/avoid/" class="nav-list-link">Patterns to avoid</a><button class="nav-list-expander btn-reset" aria-label="Patterns to avoid submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/input-label/" class="nav-list-link">Input and label</a><button class="nav-list-expander btn-reset" aria-label="Input and label submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/input-label/accessible-name/" class="nav-list-link">Accessible name</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/input-label/placeholders/" class="nav-list-link">Placeholders</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/input-label/text-only/" class="nav-list-link">Label has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/input-label/label-location/" class="nav-list-link">Best label location</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/descriptions/" class="nav-list-link">Input and description</a><button class="nav-list-expander btn-reset" aria-label="Input and description submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/descriptions/connect-description/" class="nav-list-link">Connect the description</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/descriptions/content-description/" class="nav-list-link">Description has text only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/descriptions/location-description/" class="nav-list-link">Description location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/descriptions/decision-tree-description/" class="nav-list-link">Description decision tree</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/fieldsets/" class="nav-list-link">Group form fields</a><button class="nav-list-expander btn-reset" aria-label="Group form fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/fieldsets/legend/" class="nav-list-link">Fieldset legend</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/fieldsets/fieldset-descriptions/" class="nav-list-link">Fieldset description</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/required/" class="nav-list-link">Required fields</a><button class="nav-list-expander btn-reset" aria-label="Required fields submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/required/mark-required-fields/" class="nav-list-link">Mark required form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/required/mark-optional-fields/" class="nav-list-link">Mark optional form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/required/required-screen-readers/" class="nav-list-link">Indicate required fields for screen readers</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/" class="nav-list-link">Feedback on errors</a><button class="nav-list-expander btn-reset" aria-label="Feedback on errors submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/accessible-error-messages/" class="nav-list-link">Accessible feedback in forms</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/error-check/" class="nav-list-link">Check at the right moment</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/html-form-validation/" class="nav-list-link">HTML form validation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/error-message-location/" class="nav-list-link">Best message location</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/error-message-format/" class="nav-list-link">Use text for error messages</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/error-message-text/" class="nav-list-link">Write clear error messages</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/error-summary/" class="nav-list-link">Error summary</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/feedback/screen-reader-feedback/" class="nav-list-link">Screen reader feedback</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/help/" class="nav-list-link">Provide help</a><button class="nav-list-expander btn-reset" aria-label="Provide help submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/help/copy-paste/" class="nav-list-link">Allow copy/paste</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/help/autocomplete/" class="nav-list-link">Autocomplete</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/help/avoid-input-masks/" class="nav-list-link">Avoid input patterns</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/help/be-flexible/" class="nav-list-link">Be flexible</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/help/check-correct/" class="nav-list-link">Review, modify, undo</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/help/valid-values/" class="nav-list-link">Provide valid values</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/tabindex/" class="nav-list-link">No positive tabindex</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/forms/resources/" class="nav-list-link">Form resources</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/" class="nav-list-link">Theme accessibility guidelines</a><button class="nav-list-expander btn-reset" aria-label="Theme accessibility guidelines submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/skip-to-content/" class="nav-list-link">Skip to Content Link</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/meaningful-landmark-roles/" class="nav-list-link">Meaningful landmark roles and names</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/keyboard-navigation-support/" class="nav-list-link">Keyboard navigation support</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/controls-with-accessible-names/" class="nav-list-link">Controls with accessible names, roles, and states</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/labelled-form-fields/" class="nav-list-link">Labelled form fields</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/headings-structure/" class="nav-list-link">Headings with meaningful structure</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/underlined-links/" class="nav-list-link">Underlined links in text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/no-ambiguous-link-text/" class="nav-list-link">No ambiguous link text</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/sufficient-color-contrast/" class="nav-list-link">Sufficient color contrast of text and UI controls</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/alternative-text/" class="nav-list-link">Alternative text on images and graphics</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/accessible-animation/" class="nav-list-link">Accessible audio, video, and animations</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/reflow-resize/" class="nav-list-link">Support for reflow, resize, and text spacing changes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/unexpected-changes-of-context/" class="nav-list-link">No unexpected changes of context</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/new-windows-tabs/" class="nav-list-link">No links opening new windows or tabs without warning</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/content-hover-focus/" class="nav-list-link">Content on hover or focus is accessible</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/no-inaccessible-plugins/" class="nav-list-link">Must not recommend or require inaccessible plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/screen-reader-text/" class="nav-list-link">Screen reader text supported</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/documenting-accessibility/" class="nav-list-link">Documenting accessibility</a><button class="nav-list-expander btn-reset" aria-label="Documenting accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/documenting-accessibility/accessibility-statements/" class="nav-list-link">Accessibility statements</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/documenting-accessibility/accessibility-txt/" class="nav-list-link">accessibility.txt files</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/documenting-accessibility/acr/" class="nav-list-link">Accessibility Conformance Reports</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/topics/legislation/" class="nav-list-link">Legislation</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/" class="nav-list-link">Test for accessibility</a><button class="nav-list-expander btn-reset" aria-label="Test for accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/checklists/" class="nav-list-link">Checklists</a><button class="nav-list-expander btn-reset" aria-label="Checklists submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/checklists/overall/" class="nav-list-link">Overall</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/checklists/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/checklists/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/checklists/code/" class="nav-list-link">Frontend code checks</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/automated/" class="nav-list-link">Automated validation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/keyboard/" class="nav-list-link">Keyboard only</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/screen-readers/" class="nav-list-link">Screen reader</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/testing-themes/" class="nav-list-link">Testing WordPress themes</a><button class="nav-list-expander btn-reset" aria-label="Testing WordPress themes submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/testing-themes/identifying-themes/" class="nav-list-link">Identifying themes that need to be tested</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/testing-themes/setup/" class="nav-list-link">Getting set up to test</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/testing-themes/reporting-sheet/" class="nav-list-link">Reporting sheet overview</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/testing/testing-themes/theme-testing-workflow/" class="nav-list-link">Testing workflow tips</a></li></ul></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/wp-a11y/" class="nav-list-link">WordPress and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WordPress and Accessibility submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/wp-a11y/wcag/" class="nav-list-link">WCAG and WordPress</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/wp-a11y/wp-a11y-team/" class="nav-list-link">WordPress Accessibility Team</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/wp-a11y/wp-a11y-plugins/" class="nav-list-link">WP accessibility plugins</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/wp-a11y/wp-themes/" class="nav-list-link">Accessible WP themes</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/wp-a11y/wp-plugins/" class="nav-list-link">Accessible WP plugins</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/" class="nav-list-link">About this documentation</a><button class="nav-list-expander btn-reset" aria-label="About this documentation submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/sponsors/" class="nav-list-link">Sponsors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/" class="nav-list-link">How to contribute</a><button class="nav-list-expander btn-reset" aria-label="How to contribute submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/contributors/" class="nav-list-link">Contributors</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/improve-website/" class="nav-list-link">Improve this website</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/report-error/" class="nav-list-link">Report an error</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/review/" class="nav-list-link">Review documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/suggest/" class="nav-list-link">Suggest documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/github/" class="nav-list-link">Technical documentation</a><button class="nav-list-expander btn-reset" aria-label="Technical documentation submenu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
+          </button><ul class="nav-list"><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/github/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/github/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/github/content-kitchen-sink/" class="nav-list-link">Content kitchen sink</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/write/" class="nav-list-link">Write documentation</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contribute/CODE_OF_CONDUCT/" class="nav-list-link">Code of Conduct</a></li></ul></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/contact/" class="nav-list-link">Contact</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/licence/" class="nav-list-link">Licences</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/accessibility-statement/" class="nav-list-link">Accessibility statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/cookies/" class="nav-list-link">Cookie Statement</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-316/docs/about/disclaimer/" class="nav-list-link">Disclaimer</a></li></ul></li></ul>
+    
+
+</nav>
+
+
+    
+
+</div>
+
+  
+  <div class="main">
+    <div id="main-header" class="main-header">
+    <section class="search" aria-label="Search">
+  <form class="search-input-wrap" role="search" action="/pr-preview/pr-316/search/" method="get">
+    <label for="search-input" class="search-label">
+      <span class="screen-reader-text">Search WP Accessibility Knowledge Base</span>
+      <svg viewBox="0 0 24 24" class="search-icon" aria-hidden="true">
+        <use xlink:href="#svg-search"></use>
+      </svg>
+    </label>
+
+    <input
+      type="search"
+      id="search-input"
+      name="q"
+      class="search-input"
+      autocomplete="off"
+    >
+
+    <button type="submit" class="search-submit">Search</button>
+  </form>
+
+  <div id="search-results" class="search-results"></div>
+</section>
+
+</div>
+
+
+    <div class="main-content-wrap">
+
+      
+        
+
+        
+
+        
+            
+            
+            
+        
+
+    
+
+        
+
+        
+            
+
+
+
+<nav class="breadcrumb-nav" aria-label="breadcrumbs">
+    <ol class="breadcrumb-nav-list">
+        <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-316/docs/start/'>Start with accessibility</a></li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Introduction to WCAG</li>
+    </ol>
+</nav>
+
+      
+      <div id="main-content" class="main-content">
+
+        <main>
+
+          <h1 id="introduction-to-wcag">Introduction to WCAG</h1>
+
+<p>The Web Content Accessibility Guidelines, or WCAG, are the primary guidelines for meeting accessibility standards worldwide. You will need to refer to them when designing, writing, developing, or testing web pages, plugins, themes, or other software.</p>
+
+<p>Following these guidelines will help make your work accessible for as many people as possible, including those with disabilities.</p>
+
+<p>The guidelines are globally used in legislation and are created and maintained by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C).</p>
+
+<p>It’s worth mentioning that WCAG in itself is not a law. It is a set of guidelines for proper web development. Be aware that it’s very often referred to as something that’s legally mandatory.</p>
+
+<p>However, there’s more nuance to that. Correctly following these guidelines and techniques will help ensure compliance with accessibility laws and legislation. <a href="/pr-preview/pr-316/docs/topics/legislation/">More about legislation and laws for accessibility</a>.</p>
+
+<h2 id="wcag-and-wordpress">WCAG and WordPress</h2>
+
+<p>WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible.</p>
+
+<p>WordPress Accessibility Coding Standard:</p>
+<blockquote>
+    <p>All new or updated code released in WordPress must conform to the WCAG 2.2 guidelines at level AA.</p>
+    <cite><a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/">WordPress Accessibility Coding Standard</a></cite>
+</blockquote>
+
+<p>If you want to learn about WordPress-specific guidelines, find our <a href="https://wpaccessibility.org/docs/topics/">standards and best practices specific to WordPress</a>.</p>
+
+<h2 id="wcag-explained">WCAG explained</h2>
+
+<p>When building a new website, theme, or plugin, ask yourself these four questions:</p>
+
+<ul>
+  <li>Is all content available to everyone? (Perceivable)</li>
+  <li>Can visitors use all functionality? (Operable)</li>
+  <li>Can visitors comprehend all content? (Understandable)</li>
+  <li>Can visitors use any device? (Robust)</li>
+</ul>
+
+<h3 id="principles-and-guidelines">Principles and guidelines</h3>
+
+<p>There are four key principles in WCAG, and they reflect what a website should be: <strong>perceivable</strong>, <strong>operable</strong>, <strong>understandable</strong> and <strong>robust</strong>.</p>
+
+<p>Each principle has a few guidelines describing how to meet a principle.</p>
+
+<h4 id="section-1-principle-perceivable">Section 1: Principle Perceivable</h4>
+
+<p>Is all content available to everyone?</p>
+
+<ul>
+  <li>Provide text alternatives for non-text content (e.g., images).</li>
+  <li>Provide captions and other alternatives for multimedia.</li>
+  <li>Create content that can be presented in different ways without losing meaning.</li>
+  <li>Make it easy for users to see and hear content (e.g., by using color well, offering multimedia controls, and allowing text resizing).</li>
+</ul>
+
+<h4 id="section-2-principle-operable">Section 2: Principle Operable</h4>
+
+<p>Can visitors use all functionality?</p>
+
+<ul>
+  <li>Make all essential functionality available from a keyboard.</li>
+  <li>Give users enough time to read and use content.</li>
+  <li>Do not use content that causes seizures.</li>
+  <li>Help users navigate and find content.</li>
+</ul>
+
+<h4 id="section-3-principle-understandable">Section 3: Principle Understandable</h4>
+
+<p>Can visitors comprehend all the content?</p>
+
+<ul>
+  <li>Make text readable and understandable.</li>
+  <li>Use easy-to-comprehend text — avoid complex wording.</li>
+  <li>Make content appear and operate in predictable ways.</li>
+  <li>Guide users to avoid and correct mistakes.</li>
+</ul>
+
+<h4 id="section-4-principle-robust">Section 4: Principle Robust</h4>
+
+<p>Can visitors use any device?</p>
+
+<ul>
+  <li>Content must be able to be interpreted reliably by a wide variety of user agents, including assistive technologies.</li>
+  <li>All user interface components should have programmatically determinable names and roles.</li>
+</ul>
+
+<h3 id="section-5-conformance">Section 5: Conformance</h3>
+
+<p>Sections 1 through 4 contain the specific guidelines used to create accessible content. Section 5, however, talks about what it means to conform to these guidelines and defines important terminology used for conformance.</p>
+
+<p>Although when following the WCAG guidelines you will often stay within sections 1 to 4 (the four principles), it’s necessary to read through <a href="https://www.w3.org/TR/WCAG22/#cc5">section 5.2.5</a> as well. It’s about non-interference, meaning your techniques cannot block users’ ability to access any part of a page.</p>
+
+<p>For example: if you have a background video at the top of a page, without buttons to stop or pause it, you are interfering with the possibility of people reading the rest of the page. There are 4 success criteria specifically mentioned:</p>
+
+<ul>
+  <li>1.4.2: Audio control</li>
+  <li>2.1.1: No keyboard trap</li>
+  <li>2.3.1: Three flashes or below threshold</li>
+  <li>2.2.2: Pause, stop, hide</li>
+</ul>
+
+<p>Not passing these success criteria can make it hard, if not impossible, for some users to continue browsing or using your app. It will interfere with their physical or mental health or assistive devices.</p>
+
+<h3 id="wcag-success-criteria">WCAG success criteria</h3>
+
+<p>The success criteria can be seen as a set of rules for complying with a guideline. Some of them are very specific; others are more open to interpretation.</p>
+
+<p>Each success criterion has a number, a name and a level.</p>
+
+<p>The number is composed of:</p>
+
+<ul>
+  <li>the number of the principle</li>
+  <li>the number of the guideline</li>
+  <li>the number of the criterion itself</li>
+</ul>
+
+<p>For example, the success criterion <a href="https://www.w3.org/WAI/WCAG22/quickref/#keyboard">2.1.1 Keyboard, Level A</a> means it’s part of principle 2 (Operable), guideline 2.1 (Keyboard Accessible) and is the first criterion for that guideline.</p>
+
+<h3 id="wcag-levels-of-accessibility">WCAG Levels of accessibility</h3>
+
+<p>There are 3 levels of accessibility:</p>
+
+<ul>
+  <li>A (basic)</li>
+  <li>AA (the global accessibility standard)</li>
+  <li>AAA (for dedicated assistive support)</li>
+</ul>
+
+<p>The success criteria can have one of 3 levels, A, AA or AAA. In general, level A criteria consist of basic rules that should lead to a technically functional website or app. Level AA consist of criteria that, if you follow them correctly, will lead to a website or app that works for most known assistive devices.</p>
+
+<p>It is implied that when you need to comply with level AA, you automatically need to comply with level A as well.</p>
+
+<p>Passing tests for the success criteria of level A and AA is what most legislation asks of you, and is what is meant when people say you are WCAG compliant. Level AAA adds additional success criteria that are necessary to expand the number of people with disabilities who can use your website or app.</p>
+
+<p>They’re not necessarily harder to implement, but they’re useful for a smaller group and sometimes require more work to maintain. Also, it is implied that when you say you (need to) comply with level AA, you automatically comply with A as well.</p>
+
+<h3 id="wcag-versions">WCAG Versions</h3>
+
+<p>As of early 2026, in most countries that have legislation about web accessibility, <a href="https://www.w3.org/TR/WCAG21/">WCAG version 2.1</a> is the version referenced. It contains 78 criteria, divided into 13 general guidelines.</p>
+
+<p>Many countries are starting to use <a href="https://www.w3.org/TR/WCAG22/">version 2.2</a> as the version of choice. WCAG 2.2 has added a few more criteria (86 in total) and a couple criteria were removed or changed levels. In this documentation, we use version 2.2 as our point of reference.</p>
+
+<p>The current versions are mainly focused on complete websites and apps. There is a newer version (WCAG 3.0) in development that intends to provide an outcome-based conformance model, aiming to better cover cognitive and low-vision disabilities. It will also cover a broader scope, including mobile apps, AR/VR software, and apps for other devices, such as TVs.</p>
+
+<p>As of version WCAG 3.0, the abbreviation will reflect the wide scale it can be used for. It will then be named the W3C Accessibility Guidelines. <a href="https://www.w3.org/TR/wcag-3.0-explainer/">More on version 3.0</a>.</p>
+
+<h2 id="implementing-the-guidelines">Implementing the guidelines</h2>
+
+<p>The guidelines and criteria do not provide specific techniques to achieve conformance. However, the W3C provided a <a href="https://www.w3.org/WAI/WCAG22/quickref/">quick reference guide</a> with common techniques and examples for implementing them.</p>
+
+<p>When designing, writing or coding, keep asking yourself if what you’re doing contributes to the main purpose of the guideline.</p>
+
+<h2 id="testing-or-getting-tested">Testing or getting tested</h2>
+
+<p>You may have seen audit reports in which a website was tested for accessibility.</p>
+
+<p>One method of reporting an accessibility audit is the <a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG Evaluation Method</a>, the Website Accessibility Conformance Evaluation Methodology by the W3C. This methodology  provides auditors and testers with guidelines for checking whether a success criterion has been met (and thus whether a guideline has been followed correctly). <a href="/pr-preview/pr-316/docs/testing">More about testing</a>.</p>
+
+<p>Many finding can be reported for each success criterion in the report. That can make a report overwhelming! It’s recommended that you try and implement best practice accessibility techniques and follow the guidelines to the best of your abilities before getting an audit.</p>
+
+<p>This way, it will be easier to follow recommendations from the report. It can be useful to read through the evaluation method yourself, as it offers ways to check for accessibility issues.</p>
+
+<h2 id="browser-support">Browser support</h2>
+
+<p>Decide which browsers and versions your theme or plugin will support. Some <a href="https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques">WCAG techniques</a> apply only to older browsers, e.g, Internet Explorer 7 and below. Don’t forget to check mobile browsers and software versions.</p>
+
+<p>The WordPress core handbook lists the <a href="https://make.wordpress.org/core/handbook/best-practices/browser-support/">current browser support for WordPress</a>.</p>
+
+<h2 id="relation-to-iso-standards-eaa-and-en-301-549">Relation to ISO standards, EAA and EN 301 549</h2>
+
+<p>WCAG 2.2 has been formally adopted by ISO/IEC as an official international standard, numbered <a href="https://www.iso.org/standard/91029.html">ISO/IEC 40500:2025</a>. Because WCAG is originally a W3C/WAI document that is freely published, ISO has allowed it to remain freely accessible, you can read and use it at no cost, even though it now carries the ISO/IEC stamp.</p>
+
+<p>Most European laws implementing the <a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en">European Accessibility Act</a> reference <a href="https://accessible-eu-centre.ec.europa.eu/content-corner/digital-library/en-3015492021-accessibility-requirements-ict-products-and-services_en">EN 301 549</a> as the standard for accessibility requirements. This document covers accessibility requirements for all information technology products and services and is based on WCAG 2.1. An update to WCAG 2.2 is expected in late 2026.</p>
+
+<h2 id="wordpress-theme-guidelines-and-relation-to-wcag">WordPress theme guidelines and relation to WCAG</h2>
+
+<p>The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme.</p>
+
+<p>You can find the WordPress theme guidelines for the accessibility-ready tag at: <a href="/pr-preview/pr-316/docs/topics/theme-guidelines/">Theme accessibility guidelines</a>.</p>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/">WordPress Accessibility Coding Standard</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG22/#cc5">Non-interference section 5.2.5</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG21/">WCAG version 2.1</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG22/">WCAG version 2.2</a></li>
+  <li><a href="https://www.w3.org/TR/wcag-3.0-explainer/">More on WCAG version 3.0</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/">W3C quick reference guide for techniques</a></li>
+  <li><a href="https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/">WCAG Evaluation Method</a></li>
+  <li><a href="https://www.iso.org/standard/91029.html">Accessibility Standards ISO/IEC 40500:2025</a></li>
+  <li><a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en">European Accessibility Act</a></li>
+  <li><a href="https://accessible-eu-centre.ec.europa.eu/content-corner/digital-library/en-3015492021-accessibility-requirements-ict-products-and-services_en">Standard norms for Accessibility of ICT: EN 301 549</a></li>
+</ul>
+
+
+          
+            
+ 
+
+
+
+
+
+
+
+
+    <nav class="siblings" aria-label="Related content">
+        <h2>Other pages in: Start with accessibility</h2>
+        <ul>
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-316/docs/start/quick-wins/"> 7 Quick wins</a> Quick wins to improve the accessibility of your website
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-316/docs/start/guide/"> Reading guide</a> Find documentation for your work role, work field and expertise.
+                </p>
+            </li>
+            
+            
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-316/docs/start/business/"> Accessibility, the business case</a> The website you build is not for you, or even your client. It’s for the users.
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-316/docs/start/training/"> Training</a> An overview of online training, books, events, knowledges bases and peer support to learn accessibility.
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/pr-preview/pr-316/docs/start/overlays/"> Overlays</a> Do not use overlays. Here's why.
+                </p>
+            </li>
+            
+            
+        </ul>
+        
+
+            <p>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-316/docs/start/">Back to: Start with accessibility</a>
+            </p>
+
+        
+    </nav>
+
+
+
+          
+
+          <section aria-label="Page meta data" class="meta">
+
+    <ul>
+
+        
+        <li><span>First published:</span> October 10, 2025</li>
+        
+
+        <li><span>Last updated:</span> April 22, 2026</li>
+
+        
+
+        <li><span>Edit article:</span>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/start/wcag-intro/index.md" id="edit-this-page">Improve it on GitHub</a>
+        </li>
+
+        
+
+    </ul>
+
+    
+    <p><span>Contributors:</span>
+            
+                Annelies Verhelst,
+                
+            
+                Joe Dolson,
+                
+            
+                Rian Rietveld.
+                
+            
+    </p>
+    
+    <p>Read <a href="/pr-preview/pr-316/docs/about/contribute/">how to contribute to this documentation</a>.</p>
+
+
+</section>
+
+
+        </main>
+
+        
+  <footer>
+
+    <nav aria-label="Footer">
+      <h2 class="screen-reader-text">Quick links and main content</h2>
+
+      <div class="container">
+
+        <div class="column">
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="/pr-preview/pr-316/docs/topics/theme-guidelines/">Theme accessibility-ready tag</a></li>
+            <li><a href="/pr-preview/pr-316/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a></li>
+            <li><a href="/pr-preview/pr-316/docs/topics/legislation/">Legislation worldwide</a></li>
+            <li><a href="/pr-preview/pr-316/docs/start/overlays/">Accessibility Overlays</a></li>
+            <li><a href="/pr-preview/pr-316/docs/about/sponsors/">Sponsors</a></li>
+            <li><a href="/pr-preview/pr-316/docs/about/contact/">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="column">
+        <h3>Content</h3>
+          <ul>
+            <li><a href="/pr-preview/pr-316/docs/start/guide/">Find the documentation for your role</a></li>
+            <li><a href="/pr-preview/pr-316/docs/start/">Start with accessibility</a></li>
+            <li><a href="/pr-preview/pr-316/docs/topics/">Standards and best practice</a></li>
+            <li><a href="/pr-preview/pr-316/docs/testing/">Test for accessibility</a></li>
+            <li><a href="/pr-preview/pr-316/docs/wp-a11y/">WordPress and Accessibility</a></li>
+            <li><a href="/pr-preview/pr-316/docs/about/">About this documentation</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="text-small"><strong>Disclaimer</strong>: This documentation is intended to help the WordPress community understand and implement accessible practices. It is not a replacement for the official Web Content Accessibility Guidelines. Please read the <a href="/pr-preview/pr-316/docs/about/disclaimer/"> full disclaimer</a>.</p>
+
+      <p>
+        <span aria-hidden="true">&uarr;</span>
+        <a href="#top" id="back-to-top" class="back-to-top">
+          Back to top
+        </a>
+      </p>
+    </nav>
+
+  </footer>
+
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
