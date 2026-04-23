@@ -12,7 +12,7 @@
 
 
 
-<title>Heading structure, WP Accessibility Knowledge Base</title>
+<title>Styling links, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-314/assets/css/styles.css">
@@ -549,7 +549,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-314/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-314/docs/topics/code/'>Frontend code</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Heading structure</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-314/docs/topics/design/'>Design & user experience</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Styling links</li>
     </ol>
 </nav>
 
@@ -558,92 +558,46 @@
 
         <main>
 
-          <h1 id="heading-structure-in-theme-development">Heading structure in theme development</h1>
+          <h1 id="styling-links">Styling links</h1>
 
-<p>Headings are the backbone of your content structure and describe the content on a webpage. Good headings also make the site easier to scan. Sighted users are accustomed to seeing sections of content broken up using various font sizes that highlight groups of related content.</p>
-
-<p>Visually, it only matters that these are set off in design. Using appropriate heading levels is the screen reader equivalent of good visual design: if headings are not present, then all the text is undifferentiated – if headings are used inappropriately, then content doesn’t make sense.</p>
-
-<p class="info callout">How to use headings in the editor is addressed in the “Content and images” section <a href="/pr-preview/pr-314/docs/topics/content/headings/">Using headings in content</a>.</p>
-
-<h2 id="rules-of-thumb-for-headings-in-theme-development">Rules of thumb for headings in theme development</h2>
+<p>When creating styling for links, the following is best practice for usability and accessibility:</p>
 
 <ul>
-  <li>One unique H1 per page, post or archive that describes the primary topic of the page. In most themes, this is the post, page, or archive title.</li>
-  <li>Use H2 through H6 to divide major sections of the page, such as widget areas, comment sections, or other major segments of the page.</li>
-  <li>Use headings in a logical and hierarchical structure.</li>
-  <li>Don’t skip a heading level from the top down.</li>
-  <li>Use headings to meaningfully describe the content that follows, not as a design element.</li>
+  <li>Underlining links in <strong>paragraphs of text</strong> increases the usability of your website. On the web this is a universal convention that underlined text is a link.</li>
+  <li><strong>Grouped links</strong> in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that text is a link, underlining is not required.</li>
+  <li>Use underlining of text only for links. Underlining makes people think something is clickable, if they click it and nothing happens, they’ll probably be confused and frustrated.</li>
 </ul>
 
-<p>WPBeginner published a practical guide on headings for WordPress: <a href="https://wp-coder.net/blog/how-to-properly-use-heading-tags-in-wordpress-explained/">How to Properly Use Heading Tags in WordPress (H1-H6 Explained)</a>. The guide also addresses the impact of a good heading structure on SEO.</p>
+<p>For styling hover and focus states of links, read <a href="/pr-preview/pr-314/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a>.</p>
 
-<h3 id="sections-and-headings">Sections and headings</h3>
+<p>When you custom style the underlining with CSS, make sure the underlining has a color contrast ratio of at least 3:1 against it’s background color.</p>
 
-<p>The obsolete practice of using an H1 for each <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code>  harms accessibility, as the algorithm to structure the document outline was never implemented. If everything is an H1, there is no indication about what the main content is about. Read more about this in <a href="http://html5doctor.com/computer-says-no-to-html5-document-outline/">Computer says NO to HTML5 document outline</a> by Steve Faulkner.</p>
+<p class="callout dont"><strong>Don’t</strong>: remove the underlining from links and use only a different color. Color-blind visitors (about 8%) may miss the link. <br />
+I love cats, so I watch <a href="#" style="text-decoration: none; color: darkgreen">cat videos</a> on YouTube.</p>
 
-<p>If you want to give a section an <a href="/pr-preview/pr-314/docs/topics/code/accessible-name/">accessible name</a>, use <code class="language-plaintext highlighter-rouge">aria-labelledby</code>, linking the heading to the section. For example:</p>
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;section</span> <span class="na">aria-labelledby=</span><span class="s">"news-heading"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h2</span> <span class="na">id=</span><span class="s">"news-heading"</span><span class="nt">&gt;</span>The latest news<span class="nt">&lt;/h2&gt;</span>
-    [...]
-<span class="nt">&lt;/section&gt;</span>
-</code></pre></div></div>
-
-<h3 id="heading-levels-in-components-depend-on-context">Heading levels in components depend on context</h3>
-
-<p>Take extra care when including a heading in a component or block. The heading level may depend on the way or location a component is included in the page.</p>
-
-<p>Make it possible to change a heading level based on the semantics of the heading structure on that specific web page. A widget may need a different heading level in the sidebar than when it’s used in the content.</p>
-
-<h2 id="how-to-test-for-a-proper-heading-structure">How to test for a proper heading structure</h2>
-
-<p>Use the browser tool <strong>HeadingsMap</strong> to test the heading structure of an entire web page:</p>
-<ul>
-  <li><a href="https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo">Headings Map toolbar for Edge</a></li>
-  <li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en">Headings Map toolbar for Chrome</a></li>
-  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/headingsmap/">Headings Map toolbar for Firefox</a></li>
-</ul>
-
-<p>Are you testing the heading structure for an accessibility-ready WordPress theme? Please follow the testing procedure outlined in the Theme Accessibility Guidelines under <a href="/pr-preview/pr-314/docs/topics/theme-guidelines/headings-structure/">Headings with meaningful structure</a>.</p>
-
-<p class="callout info"><strong>Note</strong>: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (such as in the navigation) is allowed at the AA standard.</p>
+<p class="callout do"><strong>Do</strong>: underline links in the content, everyone gets that it’s a link.   <br />
+I love cats, so I watch <a href="#" style="color: darkgreen">cat videos</a> on YouTube.</p>
 
 <h2 id="resources">Resources</h2>
 
-<h3 id="wcag-success-criteria-for-the-heading-structure">WCAG Success Criteria for the heading structure</h3>
-
-<p>Using a meaningful heading structure is necessary to meet the WCAG success criteria:</p>
+<h3 id="related-wcag-success-criteria-for-styling-links">Related WCAG Success Criteria for styling links</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships">WCAG 1.3.1 Info and Relationships</a> (Level A).</li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels">WCAG 2.4.6 Headings and Labels</a> (Level AA).</li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#section-headings">WCAG 2.4.10 Section Headings</a> (<strong>Level AAA</strong>).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#use-of-color">1.4.1 Use of Color</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">1.4.11 Non-text Contrast</a> (level AA).</li>
 </ul>
 
 <h3 id="other-resources">Other resources</h3>
 
-<h4 id="heading-structure-in-wordpress">Heading structure in WordPress</h4>
-
 <ul>
-  <li><a href="https://www.wpbeginner.com/wp-tutorials/how-to-properly-use-heading-tags-in-wordpress-explained/">How to Properly Use Heading Tags in WordPress (H1-H6 Explained)</a> by WPBeginner.</li>
-  <li><a href="https://wordpress.org/documentation/article/heading-block/">The Heading Block</a> on WordPress.org</li>
+  <li><a href="https://theadminbar.com/accessibility-weekly/underline-your-links/">Underline Your Links!</a>, by Amber Hinds on the Admin Bar.</li>
+  <li><a href="https://adrianroselli.com/2016/06/on-link-underlines.html">On Link Underlines</a>, by Adrian Roselli.</li>
+  <li><a href="https://smart-interface-design-patterns.com/articles/links-ux/">Designing Better Links UX</a> on Smart Interface Design Patterns.</li>
+  <li><a href="https://webaim.org/techniques/hypertext/link_text#underlining">Links and Hypertext - Underlining</a>, on WebAIM.</li>
+  <li><a href="https://www.nngroup.com/articles/guidelines-for-visualizing-links/">Guidelines for Visualizing Links</a>, by the NNGroup.</li>
+  <li><a href="https://nicsteenhout.substack.com/p/link-styling-underline-your-links">Link styling: Underline your links. Test with night mode. Test in greyscale</a>, by Nic Steenhout.</li>
 </ul>
 
-<h4 id="resources-on-heading-semantics">Resources on heading semantics</h4>
-
-<ul>
-  <li><a href="https://webaim.org/techniques/semanticstructure/">Semantic Structure on WebAIM</a>, by WebAIM.</li>
-  <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">Web Accessibility Tutorials: Headings</a>, by the W3C.</li>
-  <li><a href="https://developer.paciellogroup.com/blog/2013/10/html5-document-outline/">The HTML5 Document Outline</a> by Steven Faulkner.</li>
-  <li><a href="https://www.a11yproject.com/posts/how-to-accessible-heading-structure/">Accessible heading structure</a> by Rian Rietveld on the A11y Project.</li>
-</ul>
-
-<h4 id="heading-structure-best-practices">Heading structure best practices</h4>
-
-<ul>
-  <li><a href="https://www.w3.org/WAI/tutorials/page-structure/labels/#using-aria-labelledby">Web Accessibility Tutorials: Labeling Regions</a>, by the W3C.</li>
-  <li><a href="https://mrwweb.com/common-heading-mistakes/">MRW web: Common heading-mistakes</a>, by Mark Root-Wiley.</li>
-</ul>
 
 
           
@@ -658,13 +612,13 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Frontend code</h2>
+        <h2>Other pages in: Design & user experience</h2>
         <ul>
             
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/accessible-name/"> Accessible name</a> Give an (interactive) HTML element the correct accessible name.
+                    <a href="/pr-preview/pr-314/docs/topics/design/fonts/"> Fonts</a> Everything there is to know about using fonts.
                 </p>
             </li>
             
@@ -672,15 +626,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/semantics/"> Semantic HTML</a> Learn why using semantic HTML is essential for web accessibility.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/focus-handling/"> Handling focus</a> Make the keyboard focus visible, predictable, and meaningful.
+                    <a href="/pr-preview/pr-314/docs/topics/design/focus-hover/"> Styling hover and focus</a> How to style focus and hover states of interactive HTML elements.
                 </p>
             </li>
             
@@ -690,7 +636,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/landmarks/"> Landmarks</a> Learn what ARIA landmarks are and how to use them.
+                    <a href="/pr-preview/pr-314/docs/topics/design/color/"> Color</a> Using color is important, but avoid using it as the only visual means of conveying information.
                 </p>
             </li>
             
@@ -698,47 +644,7 @@
             
             <li>
                 <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/pattern-libraries/"> Pattern libraries</a> Libraries with accessible patterns for web components.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/images/"> Images</a> What is important to for developers when they implement images in a theme, plugin or in WordPress core.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/tables/"> Tables in code</a> Tables in theme and plugin development
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/screen-reader-text/"> CSS screen-reader-text</a> Learn about the CSS class screen-reader-text and how to use it.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/dynamic-changes/"> Feedback on dynamic changes</a> The explanation of wp.a11y.speak.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/pr-preview/pr-314/docs/topics/code/components/"> Components</a> Recommendations and set up of web components for WordPress.
+                    <a href="/pr-preview/pr-314/docs/topics/design/avoid/"> Patterns to avoid</a> Learn which design patterns you should avoid for accessibility.
                 </p>
             </li>
             
@@ -747,7 +653,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-314/docs/topics/code/">Back to: Frontend code</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-314/docs/topics/design/">Back to: Design & user experience</a>
             </p>
 
         
@@ -765,18 +671,25 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> April 09, 2026</li>
+        <li><span>Last updated:</span> April 23, 2026</li>
 
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/code/heading-structure/index.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/links/index.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
 
         
 
     </ul>
 
+    
+    <p><span>Contributors:</span>
+            
+                Rian Rietveld.
+                
+            
+    </p>
     
     <p>Read <a href="/pr-preview/pr-314/docs/about/contribute/">how to contribute to this documentation</a>.</p>
 
