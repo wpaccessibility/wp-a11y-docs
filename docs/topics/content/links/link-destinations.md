@@ -51,10 +51,9 @@ By adding meaningful link text, you meet WCAG success criteria
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
 - [3.2.5 Change on Request](https://www.w3.org/WAI/WCAG22/quickref/#change-on-request) (level **AAA)**.
 
-
-
-## Other resources
+### Other resources
 
 - [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html), by Adrian Roselli.
+[Designing Better Links UX](https://smart-interface-design-patterns.com/articles/links-ux/) on Smart Interface Design Patterns.
 - [Opening new windows and tabs from a link only when necessary](https://www.w3.org/WAI/WCAG21/Techniques/general/G200), by the W3C.
 - [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/), by The A11Y Collective.
