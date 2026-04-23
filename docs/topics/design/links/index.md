@@ -16,6 +16,8 @@ When creating styling for links, the following is best practice for usability an
 - **Grouped links** in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that text is a link, underlining is not required.
 - Use underlining of text only for links. Underlining makes people think something is clickable, if they click it and nothing happens, they'll probably be confused and frustrated. 
 
+Joe Dolson wrote [Why WordPress Themes Require Underlines on Links](https://www.joedolson.com/2025/10/why-wordpress-themes-require-underlines-on-links/) with the reasons why underlining is the best way to indicate links in the content.
+
 For styling hover and focus states of links, read [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/).
 
 When you custom style the underlining with CSS, make sure the underlining has a color contrast ratio of at least 3:1 against it's background color.
@@ -38,6 +40,7 @@ I love cats, so I watch <a href="#" style="color: darkgreen">cat videos</a> on Y
 ### Other resources
 
 - [Underline Your Links!](https://theadminbar.com/accessibility-weekly/underline-your-links/), by Amber Hinds on the Admin Bar.
+- [Why WordPress Themes Require Underlines on Links](https://www.joedolson.com/2025/10/why-wordpress-themes-require-underlines-on-links/), by Joe Dolson.
 - [On Link Underlines](https://adrianroselli.com/2016/06/on-link-underlines.html), by Adrian Roselli.
 - [Designing Better Links UX](https://smart-interface-design-patterns.com/articles/links-ux/) on Smart Interface Design Patterns.
 - [Links and Hypertext - Underlining](https://webaim.org/techniques/hypertext/link_text#underlining), on WebAIM.
