@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="index, follow, max-snippet:-1" />
 
   
 
@@ -560,21 +560,23 @@
 
           <h1 id="styling-links">Styling links</h1>
 
+<p>Best practices for styling links are intended to ensure that links are easily distinguishable from other text on the page. This can be through the design of the link itself, or through the design and structure of the section containing the link, when the links are in a block of navigational content.</p>
+
 <p>When creating styling for links, the following is best practice for usability and accessibility:</p>
 
 <ul>
-  <li>Underlining links in <strong>paragraphs of text</strong> increases the usability of your website. On the web this is a universal convention that underlined text is a link.</li>
+  <li>Underlining links in <strong>blocks of text</strong> increases the usability of your website. On the web this is a universal convention that underlined text is a link.</li>
   <li><strong>Grouped links</strong> in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that text is a link, underlining is not required.</li>
-  <li>Use underlining of text only for links. Underlining makes people think something is clickable, if they click it and nothing happens, they’ll probably be confused and frustrated.</li>
+  <li>Use underlining of text <strong>only</strong> for links. Underlining makes people think your text is clickable; if they click it and nothing happens, they may be confused or frustrated.</li>
 </ul>
 
 <p>Joe Dolson wrote <a href="https://www.joedolson.com/2025/10/why-wordpress-themes-require-underlines-on-links/">Why WordPress Themes Require Underlines on Links</a> with the reasons why underlining is the best way to indicate links in the content.</p>
 
 <p>For styling hover and focus states of links, read <a href="/pr-preview/pr-314/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a>.</p>
 
-<p>When you custom style the underlining with CSS, make sure the underlining has a color contrast ratio of at least 3:1 against its background color.</p>
+<p>When you create your underlining styles with CSS, make sure the underline has a color contrast ratio of at least 3:1 against its background color.</p>
 
-<p class="callout dont"><strong>Don’t</strong>: remove the underlining from links and use only a different color. Color-blind visitors (about 8%) may miss the link. <br />
+<p class="callout dont"><strong>Don’t</strong>: remove the underlining from links to only use color. Color-blind visitors (about 8% of the population) may miss the link.  <br />
 I love cats, so I watch <a href="#" style="text-decoration: none; color: darkgreen">cat videos</a> on YouTube.</p>
 
 <p class="callout do"><strong>Do</strong>: underline links in the content, everyone gets that it’s a link.   <br />
@@ -598,7 +600,7 @@ I love cats, so I watch <a href="#" style="color: darkgreen">cat videos</a> on Y
   <li><a href="https://smart-interface-design-patterns.com/articles/links-ux/">Designing Better Links UX</a> on Smart Interface Design Patterns.</li>
   <li><a href="https://webaim.org/techniques/hypertext/link_text#underlining">Links and Hypertext - Underlining</a>, on WebAIM.</li>
   <li><a href="https://www.nngroup.com/articles/guidelines-for-visualizing-links/">Guidelines for Visualizing Links</a>, by the NNGroup.</li>
-  <li><a href="https://nicsteenhout.substack.com/p/link-styling-underline-your-links">Link styling: Underline your links. Test with night mode. Test in greyscale</a>, by Nic Steenhout.</li>
+  <li><a href="https://nicolas-steenhout.com/underline-your-links/">Link styling: Underline your links. Test with night mode. Test in greyscale</a>, by Nic Steenhout.</li>
 </ul>
 
 
@@ -674,7 +676,7 @@ I love cats, so I watch <a href="#" style="color: darkgreen">cat videos</a> on Y
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> April 23, 2026</li>
+        <li><span>Last updated:</span> April 24, 2026</li>
 
         
 
@@ -688,6 +690,9 @@ I love cats, so I watch <a href="#" style="color: darkgreen">cat videos</a> on Y
 
     
     <p><span>Contributors:</span>
+            
+                Joe Dolson,
+                
             
                 Rian Rietveld.
                 
