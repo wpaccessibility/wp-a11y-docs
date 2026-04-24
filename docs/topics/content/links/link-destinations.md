@@ -29,7 +29,7 @@ If you absolutely need to open a link in a new window, you need to tell your vis
 
 {: .callout .example }
 For example:     
-I love cats, so I watch [cat videos (opens in a new tab)](#) on YouTube.
+I love cats, so I watch <a href="#self-1" id="self-1">cat videos (opens in a new tab)</a> on YouTube.
 
 
 ## Link to a document
@@ -38,8 +38,8 @@ If the link opens a document, add the format of the document in the link text.
 
 {: .callout .example }
 For example:    
-You can [download the manual as PDF](#).    
-Please [download our terms (PDF, 3Mb)](#).
+You can <a href="#self-2" id="self-2">download the manual as PDF</a>.    
+Please <a href="#self-3" id="self-3">download our terms (PDF, 3Mb)</a>.
 
 ## Resources
 

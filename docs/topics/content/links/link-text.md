@@ -57,11 +57,11 @@ ASCII art is invariably meaningless to screen reader users. Emoticons are occasi
 
 {: .callout .dont }
 **Don't**: overload your link text with emoji.     
-[I 👏 approve 👏 this 👏 message 👏 ](#).
+<a href="#self-1" id="self-1">I 👏 approve 👏 this 👏 message 👏 </a>.
 
 {: .callout .do }
 **Do**: keep your link text clean, to the point and simple.  
-[I approve this message](#) 👏 .
+<a href="#self-2" id="self-2">I approve this message</a> 👏 .
 
 
 ## Avoid writing links in all caps
@@ -70,11 +70,11 @@ Sequences of all capital letters are harder to read for people with dyslexia, sc
 
 {: .callout .dont }
 **Don't**: use all caps as link text.      
-<a href="#">ACT NOW</a>.
+<a href="#self-3" id="self-3">ACT NOW</a>.
 
 {: .callout .do }
 **Do**: use sentence case or title case as link text.    
-<a href="#">Act now</a> or <a href="#">Act Now</a>.   
+<a href="#self-4" id="self-4">Act now</a> or <a href="#self-5" id="self-5">Act Now</a>.   
 
 ## Avoid using complete URLs as link text
 
@@ -97,12 +97,12 @@ In addition, screen readers announce the title attribute inconsistently. You mus
 {: .callout .dont }
 **Don't**: use a title attribute on links.   
 `<a href="some-url" title="download the PDF">manual</a>`    
-<a href="#" title="download the PDF">manual</a>
+<a href="#self-6" id="self-6" title="download the PDF">manual</a>
 
 {: .callout .do }
 **Do**: add all info in the link text, so everyone has the same information and it is always visible.  
 `<a href="some-url">download the manual as PDF</a>`    
-<a href="#">download the manual as PDF</a>
+<a href="#self-7" id="self-7">download the manual as PDF</a>
 
 ## Resources
 
