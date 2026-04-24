@@ -29,7 +29,7 @@ Use additional styling to indicate types of information including a change of sh
 
 Use symbols and colors in graphics.
 
-Graphic with differently shaped symbols in black in white.:
+Graphic with differently shaped symbols in black in white:
 ![graphic in color with differently shaped symbols]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.27.20-768x588.png)
 ![Graphic with differently shaped symbols in black in white]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.33.58-Kopie-768x629.png)
 
