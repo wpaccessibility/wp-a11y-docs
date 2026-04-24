@@ -1,5 +1,5 @@
 ---
-title: Link texts
+title: Meaningful link text
 layout: default
 parent: Links
 description: A link text should describe the resource that it links to.
