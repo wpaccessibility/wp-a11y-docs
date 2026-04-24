@@ -14,7 +14,7 @@
 
 
 
-<title>WordPress Accessibility Team, WP Accessibility Knowledge Base</title>
+<title>Styling links, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -534,14 +534,24 @@
 
         
             
+            
+            
+        
+
+    
+
+        
+
+        
+            
 
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/docs/wp-a11y/'>WordPress and Accessibility</a></li>
-            <li class="breadcrumb-nav-list-item" aria-current="page">WordPress Accessibility Team</li>
+                <li class='breadcrumb-nav-list-item'><a href='/docs/topics/'>Standards and best practice</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/docs/topics/design/'>Design & user experience</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Styling links</li>
     </ol>
 </nav>
 
@@ -550,15 +560,51 @@
 
         <main>
 
-          <h1 id="the-wordpress-accessibility-team">The WordPress Accessibility Team</h1>
+          <h1 id="styling-links">Styling links</h1>
 
-<p>WordPress is always changing and improving, it’s never truly finished. The same goes for making WordPress accessible to everyone. As the design, user experience, and code change, they need to be checked for accessibility.</p>
+<p>Best practices for styling links are intended to ensure that links are easily distinguishable from other text on the page. This can be through the design of the link itself, or through the design and structure of the section containing the link, when the links are in a block of navigational content.</p>
 
-<p>The community also needs ongoing help and education to keep up with accessibility best practices. The Accessibility Team helps to improve the accessibility of WordPress core and resources.</p>
+<p>When creating styling for links, the following is best practice for usability and accessibility:</p>
 
-<p>Visit <a href="https://make.wordpress.org/accessibility/">Make WordPress Accessibility</a> to read the blog about the current work of the team.</p>
+<ul>
+  <li>Underlining links in <strong>blocks of text</strong> increases the usability of your website. On the web this is a universal convention that underlined text is a link.</li>
+  <li><strong>Grouped links</strong> in sidebars, footers, or in navigation menus frequently don’t need to be underlined. If it is obvious in context that text is a link, underlining is not required.</li>
+  <li>Use underlining of text <strong>only</strong> for links. Underlining makes people think your text is clickable; if they click it and nothing happens, they may be confused or frustrated.</li>
+</ul>
 
-<p>In the <a href="https://make.wordpress.org/accessibility/handbook/">WordPress Accessibility Handbook</a> you can find more about the team itself and how to help or join in.</p>
+<p>Joe Dolson wrote <a href="https://www.joedolson.com/2025/10/why-wordpress-themes-require-underlines-on-links/">Why WordPress Themes Require Underlines on Links</a> with the reasons why underlining is the best way to indicate links in the content.</p>
+
+<p>For styling hover and focus states of links, read <a href="/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a>.</p>
+
+<p>When you create your underlining styles with CSS, make sure the underline has a color contrast ratio of at least 3:1 against its background color.</p>
+
+<p class="callout dont"><strong>Don’t</strong>: remove the underlining from links to only use color. Color-blind visitors (about 8% of the population) may miss the link.  <br />
+I love cats, so I watch <a href="#" style="text-decoration: none; color: darkgreen">cat videos</a> on YouTube.</p>
+
+<p class="callout do"><strong>Do</strong>: underline links in the content, everyone gets that it’s a link.   <br />
+I love cats, so I watch <a href="#" style="color: darkgreen">cat videos</a> on YouTube.</p>
+
+<h2 id="resources">Resources</h2>
+
+<h3 id="related-wcag-success-criteria-for-styling-links">Related WCAG Success Criteria for styling links</h3>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#use-of-color">1.4.1 Use of Color</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">1.4.11 Non-text Contrast</a> (level AA).</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://theadminbar.com/accessibility-weekly/underline-your-links/">Underline Your Links!</a>, by Amber Hinds on the Admin Bar.</li>
+  <li><a href="https://www.joedolson.com/2025/10/why-wordpress-themes-require-underlines-on-links/">Why WordPress Themes Require Underlines on Links</a>, by Joe Dolson.</li>
+  <li><a href="https://adrianroselli.com/2016/06/on-link-underlines.html">On Link Underlines</a>, by Adrian Roselli.</li>
+  <li><a href="https://smart-interface-design-patterns.com/articles/links-ux/">Designing Better Links UX</a> on Smart Interface Design Patterns.</li>
+  <li><a href="https://webaim.org/techniques/hypertext/link_text#underlining">Links and Hypertext - Underlining</a>, on WebAIM.</li>
+  <li><a href="https://www.nngroup.com/articles/guidelines-for-visualizing-links/">Guidelines for Visualizing Links</a>, by the NNGroup.</li>
+  <li><a href="https://nicolas-steenhout.com/underline-your-links/">Link styling: Underline your links. Test with night mode. Test in greyscale</a>, by Nic Steenhout.</li>
+</ul>
+
 
 
           
@@ -573,13 +619,21 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: WordPress and Accessibility</h2>
+        <h2>Other pages in: Design & user experience</h2>
         <ul>
             
             
             <li>
                 <p>
-                    <a href="/docs/wp-a11y/wcag/"> WCAG and WordPress</a> All new and updated code released in WordPress must conform with WCAG version 2.2 at level AA.
+                    <a href="/docs/topics/design/fonts/"> Fonts</a> Everything there is to know about using fonts.
+                </p>
+            </li>
+            
+            
+            
+            <li>
+                <p>
+                    <a href="/docs/topics/design/focus-hover/"> Styling hover and focus</a> How to style focus and hover states of interactive HTML elements.
                 </p>
             </li>
             
@@ -589,7 +643,7 @@
             
             <li>
                 <p>
-                    <a href="/docs/wp-a11y/wp-a11y-plugins/"> WP accessibility plugins</a> Learn which plugins can help with improving the accessibility of a WordPress website.
+                    <a href="/docs/topics/design/color/"> Color</a> Using color is important, but avoid using it as the only visual means of conveying information.
                 </p>
             </li>
             
@@ -597,15 +651,7 @@
             
             <li>
                 <p>
-                    <a href="/docs/wp-a11y/wp-themes/"> Accessible WP themes</a> Learn to create an accessible theme or how to find one that is accessibility-ready.
-                </p>
-            </li>
-            
-            
-            
-            <li>
-                <p>
-                    <a href="/docs/wp-a11y/wp-plugins/"> Accessible WP plugins</a> Free WordPress plugins in the repository are not checked for accessibility at the moment.
+                    <a href="/docs/topics/design/avoid/"> Patterns to avoid</a> Learn which design patterns you should avoid for accessibility.
                 </p>
             </li>
             
@@ -614,7 +660,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/docs/wp-a11y/">Back to: WordPress and Accessibility</a>
+                <span aria-hidden="true">&larr;</span> <a href="/docs/topics/design/">Back to: Design & user experience</a>
             </p>
 
         
@@ -637,13 +683,23 @@
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/wp-a11y/wp-a11y-team/index.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/links/index.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
 
         
 
     </ul>
 
+    
+    <p><span>Contributors:</span>
+            
+                Joe Dolson,
+                
+            
+                Rian Rietveld.
+                
+            
+    </p>
     
     <p>Read <a href="/docs/about/contribute/">how to contribute to this documentation</a>.</p>
 

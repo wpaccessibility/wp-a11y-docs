@@ -230,6 +230,8 @@
 
           <a href="/docs/topics/design/focus-hover/" class="nav-list-link">Styling hover and focus</a></li><li class="nav-list-item">
 
+          <a href="/docs/topics/design/links/" class="nav-list-link">Styling links</a></li><li class="nav-list-item">
+
           <a href="/docs/topics/design/color/" class="nav-list-link">Color</a><button class="nav-list-expander btn-reset" aria-label="Color submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
@@ -570,8 +572,9 @@
 
           <h1 id="images-as-links">Images as links</h1>
 
-<p>For linked images, the <code class="language-plaintext highlighter-rouge">alt</code> attribute (the alternative text) can be used as the link text.
-If the alt attribute describes the image: the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.</p>
+<p>For linked images, the <code class="language-plaintext highlighter-rouge">alt</code> attribute (the alternative text) is used as the link text. Screen readers will announce the alt text when the link gets focus.</p>
+
+<p>If the alt attribute describes the image, the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.</p>
 
 <p>The post <a href="https://www.a11y-collective.com/blog/the-perfect-link/h-embedding-an-image-in-a-link">Creating the perfect link</a> by The A11Y Collective gives an example of this.</p>
 
@@ -582,7 +585,22 @@ If the alt attribute describes the image: the link text will be the description 
 
 <p>So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”.</p>
 
-<p>It is not necessary to ever use the word ‘link’ or ‘this link goes to’ in your alt text; that will already be sufficient announced by the screen reader.</p>
+<p>It is not helpful to use the word ‘link’ or ‘this link goes to’ in your alt text; that will already be announced by the screen reader.</p>
+
+<p class="callout dont"><strong>Don’t</strong>: omit alt text for an image that is used as link.</p>
+
+<p><a href=""><img src="/assets/images/logo-wa11ypuu.png" alt="" /></a></p>
+
+<p>The screen reader VoiceOver announces this as: “<strong>Link, link image</strong>”. So there is no information about where the link leads.</p>
+
+<p class="callout do"><strong>Do</strong>: use the alt text as link text.</p>
+
+<p>With alt text:    <br />
+<a href=""><img src="/assets/images/logo-wa11ypuu.png" alt="WP Accessibility Knowledge Base" /></a></p>
+
+<p>The screen reader VoiceOver announces this as: “<strong>Link, image, WP Accessibility Knowledge Base</strong>”. The user now knows it’s a link with an image, and the link leads to the WP Accessibility Knowledge Base.</p>
+
+<p>Read <a href="/docs/topics/content/alt-text/">Alternative text for images in the content</a> about how to add a custom alt text on an image in WordPress.</p>
 
 <h2 id="resources">Resources</h2>
 
@@ -592,7 +610,14 @@ If the alt attribute describes the image: the link text will be the description 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-content">1.1.1 Non-text Content</a> (level A).</li>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context">2.4.4 Link Purpose (In Context)</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-link-only">2.4.9 Link Purpose (Link Only)</a> (level <strong>AAA</strong>).</li>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#label-in-name">2.5.3 Label in Name</a> (level A).</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://www.a11y-collective.com/blog/the-perfect-link/">Creating the perfect link</a>, by The A11Y Collective.</li>
 </ul>
 
 
@@ -663,6 +688,16 @@ If the alt attribute describes the image: the link text will be the description 
 
     </ul>
 
+    
+    <p><span>Contributors:</span>
+            
+                Joe Dolson,
+                
+            
+                Rian Rietveld.
+                
+            
+    </p>
     
     <p>Read <a href="/docs/about/contribute/">how to contribute to this documentation</a>.</p>
 
