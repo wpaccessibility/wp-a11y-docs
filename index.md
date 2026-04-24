@@ -25,11 +25,17 @@ Find the documentation for your work role, work field and expertise.
 ## New and updated content
 
 Added in April 2026:
+
 - Getting started:
   - [Introduction to WCAG]({{site.baseurl}}/docs/start/wcag-intro/).
 - Content and images: 
   - [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/).
-  - [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/).
+  - [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/). 
+  - [Write meaningful link text]({{site.baseurl}}/docs/topics/content/links/link-text/).
+  - [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/).
+  - [Link destinations]({{site.baseurl}}/docs/topics/content/links/link-destinations/).
+- Design and user experience:
+  - [Styling links]({{site.baseurl}}/docs/topics/design/links/).
 - Frontend code: 
   - [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/).
   - [Image animation and accessibility]({{site.baseurl}}docs/topics/code/images/image-animation/).
