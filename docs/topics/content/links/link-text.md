@@ -23,11 +23,11 @@ It also makes your text easier to scan visually, so that sighted users can more 
 <figcaption>Descriptive, meaningful link text in the Apple VoiceOver link list.</figcaption>
 </figure>
 
-Saar Twito explains the concept of a good link text comprehensive in [Descriptive Link Text: The Art of Clear Digital Signposting](https://www.greadme.com/blog/accessibility/how-to-write-descriptive-link-text-complete-guide).
+Saar Twito comprehensively explains the concept of good link text in [Descriptive Link Text: The Art of Clear Digital Signposting](https://www.greadme.com/blog/accessibility/how-to-write-descriptive-link-text-complete-guide).
 
 ## Make links texts descriptive
 
-Avoid meaningless link text like: click here, download, info, more, here, this.
+Avoid meaningless link text like: "click here", "download", "info", "more", "here", "this" or other similarly empty phrases.
 
 With these types of links, users have to read the whole sentence to understand the purpose of the link. This makes your content less browsable, and harder to engage with. Screen reader users cannot navigate by links, because those links are not useful without additional context.
 
@@ -37,11 +37,11 @@ With these types of links, users have to read the whole sentence to understand t
 </figure>
 
 {: .callout .dont }
-**Don't**: write poor quality (non-descriptive) link texts:        
+**Don't**: write poor quality (non-descriptive) link text:        
 If you are interested in our work, [click here](#dummy-link) to subscribe to our newsletter. You can [download](#dummy-link) the manual of the espresso machine, or contact us for more [info](#dummy-link).
 
 {: .callout .do }
-**Do**: write helpful (descriptive) link texts:  
+**Do**: write helpful (descriptive) link text:  
 [Subscribe to our newsletter](#dummy-link) if you are interested in our work. You can download the [manual as a PDF]((#dummy-link) ) of the espresso machine, or [contact us](#dummy-link) for more info.
 
 ## Avoid fancy character combinations in your links
@@ -53,7 +53,7 @@ Avoid for example in your link texts:
 - Leetspeak, example: m8ts
 - Excessive use of Emoji
 
-ASCII art is invariably meaningless to screen reader users. Emoticons may occasionally be interpretable, but are confusing and difficult to understand. “Leetspeak” is unpronounceable, and creates difficult in comprehension. Emoji are independently accessible; they do have text alternatives. However, a large number of emoji can make the text effectively impossible to comprehend.
+ASCII art is invariably meaningless to screen reader users. Emoticons are occasionally interpretable, but are confusing and difficult to understand. “Leetspeak” is unpronounceable, and creates difficulties for comprehension. Emoji are independently accessible; they do have text alternatives. However, a large number of emoji can make the text effectively impossible to comprehend.
 
 {: .callout .dont }
 **Don't**: overload your link text with emoji.     
@@ -85,14 +85,14 @@ Some URLs are highly readable, such as “wordpress.org”. Others are almost im
 We keep track of all the issues in: [https://github.com/wpaccessibility/wp-a11y-docs/issues/85](https://github.com/wpaccessibility/wp-a11y-docs/issues/85).
 
 {: .callout .do }
-**Do**: write a meaningful and readable link text:    
+**Do**: write meaningful and readable link text:    
 We keep track of all the issues in: [Content pages: create or review or rewrite](https://github.com/wpaccessibility/wp-a11y-docs/issues/85).
 
 ## Avoid the title attribute on links
 
 You should not use the title attribute on links, because the title attribute is only available for sighted users on desktop using a mouse. Other users will miss that information. 
 
-In addition, screen readers announce the title attribute inconsistently. You must be sure that all users get the information they need and the title attribute doesn’t provide that.
+In addition, screen readers announce the title attribute inconsistently. You must be sure that all users get the information they need and the title attribute doesn’t provide that certainty.
 
 {: .callout .dont }
 **Don't**: use a title attribute on links.   
@@ -100,7 +100,7 @@ In addition, screen readers announce the title attribute inconsistently. You mus
 <a href="#" title="download the PDF">manual</a>
 
 {: .callout .do }
-**Do**: add all into in the link text, so everyone had the dame information and the information is always visible.  
+**Do**: add all info in the link text, so everyone has the same information and it is always visible.  
 `<a href="some-url">download the manual as PDF</a>`    
 <a href="#">download the manual as PDF</a>
 

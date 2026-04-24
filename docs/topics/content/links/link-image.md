@@ -11,9 +11,9 @@ contributors:
 
 # Images as links
 
-For linked images, the `alt` attribute (the alternative text) can be used as the link text. Screen readers will announce the alt text when the link gets focus.
+For linked images, the `alt` attribute (the alternative text) is used as the link text. Screen readers will announce the alt text when the link gets focus.
 
-But: if the alt attribute describes the image, the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.
+If the alt attribute describes the image, the link text will be the description of the image, which is unlikely to clearly communicate the link purpose.
 
 The post [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/h-embedding-an-image-in-a-link) by The A11Y Collective gives an example of this.
 
@@ -22,14 +22,14 @@ The post [Creating the perfect link](https://www.a11y-collective.com/blog/the-pe
 
 So the proper way to use an image as a link is to describe the link destination in the alt text. If the image links to a post about the Accessibility Team’s handbook, add the alternative text “Accessibility Team Handbook”.
 
-It is not necessary to ever use the word ‘link’ or 'this link goes to' in your alt text; that will already be sufficient announced by the screen reader.
+It is not helpful to use the word ‘link’ or 'this link goes to' in your alt text; that will already be announced by the screen reader.
 
 {: .callout .dont }
-**Don't**: leave the alt text out for an image that is used as link.    
+**Don't**: omit alt text for an image that is used as link.    
 
 <a href="{{site.baseurl}}"><img src="{{site.baseurl}}/assets/images/logo-wa11ypuu.png" alt=""></a>
 
-The screen reader VoiceOver announces this as: "**Link, link image**". So there is no info at all about where the link leads to.
+The screen reader VoiceOver announces this as: "**Link, link image**". So there is no information about where the link leads.
 
 {: .callout .do }
 **Do**: use the alt text as link text.

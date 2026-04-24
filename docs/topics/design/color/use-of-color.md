@@ -16,7 +16,7 @@ Using color to differentiate between elements on a page is fine. However, you sh
 
 For example,
 
-- Error, success, or note messages, more info in [Write out an error message in text]({site.baseurl}}/docs/topics/forms/feedback/error-message-format/).
+- Error, success, or notification messages, more info in [Write out an error message in text]({site.baseurl}}/docs/topics/forms/feedback/error-message-format/).
 - Links in the content, more info in [Styling links]({site.baseurl}}/docs/topics/design/links/).
 - Active, hover or focus states, more info in [Styling focus and hover states of interactive HTML elements]({site.baseurl}}/docs/topics/design/focus-hover/).
 - Display information updates.
@@ -39,7 +39,7 @@ Color used as the only indicator for information or functionality:
 ![Graphic: only color used (no symbols)]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.34.46-768x646.png)
 ![Graphic: only color used (in black and white)]({{site.baseurl}}/assets/images/Bildschirmfoto-2017-08-16-um-10.34.46-Kopie-768x646.png)
 
-The easiest way to check whether your website is usable for color-blind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable.
+The easiest way to check whether your website may be usable by color-blind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable.
 
 ## Resources
 
