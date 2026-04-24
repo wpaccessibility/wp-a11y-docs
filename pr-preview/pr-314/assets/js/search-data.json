@@ -4251,7 +4251,7 @@
     "doc": "Use of color",
     "title": "Examples",
     "description": "Learn best practices for how to use color while also considering accessibility.",
-    "content": "Correct . Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white.: . Incorrect . Color used as the only indicator for information or functionality: . The easiest way to check whether your website may be usable by color-blind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
+    "content": "Correct . Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white: . Incorrect . Color used as the only indicator for information or functionality: . The easiest way to check whether your website may be usable by color-blind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
     "url": "/pr-preview/pr-314/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
   },"608": {
