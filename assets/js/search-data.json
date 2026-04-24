@@ -2914,7 +2914,7 @@
     "doc": "Home",
     "title": "New and updated content",
     "description": "Accessibility Knowledge Base for WordPress users and creators.",
-    "content": "Added in April 2026: . | Getting started: . | Introduction to WCAG. | . | Content and images: . | Alternative text for images in the content. | Using headings in the content. | . | Frontend code: . | Alternative text for images, SVGs and icons in development. | Image animation and accessibility. | Heading structure in theme development. | . | . ",
+    "content": "Added in April 2026: . | Getting started: . | Introduction to WCAG. | . | Content and images: . | Alternative text for images in the content. | Using headings in the content. | Write meaningful link text. | Images as links. | Link destinations. | . | Design and user experience: . | Styling links. | . | Frontend code: . | Alternative text for images, SVGs and icons in development. | Image animation and accessibility. | Heading structure in theme development. | . | . ",
     "url": "/#new-and-updated-content",
     "relUrl": "/#new-and-updated-content"
   },"417": {
@@ -3191,57 +3191,57 @@
     "url": "/docs/topics/content/links/link-image/#resources",
     "relUrl": "/docs/topics/content/links/link-image/#resources"
   },"456": {
-    "doc": "Link texts",
+    "doc": "Meaningful link text",
     "title": "Write meaningful link text",
     "description": "A link text should describe the resource that it links to.",
     "content": "Rule of thumb: a link text should describe the resource that it links to, so that when the text is read out of context the user will still know what to expect. A link is a promise, not a surprise. Link text should stand on its own. Some assistive software scans a page for links and presents them to the user as a simple list. In these situations, all the links will be read out of context. So it is important the text used in a link is descriptive and meaningful. It also makes your text easier to scan visually, so that sighted users can more quickly find the information they’re looking for. Descriptive, meaningful link text in the Apple VoiceOver link list. Saar Twito comprehensively explains the concept of good link text in Descriptive Link Text: The Art of Clear Digital Signposting. ",
     "url": "/docs/topics/content/links/link-text/#write-meaningful-link-text",
     "relUrl": "/docs/topics/content/links/link-text/#write-meaningful-link-text"
   },"457": {
-    "doc": "Link texts",
+    "doc": "Meaningful link text",
     "title": "Make links texts descriptive",
     "description": "A link text should describe the resource that it links to.",
     "content": "Avoid meaningless link text like: “click here”, “download”, “info”, “more”, “here”, “this” or other similarly empty phrases. With these types of links, users have to read the whole sentence to understand the purpose of the link. This makes your content less browsable, and harder to engage with. Screen reader users cannot navigate by links, because those links are not useful without additional context. Useless, non-descriptive link text in the Apple VoiceOver link list. Don’t: write poor quality (non-descriptive) link text: If you are interested in our work, click here to subscribe to our newsletter. You can download the manual of the espresso machine, or contact us for more info. Do: write helpful (descriptive) link text: Subscribe to our newsletter if you are interested in our work. You can download the manual as a PDF of the espresso machine, or contact us for more info. ",
     "url": "/docs/topics/content/links/link-text/#make-links-texts-descriptive",
     "relUrl": "/docs/topics/content/links/link-text/#make-links-texts-descriptive"
   },"458": {
-    "doc": "Link texts",
+    "doc": "Meaningful link text",
     "title": "Avoid fancy character combinations in your links",
     "description": "A link text should describe the resource that it links to.",
     "content": "Avoid for example in your link texts: . | ASCII art, example: \\ō͡≡o˞̶ | Emoticons, example: &lt;3 | Leetspeak, example: m8ts | Excessive use of Emoji | . ASCII art is invariably meaningless to screen reader users. Emoticons are occasionally interpretable, but are confusing and difficult to understand. “Leetspeak” is unpronounceable, and creates difficulties for comprehension. Emoji are independently accessible; they do have text alternatives. However, a large number of emoji can make the text effectively impossible to comprehend. Don’t: overload your link text with emoji. I 👏 approve 👏 this 👏 message 👏 . Do: keep your link text clean, to the point and simple. I approve this message 👏 . ",
     "url": "/docs/topics/content/links/link-text/#avoid-fancy-character-combinations-in-your-links",
     "relUrl": "/docs/topics/content/links/link-text/#avoid-fancy-character-combinations-in-your-links"
   },"459": {
-    "doc": "Link texts",
+    "doc": "Meaningful link text",
     "title": "Avoid writing links in all caps",
     "description": "A link text should describe the resource that it links to.",
     "content": "Sequences of all capital letters are harder to read for people with dyslexia, screen readers may interpret short capitalized words as abbreviations, and read the words out character by character. This is also true if text is capitalized using CSS. Don’t: use all caps as link text. ACT NOW. Do: use sentence case or title case as link text. Act now or Act Now. ",
     "url": "/docs/topics/content/links/link-text/#avoid-writing-links-in-all-caps",
     "relUrl": "/docs/topics/content/links/link-text/#avoid-writing-links-in-all-caps"
   },"460": {
-    "doc": "Link texts",
+    "doc": "Meaningful link text",
     "title": "Avoid using complete URLs as link text",
     "description": "A link text should describe the resource that it links to.",
     "content": "Some URLs are highly readable, such as “wordpress.org”. Others are almost impossible to parse as language. In most cases, you should avoid using a URL as the visible link text. If you are explicitly referring to a web address, keep it short: wordpress.org instead of https://www.wordpress.org. Don’t: use a url as link text: We keep track of all the issues in: https://github.com/wpaccessibility/wp-a11y-docs/issues/85. Do: write meaningful and readable link text: We keep track of all the issues in: Content pages: create or review or rewrite. ",
     "url": "/docs/topics/content/links/link-text/#avoid-using-complete-urls-as-link-text",
     "relUrl": "/docs/topics/content/links/link-text/#avoid-using-complete-urls-as-link-text"
   },"461": {
-    "doc": "Link texts",
+    "doc": "Meaningful link text",
     "title": "Avoid the title attribute on links",
     "description": "A link text should describe the resource that it links to.",
     "content": "You should not use the title attribute on links, because the title attribute is only available for sighted users on desktop using a mouse. Other users will miss that information. In addition, screen readers announce the title attribute inconsistently. You must be sure that all users get the information they need and the title attribute doesn’t provide that certainty. Don’t: use a title attribute on links. &lt;a href=\"some-url\" title=\"download the PDF\"&gt;manual&lt;/a&gt; manual . Do: add all info in the link text, so everyone has the same information and it is always visible. &lt;a href=\"some-url\"&gt;download the manual as PDF&lt;/a&gt; download the manual as PDF . ",
     "url": "/docs/topics/content/links/link-text/#avoid-the-title-attribute-on-links",
     "relUrl": "/docs/topics/content/links/link-text/#avoid-the-title-attribute-on-links"
   },"462": {
-    "doc": "Link texts",
+    "doc": "Meaningful link text",
     "title": "Resources",
     "description": "A link text should describe the resource that it links to.",
     "content": "Related WCAG Success Criteria for links . By giving a meaningful link text, you meet WCAG success criteria . | 2.4.4 Link Purpose (In Context) (level A). | 2.4.9 Link Purpose (Link Only) (level AAA). | 2.5.3 Label in Name (level A). | . Other resources . | Descriptive Link Text: The Art of Clear Digital Signposting by Saar Twito. | Designing Better Links UX on Smart Interface Design Patterns. | Writing for Web Accessibility , by the W3C. | Links and Hypertext, by WebAIM | Creating the perfect link, by The A11Y Collective. | . ",
     "url": "/docs/topics/content/links/link-text/#resources",
     "relUrl": "/docs/topics/content/links/link-text/#resources"
   },"463": {
-    "doc": "Link texts",
-    "title": "Link texts",
+    "doc": "Meaningful link text",
+    "title": "Meaningful link text",
     "description": "A link text should describe the resource that it links to.",
     "content": " ",
     "url": "/docs/topics/content/links/link-text/",
