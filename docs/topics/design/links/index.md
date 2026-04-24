@@ -27,11 +27,11 @@ When you create your underlining styles with CSS, make sure the underline has a 
 
 {: .callout .dont }
 **Don't**: remove the underlining from links to only use color. Color-blind visitors (about 8% of the population) may miss the link.    
-I love cats, so I watch <a href="#" style="text-decoration: none; color: darkgreen">cat videos</a> on YouTube.
+I love cats, so I watch <a href="#self-1" id="self-1" style="text-decoration: none; color: darkgreen">cat videos</a> on YouTube.
 
 {: .callout .do }
 **Do**: underline links in the content, everyone gets that it's a link.     
-I love cats, so I watch <a href="#" style="color: darkgreen">cat videos</a> on YouTube.
+I love cats, so I watch <a href="#self-2" id="self-2" style="color: darkgreen">cat videos</a> on YouTube.
 
 ## Resources
 

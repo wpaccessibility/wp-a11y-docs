@@ -130,7 +130,7 @@ Give users clear confirmation that their form has been submitted and what will h
 
 {: .callout  .example }
 A confirmation text could be:  
-Thank you for your registration for our workshop "Knitting socks". A confirmation email has been sent to user@example.com with the time and location of the workshop. If you haven't received an email? [Please contact us](#).
+Thank you for your registration for our workshop "Knitting socks". A confirmation email has been sent to user@example.com with the time and location of the workshop. If you haven't received an email? <a href="#self-1" id="self-1">Please contact us</a>.
 
 ### How can I offer help if a user gets stuck?
 
@@ -142,7 +142,7 @@ Always offer multiple ways to get in touch on your contact page — not everyone
 
 {: .callout  .example }
 A help text could be:  
-Do you need help filling out this form or do you have questions? [Please contact us](#).
+Do you need help filling out this form or do you have questions? <a href="#self-2" id="self-2">Please contact us</a>.
 
 ## Conclusion
 
