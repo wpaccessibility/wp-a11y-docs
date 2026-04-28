@@ -1,7 +1,7 @@
 ---
 title: Labelled form fields
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 description: Accessibility-ready theme requirements for how to label form fields
 nav_order: 5
 ---

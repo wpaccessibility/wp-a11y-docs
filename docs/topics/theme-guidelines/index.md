@@ -1,12 +1,12 @@
 ---
-title: Theme accessibility guidelines
+title: WP accessibility-ready guidelines
 layout: default
 parent: Standards and best practice
 description: Learn about the guidelines for the accessibility-ready tag on WordPress.org.
 nav_order: 6
 ---
 
-# Theme accessibility guidelines
+# Guidelines for the WordPress accessibility-ready tag
 
 Theme developers may request an optional accessibility review as part of the theme review process or later for an existing theme.  Submitted themes (or theme updates) that pass a manual review are approved to use the `accessibility-ready` tag and show up in the theme directory as accessibility-ready.
 

@@ -1,7 +1,7 @@
 ---
 title: No ambiguous link text
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 description: Accessibility-ready theme requirements for ambiguous link text
 nav_order: 8
 ---

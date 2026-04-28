@@ -1,7 +1,7 @@
 ---
 title: Accessible audio, video, and animations
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 description: Support for audio, video, and animations in accessibility-ready themes
 nav_order: 11
 ---
