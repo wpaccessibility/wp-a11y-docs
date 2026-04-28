@@ -1,7 +1,7 @@
 ---
 title: No links opening new windows or tabs without warning
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 description: Requirements for opening new windows or tabs in accessibility-ready themes
 nav_order: 14
 ---

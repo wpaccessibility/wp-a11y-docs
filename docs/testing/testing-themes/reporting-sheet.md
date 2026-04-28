@@ -1,8 +1,8 @@
 ---
 title: Reporting sheet overview
 layout: default
-parent: Testing WordPress themes
-description: How to set up a test site and reporting document for accessibility-ready reviews
+parent: Accessibility-ready testing process
+description: How to set up a test site and reporting document for accessibility-ready reviews.
 nav_order: 3
 ---
 

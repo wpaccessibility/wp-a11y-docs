@@ -1,7 +1,7 @@
 ---
 title: Controls with accessible names, roles, and states
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 description: Accessibility-ready theme requirements for accessible controls
 nav_order: 4
 ---

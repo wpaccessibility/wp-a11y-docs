@@ -1,11 +1,13 @@
 ---
-title: Testing WordPress themes
+title: Accessibility-ready testing process
 layout: default
 parent: Test for accessibility
-description: How to set up an accessibility test for the accessibility-ready tag on WordPress.org
+description: How to set up an accessibility test for the accessibility-ready tag on WordPress.org.
 nav_order: 9
 ---
 
-# Testing WordPress themes for accessibility
+# Set up testing for the WordPress themes accessibility-ready tag
 
-This section outlines the steps for conducting a theme accessibility ready requirements review. Detailed testing instructions for each requirement can be found in the [theme accessibility guidelines doc.]({{site.baseurl}}/docs/topics/theme-guidelines/)
+How to set up an accessibility test for the accessibility-ready tag on WordPress.org. This section outlines the steps for conducting a theme accessibility ready requirements review. 
+
+Detailed testing instructions for each requirement can be found in the [theme accessibility guidelines doc.]({{site.baseurl}}/docs/topics/theme-guidelines/)

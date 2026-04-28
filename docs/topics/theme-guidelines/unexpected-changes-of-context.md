@@ -1,7 +1,7 @@
 ---
 title: No unexpected changes of context
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 description: Requirements for changes of context in accessibility-ready themes
 nav_order: 13
 ---

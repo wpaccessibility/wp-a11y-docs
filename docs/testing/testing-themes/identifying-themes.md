@@ -1,8 +1,8 @@
 ---
 title: Identifying themes that need to be tested
 layout: default
-parent: Testing WordPress themes
-description: How to find themes that have requested an accessibility-ready tag review
+parent: Accessibility-ready testing process
+description: How to find themes that have requested an accessibility-ready tag review.
 nav_order: 1
 ---
 

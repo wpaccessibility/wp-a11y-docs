@@ -1,7 +1,7 @@
 ---
 title: Must not recommend or require inaccessible plugins
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 nav_order: 17
 description: Accessibility-ready themes must not recommend or require inaccessible plugins.
 ---

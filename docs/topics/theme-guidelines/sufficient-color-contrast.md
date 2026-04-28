@@ -1,7 +1,7 @@
 ---
 title: Sufficient color contrast of text and UI controls
 layout: default
-parent: Theme accessibility guidelines
+parent: WP accessibility-ready guidelines
 description: Color contrast requirements in accessibility-ready themes
 nav_order: 9
 ---
