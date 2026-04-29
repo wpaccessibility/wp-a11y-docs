@@ -16,14 +16,17 @@ The WordPress project follows the [accessibility level “AA”  of WCAG](http:/
 
 This requires that the contrast between background and foreground colors has a luminosity contrast ratio of:
 
-- 4.5:1 for normal text
-- 3:1 for [large text (24px equivalent or 19px equivalent and bold)](http://mcdpartners.com/lab/meeting-wcag-color-contrast-guideline/)
+- 4.5:1 for normal text.
+- 3:1 for large text (24px equivalent or 19px equivalent and bold).
+
+{: .callout  .tip }
+**Tip:** Logos and logotype are exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
 
 There are many tools to check color contrast ratios. WebAxe published an overview of contrast checkers. You can test color contrast with these color checkers:
 
-- [Overview of all sorts of contrast checkers](http://www.webaxe.org/color-contrast-tools/)
-- [WebAIM Contrast Checker](http://webaim.org/resources/contrastchecker/)
-- [Background Image & Text Contrast Checker](http://www.brandwood.com/a11y/)
+- [contrastchecker.com](http://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast
+- [Colour Contrast Analyser (CCA)](http://www.paciellogroup.com/resources/contrastAnalyser), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
+- [Background Image & Text Contrast Checker](http://www.brandwood.com/a11y/), by Andrew Brandwood.
 
 ## Resources
 
@@ -39,3 +42,6 @@ There are many tools to check color contrast ratios. WebAxe published an overvie
 - [Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
 - [WCAG Color Contrast Guideline](http://mcdpartners.com/lab/meeting-wcag-color-contrast-guideline/)
 - [Color Contrast and why you should rethink it](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
+- [Sim Daltonism](http://michelf.ca/projects/sim-daltonism/) — a color-blindness simulator for Mac OS X.
+- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter) — apply a color-blindness emulating filter to a web page.
+- [Accessible color palette generator](https://venngage.com/tools/accessible-color-palette-generator) - Tool to generate accessible color palettes.
