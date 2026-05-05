@@ -68,9 +68,20 @@ In this example, the skip link has been placed inside the navigation region, and
 </body>
 ```
 
-## Additional resources for skip links
+## Resources
 
-- [Skip navigation links in webaim](https://webaim.org/techniques/skipnav/).  
-  In this article there is also information about having multiple skip links and the most common wording for skip to content.
-- [How–to: Use Skip Navigation links](https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/).
-- [Skip link guidelines]({{site.baseurl}}/docs/topics/theme-guidelines/skip-to-content/).
+### WCAG Success Criteria for skip links
+
+Adding a skip link is necessary to meet the WCAG success criterion [2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks), (Level A).
+
+### Related pages in this documentation
+
+- Guidelines for the WordPress accessibility-ready tag: [Skip link guidelines]({{site.baseurl}}/docs/topics/theme-guidelines/skip-to-content/).
+- Standards and best practice - Frontend code - Visible focus: [Visibility of the keyboard focus]({{site.baseurl}}/docs/topics/code/focus-handling/visual-focus/).
+- Standards and best practice - Frontend code - Handling focus: [Tabindex and tab order]({{site.baseurl}}/docs/topics/code/focus-handling/tabindex/).
+
+## Other resources
+
+- [Skip navigation links](https://webaim.org/techniques/skipnav/), by WebAIM. In this article there is also information about having multiple skip links and the most common wording for skip to content.
+- [How–to: Use Skip Navigation links](https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/) by Cameron Cundiff in The A11y project.
+
