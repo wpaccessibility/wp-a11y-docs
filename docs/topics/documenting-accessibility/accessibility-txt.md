@@ -16,7 +16,7 @@ An `accessibility.txt` file is a file that can be included in plugins and themes
 When completed thoroughly, this file helps website owners make informed decisions when choosing plugins and themes. The file is most helpful when it clearly describes accessibility audit status, testing methodology, and included accessibility features. It also provides information on reporting accessibility issues, making it easier to ensure websites remain compliant with accessibility standards over time, and developers can be notified of issues as they are identified.
 
 {: .callout .alert }
-As of **Date TBD**, Accessibility Ready themes must include an `accessibility.txt` file that adheres to the WordPress theme accessibility readme standard described below.  
+As of **June 30th, 2026**, Accessibility Ready themes must include an `accessibility.txt` file that adheres to the WordPress theme accessibility readme standard described below.
 
 ## Required Format
 
@@ -24,18 +24,18 @@ The `accessibility.txt` file is intended to be written using a subset of markdow
 
 ```
 === Accessibility Statement ===
-Short statement about approach to accessibility in the development process. 
+Short statement about approach to accessibility in the development process.
 
 == Quick Information ==
 Accessibility audit completed: (Yes or No)
 Most recent audit date: YYYY-MM-DD
 Tested to standard and conformance level: WCAG 2.2 AA (supports)
 Audited by: (comma-separated list of wordpress.org userid's or markdown-formatted links with Company Names and URLs)
-Accessibility Conformance Report: https://example.com/ 
+Accessibility Conformance Report: https://example.com/
 
 == Testing Tools and Methodology ==
 
-Describe tools or testing techniques used when developing the theme or plugin to ensure accessibility. Explain how accessibility fits in your development process as updates are released. 
+Describe tools or testing techniques used when developing the theme or plugin to ensure accessibility. Explain how accessibility fits in your development process as updates are released.
 
 == Screen Reader Text Class ==
 
@@ -47,7 +47,7 @@ If the theme or plugin has any accessibility features, describe or list them her
 
 == Accessibility Help Contact ==
 
-Email address or link to form where users can ask accessibility questions or get accessibility assistance. 
+Email address or link to form where users can ask accessibility questions or get accessibility assistance.
 
 == Where to Report Issues ==
 
@@ -60,12 +60,12 @@ The following explains how to complete each section in the required format shown
 
 ### Accessibility Statement
 
-This section provides a short summary of your approach to accessibility during theme development, goals, or accessibility commitments. 
+This section provides a short summary of your approach to accessibility during theme development, goals, or accessibility commitments.
 
 Examples:
 
 {: .callout  .example }
-“This theme was designed and developed with accessibility best practices in mind, following WCAG 2.2 guidelines.” 
+“This theme was designed and developed with accessibility best practices in mind, following WCAG 2.2 guidelines.”
 
 {: .callout  .example }
 “We are committed to making our plugins usable by as many people as possible, including those using assistive technologies.”
@@ -74,10 +74,10 @@ Examples:
 
 The Quick Information section provides a high-level overview of the theme’s or plugin's accessibility test status and conformance level. Some content in this section is optional or may be omitted if it does not apply.
 
-* **Accessibility audit completed:** Yes or No. Answer yes if the theme or plugin has been audited for accessibility conformance with an officially recognized standard such as Web Content Accessibility Guidelines (WCAG), EN 301 549, etc. The testing may have been completed by you or an external organization or individual.  
-* **Most recent audit date:** (OPTIONAL) provide the date when most recent audit was completed. Omit if the theme or plugin has never been audited.  
-* **Tested to standard and conformance level:** (OPTIONAL) if an audit has been completed, list the standard it was tested against here and whether it supports, partially supports, or does not support the standard. Omit if the theme or plugin has never been audited.  
-* **Audited by:** (OPTIONAL) Provide a comma-separated list of wordpress.org userid's or markdown-formatted links with Company Names and URLs for the people or organization that performed the most recent audit. This can help to provide trustworthiness or third-party verification to the audit. Omit if the theme or plugin has never been audited.  
+* **Accessibility audit completed:** Yes or No. Answer yes if the theme or plugin has been audited for accessibility conformance with an officially recognized standard such as Web Content Accessibility Guidelines (WCAG), EN 301 549, etc. The testing may have been completed by you or an external organization or individual.
+* **Most recent audit date:** (OPTIONAL) provide the date when most recent audit was completed. Omit if the theme or plugin has never been audited.
+* **Tested to standard and conformance level:** (OPTIONAL) if an audit has been completed, list the standard it was tested against here and whether it supports, partially supports, or does not support the standard. Omit if the theme or plugin has never been audited.
+* **Audited by:** (OPTIONAL) Provide a comma-separated list of wordpress.org userid's or markdown-formatted links with Company Names and URLs for the people or organization that performed the most recent audit. This can help to provide trustworthiness or third-party verification to the audit. Omit if the theme or plugin has never been audited.
 * **Accessibility Conformance Report:** (OPTIONAL) URL to an Accessibility Conformance Report for the theme or plugin. Omit if an ACR is not available. [Learn more about ACRs]({{site.baseurl}}/docs/topics/documenting-accessibility/acr/)
 
 ### **Testing Tools and Methodology**
@@ -90,15 +90,15 @@ This section details how accessibility was tested and integrated into your devel
 
 During development, we used a combination of automated and manual testing methods:
 
-* **Automated Tools:**  
-  * Accessibility Checker WordPress plugin  
-  * axe DevTools browser extension  
-  * WAVE browser extension  
-  * ESLint with accessibility-focused rules for JSX and ARIA usage  
-* **Manual Testing Techniques:**  
-  * Keyboard-only navigation testing to ensure all interactive elements are focusable and operable  
-  * Screen reader testing with **NVDA (Windows)** and **VoiceOver (macOS)** to verify meaningful announcements, focus order, and labeling  
-  * Manual color contrast checks using the WebAIM Contrast Checker  
+* **Automated Tools:**
+  * Accessibility Checker WordPress plugin
+  * axe DevTools browser extension
+  * WAVE browser extension
+  * ESLint with accessibility-focused rules for JSX and ARIA usage
+* **Manual Testing Techniques:**
+  * Keyboard-only navigation testing to ensure all interactive elements are focusable and operable
+  * Screen reader testing with **NVDA (Windows)** and **VoiceOver (macOS)** to verify meaningful announcements, focus order, and labeling
+  * Manual color contrast checks using the WebAIM Contrast Checker
   * Testing responsive behaviors to ensure accessibility is preserved on mobile and tablet devices
 
   All components and templates were tested for accessibility as they were developed. Additionally, we performed a full accessibility audit prior to release. The audit was conducted internally and verified by an external accessibility expert, John Doe, and we conducted user testing sessions with three blind screen reader users.
@@ -134,10 +134,10 @@ This section tells users how to get help if they experience accessibility issues
 **Examples:**
 
 {: .callout  .example }
-"If you need accessibility help, email us at [support@example.com](mailto:support@example.com)."  
+"If you need accessibility help, email us at [support@example.com](mailto:support@example.com)."
 
 {: .callout  .example }
-"Accessibility support information: [https://example.com/support](https://example.com/support)" 
+"Accessibility support information: [https://example.com/support](https://example.com/support)"
 
 ### Where to Report Issues
 
@@ -146,7 +146,7 @@ This section provides a designated channel for users to report accessibility bug
 **Examples:**
 
 {: .callout  .example }
-[https://wordpress.org/support/theme/theme-slug-here/](https://wordpress.org/support/theme/theme-slug-here/)  
+[https://wordpress.org/support/theme/theme-slug-here/](https://wordpress.org/support/theme/theme-slug-here/)
 
 {: .callout  .example }
 "Please report accessibility issues on our GitHub repository, https://github.com/URL."
@@ -163,9 +163,9 @@ Markdown allows for easy linking in your `accessibility.txt` file. Just write li
 
 ## Visibility of accessibility.txt files
 
-Currently `accessibility.txt` files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the [theme or plugin file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/). 
+Currently `accessibility.txt` files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the [theme or plugin file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/).
 
-In the future, the accessibility team hopes to surface this information within the WordPress admin and on WordPress.org. 
+In the future, the accessibility team hopes to surface this information within the WordPress admin and on WordPress.org.
 
 ## Resources
 
