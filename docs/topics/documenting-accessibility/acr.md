@@ -4,6 +4,9 @@ layout: default
 parent: Documenting accessibility
 description: An ACR is a document explaining how you meet accessibility standards.
 nav_order: 3
+contributors:
+  - Amber Hinds
+  - Joe Dolson
 ---
 
 # Accessibility Conformance Reports
