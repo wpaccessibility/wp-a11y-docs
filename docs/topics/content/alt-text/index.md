@@ -85,9 +85,16 @@ The alt text for a photo of Jane in her garden:
 
 ## Resources
 
-### Related WCAG Success Criterion for alternative text for images
+### WCAG Success Criterion for alternative text for images
 
 By giving a meaningful image the proper alternative text, you meet WCAG success criterion [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
+
+### Related pages in this documentation
+
+-  WordPress accessibility-ready guidelines: [Alternative text on images and graphics]({{site.baseurl}}/docs/topics/theme-guidelines/alternative-text/).
+- Start with accessibility: [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/).
+- Standards and best practice - Content and images - Links: [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/).
+- Standards and best practice - Frontend code - Images: [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/).
 
 ### Other resources
 

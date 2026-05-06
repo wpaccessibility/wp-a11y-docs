@@ -4,6 +4,9 @@ layout: default
 parent: WP accessibility-ready guidelines
 description: Support for audio, video, and animations in accessibility-ready themes
 nav_order: 11
+contributors:
+   - Amber Hinds
+   - Joe Dolson
 ---
 
 # Accessible audio, video, and animations
@@ -33,8 +36,15 @@ The basic requirements are:
    1. On Windows 11: Go to Settings \> Accessibility \> Visual Effects \> Animation Effects.  
    2. On macOS: Navigate to System Preferences \> Accessibility \> Display \> Reduce motion.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Pause, Stop and Hide.](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html)  
-* [Understanding: Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html)  
-* [Understanding: Animation from Interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html)
+### WCAG Success Criteria for audio, video, and animations
+
+* [2.2.2 Pause, Stop and Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) (Level A).
+* [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) (Level A).
+* [2.3.2 Three Flashes](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes) (Level **AAA**).
+* [2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions) (Level **AAA**).
+
+### Related pages in this documentation
+
+Standards and best practice - Frontend code - Images: [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/).
