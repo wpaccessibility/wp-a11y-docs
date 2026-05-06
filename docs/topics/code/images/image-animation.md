@@ -68,9 +68,13 @@ Reduced motion doesn’t have to mean no animation at all, but it should be very
 ### WCAG Success Criteria for animations
 
 - [2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) Level A.
-- [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) Level A.
+* [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) (Level A).
+* [2.3.2 Three Flashes](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes) (Level **AAA**).
 - [2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions) **Level AAA**.
 
+### Related pages in this documentation
+
+-  WordPress accessibility-ready guidelines: [Accessible audio, video, and animations]({{site.baseurl}}/docs/topics/theme-guidelines/accessible-animation/).
 
 ### Other resources
 
