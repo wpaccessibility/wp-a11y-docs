@@ -10,4 +10,4 @@ nav_order: 9
 
 How to set up an accessibility test for the accessibility-ready tag on WordPress.org. This section outlines the steps for conducting a theme accessibility ready requirements review. 
 
-Detailed testing instructions for each requirement can be found in the [theme accessibility guidelines doc.]({{site.baseurl}}/docs/topics/theme-guidelines/)
+Detailed testing instructions for each requirement can be found in the [Guidelines for the WordPress accessibility-ready tag]({{site.baseurl}}/docs/topics/theme-guidelines/).

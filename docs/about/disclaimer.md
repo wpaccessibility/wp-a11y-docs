@@ -17,4 +17,4 @@ When relevant in the documentation, we add links to the official WCAG documentat
 
 If you are conducting an accessibility review, an accessibility audit, or researching legal requirements, please refer directly to the [official WCAG documentation](https://www.w3.org/WAI/standards-guidelines/wcag/) by the W3C.
 
-If you find documentation on this website that is in conflict with WCAG 2.2 AA, please let us know by  [contacting the team]({{site.baseurl}}//docs/about/contact/).
+If you find documentation on this website that is in conflict with WCAG 2.2 AA, please let us know by  [contacting the team]({{site.baseurl}}/docs/about/contact/).
