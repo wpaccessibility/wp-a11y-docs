@@ -16,9 +16,10 @@
             {% for p in siblings %}
             {% if p.nav_order > 0 and p.title != page.title %}
             <li>
-                <p>
-                    <a href="{{p.url | relative_url }}"> {{ p.title }}</a> {{ p.description }}
-                </p>
+                <h3>
+                    <a href="{{p.url | relative_url }}"> {{ p.title }}</a>
+                </h3>
+                <p>{{ p.description }}</p>
             </li>
             {% endif %}
             {% endfor %}
@@ -26,7 +27,7 @@
         {% if introPage.nav_order > 0 %}
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="{{ introPage.url | relative_url }}">Back to: {{ introPage.title }}</a>
+                <span aria-hidden="true">&#60;</span> <a href="{{ introPage.url | relative_url }}">Back to: {{ introPage.title }}</a>
             </p>
 
         {% endif %}
