@@ -193,13 +193,15 @@ The best option is to add visible text. An icon alone may not be universally und
 
 ## Resources
 
-### Related WCAG Success Criteria for alternative text for images
+### {: .resource-h3}
+### WCAG Success Criteria for alternative text for images
 
 By giving meaningful images proper alternative text, you meet WCAG success criteria:
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 - To be honest, this topic  (level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
 
+{: .resource-h3}
 ### Other resources
 
 - [Images Tutorial](https://www.w3.org/WAI/tutorials/images/), by the W3C.

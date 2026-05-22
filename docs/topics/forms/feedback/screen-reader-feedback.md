@@ -74,6 +74,7 @@ There are 2 ways to inform a screen reader about errors:
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for screen reader feedback on errors
 
 Providing feedback about error messages to screen reader users is required to meet the WCAG success criteria:
@@ -84,6 +85,7 @@ Providing feedback about error messages to screen reader users is required to me
 Providing a descriptive `<title>` element is required to meet WCAG success criterion [2.4.2 Page Titled](https://www.w3.org/WAI/WCAG22/quickref/#page-titled) (Level A).
 
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

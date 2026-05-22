@@ -43,7 +43,8 @@ Please <a href="#self-3" id="self-3">download our terms (PDF, 3Mb)</a>.
 
 ## Resources
 
-### Related WCAG Success Criteria for links
+{: .resource-h3}
+### WCAG Success Criteria for links
 
 By adding meaningful link text, you meet WCAG success criteria
 - [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
@@ -51,6 +52,7 @@ By adding meaningful link text, you meet WCAG success criteria
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
 - [3.2.5 Change on Request](https://www.w3.org/WAI/WCAG22/quickref/#change-on-request) (level **AAA)**.
 
+{: .resource-h3}
 ### Other resources
 
 - [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html), by Adrian Roselli.

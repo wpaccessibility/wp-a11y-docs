@@ -57,6 +57,7 @@ If you decide to use `required`, also use `novalidate` on the form element to pr
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for required fields.
 
 By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
@@ -75,6 +76,7 @@ Gravity Forms adds `aria-required="true"` to required fields.
 **Help wanted:** We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
+{: .resource-h3}
 ### Other resources
 - MDN [aria-required](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-required).
 - MDN [HTML attribute: required](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/required).

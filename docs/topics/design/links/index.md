@@ -35,11 +35,13 @@ I love cats, so I watch <a href="#self-2" id="self-2" style="color: darkgreen">c
 
 ## Resources
 
-### Related WCAG Success Criteria for styling links
+{: .resource-h3}
+### WCAG Success Criteria for styling links
 
 - [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color) (level A).
 - [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (level AA).
 
+{: .resource-h3}
 ### Other resources
 
 - [Underline Your Links!](https://theadminbar.com/accessibility-weekly/underline-your-links/), by Amber Hinds on the Admin Bar.

@@ -72,6 +72,7 @@ Place the link to the terms of delivery inside the label.
 ```
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for accessible names
 
 Giving a form control an accessible name is necessary to meet the WCAG success criteria:
@@ -84,6 +85,7 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 
 - Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

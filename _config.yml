@@ -18,15 +18,15 @@ repository: wpaccessibility/wp-a11y-docs # for github-metadata
 
 # Local env
 
-# title: Local WP Accessibility Knowledge Base
-# baseurl: "" # the sub path of your site, e.g. /blog
-# url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
+title: Local WP Accessibility Knowledge Base
+baseurl: "" # the sub path of your site, e.g. /blog
+url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site, e.g. http://example.com
 # or just run bundle exec jekyll serve --baseurl="" in the terminal
 
 # prod env
-title: WP Accessibility Knowledge Base
-baseurl: "" # the sub path of your site, e.g. /blog
-url: "https://wpaccessibility.org/" # the base hostname & protocol for your site, e.g. http://example.com
+# title: WP Accessibility Knowledge Base
+# baseurl: "" # the sub path of your site, e.g. /blog
+# url: "https://wpaccessibility.org/" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 

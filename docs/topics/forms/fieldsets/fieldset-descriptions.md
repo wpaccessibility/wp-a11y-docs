@@ -62,6 +62,7 @@ In HTML, simplified
 
 ## Resources 
 
+{: .resource-h3}
 ### WCAG Success Criteria for descriptions
 
 A description is optional, but it can help users to understand better what they need to fill out.

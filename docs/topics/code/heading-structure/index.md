@@ -57,6 +57,7 @@ Are you testing the heading structure for an accessibility-ready WordPress theme
 
 ## Resources
 
+{: .resource-h3}{: .resource-h3}
 ### WCAG Success Criteria for the heading structure
 
 Using a meaningful heading structure is necessary to meet the WCAG success criteria:
@@ -65,6 +66,7 @@ Using a meaningful heading structure is necessary to meet the WCAG success crite
 - [WCAG 2.4.6 Headings and Labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) (Level AA).
 - [WCAG 2.4.10 Section Headings](https://www.w3.org/WAI/WCAG22/quickref/#section-headings) (**Level AAA**).
 
+{: .resource-h3}
 ### Other resources
 
 #### Heading structure in WordPress

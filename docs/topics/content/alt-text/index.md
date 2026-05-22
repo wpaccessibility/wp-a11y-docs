@@ -83,12 +83,17 @@ The alt text for a photo of Jane, showing off her dress:
 The alt text for a photo of Jane in her garden:    
 "Jane, in her garden in full bloom.".  
 
+
+
 ## Resources
 
-### Related WCAG Success Criterion for alternative text for images
+{: .resource-h3}
+### WCAG Success Criterion for alternative text for images
 
 By giving a meaningful image the proper alternative text, you meet WCAG success criterion [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 
+{: .resource-h3}
+{: .resource-h3}
 ### Other resources
 
 - [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) by the W3C.

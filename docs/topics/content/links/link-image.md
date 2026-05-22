@@ -43,7 +43,8 @@ Read [Alternative text for images in the content]({{site.baseurl}}/docs/topics/c
 
 ## Resources
 
-### Related WCAG Success Criteria for links on images
+{: .resource-h3}
+### WCAG Success Criteria for links on images
 
 By giving a meaningful image proper alternative text, you meet WCAG success criteria
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
@@ -51,6 +52,7 @@ By giving a meaningful image proper alternative text, you meet WCAG success crit
 - [2.4.9 Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-link-only) (level **AAA**).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
 
+{: .resource-h3}
 ### Other resources
 
 - [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/), by The A11Y Collective.
