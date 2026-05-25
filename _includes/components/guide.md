@@ -78,7 +78,7 @@
 <summary>Management</summary>
 
 - [Start with accessibility]({{site.baseurl}}/docs/start/).
-  - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/)
+  - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
   - [Introduction to WCAG]({{site.baseurl}}/docs/start/wcag-intro/).
   - [Accessibility for your business]({{site.baseurl}}/docs/start/business/).
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
