@@ -3,7 +3,6 @@
 
 // In-page navigation.
 
-
 .prev-next,
 .siblings,
 .toc {
@@ -37,8 +36,12 @@
   }
 }
 
+// Overrule mian-content css for the h2 margin..
+
 .main-content {
-  .siblings {
+  .prev-next,
+  .siblings,
+  .toc {
     h2 {
       margin-top: 0;
     }
