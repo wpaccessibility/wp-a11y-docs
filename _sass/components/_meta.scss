@@ -5,7 +5,8 @@
 @use "sass:color";
 
 .meta {
-  padding-top: 1.25em;
+  padding: $sp-5 0;
+  margin-top: $sp-5;
   border-top: $border $border-color;
   font-size: var(--text-font-size-sm);
 
