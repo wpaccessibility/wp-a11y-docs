@@ -83,7 +83,7 @@ The accessibility tree of Firefox shows the following relevant information: The 
 
 ## Resources
 
-{: .resource-h3}{: .resource-h3}
+{: .resource-h3}
 ### WCAG Success Criteria for an accessible name
 
 Giving interactive elements a well-defined, accessible name is necessary to meet the WCAG success criteria:

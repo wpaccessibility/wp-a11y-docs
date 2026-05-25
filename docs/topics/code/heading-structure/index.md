@@ -57,7 +57,7 @@ Are you testing the heading structure for an accessibility-ready WordPress theme
 
 ## Resources
 
-{: .resource-h3}{: .resource-h3}
+{: .resource-h3}
 ### WCAG Success Criteria for the heading structure
 
 Using a meaningful heading structure is necessary to meet the WCAG success criteria:
