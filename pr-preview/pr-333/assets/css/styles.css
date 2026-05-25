@@ -541,7 +541,7 @@ small,
   margin-left: 1em;
 }
 .main-content h1,
-.main-content h2,
+.main-content h2:not(.screen-reader-text),
 .main-content h3,
 .main-content h4,
 .main-content h5,
@@ -555,11 +555,11 @@ small,
 .main-content h1 + .code-example,
 .main-content h1 + .highlighter-rouge,
 .main-content h1 + .sectionbody .listingblock,
-.main-content h2 + table,
-.main-content h2 + .table-wrapper,
-.main-content h2 + .code-example,
-.main-content h2 + .highlighter-rouge,
-.main-content h2 + .sectionbody .listingblock,
+.main-content h2:not(.screen-reader-text) + table,
+.main-content h2:not(.screen-reader-text) + .table-wrapper,
+.main-content h2:not(.screen-reader-text) + .code-example,
+.main-content h2:not(.screen-reader-text) + .highlighter-rouge,
+.main-content h2:not(.screen-reader-text) + .sectionbody .listingblock,
 .main-content h3 + table,
 .main-content h3 + .table-wrapper,
 .main-content h3 + .code-example,
@@ -583,7 +583,7 @@ small,
   margin-top: 1em;
 }
 .main-content h1 + p:not(.label),
-.main-content h2 + p:not(.label),
+.main-content h2:not(.screen-reader-text) + p:not(.label),
 .main-content h3 + p:not(.label),
 .main-content h4 + p:not(.label),
 .main-content h5 + p:not(.label),
@@ -1316,7 +1316,6 @@ p.do > strong {
 
 footer {
   padding-bottom: 3rem;
-  margin-top: 1.5rem;
 }
 footer nav .container {
   display: flex;
@@ -1362,7 +1361,8 @@ footer nav .container .column {
 }
 
 .meta {
-  padding-top: 1.25em;
+  padding: 1.5rem 0;
+  margin-top: 1.5rem;
   border-top: 1px solid var(--color-neutral-border-default);
   font-size: var(--text-font-size-sm);
 }
@@ -1417,6 +1417,10 @@ footer nav .container .column {
 .toc span {
   color: var(--color-informative-color-default);
   padding-right: 0.3em;
+}
+
+.main-content .siblings h2 {
+  margin-top: 0;
 }
 
 .resource-h3 {
