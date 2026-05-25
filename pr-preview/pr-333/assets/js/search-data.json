@@ -1682,7 +1682,7 @@
     "doc": "Accessibility-ready testing process",
     "title": "Set up testing for the WordPress themes accessibility-ready tag",
     "description": "How to set up an accessibility test for the accessibility-ready tag on WordPress.org.",
-    "content": "How to set up an accessibility test for the accessibility-ready tag on WordPress.org. This section outlines the steps for conducting a theme accessibility ready requirements review. Detailed testing instructions for each requirement can be found in the theme accessibility guidelines doc. ",
+    "content": "How to set up an accessibility test for the accessibility-ready tag on WordPress.org. This section outlines the steps for conducting a theme accessibility-ready requirements review. Detailed testing instructions for each requirement can be found in the theme accessibility guidelines doc. ",
     "url": "/pr-preview/pr-333/docs/testing/testing-themes/#set-up-testing-for-the-wordpress-themes-accessibility-ready-tag",
     "relUrl": "/docs/testing/testing-themes/#set-up-testing-for-the-wordpress-themes-accessibility-ready-tag"
   },"241": {

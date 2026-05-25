@@ -1419,7 +1419,9 @@ footer nav .container .column {
   padding-right: 0.3em;
 }
 
-.main-content .siblings h2 {
+.main-content .prev-next h2,
+.main-content .siblings h2,
+.main-content .toc h2 {
   margin-top: 0;
 }
 
