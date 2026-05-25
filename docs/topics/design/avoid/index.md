@@ -2,6 +2,7 @@
 title: Patterns to avoid
 layout: default
 parent: Design & user experience
+meta_data: false
 description: Learn which design patterns you should avoid for accessibility.
 nav_order: 6
 ---
