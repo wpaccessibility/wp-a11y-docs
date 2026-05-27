@@ -15,7 +15,7 @@ All forms of multimedia have specific accessibility requirements, and any suppor
 The basic requirements are:
 
 1. Three Flashes: No animation or video can flash more than three times in any one second period. Rapid flashing can trigger seizures, dizziness, nausea, or migraines.  
-2. Motion animation triggered by interaction can be disabled. (Level AAA)  
+2. Motion animation triggered by interaction can be disabled. (WCAG Level AAA)  
 3. Any automatically initiated moving, blinking, or auto-updating information can be paused, stopped, or hidden.
 
 **Note**: It is difficult to test the three-flash rule. The simplest test, for CSS or JS animation, is to look at the source code and check the timing frequency; this will not work for a demo video. In general, any *potentially* risky animation should be considered a failure.
@@ -33,8 +33,17 @@ The basic requirements are:
    1. On Windows 11: Go to Settings \> Accessibility \> Visual Effects \> Animation Effects.  
    2. On macOS: Navigate to System Preferences \> Accessibility \> Display \> Reduce motion.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Pause, Stop and Hide.](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html)  
-* [Understanding: Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html)  
-* [Understanding: Animation from Interactions](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html)
+{: .resource-h3}
+## WCAG Success Criteria for audio, video, and animations
+
+* [2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) (level A).
+* [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) (level A).
+* [2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions) (level **AAA)**.
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/#image-animation-and-accessibility), in Frontend code > Images.
+- [Setting reduced motion for animations]({{site.baseurl}}/docs/topics/legislation/), in Frontend code > Images.
