@@ -12,7 +12,7 @@
 
     <nav class="siblings" aria-label="Related content">
         <h2>Other pages in: {{ parentTitle }}</h2>
-        <ul>
+        <ul role="list">
             {% for p in siblings %}
             {% if p.nav_order > 0 and p.title != page.title %}
             <li>
@@ -27,7 +27,7 @@
         {% if introPage.nav_order > 0 %}
 
             <p>
-                <span aria-hidden="true">&#60;</span> <a href="{{ introPage.url | relative_url }}">Back to: {{ introPage.title }}</a>
+                <span aria-hidden="true">&larr;</span> <a href="{{ introPage.url | relative_url }}">Back to: {{ introPage.title }}</a>
             </p>
 
         {% endif %}
