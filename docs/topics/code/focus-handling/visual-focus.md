@@ -81,12 +81,14 @@ button:focus-visible {
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for visual focus
 
 - [2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG22/quickref/#focus-visible), (Level AA).
 - [2.4.13 Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance) (Level **AAA**).
 - [1.4.11 Non-Text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (Level AA).
 
+{: .resource-h3}
 ### Other resources
 
 - [Beautiful focus outlines](https://medienbaecker.com/articles/focus-outlines) by Thomas Günther.

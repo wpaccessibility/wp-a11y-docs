@@ -2,6 +2,7 @@
 title: Test for accessibility
 layout: default
 nav_order: 4
+meta_data: false
 description: Find ways to test for accessibility yourself.
 ---
 

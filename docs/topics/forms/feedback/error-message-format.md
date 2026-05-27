@@ -22,6 +22,7 @@ Connecting the error message text to an input field works the same as connecting
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for text in error messages
 
 Describing form errors in text is required to meet the WCAG success criteria:
@@ -30,6 +31,7 @@ Describing form errors in text is required to meet the WCAG success criteria:
 - [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color) (Level A).
 - [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

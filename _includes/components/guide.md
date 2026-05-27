@@ -34,8 +34,8 @@
 <summary>Website and plugin developers</summary>
 
 - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/), in Start with accessibility.
-- [Frontend code]({{site.baseurl}}docs/topics/code/), in Standards and best practice.
-- [How to build accessible web forms]({{site.baseurl}}docs/topics/forms/), in Standards and best practice.
+- [Frontend code]({{site.baseurl}}/docs/topics/code/), in Standards and best practice.
+- [How to build accessible web forms]({{site.baseurl}}/docs/topics/forms/), in Standards and best practice.
 - [Frontend checks]({{site.baseurl}}/docs/testing/checklists/code), in Checklists for accessibility testing.
 
 </details>
@@ -53,8 +53,7 @@
 <details markdown="block">
 <summary>Quality assurance and auditing</summary>
 
-- [Standards and best practice]({{site.baseurl}}docs/topics/).
-- [Documenting accessibility]({{site.baseurl}}docs/topics/documenting-accessibility/), in Standards and best practice.
+- [Documenting accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/), in Standards and best practice.
 - [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/), in Standards and best practice.
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
 - [WordPress plugins for testing]({{site.baseurl}}/docs/testing/plugins/) in Test for accessibility.
@@ -83,7 +82,8 @@
   - [Accessibility for your business]({{site.baseurl}}/docs/start/business/).
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
   - [Overlays]({{site.baseurl}}/docs/start/overlays/) and why not to use them.
-- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/).
+- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/), in Standards and best practice.
+- [Documenting Accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/), including how to write an accessibility statement.
 
 </details>
 
@@ -97,6 +97,7 @@
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
   - [Overlays]({{site.baseurl}}/docs/start/overlays/) and why not to use them.
 - [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/), in Standards and best practice.
-- [Documenting Accessibility]({{site.baseurl}}docs/topics/documenting-accessibility/), including how to write an accessibility statement.
+- [Documenting Accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/), including how to write an accessibility statement.
+
 </details>
 

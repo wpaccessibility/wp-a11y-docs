@@ -31,6 +31,7 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for keyboard focus
 
 - [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/quickref/#keyboard) (Level A).

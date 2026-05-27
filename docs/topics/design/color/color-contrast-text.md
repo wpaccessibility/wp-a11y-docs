@@ -27,12 +27,14 @@ There are many tools to check color contrast ratios. WebAxe published an overvie
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for color contrast
 
 - [1.4.3 Contrast Minimum](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum)(Level AA).
 - [1.4.6 Contrast (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-enhanced) (Level **AAA**)
 - [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (Level AA)
 
+{: .resource-h3}
 ### Other resources
 
 - [Assistive Technology Experiment: High Contrast](https://webaim.org/blog/high-contrast/)

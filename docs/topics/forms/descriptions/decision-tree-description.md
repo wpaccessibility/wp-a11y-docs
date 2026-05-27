@@ -47,11 +47,13 @@ Rich text in this context means: additional structure or interactive functionali
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for descriptions 
 
 - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
 - [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

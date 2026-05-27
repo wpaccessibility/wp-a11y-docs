@@ -16,10 +16,12 @@ Copying and pasting from a password manager is a much easier and safer way for u
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for accessible authentication
 
 - [3.3.8 Accessible Authentication (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-minimum) Level AA (added in version 2.2)
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

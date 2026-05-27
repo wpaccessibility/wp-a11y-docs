@@ -56,5 +56,5 @@ Always give images proper alternative text using the W3C [alt decision tree](htt
 
 Documentation about alternative text for images:
 
-- [Alternative text for images]({{site.baseurl}}docs/topics/content/alt-text/)
+- [Alternative text for images]({{site.baseurl}}/docs/topics/content/alt-text/)
 - [Images as link]({{site.baseurl}}/docs/topics/content/links/link-image/)

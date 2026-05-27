@@ -3,6 +3,7 @@ title: Design & user experience
 layout: default
 parent: Standards and best practice
 description: How to create an accessible design and a good user experience for everyone.
+meta_data: false
 nav_order: 3
 ---
 

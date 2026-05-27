@@ -44,6 +44,7 @@ This doesn't address 'autocomplete', but it is related: if the user is logged in
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for pre-fill and autocomplete
 
 - Using the correct autocomplete attribute is required to meet WCAG Success Criterion [1.3.5 Identify Input Purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-input-purpose) (Level AA).
@@ -57,6 +58,7 @@ Gravity Forms information about autocomplete: [Accessibility Checklist for Gravi
 **Help wanted:** We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
+{: .resource-h3}
 ### Other resources
 
 - Jules Ernst from 200 OK created a [Dutch interpretation of autocomplete](https://www.200ok.nl/tips/autocomplete/) of the autocomplete values list.

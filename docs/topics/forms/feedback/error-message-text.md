@@ -28,6 +28,7 @@ The GOV.UK design system provides clear (English-language) guidance on error mes
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for clear error message texts
 
 Writing error message texts that clearly explain what went wrong is required to meet the following WCAG success criteria:
@@ -35,6 +36,7 @@ Writing error message texts that clearly explain what went wrong is required to 
 - [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
 - [3.3.3 Error Suggestion](https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion) (Level AA).
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

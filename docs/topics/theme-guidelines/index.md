@@ -2,6 +2,7 @@
 title: WP accessibility-ready guidelines
 layout: default
 parent: Standards and best practice
+meta_data: false
 description: Learn about the guidelines for the accessibility-ready tag on WordPress.org.
 nav_order: 6
 ---

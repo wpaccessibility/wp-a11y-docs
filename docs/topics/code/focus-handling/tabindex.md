@@ -104,6 +104,7 @@ There are exceptions to this rule, such as the floating tabindex pattern used in
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for focus order
 
 Maintaining a meaningful and predictable focus order is necessary to meet the WCAG success criteria:
@@ -111,6 +112,7 @@ Maintaining a meaningful and predictable focus order is necessary to meet the WC
 - [1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence) (Level A).
 - [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
 
+{: .resource-h3}
 ### Other resources
 
 - [Source Order Matters](https://adrianroselli.com/2015/09/source-order-matters.html) by Adrian Roselli.

@@ -1,6 +1,7 @@
 ---
 title: WordPress and Accessibility
 layout: default
+meta_data: false
 description: About WordPress, accessibility, and the WordPress Accessibility Team.
 nav_order: 5
 ---

@@ -2,6 +2,7 @@
 title: Group form fields
 layout: default
 parent: Web forms
+meta_data: false
 nav_order: 3
 description: Use fieldset and legend to group form fields.
 ---
@@ -64,6 +65,7 @@ WCAG requires that the structure and relationships are programmatically determin
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for naming grouped form fields
 
 Naming grouped form fields is necessary to meet the WCAG success criteria:
@@ -71,6 +73,7 @@ Naming grouped form fields is necessary to meet the WCAG success criteria:
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).
 
+{: .resource-h3}
 ### Other resources
 
 - W3C: [Grouping Controls](https://www.w3.org/WAI/tutorials/forms/grouping/)
