@@ -4,6 +4,9 @@ layout: default
 parent: Standards and best practice
 description: Learn about the guidelines for the accessibility-ready tag on WordPress.org.
 nav_order: 6
+contributors:
+  - Amber Hinds
+  - Joe Dolson
 ---
 
 # Guidelines for the WordPress accessibility-ready tag

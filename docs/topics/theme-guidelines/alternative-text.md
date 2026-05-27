@@ -4,6 +4,9 @@ layout: default
 parent: WP accessibility-ready guidelines
 description: Use of alternative text requirements for accessibility-ready themes
 nav_order: 10
+contributors:
+   - Amber Hinds
+   - Joe Dolson
 ---
 
 # Alternative text on images and graphics
@@ -34,6 +37,15 @@ Decorative graphics may include:
    1. Extended ASCII characters will not display text in the browser's accessibility inspector. Most characters have a standard reading value, but not all. If a theme uses ASCII characters in the design, use the article "[How Screen Readers read Special Characters](https://elevenways.be/en/articles/screenreaders-special-characters)" as a reference to know what the screen reader will say, or (recommended) listen to the element with a screen reader.  
    2. If the read text would not be appropriate in context, verify the character is wrapped in a `span` that either hides the character or provides it with a more appropriate `aria-label`, depending on context.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Non-text content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
+### WCAG Success Criteria for alternative text on images and graphics
+
+By giving a meaningful image the proper alternative text, you meet WCAG success criterion [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
+
+### Related pages in this documentation
+
+- Start with accessibility: [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/).
+- Standards and best practice - Content and images: [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/).
+- Standards and best practice - Content and images - Links: [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/).
+- Standards and best practice - Frontend code - Images: [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/).

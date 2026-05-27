@@ -4,6 +4,9 @@ layout: default
 parent: Images
 description: How to add alternative text for images, SVGs and icons in development.
 nav_order: 2
+contributors:
+   - Rian Rietveld
+   - Joe Dolson
 ---
 
 # Alternative text for images, SVGs and icons in development
@@ -197,8 +200,15 @@ The best option is to add visible text. An icon alone may not be universally und
 
 By giving meaningful images proper alternative text, you meet WCAG success criteria:
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
-- To be honest, this topic  (level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
+
+### Related pages in this documentation
+
+-  WordPress accessibility-ready guidelines: [Alternative text on images and graphics]({{site.baseurl}}/docs/topics/theme-guidelines/alternative-text/).
+- Start with accessibility: [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/).
+- Standards and best practice - Content and images: [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/).
+- Standards and best practice - Content and images - Links: [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/).
+
 
 ### Other resources
 

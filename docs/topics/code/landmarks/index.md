@@ -112,6 +112,23 @@ Note that the word navigation is already announced by assistive technologies. Th
 
 ## Resources
 
-- [W3C ARIA landmark example page](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html)
-- [Tutorial of page regions](https://www.w3.org/WAI/tutorials/page-structure/regions/)
-- [ARIA landmark role guideline]({{site.baseurl}}/docs/topics/theme-guidelines/meaningful-landmark-roles/) for accessibility-ready themes.
+### WCAG Success Criteria for meaningful landmarks
+
+Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria:
+
+- [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+- [1.3.6 Identify purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) (Level **AAA**).
+
+### Related pages in this documentation
+
+- Guidelines for the WordPress accessibility-ready tag: [Meaningful landmark roles and names]({{site.baseurl}}/docs/topics/theme-guidelines/meaningful-landmark-roles/).
+
+### Other resources
+
+- [W3C ARIA landmark example page](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html), by the W3C.
+- [Tutorial of page regions](https://www.w3.org/WAI/tutorials/page-structure/regions/), by the W3C
+
+**Note on the W3C techniques below**: while the guidance regarding why and how to use these is good, the code examples pre-date wide availability of native roles for HTML5 elements. It is preferred to use the HTML elements directly, not the role attributes.
+
+- [Technique: Grouping related links using the nav element](https://www.w3.org/WAI/WCAG22/Techniques/html/H97.html), by the W3C.
+- [Technique: Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA11), by the W3C.

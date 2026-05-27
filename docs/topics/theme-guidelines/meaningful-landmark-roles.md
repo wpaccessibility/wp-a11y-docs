@@ -42,9 +42,15 @@ There are additional optional landmark regions, such as the `region` role, which
 8. If the theme has a `functions.php` file, verify that the theme declares support for `navigation-widgets` in its `add_theme_support( 'html5' )` array.  
    1. If the theme does not have a `functions.php` file, then this requirement is "Not Applicable".
 
-## WCAG resources
+## Resources
 
-* [Technique: Grouping related links using the nav element](https://www.w3.org/WAI/WCAG22/Techniques/html/H97.html)  
-* [Technique: Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA11)
+### WCAG Success Criteria for meaningful landmarks
 
-**Note on these resources**: while the guidance regarding why and how to use these is good, the code examples pre-date wide availability of native roles for HTML5 elements. It is preferred to use the HTML elements directly, not the role attributes.
+Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria:
+
+- [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+- [1.3.6 Identify purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) (Level **AAA**).
+
+### Related pages in this documentation 
+
+- Standards and best practice - Frontend code: [ARIA Landmarks](/docs/topics/code/landmarks/).

@@ -4,6 +4,9 @@ layout: default
 parent: Documenting accessibility
 description: Learn about the accessibility.txt file in your theme or plugin.
 nav_order: 2
+contributors:
+  - Amber Hinds
+  - Joe Dolson
 ---
 
 # Accessibility.txt files
@@ -163,3 +166,9 @@ Markdown allows for easy linking in your `accessibility.txt` file. Just write li
 Currently `accessibility.txt` files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the [theme or plugin file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/).
 
 In the future, the accessibility team hopes to surface this information within the WordPress admin and on WordPress.org.
+
+## Resources
+
+### Related pages in this documentation
+
+- WordPress accessibility-ready guidelines: [Accessibility statement]({{site.baseurl}}/docs/topics/theme-guidelines/accessibility-statement/).

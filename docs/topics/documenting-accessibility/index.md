@@ -4,6 +4,9 @@ layout: default
 parent: Standards and best practice
 description: Recommended ways for documenting accessibility in WordPress themes and plugins.
 nav_order: 7
+contributors:
+  - Amber Hinds
+  - Joe Dolson
 ---
 
 # Documenting accessibility
