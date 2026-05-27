@@ -70,7 +70,7 @@ Then a description with a fieldset is necessary to meet the WCAG success criteri
 
 ### Related pages in this documentation
 
-- [Group form fields]({{site.baseurl}}docs/topics/forms/fieldsets/).
+- [Group form fields]({{site.baseurl}}/docs/topics/forms/fieldsets/).
 - [Fieldset legend]({{site.baseurl}}/docs/topics/forms/fieldsets/legend/).
 
 ### Other Resources

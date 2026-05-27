@@ -39,8 +39,8 @@
 <summary>Website and plugin developers</summary>
 
 - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/).
-- Standards and best practice: [Frontend code]({{site.baseurl}}docs/topics/code/).
-- [How to build accessible web forms]({{site.baseurl}}docs/topics/forms/).
+- Standards and best practice: [Frontend code]({{site.baseurl}}/docs/topics/code/).
+- [How to build accessible web forms]({{site.baseurl}}/docs/topics/forms/).
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
   - Checklists for accessibility testing: [Frontend checks]({{site.baseurl}}/docs/testing/checklists/code).
 
@@ -60,7 +60,7 @@
 <details markdown="block">
 <summary>Quality assurance and auditing</summary>
 
-- [Documenting accessibility]({{site.baseurl}}docs/topics/documenting-accessibility/).
+- [Documenting accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/).
 - [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/).
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
   - [WordPress plugins for testing]({{site.baseurl}}/docs/testing/plugins/).
@@ -102,6 +102,6 @@
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
   - [Overlays]({{site.baseurl}}/docs/start/overlays/) and why not to use them.
 - [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/).
-- [Documenting Accessibility]({{site.baseurl}}docs/topics/documenting-accessibility/), including how to write an accessibility statement.
+- [Documenting Accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/), including how to write an accessibility statement.
 </details>
 

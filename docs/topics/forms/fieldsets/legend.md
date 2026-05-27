@@ -81,7 +81,7 @@ Naming grouped form fields is necessary to meet the WCAG success criteria:
 
 ### Related pages in this documentation
 
-- [Group form fields]({{site.baseurl}}docs/topics/forms/fieldsets/).
+- [Group form fields]({{site.baseurl}}/docs/topics/forms/fieldsets/).
 - [Fieldset description]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/).
 
 {: .resource-h3}

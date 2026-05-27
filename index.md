@@ -38,5 +38,5 @@ Added in April 2026:
   - [Styling links]({{site.baseurl}}/docs/topics/design/links/).
 - Frontend code: 
   - [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/).
-  - [Image animation and accessibility]({{site.baseurl}}docs/topics/code/images/image-animation/).
+  - [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/).
   - [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/).
