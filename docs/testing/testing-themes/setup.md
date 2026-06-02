@@ -11,7 +11,7 @@ nav_order: 2
 ## Creating the test site
 To accessibility-ready test a theme, you will first need to set up a testing environment. 
 
-It is important to note that browser extensions for accessibility testing do not current work in WordPress Playground. As a result, you can't use Playground for accessibility-ready reviews. 
+It is important to note that browser extensions for accessibility testing do not currently work in WordPress Playground. As a result, you can't use Playground for accessibility-ready reviews. 
 
 Outside of Playground, reviews can be done in any WordPress environment you prefer. For convenience, we have a template site available for quick spin-up via [InstaWP](https://instawp.com). 
 
