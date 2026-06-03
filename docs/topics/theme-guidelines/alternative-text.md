@@ -34,6 +34,16 @@ Decorative graphics may include:
    1. Extended ASCII characters will not display text in the browser's accessibility inspector. Most characters have a standard reading value, but not all. If a theme uses ASCII characters in the design, use the article "[How Screen Readers read Special Characters](https://elevenways.be/en/articles/screenreaders-special-characters)" as a reference to know what the screen reader will say, or (recommended) listen to the element with a screen reader.  
    2. If the read text would not be appropriate in context, verify the character is wrapped in a `span` that either hides the character or provides it with a more appropriate `aria-label`, depending on context.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Non-text content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
+{: .resource-h3}
+## WCAG Success Criteria for alternative text
+
+* [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/), in Content and images.
+- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/), in Frontend code: Images.
+- [Images as links]({{site.baseurl}}//docs/topics/content/links/link-image/), in Content and images: Links.
