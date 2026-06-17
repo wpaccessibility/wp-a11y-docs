@@ -106,13 +106,15 @@ In addition, screen readers announce the title attribute inconsistently. You mus
 
 ## Resources
 
-### Related WCAG Success Criteria for links
+{: .resource-h3}
+### WCAG Success Criteria for links
 
 By giving a meaningful link text, you meet WCAG success criteria
 - [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
 - [2.4.9 Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-link-only) (level **AAA**).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
 
+{: .resource-h3}
 ### Other resources
 
 - [Descriptive Link Text: The Art of Clear Digital Signposting](https://www.greadme.com/blog/accessibility/how-to-write-descriptive-link-text-complete-guide) by Saar Twito.

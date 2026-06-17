@@ -30,11 +30,12 @@ layout: table_wrappers
 
           {{ content }}
 
+          {% if page.meta_data != false %}
+            {% include components/meta.html %}
+          {% endif %}
           {% if page.has_toc != false %}
             {% include components/children_nav.html %}
           {% endif %}
-
-          {% include components/meta.html %}
 
         </main>
 

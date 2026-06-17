@@ -35,6 +35,7 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for placeholders
 
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
@@ -46,6 +47,7 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 
 - Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

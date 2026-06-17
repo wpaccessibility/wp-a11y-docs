@@ -2,7 +2,8 @@
 title: Test for accessibility
 layout: default
 nav_order: 4
-description: How to test your work and check for accessibility issues? How to test for the WCAG guidelines and for best practices?
+meta_data: false
+description: Find ways to test for accessibility yourself.
 ---
 
 # Test for accessibility

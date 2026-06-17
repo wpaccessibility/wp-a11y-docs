@@ -30,10 +30,12 @@ The responsive menu with the WordPress [Navigation Block](https://wordpress.org/
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criterion for predictable keyboard focus
 
 - [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
 
+{: .resource-h3}
 ### Other resources
 
 - [Managing Focus and Visible Focus Indicators](https://vispero.com/resources/managing-focus-and-visible-focus-indicators-practical-accessibility-guidance-for-the-web/), a practical Accessibility Guidance for the Web by Kirby Tucker.

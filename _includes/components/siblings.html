@@ -12,13 +12,14 @@
 
     <nav class="siblings" aria-label="Related content">
         <h2>Other pages in: {{ parentTitle }}</h2>
-        <ul>
+        <ul role="list">
             {% for p in siblings %}
             {% if p.nav_order > 0 and p.title != page.title %}
             <li>
-                <p>
-                    <a href="{{p.url | relative_url }}"> {{ p.title }}</a> {{ p.description }}
-                </p>
+                <h3>
+                    <a href="{{p.url | relative_url }}"> {{ p.title }}</a>
+                </h3>
+                <p>{{ p.description }}</p>
             </li>
             {% endif %}
             {% endfor %}

@@ -65,6 +65,7 @@ Reduced motion doesn’t have to mean no animation at all, but it should be very
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for animations
 
 - [2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) Level A.
@@ -72,6 +73,7 @@ Reduced motion doesn’t have to mean no animation at all, but it should be very
 - [2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions) **Level AAA**.
 
 
+{: .resource-h3}
 ### Other resources
 
 - [Meeting “2.2.2 Pause, Stop, Hide” with prefers-reduced-motion ](https://hidde.blog/meeting-2-22-pause-stop-hide-with-prefers-reduced-motion/), by Hidde de Vries.

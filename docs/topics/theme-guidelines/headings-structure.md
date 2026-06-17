@@ -38,6 +38,7 @@ Note: Heading elements for structure may be positioned off-screen if they would 
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for heading structure
 
 Using a meaningful heading structure is necessary to meet the WCAG success criteria:

@@ -149,6 +149,7 @@ Good tools to check the accessible name of a form input:
 
 ## Resources 
 
+{: .resource-h3}
 ### WCAG Success Criteria for accessible names in forms
 
 Giving a form control an accessible name is necessary to meet the WCAG success criteria:
@@ -170,6 +171,7 @@ Gravity Forms accessibility documentation: [Labels and Placeholders](https://doc
 **Help wanted:** We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
 Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

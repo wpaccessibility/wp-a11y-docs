@@ -46,10 +46,12 @@ GOV.UK explains how to support users in [Help users to check answers](https://de
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria on error prevention
 
 Providing reversibility, validation, or confirmation in forms that request legal, financial, or personal information is required to comply with [WCAG Success Criterion 3.3.4 Error Prevention (Legal, Financial, Data)](https://www.w3.org/WAI/WCAG22/quickref/#error-prevention-legal-financial-data) (Level AA).
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

@@ -2,6 +2,7 @@
 title: Standards and best practice
 layout: default
 description: Accessibility guidelines and best practices for everyone working on websites, themes or plugins.
+meta_data: false
 nav_order: 3
 ---
 

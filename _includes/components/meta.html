@@ -1,6 +1,6 @@
 <section aria-label="Page meta data" class="meta">
 
-    <ul>
+    <ul role="list">
 
         {% if page.date_created %}
         <li><span>First published:</span> {{ page.date_created }}</li>
@@ -21,22 +21,19 @@
         <li><span>Edit article:</span>
         <a href="{{ site.gh_edit_repository }}/{{ site.gh_edit_view_mode }}/{{ site.gh_edit_branch }}{% if site.gh_edit_source %}/{{ site.gh_edit_source }}{% endif %}{% if page.collection and site.collections_dir %}/{{ site.collections_dir }}{% endif %}/{{ page.path }}" id="edit-this-page">{{ site.gh_edit_link_text }}</a>
         </li>
+        {% endif %}
 
+        {% if page.contributors %}
+        <li><span>Contributors:</span>
+            {% for item in page.contributors %}
+            {{ item }}
+            {%- if forloop.index < forloop.length -%},
+            {% else %}.
+            {% endif %}
+            {% endfor %}
+        </li>
         {% endif %}
 
     </ul>
-
-    {% if page.contributors %}
-    <p><span>Contributors:</span>
-            {% for item in page.contributors %}
-                {{ item }}
-                {%- if forloop.index < forloop.length -%},
-                {% else %}.
-                {% endif %}
-            {% endfor %}
-    </p>
-    {% endif %}
-    <p>Read <a href="{{site.baseurl}}/docs/about/contribute/">how to contribute to this documentation</a>.</p>
-
 
 </section>
