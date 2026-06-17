@@ -1,9 +1,14 @@
 ---
 title: Meaningful landmark roles and names
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready themes requirements for meaningful landmark roles and names
 nav_order: 2
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/meaningful-landmark-roles/
 ---
 
 # Meaningful landmark roles and names

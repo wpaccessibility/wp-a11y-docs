@@ -1,9 +1,14 @@
 ---
 title: Screen reader text supported
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: How screen reader text must be supported on an accessibility-ready theme
 nav_order: 17
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/screen-reader-text/
 ---
 
 # Screen reader text supported

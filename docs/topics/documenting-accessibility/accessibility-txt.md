@@ -117,7 +117,7 @@ You may use any naming convention for your class, but must visually hide content
 
 ### Accessibility Features
 
-A list or description of accessibility enhancements built into the theme or plugin above and beyond [theme accessibility-ready requirements]({{site.baseurl}}/docs/topics/theme-guidelines/). This section can be omitted if no features exist.
+A list or description of accessibility enhancements built into the theme or plugin above and beyond [theme accessibility-ready requirements]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/). This section can be omitted if no features exist.
 
 **Example:**
 

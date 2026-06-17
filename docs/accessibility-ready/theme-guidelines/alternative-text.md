@@ -1,9 +1,14 @@
 ---
 title: Alternative text on images and graphics
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: Use of alternative text requirements for accessibility-ready themes
 nav_order: 10
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/alternative-text/
 ---
 
 # Alternative text on images and graphics

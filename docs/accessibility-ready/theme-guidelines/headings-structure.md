@@ -1,9 +1,14 @@
 ---
 title: Headings with meaningful structure
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready theme requirements for how to use headings
 nav_order: 6
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/headings-structure/
 ---
 
 # Headings with meaningful structure
