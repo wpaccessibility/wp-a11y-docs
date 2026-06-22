@@ -1,7 +1,7 @@
 ---
 title: Accessibility-ready themes
 layout: default
-parent: Accessibility-ready tag
+parent: Accessibility-ready program
 description: How to find an accessibility-ready theme for your WordPress website.
 nav_order: 3
 contributors:
