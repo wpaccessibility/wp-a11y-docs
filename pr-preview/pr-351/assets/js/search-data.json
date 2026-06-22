@@ -1457,21 +1457,21 @@
   },"208": {
     "doc": "Identifying themes that need to be tested",
     "title": "Identifying themes that need to be tested",
-    "description": "How to find themes that have requested an accessibility-ready tag review.",
+    "description": "How to find themes that have requested an accessibility-ready review.",
     "content": "There are two ways to find themes that need an accessibility ready review. How you find them varies based on if the theme has already been published in the Themes directory or if it is still under review. ",
     "url": "/pr-preview/pr-351/docs/accessibility-ready/testing-themes/identifying-themes/",
     "relUrl": "/docs/accessibility-ready/testing-themes/identifying-themes/"
   },"209": {
     "doc": "Identifying themes that need to be tested",
     "title": "New Themes",
-    "description": "How to find themes that have requested an accessibility-ready tag review.",
+    "description": "How to find themes that have requested an accessibility-ready review.",
     "content": "Themes that are not yet approved by the themes team and that have added the accessibility-ready tag can be found in the Themes Trac. If you choose to review one of these themes, leave a comment on the thread noting that you are reviewing the theme for accessibility so the assigned reviewer from the Themes Team, the developer, and other people from the Accessibility Team are aware that it is getting reviewed. ",
     "url": "/pr-preview/pr-351/docs/accessibility-ready/testing-themes/identifying-themes/#new-themes",
     "relUrl": "/docs/accessibility-ready/testing-themes/identifying-themes/#new-themes"
   },"210": {
     "doc": "Identifying themes that need to be tested",
     "title": "Existing Themes",
-    "description": "How to find themes that have requested an accessibility-ready tag review.",
+    "description": "How to find themes that have requested an accessibility-ready review.",
     "content": "Developers of themes that are already live request a review via a form on the accessibility team website (log in required). Form entries and their status are tracked in a Google spreadsheet: WordPress Theme Accessibility Ready Theme Review Requests. If you choose to review one of these themes, change the Status column for the theme to Reviewing and add your WordPress.org username in the Assigned To Username column. ",
     "url": "/pr-preview/pr-351/docs/accessibility-ready/testing-themes/identifying-themes/#existing-themes",
     "relUrl": "/docs/accessibility-ready/testing-themes/identifying-themes/#existing-themes"
@@ -1533,15 +1533,15 @@
     "relUrl": "/blog/"
   },"219": {
     "doc": "Theme accessibility-ready testing process",
-    "title": "Set up testing for the WordPress themes accessibility-ready tag",
-    "description": "How to set up an accessibility test for the accessibility-ready tag on WordPress.org.",
-    "content": "How to set up an accessibility test for the accessibility-ready tag on WordPress.org. This section outlines the steps for conducting a theme accessibility-ready requirements review. Detailed testing instructions for each requirement can be found in the theme accessibility guidelines doc. ",
-    "url": "/pr-preview/pr-351/docs/accessibility-ready/testing-themes/#set-up-testing-for-the-wordpress-themes-accessibility-ready-tag",
-    "relUrl": "/docs/accessibility-ready/testing-themes/#set-up-testing-for-the-wordpress-themes-accessibility-ready-tag"
+    "title": "Set up testing for the WordPress themes accessibility-ready program",
+    "description": "How to set up an accessibility test for the accessibility-ready program on WordPress.org.",
+    "content": "How to set up an accessibility test for the accessibility-ready program on WordPress.org. This section outlines the steps for conducting a theme accessibility-ready requirements review. Detailed testing instructions for each requirement can be found in the theme accessibility guidelines doc. ",
+    "url": "/pr-preview/pr-351/docs/accessibility-ready/testing-themes/#set-up-testing-for-the-wordpress-themes-accessibility-ready-program",
+    "relUrl": "/docs/accessibility-ready/testing-themes/#set-up-testing-for-the-wordpress-themes-accessibility-ready-program"
   },"220": {
     "doc": "Theme accessibility-ready testing process",
     "title": "Theme accessibility-ready testing process",
-    "description": "How to set up an accessibility test for the accessibility-ready tag on WordPress.org.",
+    "description": "How to set up an accessibility test for the accessibility-ready program on WordPress.org.",
     "content": " ",
     "url": "/pr-preview/pr-351/docs/accessibility-ready/testing-themes/",
     "relUrl": "/docs/accessibility-ready/testing-themes/"
@@ -1568,29 +1568,29 @@
     "relUrl": "/docs/accessibility-ready/themes/"
   },"224": {
     "doc": "Theme accessibility-ready guidelines",
-    "title": "Theme guidelines for the WordPress accessibility-ready tag",
-    "description": "Learn about the guidelines for the accessibility-ready tag on WordPress.org.",
-    "content": "Theme developers may request an optional accessibility review as part of the theme review process or later for an existing theme. Submitted themes (or theme updates) that pass a manual review are approved to use the accessibility-ready tag and show up in the theme directory as accessibility-ready. This section outlines the requirements for the accessibility-ready tag with testing instructions for each requirement. For additional information about the accessibility ready testing process, see: . | Theme developer handbook: Accessibility | Accessibility-ready testing process | . ",
-    "url": "/pr-preview/pr-351/docs/accessibility-ready/theme-guidelines/#theme-guidelines-for-the-wordpress-accessibility-ready-tag",
-    "relUrl": "/docs/accessibility-ready/theme-guidelines/#theme-guidelines-for-the-wordpress-accessibility-ready-tag"
+    "title": "Theme guidelines for the WordPress accessibility-ready program",
+    "description": "Learn about the accessibility-ready guidelines on WordPress.org.",
+    "content": "Theme developers may request an optional accessibility review as part of the theme review process or later for an existing theme. Submitted themes (or theme updates) that pass a manual review are approved to be accessibility-ready and show up in the theme directory as accessibility-ready. This section outlines the accessibility-ready requirements with testing instructions for each requirement. For additional information about the accessibility ready testing process, see: . | Theme developer handbook: Accessibility | Accessibility-ready testing process | . ",
+    "url": "/pr-preview/pr-351/docs/accessibility-ready/theme-guidelines/#theme-guidelines-for-the-wordpress-accessibility-ready-program",
+    "relUrl": "/docs/accessibility-ready/theme-guidelines/#theme-guidelines-for-the-wordpress-accessibility-ready-program"
   },"225": {
     "doc": "Theme accessibility-ready guidelines",
     "title": "Theme accessibility-ready guidelines",
-    "description": "Learn about the guidelines for the accessibility-ready tag on WordPress.org.",
+    "description": "Learn about the accessibility-ready guidelines on WordPress.org.",
     "content": " ",
     "url": "/pr-preview/pr-351/docs/accessibility-ready/theme-guidelines/",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/"
   },"226": {
-    "doc": "Accessibility-ready tag",
-    "title": "The accessibility-ready tag for WordPress themes",
-    "description": "The accessibility-ready tag for WordPress themes.",
-    "content": "This documentation describes the requirements for earning the accessibility-tag on your theme, how to for it apply it, how to test for it and how to set up a test environment. ",
-    "url": "/pr-preview/pr-351/docs/accessibility-ready/#the-accessibility-ready-tag-for-wordpress-themes",
-    "relUrl": "/docs/accessibility-ready/#the-accessibility-ready-tag-for-wordpress-themes"
+    "doc": "Accessibility-ready program",
+    "title": "The accessibility-ready program for WordPress",
+    "description": "The `accessibility-ready` requirements for WordPress, how to for it apply it, how to test for it and how to set up a test environment.",
+    "content": "This documentation describes the accessibility-ready requirements, how to for it apply it, how to test for it and how to set up a test environment. ",
+    "url": "/pr-preview/pr-351/docs/accessibility-ready/#the-accessibility-ready-program-for-wordpress",
+    "relUrl": "/docs/accessibility-ready/#the-accessibility-ready-program-for-wordpress"
   },"227": {
-    "doc": "Accessibility-ready tag",
-    "title": "Accessibility-ready tag",
-    "description": "The accessibility-ready tag for WordPress themes.",
+    "doc": "Accessibility-ready program",
+    "title": "Accessibility-ready program",
+    "description": "The `accessibility-ready` requirements for WordPress, how to for it apply it, how to test for it and how to set up a test environment.",
     "content": " ",
     "url": "/pr-preview/pr-351/docs/accessibility-ready/",
     "relUrl": "/docs/accessibility-ready/"
@@ -2032,7 +2032,7 @@
     "doc": "Reading guide",
     "title": "Reading guide",
     "description": "Find documentation for your work role, work field and expertise.",
-    "content": "Find the documentation for your work role, work field and expertise. Getting Started . | Start with accessibility. | Checklists for accessibility testing. | WordPress plugins for accessibility testing. | Accessibility legislation. | Find accessible WordPress themes. | . Content managers and writers . | Find training that fits your needs, in Start with accessibility. | Content and images, in Standards and best practice. | Content checks, in Checklists for accessibility testing. | WordPress plugins for accessibility testing, in Test for accessibility. | . Design &amp; user experience specialists . | Find training that fits your needs, in Start with accessibility. | Design &amp; user experience, in Standards and best practice. | Web forms, in Standards and best practice. | Design checks, in Checklists for accessibility testing: | . Website and plugin developers . | Find training that fits your needs, in Start with accessibility. | Frontend code, in Standards and best practice. | How to build accessible web forms, in Standards and best practice. | Frontend checks, in Checklists for accessibility testing. | . Theme developers . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | Guidelines for the WordPress accessibility-ready tag, in Standards and best practice. | Set up testing for the WordPress themes accessibility-ready tag, in Test for accessibility. | . Quality assurance and auditing . | Documenting accessibility, in Standards and best practice. | Accessibility legislation, in Standards and best practice. | Test for accessibility. | WordPress plugins for testing in Test for accessibility. | Accessibility for your business, in Start with accessibility. | Guidelines for the WordPress accessibility-ready tag in Standards and best practice. | Set up testing for the WordPress themes accessibility-ready tag, in Test for accessibility. | . WordPress core contributors . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | Test for accessibility. | WordPress and accessibility. | . Management . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . Stakeholders and site owners . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . ",
+    "content": "Find the documentation for your work role, work field and expertise. Getting Started . | Start with accessibility. | Checklists for accessibility testing. | WordPress plugins for accessibility testing. | Accessibility legislation. | Find accessible WordPress themes. | . Content managers and writers . | Find training that fits your needs, in Start with accessibility. | Content and images, in Standards and best practice. | Content checks, in Checklists for accessibility testing. | WordPress plugins for accessibility testing, in Test for accessibility. | . Design &amp; user experience specialists . | Find training that fits your needs, in Start with accessibility. | Design &amp; user experience, in Standards and best practice. | Web forms, in Standards and best practice. | Design checks, in Checklists for accessibility testing: | . Website and plugin developers . | Find training that fits your needs, in Start with accessibility. | Frontend code, in Standards and best practice. | How to build accessible web forms, in Standards and best practice. | Frontend checks, in Checklists for accessibility testing. | . Theme developers . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | The accessibility-ready program for WordPress | Set up testing for the WordPress themes accessibility-ready tag, in Test for accessibility. | . Quality assurance and auditing . | Documenting accessibility, in Standards and best practice. | Accessibility legislation, in Standards and best practice. | Test for accessibility. | WordPress plugins for testing in Test for accessibility. | Accessibility for your business, in Start with accessibility. | The accessibility-ready program for WordPress. | Set up testing for the WordPress themes accessibility-ready program, in Test for accessibility. | . WordPress core contributors . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | Test for accessibility. | WordPress and accessibility. | . Management . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . Stakeholders and site owners . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . ",
     "url": "/pr-preview/pr-351/docs/start/guide/",
     "relUrl": "/docs/start/guide/"
   },"291": {
@@ -2914,7 +2914,7 @@
     "doc": "Home",
     "title": "Reading guide",
     "description": "Accessibility Knowledge Base for WordPress users and creators.",
-    "content": "Find the documentation for your work role, work field and expertise. Getting Started . | Start with accessibility. | Checklists for accessibility testing. | WordPress plugins for accessibility testing. | Accessibility legislation. | Find accessible WordPress themes. | . Content managers and writers . | Find training that fits your needs, in Start with accessibility. | Content and images, in Standards and best practice. | Content checks, in Checklists for accessibility testing. | WordPress plugins for accessibility testing, in Test for accessibility. | . Design &amp; user experience specialists . | Find training that fits your needs, in Start with accessibility. | Design &amp; user experience, in Standards and best practice. | Web forms, in Standards and best practice. | Design checks, in Checklists for accessibility testing: | . Website and plugin developers . | Find training that fits your needs, in Start with accessibility. | Frontend code, in Standards and best practice. | How to build accessible web forms, in Standards and best practice. | Frontend checks, in Checklists for accessibility testing. | . Theme developers . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | Guidelines for the WordPress accessibility-ready tag, in Standards and best practice. | Set up testing for the WordPress themes accessibility-ready tag, in Test for accessibility. | . Quality assurance and auditing . | Documenting accessibility, in Standards and best practice. | Accessibility legislation, in Standards and best practice. | Test for accessibility. | WordPress plugins for testing in Test for accessibility. | Accessibility for your business, in Start with accessibility. | Guidelines for the WordPress accessibility-ready tag in Standards and best practice. | Set up testing for the WordPress themes accessibility-ready tag, in Test for accessibility. | . WordPress core contributors . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | Test for accessibility. | WordPress and accessibility. | . Management . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . Stakeholders and site owners . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . ",
+    "content": "Find the documentation for your work role, work field and expertise. Getting Started . | Start with accessibility. | Checklists for accessibility testing. | WordPress plugins for accessibility testing. | Accessibility legislation. | Find accessible WordPress themes. | . Content managers and writers . | Find training that fits your needs, in Start with accessibility. | Content and images, in Standards and best practice. | Content checks, in Checklists for accessibility testing. | WordPress plugins for accessibility testing, in Test for accessibility. | . Design &amp; user experience specialists . | Find training that fits your needs, in Start with accessibility. | Design &amp; user experience, in Standards and best practice. | Web forms, in Standards and best practice. | Design checks, in Checklists for accessibility testing: | . Website and plugin developers . | Find training that fits your needs, in Start with accessibility. | Frontend code, in Standards and best practice. | How to build accessible web forms, in Standards and best practice. | Frontend checks, in Checklists for accessibility testing. | . Theme developers . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | The accessibility-ready program for WordPress | Set up testing for the WordPress themes accessibility-ready tag, in Test for accessibility. | . Quality assurance and auditing . | Documenting accessibility, in Standards and best practice. | Accessibility legislation, in Standards and best practice. | Test for accessibility. | WordPress plugins for testing in Test for accessibility. | Accessibility for your business, in Start with accessibility. | The accessibility-ready program for WordPress. | Set up testing for the WordPress themes accessibility-ready program, in Test for accessibility. | . WordPress core contributors . | Find training that fits your needs, in Start with accessibility. | Standards and best practice. | Test for accessibility. | WordPress and accessibility. | . Management . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . Stakeholders and site owners . | Start with accessibility. | Find training that fits your needs. | Introduction to WCAG. | Accessibility for your business. | They’re not my visitors. | Overlays and why not to use them. | . | Accessibility legislation, in Standards and best practice. | Documenting Accessibility, including how to write an accessibility statement. | . ",
     "url": "/pr-preview/pr-351/#reading-guide",
     "relUrl": "/#reading-guide"
   },"417": {
