@@ -25,5 +25,5 @@ Find the documentation for your work role, work field and expertise.
 ## New and updated content
 
 By Amber Hinds and Joe Dolson in May 2026:
-- [Guidelines for the WordPress accessibility-ready tag]({{site.baseurl}}/docs/topics/theme-guidelines/).
+- [Guidelines for the WordPress accessibility-ready tag]({{site.baseurl}}/docs/accessibility-ready/).
 - [Set up testing for the WordPress themes accessibility-ready tag]({{site.baseurl}}/docs/testing/testing-themes/).
