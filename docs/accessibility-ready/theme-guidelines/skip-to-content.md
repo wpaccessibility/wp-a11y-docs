@@ -1,9 +1,14 @@
 ---
 title: Skip to Content Link
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: The requirements for a Skip to Content link on accessibility-ready themes.
 nav_order: 1
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/skip-to-content/
 ---
 
 # Skip to Content Link

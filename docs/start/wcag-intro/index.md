@@ -172,7 +172,7 @@ Most European laws implementing the [European Accessibility Act](https://commiss
 
 The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme. 
 
-You can find the WordPress theme guidelines for the accessibility-ready tag at: [Theme accessibility guidelines]({{site.baseurl}}/docs/topics/theme-guidelines/).
+You can find the WordPress theme guidelines for the accessibility-ready tag at: [Theme accessibility guidelines]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/).
 
 ## Resources
 

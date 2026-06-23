@@ -1,14 +1,19 @@
 ---
 title: Testing workflow tips
 layout: default
-parent: Accessibility-ready testing process
+parent: Theme accessibility-ready testing process
 description: How to set up a test site and reporting document for accessibility-ready reviews.
 nav_order: 4
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/testing/testing-themes/theme-testing-workflow/
 ---
 
 # Testing workflow tips
 
-Once you have [set up your test site and reporting document]({{site.baseurl}}/docs/testing/testing-themes/setup/), you can begin the theme testing process. The guidance below focuses on how to test efficiently and report issues quickly. 
+Once you have [set up your test site and reporting document]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/setup/), you can begin the theme testing process. The guidance below focuses on how to test efficiently and report issues quickly. 
 
 ## Consider your browser window layout
 
@@ -16,7 +21,7 @@ A consistent desktop and browser setup will significantly reduce context switchi
 
 **Suggested setup:**
 * Keep your reporting spreadsheet open in a browser window wide enough to show all columns without scrolling.
-* Open the [theme accessibility guidelines]({{site.baseurl}}/docs/topics/theme-guidelines/) in a separate browser window so you can reference instructions as needed while you work. This can be very narrow if you're working on one monitor with limited space.
+* Open the [theme accessibility guidelines]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/) in a separate browser window so you can reference instructions as needed while you work. This can be very narrow if you're working on one monitor with limited space.
 * Open all pages you need to test in separate tabs so you can quickly switch between them without needing to navigate back and forth. Open these pages in the **same order they appear in the reporting sheet**. This alignment makes it much easier to record results accurately.
 
 ## Choosing a testing approach that works best for you

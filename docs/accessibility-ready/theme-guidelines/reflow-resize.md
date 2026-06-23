@@ -1,9 +1,14 @@
 ---
 title: Support for reflow, resize, and text spacing changes
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: Requirements for handling reflow, resize, and text spacing in accessibility-ready themes
 nav_order: 12
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/reflow-resize/
 ---
 
 # Support for reflow, resize, and text spacing changes

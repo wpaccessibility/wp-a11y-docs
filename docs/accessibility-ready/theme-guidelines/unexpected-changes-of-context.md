@@ -1,9 +1,14 @@
 ---
 title: No unexpected changes of context
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: Requirements for changes of context in accessibility-ready themes
 nav_order: 13
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/unexpected-changes-of-context/
 ---
 
 # No unexpected changes of context

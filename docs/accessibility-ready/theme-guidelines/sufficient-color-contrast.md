@@ -1,9 +1,14 @@
 ---
 title: Sufficient color contrast of text and UI controls
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: Color contrast requirements in accessibility-ready themes
 nav_order: 9
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/sufficient-color-contrast/
 ---
 
 # Sufficient color contrast of text and UI controls
