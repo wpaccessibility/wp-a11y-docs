@@ -40,3 +40,4 @@ Use [meaningful headings]({{site.baseurl}}/docs/topics/content/headings/), [good
 - [Tips on Writing for Web Accessibility](https://www.w3.org/WAI/gettingstarted/tips/writing.html#keep-content-clear-and-concise)
 - [Dos and don’ts on designing for accessibility, designing for people with dyslexia](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
 - [1Up Your Writing with Plain Language](http://www.handcoding.com/presentations/plainwriting/#cover) (slides)
+- [Reading level, accessibility for web writers](http://4syllables.com.au/articles/accessibility-writers-reading/)
