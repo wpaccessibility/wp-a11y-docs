@@ -1,9 +1,14 @@
 ---
 title: Identifying themes that need to be tested
 layout: default
-parent: Accessibility-ready testing process
-description: How to find themes that have requested an accessibility-ready tag review.
+parent: Theme accessibility-ready testing process
+description: How to find themes that have requested an accessibility-ready review.
 nav_order: 1
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/testing/testing-themes/identifying-themes/
 ---
 
 # Identifying themes that need to be tested

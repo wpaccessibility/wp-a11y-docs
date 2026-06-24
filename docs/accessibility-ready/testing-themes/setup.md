@@ -1,9 +1,14 @@
 ---
 title: Getting set up to test
 layout: default
-parent: Accessibility-ready testing process
+parent: Theme accessibility-ready testing process
 description: How to set up a test site and reporting document for accessibility-ready reviews.
 nav_order: 2
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/testing/testing-themes/setup/
 ---
 
 # Getting set up to test
@@ -47,7 +52,7 @@ After creating the site, you need to install and setup the theme for testing. He
 
 #### Installing and activating the theme
 
-1. Determine if you're testing a new theme or existing theme. ([See Identifying themes that need to be tested]({{site.baseurl}}/docs/testing/testing-themes/identifying-themes/)) 
+1. Determine if you're testing a new theme or existing theme. ([See Identifying themes that need to be tested]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/identifying-themes/)) 
 2. Install the theme in the testing site following these instructions:
     1. If the theme is a new theme or an existing theme with an unreleased new version:
         1. Go to the Trac ticket for the theme.

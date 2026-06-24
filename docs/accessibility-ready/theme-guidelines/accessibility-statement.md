@@ -1,12 +1,14 @@
 ---
 title: Accessibility statement
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 nav_order: 16
 description: Accessibility Statement requirements for Accessibility-ready themes
 contributors:
   - Amber Hinds 
   - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/accessibility-statement/
 ---
 
 # Accessibility statement

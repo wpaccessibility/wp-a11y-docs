@@ -1,9 +1,14 @@
 ---
 title: Must not recommend or require inaccessible plugins
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 nav_order: 17
 description: Accessibility-ready themes must not recommend or require inaccessible plugins.
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/no-inaccessible-plugins/
 ---
 
 # Must not recommend or require inaccessible plugins

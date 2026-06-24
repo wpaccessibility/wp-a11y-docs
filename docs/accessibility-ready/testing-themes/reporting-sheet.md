@@ -1,14 +1,19 @@
 ---
 title: Reporting sheet overview
 layout: default
-parent: Accessibility-ready testing process
+parent: Theme accessibility-ready testing process
 description: How to set up a test site and reporting document for accessibility-ready reviews.
 nav_order: 3
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/testing/testing-themes/report-sheet/
 ---
 
 # Reporting sheet overview
 
-As described in _[Getting set up to test]({{site.baseurl}}/docs/testing/testing-themes/setup/)_, accessibility ready reports are generated using a Google Sheets template. This ensures that all reports are consistent between testers and helps guide the testing process so nothing is missed. The reporting sheet has three tabs which are described in detail below.
+As described in _[Getting set up to test]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/setup/)_, accessibility ready reports are generated using a Google Sheets template. This ensures that all reports are consistent between testers and helps guide the testing process so nothing is missed. The reporting sheet has three tabs which are described in detail below.
 
 [View the Accessibility Ready Test Report Template](https://docs.google.com/spreadsheets/d/1sIHAPwwQIoJVj1ODg2FX2L_wf_CLNMLekQ2D-MvWGq4/edit?usp=sharing)
 
@@ -24,7 +29,7 @@ This tab is intended to:
 
 ### Theme test metadata section
 
-The top section captures identifying information for the review, when it was completed and who by. This information is filled in during the test setup process and is described in greater detail in [setup documentation]({{site.baseurl}}/docs/testing/testing-themes/setup/).
+The top section captures identifying information for the review, when it was completed and who by. This information is filled in during the test setup process and is described in greater detail in [setup documentation]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/setup/).
 
 ### Status explanation section
 

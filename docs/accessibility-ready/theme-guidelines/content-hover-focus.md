@@ -1,9 +1,14 @@
 ---
 title: Content on hover or focus is accessible
 layout: default
-parent: WP accessibility-ready guidelines
+parent: Theme accessibility-ready guidelines
 description: How to handle content revealed on hover or focus in accessibility-ready themes
 nav_order: 15
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/content-hover-focus/
 ---
 
 # Content on hover or focus is accessible
