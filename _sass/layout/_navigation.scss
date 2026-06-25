@@ -109,6 +109,9 @@
 
         .nav-list-link {
           color: $nav-child-link-color;
+		  min-height: 48px;
+		  display: flex;
+		  align-items: center;
 
           &.active {
             color: var(--color-wa11ypuu-yellow);
