@@ -13,7 +13,7 @@ redirect_from:
 
 # Reporting sheet overview
 
-As described in _[Getting set up to test]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/setup/)_, accessibility ready reports are generated using a Google Sheets template. This ensures that all reports are consistent between testers and helps guide the testing process so nothing is missed. The reporting sheet has three tabs which are described in detail below.
+As described in _[Getting set up to test]({{site.baseurl}}/docs/accessibility-ready/testing-themes/setup/)_, accessibility ready reports are generated using a Google Sheets template. This ensures that all reports are consistent between testers and helps guide the testing process so nothing is missed. The reporting sheet has three tabs which are described in detail below.
 
 [View the Accessibility Ready Test Report Template](https://docs.google.com/spreadsheets/d/1sIHAPwwQIoJVj1ODg2FX2L_wf_CLNMLekQ2D-MvWGq4/edit?usp=sharing)
 
@@ -148,7 +148,7 @@ This tab exists to:
 
 ### Structure of the generated markdown
 
-The output on this tab is intentionally formatted to work with Trac’s Markdown-like syntax, and includes the correct heading levels when pasted into a Trac comment, which starts with an H3 heading. 
+The output on this tab is intentionally formatted to work with Trac’s Markdown-like syntax, and includes the correct heading levels when pasted into a Trac comment, which starts with an H3 heading.
 
 In order for the report to fully function, the following fields must be completed:
 
