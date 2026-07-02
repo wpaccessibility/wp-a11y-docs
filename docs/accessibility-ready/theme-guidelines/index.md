@@ -21,4 +21,4 @@ This section outlines the `accessibility-ready` requirements with testing instru
 For additional information about the accessibility ready testing process, see:
 
 * [Theme developer handbook: Accessibility](https://make.wordpress.org/themes/handbook/review/accessibility/)
-* [Accessibility-ready testing process]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/)
+* [Accessibility-ready testing process]({{site.baseurl}}/docs/accessibility-ready/testing-themes/)
