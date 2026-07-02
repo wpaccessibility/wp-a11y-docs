@@ -20,7 +20,7 @@ Listed below are the major issues to address.
 
 ## Color contrast of text
 
-Check the color contrast ratio between **text** and its **background**. The rules in WCAG 2.2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold.
+Check the color contrast ratio between **text** and its **background**. The rules in WCAG 2.2 AA guidelines are: the color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold.
 
 Logos and logotype are exceptions to accessibility guidelines, including color contrast rules.
 
@@ -30,12 +30,12 @@ Documentation about color contrast: [Color contrast of text against its backgrou
 
 - [WebAIM Contrast Checker](http://webaim.org/resources/contrastchecker/).
 - [contrastchecker.com](http://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.
-- [Colour Contrast Analyser (CCA)](http://www.paciellogroup.com/resources/contrastAnalyser), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
+- [Colour Contrast Analyser (CCA)](https://vispero.com/lp/color-contrast-checker/), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
 - [Background Image & Text Contrast Checker](http://www.brandwood.com/a11y/), by Andrew Brandwood.
 
 ## Not by color alone
 
-Functionality must be understandable also for people who can not see colors.
+Functionality must be understandable also for people who cannot see colors.
 
 - Don’t depend on color for meaning. It’s fine to use color, as long as that isn’t the only identifying characteristic.
 - Links in text must stand out as links, make them underlined.
@@ -50,8 +50,8 @@ Related documentation:
 
 ### Color-blindness checks and tools:
 
-- Look at your design only in gray scale colors, remove all color. Can you still understand it?
-- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), macOS app tool for color-blindness check.
+- Look at your design only in gray scale colors, remove all colors. Can you still understand it?
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), a macOS app tool for color-blindness check.
 - [Coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/), color-blindness simulator by Colblindor.
 
 ## Readability
@@ -59,7 +59,7 @@ Related documentation:
 Please note: these are recommendations and not WCAG 2.2 AA requirements:
 
 - Break text into hierarchical headings (H1, H2, H3).
-- Avoid all uppercase for headings or paragraph of text.
+- Avoid all uppercase for headings or paragraphs of text.
 - Use a readable font for the main or important text. Handwritten font is harder to read.
 - Use a font size of 16 pixels minimum.
 - Align text to the left or right, avoiding justified text.
@@ -71,9 +71,13 @@ Related documentation: [Readability]({{site.baseurl}}/docs/topics/content/readab
 
 Keep together what belongs together: place related links or controls near each other.
 
-Make the order of things logical when you read from the read from the top down. For example, do not put required check boxes below the submit button in a form.
+Make the order of things logical when you read from the read from the top down. For example, do not put required check boxes below the Submit button in a form.
 
 ## Animation
 
 - Users must be able to pause animations, or the animations must automatically stop after 3 seconds
 - Avoid using too many elements that distract the user from reading the text or using the navigation.
+
+Related documentation: 
+- [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/) in Frontend code
+- [Accessible audio, video, and animations]({{site.baseurl}}/docs/topics/content/audio-video-and-animations/).

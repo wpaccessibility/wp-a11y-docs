@@ -4,6 +4,8 @@ layout: default
 parent: Test for accessibility
 description: Complete checks against the Web Content Accessibility Guidelines.
 nav_order: 1
+contributors: 
+  - Rian Rietveld
 ---
 
 # Complete checks against the Web Content Accessibility Guidelines
@@ -16,4 +18,7 @@ Listed are checklists that explain how to **manually check** for each WCAG succe
 
 [Check your WCAG compliance](https://www.a11yproject.com/checklist/) by the A11y Project. The checks for the WCAG success criteria are ordered by topic.
 
-If you want to officially document the results of your checks, use the [WCAG EM reporting tool](https://www.w3.org/WAI/eval/report-tool/) by the W3C.
+To officially document the results of your checks, use the [WCAG EM reporting tool](https://www.w3.org/WAI/eval/report-tool/) by the W3C.
+
+{: .callout  .info }
+**Note**: If you only want to test for the `accessibility-ready` requirements, please read [Set up testing for the WordPress themes accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/testing-themes/). These requirements don't cover all the WCAG success criteria.
