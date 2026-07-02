@@ -18,20 +18,28 @@ Read the detailed documentation accessible design in [Design and user experience
 
 Listed below are the major issues to address. 
 
-## Color contrast of text
+## Color contrast
 
-Check the color contrast ratio between **text** and its **background**. The rules in WCAG 2.2 AA guidelines are: the color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold.
+Check the color contrast ratio between **text** and its **background**. The guideline in WCAG 2.2 AA guidelines is: 
+- the color contrast ratio between text and background must be 4.5 or more for normal text and 
+- 3.1 or more for text of at least 24 pixels or 19 pixels bold.
 
-Logos and logotype are exceptions to accessibility guidelines, including color contrast rules.
+Text in logos and logotypes are excluded from this guideline.
 
-Documentation about color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/).
+**Non-text elements** that have meaning should have a color contrast of 3.1 or more against its **background**.
+For example: icons, borders of input fields, checkboxes or radio buttons.
+Also check for different states (light/dark mode, checked, not checked). They all must have a color contrast of 3.1 or more.
+
+Documentation about color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice: Design and user experience.
 
 ### Populair color contrast checkers
 
+- [Figma Contrast Plugin](https://www.figma.com/community/plugin/748533339900865323).
+- [Figma Color Contrast Checker Plugin](https://www.figma.com/color-contrast-checker/).
+- [Figma WCAG Plugin](https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin).
+- [Colour Contrast Analyser (CCA)](https://vispero.com/lp/color-contrast-checker/), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
 - [WebAIM Contrast Checker](http://webaim.org/resources/contrastchecker/).
 - [contrastchecker.com](http://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.
-- [Colour Contrast Analyser (CCA)](https://vispero.com/lp/color-contrast-checker/), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
-- [Background Image & Text Contrast Checker](http://www.brandwood.com/a11y/), by Andrew Brandwood.
 
 ## Not by color alone
 
@@ -40,13 +48,13 @@ Functionality must be understandable also for people who cannot see colors.
 - Don’t depend on color for meaning. It’s fine to use color, as long as that isn’t the only identifying characteristic.
 - Links in text must stand out as links, make them underlined.
 - Use clear hover and focus states, not depending on color alone.
-- Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds; include clear text messages as well.
+- Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds. Include clear text messages as well.
 
 Related documentation: 
-- [Use of color]({{site.baseurl}}/docs/topics/design/color/use-of-color/).
-- [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/).
-- [Styling links]({{site.baseurl}}/docs/topics/design/links/).
-- [Write out an error message in text]({{site.baseurl}}/docs/topics/forms/feedback/error-message-format/).
+- [Use of color]({{site.baseurl}}/docs/topics/design/color/use-of-color/), in Standard and best practice: Design and user experience.
+- [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/), in Standard and best practice: Design and user experience.
+- [Styling links]({{site.baseurl}}/docs/topics/design/links/), in Standard and best practice: Design and user experience.
+- [Write out an error message in text]({{site.baseurl}}/docs/topics/forms/feedback/error-message-format/), in Standard and best practice: Web forms
 
 ### Color-blindness checks and tools:
 
@@ -63,9 +71,16 @@ Please note: these are recommendations and not WCAG 2.2 AA requirements:
 - Use a readable font for the main or important text. Handwritten font is harder to read.
 - Use a font size of 16 pixels minimum.
 - Align text to the left or right, avoiding justified text.
-- Avoid large blocks of text. Use short paragraphs, headings and lists to divide the information.
+- Avoid large blocks of text. Use short paragraphs, headings, and lists to divide the information.
 
-Related documentation: [Readability]({{site.baseurl}}/docs/topics/content/readability/).
+Related documentation: 
+- [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/) in Theme guidelines for the WordPress accessibility-ready program.
+- [Headings in the content]({{site.baseurl}}/docs/topics/content/headings/) in Standards and best Practices: Content and images.
+- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Standards and best Practices: Frontend code.
+- [Readability]({{site.baseurl}}/docs/topics/content/readability/), in Standard and best practice: Content and images.
+
+{: .callout .info}
+Note: The Web Content Accessibility Guidelines at level **AA** don't address readability. Decent readability is considered a recommendation. However, WCAG 2.2 Level **AAA** has four success criteria for readability: [3.1.3 Unusual Words](https://www.w3.org/WAI/WCAG22/quickref/#unusual-words), [3.1.4 Abbreviations](https://www.w3.org/WAI/WCAG22/quickref/#abbreviations), [3.1.5 Reading level](https://www.w3.org/WAI/WCAG22/quickref/#reading-level), [3.1.6 Pronunciation](https://www.w3.org/WAI/WCAG22/quickref/#pronunciation).
 
 ## Proximity
 
