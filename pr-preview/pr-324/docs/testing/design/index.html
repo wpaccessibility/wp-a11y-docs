@@ -406,9 +406,9 @@
 
           <a href="/pr-preview/pr-324/docs/testing/overall/" class="nav-list-link">Complete WCAG checks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-324/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-324/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
@@ -418,9 +418,7 @@
 
           <a href="/pr-preview/pr-324/docs/testing/screen-readers/" class="nav-list-link">Screen reader</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-324/docs/testing/testing-themes/" class="nav-list-link">Accessibility-ready testing process</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-324/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/wp-a11y/" class="nav-list-link">WordPress and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WordPress and Accessibility submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -556,47 +554,57 @@
 
 <p>Listed below are the major issues to address.</p>
 
-<h2 id="color-contrast-of-text">Color contrast of text</h2>
+<h2 id="color-contrast">Color contrast</h2>
 
-<p>Check the color contrast ratio between <strong>text</strong> and its <strong>background</strong>. The rules in WCAG 2.2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold.</p>
+<p>Check the color contrast ratio between <strong>text</strong> and its <strong>background</strong>. The guideline in WCAG 2.2 AA guidelines is:</p>
+<ul>
+  <li>the color contrast ratio between text and background must be 4.5 or more for normal text and</li>
+  <li>3.1 or more for text of at least 24 pixels or 19 pixels bold.</li>
+</ul>
 
-<p>Logos and logotype are exceptions to accessibility guidelines, including color contrast rules.</p>
+<p>Text in logos and logotypes are excluded from this guideline.</p>
 
-<p>Documentation about color contrast: <a href="/pr-preview/pr-324/docs/topics/design/color/color-contrast-text/">Color contrast of text against its background</a>.</p>
+<p><strong>Non-text elements</strong> that have meaning should have a color contrast of 3.1 or more against its <strong>background</strong>.
+For example: icons, borders of input fields, checkboxes or radio buttons.
+Also check for different states (light/dark mode, checked, not checked). They all must have a color contrast of 3.1 or more.</p>
+
+<p>Documentation about color contrast: <a href="/pr-preview/pr-324/docs/topics/design/color/color-contrast-text/">Color contrast of text against its background</a> in Standards and best practice: Design and user experience.</p>
 
 <h3 id="populair-color-contrast-checkers">Populair color contrast checkers</h3>
 
 <ul>
+  <li><a href="https://www.figma.com/community/plugin/748533339900865323">Figma Contrast Plugin</a>.</li>
+  <li><a href="https://www.figma.com/color-contrast-checker/">Figma Color Contrast Checker Plugin</a>.</li>
+  <li><a href="https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin">Figma WCAG Plugin</a>.</li>
+  <li><a href="https://vispero.com/lp/color-contrast-checker/">Colour Contrast Analyser (CCA)</a>, Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.</li>
   <li><a href="http://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>.</li>
   <li><a href="http://contrastchecker.com/">contrastchecker.com</a> (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.</li>
-  <li><a href="http://www.paciellogroup.com/resources/contrastAnalyser">Colour Contrast Analyser (CCA)</a>, Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.</li>
-  <li><a href="http://www.brandwood.com/a11y/">Background Image &amp; Text Contrast Checker</a>, by Andrew Brandwood.</li>
 </ul>
 
 <h2 id="not-by-color-alone">Not by color alone</h2>
 
-<p>Functionality must be understandable also for people who can not see colors.</p>
+<p>Functionality must be understandable also for people who cannot see colors.</p>
 
 <ul>
   <li>Don’t depend on color for meaning. It’s fine to use color, as long as that isn’t the only identifying characteristic.</li>
   <li>Links in text must stand out as links, make them underlined.</li>
   <li>Use clear hover and focus states, not depending on color alone.</li>
-  <li>Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds; include clear text messages as well.</li>
+  <li>Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds. Include clear text messages as well.</li>
 </ul>
 
 <p>Related documentation:</p>
 <ul>
-  <li><a href="/pr-preview/pr-324/docs/topics/design/color/use-of-color/">Use of color</a>.</li>
-  <li><a href="/pr-preview/pr-324/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a>.</li>
-  <li><a href="/pr-preview/pr-324/docs/topics/design/links/">Styling links</a>.</li>
-  <li><a href="/pr-preview/pr-324/docs/topics/forms/feedback/error-message-format/">Write out an error message in text</a>.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/design/color/use-of-color/">Use of color</a>, in Standard and best practice: Design and user experience.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a>, in Standard and best practice: Design and user experience.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/design/links/">Styling links</a>, in Standard and best practice: Design and user experience.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/forms/feedback/error-message-format/">Write out an error message in text</a>, in Standard and best practice: Web forms</li>
 </ul>
 
 <h3 id="color-blindness-checks-and-tools">Color-blindness checks and tools:</h3>
 
 <ul>
-  <li>Look at your design only in gray scale colors, remove all color. Can you still understand it?</li>
-  <li><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a>, macOS app tool for color-blindness check.</li>
+  <li>Look at your design only in gray scale colors, remove all colors. Can you still understand it?</li>
+  <li><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a>, a macOS app tool for color-blindness check.</li>
   <li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/">Coblis</a>, color-blindness simulator by Colblindor.</li>
 </ul>
 
@@ -606,26 +614,40 @@
 
 <ul>
   <li>Break text into hierarchical headings (H1, H2, H3).</li>
-  <li>Avoid all uppercase for headings or paragraph of text.</li>
+  <li>Avoid all uppercase for headings or paragraphs of text.</li>
   <li>Use a readable font for the main or important text. Handwritten font is harder to read.</li>
   <li>Use a font size of 16 pixels minimum.</li>
   <li>Align text to the left or right, avoiding justified text.</li>
-  <li>Avoid large blocks of text. Use short paragraphs, headings and lists to divide the information.</li>
+  <li>Avoid large blocks of text. Use short paragraphs, headings, and lists to divide the information.</li>
 </ul>
 
-<p>Related documentation: <a href="/pr-preview/pr-324/docs/topics/content/readability/">Readability</a>.</p>
+<p>Related documentation:</p>
+<ul>
+  <li><a href="/pr-preview/pr-324/docs/accessibility-ready/theme-guidelines/headings-structure/">Headings with meaningful structure</a> in Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/content/headings/">Headings in the content</a> in Standards and best Practices: Content and images.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/code/heading-structure/">Heading structure in theme development</a> in Standards and best Practices: Frontend code.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/content/readability/">Readability</a>, in Standard and best practice: Content and images.</li>
+</ul>
+
+<p class="callout info">Note: The Web Content Accessibility Guidelines at level <strong>AA</strong> don’t address readability. Decent readability is considered a recommendation. However, WCAG 2.2 Level <strong>AAA</strong> has four success criteria for readability: <a href="https://www.w3.org/WAI/WCAG22/quickref/#unusual-words">3.1.3 Unusual Words</a>, <a href="https://www.w3.org/WAI/WCAG22/quickref/#abbreviations">3.1.4 Abbreviations</a>, <a href="https://www.w3.org/WAI/WCAG22/quickref/#reading-level">3.1.5 Reading level</a>, <a href="https://www.w3.org/WAI/WCAG22/quickref/#pronunciation">3.1.6 Pronunciation</a>.</p>
 
 <h2 id="proximity">Proximity</h2>
 
 <p>Keep together what belongs together: place related links or controls near each other.</p>
 
-<p>Make the order of things logical when you read from the read from the top down. For example, do not put required check boxes below the submit button in a form.</p>
+<p>Make the order of things logical when you read from the read from the top down. For example, do not put required check boxes below the Submit button in a form.</p>
 
 <h2 id="animation">Animation</h2>
 
 <ul>
   <li>Users must be able to pause animations, or the animations must automatically stop after 3 seconds</li>
   <li>Avoid using too many elements that distract the user from reading the text or using the navigation.</li>
+</ul>
+
+<p>Related documentation:</p>
+<ul>
+  <li><a href="/pr-preview/pr-324/docs/topics/code/images/image-animation/">Image animation and accessibility</a> in Frontend code</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/content/audio-video-and-animations/">Accessible audio, video, and animations</a>.</li>
 </ul>
 
 
@@ -638,7 +660,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> April 29, 2026</li>
+        <li><span>Last updated:</span> July 02, 2026</li>
 
         
 
@@ -692,18 +714,18 @@
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/content/"> Content checks</a>
+                    <a href="/pr-preview/pr-324/docs/testing/automated/"> Automated testing</a>
                 </h3>
-                <p>Find an overview of content checks for accessibility.</p>
+                <p>Learn about automated accessibility testing and validation.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/automated/"> Automated testing</a>
+                    <a href="/pr-preview/pr-324/docs/testing/content/"> Content checks</a>
                 </h3>
-                <p>Learn about automated accessibility testing and validation.</p>
+                <p>Find an overview of content checks for accessibility.</p>
             </li>
             
             
@@ -742,15 +764,6 @@
                     <a href="/pr-preview/pr-324/docs/testing/plugins/"> WP plugins for testing</a>
                 </h3>
                 <p>Find WordPress plugins that can help you test for accessibility on your website.</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/testing-themes/"> Accessibility-ready testing process</a>
-                </h3>
-                <p>How to set up an accessibility test for the accessibility-ready tag on WordPress.org.</p>
             </li>
             
             

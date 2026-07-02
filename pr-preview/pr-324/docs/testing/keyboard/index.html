@@ -406,9 +406,9 @@
 
           <a href="/pr-preview/pr-324/docs/testing/overall/" class="nav-list-link">Complete WCAG checks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-324/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-324/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
@@ -418,9 +418,7 @@
 
           <a href="/pr-preview/pr-324/docs/testing/screen-readers/" class="nav-list-link">Screen reader</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-324/docs/testing/testing-themes/" class="nav-list-link">Accessibility-ready testing process</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-324/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/wp-a11y/" class="nav-list-link">WordPress and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WordPress and Accessibility submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -552,23 +550,29 @@
 
 <p>All functionality should work using a <strong>keyboard</strong>. This is essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.</p>
 
-<h2 id="how-to-keyboard-test">How to keyboard test:</h2>
+<h2 id="how-to-keyboard-test">How to keyboard test</h2>
 
-<ul>
-  <li><a href="https://webaim.org/techniques/keyboard/">Keyboard Accessibility</a> by WebAIM</li>
-  <li><a href="http://rianrietveld.com/2016/05/10/keyboard/">Workshop keyboard accessibility</a></li>
-</ul>
+<p>Note: before you start testing with a keyboard on a Mac, make sure the settings of your computer are set to allow keyboard navigation: <a href="https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/">How to activate keyboard navigation on MacOS</a>.</p>
 
-<p>Tab through your pages, links and forms to do the following tests:</p>
+<p>A <strong>detailed guide</strong> of how to test with a keyboard only is added to the theme accessibility-ready guideline: <a href="/pr-preview/pr-324//docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/">Keyboard navigation support</a>.</p>
 
+<p>In short:</p>
+
+<p>Tab through your pages, links, and forms to do the following tests:</p>
 <ul>
   <li>Confirm all links can be reached and activated via keyboard, including any inside drop-downs</li>
   <li>Confirm all links have a strong visible focus indicator</li>
   <li>Confirm all focusable <a href="/pr-preview/pr-324/docs/topics/code/screen-reader-text/">visually hidden content</a> (such as <a href="/pr-preview/pr-324/docs/topics/code/components/skip-links/">skip links</a>) becomes visible when in focus.</li>
-  <li>Confirm all interactions – form fields, buttons, and other controls – can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.</li>
+  <li>Confirm all interactions like form fields, buttons, and other controls, can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.</li>
   <li>Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting.</li>
 </ul>
 
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://webaim.org/techniques/keyboard/">Keyboard Accessibility</a> by WebAIM.</li>
+  <li><a href="https://alphagov.github.io/guide-to-wcag/sc/2.1.1.html#how-to-check">2.1.1 Keyboard</a> on A guide to WCAG by the UK Government Digital Service.</li>
+</ul>
 
 
           
@@ -580,7 +584,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> March 03, 2026</li>
+        <li><span>Last updated:</span> July 02, 2026</li>
 
         
 
@@ -624,18 +628,18 @@
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/content/"> Content checks</a>
+                    <a href="/pr-preview/pr-324/docs/testing/automated/"> Automated testing</a>
                 </h3>
-                <p>Find an overview of content checks for accessibility.</p>
+                <p>Learn about automated accessibility testing and validation.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/automated/"> Automated testing</a>
+                    <a href="/pr-preview/pr-324/docs/testing/content/"> Content checks</a>
                 </h3>
-                <p>Learn about automated accessibility testing and validation.</p>
+                <p>Find an overview of content checks for accessibility.</p>
             </li>
             
             
@@ -674,15 +678,6 @@
                     <a href="/pr-preview/pr-324/docs/testing/plugins/"> WP plugins for testing</a>
                 </h3>
                 <p>Find WordPress plugins that can help you test for accessibility on your website.</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/testing-themes/"> Accessibility-ready testing process</a>
-                </h3>
-                <p>How to set up an accessibility test for the accessibility-ready tag on WordPress.org.</p>
             </li>
             
             

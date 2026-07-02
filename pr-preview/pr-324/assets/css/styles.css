@@ -959,6 +959,9 @@ body {
 }
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link {
   color: var(--color-neutral-inverse-color-subtle);
+  min-height: 48px;
+  display: flex;
+  align-items: center;
 }
 .nav-list .nav-list-item > .nav-list .nav-list-item .nav-list-link.active {
   color: var(--color-wa11ypuu-yellow);

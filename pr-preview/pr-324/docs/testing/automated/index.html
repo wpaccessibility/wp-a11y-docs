@@ -406,9 +406,9 @@
 
           <a href="/pr-preview/pr-324/docs/testing/overall/" class="nav-list-link">Complete WCAG checks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
-
           <a href="/pr-preview/pr-324/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
+
+          <a href="/pr-preview/pr-324/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
@@ -418,9 +418,7 @@
 
           <a href="/pr-preview/pr-324/docs/testing/screen-readers/" class="nav-list-link">Screen reader</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-324/docs/testing/testing-themes/" class="nav-list-link">Accessibility-ready testing process</a></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-324/docs/testing/plugins/" class="nav-list-link">WP plugins for testing</a></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/wp-a11y/" class="nav-list-link">WordPress and Accessibility</a><button class="nav-list-expander btn-reset" aria-label="WordPress and Accessibility submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -556,26 +554,38 @@
 
 <h2 id="recommended-testing-tools">Recommended testing tools</h2>
 
-<p>You need to run checks on a working WordPress site. This can be done using automation that sets up your environment dynamically but still requires a fully built and run installation.</p>
+<h3 id="axe-core">Axe-core</h3>
 
-<h3 id="axe">Axe</h3>
-<p><a href="https://github.com/dequelabs/axe-core-npm">axe-core-npm</a> by DeQue. This repository contains packages, which can be used for automated accessibility testing powered by axe core.</p>
-<ul>
-  <li>@axe-core/cli</li>
-  <li>@axe-core/playwright</li>
-  <li>@axe-core/puppeteer</li>
-  <li>@axe-core/react</li>
-  <li>@axe-core/reporter-earl</li>
-  <li>@axe-core/webdriverio</li>
-  <li>@axe-core/webdriverjs</li>
-</ul>
+<p><a href="https://github.com/dequelabs/axe-core-npm">Axe-core</a> by DeQue is an accessibility testing engine for websites and other HTML-based user interfaces.</p>
+
+<p><a href="https://github.com/dequelabs/axe-core-npm">axe-core-npm</a> offers packages like @axe-core/cli and @axe-core/react, which can be used for automated accessibility testing powered by axe core.</p>
 
 <p><a href="https://playwright.dev/docs/accessibility-testing">Playwright Accessibility testing</a> uses Axe. Accessibility tests work just like any other Playwright test. You can either create separate test cases or integrate accessibility scans and assertions into your existing test cases. NPM package: <a href="https://www.npmjs.com/package/@axe-core/playwright">@axe-core/playwright</a>.</p>
 
 <p>Axe is also available as <a href="https://www.deque.com/axe/devtools/extension/">aXe Devtools browser addon</a>. The addon adds a tab to your inspector with a “validate” button. After validating you see the errors and warnings for that particular webpage and how to fix them. Available as a free limited version and as a paid Pro version.</p>
 
+<p><a href="https://developer.chrome.com/docs/lighthouse">Google LightHouse for Chrome</a> uses axe-core under the hood.</p>
+
+<h3 id="ibm-equal-access-accessibility-checker">IBM Equal Access Accessibility Checker</h3>
+
+<p>On the Wiki Page of <a href="https://github.com/IBMa/equal-access/wiki">The IBM Equal Access Accessibility Checker</a> is an open-source freely available set of tools for web developers and accessibility auditors.</p>
+
+<ul>
+  <li>The <strong>accessibility-checker-engine</strong> uses a set of rules that map to accessibility standards to detect accessibility issues in web content and applications.</li>
+  <li>The <strong>accessibility-checker-extension</strong> integrates into browser DevTools, providing an integrated scanning experience, a keyboard checker mode visualization, and helps users quickly identify the source of accessibility issues, understand what to do, and try fixes. The Checker is also available as a package for CI/CD environments and automated testing frameworks.</li>
+</ul>
+
+<h3 id="w3c-validators-and-tools">W3C Validators and tools</h3>
+
+<p>The W3C maintains a page with <a href="https://www.w3.org/developers/tools/">links to the test tools</a> they provide, like the Nu HTML Checker, CSS Validator, and Link Checker to test your work. Including a W3C API.</p>
+
 <h3 id="pa11y">Pa11y</h3>
 <p><a href="https://github.com/pa11y/pa11y">Pa11y</a>, runs accessibility tests on your pages via the command line or Node.js, so you can automate your testing process.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>Research by Adrian Roselli: <a href="https://adrianroselli.com/2023/01/comparing-manual-and-free-automated-wcag-reviews.html">Comparing Manual and Free Automated WCAG Reviews</a>. This recommended post is updated regularly.</p>
+
 
 
           
@@ -587,7 +597,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> June 22, 2026</li>
+        <li><span>Last updated:</span> July 02, 2026</li>
 
         
 
@@ -596,6 +606,13 @@
         </li>
         
 
+        
+        <li><span>Contributors:</span>
+            
+            Rian Rietveld.
+            
+            
+        </li>
         
 
     </ul>
@@ -629,14 +646,14 @@
             
             
             
+            
+            
             <li>
                 <h3>
                     <a href="/pr-preview/pr-324/docs/testing/content/"> Content checks</a>
                 </h3>
                 <p>Find an overview of content checks for accessibility.</p>
             </li>
-            
-            
             
             
             
@@ -681,15 +698,6 @@
                     <a href="/pr-preview/pr-324/docs/testing/plugins/"> WP plugins for testing</a>
                 </h3>
                 <p>Find WordPress plugins that can help you test for accessibility on your website.</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/testing-themes/"> Accessibility-ready testing process</a>
-                </h3>
-                <p>How to set up an accessibility test for the accessibility-ready tag on WordPress.org.</p>
             </li>
             
             
