@@ -2,6 +2,7 @@
 title: Provide help
 layout: default
 parent: Web forms
+meta_data: false
 nav_order: 6
 description: Filling out a form should be as easy as possible. How can you best help your user?
 ---

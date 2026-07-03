@@ -48,6 +48,7 @@ The [Modal Dialog Example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for keyboard focus
 
 - [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/quickref/#keyboard) (Level A).
@@ -56,6 +57,7 @@ The [Modal Dialog Example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal
 - [2.4.11 Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-minimum) (Level AA).
 - [2.4.12 Focus Not Obscured (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured) (Level **AAA**).
 
+{: .resource-h3}
 ### Other resources
 
 - [A Primer on Focus Trapping](https://css-tricks.com/a-primer-on-focus-trapping/) by Zell Liew on CSS-Tricks.

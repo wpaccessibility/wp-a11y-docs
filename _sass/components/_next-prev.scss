@@ -1,29 +1,49 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/media-query" as *;
 
-// In-page next previous page navigation.
+// In-page navigation.
 
 .prev-next,
 .siblings,
 .toc {
-  border-top: $border $border-color;
-  margin: 1.25em 0;
+  margin: 0 -1.25em;
+  padding: 1.25em;
+  background-color: var(--color-neutral-bg-default);
 
   h2 {
-    font-size: var(--text-font-size-lg);
+    margin-top: 0;
   }
 
   ul {
     margin: 0;
+    padding: 0;
+    list-style: none;
 
     li {
-      a {
-        display: block;
+      h3 {
+        font-size: var(--text-font-size-md);
       }
 
       p {
         padding: 0;
       }
+    }
+  }
+
+  span {
+    color: var(--color-informative-color-default);
+    padding-right: 0.3em;
+  }
+}
+
+// Overrule main-content css for the h2 margin..
+
+.main-content {
+  .prev-next,
+  .siblings,
+  .toc {
+    h2 {
+      margin-top: 0;
     }
   }
 }

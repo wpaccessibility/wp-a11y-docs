@@ -4,6 +4,9 @@ layout: default
 parent: Checklists
 description: Learn about some design checks you can do to enhance accessibility.
 nav_order: 4
+contributors:
+  - Joe Dolson
+  - Rian Rietveld
 ---
 
 
@@ -25,10 +28,10 @@ There are many tools to calculate this easily, see [Color contrast checkers](htt
 ## Color Contrast
 
 - [contrastchecker.com](http://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast
-- [Color Contrast Analyser](http://www.paciellogroup.com/resources/contrastAnalyser) (Windows and OSX)– checks foreground/background contrast levels and preview designs as they might be seen by color blind users.
-- [Sim Daltonism](http://michelf.ca/projects/sim-daltonism/) — a color blindness simulator for Mac OS X.
-- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter) — apply a color blindness emulating filter to a web page.
-- [Color Palette Accessibility Evaluator](http://accessibility.oit.ncsu.edu/tools/color-contrast/index.php) — analyze color combinations for conformance to accessibility guidelines.
+- [Color Contrast Analyser](http://www.paciellogroup.com/resources/contrastAnalyser) (Windows and OSX)– checks foreground/background contrast levels and preview designs as they might be seen by color-blind users.
+- [Sim Daltonism](http://michelf.ca/projects/sim-daltonism/) — a color-blindness simulator for Mac OS X.
+- [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter) — apply a color-blindness emulating filter to a web page.
+- [Accessible color palette generator](https://venngage.com/tools/accessible-color-palette-generator) - Tool to generate accessible color palettes.
 
 
 ## Not by color alone
@@ -40,7 +43,7 @@ There are many tools to calculate this easily, see [Color contrast checkers](htt
 ### Color blindness check tools:
 
 - Look at your design only in grey scale colors, remove all color. Can you still understand it?
-- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) tool for color blindness check.
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) tool for color-blindness check.
 - [Coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/) – Color Blindness Simulator
 
 ## Not by icon alone

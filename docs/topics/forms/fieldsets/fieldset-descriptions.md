@@ -62,6 +62,7 @@ In HTML, simplified
 
 ## Resources 
 
+{: .resource-h3}
 ### WCAG Success Criteria for descriptions
 
 A description is optional, but it can help users to understand better what they need to fill out.
@@ -69,7 +70,7 @@ Then a description with a fieldset is necessary to meet the WCAG success criteri
 
 ### Related pages in this documentation
 
-- [Group form fields]({{site.baseurl}}docs/topics/forms/fieldsets/).
+- [Group form fields]({{site.baseurl}}/docs/topics/forms/fieldsets/).
 - [Fieldset legend]({{site.baseurl}}/docs/topics/forms/fieldsets/legend/).
 
 ### Other Resources

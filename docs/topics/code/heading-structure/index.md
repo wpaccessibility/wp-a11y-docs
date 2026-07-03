@@ -50,13 +50,14 @@ Use the browser tool **HeadingsMap** to test the heading structure of an entire 
 - [Headings Map toolbar for Chrome](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en)
 - [Headings Map toolbar for Firefox](https://addons.mozilla.org/en-US/firefox/addon/headingsmap/)
 
-Are you testing the heading structure for an accessibility-ready WordPress theme? Please follow the testing procedure outlined in the Theme Accessibility Guidelines under [Headings with meaningful structure]({{site.baseurl}}/docs/topics/theme-guidelines/headings-structure/).
+Are you testing the heading structure for an accessibility-ready WordPress theme? Please follow the testing procedure outlined in the Theme Accessibility Guidelines under [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/).
 
 {: .callout .info }
 **Note**: If you use a headings validation tool, a warning may pop up when the first heading is not an H1. This only applies when your web page needs to comply with WCAG 2 AAA (triple A). The global web standard is WCAG 2 AA (double A) and starting with an H2 (such as in the navigation) is allowed at the AA standard.
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for the heading structure
 
 Using a meaningful heading structure is necessary to meet the WCAG success criteria:
@@ -65,6 +66,7 @@ Using a meaningful heading structure is necessary to meet the WCAG success crite
 - [WCAG 2.4.6 Headings and Labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) (Level AA).
 - [WCAG 2.4.10 Section Headings](https://www.w3.org/WAI/WCAG22/quickref/#section-headings) (**Level AAA**).
 
+{: .resource-h3}
 ### Other resources
 
 #### Heading structure in WordPress

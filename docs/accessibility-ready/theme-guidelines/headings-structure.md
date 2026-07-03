@@ -1,9 +1,14 @@
 ---
 title: Headings with meaningful structure
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready theme requirements for how to use headings
 nav_order: 6
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/headings-structure/
 ---
 
 # Headings with meaningful structure
@@ -38,6 +43,7 @@ Note: Heading elements for structure may be positioned off-screen if they would 
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for heading structure
 
 Using a meaningful heading structure is necessary to meet the WCAG success criteria:

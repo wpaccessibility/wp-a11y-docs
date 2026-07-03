@@ -3,6 +3,7 @@ title: About this documentation
 layout: default
 nav_order: 6
 description: wpaccessibility.org is a documentation website about web accessibility, for the WordPress community and beyond.
+meta_data: false
 ---
 
 # About this documentation

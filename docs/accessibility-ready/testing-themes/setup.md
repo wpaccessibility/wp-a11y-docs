@@ -1,24 +1,29 @@
 ---
 title: Getting set up to test
 layout: default
-parent: Testing WordPress themes
-description: How to set up a test site and reporting document for accessibility-ready reviews
+parent: Theme accessibility-ready testing process
+description: How to set up a test site and reporting document for accessibility-ready reviews.
 nav_order: 2
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/testing/testing-themes/setup/
 ---
 
 # Getting set up to test
 
 ## Creating the test site
-To accessibility-ready test a theme, you will first need to set up a testing environment. 
+To accessibility-ready test a theme, you will first need to set up a testing environment.
 
-It is important to note that browser extensions for accessibility testing do not current work in WordPress Playground. As a result, you can't use Playground for accessibility-ready reviews. 
+It is important to note that browser extensions for accessibility testing do not currently work in WordPress Playground. As a result, you can't use Playground for accessibility-ready reviews.
 
-Outside of Playground, reviews can be done in any WordPress environment you prefer. For convenience, we have a template site available for quick spin-up via [InstaWP](https://instawp.com). 
+Outside of Playground, reviews can be done in any WordPress environment you prefer. For convenience, we have a template site available for quick spin-up via [InstaWP](https://instawp.com).
 
 ### Why use our InstaWP testing site
 You may be wondering why we recommend using our InstaWP template for testing rather than loading the theme up on any other WordPress site. Here's why:
 
-Our InstaWP template has demo content including pages, posts, media, and navigation menus already configured so you can get started testing faster. We have also gone through the standard [WordPress theme unit test data](https://make.wordpress.org/themes/handbook/review/theme-unit-test/) and remediated accessibility issues to avoid false positives. 
+Our InstaWP template has demo content including pages, posts, media, and navigation menus already configured so you can get started testing faster. We have also gone through the standard [WordPress theme unit test data](https://make.wordpress.org/themes/handbook/review/theme-unit-test/) and remediated accessibility issues to avoid false positives.
 
 Additionally, specific pages and URLs from this site are referenced in the report template. For this reason, we recommend starting with an InstaWP testing site. If you prefer to test elsewhere, you can export the InstaWP content and import it into a different site using the [WordPress Importer plugin.](https://wordpress.org/plugins/wordpress-importer/)
 
@@ -35,7 +40,7 @@ Here's how to create a testing site from our template:
 4. Check the box acknowledging the privacy notice.
 5. Click the "proceed" button.
 
-The website should be created in a matter of minutes and you will be automatically logged into the site. 
+The website should be created in a matter of minutes and you will be automatically logged into the site.
 
 An email will be sent to you with the web address and admin credentials for logging into the website should you need to revisit the site later.
 
@@ -47,7 +52,7 @@ After creating the site, you need to install and setup the theme for testing. He
 
 #### Installing and activating the theme
 
-1. Determine if you're testing a new theme or existing theme. ([See Identifying themes that need to be tested]({{site.baseurl}}/docs/testing/testing-themes/identifying-themes/)) 
+1. Determine if you're testing a new theme or existing theme. ([See Identifying themes that need to be tested]({{site.baseurl}}/docs/accessibility-ready/testing-themes/identifying-themes/))
 2. Install the theme in the testing site following these instructions:
     1. If the theme is a new theme or an existing theme with an unreleased new version:
         1. Go to the Trac ticket for the theme.
@@ -65,7 +70,7 @@ After creating the site, you need to install and setup the theme for testing. He
 
 #### Configuring the theme
 
-Once the theme is active, you need to configure the theme content for testing. The following steps assume you're starting with our InstaWP template content, in which case the setup work should be minimal. 
+Once the theme is active, you need to configure the theme content for testing. The following steps assume you're starting with our InstaWP template content, in which case the setup work should be minimal.
 
 After activating the theme, do the following:
 
@@ -84,7 +89,7 @@ After activating the theme, do the following:
     6. Save the page.
 5. Configure any other available settings.
     1. If the theme supports the Customizer, open the Customizer and check for theme settings that need to be configured.
-    2. Check for a theme settings page and enable settings there as needed. 
+    2. Check for a theme settings page and enable settings there as needed.
 
 Examples of other settings you may need to enable in the theme Customizer or settings pages include:
 * Show search in header.

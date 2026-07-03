@@ -43,7 +43,7 @@ The populair [WordPress form plugin Contact Form 7](https://wordpress.org/plugin
 
 {: .callout .do }
 Place the link to the terms of delivery outside and above the label.  
-[The terms of delivery](#).  
+<a href="#self-1" id="self-1">The terms of delivery</a>.  
 <input id="alv3" type="checkbox"/>
 <label for="alv3">I agree with the terms of delivery</label>
 
@@ -60,7 +60,7 @@ Note that the reading order is also meaningful: first the link to the terms and 
 {: .callout .dont }
 Place the link to the terms of delivery inside the label.  
 <input id="alv4" type="checkbox"/>
-<label for="alv4">I agree with [the terms of delivery](#)</label>
+<label for="alv4">I agree with <a href="#self-2" id="self-2">the terms of delivery</a></label>
 
 
 ```html
@@ -72,6 +72,7 @@ Place the link to the terms of delivery inside the label.
 ```
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for accessible names
 
 Giving a form control an accessible name is necessary to meet the WCAG success criteria:
@@ -84,6 +85,7 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 
 - Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

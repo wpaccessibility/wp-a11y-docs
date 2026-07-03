@@ -1,9 +1,14 @@
 ---
 title: Labelled form fields
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready theme requirements for how to label form fields
 nav_order: 5
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/labelled-form-fields/
 ---
 
 # Labelled form fields

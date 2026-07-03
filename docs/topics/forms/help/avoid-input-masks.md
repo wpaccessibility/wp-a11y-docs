@@ -81,6 +81,7 @@ If exact input is required, for example for a date of birth, provide an option t
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for descriptions
 
 Providing good feedback about how to correctly enter data in form fields is necessary to meet the WCAG success criteria:
@@ -88,6 +89,7 @@ Providing good feedback about how to correctly enter data in form fields is nece
 - [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A)
 - [3.3.3 Error Suggestion](https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion) (Level AA)
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

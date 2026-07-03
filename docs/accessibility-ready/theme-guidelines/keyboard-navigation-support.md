@@ -1,9 +1,14 @@
 ---
 title: Keyboard navigation support
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: The requirements for keyboard navigation in accessibility-ready themes
 nav_order: 3
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/keyboard-navigation-support/
 ---
 
 # Keyboard navigation support
@@ -23,7 +28,7 @@ Keyboard testing checks the **Operability**, **Visibility**, and **Order** of co
 3. Use the `tab` key to navigate forward through the site. Navigate forward through all items on the page. If encountering radio buttons or tab components, use the `tab` key to enter the group and the arrow keys to move between the elements in the group.  
 4. Verify that all interactive elements can be reached using the keyboard.  
 5. Verify that you do not get trapped in a location on the page when using the keyboard. (A focus trap is when you can tab to an element but cannot tab past or outside of it when it receives focus.)  
-6. Verify that a visible focus state on all controls is present, and is a minimum of a 2px outline surrounding the element with a contrast that meets color contrast standards against the background color ([see color contrast requirements]({{site.baseurl}}/docs/topics/theme-guidelines/sufficient-color-contrast/)).  
+6. Verify that a visible focus state on all controls is present, and is a minimum of a 2px outline surrounding the element with a contrast that meets color contrast standards against the background color ([see color contrast requirements]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/)).  
 7. Verify that the visual order of elements matches the order in which you reached the items. This generally means that the tab navigation travels in the reading direction of the content language, e.g. traveling from left to right and top to bottom in a LTR language.  
 8. Use `shift + tab` to reverse your tabbing path. Verify that the order of elements is the same forwards and backwards.  
 9. Verify that you can operate all controls. It is not required to test every individual link. Buttons should be operable using either the `spacebar` or the `enter/return` keys; links should only be activated using `enter/return`.  

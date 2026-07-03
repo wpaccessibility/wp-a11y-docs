@@ -1,9 +1,14 @@
 ---
 title: Accessible audio, video, and animations
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: Support for audio, video, and animations in accessibility-ready themes
 nav_order: 11
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/accessible-animation/
 ---
 
 # Accessible audio, video, and animations

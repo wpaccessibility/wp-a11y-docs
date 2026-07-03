@@ -86,6 +86,7 @@ Connection between a form field and its description.
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for descriptions
 
 Connecting a description to a form field is necessary to meet the WCAG success criteria:
@@ -94,6 +95,7 @@ Connecting a description to a form field is necessary to meet the WCAG success c
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
 
+{: .resource-h3}
 ### Other resources
 
 - NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).

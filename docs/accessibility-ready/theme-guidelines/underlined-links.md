@@ -1,9 +1,14 @@
 ---
 title: Underlined links in text
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready theme requirements for how to indicate links in text
 nav_order: 7
+contributors:
+  - Amber Hinds
+  - Joe Dolson
+redirect_from:
+  - /docs/topics/theme-guidelines/underlined-links/
 ---
 
 # Underlined links in text

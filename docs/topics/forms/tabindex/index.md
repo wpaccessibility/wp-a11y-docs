@@ -33,6 +33,7 @@ Avoid using a positive tabindex in your forms, and leave the natural tab order o
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for focus order
 
 Accessible focus management in web forms is necessary to meet the WCAG success criterion: [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).

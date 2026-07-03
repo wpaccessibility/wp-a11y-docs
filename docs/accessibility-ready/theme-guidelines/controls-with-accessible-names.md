@@ -1,9 +1,14 @@
 ---
 title: Controls with accessible names, roles, and states
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready theme requirements for accessible controls
 nav_order: 4
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/controls-with-accessible-names/
 ---
 
 # Controls with accessible names, roles, and states

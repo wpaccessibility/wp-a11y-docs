@@ -1,9 +1,14 @@
 ---
 title: Meaningful landmark roles and names
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready themes requirements for meaningful landmark roles and names
 nav_order: 2
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/meaningful-landmark-roles/
 ---
 
 # Meaningful landmark roles and names
@@ -23,7 +28,7 @@ Most of these roles can be represented directly by their dedicated element; the 
 
 Screen reader users are able to generate a list of landmarks on the page and navigate between them.
 
-The `banner`, `main`, and `contentinfo` landmarks should appear only once on a page. Other landmarks may appear multiple times, but each appearance should be accessibly named in a way that allows a screen reader user to identify it uniquely and usefully.
+The banner, main, and contentinfo landmarks should appear only once on a page. Other landmark types may appear multiple times. When more than one landmark of the same type is present, each should have a unique accessible name so screen reader users can distinguish between them.
 
 There are additional optional landmark regions, such as the `region` role, which is a generic region that is only exposed if it has an accessible name.
 

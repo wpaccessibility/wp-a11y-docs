@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/media-query" as *;
+
+// Resources.
+
+.resource-h3 {
+  font-size: var(--text-font-size-lg);
+}

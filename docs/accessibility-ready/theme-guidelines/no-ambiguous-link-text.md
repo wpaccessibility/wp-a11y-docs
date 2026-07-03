@@ -1,9 +1,14 @@
 ---
 title: No ambiguous link text
 layout: default
-parent: Theme accessibility guidelines
+parent: Theme accessibility-ready guidelines
 description: Accessibility-ready theme requirements for ambiguous link text
 nav_order: 8
+contributors:
+   - Amber Hinds
+   - Joe Dolson
+redirect_from:
+   - /docs/topics/theme-guidelines/no-ambiguous-link-text/
 ---
 
 # No ambiguous link text

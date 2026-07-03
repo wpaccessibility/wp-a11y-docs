@@ -88,6 +88,7 @@ Is there a form on the page?
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for predictable behavior on input and on focus
 
 Maintaining predictable behavior on input and on focus is necessary to meet the WCAG success criteria:
