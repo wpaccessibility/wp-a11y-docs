@@ -4,6 +4,9 @@ layout: default
 parent: Documenting accessibility
 description: What you should include in an accessibility statement.
 nav_order: 1
+contributors:
+  - Amber Hinds
+  - Joe Dolson
 ---
 
 # Accessibility statements
@@ -43,3 +46,10 @@ Many organizations use templates to generate their accessibility statement. Popu
 * [Equalize Digital Accessibility Checker WordPress plugin](https://wordpress.org/plugins/accessibility-checker) generates an accessibility statement draft page upon activation.
 
 Because accessibility statements can have legal implications in certain parts of the world, it is recommended that you have a legal professional review your statement before publication.
+
+## Resources
+{: .resource-h3}
+
+### Related pages in this documentation
+
+- [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/), in the WordPress accessibility-ready guidelines.

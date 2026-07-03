@@ -93,11 +93,19 @@ The alt text for a photo of Jane in her garden:
 By giving a meaningful image the proper alternative text, you meet WCAG success criterion [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/), in the WordPress accessibility-ready guidelines.
+- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/), in Start with accessibility.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/), in Standards and best practice, Content and images: Links.
+- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/), in Standards and best practice, Frontend code: Images.
+
+{: .resource-h3}
 ### Other resources
 
-- [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) by the W3C.
-- [Write helpful alt text](https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text) by Google.
+- [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/), by the W3C.
+- [Write helpful alt text](https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text), by Google.
 - [Are alt attributes required? Always?](https://www.joedolson.com/2015/03/are-alt-attributes-required-always/), by Joe Dolson.
 - [Image SEO: alt tag and title tag optimization](https://yoast.com/image-seo-alt-tag-and-title-tag-optimization/), by Yoast.
-- [The Rules of ALT](https://html.com/images/rules-of-alt/) by Jon Penland.
-- [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/) by Léonie Watson.
+- [The Rules of ALT](https://html.com/images/rules-of-alt/), by Jon Penland.
+- [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/), by Léonie Watson.
