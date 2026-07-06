@@ -46,7 +46,7 @@
 - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/), in Start with accessibility.
 - [Standards and best practice]({{site.baseurl}}docs/topics/).
 - [The accessibility-ready program for WordPress]({{site.baseurl}}/docs/accessibility-ready/)
-- [Set up testing for the WordPress themes accessibility-ready tag]({{site.baseurl}}/testing/testing-themes/), in Test for accessibility.
+- [Set up testing for the WordPress themes accessibility-ready tag]({{site.baseurl}}/docs/accessibility-ready/testing-themes/), in Test for accessibility.
 
 </details>
 
