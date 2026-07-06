@@ -406,19 +406,15 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/" class="nav-list-link">Checklists</a><button class="nav-list-expander btn-reset" aria-label="Checklists submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
+          <a href="/docs/testing/overall/" class="nav-list-link">Complete WCAG checklists</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/overall/" class="nav-list-link">Overall</a></li><li class="nav-list-item">
+          <a href="/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+          <a href="/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+          <a href="/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/code/" class="nav-list-link">Frontend code checks</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/docs/testing/automated/" class="nav-list-link">Automated validation</a></li><li class="nav-list-item">
+          <a href="/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
 
           <a href="/docs/testing/keyboard/" class="nav-list-link">Keyboard only</a></li><li class="nav-list-item">
 
@@ -556,23 +552,29 @@
 
 <p>All functionality should work using a <strong>keyboard</strong>. This is essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.</p>
 
-<h2 id="how-to-keyboard-test">How to keyboard test:</h2>
+<h2 id="how-to-keyboard-test">How to keyboard test</h2>
 
-<ul>
-  <li><a href="https://webaim.org/techniques/keyboard/">Keyboard Accessibility</a> by WebAIM</li>
-  <li><a href="http://rianrietveld.com/2016/05/10/keyboard/">Workshop keyboard accessibility</a></li>
-</ul>
+<p>Note: before you start testing with a keyboard on a Mac, make sure the settings of your computer are set to allow full keyboard navigation: <a href="https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/">How to activate keyboard navigation on MacOS</a>.</p>
 
-<p>Tab through your pages, links and forms to do the following tests:</p>
+<p>A <strong>detailed guide</strong> on how to test with a keyboard only is in the theme accessibility-ready guideline: <a href="//docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/">Keyboard navigation support</a>.</p>
 
+<p>In brief:</p>
+
+<p>Tab through your pages, links, and forms to do the following tests:</p>
 <ul>
   <li>Confirm all links can be reached and activated via keyboard, including any inside drop-downs</li>
   <li>Confirm all links have a strong visible focus indicator</li>
   <li>Confirm all focusable <a href="/docs/topics/code/screen-reader-text/">visually hidden content</a> (such as <a href="/docs/topics/code/components/skip-links/">skip links</a>) becomes visible when in focus.</li>
-  <li>Confirm all interactions – form fields, buttons, and other controls – can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.</li>
+  <li>Confirm all interactions like form fields, buttons, and other controls, can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.</li>
   <li>Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting.</li>
 </ul>
 
+<h2 id="resources">Resources</h2>
+
+<ul>
+  <li><a href="https://webaim.org/techniques/keyboard/">Keyboard Accessibility</a> by WebAIM.</li>
+  <li><a href="https://alphagov.github.io/guide-to-wcag/sc/2.1.1.html#how-to-check">2.1.1 Keyboard</a> on A guide to WCAG by the UK Government Digital Service.</li>
+</ul>
 
 
           
@@ -584,7 +586,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> March 03, 2026</li>
+        <li><span>Last updated:</span> July 06, 2026</li>
 
         
 
@@ -619,18 +621,45 @@
             
             <li>
                 <h3>
-                    <a href="/docs/testing/checklists/"> Checklists</a>
+                    <a href="/docs/testing/overall/"> Complete WCAG checklists</a>
                 </h3>
-                <p>Find easy-to-use checklists to test for accessibility.</p>
+                <p>Complete checklists against the Web Content Accessibility Guidelines.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/docs/testing/automated/"> Automated validation</a>
+                    <a href="/docs/testing/automated/"> Automated testing</a>
                 </h3>
                 <p>Learn about automated accessibility testing and validation.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/content/"> Content checks</a>
+                </h3>
+                <p>Find an overview of content checks for accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/design/"> Design checks</a>
+                </h3>
+                <p>Learn about some design checks you can do to enhance accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/code/"> Frontend code checks</a>
+                </h3>
+                <p>Learn how to perform frontend code checks for web accessibility.</p>
             </li>
             
             

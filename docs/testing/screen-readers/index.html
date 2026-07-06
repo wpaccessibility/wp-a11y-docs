@@ -406,19 +406,15 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/" class="nav-list-link">Checklists</a><button class="nav-list-expander btn-reset" aria-label="Checklists submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
+          <a href="/docs/testing/overall/" class="nav-list-link">Complete WCAG checklists</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/overall/" class="nav-list-link">Overall</a></li><li class="nav-list-item">
+          <a href="/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+          <a href="/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+          <a href="/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/code/" class="nav-list-link">Frontend code checks</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/docs/testing/automated/" class="nav-list-link">Automated validation</a></li><li class="nav-list-item">
+          <a href="/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
 
           <a href="/docs/testing/keyboard/" class="nav-list-link">Keyboard only</a></li><li class="nav-list-item">
 
@@ -554,36 +550,55 @@
 
           <h1 id="screen-reader-testing">Screen reader testing</h1>
 
-<p>Content that changes dynamically during time, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!</p>
+<p>Important content that changes dynamically, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!</p>
 
-<p>While we know that many developers work primarily on MacOS, testing only with Apple’s VoiceOver is not sufficient. VoiceOver, while fairly common, has many non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.</p>
+<h2 id="test-feedback-on-dynamic-changes">Test feedback on dynamic changes</h2>
 
-<h3 id="screen-reader-testing-1">Screen reader testing</h3>
-
-<p>There are numerous excellent articles on how to test with and for a screen reader. Keep in mind that the best screen reader testing is by users who use a screen reader on a regular basis for their interactions with the web; you can do your own testing, but it is not a substitute for real user tests.</p>
+<p>When using interactive scripts to update content or states of interactive elements, check:</p>
 
 <ul>
-  <li><a href="https://webaim.org/articles/screenreader_testing/">Testing with Screen Readers: Questions and Answers</a> on WebAIM.</li>
-  <li>For Mac (native for iOS): <a href="https://webaim.org/articles/voiceover/">Using VoiceOver to Evaluate Web Accessibility</a> on WebAIM.</li>
-  <li><a href="http://pauljadam.com/demos/iosvocheatsheet.html">VoiceOver cheat sheet</a> by Paul J. Adam</li>
-  <li><a href="https://help.apple.com/voiceover/info/guide/10.8/English.lproj/">VoiceOver Getting Started</a> by Apple.</li>
-  <li>For Windows (free, open source): <a href="http://webaim.org/articles/nvda/">Using NVDA to Evaluate Web Accessibility</a> on WebAIM.</li>
-  <li>For Windows: <a href="http://webaim.org/articles/jaws/">Using JAWS to Evaluate Web Accessibility</a> on WebAIM.</li>
-  <li><a href="https://dequeuniversity.com/screenreaders/">Screen reader keyboard shortcuts and gestures</a> by Deque.</li>
-  <li><a href="https://www.tpgi.com/basic-screen-reader-commands-for-accessibility-testing/">Basic screen reader commands for accessibility testing</a> by Léonie Watson.</li>
-  <li><a href="https://vispero.com/resources/five-screen-reader-accessibility-tests-your-qa-team-should-do/">Five Screen Reader Accessibility Tests Your QA Team Should Do</a> – An introduction to fundamental screen reader tests by Charlie Pike.</li>
+  <li>DOM updates: Interactive scripts correctly update the DOM in response to user actions. Check if the relevant content is added to or changed within an <code class="language-plaintext highlighter-rouge">aria-live</code> region or <code class="language-plaintext highlighter-rouge">aria-describedby</code> form error message.</li>
+  <li>ARIA states: ARIA attributes like <code class="language-plaintext highlighter-rouge">aria-expanded</code> or <code class="language-plaintext highlighter-rouge">aria-invalid</code> accurately reflect the current UI state after each interaction.</li>
 </ul>
 
-<h3 id="best-screen-reader--browser-combinations">Best screen reader / browser combinations</h3>
+<p>Verification methods:</p>
 
 <ul>
-  <li>VoiceOver with Safari,</li>
-  <li>NVDA with Chrome or FireFox</li>
-  <li>JAWS with Chrome, Edge or FireFox</li>
-  <li>Windows Narrator with Edge</li>
+  <li>Use a screen reader to confirm announcements match the actual state changes.</li>
+  <li>Use browsers inspect panel to check the accessibility tree and live ARIA values.</li>
+  <li>Verify that announcements do not occur continuously, such that they would interrupt the user’s ability to use the interface.</li>
 </ul>
 
-<p>The screen readers ChromeVox and Orca don’t perform well enough as a screen reader, at this moment, to give representative test information.</p>
+<h2 id="which-screen-reader-should-i-test-in">Which screen reader should I test in?</h2>
+
+<p><a href="https://www.nvaccess.org/download/">NVDA</a> is an excellent, free, open source, screen reader for Windows 10 and later. If you enjoy this screen reader, consider a <a href="https://www.nvaccess.org/support-us/">donation to NVDA</a>.</p>
+
+<p><a href="https://support.freedomscientific.com/Downloads/JAWS">JAWS Screen Reading Software</a>, by Freedom Scientific, is a subscription-based screen reader for Windows. Life hack: you can run <a href="https://www.freedomscientific.com/training/enterprise/activating-software-licenses/">JAWS in a 40-minute demo-mode</a> for free for testing. After that you need to reboot your system to run JAWS in demo-mode again.</p>
+
+<p><a href="https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator">Narrator for Windows</a>, by Microsoft, is built into Windows. Use Narrator in the browser Edge for website testing.</p>
+
+<p><a href="https://support.google.com/accessibility/android/answer/6283677?hl=en">TalkBack</a> is built into Android, and is the most commonly available screen reader for Android-based phones. It is a full-fledged screen reader, but performance will vary widely depending on your phone hardware.</p>
+
+<p><a href="https://www.apple.com/voiceover/">VoiceOver</a> is built into macOS and iOS. Use VoiceOver in the browser Safari for website testing. While we know that many developers work primarily on macOS, testing only with Apple’s VoiceOver is not enough in some cases. VoiceOver, while fairly common, has some non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.</p>
+
+<p>The screen readers <a href="https://support.google.com/chromebook/answer/7031755?hl=en">ChromeVox for Chromebook</a> and <a href="https://orca.gnome.org/">Orca</a> for GNOME don’t perform well enough as a screen reader, at this moment, to give representative test information.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>There are many excellent articles on how to use and test with a screen reader. Keep in mind that the best screen reader testing is by users who use a screen reader regularly for their interactions with the web; you can do your own testing, but it is not a substitute for real user tests.</p>
+
+<ul>
+  <li><a href="https://webaim.org/articles/screenreader_testing/">Testing with Screen Readers: Questions and Answers</a>, on WebAIM.</li>
+  <li><a href="https://dequeuniversity.com/screenreaders/">Screen reader keyboard shortcuts and gestures</a> by Deque university.</li>
+  <li><a href="https://vispero.com/resources/basic-screen-reader-commands-for-accessibility-testing/">Basic screen reader commands for accessibility testing</a>, by Léonie Watson.</li>
+  <li><a href="https://vispero.com/resources/five-screen-reader-accessibility-tests-your-qa-team-should-do/">Five Screen Reader Accessibility Tests Your QA Team Should Do</a>, An introduction to fundamental screen reader tests by Charlie Pike.</li>
+  <li><a href="https://webaim.org/articles/nvda/">Using NVDA to Evaluate Web Accessibility</a>, on WebAIM.</li>
+  <li><a href="https://webaim.org/articles/jaws/">Using JAWS to Evaluate Web Accessibility</a>, on WebAIM.</li>
+  <li><a href="https://learn.microsoft.com/en-us/shows/one-dev-minute/using-narrator-dev-mode">Using Narrator and Dev Mode</a>, by Microsoft.</li>
+  <li><a href="https://webaim.org/articles/voiceover/">Using VoiceOver to Evaluate Web Accessibility</a>, on WebAIM.</li>
+  <li><a href="https://pauljadam.com/demos/iosvocheatsheet.html">VoiceOver cheat sheet</a>, by Paul J. Adam.</li>
+  <li><a href="https://help.apple.com/voiceover/info/guide/10.8/English.lproj/">VoiceOver Getting Started</a>, by Apple.</li>
+</ul>
 
 
           
@@ -595,7 +610,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> March 03, 2026</li>
+        <li><span>Last updated:</span> July 06, 2026</li>
 
         
 
@@ -630,18 +645,45 @@
             
             <li>
                 <h3>
-                    <a href="/docs/testing/checklists/"> Checklists</a>
+                    <a href="/docs/testing/overall/"> Complete WCAG checklists</a>
                 </h3>
-                <p>Find easy-to-use checklists to test for accessibility.</p>
+                <p>Complete checklists against the Web Content Accessibility Guidelines.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/docs/testing/automated/"> Automated validation</a>
+                    <a href="/docs/testing/automated/"> Automated testing</a>
                 </h3>
                 <p>Learn about automated accessibility testing and validation.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/content/"> Content checks</a>
+                </h3>
+                <p>Find an overview of content checks for accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/design/"> Design checks</a>
+                </h3>
+                <p>Learn about some design checks you can do to enhance accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/code/"> Frontend code checks</a>
+                </h3>
+                <p>Learn how to perform frontend code checks for web accessibility.</p>
             </li>
             
             

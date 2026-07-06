@@ -14,7 +14,7 @@
 
 
 
-<title>Automated validation, WP Accessibility Knowledge Base</title>
+<title>Automated testing, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -406,19 +406,15 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/" class="nav-list-link">Checklists</a><button class="nav-list-expander btn-reset" aria-label="Checklists submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
+          <a href="/docs/testing/overall/" class="nav-list-link">Complete WCAG checklists</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/overall/" class="nav-list-link">Overall</a></li><li class="nav-list-item">
+          <a href="/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+          <a href="/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+          <a href="/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
-          <a href="/docs/testing/checklists/code/" class="nav-list-link">Frontend code checks</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/docs/testing/automated/" class="nav-list-link">Automated validation</a></li><li class="nav-list-item">
+          <a href="/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
 
           <a href="/docs/testing/keyboard/" class="nav-list-link">Keyboard only</a></li><li class="nav-list-item">
 
@@ -543,7 +539,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/docs/testing/'>Test for accessibility</a></li>
-            <li class="breadcrumb-nav-list-item" aria-current="page">Automated validation</li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Automated testing</li>
     </ol>
 </nav>
 
@@ -554,79 +550,44 @@
 
           <h1 id="automated-accessibility-testing">Automated accessibility testing</h1>
 
-<h2 id="wcag-2-aa-automated-validation">WCAG 2 AA automated validation</h2>
+<p>With automated accessibility testing, it is necessary to check against the generated Document Object Model (DOM) of your web project. This is different from, for example, PHP code standard checks where you can perform checks on the code base. You need to run checks on a working site.</p>
 
-<p>The generated DOM, the front end of your web project, must conform to WCAG 2 AA. You can use automated validation to get a limited scope of your success at this.</p>
+<p>Automated accessibility testing cannot catch all accessibility errors, so additional manual testing is still needed. Testing in the browser and manual keyboard testing need to be part of your regular workflow.</p>
 
-<p>Recommended:</p>
+<h2 id="recommended-testing-tools">Recommended testing tools</h2>
 
-<ul>
-  <li><a href="https://www.deque.com/aXe/">aXe browser addon</a> for Chrome and FireFox. The addon adds a tab to your inspector with a validate button. After validating you see the errors and warnings for that particular webpage and how to fix them. Make sure to also test in different views and with the menu open and closed, for example.</li>
-  <li><a href="http://squizlabs.github.io/HTML_CodeSniffer/">HTML_CodeSniffer</a></li>
-  <li>Accessibility Inspector in the <a href="https://developer.mozilla.org/en-US/docs/Tools">Firefox Developer Tools</a>. A good read about this by Marco Zehe:  How to use <a href="https://www.marcozehe.de/how-to-use-nvda-and-firefox-to-test-your-web-pages-for-accessibility/">NVDA and Firefox to test your web pages for accessibility</a></li>
-</ul>
+<h3 id="axe-core">Axe-core</h3>
 
-<p>More tools:</p>
+<p><a href="https://github.com/dequelabs/axe-core-npm">Axe-core</a> by Deque is an accessibility testing engine for websites and other HTML-based user interfaces.</p>
 
-<ul>
-  <li><a href="https://github.com/reactjs/react-a11y">React-a11y</a>, Identifies accessibility issues in your React.js elements</li>
-  <li>Static AST checker for <a href="https://github.com/evcohen/eslint-plugin-jsx-a11y">a11y rules on JSX elements</a></li>
-  <li>More <a href="https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/useful-tools/#toolbars-toolkits">Toolbars and toolkits </a> in the Accessibility Handbook</li>
-</ul>
+<p><a href="https://github.com/dequelabs/axe-core-npm">axe-core-npm</a> offers packages like @axe-core/cli and @axe-core/react, which can be used for automated accessibility testing powered by axe core.</p>
 
-<h2 id="automated-testing">Automated testing</h2>
+<p><a href="https://playwright.dev/docs/accessibility-testing">Playwright Accessibility testing</a> uses Axe. Accessibility tests work just like any other Playwright test. You can either create separate test cases or integrate accessibility scans and assertions into your existing test cases. NPM package: <a href="https://www.npmjs.com/package/@axe-core/playwright">@axe-core/playwright</a>.</p>
 
-<p>The big difference between PHP and JavaScript code standard checks and accessibility checks is that the accessibility checks need to be performed on the generated DOM, not on the code base. You need to run checks on a working WordPress site. This can be done using automation that sets up your environment dynamically, but still requires a fully built and run installation.</p>
+<p>Axe is also available as <a href="https://www.deque.com/axe/devtools/extension/">aXe Devtools browser addon</a>. The addon adds a tab to your inspector with a “validate” button. After validating you see the errors and warnings for that particular webpage and how to fix them. Available as a free limited version and as a paid Pro version.</p>
 
-<p>There are several command line tools for automated testing like <a href="https://github.com/dequelabs/axe-cli">aXe-cli</a> and <a href="https://github.com/pa11y/pa11y">pa11y</a>.</p>
+<p><a href="https://developer.chrome.com/docs/lighthouse">Google LightHouse for Chrome</a> uses axe-core under the hood.</p>
 
-<p class="callout info"><strong>Info:</strong> Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow.</p>
+<h3 id="ibm-equal-access-accessibility-checker">IBM Equal Access Accessibility Checker</h3>
 
-<h3 id="setup-for-axe-cli">Setup for aXe-cli</h3>
-
-<p>Install axe-core for CLI first:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install axe-cli -g
-npm install chromedriver –g`
-</code></pre></div></div>
-
-<p>Then run axe in the command line:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>axe url -b c
-</code></pre></div></div>
-
-<p>The url can be any url, also a local one. You get a report of the accessibility issues for that url. The <strong>-b</strong> stands for browser, <strong>c</strong> for chrome, as this browser gives the best results (better than the default PhantomJS). You will get the errors and warnings in your console.</p>
-
-<p>You can provide more (space separated) urls to the command like</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>axe url url2 url3 -b c
-</code></pre></div></div>
-
-<p>or call a file with urls like:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>axe $( cat list-of-urls.txt ) -b c
-</code></pre></div></div>
-
-<p><strong>Note</strong>:  You can run <a href="https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility/test-for-web-accessibility-frontend-code/#setup-for-axe-cli">axe-cli on more than one url</a> in one command, but axe-cli is not build to run on a large amount of urls or on a complete site, axe-cli is not a crawler. Deque Labs recommends to use the <a href="https://www.npmjs.com/package/axe-webdriverjs">axe-webdriverjs</a>, a chainable aXe API for Selenium’s WebDriverJS for testing on a large amounts of urls.</p>
-
-<h3 id="setup-for-pa11y">Setup for pa11y</h3>
-
-<p>The <a href="https://github.com/pa11y/pa11y">setup for pa11y</a> is well documented in the GitHub repository.</p>
-
-<h2 id="browser-toolbars--toolkits">Browser Toolbars &amp; Toolkits</h2>
+<p><a href="https://github.com/IBMa/equal-access/wiki">The IBM Equal Access Accessibility Checker</a> is an open-source and freely available set of tools for web developers and accessibility auditors, documented in the IBM Equal Access Wiki.</p>
 
 <ul>
-  <li><a href="https://www.deque.com/products/axe/">aXe accessibility testing tool</a> — available as browser extension and npm module (<a href="https://github.com/dequelabs/axe-core">axe-core</a>)</li>
-  <li><a href="http://wave.webaim.org/toolbar">WAVE</a> — run the WAVE accessibility evaluation tool within Firefox and Chrome.</li>
-  <li>Accessibility inspector in the FireFox developer tools</li>
-  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/">AInspector for WCAG Accessibility Evaluation</a> — Inspect web pages for potential accessibility issues.</li>
-  <li><a href="http://khan.github.io/tota11y/">Tota11y</a> — An accessibility visualization toolkit that can be dragged into your bookmarks bar or installed as a plugin.</li>
-  <li><a href="http://www.totalvalidator.com/">Total Validator</a> — an HTML validator, accessibility validator, spell checker, and broken link checker all rolled into one tool. Free &amp; commercial versions available.</li>
-  <li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=es">HeadingsMap</a> — A <a href="https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?pli=1">Chrome</a> or <a href="https://addons.mozilla.org/en-us/firefox/addon/headingsmap/">Firefox extension</a> that shows the structure of headings on a webpage.</li>
-  <li><a href="http://whatsock.com/training/matrices/visual-aria.htm">Visual ARIA Bookmarklet</a> — A bookmarklet to visually display ARIA attributes on a webpage.</li>
-  <li><a href="https://www.24a11y.com/2017/accessibility-testing-tools-desktop-mobile-websites/">Accessibility Testing Tools for Desktop and Mobile Websites</a> – A review of testing tools by Paul J. Adam.</li>
-  <li><a href="https://www.digitala11y.com/accessibility-bookmarklets-testing/">Accessibility Bookmarklets</a> – A collection of bookmarklets useful for accessibility testing.</li>
+  <li>The <strong>accessibility-checker-engine</strong> uses a set of rules that map to accessibility standards to detect accessibility issues in web content and applications.</li>
+  <li>The <strong>accessibility-checker-extension</strong> integrates into browser DevTools, providing an integrated scanning experience, a keyboard checker mode visualization, and helps users quickly identify the source of accessibility issues, understand what to do, and try fixes. The Checker is also available as a package for CI/CD environments and automated testing frameworks.</li>
 </ul>
+
+<h3 id="w3c-validators-and-tools">W3C Validators and tools</h3>
+
+<p>The W3C maintains a page with <a href="https://www.w3.org/developers/tools/">links to the test tools</a> they provide, like the Nu HTML Checker, CSS Validator, and Link Checker. Their information includes the W3C API, providing consistent access to specifications and other W3C data.</p>
+
+<h3 id="pa11y">Pa11y</h3>
+<p><a href="https://github.com/pa11y/pa11y">Pa11y</a>, runs accessibility tests on your pages via the command line or Node.js, so you can automate your testing process.</p>
+
+<h2 id="resources">Resources</h2>
+
+<p>Research by Adrian Roselli: <a href="https://adrianroselli.com/2023/01/comparing-manual-and-free-automated-wcag-reviews.html">Comparing Manual and Free Automated WCAG Reviews</a>. This recommended post is updated regularly.</p>
+
 
 
           
@@ -638,7 +599,7 @@ npm install chromedriver –g`
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> March 02, 2026</li>
+        <li><span>Last updated:</span> July 06, 2026</li>
 
         
 
@@ -647,6 +608,13 @@ npm install chromedriver –g`
         </li>
         
 
+        
+        <li><span>Contributors:</span>
+            
+            Rian Rietveld.
+            
+            
+        </li>
         
 
     </ul>
@@ -673,12 +641,39 @@ npm install chromedriver –g`
             
             <li>
                 <h3>
-                    <a href="/docs/testing/checklists/"> Checklists</a>
+                    <a href="/docs/testing/overall/"> Complete WCAG checklists</a>
                 </h3>
-                <p>Find easy-to-use checklists to test for accessibility.</p>
+                <p>Complete checklists against the Web Content Accessibility Guidelines.</p>
             </li>
             
             
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/content/"> Content checks</a>
+                </h3>
+                <p>Find an overview of content checks for accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/design/"> Design checks</a>
+                </h3>
+                <p>Learn about some design checks you can do to enhance accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/testing/code/"> Frontend code checks</a>
+                </h3>
+                <p>Learn how to perform frontend code checks for web accessibility.</p>
+            </li>
             
             
             
