@@ -8,7 +8,7 @@ nav_order: 5
 
 # Frontend checks for web accessibility
 
-Testing for valid, semantic HTML is essential for the accessibility of your work. On this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development, and before you commit your work.
+Testing for valid, semantic HTML is essential for the accessibility of your work. On this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development, preferably before you ever commit your work.
 
 {: .callout .info }
 **Note**: test web accessibility against the generated DOM and not only on the codebase itself.

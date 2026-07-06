@@ -40,10 +40,9 @@ There are many tools to check color contrast ratios. WebAxe published an overvie
 {: .resource-h3}
 ### Other resources
 
-- [Assistive Technology Experiment: High Contrast](https://webaim.org/blog/high-contrast/)
-- [Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
-- [WCAG Color Contrast Guideline](https://www.mcdpartners.com/news/meeting-wcag-color-contrast-guideline)
-- [Color Contrast and why you should rethink it](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
-- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) — a color-blindness simulator for Mac OS X.
+- [Assistive Technology Experiment: High Contrast](https://webaim.org/blog/high-contrast/).
+- [Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/).
+- [WCAG Color Contrast Guideline](https://www.mcdpartners.com/news/meeting-wcag-color-contrast-guideline).
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) — a color-blindness simulator for MacOS.
 - [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter) — apply a color-blindness emulating filter to a web page.
 - [Accessible color palette generator](https://venngage.com/tools/accessible-color-palette-generator) - Tool to generate accessible color palettes.

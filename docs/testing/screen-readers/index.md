@@ -21,6 +21,7 @@ Verification methods:
 
 - Use a screen reader to confirm announcements match the actual state changes.
 - Use browsers inspect panel to check the accessibility tree and live ARIA values.
+- Verify that announcements do not occur continuously, such that they would interrupt the user's ability to use the interface.
 
 ## Which screen reader should I test in?
 
@@ -30,7 +31,9 @@ Verification methods:
 
 [Narrator for Windows](https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator), by Microsoft, is built into Windows. Use Narrator in the browser Edge for website testing.
 
-[VoiceOver](https://www.apple.com/voiceover/) is built into macOS. Use VoiceOver in the browser Safari for website testing. While we know that many developers work primarily on macOS, testing only with Apple’s VoiceOver is not enough in some cases. VoiceOver, while fairly common, has some non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.
+[TalkBack](https://support.google.com/accessibility/android/answer/6283677?hl=en) is built into Android, and is the most commonly available screen reader for Android-based phones. It is a full-fledged screen reader, but performance will vary widely depending on your phone hardware.
+
+[VoiceOver](https://www.apple.com/voiceover/) is built into macOS and iOS. Use VoiceOver in the browser Safari for website testing. While we know that many developers work primarily on macOS, testing only with Apple’s VoiceOver is not enough in some cases. VoiceOver, while fairly common, has some non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.
 
 The screen readers [ChromeVox for Chromebook](https://support.google.com/chromebook/answer/7031755?hl=en) and [Orca](https://orca.gnome.org/) for GNOME don’t perform well enough as a screen reader, at this moment, to give representative test information.
 

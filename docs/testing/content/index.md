@@ -21,7 +21,7 @@ Documentation about alternative text for images:
 
 - [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in Theme guidelines for the WordPress accessibility-ready program.
 - [Alternative text for images]({{site.baseurl}}/docs/topics/content/alt-text/) in Standards and best Practices: Content and images.
-- [Images as link]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best Practices: Content and images.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best Practices: Content and images.
 - [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/) in Standards and best Practices: Frontend code.
 
 ## Headings
@@ -37,7 +37,8 @@ Documentation and test tools for the heading structure:
 
 - [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/) in Theme guidelines for the WordPress accessibility-ready program.
 - [Headings in the content]({{site.baseurl}}/docs/topics/content/headings/) in Standards and best Practices: Content and images.
-- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Standards and best Practices: Frontend code.
+- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Standards and best Practices: Frontend code. 
+- Use the browser tool [HeadingsMap]({{site.baseurl}}/docs/topics/code/heading-structure/#how-to-test-for-a-proper-heading-structure) to test the heading structure of an entire web page.
 
 ## Link texts
 
@@ -57,6 +58,7 @@ Documentation about link texts:
 - Make sure video has closed captions.
 - Make sure audio has transcriptions.
 - Don’t autoplay video and audio.
+- Avoiding using video with rapid flashing content, or provide content warnings.
 
 Documentation about video and audio:
 - [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/) in Theme guidelines for the WordPress accessibility-ready program.
@@ -71,7 +73,6 @@ How you write your text and what reading level you aim for depends on the purpos
 - Divide the rest of the text in short blocks.
 - Keep your text simple and to the point.
 - Use headings, lists, and meaningful link text.
-- Avoid large blocks of text.
 
 Documentation about readability: [Readability]({{site.baseurl}}/docs/topics/content/readability/) in Standards and best Practices: Content and images.
 
