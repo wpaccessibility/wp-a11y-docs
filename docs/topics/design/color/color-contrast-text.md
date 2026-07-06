@@ -24,9 +24,9 @@ This requires that the contrast between background and foreground colors has a l
 
 There are many tools to check color contrast ratios. WebAxe published an overview of contrast checkers. You can test color contrast with these color checkers:
 
-- [contrastchecker.com](http://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast
-- [Colour Contrast Analyser (CCA)](http://www.paciellogroup.com/resources/contrastAnalyser), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
-- [Background Image & Text Contrast Checker](http://www.brandwood.com/a11y/), by Andrew Brandwood.
+- [contrastchecker.com](https://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast
+- [Colour Contrast Analyser (CCA)](https://vispero.com/lp/color-contrast-checker/), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
+- [Background Image & Text Contrast Checker](https://www.brandwood.com/a11y/), by Andrew Brandwood.
 
 ## Resources
 
@@ -42,8 +42,8 @@ There are many tools to check color contrast ratios. WebAxe published an overvie
 
 - [Assistive Technology Experiment: High Contrast](https://webaim.org/blog/high-contrast/)
 - [Color Contrast And Why You Should Rethink It](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
-- [WCAG Color Contrast Guideline](http://mcdpartners.com/lab/meeting-wcag-color-contrast-guideline/)
+- [WCAG Color Contrast Guideline](https://www.mcdpartners.com/news/meeting-wcag-color-contrast-guideline)
 - [Color Contrast and why you should rethink it](https://www.smashingmagazine.com/2014/10/color-contrast-tips-and-tools-for-accessibility/)
-- [Sim Daltonism](http://michelf.ca/projects/sim-daltonism/) — a color-blindness simulator for Mac OS X.
+- [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/) — a color-blindness simulator for Mac OS X.
 - [Colorblind Web Page Filter](https://www.toptal.com/designers/colorfilter) — apply a color-blindness emulating filter to a web page.
 - [Accessible color palette generator](https://venngage.com/tools/accessible-color-palette-generator) - Tool to generate accessible color palettes.

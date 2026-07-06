@@ -78,7 +78,7 @@ How do you test if the HTML you are using is valid? There are several tools for 
 - [aXe browser extension by Deque](https://www.deque.com/products/axe/)
 - [aXe-core npm module by Deque](https://www.deque.com/products/axe-core)
 
-It’s harder to check if your HTML is meaningful because this highly depends on the content of your web page. Use common sense: search for the right element for the content and [don’t suffer from Divitis](https://css-tricks.com/css-beginner-mistakes-1/).
+It’s harder to check if your HTML is meaningful because this highly depends on the content of your web page. Use common sense: search for the right element for the content and [don’t suffer from Divitus](https://css-tricks.com/css-beginner-mistakes-1/).
 
 
 ## Resources

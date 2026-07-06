@@ -40,11 +40,11 @@ There are many excellent articles on how to use and test with a screen reader. K
 
 - [Testing with Screen Readers: Questions and Answers](https://webaim.org/articles/screenreader_testing/), on WebAIM.
 - [Screen reader keyboard shortcuts and gestures](https://dequeuniversity.com/screenreaders/) by Deque university.
-- [Basic screen reader commands for accessibility testing](https://www.tpgi.com/basic-screen-reader-commands-for-accessibility-testing/), by Léonie Watson.
+- [Basic screen reader commands for accessibility testing](https://vispero.com/resources/basic-screen-reader-commands-for-accessibility-testing/), by Léonie Watson.
 - [Five Screen Reader Accessibility Tests Your QA Team Should Do](https://vispero.com/resources/five-screen-reader-accessibility-tests-your-qa-team-should-do/), An introduction to fundamental screen reader tests by Charlie Pike.
-- [Using NVDA to Evaluate Web Accessibility](http://webaim.org/articles/nvda/), on WebAIM.
-- [Using JAWS to Evaluate Web Accessibility](http://webaim.org/articles/jaws/), on WebAIM.
+- [Using NVDA to Evaluate Web Accessibility](https://webaim.org/articles/nvda/), on WebAIM.
+- [Using JAWS to Evaluate Web Accessibility](https://webaim.org/articles/jaws/), on WebAIM.
 - [Using Narrator and Dev Mode](https://learn.microsoft.com/en-us/shows/one-dev-minute/using-narrator-dev-mode), by Microsoft.
 - [Using VoiceOver to Evaluate Web Accessibility](https://webaim.org/articles/voiceover/), on WebAIM.
-- [VoiceOver cheat sheet](http://pauljadam.com/demos/iosvocheatsheet.html), by Paul J. Adam.
+- [VoiceOver cheat sheet](https://pauljadam.com/demos/iosvocheatsheet.html), by Paul J. Adam.
 - [VoiceOver Getting Started](https://help.apple.com/voiceover/info/guide/10.8/English.lproj/), by Apple.

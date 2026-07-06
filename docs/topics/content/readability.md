@@ -37,7 +37,7 @@ Use [meaningful headings]({{site.baseurl}}/docs/topics/content/headings/), [good
 
 - [Writing Accessible Content](https://foxland.fi/writing-accessible-content/)
 - [Plain Language Is for Everyone, Even Experts](https://www.nngroup.com/articles/plain-language-experts/)
-- [Tips on Writing for Web Accessibility](https://www.w3.org/WAI/gettingstarted/tips/writing.html#keep-content-clear-and-concise)
+- [Tips on Writing for Web Accessibility](https://www.w3.org/WAI/tips/writing/#keep-content-clear-and-concise)
 - [Dos and don’ts on designing for accessibility, designing for people with dyslexia](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [1Up Your Writing with Plain Language](http://www.handcoding.com/presentations/plainwriting/#cover) (slides)
-- [Reading level, accessibility for web writers](http://4syllables.com.au/articles/accessibility-writers-reading/)
+- [1Up Your Writing with Plain Language](https://www.handcoding.com/presentations/plainwriting/#cover) (slides)
+- [Reading level, accessibility for web writers](https://4syllables.com.au/articles/accessibility-writers-reading/)
