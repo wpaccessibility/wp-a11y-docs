@@ -1,83 +1,49 @@
 ---
-title: Automated validation
+title: Automated testing
 layout: default
 parent: Test for accessibility
 description: Learn about automated accessibility testing and validation.
-nav_order: 5
+nav_order: 2
+contributors:
+  - Rian Rietveld
 ---
 
 # Automated accessibility testing
 
-## WCAG 2 AA automated validation
+With automated accessibility testing, it is necessary to check against the generated Document Object Model (DOM) of your web project. This is different from, for example, PHP code standard checks where you can perform checks on the code base. You need to run checks on a working site.
 
-The generated DOM, the front end of your web project, must conform to WCAG 2 AA. You can use automated validation to get a limited scope of your success at this.
+Automated accessibility testing cannot catch all accessibility errors, so additional manual testing is still needed. Testing in the browser and manual keyboard testing need to be part of your regular workflow.
 
-Recommended:
+## Recommended testing tools
 
-- [aXe browser addon](https://www.deque.com/aXe/) for Chrome and FireFox. The addon adds a tab to your inspector with a validate button. After validating you see the errors and warnings for that particular webpage and how to fix them. Make sure to also test in different views and with the menu open and closed, for example.
-- [HTML_CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/)
-- Accessibility Inspector in the [Firefox Developer Tools](https://developer.mozilla.org/en-US/docs/Tools). A good read about this by Marco Zehe:  How to use [NVDA and Firefox to test your web pages for accessibility](https://www.marcozehe.de/how-to-use-nvda-and-firefox-to-test-your-web-pages-for-accessibility/)
+### Axe-core
 
-More tools:
+[Axe-core](https://github.com/dequelabs/axe-core-npm) by Deque is an accessibility testing engine for websites and other HTML-based user interfaces.
 
-- [React-a11y](https://github.com/reactjs/react-a11y), Identifies accessibility issues in your React.js elements
-- Static AST checker for [a11y rules on JSX elements](https://github.com/evcohen/eslint-plugin-jsx-a11y)
-- More [Toolbars and toolkits ](https://make.wordpress.org/accessibility/handbook/which-tools-can-i-use/useful-tools/#toolbars-toolkits) in the Accessibility Handbook
+[axe-core-npm](https://github.com/dequelabs/axe-core-npm) offers packages like @axe-core/cli and @axe-core/react, which can be used for automated accessibility testing powered by axe core.
 
-## Automated testing
+[Playwright Accessibility testing](https://playwright.dev/docs/accessibility-testing) uses Axe. Accessibility tests work just like any other Playwright test. You can either create separate test cases or integrate accessibility scans and assertions into your existing test cases. NPM package: [@axe-core/playwright](https://www.npmjs.com/package/@axe-core/playwright).
 
-The big difference between PHP and JavaScript code standard checks and accessibility checks is that the accessibility checks need to be performed on the generated DOM, not on the code base. You need to run checks on a working WordPress site. This can be done using automation that sets up your environment dynamically, but still requires a fully built and run installation.
+Axe is also available as [aXe Devtools browser addon](https://www.deque.com/axe/devtools/extension/). The addon adds a tab to your inspector with a "validate" button. After validating you see the errors and warnings for that particular webpage and how to fix them. Available as a free limited version and as a paid Pro version. 
 
-There are several command line tools for automated testing like [aXe-cli](https://github.com/dequelabs/axe-cli) and [pa11y](https://github.com/pa11y/pa11y).
+[Google LightHouse for Chrome](https://developer.chrome.com/docs/lighthouse) uses axe-core under the hood.
 
-{: .callout  .info }
-**Info:** Automated accessibility testing doesn’t catch all the issues, rarely more than 30%. Testing in the browser and manual keyboard testing still needs to be part of your workflow.
+### IBM Equal Access Accessibility Checker
 
-### Setup for aXe-cli
+[The IBM Equal Access Accessibility Checker](https://github.com/IBMa/equal-access/wiki) is an open-source and freely available set of tools for web developers and accessibility auditors, documented in the IBM Equal Access Wiki.
 
-Install axe-core for CLI first:
-
-```
-npm install axe-cli -g
-npm install chromedriver –g`
-```
-
-Then run axe in the command line:
-
-```
-axe url -b c
-```
-
-The url can be any url, also a local one. You get a report of the accessibility issues for that url. The **-b** stands for browser, **c** for chrome, as this browser gives the best results (better than the default PhantomJS). You will get the errors and warnings in your console.
-
-You can provide more (space separated) urls to the command like
-
-```
-axe url url2 url3 -b c
-```
-
-or call a file with urls like:
-
-```
-axe $( cat list-of-urls.txt ) -b c
-```
-
-**Note**:  You can run [axe-cli on more than one url](https://make.wordpress.org/accessibility/handbook/best-practices/test-for-web-accessibility/test-for-web-accessibility-frontend-code/#setup-for-axe-cli) in one command, but axe-cli is not build to run on a large amount of urls or on a complete site, axe-cli is not a crawler. Deque Labs recommends to use the [axe-webdriverjs](https://www.npmjs.com/package/axe-webdriverjs), a chainable aXe API for Selenium’s WebDriverJS for testing on a large amounts of urls.
-
-### Setup for pa11y
-
-The [setup for pa11y](https://github.com/pa11y/pa11y) is well documented in the GitHub repository.
+- The **accessibility-checker-engine** uses a set of rules that map to accessibility standards to detect accessibility issues in web content and applications. 
+- The **accessibility-checker-extension** integrates into browser DevTools, providing an integrated scanning experience, a keyboard checker mode visualization, and helps users quickly identify the source of accessibility issues, understand what to do, and try fixes. The Checker is also available as a package for CI/CD environments and automated testing frameworks.
 
 
-## Browser Toolbars & Toolkits
+### W3C Validators and tools
 
-- [aXe accessibility testing tool](https://www.deque.com/products/axe/) — available as browser extension and npm module ([axe-core](https://github.com/dequelabs/axe-core))
-- [WAVE](http://wave.webaim.org/toolbar) — run the WAVE accessibility evaluation tool within Firefox and Chrome.
-- Accessibility inspector in the FireFox developer tools
-- [AInspector for WCAG Accessibility Evaluation](https://addons.mozilla.org/en-US/firefox/addon/ainspector-wcag/) — Inspect web pages for potential accessibility issues.
-- [Tota11y](http://khan.github.io/tota11y/) — An accessibility visualization toolkit that can be dragged into your bookmarks bar or installed as a plugin.
-- [Total Validator](http://www.totalvalidator.com/) — an HTML validator, accessibility validator, spell checker, and broken link checker all rolled into one tool. Free & commercial versions available.
-- [HeadingsMap](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=es) — A [Chrome](https://chromewebstore.google.com/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?pli=1) or [Firefox extension](https://addons.mozilla.org/en-us/firefox/addon/headingsmap/) that shows the structure of headings on a webpage.
-- [Visual ARIA Bookmarklet](http://whatsock.com/training/matrices/visual-aria.htm) — A bookmarklet to visually display ARIA attributes on a webpage.
-- [Accessibility Testing Tools for Desktop and Mobile Websites](https://www.24a11y.com/2017/accessibility-testing-tools-desktop-mobile-websites/) – A review of testing tools by Paul J. Adam.
-- [Accessibility Bookmarklets](https://www.digitala11y.com/accessibility-bookmarklets-testing/) – A collection of bookmarklets useful for accessibility testing.
+The W3C maintains a page with [links to the test tools](https://www.w3.org/developers/tools/) they provide, like the Nu HTML Checker, CSS Validator, and Link Checker. Their information includes the W3C API, providing consistent access to specifications and other W3C data.
+
+### Pa11y
+[Pa11y](https://github.com/pa11y/pa11y), runs accessibility tests on your pages via the command line or Node.js, so you can automate your testing process. 
+
+## Resources
+
+Research by Adrian Roselli: [Comparing Manual and Free Automated WCAG Reviews](https://adrianroselli.com/2023/01/comparing-manual-and-free-automated-wcag-reviews.html). This recommended post is updated regularly.
+

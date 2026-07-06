@@ -74,16 +74,16 @@ Read more on the [.screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-
 How do you test if the HTML you are using is valid? There are several tools for this:
 
 - [W3C Markup Validation Service](https://validator.w3.org/)
-- [W3C developers checkers](https://w3c.github.io/developers/tools/)
+- [W3C developers tools](https://www.w3.org/developers/tools/
 - [aXe browser extension by Deque](https://www.deque.com/products/axe/)
 - [aXe-core npm module by Deque](https://www.deque.com/products/axe-core)
 
-It’s harder to check if your HTML is meaningful, because this highly depends on the content of your web page. Use common sense: search for the right element for the content and [don’t suffer from Divitis](https://css-tricks.com/css-beginner-mistakes-1/).
+It’s harder to check if your HTML is meaningful because this highly depends on the content of your web page. Use common sense: search for the right element for the content and [don’t suffer from Divitus](https://css-tricks.com/css-beginner-mistakes-1/).
 
 
 ## Resources
 
-HTML is the foundation all web output. Take the time to study and learn HTML thoroughly. If you’re using a library that generates output for you, make sure you know what it is doing.
+HTML is the foundation of all web output. Take the time to study and learn HTML thoroughly. If you’re using a library that generates output for you, make sure you know what it is doing.
 
 ### A good overview of all HTML elements
 
