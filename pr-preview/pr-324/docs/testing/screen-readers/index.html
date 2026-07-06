@@ -564,6 +564,7 @@
 <ul>
   <li>Use a screen reader to confirm announcements match the actual state changes.</li>
   <li>Use browsers inspect panel to check the accessibility tree and live ARIA values.</li>
+  <li>Verify that announcements do not occur continuously, such that they would interrupt the user’s ability to use the interface.</li>
 </ul>
 
 <h2 id="which-screen-reader-should-i-test-in">Which screen reader should I test in?</h2>
@@ -574,7 +575,9 @@
 
 <p><a href="https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator">Narrator for Windows</a>, by Microsoft, is built into Windows. Use Narrator in the browser Edge for website testing.</p>
 
-<p><a href="https://www.apple.com/voiceover/">VoiceOver</a> is built into macOS. Use VoiceOver in the browser Safari for website testing. While we know that many developers work primarily on macOS, testing only with Apple’s VoiceOver is not enough in some cases. VoiceOver, while fairly common, has some non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.</p>
+<p><a href="https://support.google.com/accessibility/android/answer/6283677?hl=en">TalkBack</a> is built into Android, and is the most commonly available screen reader for Android-based phones. It is a full-fledged screen reader, but performance will vary widely depending on your phone hardware.</p>
+
+<p><a href="https://www.apple.com/voiceover/">VoiceOver</a> is built into macOS and iOS. Use VoiceOver in the browser Safari for website testing. While we know that many developers work primarily on macOS, testing only with Apple’s VoiceOver is not enough in some cases. VoiceOver, while fairly common, has some non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.</p>
 
 <p>The screen readers <a href="https://support.google.com/chromebook/answer/7031755?hl=en">ChromeVox for Chromebook</a> and <a href="https://orca.gnome.org/">Orca</a> for GNOME don’t perform well enough as a screen reader, at this moment, to give representative test information.</p>
 
