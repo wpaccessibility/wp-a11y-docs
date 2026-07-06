@@ -404,7 +404,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/overall/" class="nav-list-link">Complete WCAG checks</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-324/docs/testing/overall/" class="nav-list-link">Complete WCAG checklists</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
 
@@ -548,7 +548,7 @@
 
           <h1 id="design-checks-for-web-accessibility">Design checks for web accessibility</h1>
 
-<p>The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design.</p>
+<p>The most common design elements to check for are color contrast between text / background and the use of color to present information. But these aren’t the only things to take into consideration to improve your design.</p>
 
 <p>Read the detailed documentation accessible design in <a href="/pr-preview/pr-324/docs/topics/design/">Design and user experience</a> in the section Standard and best practice of this documentation.</p>
 
@@ -565,31 +565,31 @@
 <p>Text in logos and logotypes are excluded from this guideline.</p>
 
 <p><strong>Non-text elements</strong> that have meaning should have a color contrast of 3.1 or more against its <strong>background</strong>.
-For example: icons, borders of input fields, checkboxes or radio buttons.
-Also check for different states (light/dark mode, checked, not checked). They all must have a color contrast of 3.1 or more.</p>
+For example: icons used functionally or informationally, borders of input fields, checkboxes or radio buttons.
+Also check for different states (light/dark mode, checked, not checked, etc.). All states must have a color contrast of 3.1 or more.</p>
 
 <p>Documentation about color contrast: <a href="/pr-preview/pr-324/docs/topics/design/color/color-contrast-text/">Color contrast of text against its background</a> in Standards and best practice: Design and user experience.</p>
 
-<h3 id="populair-color-contrast-checkers">Populair color contrast checkers</h3>
+<h3 id="popular-color-contrast-checkers">Popular color contrast checkers</h3>
 
 <ul>
   <li><a href="https://www.figma.com/community/plugin/748533339900865323">Figma Contrast Plugin</a>.</li>
   <li><a href="https://www.figma.com/color-contrast-checker/">Figma Color Contrast Checker Plugin</a>.</li>
   <li><a href="https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin">Figma WCAG Plugin</a>.</li>
   <li><a href="https://vispero.com/lp/color-contrast-checker/">Colour Contrast Analyser (CCA)</a>, Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.</li>
-  <li><a href="http://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>.</li>
-  <li><a href="http://contrastchecker.com/">contrastchecker.com</a> (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.</li>
+  <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>.</li>
+  <li><a href="https://contrastchecker.com/">contrastchecker.com</a> (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.</li>
 </ul>
 
 <h2 id="not-by-color-alone">Not by color alone</h2>
 
-<p>Functionality must be understandable also for people who cannot see colors.</p>
+<p>Functionality must also be understandable for people who cannot see colors.</p>
 
 <ul>
   <li>Don’t depend on color for meaning. It’s fine to use color, as long as that isn’t the only identifying characteristic.</li>
-  <li>Links in text must stand out as links, make them underlined.</li>
+  <li>Links in text must stand out as links, so keep them underlined.</li>
   <li>Use clear hover and focus states, not depending on color alone.</li>
-  <li>Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds. Include clear text messages as well.</li>
+  <li>Don’t indicate errors in forms only using text color, borders, or backgrounds. Include clear text messages as well.</li>
 </ul>
 
 <p>Related documentation:</p>
@@ -603,9 +603,9 @@ Also check for different states (light/dark mode, checked, not checked). They al
 <h3 id="color-blindness-checks-and-tools">Color-blindness checks and tools:</h3>
 
 <ul>
-  <li>Look at your design only in gray scale colors, remove all colors. Can you still understand it?</li>
+  <li>Look at your design by removing all colors, viewed only in grayscale. Can you still understand it?</li>
   <li><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a>, a macOS app tool for color-blindness check.</li>
-  <li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/">Coblis</a>, color-blindness simulator by Colblindor.</li>
+  <li><a href="https://www.color-blindness.com/coblis-color-blindness-simulator/">Coblis</a>, color-blindness simulator by Colblindor.</li>
 </ul>
 
 <h2 id="readability">Readability</h2>
@@ -615,9 +615,9 @@ Also check for different states (light/dark mode, checked, not checked). They al
 <ul>
   <li>Break text into hierarchical headings (H1, H2, H3).</li>
   <li>Avoid all uppercase for headings or paragraphs of text.</li>
-  <li>Use a readable font for the main or important text. Handwritten font is harder to read.</li>
-  <li>Use a font size of 16 pixels minimum.</li>
-  <li>Align text to the left or right, avoiding justified text.</li>
+  <li>Use a readable font for the main or important text. Handwritten fonts are harder to read.</li>
+  <li>Use a minimum font size of 16 pixels.</li>
+  <li>Align text to the left or right, avoiding full or center justified text.</li>
   <li>Avoid large blocks of text. Use short paragraphs, headings, and lists to divide the information.</li>
 </ul>
 
@@ -633,9 +633,9 @@ Also check for different states (light/dark mode, checked, not checked). They al
 
 <h2 id="proximity">Proximity</h2>
 
-<p>Keep together what belongs together: place related links or controls near each other.</p>
+<p>Keep together what belongs together: place related links or controls near each other. For example, place “Save” and “Cancel” buttons next to each other, rather than on opposite sides of the interface.</p>
 
-<p>Make the order of things logical when you read from the read from the top down. For example, do not put required check boxes below the Submit button in a form.</p>
+<p>Make the order of content logical when read from the top down. For example, do not put required check boxes below the Submit button in a form.</p>
 
 <h2 id="animation">Animation</h2>
 
@@ -660,7 +660,7 @@ Also check for different states (light/dark mode, checked, not checked). They al
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> July 02, 2026</li>
+        <li><span>Last updated:</span> July 06, 2026</li>
 
         
 
@@ -705,9 +705,9 @@ Also check for different states (light/dark mode, checked, not checked). They al
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/overall/"> Complete WCAG checks</a>
+                    <a href="/pr-preview/pr-324/docs/testing/overall/"> Complete WCAG checklists</a>
                 </h3>
-                <p>Complete checks against the Web Content Accessibility Guidelines.</p>
+                <p>Complete checklists against the Web Content Accessibility Guidelines.</p>
             </li>
             
             

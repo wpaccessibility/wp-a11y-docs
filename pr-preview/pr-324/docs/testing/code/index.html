@@ -404,7 +404,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-324/docs/testing/overall/" class="nav-list-link">Complete WCAG checks</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-324/docs/testing/overall/" class="nav-list-link">Complete WCAG checklists</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-324/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
 
@@ -552,22 +552,22 @@
 
 <p class="callout info"><strong>Note</strong>: test web accessibility against the generated DOM and not only on the codebase itself.</p>
 
-<p>While you develop, always test the following items while developing:</p>
+<p>While you develop, always test the following items:</p>
 
 <ul>
-  <li><a href="/pr-preview/pr-324/docs/topics/code/semantics/">Semantic Markup (HTML)</a> to let your code work on every device and browser.</li>
+  <li><a href="/pr-preview/pr-324/docs/topics/code/semantics/">Semantic Markup (HTML)</a> to help your code work on every device and browser.</li>
   <li>The generated DOM passes <a href="/docs/start/wcag-intro/">Web Content Accessibility Guidelines (WCAG)</a> validation.</li>
   <li>All functionality must work with <a href="/pr-preview/pr-324/docs/testing/keyboard/">keyboard only</a>.</li>
   <li><a href="/pr-preview/pr-324docs/testing/screen-readers/">Dynamic changes</a> in the DOM are properly announced for screen reader users.</li>
 </ul>
 
-<p>Most checks for valid HTML and WCAG can be done with <a href="/docs/testing/automated/">automated accessibility testing</a> in your browser or CLI street, but please test keyboard interaction and dynamic changes manually.</p>
+<p>Most checks for valid HTML and WCAG can be done with <a href="/docs/testing/automated/">automated accessibility testing</a> in your browser or CLI suite, but most keyboard interaction and dynamic changes must be tested manually.</p>
 
 <p>For WordPress, we aim to meet <a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG accessibility guidelines</a> version 2.2 at level AA and the <a href="https://developer.wordpress.org/coding-standards/wordpress-coding-standards/">WordPress Coding Standards</a>.</p>
 
 <p>In the section <a href="/pr-preview/pr-324/docs/topics/code/">Accessibility standards and best practice</a> you’ll find documentation and resources.</p>
 
-<p class="callout alert"><strong>Note</strong>: automated testing is not perfect. Automated testing at the moment of writing catches not all accessibility issues. It also gives false positives. Additional manual testing is always required.</p>
+<p class="callout alert"><strong>Note</strong>: automated testing is not perfect. Automated testing doesn’t catch all accessibility issues and can give false positives. Additional manual testing is always required.</p>
 
 <h2 id="the-main-topics-to-check">The main topics to check</h2>
 
@@ -594,7 +594,7 @@
   <li>Announce dynamic changes with <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">aria-live</a> or <a href="/pr-preview/pr-324/docs/topics/code/dynamic-changes/">wp.a11y.speak()</a>.</li>
 </ul>
 
-<p>The <a href="/pr-preview/pr-324//docs/accessibility-ready/">accessibility-ready program for WordPress</a> provides you with the requirements for meeting the accessibility-ready tag for themes. With each requirement describes in detail how to test for it.</p>
+<p>The <a href="/pr-preview/pr-324//docs/accessibility-ready/">accessibility-ready program for WordPress</a> provides you with the requirements for meeting the accessibility-ready tag for themes. Each requirement includes a detailed description of how to test for it.</p>
 
 
           
@@ -606,7 +606,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> July 02, 2026</li>
+        <li><span>Last updated:</span> July 06, 2026</li>
 
         
 
@@ -641,9 +641,9 @@
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-324/docs/testing/overall/"> Complete WCAG checks</a>
+                    <a href="/pr-preview/pr-324/docs/testing/overall/"> Complete WCAG checklists</a>
                 </h3>
-                <p>Complete checks against the Web Content Accessibility Guidelines.</p>
+                <p>Complete checklists against the Web Content Accessibility Guidelines.</p>
             </li>
             
             
