@@ -12,7 +12,7 @@ contributors:
 
 # Design checks for web accessibility
 
-The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design.
+The most common design elements to check for are color contrast between text / background and the use of color to present information. But these aren’t the only things to take into consideration to improve your design.
 
 Read the detailed documentation accessible design in [Design and user experience]({{site.baseurl}}/docs/topics/design/) in the section Standard and best practice of this documentation.
 
@@ -27,28 +27,28 @@ Check the color contrast ratio between **text** and its **background**. The guid
 Text in logos and logotypes are excluded from this guideline.
 
 **Non-text elements** that have meaning should have a color contrast of 3.1 or more against its **background**.
-For example: icons, borders of input fields, checkboxes or radio buttons.
-Also check for different states (light/dark mode, checked, not checked). They all must have a color contrast of 3.1 or more.
+For example: icons used functionally or informationally, borders of input fields, checkboxes or radio buttons.
+Also check for different states (light/dark mode, checked, not checked, etc.). All states must have a color contrast of 3.1 or more.
 
 Documentation about color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice: Design and user experience.
 
-### Populair color contrast checkers
+### Popular color contrast checkers
 
 - [Figma Contrast Plugin](https://www.figma.com/community/plugin/748533339900865323).
 - [Figma Color Contrast Checker Plugin](https://www.figma.com/color-contrast-checker/).
 - [Figma WCAG Plugin](https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin).
 - [Colour Contrast Analyser (CCA)](https://vispero.com/lp/color-contrast-checker/), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
-- [WebAIM Contrast Checker](http://webaim.org/resources/contrastchecker/).
-- [contrastchecker.com](http://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+- [contrastchecker.com](https://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.
 
 ## Not by color alone
 
-Functionality must be understandable also for people who cannot see colors.
+Functionality must also be understandable for people who cannot see colors.
 
 - Don’t depend on color for meaning. It’s fine to use color, as long as that isn’t the only identifying characteristic.
-- Links in text must stand out as links, make them underlined.
+- Links in text must stand out as links, so keep them underlined.
 - Use clear hover and focus states, not depending on color alone.
-- Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds. Include clear text messages as well.
+- Don’t indicate errors in forms only using text color, borders, or backgrounds. Include clear text messages as well.
 
 Related documentation: 
 - [Use of color]({{site.baseurl}}/docs/topics/design/color/use-of-color/), in Standard and best practice: Design and user experience.
@@ -58,9 +58,9 @@ Related documentation:
 
 ### Color-blindness checks and tools:
 
-- Look at your design only in gray scale colors, remove all colors. Can you still understand it?
+- Look at your design by removing all colors, viewed only in grayscale. Can you still understand it?
 - [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), a macOS app tool for color-blindness check.
-- [Coblis](http://www.color-blindness.com/coblis-color-blindness-simulator/), color-blindness simulator by Colblindor.
+- [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/), color-blindness simulator by Colblindor.
 
 ## Readability
 
@@ -68,9 +68,9 @@ Please note: these are recommendations and not WCAG 2.2 AA requirements:
 
 - Break text into hierarchical headings (H1, H2, H3).
 - Avoid all uppercase for headings or paragraphs of text.
-- Use a readable font for the main or important text. Handwritten font is harder to read.
-- Use a font size of 16 pixels minimum.
-- Align text to the left or right, avoiding justified text.
+- Use a readable font for the main or important text. Handwritten fonts are harder to read.
+- Use a minimum font size of 16 pixels.
+- Align text to the left or right, avoiding full or center justified text.
 - Avoid large blocks of text. Use short paragraphs, headings, and lists to divide the information.
 
 Related documentation: 
@@ -84,9 +84,9 @@ Note: The Web Content Accessibility Guidelines at level **AA** don't address rea
 
 ## Proximity
 
-Keep together what belongs together: place related links or controls near each other.
+Keep together what belongs together: place related links or controls near each other. For example, place "Save" and "Cancel" buttons next to each other, rather than on opposite sides of the interface.
 
-Make the order of things logical when you read from the read from the top down. For example, do not put required check boxes below the Submit button in a form.
+Make the order of content logical when read from the top down. For example, do not put required check boxes below the Submit button in a form.
 
 ## Animation
 

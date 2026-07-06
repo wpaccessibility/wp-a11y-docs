@@ -8,21 +8,21 @@ nav_order: 7
 
 # Screen reader testing
 
-Important content that changes dynamically during time, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!
+Important content that changes dynamically, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!
 
 ## Test feedback on dynamic changes
 
 When using interactive scripts to update content or states of interactive elements, check:
 
-- DOM updates: Interactive scripts correctly update the DOM in response to user actions, chank if the relevant content is added to or changed within an `aria-live` region or `aria-describedby` form error message.
-- ARIA states: ARIA attributes like `aria-expanded` or `aria-invalid`, accurately reflect the current UI state after each interaction.
+- DOM updates: Interactive scripts correctly update the DOM in response to user actions. Check if the relevant content is added to or changed within an `aria-live` region or `aria-describedby` form error message.
+- ARIA states: ARIA attributes like `aria-expanded` or `aria-invalid` accurately reflect the current UI state after each interaction.
 
 Verification methods:
 
 - Use a screen reader to confirm announcements match the actual state changes.
 - Use browsers inspect panel to check the accessibility tree and live ARIA values.
 
-## Which screen reader to use?
+## Which screen reader should I test in?
 
 [NVDA](https://www.nvaccess.org/download/) is an excellent, free, open source, screen reader for Windows 10 and later. If you enjoy this screen reader, consider a [donation to NVDA](https://www.nvaccess.org/support-us/).
 

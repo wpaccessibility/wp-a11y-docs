@@ -15,7 +15,7 @@ This page gives an overview of the **manual checks** you can do to provide reada
 
 ## Alternative text for images
 
-Describe (for non-visual readers) the contents and purpose of a meaningful image in your alternate text. That purpose may depend on the context in which an image is used. The [Alt decision three](https://www.w3.org/WAI/tutorials/images/decision-tree/) by the W3C helps you decide what the alternate text should be for various situations. 
+Describe (for non-visual readers) the contents and purpose of a meaningful image in your alternate text. That purpose may depend on the context in which an image is used. The [Alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) by the W3C helps you decide what the alternate text should be for various situations. 
 
 Documentation about alternative text for images:
 
@@ -29,9 +29,9 @@ Documentation about alternative text for images:
 Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book:
 
 - One H1 per page, describing what the page is about.
-- Use the other headings meaningfully by their level and not by their font size.
-- A good heading describes in short the content that follows.
-- Do not skip a heading level.
+- Use other headings meaningfully according to their level, not for their appearance.
+- A good heading briefly describes the content that follows it
+- Do not skip heading levels.
 
 Documentation and test tools for the heading structure:
 
@@ -42,8 +42,8 @@ Documentation and test tools for the heading structure:
 ## Link texts
 
 - Use meaningful link text that describes the content being linked to.
-- Avoid “click here”, “read more”, ”download”, ”continue reading” as link text. It’s meaningless and people have to read around the link to see what’s it about.
-- If you use an image as link, use the alternative text as link text.
+- Avoid “click here”, “read more”, ”download”, ”continue reading” or equivalent phrases as link text. It’s meaningless and people have to read around the link to see what’s it about.
+- If you use an image as a link, use the alternative text as link text.
 
 Documentation about link texts:
 
@@ -65,12 +65,12 @@ Documentation about video and audio:
 
 ## Readability
 
-How you construct your text and what the reading level is depends on the purpose of your content, but here are a few good practices:
+How you write your text and what reading level you aim for depends on the purpose of and audience for your content, but here are a few best practices:
 
 - Start with a short summary of the content.
 - Divide the rest of the text in short blocks.
-- Keep your texts simple and to the point.
-- Use headings and lists and meaningful link text.
+- Keep your text simple and to the point.
+- Use headings, lists, and meaningful link text.
 - Avoid large blocks of text.
 
 Documentation about readability: [Readability]({{site.baseurl}}/docs/topics/content/readability/) in Standards and best Practices: Content and images.

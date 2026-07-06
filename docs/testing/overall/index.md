@@ -1,8 +1,8 @@
 ---
-title: Complete WCAG checks
+title: Complete WCAG checklists
 layout: default
 parent: Test for accessibility
-description: Complete checks against the Web Content Accessibility Guidelines.
+description: Complete checklists against the Web Content Accessibility Guidelines.
 nav_order: 1
 contributors: 
   - Rian Rietveld
