@@ -1920,7 +1920,7 @@
     "doc": "Test for accessibility",
     "title": "Test for accessibility",
     "description": "Find ways to test for accessibility yourself.",
-    "content": "How to test your work and check for accessibility issues? How to test for the WCAG guidelines and for best practices? . In the pages of this section, you can find several ways to test accessibility for different topics and workflows. How to test for accessibility-ready is described with the requirements in the section Theme guidelines for the WordPress accessibility-ready program. ",
+    "content": "How to test your work and check for accessibility issues? How to test for the WCAG guidelines and for best practices? . In the pages of this section, you can find several ways to test accessibility for different topics and workflows. How to test for accessibility-ready is described within the requirements in the section Theme guidelines for the WordPress accessibility-ready program. ",
     "url": "/pr-preview/pr-324/docs/testing/",
     "relUrl": "/docs/testing/"
   },"275": {
@@ -2872,7 +2872,7 @@
     "doc": "Semantic HTML",
     "title": "Test Tools",
     "description": "Learn why using semantic HTML is essential for web accessibility.",
-    "content": "How do you test if the HTML you are using is valid? There are several tools for this: . | W3C Markup Validation Service | [W3C developers tools](https://www.w3.org/developers/tools/ | aXe browser extension by Deque | aXe-core npm module by Deque | . It’s harder to check if your HTML is meaningful because this highly depends on the content of your web page. Use common sense: search for the right element for the content and don’t suffer from Divitis. ",
+    "content": "How do you test if the HTML you are using is valid? There are several tools for this: . | W3C Markup Validation Service | [W3C developers tools](https://www.w3.org/developers/tools/ | aXe browser extension by Deque | aXe-core npm module by Deque | . It’s harder to check if your HTML is meaningful because this highly depends on the content of your web page. Use common sense: search for the right element for the content and don’t suffer from Divitus. ",
     "url": "/pr-preview/pr-324/docs/topics/code/semantics/#test-tools",
     "relUrl": "/docs/topics/code/semantics/#test-tools"
   },"411": {
