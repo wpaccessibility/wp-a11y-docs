@@ -12,11 +12,11 @@ All functionality should work using a **keyboard**. This is essential for all as
 
 ## How to keyboard test
 
-Note: before you start testing with a keyboard on a Mac, make sure the settings of your computer are set to allow keyboard navigation: [How to activate keyboard navigation on MacOS](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
+Note: before you start testing with a keyboard on a Mac, make sure the settings of your computer are set to allow full keyboard navigation: [How to activate keyboard navigation on MacOS](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
 
-A **detailed guide** of how to test with a keyboard only is added to the theme accessibility-ready guideline: [Keyboard navigation support]({{site.baseurl}}//docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/).
+A **detailed guide** on how to test with a keyboard only is in the theme accessibility-ready guideline: [Keyboard navigation support]({{site.baseurl}}//docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/).
 
-In short:
+In brief:
 
 Tab through your pages, links, and forms to do the following tests:
 - Confirm all links can be reached and activated via keyboard, including any inside drop-downs

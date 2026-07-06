@@ -8,26 +8,26 @@ nav_order: 8
 
 # WordPress plugins for accessibility testing
 
-We do not specifically endorse any of the plugins listed here but offer them as tools for you to test and use on your own accessible WordPress site.
+We do not specifically endorse any of the plugins listed here, but offer them as tools for you to test and use on your own accessible WordPress site.
 
 ## Testing Tools
 
 These are tools designed to provide front-end accessibility testing.
 
 - [Accessibility Checker](https://wordpress.org/plugins/accessibility-checker/), an accessibility testing tool that runs directly in your WordPress site.
-- [WP ADA Compliance Check Basic](https://wordpress.org/plugins/wp-ada-compliance-check-basic/), accessibility testing tool that runs directly in your WordPress site. Limit 15 posts or pages.
+- [WP ADA Compliance Check Basic](https://wordpress.org/plugins/wp-ada-compliance-check-basic/), an accessibility testing tool that runs directly in your WordPress site. Limit 15 posts or pages.
 - [Editoria11y](https://wordpress.org/plugins/editoria11y-accessibility-checker/), an accessibility checking tool geared towards content authors.
 - [Sa11y](https://wordpress.org/plugins/sa11y/), an accessibility checking tool geared towards content authors.
-- [Tota11y WP](https://wordpress.org/plugins/wp-tota11y/), visualizes how your site performs with assistive technologies.
+- [Tota11y WP](https://wordpress.org/plugins/wp-tota11y/), a tool that visualizes how your site performs with assistive technologies.
 
 ## Content Analysis
 
 These are tools built to offer in-editor or content-specific accessibility support.
 
 - [Accessibility Checker](https://wordpress.org/plugins/accessibility-checker/), an accessibility testing tool that runs directly in your WordPress site.
-- [Fix Alt Text](https://wordpress.org/plugins/fix-alt-text/), helps user find images with missing alternative text.
-- [WP Accessibility Tools & Missing Alt Text Finder](https://wordpress.org/plugins/tool-for-ada-section-508-and-seo/), provides accessibility testing and media analysis support.
-- [Block Accessibility Checks](https://wordpress.org/plugins/block-accessibility-checks/), a block editor accessibility testing tools.
+- [Fix Alt Text](https://wordpress.org/plugins/fix-alt-text/), a tool that helps user find images with missing alternative text.
+- [WP Accessibility Tools & Missing Alt Text Finder](https://wordpress.org/plugins/tool-for-ada-section-508-and-seo/), a tool that provides accessibility testing and media analysis support.
+- [Block Accessibility Checks](https://wordpress.org/plugins/block-accessibility-checks/), a block editor based suite of accessibility testing tools.
 
 ## Criteria for inclusion on this page
 

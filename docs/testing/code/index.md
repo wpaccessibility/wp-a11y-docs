@@ -13,21 +13,21 @@ Testing for valid, semantic HTML is essential for the accessibility of your work
 {: .callout .info }
 **Note**: test web accessibility against the generated DOM and not only on the codebase itself.
 
-While you develop, always test the following items while developing:
+While you develop, always test the following items:
 
-- [Semantic Markup (HTML)]({{site.baseurl}}/docs/topics/code/semantics/) to let your code work on every device and browser. 
+- [Semantic Markup (HTML)]({{site.baseurl}}/docs/topics/code/semantics/) to help your code work on every device and browser. 
 - The generated DOM passes [Web Content Accessibility Guidelines (WCAG)](/docs/start/wcag-intro/) validation.
 - All functionality must work with [keyboard only]({{site.baseurl}}/docs/testing/keyboard/).
 - [Dynamic changes]({{site.baseurl}}docs/testing/screen-readers/) in the DOM are properly announced for screen reader users.
 
-Most checks for valid HTML and WCAG can be done with [automated accessibility testing](/docs/testing/automated/) in your browser or CLI street, but please test keyboard interaction and dynamic changes manually. 
+Most checks for valid HTML and WCAG can be done with [automated accessibility testing](/docs/testing/automated/) in your browser or CLI suite, but most keyboard interaction and dynamic changes must be tested manually. 
 
 For WordPress, we aim to meet [WCAG accessibility guidelines](https://www.w3.org/WAI/WCAG22/quickref/) version 2.2 at level AA and the [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/). 
 
 In the section [Accessibility standards and best practice]({{site.baseurl}}/docs/topics/code/) you’ll find documentation and resources.
 
 {: .callout .alert }
-**Note**: automated testing is not perfect. Automated testing at the moment of writing catches not all accessibility issues. It also gives false positives. Additional manual testing is always required.
+**Note**: automated testing is not perfect. Automated testing doesn't catch all accessibility issues and can give false positives. Additional manual testing is always required.
 
 ## The main topics to check
 
@@ -46,4 +46,4 @@ In the section [Accessibility standards and best practice]({{site.baseurl}}/docs
 - Always define both a `:hover` and `:focus` states in your CSS, this is explained in [Visibility of the keyboard focus]({{site.baseurl}}/docs/topics/code/focus-handling/visual-focus/).
 - Announce dynamic changes with [aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions) or [wp.a11y.speak()]({{site.baseurl}}/docs/topics/code/dynamic-changes/).
 
-The [accessibility-ready program for WordPress]({{site.baseurl}}//docs/accessibility-ready/) provides you with the requirements for meeting the accessibility-ready tag for themes. With each requirement describes in detail how to test for it.
+The [accessibility-ready program for WordPress]({{site.baseurl}}//docs/accessibility-ready/) provides you with the requirements for meeting the accessibility-ready tag for themes. Each requirement includes a detailed description of how to test for it.
