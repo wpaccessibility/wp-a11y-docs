@@ -2,17 +2,17 @@
 
 Website: [wpaccessibility.org](https://wpaccessibility.org).
 
-**Please note**: wpaccessibility.org is a work in progress and is still in the setup phase. The knowledge base has no content yet and the site needs an accessibility audit. Please visit, for now, the documentation on the [Make WordPress Accessible Handbook](https://make.wordpress.org/accessibility/handbook/).
-
 This website aims to provide you with answers about WordPress and accessibility. How do you design and create an accessible website or plugin? How do you write accessible content? What do you need to know to comply with international legislation?
 
-We'll provide documentation, effective examples (both what to do and what to avoid) and reliable, up-to-date resources.
+The knowledge base provides documentation, effective examples (what to do and what to avoid) and reliable, up-to-date resources about implementing accessibility.
 
-Additionally, we are developing a pattern library with code examples. We aim to meet [WCAG 2.2 AA](https://www.w3.org/WAI/WCAG22/quickref/).
+The website includes the guidelines for meeting `accessibility-ready` guidelines with extensive instructions on testing and reporting those issues.
 
-Did we miss a topic? Did you find an error or have a great idea? Create an issue on our [GitHub repository wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/issues/).
+## Did we miss a topic? 
 
-We would like to invite you [to contribute](https://wpaccessibility.org/docs/contribute/) to this documentation.
+Did you find an error or have a great idea? Create an issue on our [GitHub repository wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/issues/).
+
+We would like to invite you [to contribute](https://wpaccessibility.org/docs/contribute/) to this documentation. Open an issue or add a pull request with your changes. If you want to add new pages to the documentation, please contact a project lead first.
 
 ## Pull Request Previews
 
