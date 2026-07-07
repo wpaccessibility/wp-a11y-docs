@@ -12,7 +12,7 @@
 
 
 
-<title>Design checks, WP Accessibility Knowledge Base</title>
+<title>Content checks, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-365/assets/css/styles.css">
@@ -404,19 +404,15 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-365/docs/testing/checklists/" class="nav-list-link">Checklists</a><button class="nav-list-expander btn-reset" aria-label="Checklists submenu" aria-expanded="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
-          </button><ul class="nav-list"><li class="nav-list-item">
+          <a href="/pr-preview/pr-365/docs/testing/overall/" class="nav-list-link">Complete WCAG checklists</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-365/docs/testing/checklists/overall/" class="nav-list-link">Overall</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-365/docs/testing/automated/" class="nav-list-link">Automated testing</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-365/docs/testing/checklists/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-365/docs/testing/content/" class="nav-list-link">Content checks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-365/docs/testing/checklists/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-365/docs/testing/design/" class="nav-list-link">Design checks</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-365/docs/testing/checklists/code/" class="nav-list-link">Frontend code checks</a></li></ul></li><li class="nav-list-item">
-
-          <a href="/pr-preview/pr-365/docs/testing/automated/" class="nav-list-link">Automated validation</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-365/docs/testing/code/" class="nav-list-link">Frontend code checks</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-365/docs/testing/keyboard/" class="nav-list-link">Keyboard only</a></li><li class="nav-list-item">
 
@@ -534,16 +530,6 @@
 
         
             
-            
-            
-        
-
-    
-
-        
-
-        
-            
 
 
 
@@ -551,7 +537,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-365/docs/testing/'>Test for accessibility</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-365/docs/testing/checklists/'>Checklists</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Design checks</li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">Content checks</li>
     </ol>
 </nav>
 
@@ -560,93 +546,90 @@
 
         <main>
 
-          <h1 id="design-checks-for-web-accessibility">Design checks for web accessibility</h1>
+          <h1 id="content-checks-for-web-accessibility">Content checks for web accessibility</h1>
 
-<p>The most common design elements to check for are color contrast between text / background and the meaning of color to give information. But these aren’t the only things to take into consideration to improve your design.</p>
+<p>This page gives an overview of the <strong>manual checks</strong> you can do to provide readable content for as many users as possible. Read the detailed explanation about how to write accessible content in <a href="/pr-preview/pr-365docs/topics/content/">Content and images</a> in the section Standard and best practice of this documentation.</p>
 
-<p>Here are a few major issues to address. At the end of the page you’ll find links to good resources with more examples and solutions.</p>
+<h2 id="alternative-text-for-images">Alternative text for images</h2>
 
-<h2 id="color-contrast">Color contrast</h2>
+<p>Describe (for non-visual readers) the contents and purpose of a meaningful image in your alternate text. That purpose may depend on the context in which an image is used. The <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">Alt decision tree</a> by the W3C helps you decide what the alternate text should be for various situations.</p>
 
-<p>Check the color contrast ratio between text and its background. The rules in WCAG 2 AA guidelines are: Color contrast ratio between text and background must be 4.5 or more for normal text and 3.1 or more for text of at least 24 pixels or 19 pixels bold.</p>
-
-<p>There are many tools to calculate this easily, see <a href="http://www.webaxe.org/color-contrast-tools/">Color contrast checkers</a>.</p>
-
-<p class="callout tip"><strong>Tip:</strong> Logos and logotype are frequently exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.</p>
-
-<h2 id="color-contrast-1">Color Contrast</h2>
+<p>Documentation about alternative text for images:</p>
 
 <ul>
-  <li><a href="http://contrastchecker.com/">contrastchecker.com</a> (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast</li>
-  <li><a href="http://www.paciellogroup.com/resources/contrastAnalyser">Color Contrast Analyser</a> (Windows and OSX)– checks foreground/background contrast levels and preview designs as they might be seen by color-blind users.</li>
-  <li><a href="http://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a> — a color-blindness simulator for Mac OS X.</li>
-  <li><a href="https://www.toptal.com/designers/colorfilter">Colorblind Web Page Filter</a> — apply a color-blindness emulating filter to a web page.</li>
-  <li><a href="https://venngage.com/tools/accessible-color-palette-generator">Accessible color palette generator</a> - Tool to generate accessible color palettes.</li>
+  <li><a href="/pr-preview/pr-365/docs/accessibility-ready/theme-guidelines/alternative-text/">Alternative text on images and graphics</a> in Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="/pr-preview/pr-365/docs/topics/content/alt-text/">Alternative text for images</a> in Standards and best Practices: Content and images.</li>
+  <li><a href="/pr-preview/pr-365/docs/topics/content/links/link-image/">Images as links</a> in Standards and best Practices: Content and images.</li>
+  <li><a href="/pr-preview/pr-365/docs/topics/code/images/alt-text/">Alternative text for images, SVGs and icons in development</a> in Standards and best Practices: Frontend code.</li>
 </ul>
 
-<h2 id="not-by-color-alone">Not by color alone</h2>
+<h2 id="headings">Headings</h2>
+
+<p>Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book:</p>
 
 <ul>
-  <li><a href="/pr-preview/pr-365/docs/topics/design/color/use-of-color/">Don’t depend on color for meaning</a> – it’s fine to use color, as long as that isn’t the only identifying characteristic</li>
-  <li>Links in text must stand out as links, make them underlined</li>
-  <li>Error messages in forms: don’t indicate errors only using text color, borders, or backgrounds; include clear text messages or icons, as well.</li>
+  <li>One H1 per page, describing what the page is about.</li>
+  <li>Use other headings meaningfully according to their level, not for their appearance.</li>
+  <li>A good heading briefly describes the content that follows it</li>
+  <li>Do not skip heading levels.</li>
 </ul>
 
-<h3 id="color-blindness-check-tools">Color blindness check tools:</h3>
+<p>Documentation and test tools for the heading structure:</p>
 
 <ul>
-  <li>Look at your design only in grey scale colors, remove all color. Can you still understand it?</li>
-  <li><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a> tool for color-blindness check.</li>
-  <li><a href="http://www.color-blindness.com/coblis-color-blindness-simulator/">Coblis</a> – Color Blindness Simulator</li>
+  <li><a href="/pr-preview/pr-365/docs/accessibility-ready/theme-guidelines/headings-structure/">Headings with meaningful structure</a> in Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="/pr-preview/pr-365/docs/topics/content/headings/">Headings in the content</a> in Standards and best Practices: Content and images.</li>
+  <li><a href="/pr-preview/pr-365/docs/topics/code/heading-structure/">Heading structure in theme development</a> in Standards and best Practices: Frontend code.</li>
+  <li>Use the browser tool <a href="/pr-preview/pr-365/docs/topics/code/heading-structure/#how-to-test-for-a-proper-heading-structure">HeadingsMap</a> to test the heading structure of an entire web page.</li>
 </ul>
 
-<h2 id="not-by-icon-alone">Not by icon alone</h2>
-
-<p>Add text with icons, if they are an essential part of the functionality. Make sure interactive elements such as navigation menus are labelled correctly. Not every user understands the icons (hamburgers) that are obvious to you.</p>
-
-<h2 id="for-users-with-dyslexia">For users with dyslexia</h2>
+<h2 id="link-texts">Link texts</h2>
 
 <ul>
-  <li>No large blocks of text, e.g. use short paragraphs, headings and lists to divide the information</li>
-  <li>Uppercase font is harder to read</li>
-  <li>Handwritten font is harder to read</li>
-  <li>A font size of 16 pixels minimum, is best for most devices</li>
-  <li>Make the line height not too small</li>
+  <li>Use meaningful link text that describes the content being linked to.</li>
+  <li>Avoid “click here”, “read more”, ”download”, ”continue reading” or equivalent phrases as link text. It’s meaningless and people have to read around the link to see what’s it about.</li>
+  <li>If you use an image as a link, use the alternative text as link text.</li>
 </ul>
 
-<h2 id="for-users-with-limited-vision">For users with limited vision</h2>
-
-<p>Keep together what belongs together: place related links or controls near each other.</p>
-
-<p>Some people don’t have an overview of everything that’s on a page, like <a href="https://www.aao.org/newsroom/news-releases/detail/probability-of-blindness-from-glaucoma-has-nearly-">people with glaucoma</a>. Don’t make them search for a submit button that’s on the bottom right, while the input fields is on the top left, for example.</p>
-
-<p>Make the order of things logical, most users read from top to bottom. For example, do not put required check boxes below the submit button in a form.</p>
-
-<h2 id="for-users-with-an-attention-disorder">For users with an attention disorder</h2>
+<p>Documentation about link texts:</p>
 
 <ul>
-  <li>Users must be able to pause animations, or the animations must automatically stop after 3 seconds</li>
-  <li>Avoid using too many elements that distract the user from reading the text or using the navigation.</li>
+  <li><a href="/pr-preview/pr-365/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/">No ambiguous link text</a> in Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="/pr-preview/pr-365/docs/topics/content/links/link-text/">Write meaningful link text</a> in Standards and best Practices: Content and images.</li>
+  <li><a href="/pr-preview/pr-365docs/topics/content/links/link-image/">Images as links</a> in Standards and best Practices: Content and images.</li>
+  <li><a href="/pr-preview/pr-365/docs/topics/content/links/link-destinations/">Link destination</a> in Standards and best Practices: Content and images.</li>
 </ul>
 
-<h2 id="resources-about-accessible-design">Resources about accessible design</h2>
+<h2 id="video-and-audio">Video and audio</h2>
 
 <ul>
-  <li><a href="https://inclusive-components.design/">Inclusive Components</a></li>
-  <li><a href="https://shop.smashingmagazine.com/products/inclusive-design-patterns">Inclusive Design Patterns – Heydon Pickering</a></li>
-  <li><a href="https://github.com/Heydon/inclusive-design-checklist">Inclusive Design Checklist – Heydon Pickering</a></li>
-  <li><a href="https://webaim.org/resources/designers/">Web Accessibility for Designers</a></li>
-  <li><a href="https://humanmade.com/2017/11/09/accessible-design-a-process/">Accessible design: a process</a></li>
-  <li><a href="https://medium.com/salesforce-ux/7-things-every-designer-needs-to-know-about-accessibility-64f105f0881b">7 Things Every Designer Needs to Know about Accessibility – Jesse Hausler</a></li>
-  <li><a href="https://www.w3.org/WAI/tips/designing/">Tips for Getting Started Designing for Web Accessibility – W3C</a></li>
-  <li><a href="https://foxland.fi/writing-accessible-content/">Writing accessible content – Sami Keijonen</a></li>
-  <li><a href="https://usabilitygeek.com/6-principles-visual-accessibility-design/https:/usabilitygeek.com/6-principles-visual-accessibility-design/">6 Principles Of Visual Accessibility Design – Jenna Erickson</a></li>
-  <li><a href="https://uxdesign.cc/the-easiest-part-about-designing-accessible-websites-76cd6b9a7ae4?gi=ffa6b3378eb0">Designing for Accessibility, Step 1: Color Contrast – Neil Shankar</a></li>
-  <li><a href="https://wordpress.tv/2017/09/27/maja-benke-accessible-design/">Accessible Design – Maja Benke (presentation)</a></li>
-  <li><a href="https://abookapart.com/products/accessibility-for-everyone">Accessibility for everyone – Laura Kalbag (book)</a></li>
-  <li><a href="https://webaim.org/techniques/fonts/">WebAIM: on fonts</a></li>
-  <li><a href="http://accessibility.psu.edu/legibility/fontface/">Pennsylvania State University: about Font Face</a></li>
+  <li>Make sure video has closed captions.</li>
+  <li>Make sure audio has transcriptions.</li>
+  <li>Don’t autoplay video and audio.</li>
+  <li>Avoiding using video with rapid flashing content, or provide content warnings.</li>
 </ul>
+
+<p>Documentation about video and audio:</p>
+<ul>
+  <li><a href="/pr-preview/pr-365/docs/accessibility-ready/theme-guidelines/accessible-animation/">Accessible audio, video, and animations</a> in Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="https://www.w3.org/WAI/media/av/">Making Audio and Video Media Accessible</a>, by the W3C.</li>
+  <li><a href="https://gaming.stackexchange.com/questions/57243/whats-the-difference-between-closed-captions-and-subtitles-in-portal">What’s the difference between “closed captions” and “subtitles”</a> on Stack Exchange.</li>
+</ul>
+
+<h2 id="readability">Readability</h2>
+
+<p>How you write your text and what reading level you aim for depends on the purpose of and audience for your content, but here are a few best practices:</p>
+
+<ul>
+  <li>Start with a short summary of the content.</li>
+  <li>Divide the rest of the text in short blocks.</li>
+  <li>Keep your text simple and to the point.</li>
+  <li>Use headings, lists, and meaningful link text.</li>
+</ul>
+
+<p>Documentation about readability: <a href="/pr-preview/pr-365/docs/topics/content/readability/">Readability</a> in Standards and best Practices: Content and images.</p>
+
+<p class="callout info">Note: The Web Content Accessibility Guidelines at level <strong>AA</strong> don’t address readability. Decent readability is considered a recommendation. However, WCAG 2.2 Level <strong>AAA</strong> has four success criteria for readability: <a href="https://www.w3.org/WAI/WCAG22/quickref/#unusual-words">3.1.3 Unusual Words</a>, <a href="https://www.w3.org/WAI/WCAG22/quickref/#abbreviations">3.1.4 Abbreviations</a>, <a href="https://www.w3.org/WAI/WCAG22/quickref/#reading-level">3.1.5 Reading level</a>, <a href="https://www.w3.org/WAI/WCAG22/quickref/#pronunciation">3.1.6 Pronunciation</a>.</p>
 
 
           
@@ -658,22 +641,22 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> April 24, 2026</li>
+        <li><span>Last updated:</span> July 06, 2026</li>
 
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/checklists/design.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/testing/content/index.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
         
 
         
         <li><span>Contributors:</span>
             
-            Joe Dolson,
+            Rian Rietveld,
             
             
-            Rian Rietveld.
+            Joe Dolson.
             
             
         </li>
@@ -697,24 +680,24 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Checklists</h2>
+        <h2>Other pages in: Test for accessibility</h2>
         <ul role="list">
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-365/docs/testing/checklists/overall/"> Overall</a>
+                    <a href="/pr-preview/pr-365/docs/testing/overall/"> Complete WCAG checklists</a>
                 </h3>
-                <p>Find content, design, and frontend code checklists about accessibility.</p>
+                <p>Complete checklists against the Web Content Accessibility Guidelines.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-365/docs/testing/checklists/content/"> Content checks</a>
+                    <a href="/pr-preview/pr-365/docs/testing/automated/"> Automated testing</a>
                 </h3>
-                <p>Find an overview of content checks for accessibility.</p>
+                <p>Learn about automated accessibility testing and validation.</p>
             </li>
             
             
@@ -723,9 +706,45 @@
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-365/docs/testing/checklists/code/"> Frontend code checks</a>
+                    <a href="/pr-preview/pr-365/docs/testing/design/"> Design checks</a>
+                </h3>
+                <p>Learn about some design checks you can do to enhance accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/pr-preview/pr-365/docs/testing/code/"> Frontend code checks</a>
                 </h3>
                 <p>Learn how to perform frontend code checks for web accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/pr-preview/pr-365/docs/testing/keyboard/"> Keyboard only</a>
+                </h3>
+                <p>Learn how to test for accessibility with your keyboard.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/pr-preview/pr-365/docs/testing/screen-readers/"> Screen reader</a>
+                </h3>
+                <p>Learn how to use a screen reader to test for accessibility.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/pr-preview/pr-365/docs/testing/plugins/"> WP plugins for testing</a>
+                </h3>
+                <p>Find WordPress plugins that can help you test for accessibility on your website.</p>
             </li>
             
             
@@ -733,7 +752,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-365/docs/testing/checklists/">Back to: Checklists</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-365/docs/testing/">Back to: Test for accessibility</a>
             </p>
 
         
