@@ -69,7 +69,7 @@ Learn more [about Web Accessibility Directive](https://digital-strategy.ec.europ
 
 ## EN 301 549
 
-In Europe, the WAD as well as the EAA point to accessibility requirements for ICT products and services, as published in a document called EN 301 549. The EN stands for European Norm. It draws heavily from the WCAG 2.1, adapted for specific needs per country. In this document you will find accessibility guidelines for everything from websites to closed software. The [European Commmission has mentioned that EU member states are free to use WCAG 2.2](https://digital-strategy.ec.europa.eu/en/policies/web-accessibility-directive-standards-and-harmonisation) if they wish.
+In Europe, a standard that is relevant for WAD as well as the EAA is EN 301 549. “EN” stands for European Norm, and it contains accessibility requirements for ICT products and services. For almost all requirements that apply to websites and apps, EN 301 549 references WCAG 2. EN 301 549 also contains requirements beyond websites and apps, such as closed software, real-time communication devices and stationary hardware . 
 
 {: .callout .alert}
 **Fair warning**: meeting all the success criteria for WCAG 2.1 or 2.2 will not ensure presumption of conformity with WAD or EAA, since EN 301 549 has extra requirements. So it's an important document to keep an eye on.
