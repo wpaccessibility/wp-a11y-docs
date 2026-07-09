@@ -6,7 +6,7 @@ This website aims to provide you with answers about WordPress and accessibility.
 
 The knowledge base provides documentation, effective examples (what to do and what to avoid) and reliable, up-to-date resources about implementing accessibility.
 
-The website includes the guidelines for meeting `accessibility-ready` guidelines with extensive instructions on testing and reporting those issues.
+The website includes the guidelines for meeting `accessibility-ready` requirements with extensive instructions on testing and reporting those issues.
 
 ## Did we miss a topic? 
 
