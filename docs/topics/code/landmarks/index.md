@@ -4,18 +4,21 @@ layout: default
 parent: Frontend code
 description: Learn what ARIA landmarks are and how to use them.
 nav_order: 4
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
 # ARIA Landmarks
 
-ARIA landmark roles provide a method for screen reader users to navigate structural regions of a site. By default, many HTML5 elements define ARIA landmark roles which identify these regions.
+ARIA landmark roles provide a method for screen reader users to navigate structural regions of a site. By default, many HTML elements define ARIA landmark roles which identify these regions.
 
-All content should be inside these semantically meaningful elements so content is not missed by the user.
+All content should be inside these semantically meaningful elements, so the user does not miss content.
 
 ## Most common landmark elements
 
 <table>
-    <caption>HTML5 sectioning elements</caption>
+    <caption>HTML sectioning elements</caption>
     <tr>
         <th>HTML5 element</th>
         <th>Default landmark role</th>
@@ -42,13 +45,11 @@ All content should be inside these semantically meaningful elements so content i
     </tr>
 </table>
 
-Note that older browsers and assistive technology combinations don’t always recognize HTML5 elements and map them to the correct landmark role. In these cases you can add the role manually, like this: `<header role="banner">`. All browsers supported by WordPress Core support native  HTML5 elements.
-
 More information can be found at the W3C [ARIA Landmarks Example](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html). You can also review the WordPress theme accessibility guidelines, as [WordPress themes are required to use landmark roles]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/) in order to apply the accessibility-ready tag.
 
 ## Good example of HTML5 sectional elements
 
-A basic example of page structure can look like this:
+A basic example of a page structure can look like this:
 
 ```html
 <!DOCTYPE html>
@@ -93,7 +94,7 @@ Using this markup, screen reader users can navigate using mapped ARIA landmark r
 
 ![List of aria landmarks in VoiceOver: banner, navigation, main, complementary]({{site.baseurl}}/assets/images/aria-landmarks-in-voiceover.png)
 
-Note that the contentinfo role is missing. This is because of a VoiceOver bug. Life isn’t perfect. You can add this role manually: `<footer role="contentinfo">`.
+Note that the `contentinfo` role is missing. This is because of a VoiceOver bug. Life isn’t perfect. You can add this role manually: `<footer role="contentinfo">`.
 
 ## Notes
 
@@ -112,6 +113,26 @@ Note that the word navigation is already announced by assistive technologies. Th
 
 ## Resources
 
-- [W3C ARIA landmark example page](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html)
-- [Tutorial of page regions](https://www.w3.org/WAI/tutorials/page-structure/regions/)
-- [ARIA landmark role guideline]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/) for accessibility-ready themes.
+{: .resource-h3}
+### WCAG Success Criteria for meaningful landmarks
+
+Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria:
+
+- [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+- [1.3.6 Identify purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) (Level **AAA**).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Meaningful landmark roles and names]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/), in the WordPress accessibility-ready guidelines.
+
+{: .resource-h3}
+### Other resources
+
+- [W3C ARIA landmark example page](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html), by the W3C.
+- [Tutorial of page regions](https://www.w3.org/WAI/tutorials/page-structure/regions/), by the W3C
+
+- **Note on the W3C techniques below**: while the guidance regarding why and how to use these examples is good, some of the code examples pre-date wide availability of native roles for HTML5 elements. It is preferred to use the HTML elements directly for landmarks, not the role attributes.
+
+- [Technique: Grouping related links using the nav element](https://www.w3.org/WAI/WCAG22/Techniques/html/H97.html), by the W3C.
+- - [Technique: Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA11), by the W3C.

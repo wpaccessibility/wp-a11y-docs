@@ -4,6 +4,9 @@ layout: default
 parent: Documenting accessibility
 description: Learn about the accessibility.txt file in your theme or plugin.
 nav_order: 2
+contributors:
+  - Amber Hinds
+  - Joe Dolson
 ---
 
 # Accessibility.txt files
@@ -17,7 +20,7 @@ As of **June 30th, 2026**, Accessibility Ready themes must include an `accessibi
 
 ## Required Format
 
-The `accessibility.txt` file is intended to be written using a subset of markdown. It should be located in the root theme or plugin directory and include the following sections.
+The `accessibility.txt` file is intended to be written using a subset of Markdown. It should be located in the root theme or plugin directory and include the following sections.
 
 ```
 === Accessibility Statement ===
@@ -61,10 +64,10 @@ This section provides a short summary of your approach to accessibility during t
 
 Examples:
 
-{: .callout  .example }
+{: .callout .example }
 “This theme was designed and developed with accessibility best practices in mind, following WCAG 2.2 guidelines.”
 
-{: .callout  .example }
+{: .callout .example }
 “We are committed to making our plugins usable by as many people as possible, including those using assistive technologies.”
 
 ### Quick Information
@@ -112,7 +115,7 @@ You may use any naming convention for your class, but must visually hide content
 
 **Example:**
 
-{: .callout  .example }
+{: .callout .example }
 `.screen-reader-text`
 
 ### Accessibility Features
@@ -130,10 +133,10 @@ This section tells users how to get help if they experience accessibility issues
 
 **Examples:**
 
-{: .callout  .example }
+{: .callout .example }
 "If you need accessibility help, email us at [support@example.com](mailto:support@example.com)."
 
-{: .callout  .example }
+{: .callout .example }
 "Accessibility support information: [https://example.com/support](https://example.com/support)"
 
 ### Where to Report Issues
@@ -142,10 +145,10 @@ This section provides a designated channel for users to report accessibility bug
 
 **Examples:**
 
-{: .callout  .example }
+{: .callout .example }
 [https://wordpress.org/support/theme/theme-slug-here/](https://wordpress.org/support/theme/theme-slug-here/)
 
-{: .callout  .example }
+{: .callout .example }
 "Please report accessibility issues on our GitHub repository, https://github.com/URL."
 
 ## Markdown
@@ -163,3 +166,10 @@ Markdown allows for easy linking in your `accessibility.txt` file. Just write li
 Currently `accessibility.txt` files can only be viewed by downloading plugin or theme files and viewing them in a text editor or using the [theme or plugin file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/).
 
 In the future, the accessibility team hopes to surface this information within the WordPress admin and on WordPress.org.
+
+## Resources
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/), in the WordPress accessibility-ready guidelines.

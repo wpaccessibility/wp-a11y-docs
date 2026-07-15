@@ -4,6 +4,9 @@ layout: default
 parent: Documenting accessibility
 description: An ACR is a document explaining how you meet accessibility standards.
 nav_order: 3
+contributors:
+  - Amber Hinds
+  - Joe Dolson
 ---
 
 # Accessibility Conformance Reports
@@ -52,3 +55,10 @@ When filling out a VPAT for a WordPress plugin or theme, it is important to note
 Be clear about how it was tested, including the environment, configurations, and assistive technologies used, and clearly document any assumptions, dependencies, or known limitations. This helps set accurate expectations, clarifies shared responsibility between your product and the site owner, and ensures the report is an honest, useful disclosure rather than a blanket claim of compliance.
 
 Typically ACRs are published on your website and linked to from an accessibility statement page, documentation, or an [accessibility.txt file]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/).
+
+## Resources
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/), in the WordPress accessibility-ready guidelines.
