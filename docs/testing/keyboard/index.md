@@ -10,18 +10,23 @@ nav_order: 6
 
 All functionality should work using a **keyboard**. This is essential for all assistive technology to work properly. Most keyboard testing should be checked manually. The best time to test this is during development.
 
-## How to keyboard test:
+## How to keyboard test
 
-- [Keyboard Accessibility](https://webaim.org/techniques/keyboard/) by WebAIM
-- [Workshop keyboard accessibility](http://rianrietveld.com/2016/05/10/keyboard/)
+Note: before you start testing with a keyboard on a Mac, make sure the settings of your computer are set to allow full keyboard navigation: [How to activate keyboard navigation on MacOS](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
 
-Tab through your pages, links and forms to do the following tests:
+A **detailed guide** on how to test with a keyboard only is in the theme accessibility-ready guideline: [Keyboard navigation support]({{site.baseurl}}//docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/).
 
+In brief:
+
+Tab through your pages, links, and forms to do the following tests:
 - Confirm all links can be reached and activated via keyboard, including any inside drop-downs
 - Confirm all links have a strong visible focus indicator
 - Confirm all focusable [visually hidden content]({{site.baseurl}}/docs/topics/code/screen-reader-text/) (such as [skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/)) becomes visible when in focus.
-- Confirm all interactions – form fields, buttons, and other controls – can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.
+- Confirm all interactions like form fields, buttons, and other controls, can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.
 - Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting.
 
 
+## Resources
 
+- [Keyboard Accessibility](https://webaim.org/techniques/keyboard/) by WebAIM.
+- [2.1.1 Keyboard](https://alphagov.github.io/guide-to-wcag/sc/2.1.1.html#how-to-check) on A guide to WCAG by the UK Government Digital Service.
