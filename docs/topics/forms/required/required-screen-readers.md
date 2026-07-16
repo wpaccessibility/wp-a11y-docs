@@ -62,6 +62,7 @@ If you decide to use `required`, also use `novalidate` on the form element to pr
 
 By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
 - [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/).

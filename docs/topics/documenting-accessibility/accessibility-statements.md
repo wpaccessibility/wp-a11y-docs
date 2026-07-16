@@ -48,8 +48,8 @@ Many organizations use templates to generate their accessibility statement. Popu
 Because accessibility statements can have legal implications in certain parts of the world, it is recommended that you have a legal professional review your statement before publication.
 
 ## Resources
-{: .resource-h3}
 
+{: .resource-h3}
 ### Related pages in this documentation
 
 - [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/), in the WordPress accessibility-ready guidelines.
