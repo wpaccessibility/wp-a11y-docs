@@ -11,7 +11,7 @@ contributors:
 
 # Content checks for web accessibility
 
-This page gives an overview of the **manual checks** you can do to provide readable content for as many users as possible. Read the detailed explanation about how to write accessible content in [Content and images]({{site.baseurl}}docs/topics/content/) in the section Standard and best practice of this documentation.
+This page gives an overview of the **manual checks** you can do to provide readable content for as many users as possible. Read the detailed explanation about how to write accessible content in [Content and images]({{site.baseurl}}/docs/topics/content/) in the section Standard and best practice of this documentation.
 
 ## Alternative text for images
 
@@ -50,7 +50,7 @@ Documentation about link texts:
 
 - [No ambiguous link text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/) in Theme guidelines for the WordPress accessibility-ready program.
 - [Write meaningful link text]({{site.baseurl}}/docs/topics/content/links/link-text/) in Standards and best Practices: Content and images.
-- [Images as links]({{site.baseurl}}docs/topics/content/links/link-image/) in Standards and best Practices: Content and images.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best Practices: Content and images.
 - [Link destination]({{site.baseurl}}/docs/topics/content/links/link-destinations/) in Standards and best Practices: Content and images.
 
 ## Video and audio

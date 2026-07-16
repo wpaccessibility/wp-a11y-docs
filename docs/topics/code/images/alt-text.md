@@ -175,7 +175,7 @@ Use an aria-label on the button, this will be the accessible name.
 </button>
 ```
 
-Add text, hidden from sight but announced by a screenreader using the [CSS class .screen-reader-text](/docs/topics/code/screen-reader-text/).
+Add text, hidden from sight but announced by a screenreader using the [CSS class .screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/).
 ```html
 <!-- This button is announced as "menu" by a screen reader. -->
 <button>
