@@ -16,11 +16,11 @@ Testing for valid, semantic HTML is essential for the accessibility of your work
 While you develop, always test the following items:
 
 - [Semantic Markup (HTML)]({{site.baseurl}}/docs/topics/code/semantics/) to help your code work on every device and browser. 
-- The generated DOM passes [Web Content Accessibility Guidelines (WCAG)](/docs/start/wcag-intro/) validation.
+- The generated DOM passes [Web Content Accessibility Guidelines (WCAG)]({{site.baseurl}}/docs/start/wcag-intro/) validation.
 - All functionality must work with [keyboard only]({{site.baseurl}}/docs/testing/keyboard/).
-- [Dynamic changes]({{site.baseurl}}docs/testing/screen-readers/) in the DOM are properly announced for screen reader users.
+- [Dynamic changes]({{site.baseurl}}/docs/testing/screen-readers/) in the DOM are properly announced for screen reader users.
 
-Most checks for valid HTML and WCAG can be done with [automated accessibility testing](/docs/testing/automated/) in your browser or CLI suite, but most keyboard interaction and dynamic changes must be tested manually. 
+Most checks for valid HTML and WCAG can be done with [automated accessibility testing]({{site.baseurl}}/docs/testing/automated/) in your browser or CLI suite, but most keyboard interaction and dynamic changes must be tested manually. 
 
 For WordPress, we aim to meet [WCAG accessibility guidelines](https://www.w3.org/WAI/WCAG22/quickref/) version 2.2 at level AA and the [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/). 
 
@@ -36,7 +36,7 @@ In the section [Accessibility standards and best practice]({{site.baseurl}}/docs
     - Use a `<button>` to invoke an action and an `<a>` for a change of location.
     - A `<div>` or `<span>` doesn’t natively provide interactivity, and should not be used for links or buttons.
 - [Heading text and level matter]({{site.baseurl}}/docs/topics/code/heading-structure/).
-- Use [landmarks to group content](/docs/topics/code/landmarks/) and make sure they are properly announced by screen readers.
+- Use [landmarks to group content]({{site.baseurl}}/docs/topics/code/landmarks/) and make sure they are properly announced by screen readers.
 - Write meaningful [link and button texts]({{site.baseurl}}/docs/topics/content/links/link-text/).
 - Use the [.screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) class, a CSS class to hide text visually while leaving it available to screen readers.
 - Always give images a proper alt attribute following the [alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/)

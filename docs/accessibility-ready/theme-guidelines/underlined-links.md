@@ -17,7 +17,7 @@ redirect_from:
 
 Links within large sections of text (e.g., post content or comments) must be underlined. When links appear within a larger body of block-level content, they must be clearly distinguishable from surrounding content. Links in navigation-like contexts (e.g. menus, lists of upcoming posts in widgets, grouped post meta data) do not need to be specifically distinguished from surrounding content.
 
-The underline is the only accepted method of indicating links within content. Bold, italicized, or color-differentiated text are ambiguous and will not pass. Underlines should disappear on hover or there should be some other visual change on hover that does not rely on color alone to indicate if the link is being hovered.
+The underline is the only accepted method of indicating links within content. Bold, italicized, or color-differentiated text is ambiguous and will not pass. Underlines should disappear on hover or there should be some other visual change on hover that does not rely on color alone to indicate if the link is being hovered.
 
 ## Testing
 
@@ -36,6 +36,14 @@ The underline is the only accepted method of indicating links within content. Bo
 
 **Note:** The WordPress block editor generates button links that may not have underlines. It is not required that themes force underlines on block-generated button links, so long as there is styling differentiating them from plain text.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.htm)
+{: .resource-h3}
+### WCAG Success Criteria for underlined links in text
+
+Underlining links in text is the best way to meet WCAG success criterion [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Styling links]({{site.baseurl}}{/docs/topics/design/links/) in Design and user experience.

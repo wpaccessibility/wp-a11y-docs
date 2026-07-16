@@ -45,19 +45,35 @@ For each interactive control, check for an accessible **name,** the correct **ro
 11. Repeat this process for all controls in your list.  
 12. After testing the desktop view, switch into responsive mode or zoom your browser at least 200% and test responsive toggles (e.g., hamburger menu toggles) in the same way.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)  
-* [Understanding: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)  
-* [Understanding: Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html)  
-* [Understanding: Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html)  
-* [Tab Pattern Expectations](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/)
+{: .resource-h3}
+### WCAG Success Criteria for controls with accessible names, roles, and states
 
-## Relevant ARIA
+Using controls with accessible names, roles, and states is necessary to meet the WCAG success criteria:
 
-* [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label)  
-* [aria-labelledby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby)  
-* [aria-expanded](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded)  
-* [aria-selected](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-selected)  
-* [aria-pressed](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-pressed)  
-* [button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/button_role)
+* [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content)  (Level A)
+* [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A)
+* [4.1.2 Name, Role, Value](https://www.w3.org/WAI/WCAG22/quickref/#name-role-value) (Level A)
+* [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (Level A)
+
+{: .resource-h3}
+### Related pages in this documentation
+
+* [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Content and images.
+* [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Frontend code.
+* [Input field and form label]({{site.baseurl}}/docs/topics/forms/input-label/) in Web forms.
+
+{: .resource-h3}
+### Other resources
+
+[Tab Pattern Expectations](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) in the ARIA Authoring Practices Guide (APG).
+
+Relevant documentation on ARIA on the MDN web docs:
+
+* [aria-label](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label).  
+* [aria-labelledby](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby). 
+* [aria-expanded](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-expanded).  
+* [aria-selected](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-selected).  
+* [aria-pressed](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-pressed).  
+* [button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/button_role).

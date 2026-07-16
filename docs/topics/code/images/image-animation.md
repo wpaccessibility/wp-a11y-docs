@@ -4,6 +4,9 @@ layout: default
 parent: Images
 description: Learn what is important for animation in images.
 nav_order: 5
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
 # Image animation and accessibility
@@ -68,10 +71,15 @@ Reduced motion doesn’t have to mean no animation at all, but it should be very
 {: .resource-h3}
 ### WCAG Success Criteria for animations
 
-- [2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) Level A.
-- [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) Level A.
-- [2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions) **Level AAA**.
+- [2.2.2 Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) (Level A).
+- [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) (Level A).
+- [2.3.2 Three Flashes](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes) (**Level AAA**).
+- [2.3.3 Animation from Interactions](https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions) (**Level AAA**).
 
+{: .resource-h3}
+### Related pages in this documentation
+
+-  [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/), in the WordPress accessibility-ready guidelines.
 
 {: .resource-h3}
 ### Other resources

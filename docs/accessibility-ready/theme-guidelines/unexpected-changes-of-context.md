@@ -29,7 +29,17 @@ Websites must not change context, such as navigating to a new page, submitting a
 6. For radio or checkbox inputs or `<select>` dropdowns, use the `return/enter` key or space bar to change the selected option.  
 7. Verify that choosing an input (radio or checkbox field) or `<select>` option does not automatically submit the form, reload the page, or trigger a major layout or content change without confirmation.
 
-## WCAG resources
+## Resources
 
-* [Understanding: On Focus](https://www.w3.org/WAI/WCAG22/Understanding/on-focus)  
-* [Understanding: On Input](https://www.w3.org/WAI/WCAG22/Understanding/on-input)
+{: .resource-h3}
+### WCAG Success Criteria for
+
+Avoiding unexpected changes of context is necessary to meet the WCAG success criteria:
+
+* [3.2.1 On Focus](https://www.w3.org/WAI/WCAG22/quickref/#on-focus) (Level A).
+* [3.2.2 On Input](https://www.w3.org/WAI/WCAG22/quickref/#on-input) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Predictable behavior on input, focus, and on hover](/docs/topics/code/focus-handling/input-hover/) in Frontend code.

@@ -41,11 +41,25 @@ Keyboard testing checks the **Operability**, **Visibility**, and **Order** of co
 
 Keyboard navigation must be supported in all responsive views. While the native interaction on mobile devices is touch, the use of a keyboard to navigate mobile devices is an important tool for many users. Be aware that since responsive modes are triggered based on content width, screen reader users who operate without a monitor or low vision users at high levels of zoom are likely to trigger these modes.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Focus Visible](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible.html)  
-* [Understanding: Meaningful Sequence](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence.html)  
-* [Understanding: Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order.html)  
-* [Understanding: Focus not obscured](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html)  
-* [Understanding: No Keyboard Trap](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap)  
-* [Understanding: Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html)
+{: .resource-h3}
+### WCAG Success Criteria for keyboard navigation support
+
+Keyboard navigation support is necessary to meet the WCAG success criteria:
+
+* [1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence) (Level A).
+* [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/quickref/#keyboard) (Level A).
+* [2.1.2 No Keyboard Trap](https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap) (Level A).
+* [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
+* [2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG22/quickref/#focus-visible) (Level AA).
+* [2.4.11 Focus not obscured (Minimun)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-minimum) (Level AA).
+* [2.4.12 Focus not obscured (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-enhanced) (**Level AAA**).
+* [2.4.13 Focus Appearance](https://www.w3.org/WAI/WCAG22/quickref/#focus-appearance) (**Level AAA**).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+* [Handling focus]({{site.baseurl}}/docs/topics/code/focus-handling/) and subpages in Frontend code.
+* [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/) in Design and user experience.
+* [Keyboard navigation testing]({{site.baseurl}}/docs/testing/keyboard/) in Test for accessibility.

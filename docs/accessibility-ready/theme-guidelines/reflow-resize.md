@@ -37,8 +37,18 @@ Web content must remain usable and readable when users adjust the zoom level, re
    4. Paragraph spacing: 2x font size.  
 4. Open the Firefox browser, enable the [Zoom Text Only setting](https://support.mozilla.org/en-US/kb/font-size-and-zoom-increase-size-of-web-pages#w_how-to-only-change-the-size-of-the-text), and verify that the text is responsive and readable with this setting enabled.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Resize Text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text)  
-* [Understanding: Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow)  
-* [Understanding: Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing)
+{: .resource-h3}
+### WCAG Success Criteria for reflow, resize, and text spacing
+
+Support for reflow, resize, and text spacing is necessary to meet the WCAG success criteria:
+
+* [1.4.4  Resize Text](https://www.w3.org/WAI/WCAG22/quickref/#resize-text) (Level AA).
+* [1.4.10 Reflow](https://www.w3.org/WAI/WCAG22/quickref/#reflow) (Level AA).
+* [1.4.12 Text Spacing](https://www.w3.org/WAI/WCAG22/quickref/#text-spacing) (Level AA).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Font sizes and resize text]({{site.baseurl}}/docs/topics/design/fonts/#font-sizes-and-resize-text) in Design and user experience. 

@@ -93,6 +93,7 @@ Giving interactive elements a well-defined, accessible name is necessary to meet
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 - [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
 How to provide a proper accessible name for each use case is documented with the specific topics in this documentation, like for example on [Give a form field an accessible name with a label]({{site.baseurl}}/docs/topics/forms/input-label/accessible-name/) in forms.

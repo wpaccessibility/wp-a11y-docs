@@ -4,6 +4,9 @@ layout: default
 parent: Images
 description: How to add alternative text for images, SVGs and icons in development.
 nav_order: 2
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
 # Alternative text for images, SVGs and icons in development
@@ -172,7 +175,7 @@ Use an aria-label on the button, this will be the accessible name.
 </button>
 ```
 
-Add text, hidden from sight but announced by a screenreader using the [CSS class .screen-reader-text](/docs/topics/code/screen-reader-text/).
+Add text, hidden from sight but announced by a screenreader using the [CSS class .screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/).
 ```html
 <!-- This button is announced as "menu" by a screen reader. -->
 <button>
@@ -193,13 +196,21 @@ The best option is to add visible text. An icon alone may not be universally und
 
 ## Resources
 
-### {: .resource-h3}
+{: .resource-h3}
 ### WCAG Success Criteria for alternative text for images
 
 By giving meaningful images proper alternative text, you meet WCAG success criteria:
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
-- To be honest, this topic  (level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
+- [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/), in the WordPress accessibility-ready guidelines.
+- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/), in Start with accessibility.
+- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Standards and best practice: Content and images.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best practice, Content and images: Links.
 
 {: .resource-h3}
 ### Other resources

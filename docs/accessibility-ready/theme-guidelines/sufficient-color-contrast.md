@@ -41,7 +41,19 @@ It can be advantageous to use a tool that will check all contrasts on a page at 
 10. Check if the theme has multiple default color palettes available (look at the theme settings page if one exists or in the customizer).  
 11. If multiple color palettes exist, switch to additional palettes and repeat the contrast checks for each one.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Contrast (minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)  
-* [Understanding: Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html)
+{: .resource-h3}
+### WCAG Success Criteria for color contrast
+
+Providing sufficient color contrast of text and UI controls is necessary to meet the WCAG success criteria:
+
+- [1.4.3 Contrast Minimum](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum)(Level AA).
+- [1.4.6 Contrast (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-enhanced) (Level **AAA**).
+- [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (Level AA).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Design and user experience.
+- [Using color]({{site.baseurl}}/docs/topics/design/color/use-of-color/) in Design and user experience.

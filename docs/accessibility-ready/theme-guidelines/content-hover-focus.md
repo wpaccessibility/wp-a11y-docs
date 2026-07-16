@@ -39,7 +39,19 @@ When additional content appears on hover or keyboard focus—such as tooltips, d
    1. Remains visible and usable.  
    2. Does not overlap or become clipped by the viewport.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus)  
-* [Understanding: Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard)
+{: .resource-h3}
+### WCAG Success Criteria for content on hover or focus
+
+Accessibile content on hover or focus is necessary to meet the WCAG success criteria:
+
+* [1.4.13 Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus) (Level AA).
+* [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/quickref/#keyboard) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+* [Handling focus]({{site.baseurl}}/docs/topics/code/focus-handling/) and subpages in Frontend code. 
+* [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/) in Design and user experience.
+* [Keyboard navigation testing]({{site.baseurl}}/docs/testing/keyboard/) in Test for accessibility.

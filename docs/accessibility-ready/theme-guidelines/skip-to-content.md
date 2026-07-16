@@ -41,10 +41,12 @@ The skip link must be tested on all page templates provided by the theme (home p
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for skip links
 
-Adding a skip link is necessary to meet the WCAG success criterion [2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks), (Level A).
+Adding a skip link is necessary to meet the WCAG success criterion [2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks) (Level A).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-- Standards and best practice - Frontend code - Components: [Skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/).
+[Skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/) in Frontend code.

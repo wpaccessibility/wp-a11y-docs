@@ -70,7 +70,7 @@ Or:
 
 There are 2 ways to inform a screen reader about errors:
 - Use an error summary, where the focus is moved to the heading of the summary. The text of the heading is announced. The topic [Provide a summary with form errors above the form]({{site.baseurl}}/docs/topics/forms/feedback/error-summary/) explains this further.
-- When the form is submitted dynamically without a page reload, inform the user of what happened by using `aria-live`. The topic [Feedback on dynamic changes](/docs/topics/code/dynamic-changes/) explains how to use the WordPress JavaScript method `wp.a11y.speak()` for this.
+- When the form is submitted dynamically without a page reload, inform the user of what happened by using `aria-live`. The topic [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) explains how to use the WordPress JavaScript method `wp.a11y.speak()` for this.
 
 ## Resources
 
