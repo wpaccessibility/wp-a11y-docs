@@ -43,13 +43,15 @@ Decorative graphics may include:
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for alternative text on images and graphics
 
 By giving a meaningful image the proper alternative text, you meet WCAG success criterion [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/), in Start with accessibility.
-- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/), in Standards and best practice: Content and images.
-- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/), in Standards and best practice, Content and images: Links.
-- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/), in Standards and best practice, Frontend code: Images. 
+- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/) in Start with accessibility.
+- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Content and images.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Content and images.
+- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/) in Frontend code. 

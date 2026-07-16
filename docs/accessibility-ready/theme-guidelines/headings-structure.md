@@ -51,7 +51,8 @@ Using a meaningful heading structure is necessary to meet the WCAG success crite
 - [WCAG 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [WCAG 2.4.6 Headings and Labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) (Level AA).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-- [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/)
-- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/).
+- [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/) in Content and images.
+- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Frontend code.

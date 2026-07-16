@@ -33,9 +33,25 @@ Search forms are a unique case, because they are simple forms that frequently ha
 8. Verify that the `label` elements are explicitly associated with the related form fields using `for` and `id` attributes.  
 9. Verify that the `required` form fields are marked as `required` and that there is a visible indication showing which fields are required.
 
-### WCAG resources
+## Resources
 
-* [Understanding: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)  
-* [Understanding: Labels and Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions)  
-* [Technique: Use labels to associate text with form fields](https://www.w3.org/WAI/WCAG22/Techniques/html/H44.html)  
-* [Technique: Providing descriptive labels](https://www.w3.org/WAI/WCAG22/Techniques/general/G131.html) 
+{: .resource-h3}
+### WCAG Success Criteria for labeled form fields
+
+Using labeled form fields is necessary to meet the WCAG success criteria:
+
+* [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+* [2.4.6 Headings and Labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) (Level AA).
+* [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+* [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Frontend code.
+* [Input field and form label]({{site.baseurl}}/docs/topics/forms/input-label/) in Web forms.
+
+{: .resource-h3}
+### Other resources
+
+* [Technique: Using label elements to associate text labels with form controls](https://www.w3.org/WAI/WCAG22/Techniques/html/H44.html) in WCAG 2.2 Techniques.
+* [Technique: Providing descriptive labels](https://www.w3.org/WAI/WCAG22/Techniques/general/G131.html) in, WCAG 2.2 Techniques.

@@ -42,9 +42,21 @@ It is not a problem to open a link in a new tab; it is a problem if the user is 
 
 **Note:** Accessibility-ready themes do *not* have to dynamically add a new window warning for links set to open in a new tab by content authors. They only need to add the warning for any links that are coded this way within the theme itself.
 
-If the theme does not open links in new tabs, this criteria is not applicable.
+If the theme does not open links in new tabs, this requirement is not applicable.
 
-## WCAG resources
+## Resources
 
-* [Understanding: Consistent Identification](https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification.html)  
-* [Technique: Giving users advanced warning when opening a new window](https://www.w3.org/TR/WCAG20-TECHS/G201.html)
+{: .resource-h3}
+### WCAG Success Criteria for link behavior
+
+Consistent and predictable behavior of links is necessary to meet the WCAG success criterion [3.2.4 Consistent Identification](https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation) (Level AA).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Link destinations]({{site.baseurl}}/docs/topics/content/links/link-destinations/) in Content and Images.
+
+{: .resource-h3}
+### Other resources
+
+[Technique: Giving users advanced warning when opening a new window](https://www.w3.org/TR/WCAG20-TECHS/G201.html) on WCAG 2.2 Techniques.

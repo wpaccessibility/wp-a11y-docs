@@ -27,11 +27,10 @@ This file has a standardized format outlining the theme's accessibility audit st
 2. Open the `accessibility.txt` file with a text editor or the [theme file editor](https://developer.wordpress.org/advanced-administration/wordpress/edit-files/).  
 3. Review the contents of the file and verify it adheres to the WordPress [accessibility.txt readme standard]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/).
 
-
 ## Resources
 
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Accessibility.txt files]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/), in Standards and best practice: Documenting accessibility.
-- [Accessibility statements]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-statements/), in Standards and best practice: Documenting accessibility.
+- [Accessibility.txt files]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/) Documenting accessibility.
+- [Accessibility statements]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-statements/) Documenting accessibility.

@@ -49,6 +49,7 @@ There are additional optional landmark regions, such as the `region` role, which
 
 ## Resources
 
+{: .resource-h3}
 ### WCAG Success Criteria for meaningful landmarks
 
 Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria:
@@ -56,6 +57,7 @@ Providing Meaningful landmark roles and names is necessary to meet the WCAG succ
 - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [1.3.6 Identify purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) (Level **AAA**).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-- [ARIA Landmarks](/docs/topics/code/landmarks/), in Standards and best practice: Frontend code.
+[ARIA Landmarks]({{site.baseurl}}/docs/topics/code/landmarks/) in Frontend code.
