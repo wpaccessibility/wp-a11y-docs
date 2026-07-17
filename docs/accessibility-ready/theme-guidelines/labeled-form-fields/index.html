@@ -14,7 +14,7 @@
 
 
 
-<title>Education & Discussion Groups, WP Accessibility Knowledge Base</title>
+<title>Labeled form fields, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/assets/css/styles.css">
@@ -548,8 +548,8 @@
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/docs/start/'>Start with accessibility</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/docs/start/training/'>Training</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Education & Discussion Groups</li>
+                <li class='breadcrumb-nav-list-item'><a href='/docs/accessibility-ready/'>Accessibility-ready program</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/docs/accessibility-ready/theme-guidelines/'>Theme accessibility-ready guidelines</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Labeled form fields</li>
     </ol>
 </nav>
 
@@ -558,22 +558,38 @@
 
         <main>
 
-          <h1 id="education--discussions-about-web-accessibility">Education &amp; Discussions about web accessibility</h1>
+          <h1 id="labeled-form-fields">Labeled form fields</h1>
 
-<p>Sometimes, what you’re building doesn’t have an already-available accessible pattern on the web. In cases like these, it can be helpful to consult someone who works day-to-day in the accessibility field in order to save yourself the pain of having to figure it out all on your own. Here are a few resources you may find helpful.</p>
+<h2 id="basic-principle">Basic principle</h2>
 
-<h2 id="the-webaim-mailing-list">The WebAIM mailing list</h2>
+<p>All form fields should have a visible label that’s explicitly associated with the related input field. The label should clearly describe the purpose of the input field. A WordPress theme generally only supports a handful of inputs: the search form and the comment form. However, the principles apply to any input created by the theme.</p>
 
-<p>The <a href="https://webaim.org/discussion/">WebAIM mailing list</a> is a long-running community forum for everyone who wants to grow in their accessibility journey, from beginner to expert. The archives span decades, and are available for everyone to search. List members are very friendly and always willing to help you in finding solutions to your issue.</p>
+<p>Search forms are a unique case, because they are simple forms that frequently have many different labels. A search form could realistically have the <code class="language-plaintext highlighter-rouge">search</code> role, a visible label with the text <code class="language-plaintext highlighter-rouge">Search</code>, a placeholder with the text <code class="language-plaintext highlighter-rouge">Search terms</code>, a button with the text <code class="language-plaintext highlighter-rouge">Search</code> and a magnifying glass icon to indicate search. A search form must have some visible indicator that it is search, but does not need to incorporate <em>every</em> possible type of labeling. Including a magnifying glass icon only is considered an acceptable visual label for a search field.</p>
 
-<h2 id="slack-channels">Slack channels</h2>
+<h2 id="testing">Testing</h2>
+
+<p><strong>Tools:</strong> Mouse, browser inspector.</p>
+
+<ol>
+  <li>Locate the primary search form. This can be highly variable; it may be located in the header, in the sidebar, or elsewhere in the theme. It may only be present if enabled in settings.</li>
+  <li>Verify that the search form has some form of visible labeling (either text or a magnifying glass icon).</li>
+  <li>Verify that the search form has some form of persistent labeling by typing in the field and ensuring that the label does not disappear, as would be the case with placeholder text.</li>
+  <li>Add a search form as a widget or block. Verify that this search form has the same or better labeling.</li>
+  <li>Perform a search, to identify whether there’s a search form on the search results page. If so, verify the labeling on that form.</li>
+  <li>Trigger a 404 error by navigating to a non-existent page, to see if there’s a search form on the error page. If so, verify the labeling on that form.</li>
+  <li>Locate a post that’s open for comments. While logged-out, inspect each default form field to check for visible labels. (Name, Email, Website, Comment.)</li>
+  <li>Verify that the <code class="language-plaintext highlighter-rouge">label</code> elements are explicitly associated with the related form fields using <code class="language-plaintext highlighter-rouge">for</code> and <code class="language-plaintext highlighter-rouge">id</code> attributes.</li>
+  <li>Verify that the <code class="language-plaintext highlighter-rouge">required</code> form fields are marked as <code class="language-plaintext highlighter-rouge">required</code> and that there is a visible indication showing which fields are required.</li>
+</ol>
+
+<h3 id="wcag-resources">WCAG resources</h3>
 
 <ul>
-  <li>The main <a href="https://make.wordpress.org/chat/">WordPress #accessibility Slack channel</a>. You must have or create an <a href="https://login.wordpress.org/register">account for WordPress.org</a> first, to be able to join.</li>
-  <li><a href="https://web-a11y.slack.com/">A11y Slack account</a>. A space to ask questions, help other people figure stuff out or chat about accessibility in general. Members can invite others.</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html">Understanding: Info and Relationships</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions">Understanding: Labels and Instructions</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H44.html">Technique: Use labels to associate text with form fields</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G131.html">Technique: Providing descriptive labels</a></li>
 </ul>
-
-<p>Do you know a good resource to add to this list? Please <a href="/docs/about/contact/">let us know</a>.</p>
 
 
           
@@ -585,15 +601,25 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> March 17, 2026</li>
+        <li><span>Last updated:</span> July 17, 2026</li>
 
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/start/training/discussion.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/accessibility-ready/theme-guidelines/labeled-form-fields.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
         
 
+        
+        <li><span>Contributors:</span>
+            
+            Amber Hinds,
+            
+            
+            Joe Dolson.
+            
+            
+        </li>
         
 
     </ul>
@@ -614,52 +640,169 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Training</h2>
+        <h2>Other pages in: Theme accessibility-ready guidelines</h2>
         <ul role="list">
             
             
             <li>
                 <h3>
-                    <a href="/docs/start/training/online-training/"> Online training</a>
+                    <a href="/docs/accessibility-ready/theme-guidelines/skip-to-content/"> Skip to Content Link</a>
                 </h3>
-                <p>An overview of training, meetups and conferences to learn accessibility.</p>
+                <p>The requirements for a Skip to Content link on accessibility-ready themes.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/docs/start/training/books/"> Books</a>
+                    <a href="/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/"> Meaningful landmark roles and names</a>
                 </h3>
-                <p>Recommended books about web accessibility.</p>
+                <p>Accessibility-ready themes requirements for meaningful landmark roles and names</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/docs/start/training/online-events/"> Online events</a>
+                    <a href="/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/"> Keyboard navigation support</a>
                 </h3>
-                <p>An overview of training, meetups and conferences to learn accessibility.</p>
+                <p>The requirements for keyboard navigation in accessibility-ready themes</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/docs/start/training/training-resources/"> Knowledge resources</a>
+                    <a href="/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/"> Controls with accessible names, roles, and states</a>
                 </h3>
-                <p>Knowledge resources and newsletters on web accessibility.</p>
+                <p>Accessibility-ready theme requirements for accessible controls</p>
             </li>
             
             
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/headings-structure/"> Headings with meaningful structure</a>
+                </h3>
+                <p>Accessibility-ready theme requirements for how to use headings</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/underlined-links/"> Underlined links in text</a>
+                </h3>
+                <p>Accessibility-ready theme requirements for how to indicate links in text</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/"> No ambiguous link text</a>
+                </h3>
+                <p>Accessibility-ready theme requirements for ambiguous link text</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/"> Sufficient color contrast of text and UI controls</a>
+                </h3>
+                <p>Color contrast requirements in accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/alternative-text/"> Alternative text on images and graphics</a>
+                </h3>
+                <p>Use of alternative text requirements for accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/accessible-animation/"> Accessible audio, video, and animations</a>
+                </h3>
+                <p>Support for audio, video, and animations in accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/reflow-resize/"> Support for reflow, resize, and text spacing changes</a>
+                </h3>
+                <p>Requirements for handling reflow, resize, and text spacing in accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/"> No unexpected changes of context</a>
+                </h3>
+                <p>Requirements for changes of context in accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/new-windows-tabs/"> No links opening new windows or tabs without warning</a>
+                </h3>
+                <p>Requirements for opening new windows or tabs in accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/content-hover-focus/"> Content on hover or focus is accessible</a>
+                </h3>
+                <p>How to handle content revealed on hover or focus in accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/accessibility-statement/"> Accessibility statement</a>
+                </h3>
+                <p>Accessibility Statement requirements for Accessibility-ready themes</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/"> Must not recommend or require inaccessible plugins</a>
+                </h3>
+                <p>Accessibility-ready themes must not recommend or require inaccessible plugins.</p>
+            </li>
+            
+            
+            
+            <li>
+                <h3>
+                    <a href="/docs/accessibility-ready/theme-guidelines/screen-reader-text/"> Screen reader text supported</a>
+                </h3>
+                <p>How screen reader text must be supported on an accessibility-ready theme</p>
+            </li>
             
             
         </ul>
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/docs/start/training/">Back to: Training</a>
+                <span aria-hidden="true">&larr;</span> <a href="/docs/accessibility-ready/theme-guidelines/">Back to: Theme accessibility-ready guidelines</a>
             </p>
 
         
