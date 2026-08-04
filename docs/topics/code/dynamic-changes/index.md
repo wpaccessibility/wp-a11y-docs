@@ -95,8 +95,8 @@ speak( 'The message you want to send to the ARIA live region', 'assertive' );
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/#test-feedback-on-dynamic-changes) in Test for accessibility.
-- [Provide feedback to screen reader users on form errors] ({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/#screen-reader-feedback-after-submit) in Standards and best practice, Webforms.
+- [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/) in Test for accessibility.
+- [Provide feedback to screen reader users on form errors]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/#screen-reader-feedback-after-submit) in Standards and best practice, Webforms.
 
 {: .resource-h3}
 ### Other resources

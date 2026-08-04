@@ -88,7 +88,7 @@ Providing a descriptive `<title>` element is required to meet WCAG success crite
 ### Related pages in this documentation
 
 - [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) about the JavaScript method `wp.a11y.speak()` in Standards and best practice, Frontend code.
-[- [Provide a summary with form errors above the form]({{site.baseurl}}/docs/topics/forms/feedback/error-summary/) Standards and best practice, Web forms,]()
+- [Provide a summary with form errors above the form]({{site.baseurl}}/docs/topics/forms/feedback/error-summary/) Standards and best practice, Web forms,]()
 
 {: .resource-h3}
 ### Other resources

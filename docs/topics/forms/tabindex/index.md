@@ -41,5 +41,5 @@ Accessible focus management in web forms is necessary to meet the WCAG success c
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Keyboard navigation support](/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program. 
+- [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program. 
 - [Focus handling]({{site.baseurl}}/docs/topics/code/focus-handling) in Standards and best practice, Frontend code. 
