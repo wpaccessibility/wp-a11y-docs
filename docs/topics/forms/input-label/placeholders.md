@@ -48,7 +48,7 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 
 - [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
 - [Controls with accessible names, roles, and states]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/) in the Theme guidelines for the WordPress accessibility-ready program.
-- [Labelled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labelled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Labeled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labeled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources
