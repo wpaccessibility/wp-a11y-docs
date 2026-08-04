@@ -95,10 +95,10 @@ By giving a meaningful image the proper alternative text, you meet WCAG success 
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/), in the WordPress accessibility-ready guidelines.
-- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/), in Start with accessibility.
-- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/), in Standards and best practice, Content and images: Links.
-- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/), in Standards and best practice, Frontend code: Images.
+- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/) in Start with accessibility.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best practice, Content and images.
+- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/) in Standards and best practice, Frontend code.
 
 {: .resource-h3}
 ### Other resources

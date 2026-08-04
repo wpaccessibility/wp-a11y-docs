@@ -42,4 +42,4 @@ Avoiding unexpected changes of context is necessary to meet the WCAG success cri
 {: .resource-h3}
 ### Related pages in this documentation
 
-[Predictable behavior on input, focus, and on hover](/docs/topics/code/focus-handling/input-hover/) in Frontend code.
+[Predictable behavior on input, focus, and on hover]({{site.baseurl}}/docs/topics/code/focus-handling/input-hover/) in Standards and best practice, Frontend code.

@@ -36,11 +36,13 @@ A required field indicator can be:
 
 By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-[Option 2: Marking only the optional form fields]({{site.baseurl}}/docs/topics/forms/required/mark-optional-fields/).
-- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
+- [Option 2: Marking only the optional form fields]({{site.baseurl}}/docs/topics/forms/required/mark-optional-fields/) in Standards and best practice, Web forms.
+- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) in Standards and best practice, Web forms.
 
+{: .resource-h3}
 ### Indication of required fields in WordPress form plugins
 
 Gravity Forms adds the possibility to select "Required" with each form field. In the form settings you can choose the type of Required Field Indicator. The explanation of this indicator is added automatically above the form.
@@ -52,5 +54,5 @@ Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with 
 {: .resource-h3}
 ### Other resources
 
-- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- Faizan Ahmed on UX Design World [Optimizing Form Design: Marking Required and Optional Fields in a Better Way](https://uxdworld.com/form-design-required-and-optional-fields/)
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) bt the NL Design System.
+- [Optimizing Form Design: Marking Required and Optional Fields in a Better Way](https://uxdworld.com/form-design-required-and-optional-fields/) by Faizan Ahmed on UX Design World.

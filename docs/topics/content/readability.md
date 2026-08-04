@@ -33,11 +33,19 @@ Use [meaningful headings]({{site.baseurl}}/docs/topics/content/headings/), [good
 - Use enough line-height and a [large enough font-size](https://www.smashingmagazine.com/2011/10/16-pixels-body-copy-anything-less-costly-mistake/)
 - Limit the [content width](https://baymard.com/blog/line-length-readability) to between 50 and 75 characters
 
-## Good reads on content readability
+## Resources
 
-- [Writing Accessible Content](https://foxland.fi/writing-accessible-content/)
-- [Plain Language Is for Everyone, Even Experts](https://www.nngroup.com/articles/plain-language-experts/)
-- [Tips on Writing for Web Accessibility](https://www.w3.org/WAI/tips/writing/#keep-content-clear-and-concise)
-- [Dos and don’ts on designing for accessibility, designing for people with dyslexia](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/)
-- [1Up Your Writing with Plain Language](https://www.handcoding.com/presentations/plainwriting/#cover) (slides)
-- [Reading level, accessibility for web writers](https://4syllables.com.au/articles/accessibility-writers-reading/)
+{: .resource-h3}
+### Related pages in this documentation
+- [No ambiguous link text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Design checks for web accessibility]({{site.baseurl}}/docs/testing/design/#readability) in Test for accessibility.
+
+{: .resource-h3}
+### Other resources
+
+- [Writing for Web Accessibility](https://www.w3.org/WAI/tips/writing/) by the W3C.
+- [Writing Accessible Content](https://foxland.fi/writing-accessible-content/) by Sami Keijonen.
+- [Plain Language Is for Everyone, Even Experts](https://www.nngroup.com/articles/plain-language-experts/) by Hoa Loranger.
+- [Dos and don’ts posters on designing for accessibility, designing for people with dyslexia](https://accessibility.blog.gov.uk/2016/09/02/dos-and-donts-on-designing-for-accessibility/) by GOV.UK.
+- [1Up Your Writing with Plain Language](https://www.handcoding.com/presentations/plainwriting/#cover) slides by Ashley Bischoff.
+- [Reading level, accessibility for web writers](https://4syllables.com.au/articles/accessibility-writers-reading/) by 4Syllables.

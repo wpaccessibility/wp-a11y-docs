@@ -95,3 +95,9 @@ Maintaining predictable behavior on input and on focus is necessary to meet the 
 
 - [3.2.1 On Focus](https://www.w3.org/WAI/WCAG22/quickref/#on-focus) (Level A).
 - [3.2.2 On Input](https://www.w3.org/WAI/WCAG22/quickref/#on-input) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [No unexpected changes of context]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/) in the Theme guidelines for the WordPress accessibility-ready program.

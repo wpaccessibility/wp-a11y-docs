@@ -53,6 +53,11 @@ By giving a meaningful image proper alternative text, you meet WCAG success crit
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
 
 {: .resource-h3}
+### Related pages in this documentation
+- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Alternative text for images, SVGs and icons in developmen]({{site.baseurl}}/docs/topics/code/images/alt-text/)  in Standards and best practice, Frontend code.
+
+  {: .resource-h3}
 ### Other resources
 
-- [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/), by The A11Y Collective.
+[Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/), by The A11Y Collective.

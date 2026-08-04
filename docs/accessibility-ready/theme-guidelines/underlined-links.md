@@ -46,4 +46,4 @@ Underlining links in text is the best way to meet WCAG success criterion [1.4.1 
 {: .resource-h3}
 ### Related pages in this documentation
 
-[Styling links]({{site.baseurl}}{/docs/topics/design/links/) in Design and user experience.
+[Styling links]({{site.baseurl}}{/docs/topics/design/links/) in Standards and best practice, Design and user experience.

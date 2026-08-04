@@ -176,13 +176,20 @@ You can find the WordPress theme guidelines for the accessibility-ready tag at: 
 
 ## Resources
 
-* [WordPress Accessibility Coding Standard](https://make.wordpress.org/core/handbook/best-practices/coding-standards/accessibility-coding-standards/)
-* [Non-interference section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5)
-* [WCAG version 2.1](https://www.w3.org/TR/WCAG21/)
-* [WCAG version 2.2](https://www.w3.org/TR/WCAG22/)
-* [More on WCAG version 3.0](https://www.w3.org/TR/wcag-3.0-explainer/)
-* [W3C quick reference guide for techniques](https://www.w3.org/WAI/WCAG22/quickref/)
-* [WCAG Evaluation Method](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/)
-* [Accessibility Standards ISO/IEC 40500:2025](https://www.iso.org/standard/91029.html)
-* [European Accessibility Act](https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en)
-* [Standard norms for Accessibility of ICT: EN 301 549](https://accessible-eu-centre.ec.europa.eu/content-corner/digital-library/en-3015492021-accessibility-requirements-ict-products-and-services_en)
+{: .resource-h3}
+### WCAG documentation by the W3C
+
+* [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG22/quickref/).
+* [WCAG version 2.1](https://www.w3.org/TR/WCAG21/).
+* [WCAG version 2.2](https://www.w3.org/TR/WCAG22/).
+* [Non-interference section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5).
+* [Explainer for W3C Accessibility Guidelines (WCAG) 3.0](https://www.w3.org/TR/wcag-3.0-explainer/).
+* [WCAG Evaluation Methodology](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+* [WordPress accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/).
+* [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/) in Standards and best practices.
+* [Test for accessibility]({{site.baseurl}}/docs/testing/).
+* [WordPress, WCAG and compliance]({{site.baseurl}}/docs/wp-a11y/wcag/) in WordPress and accessibility.

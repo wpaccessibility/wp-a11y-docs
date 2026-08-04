@@ -76,6 +76,6 @@ Naming grouped form fields is necessary to meet the WCAG success criteria:
 {: .resource-h3}
 ### Other resources
 
-- W3C: [Grouping Controls](https://www.w3.org/WAI/tutorials/forms/grouping/)
-- NL Design System: [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- MDN: [The Field Set element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset).
+- [Grouping Controls](https://www.w3.org/WAI/tutorials/forms/grouping/) by the W3C.
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System.
+- [The Field Set element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/fieldset) by the MDN.

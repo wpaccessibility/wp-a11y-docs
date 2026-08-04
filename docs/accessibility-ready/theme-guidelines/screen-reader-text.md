@@ -15,7 +15,7 @@ redirect_from:
 
 ## Basic principle
 
-Accessibility-ready themes make it easier for content authors to create accessible websites. Themes must have a clearly defined and properly styled class, such as `.screen-reader-text` or `.sr-only`, that allows content creators to include text that is hidden visually but still read by assistive technologies without needing to write custom CSS. 
+Accessibility-ready` themes make it easier for content authors to create accessible websites. Themes must have a clearly defined and properly styled class, such as `.screen-reader-text` or `.sr-only`, that allows content creators to include text that is hidden visually but still read by assistive technologies without needing to write custom CSS. 
 
 Including a screen reader text class makes it easier for content creators to add additional context for links, buttons, or form fields when building with the theme.
 
@@ -41,4 +41,4 @@ Including a screen reader text class makes it easier for content creators to add
 {: .resource-h3}
 ### Related pages in this documentation
 
-[The CSS class screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) in Frontend code.
+[The CSS class screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) in Standards and best practice, Frontend code.

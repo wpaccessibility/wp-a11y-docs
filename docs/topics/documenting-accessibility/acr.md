@@ -61,4 +61,4 @@ Typically ACRs are published on your website and linked to from an accessibility
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/), in the WordPress accessibility-ready guidelines.
+- [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/) in the Theme guidelines for the WordPress accessibility-ready program.

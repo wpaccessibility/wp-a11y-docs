@@ -23,8 +23,6 @@ The only possible accessible use for the attribute `autofocus` can be by moving 
 
 Load a web page and verify that keyboard and visible focus is not automatically set, either by using the `autofocus` attribute or by assignment using JavaScript. 
 
-
-
 ## Examples
 
 {: .callout .dont }
@@ -53,6 +51,11 @@ Maintaining a meaningful and predictable focus order is necessary to meet the WC
 
 - [1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence) (Level A).
 - [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources

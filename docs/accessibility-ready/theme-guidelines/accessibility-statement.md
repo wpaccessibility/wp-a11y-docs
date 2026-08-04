@@ -32,5 +32,5 @@ This file has a standardized format outlining the theme's accessibility audit st
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Accessibility.txt files]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/) Documenting accessibility.
-- [Accessibility statements]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-statements/) Documenting accessibility.
+- [Accessibility.txt files]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-txt/) in Standards and best practice, Documenting accessibility.
+- [Accessibility statements]({{site.baseurl}}/docs/topics/documenting-accessibility/accessibility-statements/) in Standards and best practice, Documenting accessibility.

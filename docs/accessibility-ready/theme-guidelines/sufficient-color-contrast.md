@@ -55,5 +55,5 @@ Providing sufficient color contrast of text and UI controls is necessary to meet
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Design and user experience.
-- [Using color]({{site.baseurl}}/docs/topics/design/color/use-of-color/) in Design and user experience.
+- [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice, Design and user experience.
+- [Using color]({{site.baseurl}}/docs/topics/design/color/use-of-color/) in Standards and best practice, Design and user experience.

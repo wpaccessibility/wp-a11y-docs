@@ -60,6 +60,6 @@ Keyboard navigation support is necessary to meet the WCAG success criteria:
 {: .resource-h3}
 ### Related pages in this documentation
 
-* [Handling focus]({{site.baseurl}}/docs/topics/code/focus-handling/) and subpages in Frontend code.
-* [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/) in Design and user experience.
+* [Handling focus]({{site.baseurl}}/docs/topics/code/focus-handling/) and subpages in Standards and best practice, Frontend code.
+* [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/) in Standards and best practice, Design and user experience.
 * [Keyboard navigation testing]({{site.baseurl}}/docs/testing/keyboard/) in Test for accessibility.

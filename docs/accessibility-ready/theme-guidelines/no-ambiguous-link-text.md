@@ -53,7 +53,7 @@ By giving a meaningful link text, you meet WCAG success criteria:
 {: .resource-h3}
 ### Related pages in this documentation
 
-[Write meaningful link text]({{site.baseurl}}/docs/topics/content/links/link-text/) in Content and images.
+[Write meaningful link text]({{site.baseurl}}/docs/topics/content/links/link-text/) in Standards and best practice, Content and images.
 
 
 

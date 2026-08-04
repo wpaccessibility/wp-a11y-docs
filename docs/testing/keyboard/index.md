@@ -14,7 +14,7 @@ All functionality should work using a **keyboard**. This is essential for all as
 
 Note: before you start testing with a keyboard on a Mac, make sure the settings of your computer are set to allow full keyboard navigation: [How to activate keyboard navigation on MacOS](https://www.a11y-collective.com/blog/how-to-activate-keyboard-navigation-on-macos/).
 
-A **detailed guide** on how to test with a keyboard only is in the theme accessibility-ready guideline: [Keyboard navigation support]({{site.baseurl}}//docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/).
+A **detailed guide** on how to test with a keyboard only is in the theme `accessibility-ready` guideline: [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/).
 
 In brief:
 
@@ -25,8 +25,15 @@ Tab through your pages, links, and forms to do the following tests:
 - Confirm all interactions like form fields, buttons, and other controls, can be triggered via keyboard. Any action you can complete with a mouse must also be possible from the keyboard.
 - Perform keyboard tests both with a screen reader and without. Screen reader use of the keyboard can override custom keyboard scripting.
 
-
 ## Resources
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program. This page contains detailed testing steps for WordPress themes.
+
+{: .resource-h3}
+### Other resources
 
 - [Keyboard Accessibility](https://webaim.org/techniques/keyboard/) by WebAIM.
 - [2.1.1 Keyboard](https://alphagov.github.io/guide-to-wcag/sc/2.1.1.html#how-to-check) on A guide to WCAG by the UK Government Digital Service.

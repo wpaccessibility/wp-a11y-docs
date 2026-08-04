@@ -49,4 +49,4 @@ Adding a skip link is necessary to meet the WCAG success criterion [2.4.1 Bypass
 {: .resource-h3}
 ### Related pages in this documentation
 
-[Skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/) in Frontend code.
+[Skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/) in Standards and best practice, Frontend code.

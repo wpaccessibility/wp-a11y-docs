@@ -53,4 +53,4 @@ Using accessibile audio, video, and animations is necessary to meet the WCAG suc
 {: .resource-h3}
 ### Related pages in this documentation
 
-[Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/) Frontend code.
+[Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/) in Standards and best practice, Frontend code.

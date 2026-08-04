@@ -42,13 +42,19 @@ I love cats, so I watch <a href="#self-2" id="self-2" style="color: darkgreen">c
 - [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (level AA).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+- [Sufficient color contrast of text and UI controls]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Underlined links in text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/underlined-links/) in the Theme guidelines for the WordPress accessibility-ready program.
+
+{: .resource-h3}
 ### Other resources
 
-- [Underline Your Links!](https://theadminbar.com/accessibility-weekly/underline-your-links/), by Amber Hinds on the Admin Bar.
-- [Why WordPress Themes Require Underlines on Links](https://www.joedolson.com/2025/10/why-wordpress-themes-require-underlines-on-links/), by Joe Dolson.
-- [On Link Underlines](https://adrianroselli.com/2016/06/on-link-underlines.html), by Adrian Roselli.
+- [Underline Your Links!](https://theadminbar.com/accessibility-weekly/underline-your-links/) by Amber Hinds on the Admin Bar.
+- [Why WordPress Themes Require Underlines on Links](https://www.joedolson.com/2025/10/why-wordpress-themes-require-underlines-on-links/) by Joe Dolson.
+- [On Link Underlines](https://adrianroselli.com/2016/06/on-link-underlines.html) by Adrian Roselli.
 - [Designing Better Links UX](https://smart-interface-design-patterns.com/articles/links-ux/) on Smart Interface Design Patterns.
-- [Links and Hypertext - Underlining](https://webaim.org/techniques/hypertext/link_text#underlining), on WebAIM.
-- [Guidelines for Visualizing Links](https://www.nngroup.com/articles/guidelines-for-visualizing-links/), by the NNGroup.
-- [Link styling: Underline your links. Test with night mode. Test in greyscale](https://nicolas-steenhout.com/underline-your-links/), by Nic Steenhout.
+- [Links and Hypertext - Underlining](https://webaim.org/techniques/hypertext/link_text#underlining) on WebAIM.
+- [Guidelines for Visualizing Links](https://www.nngroup.com/articles/guidelines-for-visualizing-links/) by the NNGroup.
+- [Link styling: Underline your links. Test with night mode. Test in greyscale](https://nicolas-steenhout.com/underline-your-links/) by Nic Steenhout.
 

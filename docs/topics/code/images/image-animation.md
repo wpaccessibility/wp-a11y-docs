@@ -79,7 +79,7 @@ Reduced motion doesn’t have to mean no animation at all, but it should be very
 {: .resource-h3}
 ### Related pages in this documentation
 
--  [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/), in the WordPress accessibility-ready guidelines.
+[Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources

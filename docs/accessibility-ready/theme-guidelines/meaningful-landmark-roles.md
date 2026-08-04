@@ -60,4 +60,4 @@ Providing Meaningful landmark roles and names is necessary to meet the WCAG succ
 {: .resource-h3}
 ### Related pages in this documentation
 
-[ARIA Landmarks]({{site.baseurl}}/docs/topics/code/landmarks/) in Frontend code.
+[ARIA Landmarks]({{site.baseurl}}/docs/topics/code/landmarks/) in Standards and best practice, Frontend code.

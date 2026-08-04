@@ -172,4 +172,4 @@ In the future, the accessibility team hopes to surface this information within t
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/), in the WordPress accessibility-ready guidelines.
+- [Accessibility statement]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessibility-statement/) in the Theme guidelines for the WordPress accessibility-ready program.

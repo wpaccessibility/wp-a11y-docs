@@ -20,17 +20,19 @@ Listed below are the major issues to address.
 
 ## Color contrast
 
-Check the color contrast ratio between **text** and its **background**. The guideline in WCAG 2.2 AA guidelines is: 
+Check the color contrast ratio between **text** and its **background**. The criteria in the WCAG 2.2 AA guidelines are: 
 - the color contrast ratio between text and background must be 4.5 or more for normal text and 
 - 3.1 or more for text of at least 24 pixels or 19 pixels bold.
 
 Text in logos and logotypes are excluded from this guideline.
 
 **Non-text elements** that have meaning should have a color contrast of 3.1 or more against its **background**.
-For example: icons used functionally or informationally, borders of input fields, checkboxes or radio buttons.
-Also check for different states (light/dark mode, checked, not checked, etc.). All states must have a color contrast of 3.1 or more.
+For example, icons used functionally or informationally, borders of input fields, checkboxes, or radio buttons.
+Also check for different states (light/dark mode, checked/not checked states, etc.). All states must have a color contrast of 3.1 or more.
 
-Documentation about color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice: Design and user experience.
+Documentation about color contrast: 
+- [Sufficient color contrast of text and UI controls]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/) in Theme guidelines for the WordPress accessibility-ready program.
+- [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice: Design and user experience.
 
 ### Popular color contrast checkers
 
@@ -51,10 +53,10 @@ Functionality must also be understandable for people who cannot see colors.
 - Don’t indicate errors in forms only using text color, borders, or backgrounds. Include clear text messages as well.
 
 Related documentation: 
-- [Use of color]({{site.baseurl}}/docs/topics/design/color/use-of-color/), in Standard and best practice: Design and user experience.
-- [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/), in Standard and best practice: Design and user experience.
-- [Styling links]({{site.baseurl}}/docs/topics/design/links/), in Standard and best practice: Design and user experience.
-- [Write out an error message in text]({{site.baseurl}}/docs/topics/forms/feedback/error-message-format/), in Standard and best practice: Web forms
+- [Use of color]({{site.baseurl}}/docs/topics/design/color/use-of-color/) in Standard and best practice: Design and user experience.
+- [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/) in Standard and best practice: Design and user experience.
+- [Styling links]({{site.baseurl}}/docs/topics/design/links/) in Standard and best practice: Design and user experience.
+- [Write out an error message in text]({{site.baseurl}}/docs/topics/forms/feedback/error-message-format/) in Standard and best practice: Web forms
 
 ### Color-blindness checks and tools:
 
@@ -94,5 +96,5 @@ Make the order of content logical when read from the top down. For example, do n
 - Avoid using too many elements that distract the user from reading the text or using the navigation.
 
 Related documentation: 
-- [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/) in Frontend code
-- [Accessible audio, video, and animations]({{site.baseurl}}/docs/topics/content/audio-video-and-animations/).
+- [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/) in Standards and best practice, Frontend code
+- [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/) in the Theme guidelines for the WordPress accessibility-ready program.

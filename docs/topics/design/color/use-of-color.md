@@ -43,7 +43,14 @@ The easiest way to check whether your website may be usable by color-blind peopl
 
 ## Resources
 
-## WCAG Success Criteria for the use of color
+{: .resource-h3}
+### WCAG Success Criteria for the use of color
 
 - [1.4.1 Use of Color](https://www.w3.org/WAI/WCAG22/quickref/#use-of-color) (level A).
 - [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (level AA).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Sufficient color contrast of text and UI controls]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Underlined links in text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/underlined-links/) in the Theme guidelines for the WordPress accessibility-ready program.

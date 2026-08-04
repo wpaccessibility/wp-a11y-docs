@@ -47,11 +47,11 @@ Using labeled form fields is necessary to meet the WCAG success criteria:
 {: .resource-h3}
 ### Related pages in this documentation
 
-* [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Frontend code.
-* [Input field and form label]({{site.baseurl}}/docs/topics/forms/input-label/) in Web forms.
+* [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
+* [Input field and form label]({{site.baseurl}}/docs/topics/forms/input-label/) in Standards and best practice, Web forms.
 
 {: .resource-h3}
 ### Other resources
 
 * [Technique: Using label elements to associate text labels with form controls](https://www.w3.org/WAI/WCAG22/Techniques/html/H44.html) in WCAG 2.2 Techniques.
-* [Technique: Providing descriptive labels](https://www.w3.org/WAI/WCAG22/Techniques/general/G131.html) in, WCAG 2.2 Techniques.
+* [Technique: Providing descriptive labels](https://www.w3.org/WAI/WCAG22/Techniques/general/G131.html) in WCAG 2.2 Techniques.

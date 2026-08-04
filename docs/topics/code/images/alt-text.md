@@ -207,17 +207,17 @@ By giving meaningful images proper alternative text, you meet WCAG success crite
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/), in the WordPress accessibility-ready guidelines.
-- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/), in Start with accessibility.
-- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Standards and best practice: Content and images.
-- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best practice, Content and images: Links.
+- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/) in Start with accessibility.
+- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Standards and best practice, Content and images.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best practice, Content and images.
 
 {: .resource-h3}
 ### Other resources
 
-- [Images Tutorial](https://www.w3.org/WAI/tutorials/images/), by the W3C.
-- [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/), by the W3C.
-- [Accessible Images For When They Matter Most](https://www.smashingmagazine.com/2020/05/accessible-images/), by Carie Fisher on Smashing Magazine.
-- [Accessible SVGs: Perfect Patterns For Screen Reader Users](https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/), by Carie Fisher on Smashing Magazine.
-- [Accessible SVGS from CSS Tricks](https://css-tricks.com/accessible-svgs/), by Heather Migliorisi on CSS Tricks.
+- [Images Tutorial](https://www.w3.org/WAI/tutorials/images/) by the W3C.
+- [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) by the W3C.
+- [Accessible Images For When They Matter Most](https://www.smashingmagazine.com/2020/05/accessible-images/) by Carie Fisher on Smashing Magazine.
+- [Accessible SVGs: Perfect Patterns For Screen Reader Users](https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/) by Carie Fisher on Smashing Magazine.
+- [Accessible SVGS from CSS Tricks](https://css-tricks.com/accessible-svgs/) by Heather Migliorisi on CSS Tricks.
 - [Font Icon accessibility from Font Awesome](https://fontawesome.com/docs/web/dig-deeper/accessibility) by Font Awesome.

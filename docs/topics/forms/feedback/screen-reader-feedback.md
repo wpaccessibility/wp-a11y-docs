@@ -84,6 +84,11 @@ Providing feedback about error messages to screen reader users is required to me
 
 Providing a descriptive `<title>` element is required to meet WCAG success criterion [2.4.2 Page Titled](https://www.w3.org/WAI/WCAG22/quickref/#page-titled) (Level A).
 
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) about the JavaScript method `wp.a11y.speak()` in Standards and best practice, Frontend code.
+[- [Provide a summary with form errors above the form]({{site.baseurl}}/docs/topics/forms/feedback/error-summary/) Standards and best practice, Web forms,]()
 
 {: .resource-h3}
 ### Other resources

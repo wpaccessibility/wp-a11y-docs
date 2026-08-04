@@ -43,12 +43,16 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 - [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-- Standards and best practice - Frontend code: [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/).
+- [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
+- [Controls with accessible names, roles, and states]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Labelled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labelled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources
 
-- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- MDN: [Placeholders](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/placeholder).
+- [Placeholders](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/placeholder) by MDN.
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System. 
+

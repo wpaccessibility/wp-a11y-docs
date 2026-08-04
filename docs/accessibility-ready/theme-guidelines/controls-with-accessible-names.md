@@ -60,9 +60,9 @@ Using controls with accessible names, roles, and states is necessary to meet the
 {: .resource-h3}
 ### Related pages in this documentation
 
-* [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Content and images.
-* [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Frontend code.
-* [Input field and form label]({{site.baseurl}}/docs/topics/forms/input-label/) in Web forms.
+* [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Standards and best practice, Content and images.
+* [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
+* [Input field and form label]({{site.baseurl}}/docs/topics/forms/input-label/) in Standards and best practice, Web forms.
 
 {: .resource-h3}
 ### Other resources

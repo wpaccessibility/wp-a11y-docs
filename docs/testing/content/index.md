@@ -19,7 +19,7 @@ Describe (for non-visual readers) the contents and purpose of a meaningful image
 
 Documentation about alternative text for images:
 
-- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in Theme guidelines for the WordPress accessibility-ready program.
+- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in Theme guidelines for the WordPress `accessibility-ready` program.
 - [Alternative text for images]({{site.baseurl}}/docs/topics/content/alt-text/) in Standards and best Practices: Content and images.
 - [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best Practices: Content and images.
 - [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/) in Standards and best Practices: Frontend code.
@@ -29,13 +29,13 @@ Documentation about alternative text for images:
 Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book:
 
 - One H1 per page, describing what the page is about.
-- Use other headings meaningfully according to their level, not for their appearance.
+- Use other headings meaningful, according to their level, not for their appearance.
 - A good heading briefly describes the content that follows it
 - Do not skip heading levels.
 
 Documentation and test tools for the heading structure:
 
-- [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/) in Theme guidelines for the WordPress accessibility-ready program.
+- [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/) in Theme guidelines for the WordPress `accessibility-ready` program.
 - [Headings in the content]({{site.baseurl}}/docs/topics/content/headings/) in Standards and best Practices: Content and images.
 - [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Standards and best Practices: Frontend code. 
 - Use the browser tool [HeadingsMap]({{site.baseurl}}/docs/topics/code/heading-structure/#how-to-test-for-a-proper-heading-structure) to test the heading structure of an entire web page.
@@ -48,7 +48,7 @@ Documentation and test tools for the heading structure:
 
 Documentation about link texts:
 
-- [No ambiguous link text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/) in Theme guidelines for the WordPress accessibility-ready program.
+- [No ambiguous link text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/) in Theme guidelines for the WordPress `accessibility-ready` program.
 - [Write meaningful link text]({{site.baseurl}}/docs/topics/content/links/link-text/) in Standards and best Practices: Content and images.
 - [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best Practices: Content and images.
 - [Link destination]({{site.baseurl}}/docs/topics/content/links/link-destinations/) in Standards and best Practices: Content and images.
@@ -61,8 +61,8 @@ Documentation about link texts:
 - Avoiding using video with rapid flashing content, or provide content warnings.
 
 Documentation about video and audio:
-- [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/) in Theme guidelines for the WordPress accessibility-ready program.
-- [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/), by the W3C.
+- [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/) in Theme guidelines for the WordPress `accessibility-ready` program.
+- [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/) by the W3C.
 - [What's the difference between "closed captions" and "subtitles"](https://gaming.stackexchange.com/questions/57243/whats-the-difference-between-closed-captions-and-subtitles-in-portal) on Stack Exchange.
 
 ## Readability

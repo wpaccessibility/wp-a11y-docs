@@ -98,7 +98,7 @@ Connecting a description to a form field is necessary to meet the WCAG success c
 {: .resource-h3}
 ### Other resources
 
-- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- MDN: [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby).
-- W3C: [Form Instructions](https://www.w3.org/WAI/tutorials/forms/instructions/).
-- Accessibility Developer Guide: [Browse and focus modes](https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes).
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System.
+- [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby) by the MDN.
+- [Form Instructions](https://www.w3.org/WAI/tutorials/forms/instructions/) by the W3C.
+- [Browse and focus modes](https://www.accessibility-developer-guide.com/knowledge/screen-readers/desktop/browse-focus-modes) in the Accessibility Developer Guide by the Accessibility Club.

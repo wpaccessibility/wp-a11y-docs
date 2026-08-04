@@ -54,5 +54,5 @@ Using a meaningful heading structure is necessary to meet the WCAG success crite
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/) in Content and images.
-- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Frontend code.
+- [Using headings in the content]({{site.baseurl}}/docs/topics/content/headings/) in Standards and best practice, Content and images.
+- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Standards and best practice, Frontend code.

@@ -19,7 +19,7 @@ This requires that the contrast between background and foreground colors has a l
 - 4.5:1 for normal text.
 - 3:1 for large text (24px equivalent or 19px equivalent and bold).
 
-{: .callout  .tip }
+{: .callout .tip }
 **Tip:** Logos and logotype are exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
 
 There are many tools to check color contrast ratios. WebAxe published an overview of contrast checkers. You can test color contrast with these color checkers:
@@ -34,8 +34,13 @@ There are many tools to check color contrast ratios. WebAxe published an overvie
 ### WCAG Success Criteria for color contrast
 
 - [1.4.3 Contrast Minimum](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum)(Level AA).
-- [1.4.6 Contrast (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-enhanced) (Level **AAA**)
-- [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (Level AA)
+- [1.4.6 Contrast (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-enhanced) (Level **AAA**).
+- [1.4.11 Non-text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (Level AA).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Sufficient color contrast of text and UI controls]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources
