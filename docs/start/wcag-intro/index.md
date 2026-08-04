@@ -12,9 +12,9 @@ contributors:
 
 # Introduction to WCAG
 
-The Web Content Accessibility Guidelines, or WCAG, are the primary guidelines for meeting accessibility standards worldwide. You will need to refer to them when designing, writing, developing, or testing web pages, plugins, themes, or other software. 
+The Web Content Accessibility Guidelines, or WCAG, are the primary guidelines for meeting accessibility standards worldwide. You will need to refer to them when designing, writing, developing, or testing web pages, plugins, themes, or other software.
 
-Following these guidelines will help make your work accessible for as many people as possible, including those with disabilities. 
+Following these guidelines will help make your work accessible for as many people as possible, including those with disabilities.
 
 The guidelines are globally used in legislation and are created and maintained by the Web Accessibility Initiative (WAI), a part of the international World Wide Web Consortium (W3C).
 
@@ -24,7 +24,7 @@ However, there's more nuance to that. Correctly following these guidelines and t
 
 ## WCAG and WordPress
 
-WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible. 
+WordPress requires that all content meet WCAG guidelines, but also pushes to provide accessibility beyond that minimum whenever possible.
 
 WordPress Accessibility Coding Standard:
 <blockquote>
@@ -88,7 +88,7 @@ Can visitors use any device?
 
 Sections 1 through 4 contain the specific guidelines used to create accessible content. Section 5, however, talks about what it means to conform to these guidelines and defines important terminology used for conformance.
 
-Although when following the WCAG guidelines you will often stay within sections 1 to 4 (the four principles), it's necessary to read through [section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5) as well. It's about non-interference, meaning your techniques cannot block users' ability to access any part of a page. 
+Although when following the WCAG guidelines you will often stay within sections 1 to 4 (the four principles), it's necessary to read through [section 5.2.5](https://www.w3.org/TR/WCAG22/#cc5) as well. It's about non-interference, meaning your techniques cannot block users' ability to access any part of a page.
 
 For example: if you have a background video at the top of a page, without buttons to stop or pause it, you are interfering with the possibility of people reading the rest of the page. There are 4 success criteria specifically mentioned:
 
@@ -101,7 +101,7 @@ Not passing these success criteria can make it hard, if not impossible, for some
 
 ### WCAG success criteria
 
-The success criteria can be seen as a set of rules for complying with a guideline. Some of them are very specific; others are more open to interpretation. 
+The success criteria can be seen as a set of rules for complying with a guideline. Some of them are very specific; others are more open to interpretation.
 
 Each success criterion has a number, a name and a level.
 
@@ -125,7 +125,7 @@ The success criteria can have one of 3 levels, A, AA or AAA. In general, level A
 
 It is implied that when you need to comply with level AA, you automatically need to comply with level A as well.
 
-Passing tests for the success criteria of level A and AA is what most legislation asks of you, and is what is meant when people say you are WCAG compliant. Level AAA adds additional success criteria that are necessary to expand the number of people with disabilities who can use your website or app. 
+Passing tests for the success criteria of level A and AA is what most legislation asks of you, and is what is meant when people say you are WCAG compliant. Level AAA adds additional success criteria that are necessary to expand the number of people with disabilities who can use your website or app.
 
 They're not necessarily harder to implement, but they're useful for a smaller group and sometimes require more work to maintain. Also, it is implied that when you say you (need to) comply with level AA, you automatically comply with A as well.
 
@@ -141,16 +141,16 @@ As of version WCAG 3.0, the abbreviation will reflect the wide scale it can be u
 
 ## Implementing the guidelines
 
-The guidelines and criteria do not provide specific techniques to achieve conformance. However, the W3C provided a [quick reference guide](https://www.w3.org/WAI/WCAG22/quickref/) with common techniques and examples for implementing them. 
+The guidelines and criteria do not provide specific techniques to achieve conformance. However, the W3C provided a [quick reference guide](https://www.w3.org/WAI/WCAG22/quickref/) with common techniques and examples for implementing them.
 
 When designing, writing or coding, keep asking yourself if what you're doing contributes to the main purpose of the guideline.
 
 
 ## Testing or getting tested
 
-You may have seen audit reports in which a website was tested for accessibility. 
+You may have seen audit reports in which a website was tested for accessibility.
 
-One method of reporting an accessibility audit is the [WCAG Evaluation Method](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/), the Website Accessibility Conformance Evaluation Methodology by the W3C. This methodology  provides auditors and testers with guidelines for checking whether a success criterion has been met (and thus whether a guideline has been followed correctly). [More about testing]({{site.baseurl}}/docs/testing).
+One method of reporting an accessibility audit is the [WCAG Evaluation Method](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/), the evaluation methodology published by the W3C. This methodology  provides auditors and testers with guidelines for checking whether a success criterion has been met (and thus whether a guideline has been followed correctly). [More about testing]({{site.baseurl}}/docs/testing).
 
 Many finding can be reported for each success criterion in the report. That can make a report overwhelming! It's recommended that you try and implement best practice accessibility techniques and follow the guidelines to the best of your abilities before getting an audit.
 
@@ -170,7 +170,7 @@ Most European laws implementing the [European Accessibility Act](https://commiss
 
 ## WordPress theme guidelines and relation to WCAG
 
-The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme. 
+The WordPress guidelines for the accessibility-ready tag are based on WCAG. These guidelines are for themes only, without any content, so not all WCAG success criteria are relevant when developing a theme.
 
 You can find the WordPress theme guidelines for the accessibility-ready tag at: [Theme accessibility guidelines]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/).
 
