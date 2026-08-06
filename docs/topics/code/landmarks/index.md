@@ -116,10 +116,10 @@ Note that the word navigation is already announced by assistive technologies. Th
 {: .resource-h3}
 ### WCAG Success Criteria for meaningful landmarks
 
-Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria:
+Providing meaningful landmark roles and names is necessary to meet the WCAG success criteria:
 
 - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
-- [1.3.6 Identify purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) (Level **AAA**).
+- [1.3.6 Identify Purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) (Level **AAA**).
 
 {: .resource-h3}
 ### Related pages in this documentation

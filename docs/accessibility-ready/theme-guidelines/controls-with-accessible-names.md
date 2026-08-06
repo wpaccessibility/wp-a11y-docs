@@ -67,7 +67,7 @@ Using controls with accessible names, roles, and states is necessary to meet the
 {: .resource-h3}
 ### Other resources
 
-[Tab Pattern Expectations](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) in the ARIA Authoring Practices Guide (APG).
+[Tabs Pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) in the ARIA Authoring Practices Guide (APG).
 
 Relevant documentation on ARIA on the MDN web docs:
 

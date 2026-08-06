@@ -202,7 +202,7 @@ The best option is to add visible text. An icon alone may not be universally und
 By giving meaningful images proper alternative text, you meet WCAG success criteria:
 - [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
-- [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
+- [4.1.2 Name, Role, Value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
 {: .resource-h3}
 ### Related pages in this documentation

@@ -54,5 +54,5 @@ Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with 
 {: .resource-h3}
 ### Other resources
 
-- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) bt the NL Design System.
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System.
 - [Optimizing Form Design: Marking Required and Optional Fields in a Better Way](https://uxdworld.com/form-design-required-and-optional-fields/) by Faizan Ahmed on UX Design World.

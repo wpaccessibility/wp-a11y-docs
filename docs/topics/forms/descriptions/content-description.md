@@ -34,6 +34,6 @@ What are the options for adding information and explanations to a form and its i
 ### Other resources
 
 - [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System.
-- [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby) by the MDN.
+- [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby) by MDN.
 - [Form Instructions](https://www.w3.org/WAI/tutorials/forms/instructions/) by the W3C.
 

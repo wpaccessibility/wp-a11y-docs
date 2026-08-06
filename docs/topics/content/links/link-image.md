@@ -55,7 +55,7 @@ By giving a meaningful image proper alternative text, you meet WCAG success crit
 {: .resource-h3}
 ### Related pages in this documentation
 - [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in the Theme guidelines for the WordPress accessibility-ready program.
-- [Alternative text for images, SVGs and icons in developmen]({{site.baseurl}}/docs/topics/code/images/alt-text/)  in Standards and best practice, Frontend code.
+- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/)  in Standards and best practice, Frontend code.
 
   {: .resource-h3}
 ### Other resources

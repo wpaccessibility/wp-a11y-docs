@@ -53,8 +53,8 @@ Keyboard navigation support is necessary to meet the WCAG success criteria:
 * [2.1.2 No Keyboard Trap](https://www.w3.org/WAI/WCAG22/quickref/#no-keyboard-trap) (Level A).
 * [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
 * [2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG22/quickref/#focus-visible) (Level AA).
-* [2.4.11 Focus not obscured (Minimun)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-minimum) (Level AA).
-* [2.4.12 Focus not obscured (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-enhanced) (**Level AAA**).
+* [2.4.11 Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-minimum) (Level AA).
+* [2.4.12 Focus Not Obscured (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured-enhanced) (**Level AAA**).
 * [2.4.13 Focus Appearance](https://www.w3.org/WAI/WCAG22/quickref/#focus-appearance) (**Level AAA**).
 
 {: .resource-h3}

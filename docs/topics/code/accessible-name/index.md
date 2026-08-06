@@ -105,5 +105,5 @@ Giving interactive elements a well-defined, accessible name is necessary to meet
 
 - [Understanding Accessible Names in HTML](https://dev.to/ibn_abubakre/understanding-accessible-names-in-html-562) by Abdulqudus Abubakre.
 - [Accessible name](https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name) by MDN
-- [Providing Accessible Names and Descriptions ](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/) by the W3C.
+- [Providing Accessible Names and Descriptions](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/) by the W3C.
 - [5 rules of ARIA](https://www.w3.org/TR/using-aria/#firstrule) by the W3C.

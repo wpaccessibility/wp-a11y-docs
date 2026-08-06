@@ -29,7 +29,7 @@ Documentation about alternative text for images:
 Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book:
 
 - One H1 per page, describing what the page is about.
-- Use other headings meaningful, according to their level, not for their appearance.
+- Use other headings meaningfully according to their level, not for their appearance.
 - A good heading briefly describes the content that follows it
 - Do not skip heading levels.
 
