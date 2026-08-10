@@ -14,5 +14,6 @@ There are many places around the internet where you can learn more about Accessi
 - [Deque University](https://dequeuniversity.com/), training and reference materials covering a wide variety of accessibility topics.
 - [The A11y Collective](https://www.a11y-collective.com/), a wide variety of online courses about accessibility on the web.
 - [Course path on Website Accessibility at PluralSight](https://www.pluralsight.com/paths/developing-websites-for-accessibility), a series of courses on many aspects of website accessibility.
+- [Free training: Testing Accessibility of Apps](https://abra.ai/learning/events/free-training) by Abra.ai.
 
 Do you know a good resource to add to this list? Please [let us know]({{site.baseurl}}/docs/about/contact/).

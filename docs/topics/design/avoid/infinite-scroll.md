@@ -33,16 +33,13 @@ If the number of items to load is not too high, “Load more items” buttons co
 
 ### Resources mostly focused on accessibility
 
-- [So You Think You’ve Built a Good Infinite Scroll](http://adrianroselli.com/2014/05/so-you-think-you-built-good-infinite.html)
-- [Infinite scrolling in Simply accessible](http://simplyaccessible.com/article/infinite-scrolling/)
-- [Infinite scrolling and accessibility](http://www.webaxe.org/infinite-scrolling-and-accessibility/)
-- [Infinite scrolling – impact on assistive technologies](http://www.ssbbartgroup.com/blog/infinite-scrolling-impact-on-assistive-technologies-series-1/)
-- From a screen reader user’s point of view: [Infinite Scroll & Accessibility! Is It Any Good?](https://www.digitala11y.com/infinite-scroll-accessibility-is-it-any-good/)
+- [So You Think You’ve Built a Good Infinite Scroll](http://adrianroselli.com/2014/05/so-you-think-you-built-good-infinite.html) by Adrian Roselli.
+- [Infinite Scroll & Accessibility! Is It Any Good?](https://www.digitala11y.com/infinite-scroll-accessibility-is-it-any-good/), from a screen reader user’s point of view, by Raghavendra Satish Peri on DigitalaA11Y.
 
 ### Resources mostly focused on usability
 
 - [Infinite scroll search-friendly recommendations](https://webmasters.googleblog.com/2014/02/infinite-scroll-search-friendly.html)
-- [Infinite scrolling](https://www.nngroup.com/articles/infinite-scrolling/) in Nielsen Norman Group
+- [Infinite scrolling](https://www.nngroup.com/articles/infinite-scrolling/) by Hoa Loranger for the Nielsen Norman Group.
 - [The UX of Infinite Scroll: The Good, the Bad, and the Maybe](https://www.sitepoint.com/ux-infinite-scroll-good-bad-maybe/)
 - [How infinite scrolling breaks UX](https://www.webdesignerdepot.com/2015/11/how-infinite-scrolling-breaks-ux/)
 - [Infinite Scrolling, Pagination Or “Load More” Buttons?](https://www.smashingmagazine.com/2016/03/pagination-infinite-scrolling-load-more-buttons/)

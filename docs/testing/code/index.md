@@ -47,3 +47,7 @@ In the section [Accessibility standards and best practice]({{site.baseurl}}/docs
 - Announce dynamic changes with [aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions) or [wp.a11y.speak()]({{site.baseurl}}/docs/topics/code/dynamic-changes/).
 
 The [accessibility-ready program for WordPress]({{site.baseurl}}/docs/accessibility-ready/) provides you with the requirements for meeting the accessibility-ready tag for themes. Each requirement includes a detailed description of how to test for it.
+
+## Resources
+
+- [5 accessibility checks to run on every component](https://zeroheight.com/blog/5-accessibility-checks-to-run-on-every-component/) by Hidde de Vries for zeroheight.
