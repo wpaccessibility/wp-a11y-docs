@@ -82,8 +82,8 @@ Heading structure in WordPress:
 
 Resources on heading semantics:
 
-- [Semantic Structure on WebAIM](https://webaim.org/techniques/semanticstructure/), by WebAIM.
-- [Web Accessibility Tutorials: Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/), by the W3C.
+- [Semantic Structure on WebAIM](https://webaim.org/techniques/semanticstructure/) by WebAIM.
+- [Web Accessibility Tutorials: Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/) by the W3C.
 - [The HTML5 Document Outline](https://developer.paciellogroup.com/blog/2013/10/html5-document-outline/) by Steven Faulkner. 
 - [Accessible heading structure](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) by Rian Rietveld on the A11y Project.
 

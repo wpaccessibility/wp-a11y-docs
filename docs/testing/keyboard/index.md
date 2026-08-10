@@ -37,3 +37,4 @@ Tab through your pages, links, and forms to do the following tests:
 
 - [Keyboard Accessibility](https://webaim.org/techniques/keyboard/) by WebAIM.
 - [2.1.1 Keyboard](https://alphagov.github.io/guide-to-wcag/sc/2.1.1.html#how-to-check) on A guide to WCAG by the UK Government Digital Service.
+- [What Can't I Press](https://what-cant-i-press.app/), keyboard commands reserved by JAWS, NVDA, Narrator, VoiceOver, and Orca, by Eric Bailey.

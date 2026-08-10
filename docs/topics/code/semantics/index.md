@@ -82,7 +82,6 @@ You can find a comprehensive list of how to do automated and frontend tests in t
 
 It’s harder to check if your HTML is meaningful because this highly depends on the content of your web page. Use common sense: search for the right element for the content and [don’t suffer from Divitus](https://css-tricks.com/css-beginner-mistakes-1/).
 
-
 ## Resources
 
 {: .resource-h3}
@@ -118,5 +117,7 @@ About the use of semantic HTML:
 - [Semantic HTML5](https://www.w3.org/TR/html5/dom.html#semantics) by the W3C.
 - [HTML5 semantic elements and Webflow: the essential guide](https://webflow.com/blog/html5-semantic-elements-and-webflow-the-essential-guide) by Webflow.
 - [Computer says NO to HTML5 document outline](http://html5doctor.com/computer-says-no-to-html5-document-outline/) by Steve Faulkner.
+- [Can I use](https://caniuse.com/) by Alexis Deveria.
+- [Can I include](https://caninclude.onrender.com/) by CyberLight.
 - [A Web Developer’s Guide to Buttons vs Links](https://www.a11y-collective.com/blog/button-vs-link/) by The ALLY Collective.
 

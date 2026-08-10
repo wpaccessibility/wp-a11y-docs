@@ -12,7 +12,7 @@ contributors:
 
 Listed are checklists that explain how to **manually check** for each WCAG success criterion.
 
-[Accessibility testing guide](https://github.com/alphagov/wcag-primer/wiki) by the British Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion.
+[A guide to WCAG](https://alphagov.github.io/guide-to-wcag/) by the British Government Digital Service. For testing websites and applications against the Web Content Accessibility Guidelines (WCAG) 2.2 AA Level. A detailed checklist per WCAG Success criterion.
 
 [WebAIM's WCAG 2 Checklist](https://webaim.org/standards/wcag/checklist), a checklist that presents recommendations for implementing the most common accessibility principles and techniques for those seeking WCAG conformance.
 

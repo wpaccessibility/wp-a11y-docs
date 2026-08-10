@@ -36,12 +36,19 @@ Documentation about color contrast:
 
 ### Popular color contrast checkers
 
-- [Figma Contrast Plugin](https://www.figma.com/community/plugin/748533339900865323).
-- [Figma Color Contrast Checker Plugin](https://www.figma.com/color-contrast-checker/).
-- [Figma WCAG Plugin](https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin).
+- [Online Contrast Checker](https://webaim.org/resources/contrastchecker/) by WebAIM.
 - [Colour Contrast Analyser (CCA)](https://vispero.com/lp/color-contrast-checker/), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
-- [contrastchecker.com](https://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.
+- [Background Image & Text Contrast Checker](https://www.brandwood.com/a11y/), by Andrew Brandwood.
+
+Tools to help design or check complete color palettes:
+- [Online Contrast Grid](https://contrast-grid.equalizedigital.com/) by Equalize Digital.
+- [Color Contrast Grid for Figma variables](https://www.figma.com/community/plugin/1429041037045202727/color-contrast-grid-for-figma-variables) by Moritz Neugebauer.
+- [Contrast Grid for Figma](https://www.figma.com/community/plugin/993414361395505148/contrast-grid) by hiloki.
+
+Other Figma plugins:
+- [Figma Contrast Plugin](https://www.figma.com/community/plugin/748533339900865323) by WillowTree.
+- [Figma Color Contrast Checker Plugin](https://www.figma.com/color-contrast-checker/) by Figma.
+- [Figma WCAG Plugin](https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin) by Marcelo Paiva.
 
 ## Not by color alone
 
