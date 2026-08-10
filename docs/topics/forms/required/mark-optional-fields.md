@@ -28,16 +28,18 @@ Assuming that you only request essential information in forms, most fields will 
 
 ## Resources
 
-### {: .resource-h3}
+{: .resource-h3}
 ### WCAG Success Criteria for required fields
 
 By indicating required fields, you meet WCAG success criterion [3.3.2 Labels or Instructions (Level A)](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
--  [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/).
-- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/).
+- [Option 1: Marking only the required form fields]({{site.baseurl}}/docs/topics/forms/required/mark-required-fields/) in Standards and best practice, Web forms.
+- [Indicate required fields for screen readers]({{site.baseurl}}/docs/topics/forms/required/required-screen-readers/) in Standards and best practice, Web forms.
 
+{: .resource-h3}
 ### Indication of optional fields in WordPress form plugins
 
 {: .callout .info }
@@ -47,5 +49,5 @@ Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with 
 {: .resource-h3}
 ### Other resources
 
-- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- Faizan Ahmed on UX Design World [Optimizing Form Design: Marking Required and Optional Fields in a Better Way](https://uxdworld.com/form-design-required-and-optional-fields/)
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System.
+- [Optimizing Form Design: Marking Required and Optional Fields in a Better Way](https://uxdworld.com/form-design-required-and-optional-fields/) by Faizan Ahmed on UX Design World.

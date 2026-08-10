@@ -121,7 +121,15 @@ get_the_title()
 
 ## Resources
 
-- [The introduction of the screen-reader-text class](https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core) by Joe Dolson
-- [WordPress Codex on CSS](https://codex.wordpress.org/CSS#WordPress_Generated_Classes)
-- [Supporting Screen Reader Text](https://make.wordpress.org/themes/2015/01/26/supporting-screen-reader-text/) by Konstantin Obenland
-- [Text for Screen Readers Only (Updated)](http://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/), by Graham Armfield
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Screen reader text supported]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/screen-reader-text/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/) in Test for accessibility.
+
+{: .resource-h3}
+### Other resources
+
+- [The introduction of the screen-reader-text class](https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core) on WordPress.org by Joe Dolson.
+- [Supporting Screen Reader Text](https://make.wordpress.org/themes/2015/01/26/supporting-screen-reader-text/) on WordPress.org by Konstantin Obenland.
+

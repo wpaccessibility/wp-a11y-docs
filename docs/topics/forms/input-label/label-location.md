@@ -34,10 +34,10 @@ Floating labels are harder to understand for users. Read the research on: [Mater
 
 ## Be consistent
 
-As this is best practice you are not required to place the label above the form field. But whatever you decide, be consistent. That way the users understand better and faster how to fill out the form.
+As this is best practice, you are not required to place the label above the form field. But whatever you decide, be consistent. That way the users understand better and faster how to fill out the form.
 
 ## Resources
 
-- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- Adrian Roselli: [Avoid Messages Under Fields](https://adrianroselli.com/2017/01/avoid-messages-under-fields.html).
-- Smashing Magazine [Material Design Text Fields Are Badly Designed](https://www.smashingmagazine.com/2021/02/material-design-text-fields/).
+- [Avoid Messages Under Fields](https://adrianroselli.com/2017/01/avoid-messages-under-fields.html) by Adrian Roselli.
+- [Material Design Text Fields Are Badly Designed](https://www.smashingmagazine.com/2021/02/material-design-text-fields/) by Adam Silver on Smashing Magazine.
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design system.

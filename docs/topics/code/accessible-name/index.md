@@ -93,14 +93,17 @@ Giving interactive elements a well-defined, accessible name is necessary to meet
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 - [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-How to provide a proper accessible name for each use case is documented with the specific topics in this documentation, like for example on [Give a form field an accessible name with a label]({{site.baseurl}}/docs/topics/forms/input-label/accessible-name/) in forms.
+- [Controls with accessible names, roles, and states]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Give a form field an accessible name with a label]({{site.baseurl}}/docs/topics/forms/input-label/accessible-name/) in Standards and best practice, Web forms.
+- [ARIA Landmarks]({{site.baseurl}}/docs/topics/code/landmarks/) in Standards and best practice, Frontend code.
 
 {: .resource-h3}
 ### Other resources
 
-- Abdulqudus Abubakre [Understanding Accessible Names in HTML](https://dev.to/ibn_abubakre/understanding-accessible-names-in-html-562).
-- MDN: [Accessible name](https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name).
-- W3C: [Providing Accessible Names and Descriptions ](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/).
-- W3C: [5 rules of ARIA](https://www.w3.org/TR/using-aria/#firstrule).
+- [Understanding Accessible Names in HTML](https://dev.to/ibn_abubakre/understanding-accessible-names-in-html-562) by Abdulqudus Abubakre.
+- [Accessible name](https://developer.mozilla.org/en-US/docs/Glossary/Accessible_name) by MDN
+- [Providing Accessible Names and Descriptions](https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/) by the W3C.
+- [5 rules of ARIA](https://www.w3.org/TR/using-aria/#firstrule) by the W3C.

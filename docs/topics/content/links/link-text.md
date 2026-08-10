@@ -109,16 +109,21 @@ In addition, screen readers announce the title attribute inconsistently. You mus
 {: .resource-h3}
 ### WCAG Success Criteria for links
 
-By giving a meaningful link text, you meet WCAG success criteria
+By giving a meaningful link text, you meet WCAG success criteria:
 - [2.4.4 Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-in-context) (level A).
 - [2.4.9 Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/quickref/#link-purpose-link-only) (level **AAA**).
 - [2.5.3 Label in Name](https://www.w3.org/WAI/WCAG22/quickref/#label-in-name) (level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[No ambiguous link text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources
 
 - [Descriptive Link Text: The Art of Clear Digital Signposting](https://www.greadme.com/blog/accessibility/how-to-write-descriptive-link-text-complete-guide) by Saar Twito.
 - [Designing Better Links UX](https://smart-interface-design-patterns.com/articles/links-ux/) on Smart Interface Design Patterns.
-- [Writing for Web Accessibility ](https://www.w3.org/WAI/tips/writing/), by the W3C.
-- [Links and Hypertext](https://webaim.org/techniques/hypertext/link_text), by WebAIM
-- [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/), by The A11Y Collective.
+- [Writing for Web Accessibility ](https://www.w3.org/WAI/tips/writing/) by the W3C.
+- [Links and Hypertext](https://webaim.org/techniques/hypertext/link_text) by WebAIM.
+- [Creating the perfect link](https://www.a11y-collective.com/blog/the-perfect-link/) by The A11Y Collective.

@@ -68,9 +68,21 @@ In this example, the skip link has been placed inside the navigation region, and
 </body>
 ```
 
-## Additional resources for skip links
+## Resources
 
-- [Skip navigation links in webaim](https://webaim.org/techniques/skipnav/).  
-  In this article there is also information about having multiple skip links and the most common wording for skip to content.
-- [How–to: Use Skip Navigation links](https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/).
-- [Skip link guidelines]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/skip-to-content/).
+{: .resource-h3}
+### WCAG Success Criteria skip links
+
+[2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Skip to Content Link]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/skip-to-content/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [The CSS class screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) in Standards and best practice, Frontend code.
+
+{: .resource-h3}
+### Other resources
+
+- [Skip navigation links](https://webaim.org/techniques/skipnav/) by WebAIM. In this article there is also information about having multiple skip links and the most common wording for skip to content.
+- [How–to: Use Skip Navigation links](https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/) by Cameron Cundiff on the A11y Project.

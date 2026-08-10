@@ -87,14 +87,13 @@ How to Meet WCAG: [WCAG Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Introduction to WCAG]({{site.baseurl}}/docs/start/wcag-intro/), in Start with Accessibility.
-- [Checklists for the Web Content Accessibility Guidelines]({{site.baseurl}}/docs/testing/overall/), in Test for Accessibility.
-
+- [Introduction to WCAG]({{site.baseurl}}/docs/start/wcag-intro/) in Start with Accessibility.
+- [Checklists for the Web Content Accessibility Guidelines]({{site.baseurl}}/docs/testing/overall/) in Test for Accessibility.
 
 {: .resource-h3}
 ### Other resources
 
-- [Web Accessibility Laws & Policies](https://www.w3.org/WAI/policies/), by the W3C.
-- [Laws and Legal Updates](https://www.lflegal.com/laws-and-legal-updates/), by Lainey Feingold.
-- [Navigating International Accessibility Law](https://www.levelaccess.com/blog/navigating-international-accessibility-laws/), by Level Access.
+- [Web Accessibility Laws & Policies](https://www.w3.org/WAI/policies/) by the W3C.
+- [Laws and Legal Updates](https://www.lflegal.com/laws-and-legal-updates/) by Lainey Feingold.
+- [Navigating International Accessibility Law](https://www.levelaccess.com/blog/navigating-international-accessibility-laws/) by Level Access.
 

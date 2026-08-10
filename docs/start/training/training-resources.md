@@ -10,7 +10,7 @@ nav_order: 4
 
 ## Knowledge resources
 
-- [A11Y Style Guide](https://a11y-style-guide.com/style-guide/), by [Carie Fisher](https://cariefisher.com/).
+- [A11Y Style Guide](https://a11y-style-guide.com/style-guide/) by [Carie Fisher](https://cariefisher.com/).
 - [Design and Develop Overview](https://www.w3.org/WAI/design-develop/) by the W3C. Guidance for writing, designing, and developing for accessibility.
 - [MDN Resources for Developers](https://developer.mozilla.org/), documentation about CSS, HTML, and JavaScript. MDN is an open-source, collaborative project by Mozilla, in partnership with a global community of volunteers and partners.
 - [Nielsen Norman Group](https://www.nngroup.com/), provides research-based, results-driven UX guidance and training.
@@ -21,8 +21,8 @@ nav_order: 4
 ## Newsletters
 
 - [The WebAIM Newsletter](https://webaim.org/newsletter/). Monthly news and updates on web accessibility issues. The newsletter will include featured articles, monthly tips, resources, and questions from WebAIM's discussion forum.
-- [A11yWeekly](http://a11yweekly.com/), by David A. Kennedy. A weekly dose of web accessibility.
-- [Nic's accessibility thoughts](https://buttondown.com/nic-steenhout), by Nic Steenhout. Accessibility news and real talk about digital inclusion.
+- [A11yWeekly](http://a11yweekly.com/) by David A. Kennedy. A weekly dose of web accessibility.
+- [Nic's accessibility thoughts](https://buttondown.com/nic-steenhout) by Nic Steenhout. Accessibility news and real talk about digital inclusion.
 - [Monthly-ish newsletter by Eric Eggert](https://steady.page/en/yatil/newsletter/sign_up), Monthly-ish newsletter will keep you up to date with interesting facts and info about what’s going on in accessibility.
 - [Focus State](https://equalizedigital.com/), a main and also WordPress focussed accessibility newsletter by Equalize Digital.
 

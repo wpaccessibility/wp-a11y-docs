@@ -55,12 +55,12 @@ Taken together, you should be very cautious about trusting the claims overlays m
 
 Yes, it is. These features were created to target specific known accessibility gaps that can be common in WordPress themes, and to provide stopgap remedies prior to remediating problems. WP Accessibility provides reporting on what it has done on your site, and you can turn off the overlay and toolbar aspects of the plugin. With any overlay, WP Accessibility included, you should be periodically assessing whether those features are still useful for your site.
 
-## Other Resources
+## Other resources
 
 There are many articles and presentations available from accessibility experts talking about the risks and problems with accessibility overlays. Here are a few representative examples.
 
-- Video: [Overlays Underwhelm, by Adrian Roselli](https://2022.wpaccessibility.day/sessions/overlays-underwhelm/)
-- Video: [There is no spoon, by Leonie Watson](https://www.youtube.com/watch?v=fyRxd072JrA)
-- Article: [Overlays Misunderstand Accessibility, by Joe Dolson](https://www.joedolson.com/2024/07/overlays-misunderstand-accessibility/)
-- Video: [Five False Claims 1-line "AI" Accessibility Script Vendors Make, by Eric Eggert](5 False Claims 1-Line “AI” Accessibility Script Vendors Make)
-- Article: [Overlays are not the solution to your accessibility problemm by Sheri Byrne-Haber](https://sheribyrnehaber.medium.com/overlays-are-not-the-solution-to-your-accessibility-problem-c5ffe44bd61f)
+- [Overlays Underwhelm](https://2022.wpaccessibility.day/sessions/overlays-underwhelm/), video by Adrian Roselli.
+- [There is no spoon](https://www.youtube.com/watch?v=fyRxd072JrA), video by Leonie Watson.
+- [Overlays Misunderstand Accessibility](https://www.joedolson.com/2024/07/overlays-misunderstand-accessibility/) by Joe Dolson.
+- [Five False Claims 1-line AI Accessibility Script Vendors Make](https://www.youtube.com/watch?v=e-3xlUarxRQ), video by Eric Eggert.
+- [Overlays are not the solution to your accessibility problem](https://sheribyrnehaber.medium.com/overlays-are-not-the-solution-to-your-accessibility-problem-c5ffe44bd61f) by Sheri Byrne-Haber.

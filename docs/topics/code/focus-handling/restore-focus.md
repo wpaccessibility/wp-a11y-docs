@@ -33,7 +33,12 @@ The responsive menu with the WordPress [Navigation Block](https://wordpress.org/
 {: .resource-h3}
 ### WCAG Success Criterion for predictable keyboard focus
 
-- [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
+[2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources
