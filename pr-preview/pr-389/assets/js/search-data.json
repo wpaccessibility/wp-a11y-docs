@@ -345,7 +345,7 @@
     "doc": "Alt text images",
     "title": "Resources",
     "description": "How to add alternative text for images, SVGs and icons in development.",
-    "content": "WCAG Success Criteria for alternative text for images . By giving meaningful images proper alternative text, you meet WCAG success criteria: . | 1.1.1 Non-text Content (level A). | 2.5.3 Label in Name (level A). | 4.1.2 Name, role, value (Level A). | . Related pages in this documentation . | Alternative text on images and graphics in the Theme guidelines for the WordPress accessibility-ready program. | 7 Quick wins in Start with accessibility. | Alternative text for images in the content in Standards and best practice, Content and images. | Images as links in Standards and best practice, Content and images. | . Other resources . | Images Tutorial by the W3C. | An alt Decision Tree by the W3C. | Accessible Images For When They Matter Most by Carie Fisher on Smashing Magazine. | Accessible SVGs: Perfect Patterns For Screen Reader Users by Carie Fisher on Smashing Magazine. | Accessible SVGS from CSS Tricks by Heather Migliorisi on CSS Tricks. | Font Icon accessibility from Font Awesome by Font Awesome. | . ",
+    "content": "WCAG Success Criteria for alternative text for images . By giving meaningful images proper alternative text, you meet WCAG success criteria: . | 1.1.1 Non-text Content (level A). | 2.5.3 Label in Name (level A). | 4.1.2 Name, Role, Value (Level A). | . Related pages in this documentation . | Alternative text on images and graphics in the Theme guidelines for the WordPress accessibility-ready program. | 7 Quick wins in Start with accessibility. | Alternative text for images in the content in Standards and best practice, Content and images. | Images as links in Standards and best practice, Content and images. | . Other resources . | Images Tutorial by the W3C. | An alt Decision Tree by the W3C. | Accessible Images For When They Matter Most by Carie Fisher on Smashing Magazine. | Accessible SVGs: Perfect Patterns For Screen Reader Users by Carie Fisher on Smashing Magazine. | Accessible SVGS from CSS Tricks by Heather Migliorisi on CSS Tricks. | Font Icon accessibility from Font Awesome by Font Awesome. | . ",
     "url": "/pr-preview/pr-389/docs/topics/code/images/alt-text/#resources",
     "relUrl": "/docs/topics/code/images/alt-text/#resources"
   },"50": {
@@ -688,7 +688,7 @@
     "doc": "Connect the description",
     "title": "Resources",
     "description": "For screen reader users, it's important that the description is announced along with the form field.",
-    "content": "WCAG Success Criteria for descriptions . Connecting a description to a form field is necessary to meet the WCAG success criteria: . | 1.3.1 Info and relationships (Level A). | 3.3.2 Labels or instructions (Level A). | . Other resources . | Guidelines for web forms (Dutch content) by the NL Design System. | ARIA: aria-describedby attribute by the MDN. | Form Instructions by the W3C. | Browse and focus modes in the Accessibility Developer Guide by the Accessibility Club. | . ",
+    "content": "WCAG Success Criteria for descriptions . Connecting a description to a form field is necessary to meet the WCAG success criteria: . | 1.3.1 Info and relationships (Level A). | 3.3.2 Labels or instructions (Level A). | . Other resources . | Guidelines for web forms (Dutch content) by the NL Design System. | ARIA: aria-describedby attribute by MDN. | Form Instructions by the W3C. | Browse and focus modes in the Accessibility Developer Guide by the Accessibility Club. | . ",
     "url": "/pr-preview/pr-389/docs/topics/forms/descriptions/connect-description/#resources",
     "relUrl": "/docs/topics/forms/descriptions/connect-description/#resources"
   },"99": {
@@ -716,7 +716,7 @@
     "doc": "Description has text only",
     "title": "Resources",
     "description": "aria-describedby must only contain text and no additional structure or interactive functionality.",
-    "content": "WCAG Success Criteria for text in a description . | 1.3.1 Info and Relationships. | 3.3.2 Labels or Instructions. | . Other resources . | Guidelines for web forms (Dutch content) by the NL Design System. | ARIA: aria-describedby attribute by the MDN. | Form Instructions by the W3C. | . ",
+    "content": "WCAG Success Criteria for text in a description . | 1.3.1 Info and Relationships. | 3.3.2 Labels or Instructions. | . Other resources . | Guidelines for web forms (Dutch content) by the NL Design System. | ARIA: aria-describedby attribute by MDN. | Form Instructions by the W3C. | . ",
     "url": "/pr-preview/pr-389/docs/topics/forms/descriptions/content-description/#resources",
     "relUrl": "/docs/topics/forms/descriptions/content-description/#resources"
   },"103": {
@@ -863,7 +863,7 @@
     "doc": "Controls with accessible names, roles, and states",
     "title": "Resources",
     "description": "Accessibility-ready theme requirements for accessible controls",
-    "content": "WCAG Success Criteria for controls with accessible names, roles, and states . Using controls with accessible names, roles, and states is necessary to meet the WCAG success criteria: . | 1.1.1 Non-text Content (Level A) | 1.3.1 Info and Relationships (Level A) | 4.1.2 Name, Role, Value (Level A) | 2.5.3 Label in Name (Level A) | . Related pages in this documentation . | Alternative text for images in the content in Standards and best practice, Content and images. | The accessible name in Standards and best practice, Frontend code. | Input field and form label in Standards and best practice, Web forms. | . Other resources . Tab Pattern Expectations in the ARIA Authoring Practices Guide (APG). Relevant documentation on ARIA on the MDN web docs: . | aria-label. | aria-labelledby. | aria-expanded. | aria-selected. | aria-pressed. | button role. | . ",
+    "content": "WCAG Success Criteria for controls with accessible names, roles, and states . Using controls with accessible names, roles, and states is necessary to meet the WCAG success criteria: . | 1.1.1 Non-text Content (Level A) | 1.3.1 Info and Relationships (Level A) | 4.1.2 Name, Role, Value (Level A) | 2.5.3 Label in Name (Level A) | . Related pages in this documentation . | Alternative text for images in the content in Standards and best practice, Content and images. | The accessible name in Standards and best practice, Frontend code. | Input field and form label in Standards and best practice, Web forms. | . Other resources . Tabs Pattern in the ARIA Authoring Practices Guide (APG). Relevant documentation on ARIA on the MDN web docs: . | aria-label. | aria-labelledby. | aria-expanded. | aria-selected. | aria-pressed. | button role. | . ",
     "url": "/pr-preview/pr-389/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/#resources",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/#resources"
   },"124": {
@@ -1759,7 +1759,7 @@
     "doc": "Content checks",
     "title": "Headings",
     "description": "Find an overview of content checks for accessibility.",
-    "content": "Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book: . | One H1 per page, describing what the page is about. | Use other headings meaningful, according to their level, not for their appearance. | A good heading briefly describes the content that follows it | Do not skip heading levels. | . Documentation and test tools for the heading structure: . | Headings with meaningful structure in Theme guidelines for the WordPress accessibility-ready program. | Headings in the content in Standards and best Practices: Content and images. | Heading structure in theme development in Standards and best Practices: Frontend code. | Use the browser tool HeadingsMap to test the heading structure of an entire web page. | . ",
+    "content": "Headings are the framework of your content. A good heading structure reflects the content on your page, like the index of a book: . | One H1 per page, describing what the page is about. | Use other headings meaningfully according to their level, not for their appearance. | A good heading briefly describes the content that follows it | Do not skip heading levels. | . Documentation and test tools for the heading structure: . | Headings with meaningful structure in Theme guidelines for the WordPress accessibility-ready program. | Headings in the content in Standards and best Practices: Content and images. | Heading structure in theme development in Standards and best Practices: Frontend code. | Use the browser tool HeadingsMap to test the heading structure of an entire web page. | . ",
     "url": "/pr-preview/pr-389/docs/testing/content/#headings",
     "relUrl": "/docs/testing/content/#headings"
   },"252": {
@@ -2396,7 +2396,7 @@
     "doc": "Landmarks",
     "title": "Resources",
     "description": "Learn what ARIA landmarks are and how to use them.",
-    "content": "WCAG Success Criteria for meaningful landmarks . Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria: . | 1.3.1 Info and Relationships (Level A). | 1.3.6 Identify purpose (Level AAA). | . Related pages in this documentation . | The accessible name in Standards and best practice, Frontend code. | Meaningful landmark roles and names in the Theme guidelines for the WordPress accessibility-ready program. | . Other resources . | W3C ARIA landmark example page by the W3C. | Tutorial of page regions by the W3C | . Note on the W3C techniques below: while the guidance regarding why and how to use these examples is good, some of the code examples pre-date wide availability of native roles for HTML5 elements. It is preferred to use the HTML elements directly for landmarks, not the role attributes. | Technique: Grouping related links using the nav element by the W3C. | Technique: Using ARIA landmarks to identify regions of a page by the W3C. | . ",
+    "content": "WCAG Success Criteria for meaningful landmarks . Providing meaningful landmark roles and names is necessary to meet the WCAG success criteria: . | 1.3.1 Info and Relationships (Level A). | 1.3.6 Identify Purpose (Level AAA). | . Related pages in this documentation . | The accessible name in Standards and best practice, Frontend code. | Meaningful landmark roles and names in the Theme guidelines for the WordPress accessibility-ready program. | . Other resources . | W3C ARIA landmark example page by the W3C. | Tutorial of page regions by the W3C | . Note on the W3C techniques below: while the guidance regarding why and how to use these examples is good, some of the code examples pre-date wide availability of native roles for HTML5 elements. It is preferred to use the HTML elements directly for landmarks, not the role attributes. | Technique: Grouping related links using the nav element by the W3C. | Technique: Using ARIA landmarks to identify regions of a page by the W3C. | . ",
     "url": "/pr-preview/pr-389/docs/topics/code/landmarks/#resources",
     "relUrl": "/docs/topics/code/landmarks/#resources"
   },"343": {
@@ -2690,7 +2690,7 @@
     "doc": "Group form fields",
     "title": "Resources",
     "description": "Use fieldset and legend to group form fields.",
-    "content": "WCAG Success Criteria for naming grouped form fields . Naming grouped form fields is necessary to meet the WCAG success criteria: . | 1.3.1 Info and relationships (Level A). | 3.3.2 Labels or Instructions (Level AA). | . Other resources . | Grouping Controls by the W3C. | Guidelines for web forms (Dutch content) by the NL Design System. | The Field Set element by the MDN. | . ",
+    "content": "WCAG Success Criteria for naming grouped form fields . Naming grouped form fields is necessary to meet the WCAG success criteria: . | 1.3.1 Info and relationships (Level A). | 3.3.2 Labels or Instructions (Level AA). | . Other resources . | Grouping Controls by the W3C. | Guidelines for web forms (Dutch content) by the NL Design System. | The Field Set element by MDN. | . ",
     "url": "/pr-preview/pr-389/docs/topics/forms/fieldsets/#resources",
     "relUrl": "/docs/topics/forms/fieldsets/#resources"
   },"385": {
@@ -3068,7 +3068,7 @@
     "doc": "Keyboard navigation support",
     "title": "Resources",
     "description": "The requirements for keyboard navigation in accessibility-ready themes",
-    "content": "WCAG Success Criteria for keyboard navigation support . Keyboard navigation support is necessary to meet the WCAG success criteria: . | 1.3.2 Meaningful Sequence (Level A). | 2.1.1 Keyboard (Level A). | 2.1.2 No Keyboard Trap (Level A). | 2.4.3 Focus Order (Level A). | 2.4.7 Focus Visible (Level AA). | 2.4.11 Focus not obscured (Minimun) (Level AA). | 2.4.12 Focus not obscured (Enhanced) (Level AAA). | 2.4.13 Focus Appearance (Level AAA). | . Related pages in this documentation . | Handling focus and subpages in Standards and best practice, Frontend code. | Styling focus and hover states of interactive HTML elements in Standards and best practice, Design and user experience. | Keyboard navigation testing in Test for accessibility. | . ",
+    "content": "WCAG Success Criteria for keyboard navigation support . Keyboard navigation support is necessary to meet the WCAG success criteria: . | 1.3.2 Meaningful Sequence (Level A). | 2.1.1 Keyboard (Level A). | 2.1.2 No Keyboard Trap (Level A). | 2.4.3 Focus Order (Level A). | 2.4.7 Focus Visible (Level AA). | 2.4.11 Focus Not Obscured (Minimum) (Level AA). | 2.4.12 Focus Not Obscured (Enhanced) (Level AAA). | 2.4.13 Focus Appearance (Level AAA). | . Related pages in this documentation . | Handling focus and subpages in Standards and best practice, Frontend code. | Styling focus and hover states of interactive HTML elements in Standards and best practice, Design and user experience. | Keyboard navigation testing in Test for accessibility. | . ",
     "url": "/pr-preview/pr-389/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/#resources",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/#resources"
   },"439": {
@@ -3250,7 +3250,7 @@
     "doc": "Images as links",
     "title": "Resources",
     "description": "For linked images, the alt attribute (the alternative text) can be used as the link text.",
-    "content": "WCAG Success Criteria for links on images . By giving a meaningful image proper alternative text, you meet WCAG success criteria . | 1.1.1 Non-text Content (level A). | 2.4.4 Link Purpose (In Context) (level A). | 2.4.9 Link Purpose (Link Only) (level AAA). | 2.5.3 Label in Name (level A). | . Related pages in this documentation . | Alternative text on images and graphics in the Theme guidelines for the WordPress accessibility-ready program. | Alternative text for images, SVGs and icons in developmen in Standards and best practice, Frontend code. Other resources . | . Creating the perfect link, by The A11Y Collective. ",
+    "content": "WCAG Success Criteria for links on images . By giving a meaningful image proper alternative text, you meet WCAG success criteria . | 1.1.1 Non-text Content (level A). | 2.4.4 Link Purpose (In Context) (level A). | 2.4.9 Link Purpose (Link Only) (level AAA). | 2.5.3 Label in Name (level A). | . Related pages in this documentation . | Alternative text on images and graphics in the Theme guidelines for the WordPress accessibility-ready program. | Alternative text for images, SVGs and icons in development in Standards and best practice, Frontend code. Other resources . | . Creating the perfect link, by The A11Y Collective. ",
     "url": "/pr-preview/pr-389/docs/topics/content/links/link-image/#resources",
     "relUrl": "/docs/topics/content/links/link-image/#resources"
   },"465": {
@@ -3362,7 +3362,7 @@
     "doc": "Mark optional form fields",
     "title": "Resources",
     "description": "Clearly indicate to the user if a form field is optional.",
-    "content": "WCAG Success Criteria for required fields . By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). Related pages in this documentation . | Option 1: Marking only the required form fields in Standards and best practice, Web forms. | Indicate required fields for screen readers in Standards and best practice, Web forms. | . Indication of optional fields in WordPress form plugins . Help wanted: We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. Other resources . | Guidelines for web forms (Dutch content) bt the NL Design System. | Optimizing Form Design: Marking Required and Optional Fields in a Better Way by Faizan Ahmed on UX Design World. | . ",
+    "content": "WCAG Success Criteria for required fields . By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). Related pages in this documentation . | Option 1: Marking only the required form fields in Standards and best practice, Web forms. | Indicate required fields for screen readers in Standards and best practice, Web forms. | . Indication of optional fields in WordPress form plugins . Help wanted: We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. Other resources . | Guidelines for web forms (Dutch content) by the NL Design System. | Optimizing Form Design: Marking Required and Optional Fields in a Better Way by Faizan Ahmed on UX Design World. | . ",
     "url": "/pr-preview/pr-389/docs/topics/forms/required/mark-optional-fields/#resources",
     "relUrl": "/docs/topics/forms/required/mark-optional-fields/#resources"
   },"481": {
@@ -3390,7 +3390,7 @@
     "doc": "Mark required form fields",
     "title": "Resources",
     "description": "Clearly indicate to the user if a form field is required.",
-    "content": "WCAG Success Criteria for required fields . By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). Related pages in this documentation . | Option 2: Marking only the optional form fields in Standards and best practice, Web forms. | Indicate required fields for screen readers in Standards and best practice, Web forms. | . Indication of required fields in WordPress form plugins . Gravity Forms adds the possibility to select “Required” with each form field. In the form settings you can choose the type of Required Field Indicator. The explanation of this indicator is added automatically above the form. Help wanted: We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. Other resources . | Guidelines for web forms (Dutch content) bt the NL Design System. | Optimizing Form Design: Marking Required and Optional Fields in a Better Way by Faizan Ahmed on UX Design World. | . ",
+    "content": "WCAG Success Criteria for required fields . By indicating required fields, you meet WCAG success criterion 3.3.2 Labels or Instructions (Level A). Related pages in this documentation . | Option 2: Marking only the optional form fields in Standards and best practice, Web forms. | Indicate required fields for screen readers in Standards and best practice, Web forms. | . Indication of required fields in WordPress form plugins . Gravity Forms adds the possibility to select “Required” with each form field. In the form settings you can choose the type of Required Field Indicator. The explanation of this indicator is added automatically above the form. Help wanted: We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots. Please contact us if you want to help us with this additional content. Other resources . | Guidelines for web forms (Dutch content) by the NL Design System. | Optimizing Form Design: Marking Required and Optional Fields in a Better Way by Faizan Ahmed on UX Design World. | . ",
     "url": "/pr-preview/pr-389/docs/topics/forms/required/mark-required-fields/#resources",
     "relUrl": "/docs/topics/forms/required/mark-required-fields/#resources"
   },"485": {
@@ -3425,7 +3425,7 @@
     "doc": "Meaningful landmark roles and names",
     "title": "Resources",
     "description": "Accessibility-ready themes requirements for meaningful landmark roles and names",
-    "content": "WCAG Success Criteria for meaningful landmarks . Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria: . | 1.3.1 Info and Relationships (Level A). | 1.3.6 Identify purpose (Level AAA). | . Related pages in this documentation . ARIA Landmarks in Standards and best practice, Frontend code. ",
+    "content": "WCAG Success Criteria for meaningful landmarks . Providing Meaningful landmark roles and names is necessary to meet the WCAG success criteria: . | 1.3.1 Info and Relationships (Level A). | 1.3.6 Identify Purpose (Level AAA). | . Related pages in this documentation . ARIA Landmarks in Standards and best practice, Frontend code. ",
     "url": "/pr-preview/pr-389/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/#resources",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/#resources"
   },"490": {
@@ -3971,7 +3971,7 @@
     "doc": "Screen reader text supported",
     "title": "Basic principle",
     "description": "How screen reader text must be supported on an accessibility-ready theme",
-    "content": "Accessibility-ready themes make it easier for content authors to create accessible websites. Themes must have a clearly defined and properly styled class, such as .screen-reader-text or .sr-only`, that allows content creators to include text that is hidden visually but still read by assistive technologies without needing to write custom CSS. Including a screen reader text class makes it easier for content creators to add additional context for links, buttons, or form fields when building with the theme. See the required CSS for a screen reader text class. ",
+    "content": "Accessibility-ready themes make it easier for content authors to create accessible websites. Themes must have a clearly defined and properly styled class, such as .screen-reader-text or .sr-only, that allows content creators to include text that is hidden visually but still read by assistive technologies without needing to write custom CSS. Including a screen reader text class makes it easier for content creators to add additional context for links, buttons, or form fields when building with the theme. See the required CSS for a screen reader text class. ",
     "url": "/pr-preview/pr-389/docs/accessibility-ready/theme-guidelines/screen-reader-text/#basic-principle",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/screen-reader-text/#basic-principle"
   },"568": {
@@ -4090,7 +4090,7 @@
     "doc": "Sufficient color contrast of text and UI controls",
     "title": "Resources",
     "description": "Color contrast requirements in accessibility-ready themes",
-    "content": "WCAG Success Criteria for color contrast . Providing sufficient color contrast of text and UI controls is necessary to meet the WCAG success criteria: . | 1.4.3 Contrast Minimum(Level AA). | 1.4.6 Contrast (Enhanced) (Level AAA). | 1.4.11 Non-text Contrast (Level AA). | . Related pages in this documentation . | Color contrast of text against its background in Standards and best practice, Design and user experience. | Using color in Standards and best practice, Design and user experience. | . ",
+    "content": "WCAG Success Criteria for color contrast . Providing sufficient color contrast of text and UI controls is necessary to meet the WCAG success criteria: . | 1.4.3 Contrast (Minimum)(Level AA). | 1.4.6 Contrast (Enhanced) (Level AAA). | 1.4.11 Non-text Contrast (Level AA). | . Related pages in this documentation . | Color contrast of text against its background in Standards and best practice, Design and user experience. | Using color in Standards and best practice, Design and user experience. | . ",
     "url": "/pr-preview/pr-389/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/#resources",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/#resources"
   },"585": {
