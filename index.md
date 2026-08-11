@@ -24,17 +24,8 @@ Find the documentation for your work role, work field and expertise.
 
 ## New and updated content
 
-In July 2026:
+August 2026:
 
-Test for accessibility:
-- [Complete checks against the Web Content Accessibility Guidelines]({{site.baseurl}}/docs/testing/overall/)
-- [Automated accessibility testing]({{site.baseurl}}/docs/testing/automated/)
-- [Content checks for web accessibility]({{site.baseurl}}/docs/testing/content/)
-- [Design checks for web accessibility]({{site.baseurl}}/docs/testing/design/)
-- [Frontend checks for web accessibility]({{site.baseurl}}/docs/testing/code/)
-- [Keyboard navigation testing]({{site.baseurl}}/docs/testing/keyboard/)
-- [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/)
-- [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/)
+Design and user experience:
 
-Standards and best practice:  
-- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/)
+- [Toasts]({{site.baseurl}}/docs/topics/design/avoid/toasts/) in Design patterns to avoid.
