@@ -11,6 +11,7 @@ nav_order: 2
 Recommended books about web accessibility.
 
 - [Web Accessibility Cookbook](https://accessibility-cookbook.com/) by **Manuel Matuzovic**, provides you with dozens of recipes to help you build common components on the web, such as navigations, forms, filters, tables, and dialogs, in an accessible manner.
+- [How to Meet the Web Content Accessibility Guidelines: A Complete Guide to WCAG 2.2](https://a.co/d/07n48HvX) by **Luke McGrath**, teaches you how to pass every guideline from the web's most powerful accessibility standards.
 - [Accessible UX Research](https://www.smashingmagazine.com/printed-books/accessible-ux-research/) by **Michele Williams**. About research, assistive technology, different types of disability, and how to build accessibility into the entire design process.
 - [Inclusive Design Patterns](https://www.smashingmagazine.com/printed-books/inclusive-front-end-design-patterns/) by **Heydon Pickering**. How to craft accessible interfaces without extra effort, and what front-end design patterns to use to create inclusive experiences.
 - [Inclusive Components](https://www.smashingmagazine.com/printed-books/inclusive-components/) by **Heydon Pickering**. A detailed, practical handbook for building fully accessible interfaces.

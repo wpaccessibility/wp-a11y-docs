@@ -64,4 +64,5 @@ There are many articles and presentations available from accessibility experts t
 - [Overlays Misunderstand Accessibility](https://www.joedolson.com/2024/07/overlays-misunderstand-accessibility/) by Joe Dolson.
 - [Five False Claims 1-line AI Accessibility Script Vendors Make](https://www.youtube.com/watch?v=e-3xlUarxRQ), video by Eric Eggert.
 - [Overlays are not the solution to your accessibility problem](https://sheribyrnehaber.medium.com/overlays-are-not-the-solution-to-your-accessibility-problem-c5ffe44bd61f) by Sheri Byrne-Haber.
-- [Why We Don’t Use Accessibility Overlays](https://stimpunks.org/fieldguide/it/accessibility/overlays/)  by the Stimpunks Foundation.
+- [Why We Don’t Use Accessibility Overlays](https://stimpunks.org/fieldguide/it/accessibility/overlays/) by the Stimpunks Foundation.
+- [German auditors reject accessibility overlays in EAA context](https://chrisyoong.com/blog/germany-rejects-accessibility-overlays-for-eaa-compliance) by Chris Yoong.
