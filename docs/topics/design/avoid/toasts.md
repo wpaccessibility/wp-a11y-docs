@@ -1,8 +1,8 @@
 ---
-title: Toasts
+title: Disappearing toasts
 layout: default
 parent: Patterns to avoid
-description: In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.
+description: In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.
 nav_order: 3
 contributors:
   - Rian Rietveld
@@ -46,7 +46,9 @@ A common pattern is to add messages to a region in a consistent place, for examp
 
 Test if the message stays visible when a user zooms in or enlarges the text by using [reflow](https://www.w3.org/WAI/WCAG22/quickref/#reflow) or [text only](https://www.w3.org/WAI/WCAG22/quickref/#resize-text).
 
-Announce a dynamic generated message with for example `aria-live="polite"` or `role="status"`, to inform the screen reader user too. For WordPress, you can use [wp.a11y.speak()](/docs/topics/code/dynamic-changes/) to announce the message. The topics [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) and [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) provide you with more information on how to do this in WordPress.
+Announce a dynamic generated message with for example `aria-live="polite"` or `role="status"`, to inform the screen reader user too. 
+
+For WordPress, you can use [wp.a11y.speak()](/docs/topics/code/dynamic-changes/) to announce the message. The topics [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) and [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) provide you with more information on how to do this in WordPress.
 
 Then you are ensured all users will notice the information and have time enough to read and even re-read it.
 
@@ -66,7 +68,34 @@ To print admin screen notices: [do_action( ‘admin_notices’ )](https://develo
 
 For Gutenberg:
 - [Notice](https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/notice), to communicate prominent messages to the user.
-- [Snackbar](https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/snackbar), to communicate low-priority, non-interruptive messages to the user. Note: set `explicitDismiss` to `true`.
+- [Snackbar](https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/snackbar), to communicate low-priority, non-interruptive messages to the user. 
+  **Note**: set `explicitDismiss` to `true`.
+
+### Examples in WordPress of dynamic messages
+
+#### Update a theme
+
+Updating themes in the WordPress Admin is done well, the new message is announced by a screen reader and is easy to spot.
+
+![Notication: New version available]({{site.baseurl}}/assets/images/theme-update-now.png)
+
+After pressing the link "Update now" the message is replaced by "Updated!".
+
+![Notication: Updated]({{site.baseurl}}/assets/images/theme-updated.png)
+
+The screen reader feedback is added to the `a11y-speak-polite` region in the HTML at the bottom of the page with aria-live="polite":
+
+```html
+<div id="a11y-speak-polite" class="a11y-speak-region" style="position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;" aria-live="polite" aria-relevant="additions text" aria-atomic="true">
+    Update completed successfully.
+</div>
+```
+
+#### Update a post
+
+After updating a post, the snackbar "Post updated" with a link to "View Post" appears for a few seconds at the bottom of the page and disappears again. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear.
+
+![Notication: Post updated with a link to View Post]({{site.baseurl}}/assets/images/post-updated.png)
 
 ## Resources
 
