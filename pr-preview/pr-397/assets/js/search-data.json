@@ -4234,58 +4234,58 @@
     "url": "/pr-preview/pr-397/docs/accessibility-ready/testing-themes/theme-testing-workflow/#stop-testing-when-the-outcome-is-clear",
     "relUrl": "/docs/accessibility-ready/testing-themes/theme-testing-workflow/#stop-testing-when-the-outcome-is-clear"
   },"605": {
-    "doc": "Toasts",
+    "doc": "Disappearing toasts",
     "title": "Patterns to avoid: Disappearing toasts",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
     "content": "There are different ways to give a user information dynamically. By using a banner, a snackbar, and a toast. What is the difference and what is important to give all users the same information? . ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/#patterns-to-avoid-disappearing-toasts",
     "relUrl": "/docs/topics/design/avoid/toasts/#patterns-to-avoid-disappearing-toasts"
   },"606": {
-    "doc": "Toasts",
+    "doc": "Disappearing toasts",
     "title": "Banners, snackbars, and toasts",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
     "content": "What is the difference? . | A banner is a message of one or more paragraphs that appears on top of the screen and stays there until dismissed by the user. It can contain actions like Close, Undo, or Retry and also links. | A snackbar is a short message that appears at the bottom of the screen or close by the user’s focus and can contain one or more actions. A snackbar preferably stays on screen until dismissed by the user. | A toast is only a short message that appears on screen and disappears again after a few seconds. | . ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts",
     "relUrl": "/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts"
   },"607": {
-    "doc": "Toasts",
+    "doc": "Disappearing toasts",
     "title": "Accessibility concerns of toasts",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
     "content": "In able to get the message in a toast, the user must notice the message appear on the screen and have time enough to read it. Because a toast disappears, the user must have enough time to spot it and after that read it. Chances are that the user is busy with another task on the page and misses the message all together. Also, not everyone reads fast, the reader may see the message too late or doesn’t have enough time to read what it says. The disappearing message cannot be read again, the information is lost after a few seconds. Pausing the disappearance of the message on hover or focus can help, but the user must know this can be done, and a keyboard user may have not enough time to tab to the toast before it disappears. If a user is zoomed in either the messages may fall outside the viewport or may be overlapped by other elements. Another concern is that screen reader users don’t get the message at all when it is not announced by for example aria-live=\"polite\" or role=\"status\". Adrian Roselli wrote an extensive article Defining ‘Toast’ Messages about its accessibility issues. These are not only accessibility concerns but also usability issues. ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/#accessibility-concerns-of-toasts",
     "relUrl": "/docs/topics/design/avoid/toasts/#accessibility-concerns-of-toasts"
   },"608": {
-    "doc": "Toasts",
+    "doc": "Disappearing toasts",
     "title": "How to provide dynamic information",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
     "content": "The best way to give a user information dynamically is to use a message component that stays on screen. Let the user close the status message manually or let it disappear when the user leaves the page or when it’s no longer valid. A common pattern is to add messages to a region in a consistent place, for example, at the top of the screen, close to the previous user interaction, or for form error messages, just above the form. Test if the message stays visible when a user zooms in or enlarges the text by using reflow or text only. Announce a dynamic generated message with for example aria-live=\"polite\" or role=\"status\", to inform the screen reader user too. For WordPress, you can use wp.a11y.speak() to announce the message. The topics Feedback on dynamic changes and Feedback on dynamic changes provide you with more information on how to do this in WordPress. Then you are ensured all users will notice the information and have time enough to read and even re-read it. ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/#how-to-provide-dynamic-information",
     "relUrl": "/docs/topics/design/avoid/toasts/#how-to-provide-dynamic-information"
   },"609": {
-    "doc": "Toasts",
+    "doc": "Disappearing toasts",
     "title": "Summarized",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
     "content": "Make sure that: . | The message always appears in a consistent and easy to discover position on the screen. | The message stays on screen until the user dismisses it, or after a page reload. | The message isn’t overlapped by other elements of falls outside the viewport when the user zooms in or enlarges the text. | The message is announced by a screen reader. | . ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/#summarized",
     "relUrl": "/docs/topics/design/avoid/toasts/#summarized"
   },"610": {
-    "doc": "Toasts",
+    "doc": "Disappearing toasts",
     "title": "Banners, snackbars, and toasts in WordPress code",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
-    "content": "WordPress core provides a few options for displaying dymamic messages, when you use these, test for the accessibility issues mentioned above first. To print admin screen notices: do_action( ‘admin_notices’ ). For Gutenberg: . | Notice, to communicate prominent messages to the user. | Snackbar, to communicate low-priority, non-interruptive messages to the user. Note: set explicitDismiss to true. | . ",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
+    "content": "WordPress core provides a few options for displaying dymamic messages, when you use these, test for the accessibility issues mentioned above first. To print admin screen notices: do_action( ‘admin_notices’ ). For Gutenberg: . | Notice, to communicate prominent messages to the user. | Snackbar, to communicate low-priority, non-interruptive messages to the user. Note: set explicitDismiss to true. | . Examples in WordPress of dynamic messages . Update a theme . Updating themes in the WordPress Admin is done well, the new message is announced by a screen reader and is easy to spot. After pressing the link “Update now” the message is replaced by “Updated!”. The screen reader feedback is added to the a11y-speak-polite region in the HTML at the bottom of the page with aria-live=”polite”: . &lt;div id=\"a11y-speak-polite\" class=\"a11y-speak-region\" style=\"position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"true\"&gt; Update completed successfully. &lt;/div&gt; . Update a post . After updating a post, the snackbar “Post updated” with a link to “View Post” appears for a few seconds at the bottom of the page and disappears again. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear. ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts-in-wordpress-code",
     "relUrl": "/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts-in-wordpress-code"
   },"611": {
-    "doc": "Toasts",
+    "doc": "Disappearing toasts",
     "title": "Resources",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
     "content": "WCAG Success Criteria related to banners, snackbars, and toasts . | 1.4.4 Resize Text (Level AA). | 1.4.10 Reflow (Level AA). | 2.2.1 Timing Adjustable (Level A). | 2.2.3 No Timing (Level AAA). | 4.1.3 Status Messages (Level AA). | . Related pages in this documentation . | Feedback on dynamic changes in Standards and best practice, Frontend code. | Provide feedback to screen reader users on form errors in Standards and best practice, Web forms. | Screen reader testing in Test for accessibility. | . Other resources . | Defining ‘Toast’ Messages by Adrian Roselli. | Accessible notifications and messages: Toasts on Primer, the design system for GitHub. | A toast to an accessible toast by Scott O’Hara. | Toast Notification Accessibility by Design System Problems. | Toasts, Snackbars, and WCAG Compliance by Arpita Banerjee. | Snackbar vs toast: decoding the subtle differences in design systems by Hizkia St. | Toast vs Snackbar vs Banner: Which One Should You Use? on Supercharge design. | . ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/#resources",
     "relUrl": "/docs/topics/design/avoid/toasts/#resources"
   },"612": {
-    "doc": "Toasts",
-    "title": "Toasts",
-    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users.",
+    "doc": "Disappearing toasts",
+    "title": "Disappearing toasts",
+    "description": "In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.",
     "content": " ",
     "url": "/pr-preview/pr-397/docs/topics/design/avoid/toasts/",
     "relUrl": "/docs/topics/design/avoid/toasts/"

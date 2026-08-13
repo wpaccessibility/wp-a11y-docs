@@ -12,7 +12,7 @@
 
 
 
-<title>Toasts, WP Accessibility Knowledge Base</title>
+<title>Disappearing toasts, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-397/assets/css/styles.css">
@@ -302,7 +302,7 @@
 
           <a href="/pr-preview/pr-397/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-397/docs/topics/design/avoid/toasts/" class="nav-list-link">Toasts</a></li></ul></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-397/docs/topics/design/avoid/toasts/" class="nav-list-link">Disappearing toasts</a></li></ul></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-397/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -559,7 +559,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/'>Design & user experience</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/avoid/'>Patterns to avoid</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Toasts</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/'>Design & user experience</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/avoid/'>Patterns to avoid</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Disappearing toasts</li>
     </ol>
 </nav>
 
@@ -608,7 +608,9 @@
 
 <p>Test if the message stays visible when a user zooms in or enlarges the text by using <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">reflow</a> or <a href="https://www.w3.org/WAI/WCAG22/quickref/#resize-text">text only</a>.</p>
 
-<p>Announce a dynamic generated message with for example <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>, to inform the screen reader user too. For WordPress, you can use <a href="/docs/topics/code/dynamic-changes/">wp.a11y.speak()</a> to announce the message. The topics <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> and <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> provide you with more information on how to do this in WordPress.</p>
+<p>Announce a dynamic generated message with for example <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>, to inform the screen reader user too.</p>
+
+<p>For WordPress, you can use <a href="/docs/topics/code/dynamic-changes/">wp.a11y.speak()</a> to announce the message. The topics <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> and <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> provide you with more information on how to do this in WordPress.</p>
 
 <p>Then you are ensured all users will notice the information and have time enough to read and even re-read it.</p>
 
@@ -631,8 +633,34 @@
 <p>For Gutenberg:</p>
 <ul>
   <li><a href="https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/notice">Notice</a>, to communicate prominent messages to the user.</li>
-  <li><a href="https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/snackbar">Snackbar</a>, to communicate low-priority, non-interruptive messages to the user. Note: set <code class="language-plaintext highlighter-rouge">explicitDismiss</code> to <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li><a href="https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/snackbar">Snackbar</a>, to communicate low-priority, non-interruptive messages to the user. 
+<strong>Note</strong>: set <code class="language-plaintext highlighter-rouge">explicitDismiss</code> to <code class="language-plaintext highlighter-rouge">true</code>.</li>
 </ul>
+
+<h3 id="examples-in-wordpress-of-dynamic-messages">Examples in WordPress of dynamic messages</h3>
+
+<h4 id="update-a-theme">Update a theme</h4>
+
+<p>Updating themes in the WordPress Admin is done well, the new message is announced by a screen reader and is easy to spot.</p>
+
+<p><img src="/pr-preview/pr-397/assets/images/theme-update-now.png" alt="Notication: New version available" /></p>
+
+<p>After pressing the link “Update now” the message is replaced by “Updated!”.</p>
+
+<p><img src="/pr-preview/pr-397/assets/images/theme-updated.png" alt="Notication: Updated" /></p>
+
+<p>The screen reader feedback is added to the <code class="language-plaintext highlighter-rouge">a11y-speak-polite</code> region in the HTML at the bottom of the page with aria-live=”polite”:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"a11y-speak-polite"</span> <span class="na">class=</span><span class="s">"a11y-speak-region"</span> <span class="na">style=</span><span class="s">"position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;"</span> <span class="na">aria-live=</span><span class="s">"polite"</span> <span class="na">aria-relevant=</span><span class="s">"additions text"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    Update completed successfully.
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h4 id="update-a-post">Update a post</h4>
+
+<p>After updating a post, the snackbar “Post updated” with a link to “View Post” appears for a few seconds at the bottom of the page and disappears again. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear.</p>
+
+<p><img src="/pr-preview/pr-397/assets/images/post-updated.png" alt="Notication: Post updated with a link to View Post" /></p>
 
 <h2 id="resources">Resources</h2>
 
