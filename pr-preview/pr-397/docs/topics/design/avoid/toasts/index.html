@@ -568,46 +568,75 @@
 
         <main>
 
-          <h1 id="patterns-to-avoid-toasts">Patterns to avoid: Toasts</h1>
+          <h1 id="patterns-to-avoid-disappearing-toasts">Patterns to avoid: Disappearing toasts</h1>
 
-<div class="callout">
-  <blockquote cite="https://adrianroselli.com/2020/01/defining-toast-messages.html">
-    <p>
-      A toast is a message that appears on the screen; it is often short, often appears only briefly, and often animates up from the bottom (like a piece of ghostly yet precisely-crafted toast), though other directions and a fade-in/-out is common.
-    </p>
-  </blockquote>
-<p>— Adrian Roselli <cite><a href="https://adrianroselli.com/2020/01/defining-toast-messages.html">Defining ‘Toast’ Messages</a></cite></p>
-</div>
+<p>There are different ways to give a user information dynamically. By using a banner, a snackbar, and a toast. What is the difference and what is important to give all users the same information?</p>
 
-<h2 id="accessibility-concerns">Accessibility concerns</h2>
+<h2 id="banners-snackbars-and-toasts">Banners, snackbars, and toasts</h2>
 
-<p>In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it.</p>
+<p>What is the difference?</p>
+
+<ul>
+  <li>A <strong>banner</strong> is a message of one or more paragraphs that appears on top of the screen and stays there until dismissed by the user. It can contain actions like Close, Undo, or Retry and also links.</li>
+  <li>A <strong>snackbar</strong> is a short message that appears at the bottom of the screen or close by the user’s focus and can contain one or more actions. A snackbar preferably stays on screen until dismissed by the user.</li>
+  <li>A <strong>toast</strong> is only a short message that appears on screen and disappears again after a few seconds.</li>
+</ul>
+
+<h2 id="accessibility-concerns-of-toasts">Accessibility concerns of toasts</h2>
+
+<p>In able to get the message in a toast, the user must notice the message appear on the screen and have time enough to read it.</p>
 
 <p>Because a toast disappears, the user must have <strong>enough time</strong> to spot it and after that read it. Chances are that the user is busy with another task on the page and misses the message all together. Also, not everyone reads fast, the reader may see the message too late or doesn’t have enough time to read what it says.</p>
 
-<p>The disappearing message cannot be read again, the info is lost after a few seconds.</p>
-
-<p>Another concern is that screen reader users don’t get the message at all. <strong>Announce a dynamic change</strong> with for example <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>, to inform the screen reader user of the message user too.</p>
+<p>The disappearing message cannot be read again, the information is lost after a few seconds.</p>
 
 <p><strong>Pausing</strong> the disappearance of the message on hover or focus can help, but the user must know this can be done, and a keyboard user may have not enough time to tab to the toast before it disappears.</p>
 
-<p>If a user is <strong>zoomed in</strong> either by <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">reflow</a> or <a href="https://www.w3.org/WAI/WCAG22/quickref/#resize-text">text only</a>, the messages may fall outside the viewport or may be overlapped by other elements.</p>
+<p>If a user is <strong>zoomed in</strong> either the messages may fall outside the viewport or may be overlapped by other elements.</p>
+
+<p>Another concern is that <strong>screen reader users</strong> don’t get the message at all when it is not announced by for example <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>.</p>
+
+<p>Adrian Roselli wrote an extensive article <a href="https://adrianroselli.com/2020/01/defining-toast-messages.html">Defining ‘Toast’ Messages</a> about its accessibility issues.</p>
 
 <p>These are not only accessibility concerns but also usability issues.</p>
 
-<h2 id="status-messages">Status messages</h2>
+<h2 id="how-to-provide-dynamic-information">How to provide dynamic information</h2>
 
-<p>The best way to give a user information dynamically is to use a status message that stays on the screen. Let the user close the status message manually or let it disappear when the user leaves the page. Announce the message for a screen reader user.</p>
+<p>The best way to give a user information dynamically is to use a message component that stays on screen. Let the user close the status message manually or let it disappear when the user leaves the page or when it’s no longer valid.</p>
 
-<p>A common pattern is to add messages to a region in a consistent place, for example, at the top of the screen or, for form error messages, just above the form. Test if the message stays visible when a user zooms in or enlarges the text.</p>
+<p>A common pattern is to add messages to a region in a consistent place, for example, at the top of the screen, close to the previous user interaction, or for form error messages, just above the form.</p>
 
-<p>The topics <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> and <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> provide you with information on how to do this in WordPress.</p>
+<p>Test if the message stays visible when a user zooms in or enlarges the text by using <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">reflow</a> or <a href="https://www.w3.org/WAI/WCAG22/quickref/#resize-text">text only</a>.</p>
+
+<p>Announce a dynamic generated message with for example <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>, to inform the screen reader user too. For WordPress, you can use <a href="/docs/topics/code/dynamic-changes/">wp.a11y.speak()</a> to announce the message. The topics <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> and <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> provide you with more information on how to do this in WordPress.</p>
 
 <p>Then you are ensured all users will notice the information and have time enough to read and even re-read it.</p>
 
+<h2 id="summarized">Summarized</h2>
+
+<p>Make sure that:</p>
+<ul>
+  <li>The message always appears in a consistent and easy to discover position on the screen.</li>
+  <li>The message stays on screen until the user dismisses it, or after a page reload.</li>
+  <li>The message isn’t overlapped by other elements of falls outside the viewport when the user zooms in or enlarges the text.</li>
+  <li>The message is announced by a screen reader.</li>
+</ul>
+
+<h2 id="banners-snackbars-and-toasts-in-wordpress-code">Banners, snackbars, and toasts in WordPress code</h2>
+
+<p>WordPress core provides a few options for displaying dymamic messages, when you use these, test for the accessibility issues mentioned above first.</p>
+
+<p>To print admin screen notices: <a href="https://developer.wordpress.org/reference/hooks/admin_notices/">do_action( ‘admin_notices’ )</a>.</p>
+
+<p>For Gutenberg:</p>
+<ul>
+  <li><a href="https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/notice">Notice</a>, to communicate prominent messages to the user.</li>
+  <li><a href="https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/snackbar">Snackbar</a>, to communicate low-priority, non-interruptive messages to the user. Note: set <code class="language-plaintext highlighter-rouge">explicitDismiss</code> to <code class="language-plaintext highlighter-rouge">true</code>.</li>
+</ul>
+
 <h2 id="resources">Resources</h2>
 
-<h3 id="wcag-success-criteria-related-to-toasts">WCAG Success Criteria related to toasts</h3>
+<h3 id="wcag-success-criteria-related-to-banners-snackbars-and-toasts">WCAG Success Criteria related to banners, snackbars, and toasts</h3>
 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#resize-text">1.4.4 Resize Text</a> (Level AA).</li>
@@ -630,8 +659,11 @@
 <ul>
   <li><a href="https://adrianroselli.com/2020/01/defining-toast-messages.html">Defining ‘Toast’ Messages</a> by Adrian Roselli.</li>
   <li><a href="https://primer.style/accessibility/patterns/accessible-notifications-and-messages/">Accessible notifications and messages: Toasts</a> on Primer, the design system for GitHub.</li>
+  <li><a href="https://www.scottohara.me/blog/2019/07/08/a-toast-to-a11y-toasts.html">A toast to an accessible toast</a> by Scott O’Hara.</li>
   <li><a href="https://designsystemproblems.com/accessibility-compliance/toast-notification-accessibility/">Toast Notification Accessibility</a> by Design System Problems.</li>
   <li><a href="https://www.linkedin.com/pulse/toasts-snackbars-wcag-compliance-arpita-banerjee-cpacc-fjt1c/">Toasts, Snackbars, and WCAG Compliance</a> by Arpita Banerjee.</li>
+  <li><a href="https://medium.com/design-bootcamp/ux-blueprint-01-snackbar-vs-toast-decoding-the-subtle-differences-in-design-systems-8ad82ff61115">Snackbar vs toast: decoding the subtle differences in design systems</a> by Hizkia St.</li>
+  <li><a href="https://supercharge.design/articles/toast-vs-snackbar-vs-banner">Toast vs Snackbar vs Banner: Which One Should You Use?</a> on Supercharge design.</li>
 </ul>
 
 
@@ -644,7 +676,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> August 11, 2026</li>
+        <li><span>Last updated:</span> August 13, 2026</li>
 
         
 
