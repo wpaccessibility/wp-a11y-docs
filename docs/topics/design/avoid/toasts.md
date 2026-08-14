@@ -48,7 +48,7 @@ Test if the message stays visible when a user zooms in or enlarges the text by u
 
 Announce a dynamic generated message with for example `aria-live="polite"` or `role="status"`, to inform the screen reader user too. 
 
-For WordPress, you can use [wp.a11y.speak()](/docs/topics/code/dynamic-changes/) to announce the message. The topics [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) and [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) provide you with more information on how to do this in WordPress.
+For WordPress core, you can use `wp.a11y.speak()` and for the Block editor `speak()` to announce the message. The topic [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/) provides you with more information on how to do this in WordPress.
 
 Then you are ensured all users will notice the information and have time enough to read and even re-read it.
 
