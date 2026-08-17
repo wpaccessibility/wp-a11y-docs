@@ -38,6 +38,14 @@ Adrian Roselli wrote an extensive article [Defining ‘Toast’ Messages](https:
 
 These are not only accessibility concerns but also usability issues.
 
+<div class="info callout">
+  <blockquote cite="https://yatil.social/@yatil/117100482844913801">
+    <p> How many days of my life have I wasted in wait to get a confirmation for an action only to see in the corner of my eye on my 27-inch screen that a toast message has just disappeared?</p>
+    <p>Please, for the love of kittens: Stop using toast messages. Thank you.</p>
+  </blockquote>
+  <p> – Eric Eggert <cite>Mastodon</cite> </p>
+</div>
+
 ## How to provide dynamic information
 
 The best way to give a user information dynamically is to use a message component that stays on screen. Let the user close the status message manually or let it disappear when the user leaves the page or when it's no longer valid.
