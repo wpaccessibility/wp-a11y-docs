@@ -2,7 +2,6 @@
 title: What is accessibility-ready?
 layout: default
 parent: Accessibility-ready program
-meta_data: false
 description: What does accessibility-ready mean, and how to add the tag to a WordPress theme and request a review.
 nav_order: 1
 contributors:
