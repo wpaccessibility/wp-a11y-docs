@@ -17,7 +17,10 @@ How to find a theme that cares about web accessibility? In the WordPress theme d
 
 Accessibility-ready themes have been manually reviewed for the [accessibility-ready requirements]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/).
 
+{: .callout .info}
 Please note: “Accessibility Ready” doesn't mean the theme meets all [WCAG level AA guidelines](https://www.w3.org/WAI/WCAG22/quickref/). It means that the theme reaches the minimum standards that the theme review team has set. The WCAG guidelines are also measurements of content accessibility that cannot be applied to a theme.
+
+Find more information about the benefits of accessibility-ready themes and how to find them on [Accessibility-ready WordPress themes](/docs/accessibility-ready/themes/).
 
 ## For theme developers
 
