@@ -1934,7 +1934,7 @@
     "doc": "What is accessibility-ready?",
     "title": "For theme developers",
     "description": "What does accessibility-ready mean, and how to add the tag to a WordPress theme and request a review.",
-    "content": "As a theme deveoper you can add accessibility-ready to the theme tags (Tags) in the style.css file to indicate that it meets accessibility-ready requirements. Next to the regular theme review, your theme will then also be reviewed against the accessibility-ready requirements before it is approved to be listed in the WordPress theme directory. The WordPress theme handbook describes the process for requesting a review in How to be “Accessibility Ready. Detailed testing instructions for each requirement can be found in the theme accessibility guidelines doc.. ",
+    "content": "As a theme deveoper you can add accessibility-ready to the theme tags (Tags) in the style.css file to indicate that it meets accessibility-ready requirements. Next to the regular theme review, your theme will then also be reviewed against the accessibility-ready requirements before it is approved to be listed in the WordPress theme directory. The WordPress theme handbook describes the process for requesting a review in How to be “Accessibility Ready. Detailed testing instructions for each requirement can be found in the Set up testing for the WordPress themes accessibility-ready program. ",
     "url": "/pr-preview/pr-401/docs/accessibility-ready/about-accessibility-ready/#for-theme-developers",
     "relUrl": "/docs/accessibility-ready/about-accessibility-ready/#for-theme-developers"
   },"277": {
