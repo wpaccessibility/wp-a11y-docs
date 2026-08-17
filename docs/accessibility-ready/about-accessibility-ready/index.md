@@ -29,7 +29,7 @@ As a theme deveoper you can add `accessibility-ready` to the theme tags (Tags) i
 
 The WordPress theme handbook describes the process for requesting a review in [How to be “Accessibility Ready](https://make.wordpress.org/themes/handbook/review/accessibility/).
 
-Detailed testing instructions for each requirement can be found in the [theme accessibility guidelines doc.]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/).
+Detailed testing instructions for each requirement can be found in the [Set up testing for the WordPress themes accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/testing-themes/).
 
 ## Help wanted
 
