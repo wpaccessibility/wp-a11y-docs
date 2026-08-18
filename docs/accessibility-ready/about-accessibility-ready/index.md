@@ -2,7 +2,7 @@
 title: What is accessibility-ready?
 layout: default
 parent: Accessibility-ready program
-description: What does accessibility-ready mean, and how to add the tag to a WordPress theme and request a review.
+description: The WordPress theme directory lets you filter themes by the accessibility-ready topic, which marks themes that have been manually reviewed against a set of minimum accessibility requirements. Theme developers can add this tag to their theme to indicate the theme meets these requirements.
 nav_order: 1
 contributors:
   - Rian Rietveld
@@ -11,6 +11,10 @@ redirect_from:
 ---
 
 # About the accessibility-ready program
+
+The WordPress theme directory lets you filter themes by the accessibility-ready topic, which marks themes that have been manually reviewed against a set of minimum accessibility requirements. Theme developers can add this tag to their theme to indicate the theme meets these requirements.
+
+## For users
 
 How to find a theme that cares about web accessibility? In the WordPress theme directory you can filter themes by Features, one feature is [accessibility-ready](https://wordpress.org/themes/tags/accessibility-ready/).
 
