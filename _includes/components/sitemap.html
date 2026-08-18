@@ -1,0 +1,11 @@
+
+
+{% assign pages_top_size = site.html_pages
+| where_exp:"item", "item.title != nil"
+| where_exp:"item", "item.parent == nil"
+| where_exp:"item", "item.nav_exclude != true"
+| size %}
+
+{% if pages_top_size > 0 %}
+{% include components/nav/pages-sitemap.html pages=site.html_pages all=include.all %}
+{% endif %}
