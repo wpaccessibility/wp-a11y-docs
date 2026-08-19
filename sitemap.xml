@@ -126,7 +126,7 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/content/docs/</loc>
-<lastmod>2026-08-04T09:53:10+00:00</lastmod>
+<lastmod>2026-08-19T12:22:59+00:00</lastmod>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/about/contribute/github/documentation/</loc>
@@ -337,6 +337,10 @@
 <lastmod>2026-02-04T10:01:45+00:00</lastmod>
 </url>
 <url>
+<loc>https://wpaccessibility.org//docs/topics/content/readability/</loc>
+<lastmod>2026-08-19T12:22:59+00:00</lastmod>
+</url>
+<url>
 <loc>https://wpaccessibility.org//docs/topics/content/links/</loc>
 <lastmod>2026-05-25T06:47:43+00:00</lastmod>
 </url>
@@ -446,7 +450,7 @@
 </url>
 <url>
 <loc>https://wpaccessibility.org//</loc>
-<lastmod>2026-07-07T06:11:06+00:00</lastmod>
+<lastmod>2026-08-19T12:22:59+00:00</lastmod>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/topics/design/avoid/infinite-scroll/</loc>
@@ -547,10 +551,6 @@
 <url>
 <loc>https://wpaccessibility.org//docs/about/contribute/github/pull-requests/</loc>
 <lastmod>2026-03-02T11:29:23+00:00</lastmod>
-</url>
-<url>
-<loc>https://wpaccessibility.org//docs/topics/content/readability/</loc>
-<lastmod>2026-08-04T09:53:10+00:00</lastmod>
 </url>
 <url>
 <loc>https://wpaccessibility.org//docs/accessibility-ready/theme-guidelines/reflow-resize/</loc>
