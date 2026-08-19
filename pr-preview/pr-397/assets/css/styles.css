@@ -1055,6 +1055,24 @@ body {
   display: block;
 }
 
+/* Sitemap. */
+.sitemap {
+  margin-top: 1em;
+}
+.sitemap ul a {
+  text-decoration: none;
+}
+.sitemap ul a:hover {
+  text-decoration: underline;
+}
+.sitemap > ul {
+  padding-left: 0;
+  list-style: none;
+}
+.sitemap > ul > li > ul > li:last-child {
+  margin-bottom: 2.5em;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;

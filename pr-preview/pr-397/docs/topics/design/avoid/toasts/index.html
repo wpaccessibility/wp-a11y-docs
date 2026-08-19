@@ -456,7 +456,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
           </button><ul class="nav-list"><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-397/docs/about/contribute/github/blog-post/" class="nav-list-link">Add a blog post</a></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-397/docs/about/contribute/github/documentation/" class="nav-list-link">Add a topic</a></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-397/docs/about/contribute/github/pull-requests/" class="nav-list-link">Pull requests</a></li><li class="nav-list-item">
 
@@ -570,31 +570,31 @@
 
           <h1 id="patterns-to-avoid-disappearing-toasts">Patterns to avoid: Disappearing toasts</h1>
 
-<p>There are different ways to give a user information dynamically. By using a banner, a snackbar, and a toast. What is the difference and what is important to give all users the same information?</p>
+<p>There are different ways to dynamically provide a user with information. By using a banner, a snackbar, and a toast. What is the difference, and what is important to give all users the same information?</p>
 
 <h2 id="banners-snackbars-and-toasts">Banners, snackbars, and toasts</h2>
 
 <p>What is the difference?</p>
 
 <ul>
-  <li>A <strong>banner</strong> is a message of one or more paragraphs that appears on top of the screen and stays there until dismissed by the user. It can contain actions like Close, Undo, or Retry and also links.</li>
-  <li>A <strong>snackbar</strong> is a short message that appears at the bottom of the screen or close by the user’s focus and can contain one or more actions. A snackbar preferably stays on screen until dismissed by the user.</li>
+  <li>A <strong>banner</strong> is a message of one or more paragraphs that appears on top of the screen and stays there until dismissed by the user. It can contain actions such as Close, Undo, or Retry, as well as links.</li>
+  <li>A <strong>snackbar</strong> is a short message that appears at the bottom of the screen or close to the user’s focus and can contain one or more actions. A snackbar preferably stays on screen until dismissed by the user.</li>
   <li>A <strong>toast</strong> is only a short message that appears on screen and disappears again after a few seconds.</li>
 </ul>
 
 <h2 id="accessibility-concerns-of-toasts">Accessibility concerns of toasts</h2>
 
-<p>In able to get the message in a toast, the user must notice the message appear on the screen and have time enough to read it.</p>
+<p>In order to receive the message in a toast, the user must notice it appear on the screen and have enough time to read it.</p>
 
-<p>Because a toast disappears, the user must have <strong>enough time</strong> to spot it and after that read it. Chances are that the user is busy with another task on the page and misses the message all together. Also, not everyone reads fast, the reader may see the message too late or doesn’t have enough time to read what it says.</p>
+<p>Because a toast disappears, the user must have <strong>enough time</strong> to spot it and then read it. Chances are that the user is busy with another task on the page and misses the message altogether. Also, not everyone reads fast; the reader may see the message too late or doesn’t have enough time to read what it says.</p>
 
-<p>The disappearing message cannot be read again, the information is lost after a few seconds.</p>
+<p>The disappearing message cannot be read again; the information is lost after a few seconds.</p>
 
-<p><strong>Pausing</strong> the disappearance of the message on hover or focus can help, but the user must know this can be done, and a keyboard user may have not enough time to tab to the toast before it disappears.</p>
+<p><strong>Pausing</strong> the disappearance of the message on hover or focus can help, but the user must know this is possible, and a keyboard user may not have enough time to tab to the toast before it disappears.</p>
 
 <p>If a user is <strong>zoomed in</strong> either the messages may fall outside the viewport or may be overlapped by other elements.</p>
 
-<p>Another concern is that <strong>screen reader users</strong> don’t get the message at all when it is not announced by for example <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>.</p>
+<p>Another concern is that <strong>screen reader users</strong> don’t receive the message at all when it isn’t announced by, for example, <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>.</p>
 
 <p>Adrian Roselli wrote an extensive article <a href="https://adrianroselli.com/2020/01/defining-toast-messages.html">Defining ‘Toast’ Messages</a> about its accessibility issues.</p>
 
@@ -610,13 +610,13 @@
 
 <h2 id="how-to-provide-dynamic-information">How to provide dynamic information</h2>
 
-<p>The best way to give a user information dynamically is to use a message component that stays on screen. Let the user close the status message manually or let it disappear when the user leaves the page or when it’s no longer valid.</p>
+<p>The best way to dynamically provide a user with information is to use a message component that stays on screen. Let the user close the status message manually or let it disappear when the user leaves the page or when it’s no longer valid.</p>
 
-<p>A common pattern is to add messages to a region in a consistent place, for example, at the top of the screen, close to the previous user interaction, or for form error messages, just above the form.</p>
+<p>A common pattern is to add messages to a region in a consistent place, for example, at the top of the screen, close to the previous user interaction, or, for form error messages, just above the form.</p>
 
 <p>Test if the message stays visible when a user zooms in or enlarges the text by using <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">reflow</a> or <a href="https://www.w3.org/WAI/WCAG22/quickref/#resize-text">text only</a>.</p>
 
-<p>Announce a dynamic generated message with for example <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>, to inform the screen reader user too.</p>
+<p>Announce a dynamically generated message with, for example, <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code> to inform the screen reader user too.</p>
 
 <p>For WordPress core, you can use <code class="language-plaintext highlighter-rouge">wp.a11y.speak()</code> and for the Block editor <code class="language-plaintext highlighter-rouge">speak()</code> to announce the message. The topic <a href="/pr-preview/pr-397/docs/topics/code/dynamic-changes/">Feedback on dynamic changes</a> provides you with more information on how to do this in WordPress.</p>
 
@@ -626,15 +626,15 @@
 
 <p>Make sure that:</p>
 <ul>
-  <li>The message always appears in a consistent and easy to discover position on the screen.</li>
+  <li>The message always appears in a consistent and easy-to-discover position on the screen.</li>
   <li>The message stays on screen until the user dismisses it, or after a page reload.</li>
-  <li>The message isn’t overlapped by other elements of falls outside the viewport when the user zooms in or enlarges the text.</li>
+  <li>The message isn’t overlapped by other elements or falls outside the viewport when the user zooms in or enlarges the text.</li>
   <li>The message is announced by a screen reader.</li>
 </ul>
 
 <h2 id="banners-snackbars-and-toasts-in-wordpress-code">Banners, snackbars, and toasts in WordPress code</h2>
 
-<p>WordPress core provides a few options for displaying dymamic messages, when you use these, test for the accessibility issues mentioned above first.</p>
+<p>WordPress core provides a few options for displaying dynamic messages; when you use these, test for the accessibility issues mentioned above first.</p>
 
 <p>To print admin screen notices: <a href="https://developer.wordpress.org/reference/hooks/admin_notices/">do_action( ‘admin_notices’ )</a>.</p>
 
@@ -649,7 +649,7 @@
 
 <h4 id="update-a-theme">Update a theme</h4>
 
-<p>Updating themes in the WordPress Admin is done well, the new message is announced by a screen reader and is easy to spot.</p>
+<p>Updating themes in the WordPress Admin is done well; the new message is announced by a screen reader and is easy to spot.</p>
 
 <p><img src="/pr-preview/pr-397/assets/images/theme-update-now.png" alt="Notication: New version available" /></p>
 
@@ -666,7 +666,7 @@
 
 <h4 id="update-a-post">Update a post</h4>
 
-<p>After updating a post, the snackbar “Post updated” with a link to “View Post” appears for a few seconds at the bottom of the page and disappears again. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear.</p>
+<p>After updating a post, the snackbar “Post updated” with a “View Post” link appears at the bottom of the page for a few seconds and then disappears. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear.</p>
 
 <p><img src="/pr-preview/pr-397/assets/images/post-updated.png" alt="Notication: Post updated with a link to View Post" /></p>
 
@@ -712,7 +712,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> August 17, 2026</li>
+        <li><span>Last updated:</span> August 19, 2026</li>
 
         
 
@@ -791,7 +791,7 @@
           <ul>
             <li><a href="/pr-preview/pr-397/docs/accessibility-ready/">Accessibility-ready program</a></li>
             <li><a href="/pr-preview/pr-397/docs/topics/code/screen-reader-text/">CSS class .screen-reader-text</a></li>
-            <li><a href="/pr-preview/pr-397/docs/topics/legislation/">Legislation worldwide</a></li>
+            <li><a href="/pr-preview/pr-397/sitemap/">Sitemap</a></li>
             <li><a href="/pr-preview/pr-397/docs/start/overlays/">Accessibility Overlays</a></li>
             <li><a href="/pr-preview/pr-397/docs/about/sponsors/">Sponsors</a></li>
             <li><a href="/pr-preview/pr-397/docs/about/contact/">Contact us</a></li>
