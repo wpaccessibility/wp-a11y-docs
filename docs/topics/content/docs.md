@@ -3,7 +3,7 @@ title: Digital documents
 layout: default
 parent: Content and images
 description: Similar accessibility rules apply to both PDFs and HTML documents
-nav_order: 5
+nav_order: 6
 ---
 
 # Digital documents
