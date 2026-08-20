@@ -2536,7 +2536,7 @@
     "doc": "Alt text for images",
     "title": "Alt text in WordPress",
     "description": "The alt attribute (alt text) is used to provide an alternative to the image for users who can’t see it.",
-    "content": "In WordPress, you an add alt text for an image in the Media Library, in the Attachment Details panel for an image. This alt text will be used by default when embedding this image in content. When you add an image in the content using the Image Block, make sure the alt text still matches the purpose of the image as you are using it. The alt text for the image can be altered in the Block Settings and will only be used for this block. ",
+    "content": "In WordPress, you can add the alt text for an image in the Media Library, in the Attachment Details panel for an image. This alt text will be used by default when embedding this image in content. When you add an image in the content using the Image Block, make sure the alt text still matches the purpose of the image as you are using it. The alt text for the image can be altered in the Block Settings and will only be used for this block. New in WordPress 7.1: When an image is purely decorative and adds no information to the content, you can label the image as decorative. This will prevent the image from being announced by a screen reader. To pass WCAG, it’s allowed to label an image as decorative if it adds no information to the content. The reason to do so is that a decorative image doesn’t need to add to the overload of information for screen reader users. However, some screen reader users also like to know what’s on a decorative image if it adds to the mood of a page. Leonie Watson, a blind accessibility expert, wrote in Text descriptions and emotion rich images “emotion rich images are important to blind people, particularly those who once had sight (and that’s most of us)”. ",
     "url": "/docs/topics/content/alt-text/#alt-text-in-wordpress",
     "relUrl": "/docs/topics/content/alt-text/#alt-text-in-wordpress"
   },"363": {
@@ -3019,7 +3019,7 @@
     "doc": "Home",
     "title": "New and updated content",
     "description": "Accessibility Knowledge Base for WordPress users and creators.",
-    "content": "In August 2026: . The accessibility-ready program for WordPress: . | About the accessibility-ready program. | . Standars and best practice: . | Readability in Content and images. | . ",
+    "content": "In August 2026: . The accessibility-ready program for WordPress: . | About the accessibility-ready program. | . Standars and best practice: . | Alternative text for images in the content in Content and images. | Readability in Content and images. | . ",
     "url": "/#new-and-updated-content",
     "relUrl": "/#new-and-updated-content"
   },"432": {

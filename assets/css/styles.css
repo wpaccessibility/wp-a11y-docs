@@ -324,6 +324,10 @@ img {
   height: auto;
 }
 
+main img {
+  border: 1px solid var(--color-neutral-border-subtle);
+}
+
 img.sponsor {
   margin-top: 2em;
   max-width: 30%;
