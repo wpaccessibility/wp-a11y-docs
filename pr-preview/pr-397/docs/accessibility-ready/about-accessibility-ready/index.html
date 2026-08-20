@@ -12,7 +12,7 @@
 
 
 
-<title>Accessible audio, video, and animations, WP Accessibility Knowledge Base</title>
+<title>What is accessibility-ready?, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-397/assets/css/styles.css">
@@ -534,16 +534,6 @@
 
         
             
-            
-            
-        
-
-    
-
-        
-
-        
-            
 
 
 
@@ -551,7 +541,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/accessibility-ready/'>Accessibility-ready program</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/'>Theme accessibility-ready guidelines</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Accessible audio, video, and animations</li>
+            <li class="breadcrumb-nav-list-item" aria-current="page">What is accessibility-ready?</li>
     </ol>
 </nav>
 
@@ -560,56 +550,37 @@
 
         <main>
 
-          <h1 id="accessible-audio-video-and-animations">Accessible audio, video, and animations</h1>
+          <h1 id="about-the-accessibility-ready-program">About the accessibility-ready program</h1>
 
-<h2 id="basic-principle">Basic principle</h2>
+<p>The WordPress theme directory lets you filter themes by the accessibility-ready topic, which marks themes that have been manually reviewed against a set of minimum accessibility requirements. Theme developers can add this tag to their theme to indicate the theme meets these requirements.</p>
 
-<p>All forms of multimedia have specific accessibility requirements, and any support for multimedia in a theme must meet those requirements. Themes are not responsible for the content of multimedia; but any demo media included should meet accessibility requirements.</p>
+<h2 id="for-users">For users</h2>
 
-<p>The basic requirements are:</p>
+<p>How to find a theme that cares about web accessibility? In the WordPress theme directory you can filter themes by Features, one feature is <a href="https://wordpress.org/themes/tags/accessibility-ready/">accessibility-ready</a>.</p>
 
-<ol>
-  <li>Three Flashes: No animation or video can flash more than three times in any one second period. Rapid flashing can trigger seizures, dizziness, nausea, or migraines.</li>
-  <li>Motion animation triggered by interaction can be disabled. (Level AAA)</li>
-  <li>Any automatically initiated moving, blinking, or auto-updating information can be paused, stopped, or hidden.</li>
-</ol>
+<p>Accessibility-ready themes have been manually reviewed for the <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/">accessibility-ready requirements</a>.</p>
 
-<p><strong>Note</strong>: It is difficult to test the three-flash rule. The simplest test, for CSS or JS animation, is to look at the source code and check the timing frequency; this will not work for a demo video. In general, any <em>potentially</em> risky animation should be considered a failure.</p>
+<p class="callout info">Please note: “Accessibility Ready” doesn’t mean the theme meets all <a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG level AA guidelines</a>. It means that the theme reaches the minimum standards that the theme review team has set. The WCAG guidelines are also measurements of content accessibility that cannot be applied to a theme.</p>
 
-<h2 id="testing">Testing</h2>
+<p>Find more information about the benefits of accessibility-ready themes and how to find them on <a href="/docs/accessibility-ready/themes/">Accessibility-ready WordPress themes</a>.</p>
 
-<p><strong>Tools:</strong> Theme settings, keyboard, screen reader, browser inspector.</p>
+<h2 id="for-theme-developers">For theme developers</h2>
 
-<ol>
-  <li>Interact with all controls and observe whether a repeating animation is triggered. Very small animations can be ignored, such as a transition shift between colors or minor border movement.</li>
-  <li>If the theme supports a hero video, add a test video as the hero.</li>
-  <li>Verify that the video provides controls allowing you to pause the video. The controls should meet all other accessibility requirements concerning keyboard accessibility and accessible naming.</li>
-  <li>If the theme offers a carousel interface or similar, verify that if it auto-updates by default, this behavior can be paused. The controls should meet all other accessibility requirements.</li>
-  <li>Scroll up and down the page to observe whether any parallax animations or other animation changes occur on scroll. If so, verify whether they can be paused.</li>
-  <li>Enable your operating system’s options to reduce animations. Repeat the previous test to verify that existing animations do not occur or are significantly reduced.
-    <ol>
-      <li>On Windows 11: Go to Settings &gt; Accessibility &gt; Visual Effects &gt; Animation Effects.</li>
-      <li>On macOS: Navigate to System Preferences &gt; Accessibility &gt; Display &gt; Reduce motion.</li>
-    </ol>
-  </li>
-</ol>
+<p>As a theme deveoper you can add <code class="language-plaintext highlighter-rouge">accessibility-ready</code> to the theme tags (Tags) in the style.css file to indicate that it meets <a href="https://wpaccessibility.org/docs/accessibility-ready/theme-guidelines/">accessibility-ready requirements</a>. Next to the regular theme review, your theme will then also be reviewed against the
+<a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/">accessibility-ready requirements</a> before it is approved to be listed in the WordPress theme directory.</p>
 
-<h2 id="resources">Resources</h2>
+<p>The WordPress theme handbook describes the process for requesting a review in <a href="https://make.wordpress.org/themes/handbook/review/accessibility/">How to be “Accessibility Ready”</a>.</p>
 
-<h3 class="resource-h3" id="wcag-success-criteria-for-audio-video-and-animations">WCAG Success Criteria for audio, video, and animations</h3>
+<p>Detailed testing instructions for each requirement can be found in the <a href="/pr-preview/pr-397/docs/accessibility-ready/testing-themes/">Set up testing for the WordPress themes accessibility-ready program</a>.</p>
 
-<p>Using accessibile audio, video, and animations is necessary to meet the WCAG success criteria:</p>
+<h2 id="help-wanted">Help wanted</h2>
 
-<ul>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide">2.2.2 Pause, Stop and Hide</a> (Level A).</li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold">2.3.1 Three Flashes or Below Threshold</a> (Level A).</li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#three-flashes">2.3.2 Three Flashes</a> (Level <strong>AAA</strong>).</li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#animation-from-interactions">2.3.3 Animation from Interactions</a> (Level <strong>AAA</strong>).</li>
-</ul>
+<p>Each theme submitted with the ‘accessibility-ready’ tag is reviewed manually for the accessibility-ready requirements. 
+As this takes time, we are looking for volunteers to help with the testing.</p>
 
-<h3 class="resource-h3" id="related-pages-in-this-documentation">Related pages in this documentation</h3>
+<p>Join the #accessibility-testing channel in <a href="https://wordpress.slack.com">Making WordPress Slack</a> to get in touch with the Accessibility team and ask how you can help best.</p>
 
-<p><a href="/pr-preview/pr-397/docs/topics/code/images/image-animation/">Image animation and accessibility</a> in Standards and best practice, Frontend code.</p>
+<p>The testing process is documented in <a href="/pr-preview/pr-397/docs/accessibility-ready/testing-themes/">Set up testing for the WordPress themes accessibility-ready program</a>.</p>
 
 
           
@@ -621,22 +592,19 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> August 04, 2026</li>
+        <li><span>Last updated:</span> August 18, 2026</li>
 
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/accessibility-ready/theme-guidelines/accessible-animation.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/accessibility-ready/about-accessibility-ready/index.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
         
 
         
         <li><span>Contributors:</span>
             
-            Amber Hinds,
-            
-            
-            Joe Dolson.
+            Rian Rietveld.
             
             
         </li>
@@ -660,161 +628,35 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Theme accessibility-ready guidelines</h2>
+        <h2>Other pages in: Accessibility-ready program</h2>
         <ul role="list">
             
             
+            
+            
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/skip-to-content/"> Skip to Content Link</a>
+                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/"> Theme accessibility-ready guidelines</a>
                 </h3>
-                <p>The requirements for a Skip to Content link on accessibility-ready themes.</p>
+                <p>Learn about the accessibility-ready guidelines on WordPress.org.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/"> Meaningful landmark roles and names</a>
+                    <a href="/pr-preview/pr-397/docs/accessibility-ready/testing-themes/"> Theme accessibility-ready testing process</a>
                 </h3>
-                <p>Accessibility-ready themes requirements for meaningful landmark roles and names</p>
+                <p>How to set up an accessibility test for the accessibility-ready program on WordPress.org.</p>
             </li>
             
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/"> Keyboard navigation support</a>
+                    <a href="/pr-preview/pr-397/docs/accessibility-ready/themes/"> Accessibility-ready themes</a>
                 </h3>
-                <p>The requirements for keyboard navigation in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/"> Controls with accessible names, roles, and states</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for accessible controls</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/labeled-form-fields/"> Labeled form fields</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for how to label form fields</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/headings-structure/"> Headings with meaningful structure</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for how to use headings</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/underlined-links/"> Underlined links in text</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for how to indicate links in text</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/"> No ambiguous link text</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for ambiguous link text</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/"> Sufficient color contrast of text and UI controls</a>
-                </h3>
-                <p>Color contrast requirements in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/alternative-text/"> Alternative text on images and graphics</a>
-                </h3>
-                <p>Use of alternative text requirements for accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/reflow-resize/"> Support for reflow, resize, and text spacing changes</a>
-                </h3>
-                <p>Requirements for handling reflow, resize, and text spacing in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/"> No unexpected changes of context</a>
-                </h3>
-                <p>Requirements for changes of context in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/new-windows-tabs/"> No links opening new windows or tabs without warning</a>
-                </h3>
-                <p>Requirements for opening new windows or tabs in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/content-hover-focus/"> Content on hover or focus is accessible</a>
-                </h3>
-                <p>How to handle content revealed on hover or focus in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/accessibility-statement/"> Accessibility statement</a>
-                </h3>
-                <p>Accessibility Statement requirements for Accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/"> Must not recommend or require inaccessible plugins</a>
-                </h3>
-                <p>Accessibility-ready themes must not recommend or require inaccessible plugins.</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/screen-reader-text/"> Screen reader text supported</a>
-                </h3>
-                <p>How screen reader text must be supported on an accessibility-ready theme</p>
+                <p>How to find an accessibility-ready theme for your WordPress website.</p>
             </li>
             
             
@@ -822,7 +664,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-397/docs/accessibility-ready/theme-guidelines/">Back to: Theme accessibility-ready guidelines</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-397/docs/accessibility-ready/">Back to: Accessibility-ready program</a>
             </p>
 
         
