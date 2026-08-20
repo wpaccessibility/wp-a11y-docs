@@ -150,9 +150,9 @@ When designing, writing or coding, keep asking yourself if what you're doing con
 
 You may have seen audit reports in which a website was tested for accessibility.
 
-One method of reporting an accessibility audit is the [WCAG Evaluation Method](https://www.w3.org/WAI/test-evaluate/conformance/wcag-em/), the evaluation methodology published by the W3C. This methodology  provides auditors and testers with guidelines for checking whether a success criterion has been met (and thus whether a guideline has been followed correctly). [More about testing]({{site.baseurl}}/docs/testing).
+One method of reporting an accessibility audit is using the [WCAG-EM Report Tool](https://www.w3.org/WAI/eval/report-tool/), the evaluation methodology published by the W3C. This tool turns your accessibility evaluation findings into a report. [More about testing]({{site.baseurl}}/docs/testing).
 
-Many finding can be reported for each success criterion in the report. That can make a report overwhelming! It's recommended that you try and implement best practice accessibility techniques and follow the guidelines to the best of your abilities before getting an audit.
+Many findings can be reported for each success criterion in the report. That can make a report overwhelming! It's recommended that you try and implement best practice accessibility techniques and follow the guidelines to the best of your abilities before getting an audit.
 
 This way, it will be easier to follow recommendations from the report. It can be useful to read through the evaluation method yourself, as it offers ways to check for accessibility issues.
 

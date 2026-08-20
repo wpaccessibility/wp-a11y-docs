@@ -1,0 +1,53 @@
+{%- comment -%}
+  Include as: {%- include components/nav/links-sitemap.html pages=page_array ancestors=title_array all=bool -%}
+  Depends on: include.pages, include.ancestors, include.all.
+  Results in: HTML for the main navigation when all is nil or false;
+    includes links to pages excluded from the main navigation when all is true.
+  Includes: components/nav/sorted.html, components/nav/children.html, components/nav/links.html.
+  Overwrites:
+    node, nav_children, nav_ancestors.
+{%- endcomment -%}
+
+<ul role="list">
+
+  {%- for node in include.pages -%}
+
+  {% unless node.url contains "/blog/page" %}
+
+    {%- if include.all == true or node.nav_exclude != true -%}
+
+      {%- if include.ancestors contains node.title -%}
+
+        <li>
+          <a href="{{ node.url | relative_url }}"> ∞ </a>
+        </li>
+
+      {%- else -%}
+
+        {%- include components/nav/children-sitemap.html node=node ancestors=include.ancestors all=include.all -%}
+
+        <li>
+
+          <a href="{{ node.url | relative_url }}">{{ node.title }}</a>
+
+          {%- if nav_children.size >= 1 -%}
+            {%- if node.child_nav_order == 'desc' or node.child_nav_order == 'reversed' -%}
+              {%- assign nav_children = nav_children | reverse -%}
+            {%- endif -%}
+            {%- assign nav_ancestors = include.ancestors | push: node.title -%}
+            {%- include components/nav/links-sitemap.html pages=nav_children ancestors=nav_ancestors all=include.all -%}
+          {%- endif -%}
+
+        </li>
+
+      {%- endif -%}
+
+    {%- endif -%}
+
+  {% endunless %}
+
+  {%- endfor -%}
+
+</ul>
+
+{%- comment -%}{%- endcomment -%}

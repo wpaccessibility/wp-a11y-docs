@@ -24,8 +24,10 @@ Find the documentation for your work role, work field and expertise.
 
 ## New and updated content
 
-August 2026:
+In August 2026:
 
-Design and user experience:
+The accessibility-ready program for WordPress:
+- [About the accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/about-accessibility-ready/).
 
-- [Toasts]({{site.baseurl}}/docs/topics/design/avoid/toasts/) in Design patterns to avoid.
+Standars and best practice:  
+- [Readability]({{site.baseurl}}/docs/topics/content/readability/) in Content and images.
