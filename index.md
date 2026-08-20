@@ -30,4 +30,5 @@ The accessibility-ready program for WordPress:
 - [About the accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/about-accessibility-ready/).
 
 Standars and best practice:  
+- [Toasts]({{site.baseurl}}/docs/topics/design/avoid/toasts/) in Design patterns to avoid.
 - [Readability]({{site.baseurl}}/docs/topics/content/readability/) in Content and images.
