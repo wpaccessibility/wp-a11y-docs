@@ -17,9 +17,11 @@ With digital documents we mean all digital documents that are not rendered as we
 {: .callout .info }
 **Note**: This website is about web accessibility. On this page we only briefly explain what is important for PDFs (Portable Document Format) and point you to resources specialized in accessibility for digital documents.
 
-All [WCAG success criteria for web content](https://www.w3.org/WAI/WCAG22/quickref/) also apply for digital documents if they are included in a website that needs to comply to WCAG. Additionally, for digital documents, the W3C published the WCAG2ICT: [Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies](https://www.w3.org/TR/wcag2ict/).
+All [WCAG success criteria for web content](https://www.w3.org/WAI/WCAG22/quickref/) also apply for digital documents if they are included in a website that needs to comply to WCAG. 
 
-But the best advice is trying to avoid important publishing information in digital downloads only. A webpage is so much easier to make accessible than a PDF. If you must, have the best of both worlds: publish the information on the website and also provide the PDF as a super fancy download. Then the user has a choice.
+Additionally, for digital documents, the W3C published the WCAG2ICT: [Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies](https://www.w3.org/TR/wcag2ict/).
+
+But the best advice? Try to avoid important publishing information in digital downloads only. A webpage is so much easier to make accessible than a PDF. If you must, have the best of both worlds: publish the information on the website and also provide the PDF as a super fancy download. Then the user has a choice.
 
 ## Accessible PDFs in short
 
@@ -34,7 +36,7 @@ PDFs (Portable Document Format) are often referred to as tagged PDFs. Similar ac
 
 PDF tags are the semantic content marks and indicate the logical document structure and reading order. Compared to HTML tags, PDF tags look similar but are different.
 
-In the source document (e.g., Microsoft Word, Adobe InDesign) you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside <p> tags. 
+In the source document created with, for example, Microsoft Word or Adobe InDesign, you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside <p> tags. 
 
 It is also important to format your lists and tables correctly to get the best results while exporting your PDF.
 
@@ -45,8 +47,8 @@ The list of software which is able to export a PDF is quite long. In the export 
 - [Create accessible PDFs](https://support.microsoft.com/en-us/accessibility/office-accessibility/create-accessible-pdfs) by Microsoft.
 - [Create and verify PDF accessibility (Acrobat Pro)](https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html) by Adobe for Acrobat Pro.
 
-{: .callout .warning }
-**Warning**: Google Docs doesn’t support the export of a tagged and accessible PDF yet without any help of a plugin.
+{: .callout .alert }
+**Note**: Google Docs doesn’t support the export of a tagged and accessible PDF yet without the help of a plugin.
 
 ## Resources
 
