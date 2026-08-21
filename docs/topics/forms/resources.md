@@ -11,7 +11,7 @@ nav_order: 8
 For a more in depth understanding of how to create validating forms and how forms work with various assistive technology.
 
 ## Accessible web forms
-- Gen Herres on Equalize Digital [How Accessible are WordPress Forms by Default?](https://equalizedigital.com/wordpress-forms-accessibility/)
-- W3C Web accessibility Tutorials: [Forms Concepts](https://www.w3.org/WAI/tutorials/forms/)
-- WebAIM: [Creating Accessible Forms](http://webaim.org/techniques/forms/)
-- Deque: [The Anatomy of Accessible Forms](https://www.deque.com/blog/anatomy-of-accessible-forms-best-practices/)
+- [How Accessible are WordPress Forms by Default?](https://equalizedigital.com/wordpress-forms-accessibility/) by Gen Herres on Equalize Digital.
+- [Forms Concepts](https://www.w3.org/WAI/tutorials/forms/) in the Web accessibility Tutorials by the W3C.
+- [Creating Accessible Forms](http://webaim.org/techniques/forms/) by WebAIM.
+- [The Anatomy of Accessible Forms](https://www.deque.com/blog/anatomy-of-accessible-forms-best-practices/) by Deque.

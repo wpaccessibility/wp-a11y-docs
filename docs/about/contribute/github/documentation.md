@@ -1,6 +1,6 @@
 ---
 title: Add a topic
-parent: Technical documentation website
+parent: Technical documentation
 nav_order: 1
 description: Add or change a page in this documentation.
 ---

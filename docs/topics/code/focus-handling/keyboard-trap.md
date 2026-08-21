@@ -36,3 +36,8 @@ How to test with a keyboard is described with [Keyboard navigation testing]({{si
 
 - [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/quickref/#keyboard) (Level A).
 - [2.1.2 No Keyboard Trap](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.

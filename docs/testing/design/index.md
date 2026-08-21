@@ -20,26 +20,35 @@ Listed below are the major issues to address.
 
 ## Color contrast
 
-Check the color contrast ratio between **text** and its **background**. The guideline in WCAG 2.2 AA guidelines is: 
+Check the color contrast ratio between **text** and its **background**. The criteria in the WCAG 2.2 AA guidelines are: 
 - the color contrast ratio between text and background must be 4.5 or more for normal text and 
 - 3.1 or more for text of at least 24 pixels or 19 pixels bold.
 
 Text in logos and logotypes are excluded from this guideline.
 
 **Non-text elements** that have meaning should have a color contrast of 3.1 or more against its **background**.
-For example: icons used functionally or informationally, borders of input fields, checkboxes or radio buttons.
-Also check for different states (light/dark mode, checked, not checked, etc.). All states must have a color contrast of 3.1 or more.
+For example, icons used functionally or informationally, borders of input fields, checkboxes, or radio buttons.
+Also check for different states (light/dark mode, checked/not checked states, etc.). All states must have a color contrast of 3.1 or more.
 
-Documentation about color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice: Design and user experience.
+Documentation about color contrast: 
+- [Sufficient color contrast of text and UI controls]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/) in Theme guidelines for the WordPress accessibility-ready program.
+- [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice: Design and user experience.
 
 ### Popular color contrast checkers
 
-- [Figma Contrast Plugin](https://www.figma.com/community/plugin/748533339900865323).
-- [Figma Color Contrast Checker Plugin](https://www.figma.com/color-contrast-checker/).
-- [Figma WCAG Plugin](https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin).
+- [Online Contrast Checker](https://webaim.org/resources/contrastchecker/) by WebAIM.
 - [Colour Contrast Analyser (CCA)](https://vispero.com/lp/color-contrast-checker/), Vispero’s free color contrast checker for Windows and Mac, includes text and visual elements for individuals with color-blindness or low vision impairments.
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
-- [contrastchecker.com](https://contrastchecker.com/) (Online) — checks foreground/background contrast levels and also gives information on the accessibility levels of the contrast.
+- [Background Image & Text Contrast Checker](https://www.brandwood.com/a11y/), by Andrew Brandwood.
+
+Tools to help design or check complete color palettes:
+- [Online Contrast Grid](https://contrast-grid.equalizedigital.com/) by Equalize Digital.
+- [Color Contrast Grid for Figma variables](https://www.figma.com/community/plugin/1429041037045202727/color-contrast-grid-for-figma-variables) by Moritz Neugebauer.
+- [Contrast Grid for Figma](https://www.figma.com/community/plugin/993414361395505148/contrast-grid) by hiloki.
+
+Other Figma plugins:
+- [Figma Contrast Plugin](https://www.figma.com/community/plugin/748533339900865323) by WillowTree.
+- [Figma Color Contrast Checker Plugin](https://www.figma.com/color-contrast-checker/) by Figma.
+- [Figma WCAG Plugin](https://www.figma.com/community/plugin/1373362852131056921/wcag-plugin) by Marcelo Paiva.
 
 ## Not by color alone
 
@@ -51,10 +60,10 @@ Functionality must also be understandable for people who cannot see colors.
 - Don’t indicate errors in forms only using text color, borders, or backgrounds. Include clear text messages as well.
 
 Related documentation: 
-- [Use of color]({{site.baseurl}}/docs/topics/design/color/use-of-color/), in Standard and best practice: Design and user experience.
-- [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/), in Standard and best practice: Design and user experience.
-- [Styling links]({{site.baseurl}}/docs/topics/design/links/), in Standard and best practice: Design and user experience.
-- [Write out an error message in text]({{site.baseurl}}/docs/topics/forms/feedback/error-message-format/), in Standard and best practice: Web forms
+- [Use of color]({{site.baseurl}}/docs/topics/design/color/use-of-color/) in Standard and best practice: Design and user experience.
+- [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/) in Standard and best practice: Design and user experience.
+- [Styling links]({{site.baseurl}}/docs/topics/design/links/) in Standard and best practice: Design and user experience.
+- [Write out an error message in text]({{site.baseurl}}/docs/topics/forms/feedback/error-message-format/) in Standard and best practice: Web forms
 
 ### Color-blindness checks and tools:
 
@@ -94,5 +103,5 @@ Make the order of content logical when read from the top down. For example, do n
 - Avoid using too many elements that distract the user from reading the text or using the navigation.
 
 Related documentation: 
-- [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/) in Frontend code
-- [Accessible audio, video, and animations]({{site.baseurl}}/docs/topics/content/audio-video-and-animations/).
+- [Image animation and accessibility]({{site.baseurl}}/docs/topics/code/images/image-animation/) in Standards and best practice, Frontend code
+- [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/) in the Theme guidelines for the WordPress accessibility-ready program.

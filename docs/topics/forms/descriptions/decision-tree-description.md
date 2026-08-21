@@ -56,7 +56,7 @@ Rich text in this context means: additional structure or interactive functionali
 {: .resource-h3}
 ### Other resources
 
-- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- MDN: [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby).
-- W3C: [Form Instructions](https://www.w3.org/WAI/tutorials/forms/instructions/).
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System.
+- [ARIA: aria-describedby attribute](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-describedby) by MDN.
+- [Form Instructions](https://www.w3.org/WAI/tutorials/forms/instructions/) by the W3C.
 

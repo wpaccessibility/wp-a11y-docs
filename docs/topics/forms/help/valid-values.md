@@ -12,9 +12,9 @@ Provide valid values for an input field (for example, date or password requireme
 
 Also consider whether it is really important that, for example, a date of birth or phone number must meet exact input requirements. If you can reformat the value provided to meet your internal needs, then it should not matter how the user formats the data.
 
-![Password requirements are shown in the description.](/assets/images/richtlijnen_formulier_voorkom-fouten_wachtwoord-english.png)
+![Password requirements are shown in the description.]({{site.baseurl}}/assets/images/richtlijnen_formulier_voorkom-fouten_wachtwoord-english.png)
 
-![Examples of valid values for date of birth are shown in the description.](/assets/images/richtlijnen_formulier_voorkom-fouten_geboortedatum-english.png)
+![Examples of valid values for date of birth are shown in the description.]({{site.baseurl}}/assets/images/richtlijnen_formulier_voorkom-fouten_geboortedatum-english.png)
 
 
 ## Resources

@@ -37,3 +37,9 @@ Avoid using a positive tabindex in your forms, and leave the natural tab order o
 ### WCAG Success Criteria for focus order
 
 Accessible focus management in web forms is necessary to meet the WCAG success criterion: [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program. 
+- [Focus handling]({{site.baseurl}}/docs/topics/code/focus-handling) in Standards and best practice, Frontend code. 

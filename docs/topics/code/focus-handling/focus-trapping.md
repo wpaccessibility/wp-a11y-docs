@@ -58,9 +58,14 @@ The [Modal Dialog Example](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal
 - [2.4.12 Focus Not Obscured (Enhanced)](https://www.w3.org/WAI/WCAG22/quickref/#focus-not-obscured) (Level **AAA**).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+[Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.
+
+{: .resource-h3}
 ### Other resources
 
 - [A Primer on Focus Trapping](https://css-tricks.com/a-primer-on-focus-trapping/) by Zell Liew on CSS-Tricks.
-- [There is No Need to Trap Focus on a Dialog Element ](https://css-tricks.com/there-is-no-need-to-trap-focus-on-a-dialog-element/) b by Zell Liew on CSS-Tricks.
+- [There is No Need to Trap Focus on a Dialog Element ](https://css-tricks.com/there-is-no-need-to-trap-focus-on-a-dialog-element/) by Zell Liew on CSS-Tricks.
 - [React Refocus](https://react-refocus.mallikcheripally.com/) by Mallik Cheripally.
 - [How to detect esc key press in React and how to handle it](https://www.xjavascript.com/blog/how-to-detect-esc-key-press-in-react-and-how-to-handle-it/) on XJavascript.com.

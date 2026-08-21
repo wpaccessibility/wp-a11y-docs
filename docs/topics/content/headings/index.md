@@ -97,6 +97,13 @@ Using a meaningful heading structure is necessary to meet the WCAG success crite
 - [WCAG 2.4.10 Section Headings](https://www.w3.org/WAI/WCAG22/quickref/#section-headings) (**Level AAA**).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+- [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in Standards and best practice, Frontend code.
+
+
+{: .resource-h3}
 ### Other resources
 
 - [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://www.wpbeginner.com/wp-tutorials/how-to-properly-use-heading-tags-in-wordpress-explained/) by WPBeginner.

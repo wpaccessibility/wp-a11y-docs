@@ -24,17 +24,12 @@ Find the documentation for your work role, work field and expertise.
 
 ## New and updated content
 
-In July 2026:
+In August 2026:
 
-Test for accessibility:
-- [Complete checks against the Web Content Accessibility Guidelines]({{site.baseurl}}/docs/testing/overall/)
-- [Automated accessibility testing]({{site.baseurl}}/docs/testing/automated/)
-- [Content checks for web accessibility]({{site.baseurl}}/docs/testing/content/)
-- [Design checks for web accessibility]({{site.baseurl}}/docs/testing/design/)
-- [Front-end checks for web accessibility]({{site.baseurl}}/docs/testing/code/)
-- [Keyboard navigation testing]({{site.baseurl}}/docs/testing/keyboard/)
-- [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/)
-- [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/)
+The accessibility-ready program for WordPress:
+- [About the accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/about-accessibility-ready/).
 
 Standards and best practice:  
-- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/)
+- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Content and images.
+- [Readability]({{site.baseurl}}/docs/topics/content/readability/) in Content and images.
+- [Disappearing toast notifications]({{site.baseurl}}/docs/topics/design/avoid/toasts/) in Design patterns to avoid.

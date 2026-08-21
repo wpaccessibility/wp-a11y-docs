@@ -10,7 +10,7 @@ description: Make the tab order of the keyboard focus predictable and sequential
 
 Make the tab order of the keyboard focus predictable and sequential. Then keyboard users understand better how to navigate through menus, forms and the links and other interactive elements in a web page.
 
-Elements that get keyboard focus natively are `<a>` or `<area>` with a href attribute, `<button>`, `<iframe>`, `<input>` including checkboxes and radio buttons, `<object>`, `<select>`, `<textarea>`, and the `<summary>` element that provides the summary for a `<details>` element. Including elements with the [contenteditable attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable). You do not need to add a tabindex to these elements.
+Elements that get keyboard focus natively are `<a>` or `<area>` with a `href` attribute, `<button>`, `<iframe>`, `<input>` including checkboxes and radio buttons, `<object>`, `<select>`, `<textarea>`, and the `<summary>` element that provides the summary for a `<details>` element. Including elements with the [contenteditable attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/contenteditable). You do not need to add a tabindex to these elements.
 
 ## About tabindex
 
@@ -111,6 +111,12 @@ Maintaining a meaningful and predictable focus order is necessary to meet the WC
 
 - [1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence) (Level A).
 - [2.4.3 Focus Order](https://www.w3.org/WAI/WCAG22/quickref/#focus-order) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+- [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Avoid using a positive tabindex on a form field]({{site.baseurl}}/docs/topics/forms/tabindex/) in Standards and best practice, Web forms.
 
 {: .resource-h3}
 ### Other resources

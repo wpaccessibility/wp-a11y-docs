@@ -29,25 +29,29 @@ Verification methods:
 
 [JAWS Screen Reading Software](https://support.freedomscientific.com/Downloads/JAWS), by Freedom Scientific, is a subscription-based screen reader for Windows. Life hack: you can run [JAWS in a 40-minute demo-mode](https://www.freedomscientific.com/training/enterprise/activating-software-licenses/) for free for testing. After that you need to reboot your system to run JAWS in demo-mode again.
 
-[Narrator for Windows](https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator), by Microsoft, is built into Windows. Use Narrator in the browser Edge for website testing.
+[Narrator for Windows](https://support.microsoft.com/en-us/accessibility/windows/narrator/complete-guide-to-narrator), by Microsoft, is built into Windows. Use Narrator in the browser Edge for website testing. 
 
-[TalkBack](https://support.google.com/accessibility/android/answer/6283677?hl=en) is built into Android, and is the most commonly available screen reader for Android-based phones. It is a full-fledged screen reader, but performance will vary widely depending on your phone hardware.
+[TalkBack](https://support.google.com/accessibility/android/answer/6283677?hl=en) is built into Android and is the most commonly available screen reader for Android-based phones. It is a full-fledged screen reader, but performance will vary widely depending on your phone hardware.
 
 [VoiceOver](https://www.apple.com/voiceover/) is built into macOS and iOS. Use VoiceOver in the browser Safari for website testing. While we know that many developers work primarily on macOS, testing only with Apple’s VoiceOver is not enough in some cases. VoiceOver, while fairly common, has some non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.
 
 The screen readers [ChromeVox for Chromebook](https://support.google.com/chromebook/answer/7031755?hl=en) and [Orca](https://orca.gnome.org/) for GNOME don’t perform well enough as a screen reader, at this moment, to give representative test information.
 
+{: .info .callout }
+**Note**: Although this page is about web content, a quick note for PDF tests: results can differ between screen readers in combination with PDF readers. For example, the NVDA/Acrobat combination announces more information than Preview/VoiceOver. Investigate this before you test PDFs with a screen reader.
+
 ## Resources
 
 There are many excellent articles on how to use and test with a screen reader. Keep in mind that the best screen reader testing is by users who use a screen reader regularly for their interactions with the web; you can do your own testing, but it is not a substitute for real user tests.
 
-- [Testing with Screen Readers: Questions and Answers](https://webaim.org/articles/screenreader_testing/), on WebAIM.
+- [What Can't I Press](https://what-cant-i-press.app/), keyboard commands reserved by JAWS, NVDA, Narrator, VoiceOver, and Orca, by Eric Bailey.
+- [Testing with Screen Readers: Questions and Answers](https://webaim.org/articles/screenreader_testing/) on WebAIM.
 - [Screen reader keyboard shortcuts and gestures](https://dequeuniversity.com/screenreaders/) by Deque university.
-- [Basic screen reader commands for accessibility testing](https://vispero.com/resources/basic-screen-reader-commands-for-accessibility-testing/), by Léonie Watson.
-- [Five Screen Reader Accessibility Tests Your QA Team Should Do](https://vispero.com/resources/five-screen-reader-accessibility-tests-your-qa-team-should-do/), An introduction to fundamental screen reader tests by Charlie Pike.
-- [Using NVDA to Evaluate Web Accessibility](https://webaim.org/articles/nvda/), on WebAIM.
-- [Using JAWS to Evaluate Web Accessibility](https://webaim.org/articles/jaws/), on WebAIM.
-- [Using Narrator and Dev Mode](https://learn.microsoft.com/en-us/shows/one-dev-minute/using-narrator-dev-mode), by Microsoft.
-- [Using VoiceOver to Evaluate Web Accessibility](https://webaim.org/articles/voiceover/), on WebAIM.
-- [VoiceOver cheat sheet](https://pauljadam.com/demos/iosvocheatsheet.html), by Paul J. Adam.
-- [VoiceOver Getting Started](https://help.apple.com/voiceover/info/guide/10.8/English.lproj/), by Apple.
+- [Basic screen reader commands for accessibility testing](https://vispero.com/resources/basic-screen-reader-commands-for-accessibility-testing/) by Léonie Watson.
+- [Five Screen Reader Accessibility Tests Your QA Team Should Do](https://vispero.com/resources/five-screen-reader-accessibility-tests-your-qa-team-should-do/), an introduction to fundamental screen reader tests by Charlie Pike.
+- [Using NVDA to Evaluate Web Accessibility](https://webaim.org/articles/nvda/) on WebAIM.
+- [Using JAWS to Evaluate Web Accessibility](https://webaim.org/articles/jaws/) on WebAIM.
+- [Using Narrator and Dev Mode](https://learn.microsoft.com/en-us/shows/one-dev-minute/using-narrator-dev-mode), a short demo video by Microsoft.
+- [Using VoiceOver to Evaluate Web Accessibility](https://webaim.org/articles/voiceover/) on WebAIM.
+- [VoiceOver cheat sheet](https://pauljadam.com/demos/iosvocheatsheet.html) by Paul J. Adam.
+- [VoiceOver Getting Started](https://help.apple.com/voiceover/info/guide/10.8/English.lproj/) by Apple.

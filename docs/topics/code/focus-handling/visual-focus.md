@@ -89,6 +89,12 @@ button:focus-visible {
 - [1.4.11 Non-Text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (Level AA).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+- [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Styling focus and hover states of interactive HTML elements]({{site.baseurl}}/docs/topics/design/focus-hover/) in Standards and best practice, Design and user experience.
+
+{: .resource-h3}
 ### Other resources
 
 - [Beautiful focus outlines](https://medienbaecker.com/articles/focus-outlines) by Thomas Günther.

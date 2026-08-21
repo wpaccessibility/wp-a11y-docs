@@ -1,0 +1,101 @@
+{%- comment -%}
+  Include as: {%- include components/children_nav-sitemap.html -%}
+  Depends on: page, site, nav_breadcrumbs.
+  Results in: HTML for the children-navigation component.
+  Includes: components/nav/sorted.html.
+  Overwrites:
+    nav_ancestor_links, nav_top_node_titles, nav_child_candidates, nav_children,
+    nav_child, nav_child_ok, nav_child_ancestor, nav_sorted.
+{%- endcomment -%}
+
+{%- comment -%}
+  Whether a page has any children is checked efficiently by inspecting the cached
+  site_nav. If the page has no children, nav_children is set to an empty array;
+  otherwise nav_children is left unset. (The site_nav is rendered the first time
+  it is included, and that may overwrite various variables.)
+{%- endcomment -%}
+
+  {%- if page.has_children == false -%}
+    {%- assign nav_children = "" | split: "" -%}
+  {%- else -%}
+
+  {%- capture site_nav -%}
+  {%- include_cached components/site_nav.html all=true -%}
+  {%- endcapture -%}
+
+  {%- assign nav_children = nil -%}
+
+  {%- capture nav_list_link -%}
+  <a href="{{ page.url | relative_url }}">
+  {%- endcapture -%}
+
+  {%- capture nav_list_simple -%}
+  <ul>
+  {%- endcapture -%}
+
+
+{%- endif -%}
+
+{%- unless nav_children -%}
+
+  {%- comment -%}
+    The layout is assumed to include components/breadcrumbs.html before this file,
+    otherwise it needs to be included here.
+  {%- endcomment -%}
+
+
+  {%- assign nav_parenthood = site[page.collection] | default: site.html_pages
+    | where_exp: "item", "item.title != nil" | group_by: "parent" -%}
+
+  {%- assign nav_top_nodes = nav_parenthood
+      | where_exp: "item", "item.name == ''" | map: "items" | first -%}
+
+  {% assign nav_top_node_titles = nav_top_nodes | map: "title" -%}
+
+  {%- include components/nav/children.html node=page ancestors=nav_ancestors all=true -%}
+
+{%- endunless -%}
+
+{%- if nav_children.size >= 1 -%}
+
+  {%- if page.child_nav_order == 'desc' or page.child_nav_order == 'reversed' -%}
+    {%- assign nav_children = nav_children | reverse -%}
+  {%- endif -%}
+
+<nav aria-label="Related content" class="toc">
+
+<h2 class="no_toc" id="table-of-contents">Pages in: {{ page.title }}</h2>
+<ul role="list">
+  {% for nav_child in nav_children %}
+  <li>
+    <h3>
+      <a href="{{ nav_child.url | relative_url }}">{{ nav_child.title }}</a>
+    </h3>
+    <p>{{ nav_child.description }}</p>
+  </li>
+  {% endfor %}
+
+</ul>
+
+  {% if page.parent %}
+  {% assign introPage = site.pages | where: "title", page.parent | first %}
+
+    <p>
+      <span aria-hidden="true">&larr;</span> <a href="{{ introPage.url | relative_url }}">Back to: {{ introPage.title }}</a>
+    </p>
+
+  {% else %}
+
+    <p>
+      <span aria-hidden="true">&larr;</span> <a href="{{ site.url | relative_url }}">Back to: Home</a>
+    </p>
+
+  {% endif %}
+
+</nav>
+
+{% else %}
+
+ {% include components/siblings.html %}
+
+{%- endif -%}
