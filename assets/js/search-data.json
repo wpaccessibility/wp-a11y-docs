@@ -2354,7 +2354,7 @@
     "doc": "Feedback on dynamic changes",
     "title": "Resources",
     "description": "The explanation of wp.a11y.speak.",
-    "content": "Related pages in this documentation . | Screen reader testing in Test for accessibility. | Provide feedback to screen reader users on form errors in Standards and best practice, Webforms. | . Other resources . | WordPress speaks with wp.a11y.speak by Sami Keijonen, explanation, examples in GitHub and a demo site | Let WordPress Speak, new in WordPress 4.2 by Joe Dolson and Andrea Fercia, introducing and explaining the method | The NPM Module @wordpress/a11y that has the “speak” method that allows you to easily announce dynamic interface updates to screen readers using ARIA live regions. This module is inspired by the speak function in wp-a11y.js | Live Region Support by Adrian Roselli. | . ",
+    "content": "Related pages in this documentation . | Provide feedback to screen reader users on form errors in Standards and best practice, Webforms. | Disappearing toast notifications in Standards and best practice, Design &amp; user experience. | Screen reader testing in Test for accessibility. | . Other resources . | The NPM Module @wordpress/a11y on npmjs.com. The “speak” method that allows you to easily announce dynamic interface updates to screen readers using ARIA live regions. This module is inspired by the speak function in wp-a11y.js. | @wordpress/a11y package in Accessibility utilities for WordPress, Block Editor Handbook. | Let WordPress Speak, new in WordPress 4.2 by Joe Dolson and Andrea Fercia, introducing and explaining the method. | WordPress speaks with wp.a11y.speak by Sami Keijonen, explanation, examples in GitHub and a demo site. | Live Region Support by Adrian Roselli. | . ",
     "url": "/docs/topics/code/dynamic-changes/#resources",
     "relUrl": "/docs/topics/code/dynamic-changes/#resources"
   },"337": {
@@ -3019,7 +3019,7 @@
     "doc": "Home",
     "title": "New and updated content",
     "description": "Accessibility Knowledge Base for WordPress users and creators.",
-    "content": "In August 2026: . The accessibility-ready program for WordPress: . | About the accessibility-ready program. | . Standars and best practice: . | Alternative text for images in the content in Content and images. | Readability in Content and images. | . ",
+    "content": "In August 2026: . The accessibility-ready program for WordPress: . | About the accessibility-ready program. | . Standards and best practice: . | Alternative text for images in the content in Content and images. | Readability in Content and images. | Disappearing toast notifications in Design patterns to avoid. | . ",
     "url": "/#new-and-updated-content",
     "relUrl": "/#new-and-updated-content"
   },"432": {
@@ -4234,209 +4234,265 @@
     "url": "/docs/accessibility-ready/testing-themes/theme-testing-workflow/#stop-testing-when-the-outcome-is-clear",
     "relUrl": "/docs/accessibility-ready/testing-themes/theme-testing-workflow/#stop-testing-when-the-outcome-is-clear"
   },"605": {
+    "doc": "Disappearing toast notifications",
+    "title": "Patterns to avoid: Disappearing toast notifications",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": "There are different ways to dynamically provide a user with information. Methods might include using a banner, a snackbar, or a toast. What are the differences, and what is important to ensure all users get the same information? . ",
+    "url": "/docs/topics/design/avoid/toasts/#patterns-to-avoid-disappearing-toast-notifications",
+    "relUrl": "/docs/topics/design/avoid/toasts/#patterns-to-avoid-disappearing-toast-notifications"
+  },"606": {
+    "doc": "Disappearing toast notifications",
+    "title": "Banners, snackbars, and toasts",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": "What is the difference? . | A banner is a message of one or more paragraphs that appears on top of the screen and stays there until dismissed by the user. It can contain actions such as Close, Undo, or Retry, as well as links. | A snackbar is a short message that appears at the bottom of the screen or close to the user’s focus and can contain one or more actions. A snackbar preferably stays on screen until dismissed by the user. | A toast is a short message that appears on screen and disappears after a few seconds. | . ",
+    "url": "/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts",
+    "relUrl": "/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts"
+  },"607": {
+    "doc": "Disappearing toast notifications",
+    "title": "Accessibility concerns of toasts",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": "In order to receive the message in a toast, the user must notice it appear on the screen and have enough time to read it. Because a toast notification typically appears in a part of the page unrelated to where the user is interacting and disappears only for a few seconds, the user may not have enough time to notice it. Chances are that the user is busy with another task on the page and misses the message altogether. Also, not everyone reads fast; the reader may see the message too late or doesn’t have enough time to read what it says. The disappearing message cannot be read again; the information is lost after a few seconds. Example: the ‘publish’ button in WordPress is in the upper right corner, but triggers a toast notification in the lower left corner. This distance increases the likelihood that users will miss the notification. Delaying the disappearance of the message on hover or focus can help, but the user must know this is possible, and a keyboard user may not have enough time to tab to the toast before it disappears. If a user is zoomed in the messages may fall outside the viewport or be overlapped by other elements. Another concern is that screen reader users won’t receive the message at all if it isn’t announced using, for example, aria-live=\"polite\" or role=\"status\". Adrian Roselli wrote an extensive article Defining ‘Toast’ Messages about its accessibility issues. These are not only accessibility concerns but also usability issues. How many days of my life have I wasted in wait to get a confirmation for an action only to see in the corner of my eye on my 27-inch screen that a toast message has just disappeared? . Please, for the love of kittens: Stop using toast messages. Thank you. – Eric Eggert Mastodon . ",
+    "url": "/docs/topics/design/avoid/toasts/#accessibility-concerns-of-toasts",
+    "relUrl": "/docs/topics/design/avoid/toasts/#accessibility-concerns-of-toasts"
+  },"608": {
+    "doc": "Disappearing toast notifications",
+    "title": "How to provide dynamic information",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": "The best way to dynamically provide a user with information is to use a message component that stays on screen. Let the user close the status message manually or let it disappear when the user leaves the page or when it’s no longer valid. A common pattern is to add messages to a region in a consistent place, for example, at the top of the screen, close to the previous user interaction, or, for form error messages, just above the form. Test if the message stays visible when a user zooms in or enlarges the text by using reflow or text only. Announce a dynamically generated message with, for example, aria-live=\"polite\" or role=\"status\" to inform the screen reader user too. For WordPress core, you can use wp.a11y.speak() and for the Block editor speak() to announce the message. The topic Feedback on dynamic changes provides you with more information on how to do this in WordPress. Then you are ensured all users will notice the information and have time enough to read and even re-read it. ",
+    "url": "/docs/topics/design/avoid/toasts/#how-to-provide-dynamic-information",
+    "relUrl": "/docs/topics/design/avoid/toasts/#how-to-provide-dynamic-information"
+  },"609": {
+    "doc": "Disappearing toast notifications",
+    "title": "Summarized",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": "Make sure that: . | The message always appears in a consistent and easy-to-discover position on the screen. | The message stays on screen until the user dismisses it, or after a page reload. | The message isn’t overlapped by other elements or falls outside the viewport when the user zooms in or enlarges the text. | The message is announced by a screen reader. | . ",
+    "url": "/docs/topics/design/avoid/toasts/#summarized",
+    "relUrl": "/docs/topics/design/avoid/toasts/#summarized"
+  },"610": {
+    "doc": "Disappearing toast notifications",
+    "title": "Banners, snackbars, and toasts in WordPress code",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": "WordPress core provides a few options for displaying dynamic messages; when you use these, test for the accessibility issues mentioned above first. To print admin screen notices use: do_action( ‘admin_notices’ ). For example: . add_action( 'admin_notices', 'wpa11y_do_admin_notice' ); /** * Output an admin notice with `role=\"alert\"`, * so it will be announced by assistive technology. */ function wpa11y_do_admin_notice() { $message = __( 'Your message will be output.', 'wp-a11y' ); wp_admin_notice( $message, array( 'type' =&gt; 'error', 'attributes' =&gt; array( 'role', 'alert' ), ) ); } . For Gutenberg: . | Notice, to communicate prominent messages to the user. | Snackbar, to communicate low-priority, non-interruptive messages to the user. Note: set explicitDismiss to true. | . Examples in WordPress of dynamic messages . Update a theme . Updating themes in the WordPress Admin is done well; the new message is announced by a screen reader and is easy to spot. After pressing the link “Update now”, the message is replaced by “Updated!”. The screen reader feedback is added to the a11y-speak-polite region in the HTML at the bottom of the page with aria-live=”polite”: . &lt;div id=\"a11y-speak-polite\" class=\"a11y-speak-region\" style=\"position:absolute;margin:-1px;padding:0;height:1px;width:1px;overflow:hidden;clip-path:inset(50%);border:0;word-wrap:normal !important;\" aria-live=\"polite\" aria-relevant=\"additions text\" aria-atomic=\"true\"&gt; Update completed successfully. &lt;/div&gt; . Update a post . After updating a post, the snackbar “Post updated” with a “View Post” link appears at the bottom of the page for a few seconds and then disappears. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear. ",
+    "url": "/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts-in-wordpress-code",
+    "relUrl": "/docs/topics/design/avoid/toasts/#banners-snackbars-and-toasts-in-wordpress-code"
+  },"611": {
+    "doc": "Disappearing toast notifications",
+    "title": "Resources",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": "WCAG Success Criteria related to banners, snackbars, and toasts . | 1.4.4 Resize Text (Level AA). | 1.4.10 Reflow (Level AA). | 2.2.1 Timing Adjustable (Level A). | 2.2.3 No Timing (Level AAA). | 4.1.3 Status Messages (Level AA). | . Related pages in this documentation . | Feedback on dynamic changes in Standards and best practice, Frontend code. | Provide feedback to screen reader users on form errors in Standards and best practice, Web forms. | Screen reader testing in Test for accessibility. | . Other resources . | Defining ‘Toast’ Messages by Adrian Roselli. | Accessible notifications and messages: Toasts on Primer, the design system for GitHub. | A toast to an accessible toast by Scott O’Hara. | Toast Notification Accessibility by Design System Problems. | Toasts, Snackbars, and WCAG Compliance by Arpita Banerjee. | Snackbar vs toast: decoding the subtle differences in design systems by Hizkia St. | Toast vs Snackbar vs Banner: Which One Should You Use? on Supercharge design. | . ",
+    "url": "/docs/topics/design/avoid/toasts/#resources",
+    "relUrl": "/docs/topics/design/avoid/toasts/#resources"
+  },"612": {
+    "doc": "Disappearing toast notifications",
+    "title": "Disappearing toast notifications",
+    "description": "In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.",
+    "content": " ",
+    "url": "/docs/topics/design/avoid/toasts/",
+    "relUrl": "/docs/topics/design/avoid/toasts/"
+  },"613": {
     "doc": "Knowledge resources",
     "title": "Knowledge resources and newsletters on web accessibility",
     "description": "Knowledge resources and newsletters on web accessibility.",
     "content": " ",
     "url": "/docs/start/training/training-resources/#knowledge-resources-and-newsletters-on-web-accessibility",
     "relUrl": "/docs/start/training/training-resources/#knowledge-resources-and-newsletters-on-web-accessibility"
-  },"606": {
+  },"614": {
     "doc": "Knowledge resources",
     "title": "Knowledge resources",
     "description": "Knowledge resources and newsletters on web accessibility.",
     "content": ". | A11Y Style Guide by Carie Fisher. | Design and Develop Overview by the W3C. Guidance for writing, designing, and developing for accessibility. | MDN Resources for Developers, documentation about CSS, HTML, and JavaScript. MDN is an open-source, collaborative project by Mozilla, in partnership with a global community of volunteers and partners. | Nielsen Norman Group, provides research-based, results-driven UX guidance and training. | WebAIM articles and resources (web accessibility in mind) is a US nonprofit organization that focuses on web accessibility. They provide resources and guides and also well known for their contrast checker tool and regular surveys of screen reader use. | Vispero resources, provides resources on web accessibility. | NL Design System guidelines, Dutch text, guidelines for developing digital services and an overview of WCAG in plain language. | . ",
     "url": "/docs/start/training/training-resources/",
     "relUrl": "/docs/start/training/training-resources/"
-  },"607": {
+  },"615": {
     "doc": "Knowledge resources",
     "title": "Newsletters",
     "description": "Knowledge resources and newsletters on web accessibility.",
     "content": ". | The WebAIM Newsletter. Monthly news and updates on web accessibility issues. The newsletter will include featured articles, monthly tips, resources, and questions from WebAIM’s discussion forum. | A11yWeekly by David A. Kennedy. A weekly dose of web accessibility. | Nic’s accessibility thoughts by Nic Steenhout. Accessibility news and real talk about digital inclusion. | Monthly-ish newsletter by Eric Eggert, Monthly-ish newsletter will keep you up to date with interesting facts and info about what’s going on in accessibility. | Focus State, a main and also WordPress focussed accessibility newsletter by Equalize Digital. | . Do you know a good resource to add to this list? Please let us know. ",
     "url": "/docs/start/training/training-resources/#newsletters",
     "relUrl": "/docs/start/training/training-resources/#newsletters"
-  },"608": {
+  },"616": {
     "doc": "Underlined links in text",
     "title": "Underlined links in text",
     "description": "Accessibility-ready theme requirements for how to indicate links in text",
     "content": " ",
     "url": "/docs/accessibility-ready/theme-guidelines/underlined-links/",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/underlined-links/"
-  },"609": {
+  },"617": {
     "doc": "Underlined links in text",
     "title": "Basic principle",
     "description": "Accessibility-ready theme requirements for how to indicate links in text",
     "content": "Links within large sections of text (e.g., post content or comments) must be underlined. When links appear within a larger body of block-level content, they must be clearly distinguishable from surrounding content. Links in navigation-like contexts (e.g. menus, lists of upcoming posts in widgets, grouped post meta data) do not need to be specifically distinguished from surrounding content. The underline is the only accepted method of indicating links within content. Bold, italicized, or color-differentiated text is ambiguous and will not pass. Underlines should disappear on hover or there should be some other visual change on hover that does not rely on color alone to indicate if the link is being hovered. ",
     "url": "/docs/accessibility-ready/theme-guidelines/underlined-links/#basic-principle",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/underlined-links/#basic-principle"
-  },"610": {
+  },"618": {
     "doc": "Underlined links in text",
     "title": "Testing",
     "description": "Accessibility-ready theme requirements for how to indicate links in text",
     "content": "Tools: Visual inspection, mouse. | When using the Theme Unit Test data, navigate to the “Markup: HTML Tags and Formatting” page. | Look at the examples for links within post content and verify that they are underlined. | Hover over the link with your mouse and ensure there is a change to indicate the over state that does not rely on color alone (e.g., removing the underline, adding a thicker underline or icon, etc.) | Navigate to the “Page with comments” page. | Look at the example comments and verify that links are underlined and that the underline disappears on hover. | If there are sidebars, add a text widget or paragraph block to a sidebar and add a link within the widget or block. | Verify that links in a text widget are underlined and that the underline disappears on hover. | If there is an editable footer (via widgets or blocks), add a link in a paragraph within the footer. | Verify that links in footer paragraphs are underlined and that the underline disappears on hover. | Review the overall design of the theme to identify other links contained within text blocks that may also need underlines. | . Note: The WordPress block editor generates button links that may not have underlines. It is not required that themes force underlines on block-generated button links, so long as there is styling differentiating them from plain text. ",
     "url": "/docs/accessibility-ready/theme-guidelines/underlined-links/#testing",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/underlined-links/#testing"
-  },"611": {
+  },"619": {
     "doc": "Underlined links in text",
     "title": "Resources",
     "description": "Accessibility-ready theme requirements for how to indicate links in text",
     "content": "WCAG Success Criteria for underlined links in text . Underlining links in text is the best way to meet WCAG success criterion 1.4.1 Use of Color (Level A). Related pages in this documentation . Styling links in Standards and best practice, Design and user experience. ",
     "url": "/docs/accessibility-ready/theme-guidelines/underlined-links/#resources",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/underlined-links/#resources"
-  },"612": {
+  },"620": {
     "doc": "No unexpected changes of context",
     "title": "No unexpected changes of context",
     "description": "Requirements for changes of context in accessibility-ready themes",
     "content": " ",
     "url": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/"
-  },"613": {
+  },"621": {
     "doc": "No unexpected changes of context",
     "title": "Basic principle",
     "description": "Requirements for changes of context in accessibility-ready themes",
     "content": "Websites must not change context, such as navigating to a new page, submitting a form, or opening new windows, without warning or user initiation. Unexpected changes can disorient users, especially those with cognitive disabilities or who rely on screen readers or keyboard navigation. Any context changes should be clearly indicated and only occur as a direct result of a deliberate user action. This helps maintain user control and predictability throughout the experience. ",
     "url": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/#basic-principle",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/#basic-principle"
-  },"614": {
+  },"622": {
     "doc": "No unexpected changes of context",
     "title": "Testing",
     "description": "Requirements for changes of context in accessibility-ready themes",
     "content": "Tools: keyboard, browser inspector . | For each template, make a list of all interactive elements, such as links, buttons, inputs, and selects. | Use the Tab key to navigate to each element. | Verify that when the keyboard focus reaches the elements, there are no unexpected page loads, form submissions, or focus shifts. | For radio or checkbox inputs, use the tab key to reach the first input in the group, then use the arrow keys to move through all available options in the group. | Verify that when using arrow keys to switch between radio and checkbox inputs does not cause unexpected page loads, form submissions, or focus shifts. | For radio or checkbox inputs or &lt;select&gt; dropdowns, use the return/enter key or space bar to change the selected option. | Verify that choosing an input (radio or checkbox field) or &lt;select&gt; option does not automatically submit the form, reload the page, or trigger a major layout or content change without confirmation. | . ",
     "url": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/#testing",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/#testing"
-  },"615": {
+  },"623": {
     "doc": "No unexpected changes of context",
     "title": "Resources",
     "description": "Requirements for changes of context in accessibility-ready themes",
     "content": "WCAG Success Criteria for . Avoiding unexpected changes of context is necessary to meet the WCAG success criteria: . | 3.2.1 On Focus (Level A). | 3.2.2 On Input (Level A). | . Related pages in this documentation . Predictable behavior on input, focus, and on hover in Standards and best practice, Frontend code. ",
     "url": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/#resources",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/#resources"
-  },"616": {
+  },"624": {
     "doc": "Use of color",
     "title": "Using color",
     "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": "Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example, . | Error, success, or notification messages, more info in Write out an error message in text. | Links in the content, more info in Styling links. | Active, hover or focus states, more info in Styling focus and hover states of interactive HTML elements. | Display information updates. | . Use additional styling to indicate types of information including a change of shape or decoration. ",
     "url": "/docs/topics/design/color/use-of-color/#using-color",
     "relUrl": "/docs/topics/design/color/use-of-color/#using-color"
-  },"617": {
+  },"625": {
     "doc": "Use of color",
     "title": "Examples",
     "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": "Correct . Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white: . Incorrect . Color used as the only indicator for information or functionality: . The easiest way to check whether your website may be usable by color-blind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
     "url": "/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
-  },"618": {
+  },"626": {
     "doc": "Use of color",
     "title": "Resources",
     "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": "WCAG Success Criteria for the use of color . | 1.4.1 Use of Color (level A). | 1.4.11 Non-text Contrast (level AA). | . Related pages in this documentation . | Sufficient color contrast of text and UI controls in the Theme guidelines for the WordPress accessibility-ready program. | Underlined links in text in the Theme guidelines for the WordPress accessibility-ready program. | . ",
     "url": "/docs/topics/design/color/use-of-color/#resources",
     "relUrl": "/docs/topics/design/color/use-of-color/#resources"
-  },"619": {
+  },"627": {
     "doc": "Use of color",
     "title": "Use of color",
     "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": " ",
     "url": "/docs/topics/design/color/use-of-color/",
     "relUrl": "/docs/topics/design/color/use-of-color/"
-  },"620": {
+  },"628": {
     "doc": "Provide valid values",
     "title": "Provide valid values for a form field",
     "description": "Provide valid values for an input field in the description.",
     "content": "Provide valid values for an input field (for example, date or password requirements) in the description and not only in the placeholder. Also consider whether it is really important that, for example, a date of birth or phone number must meet exact input requirements. If you can reformat the value provided to meet your internal needs, then it should not matter how the user formats the data. ",
     "url": "/docs/topics/forms/help/valid-values/#provide-valid-values-for-a-form-field",
     "relUrl": "/docs/topics/forms/help/valid-values/#provide-valid-values-for-a-form-field"
-  },"621": {
+  },"629": {
     "doc": "Provide valid values",
     "title": "Resources",
     "description": "Provide valid values for an input field in the description.",
     "content": "WCAG Success Criteria for helpful instructions . Helping users to understand better what they need to fill out is necessary to meet the WCAG success criterion 3.3.2 Labels or Instructions (Level AA). Related documentation . | Placeholders | Input field and description | Description with a fieldset | . Other resources . | NL Design System Guidelines for web forms (Dutch content). | . ",
     "url": "/docs/topics/forms/help/valid-values/#resources",
     "relUrl": "/docs/topics/forms/help/valid-values/#resources"
-  },"622": {
+  },"630": {
     "doc": "Provide valid values",
     "title": "Provide valid values",
     "description": "Provide valid values for an input field in the description.",
     "content": " ",
     "url": "/docs/topics/forms/help/valid-values/",
     "relUrl": "/docs/topics/forms/help/valid-values/"
-  },"623": {
+  },"631": {
     "doc": "Visual focus",
     "title": "Visibility of the keyboard focus",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Make sure a keyboard user can clearly see where the focus is while navigating through a web page. Without a visible focus indication, it is very easy for a sighted user to get lost and abandon the page. There are two ways to show an interactive HTML element has keyboard focus: . | keep the default outline added by the browser intact; | design your own focus indicator. | . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#visibility-of-the-keyboard-focus",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#visibility-of-the-keyboard-focus"
-  },"624": {
+  },"632": {
     "doc": "Visual focus",
     "title": "Keep the outline of the browser intact",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Most modern browsers have strong default :focus styling, making it easy for a user to tab from control to control and see clearly where they are on the page. The advantage of keeping that outline is that you don’t have to do anything. The browser handles it all. This also passes WCAG Success criterion 2.4.7 Focus Visible, as explained in Technique G149: Using user interface components that are highlighted by the user agent when they receive focus. The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to see with your design. ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#keep-the-outline-of-the-browser-intact",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#keep-the-outline-of-the-browser-intact"
-  },"625": {
+  },"633": {
     "doc": "Visual focus",
     "title": "Design your own focus indicator",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "A more reliable way to add a focus indicator is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode. When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color. Provide an outline or border with: . | a thickness of at least 2 CSS pixels; | a color contrast ratio of at least 3:1 against adjacent colors; | a color contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states. | . The topic Styling hover and focus, in the section Design and user experience of this documentation, also addresses the design guidelines of keyboard focus and mouse hover. ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#design-your-own-focus-indicator",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#design-your-own-focus-indicator"
-  },"626": {
+  },"634": {
     "doc": "Visual focus",
     "title": "CSS :focus-visible",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": ":focus-visible is a CSS pseudo-class that only applies focus styles when users navigate with the keyboard. Mouse users won’t see a focus outline when they click on an element. Read more in MDN: focus-visible. button:focus-visible { outline: 2px solid #757575; } . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#css-focus-visible",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#css-focus-visible"
-  },"627": {
+  },"635": {
     "doc": "Visual focus",
     "title": "How to test for visual focus",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Tab through your pages and check if the keyboard focus is visible. If the visual focus indicator is created with custom CSS, check the color contrast. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. How to test with a keyboard is described with Keyboard navigation testing in this documentation. ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#how-to-test-for-visual-focus",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#how-to-test-for-visual-focus"
-  },"628": {
+  },"636": {
     "doc": "Visual focus",
     "title": "Examples",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Don’t: remove the outline without adding custom styling. button { outline: 0; } . Do: add custom styling when you remove the default outline. button { outline: 0; } button:focus-visible { border: 2px solid #757575; } . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#examples",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#examples"
-  },"629": {
+  },"637": {
     "doc": "Visual focus",
     "title": "Resources",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "WCAG Success Criteria for visual focus . | 2.4.7 Focus Visible, (Level AA). | 2.4.13 Focus Appearance (Level AAA). | 1.4.11 Non-Text Contrast (Level AA). | . Related pages in this documentation . | Keyboard navigation support in the Theme guidelines for the WordPress accessibility-ready program. | Styling focus and hover states of interactive HTML elements in Standards and best practice, Design and user experience. | . Other resources . | Beautiful focus outlines by Thomas Günther. | WCAG 2.2 misses the mark on defining visible focus by Eric Eggert. | Avoid Default Browser Focus Styles by Adrian Roselli. | A guide to designing accessible, WCAG-conformant focus indicators by Sara Soueidan. | Managing Focus and Visible Focus Indicators: Practical Accessibility Guidance for the Web by Kirby Tucker. | . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#resources",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#resources"
-  },"630": {
+  },"638": {
     "doc": "Visual focus",
     "title": "Visual focus",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": " ",
     "url": "/docs/topics/code/focus-handling/visual-focus/",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/"
-  },"631": {
+  },"639": {
     "doc": "Write documentation",
     "title": "Write documentation",
     "description": "How to write new content for this documentation.",
     "content": "Alert: Before you start writing new documentation, please let us know that you’d like to work on it, so we can assign the task to you. Content written without contacting the project leads first, will not be reviewed. We keep track of the work on the documentation in the project board WP A11y docs. Tip: Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. To keep all pages in the same structure, please stick to the following formats for a blogpost or an accessibility topic. ",
     "url": "/docs/about/contribute/write/",
     "relUrl": "/docs/about/contribute/write/"
-  },"632": {
+  },"640": {
     "doc": "Write documentation",
     "title": "Content structure of a blogpost",
     "description": "How to write new content for this documentation.",
     "content": ". | Title (65 charters or less) | A short summary in one or two paragraphs | The main content of the blogpost | . ",
     "url": "/docs/about/contribute/write/#content-structure-of-a-blogpost",
     "relUrl": "/docs/about/contribute/write/#content-structure-of-a-blogpost"
-  },"633": {
+  },"641": {
     "doc": "Write documentation",
     "title": "Content structure of an accessibility topic",
     "description": "How to write new content for this documentation.",
     "content": "One page per topic. This makes it easier to read and also to refer to in other documentation. | Title, if possible 65 characters or fewer, including spaces | A short summary in one or two paragraphs | Main content describing what, why, who benefits and how to do this in WordPress (if applicable) | Additional content, depending on the topic, like for example: . | User experience with demos | Quick wins and workarounds | Code examples | Supporting images | Video/Audio with demos | Dos/don’ts | Frequently made mistakes and how to fix them | How to test or refer to checklist | . | Resources . | Related WCAG Success Criteria | Related info in this documentation | Other relevant resources | . | . ",
     "url": "/docs/about/contribute/write/#content-structure-of-an-accessibility-topic",
     "relUrl": "/docs/about/contribute/write/#content-structure-of-an-accessibility-topic"
-  },"634": {
+  },"642": {
     "doc": "Write documentation",
     "title": "Share for review",
     "description": "How to write new content for this documentation.",
