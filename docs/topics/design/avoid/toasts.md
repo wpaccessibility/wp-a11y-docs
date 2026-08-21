@@ -1,5 +1,5 @@
 ---
-title: Disappearing toasts
+title: Disappearing toast notifications
 layout: default
 parent: Patterns to avoid
 description: In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.
@@ -8,9 +8,9 @@ contributors:
   - Rian Rietveld
 ---
 
-# Patterns to avoid: Disappearing toasts
+# Patterns to avoid: Disappearing toast notifications
 
-There are different ways to dynamically provide a user with information. By using a banner, a snackbar, and a toast. What is the difference, and what is important to give all users the same information?
+There are different ways to dynamically provide a user with information. Methods might include using a banner, a snackbar, or a toast. What are the differences, and what is important to ensure all users get the same information?
 
 ## Banners, snackbars, and toasts
 
@@ -18,7 +18,7 @@ What is the difference?
 
 - A **banner** is a message of one or more paragraphs that appears on top of the screen and stays there until dismissed by the user. It can contain actions such as Close, Undo, or Retry, as well as links.
 - A **snackbar** is a short message that appears at the bottom of the screen or close to the user's focus and can contain one or more actions. A snackbar preferably stays on screen until dismissed by the user.
-- A **toast** is only a short message that appears on screen and disappears again after a few seconds.
+- A **toast** is a short message that appears on screen and disappears after a few seconds.
 
 ## Accessibility concerns of toasts
 
@@ -28,11 +28,11 @@ Because a toast disappears, the user must have **enough time** to spot it and th
 
 The disappearing message cannot be read again; the information is lost after a few seconds.
 
-**Pausing** the disappearance of the message on hover or focus can help, but the user must know this is possible, and a keyboard user may not have enough time to tab to the toast before it disappears.
+**Delaying** the disappearance of the message on hover or focus can help, but the user must know this is possible, and a keyboard user may not have enough time to tab to the toast before it disappears.
 
-If a user is **zoomed in** either the messages may fall outside the viewport or may be overlapped by other elements.
+If a user is **zoomed in** the messages may fall outside the viewport or be overlapped by other elements.
 
-Another concern is that **screen reader users** don't receive the message at all when it isn't announced by, for example, `aria-live="polite"` or `role="status"`.
+Another concern is that **screen reader users** won't receive the message at all if it isn't announced using, for example, `aria-live="polite"` or `role="status"`.
 
 Adrian Roselli wrote an extensive article [Defining ‘Toast’ Messages](https://adrianroselli.com/2020/01/defining-toast-messages.html) about its accessibility issues.
 
@@ -85,11 +85,11 @@ For Gutenberg:
 
 Updating themes in the WordPress Admin is done well; the new message is announced by a screen reader and is easy to spot.
 
-![Notication: New version available]({{site.baseurl}}/assets/images/theme-update-now.png)
+![Notification: New version available]({{site.baseurl}}/assets/images/theme-update-now.png)
 
-After pressing the link "Update now" the message is replaced by "Updated!".
+After pressing the link "Update now", the message is replaced by "Updated!".
 
-![Notication: Updated]({{site.baseurl}}/assets/images/theme-updated.png)
+![Notification: Updated]({{site.baseurl}}/assets/images/theme-updated.png)
 
 The screen reader feedback is added to the `a11y-speak-polite` region in the HTML at the bottom of the page with aria-live="polite":
 
@@ -103,7 +103,7 @@ The screen reader feedback is added to the `a11y-speak-polite` region in the HTM
 
 After updating a post, the snackbar "Post updated" with a "View Post" link appears at the bottom of the page for a few seconds and then disappears. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear.
 
-![Notication: Post updated with a link to View Post]({{site.baseurl}}/assets/images/post-updated.png)
+![Notification: Post updated with a link to View Post]({{site.baseurl}}/assets/images/post-updated.png)
 
 ## Resources
 

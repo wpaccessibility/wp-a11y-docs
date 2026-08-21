@@ -96,7 +96,7 @@ speak( 'The message you want to send to the ARIA live region', 'assertive' );
 ### Related pages in this documentation
 
 - [Provide feedback to screen reader users on form errors]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/#screen-reader-feedback-after-submit) in Standards and best practice, Webforms.
-- [Disappearing toasts]({site.baseurl}}/docs/topics/design/avoid/toasts/) in Standards and best practice, Design & user experience.
+- [Disappearing toast notifications]({site.baseurl}}/docs/topics/design/avoid/toasts/) in Standards and best practice, Design & user experience.
 - [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/) in Test for accessibility.
 
 {: .resource-h3}
