@@ -12,7 +12,7 @@
 
 
 
-<title>Disappearing toasts, WP Accessibility Knowledge Base</title>
+<title>Disappearing toast notifications, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-397/assets/css/styles.css">
@@ -304,7 +304,7 @@
 
           <a href="/pr-preview/pr-397/docs/topics/design/avoid/infinite-scroll/" class="nav-list-link">Infinite scroll</a></li><li class="nav-list-item">
 
-          <a href="/pr-preview/pr-397/docs/topics/design/avoid/toasts/" class="nav-list-link">Disappearing toasts</a></li></ul></li></ul></li><li class="nav-list-item">
+          <a href="/pr-preview/pr-397/docs/topics/design/avoid/toasts/" class="nav-list-link">Disappearing toast notifications</a></li></ul></li></ul></li><li class="nav-list-item">
 
           <a href="/pr-preview/pr-397/docs/topics/forms/" class="nav-list-link">Web forms</a><button class="nav-list-expander btn-reset" aria-label="Web forms submenu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true"><use xlink:href="#svg-arrow-right"></use></svg>
@@ -561,7 +561,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/'>Design & user experience</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/avoid/'>Patterns to avoid</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Disappearing toasts</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/'>Design & user experience</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-397/docs/topics/design/avoid/'>Patterns to avoid</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Disappearing toast notifications</li>
     </ol>
 </nav>
 
@@ -570,9 +570,9 @@
 
         <main>
 
-          <h1 id="patterns-to-avoid-disappearing-toasts">Patterns to avoid: Disappearing toasts</h1>
+          <h1 id="patterns-to-avoid-disappearing-toast-notifications">Patterns to avoid: Disappearing toast notifications</h1>
 
-<p>There are different ways to dynamically provide a user with information. By using a banner, a snackbar, and a toast. What is the difference, and what is important to give all users the same information?</p>
+<p>There are different ways to dynamically provide a user with information. Methods might include using a banner, a snackbar, or a toast. What are the differences, and what is important to ensure all users get the same information?</p>
 
 <h2 id="banners-snackbars-and-toasts">Banners, snackbars, and toasts</h2>
 
@@ -581,24 +581,28 @@
 <ul>
   <li>A <strong>banner</strong> is a message of one or more paragraphs that appears on top of the screen and stays there until dismissed by the user. It can contain actions such as Close, Undo, or Retry, as well as links.</li>
   <li>A <strong>snackbar</strong> is a short message that appears at the bottom of the screen or close to the user’s focus and can contain one or more actions. A snackbar preferably stays on screen until dismissed by the user.</li>
-  <li>A <strong>toast</strong> is only a short message that appears on screen and disappears again after a few seconds.</li>
+  <li>A <strong>toast</strong> is a short message that appears on screen and disappears after a few seconds.</li>
 </ul>
 
 <h2 id="accessibility-concerns-of-toasts">Accessibility concerns of toasts</h2>
 
 <p>In order to receive the message in a toast, the user must notice it appear on the screen and have enough time to read it.</p>
 
-<p>Because a toast disappears, the user must have <strong>enough time</strong> to spot it and then read it. Chances are that the user is busy with another task on the page and misses the message altogether. Also, not everyone reads fast; the reader may see the message too late or doesn’t have enough time to read what it says.</p>
+<p>Because a toast notification typically appears in a part of the page unrelated to where the user is interacting and disappears only for a few seconds, the user may not have <strong>enough time</strong> to notice it.</p>
+
+<p>Chances are that the user is busy with another task on the page and misses the message altogether. Also, not everyone reads fast; the reader may see the message too late or doesn’t have enough time to read what it says.</p>
 
 <p>The disappearing message cannot be read again; the information is lost after a few seconds.</p>
 
-<p><strong>Pausing</strong> the disappearance of the message on hover or focus can help, but the user must know this is possible, and a keyboard user may not have enough time to tab to the toast before it disappears.</p>
+<p class="callout example"><strong>Example</strong>: the ‘publish’ button in WordPress is in the upper right corner, but triggers a toast notification in the lower left corner. This distance increases the likelihood that users will miss the notification.</p>
 
-<p>If a user is <strong>zoomed in</strong> either the messages may fall outside the viewport or may be overlapped by other elements.</p>
+<p><strong>Delaying</strong> the disappearance of the message on hover or focus can help, but the user must know this is possible, and a keyboard user may not have enough time to tab to the toast before it disappears.</p>
 
-<p>Another concern is that <strong>screen reader users</strong> don’t receive the message at all when it isn’t announced by, for example, <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>.</p>
+<p>If a user is <strong>zoomed in</strong> the messages may fall outside the viewport or be overlapped by other elements.</p>
 
-<p>Adrian Roselli wrote an extensive article <a href="https://adrianroselli.com/2020/01/defining-toast-messages.html">Defining ‘Toast’ Messages</a> about its accessibility issues.</p>
+<p>Another concern is that <strong>screen reader users</strong> won’t receive the message at all if it isn’t announced using, for example, <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> or <code class="language-plaintext highlighter-rouge">role="status"</code>.</p>
+
+<p class="callout info">Adrian Roselli wrote an extensive article <a href="https://adrianroselli.com/2020/01/defining-toast-messages.html">Defining ‘Toast’ Messages</a> about its accessibility issues.</p>
 
 <p>These are not only accessibility concerns but also usability issues.</p>
 
@@ -638,7 +642,25 @@
 
 <p>WordPress core provides a few options for displaying dynamic messages; when you use these, test for the accessibility issues mentioned above first.</p>
 
-<p>To print admin screen notices: <a href="https://developer.wordpress.org/reference/hooks/admin_notices/">do_action( ‘admin_notices’ )</a>.</p>
+<p>To print admin screen notices use: <a href="https://developer.wordpress.org/reference/hooks/admin_notices/">do_action( ‘admin_notices’ )</a>.</p>
+
+<p>For example:</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">add_action</span><span class="p">(</span> <span class="s1">'admin_notices'</span><span class="p">,</span> <span class="s1">'wpa11y_do_admin_notice'</span> <span class="p">);</span>
+<span class="cd">/**
+ * Output an admin notice with `role="alert"`, 
+ * so it will be announced by assistive technology.
+ */</span>
+<span class="k">function</span> <span class="n">wpa11y_do_admin_notice</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$message</span> <span class="o">=</span> <span class="nf">__</span><span class="p">(</span> <span class="s1">'Your message will be output.'</span><span class="p">,</span> <span class="s1">'wp-a11y'</span> <span class="p">);</span>
+    <span class="nf">wp_admin_notice</span><span class="p">(</span>
+        <span class="nv">$message</span><span class="p">,</span>
+        <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'type'</span>       <span class="o">=&gt;</span> <span class="s1">'error'</span><span class="p">,</span>
+            <span class="s1">'attributes'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span> <span class="s1">'role'</span><span class="p">,</span> <span class="s1">'alert'</span> <span class="p">),</span>
+        <span class="p">)</span>
+    <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <p>For Gutenberg:</p>
 <ul>
@@ -653,11 +675,11 @@
 
 <p>Updating themes in the WordPress Admin is done well; the new message is announced by a screen reader and is easy to spot.</p>
 
-<p><img src="/pr-preview/pr-397/assets/images/theme-update-now.png" alt="Notication: New version available" /></p>
+<p><img src="/pr-preview/pr-397/assets/images/theme-update-now.png" alt="Notification: New version available" /></p>
 
-<p>After pressing the link “Update now” the message is replaced by “Updated!”.</p>
+<p>After pressing the link “Update now”, the message is replaced by “Updated!”.</p>
 
-<p><img src="/pr-preview/pr-397/assets/images/theme-updated.png" alt="Notication: Updated" /></p>
+<p><img src="/pr-preview/pr-397/assets/images/theme-updated.png" alt="Notification: Updated" /></p>
 
 <p>The screen reader feedback is added to the <code class="language-plaintext highlighter-rouge">a11y-speak-polite</code> region in the HTML at the bottom of the page with aria-live=”polite”:</p>
 
@@ -670,7 +692,7 @@
 
 <p>After updating a post, the snackbar “Post updated” with a “View Post” link appears at the bottom of the page for a few seconds and then disappears. The text is announced by a screen reader, but this pattern needs improvement. The message should not disappear.</p>
 
-<p><img src="/pr-preview/pr-397/assets/images/post-updated.png" alt="Notication: Post updated with a link to View Post" /></p>
+<p><img src="/pr-preview/pr-397/assets/images/post-updated.png" alt="Notification: Post updated with a link to View Post" /></p>
 
 <h2 id="resources">Resources</h2>
 
@@ -714,7 +736,7 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> August 19, 2026</li>
+        <li><span>Last updated:</span> August 21, 2026</li>
 
         
 
@@ -726,7 +748,13 @@
         
         <li><span>Contributors:</span>
             
-            Rian Rietveld.
+            Rian Rietveld,
+            
+            
+            Joe Dolson,
+            
+            
+            Gary Jones.
             
             
         </li>
