@@ -6,7 +6,6 @@ description: Similar accessibility rules apply to both PDFs and HTML documents
 nav_order: 6
 contributors:
   - Rian Rietveld
-  - Joke Hoogeduin
   - Ed Boon
 ---
 
