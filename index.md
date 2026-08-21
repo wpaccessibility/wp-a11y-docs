@@ -29,6 +29,7 @@ In August 2026:
 The accessibility-ready program for WordPress:
 - [About the accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/about-accessibility-ready/).
 
-Standars and best practice:  
+Standards and best practice:  
 - [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Content and images.
 - [Readability]({{site.baseurl}}/docs/topics/content/readability/) in Content and images.
+- [Disappearing toast notifications]({{site.baseurl}}/docs/topics/design/avoid/toasts/) in Design patterns to avoid.

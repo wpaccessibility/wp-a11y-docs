@@ -2,10 +2,12 @@
 title: Disappearing toast notifications
 layout: default
 parent: Patterns to avoid
-description: In able to get the message on a toast, the user must notice the message appear on the screen and have time enough to read it. This may not work for all users for disappearing toasts.
+description: In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.
 nav_order: 3
 contributors:
   - Rian Rietveld
+  - Joe Dolson
+  - Gary Jones
 ---
 
 # Patterns to avoid: Disappearing toast notifications
@@ -24,9 +26,14 @@ What is the difference?
 
 In order to receive the message in a toast, the user must notice it appear on the screen and have enough time to read it.
 
-Because a toast disappears, the user must have **enough time** to spot it and then read it. Chances are that the user is busy with another task on the page and misses the message altogether. Also, not everyone reads fast; the reader may see the message too late or doesn't have enough time to read what it says. 
+Because a toast notification typically appears in a part of the page unrelated to where the user is interacting and disappears only for a few seconds, the user may not have **enough time** to notice it.
+
+Chances are that the user is busy with another task on the page and misses the message altogether. Also, not everyone reads fast; the reader may see the message too late or doesn't have enough time to read what it says. 
 
 The disappearing message cannot be read again; the information is lost after a few seconds.
+
+{: .callout .example}
+**Example**: the 'publish' button in WordPress is in the upper right corner, but triggers a toast notification in the lower left corner. This distance increases the likelihood that users will miss the notification.
 
 **Delaying** the disappearance of the message on hover or focus can help, but the user must know this is possible, and a keyboard user may not have enough time to tab to the toast before it disappears.
 
@@ -34,6 +41,7 @@ If a user is **zoomed in** the messages may fall outside the viewport or be over
 
 Another concern is that **screen reader users** won't receive the message at all if it isn't announced using, for example, `aria-live="polite"` or `role="status"`.
 
+{: .callout .info}
 Adrian Roselli wrote an extensive article [Defining ‘Toast’ Messages](https://adrianroselli.com/2020/01/defining-toast-messages.html) about its accessibility issues.
 
 These are not only accessibility concerns but also usability issues.
@@ -72,7 +80,26 @@ Make sure that:
 
 WordPress core provides a few options for displaying dynamic messages; when you use these, test for the accessibility issues mentioned above first.
 
-To print admin screen notices: [do_action( ‘admin_notices’ )](https://developer.wordpress.org/reference/hooks/admin_notices/).
+To print admin screen notices use: [do_action( ‘admin_notices’ )](https://developer.wordpress.org/reference/hooks/admin_notices/).
+
+For example:
+```php
+add_action( 'admin_notices', 'wpa11y_do_admin_notice' );
+/**
+ * Output an admin notice with `role="alert"`, 
+ * so it will be announced by assistive technology.
+ */
+function wpa11y_do_admin_notice() {
+    $message = __( 'Your message will be output.', 'wp-a11y' );
+    wp_admin_notice(
+        $message,
+        array(
+            'type'       => 'error',
+            'attributes' => array( 'role', 'alert' ),
+        )
+    );
+}
+```
 
 For Gutenberg:
 - [Notice](https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src/notice), to communicate prominent messages to the user.
