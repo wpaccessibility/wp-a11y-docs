@@ -95,13 +95,16 @@ speak( 'The message you want to send to the ARIA live region', 'assertive' );
 {: .resource-h3}
 ### Related pages in this documentation
 
-- [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/) in Test for accessibility.
 - [Provide feedback to screen reader users on form errors]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/#screen-reader-feedback-after-submit) in Standards and best practice, Webforms.
+- [Disappearing toast notifications]({site.baseurl}}/docs/topics/design/avoid/toasts/) in Standards and best practice, Design & user experience.
+- [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/) in Test for accessibility.
 
 {: .resource-h3}
 ### Other resources
 
-- [WordPress speaks with wp.a11y.speak](https://foxland.fi/wordpress-speaks-wp-a11y-speak/) by Sami Keijonen, explanation, examples in GitHub and a demo site
-- [Let WordPress Speak, new in WordPress 4.2](https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/) by Joe Dolson and Andrea Fercia, introducing and explaining the method
-- The NPM Module[ @wordpress/a11y](https://www.npmjs.com/package/@wordpress/a11y) that has the “speak” method that allows you to easily announce dynamic interface updates to screen readers using ARIA live regions. This module is inspired by the speak function in wp-a11y.js
+- The NPM Module [@wordpress/a11y](https://www.npmjs.com/package/@wordpress/a11y) on npmjs.com. The “speak” method that allows you to easily announce dynamic interface updates to screen readers using ARIA live regions. This module is inspired by the speak function in wp-a11y.js.
+- [@wordpress/a11y package](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-a11y/) in Accessibility utilities for WordPress, Block Editor Handbook.
+- [Let WordPress Speak, new in WordPress 4.2](https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/) by Joe Dolson and Andrea Fercia, introducing and explaining the method.
+- [WordPress speaks with wp.a11y.speak](https://foxland.fi/wordpress-speaks-wp-a11y-speak/) by Sami Keijonen, explanation, examples in GitHub and a demo site.
 - [Live Region Support](https://adrianroselli.com/2026/01/live-region-support.html) by Adrian Roselli.
+
