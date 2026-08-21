@@ -55,7 +55,7 @@ Creating a pseudo-table for data by using divs and CSS will make the data much h
 ### Correct: a table to show tabular information
 
 ```html
-// A data table in it’s most basic form.
+// A data table in its most basic form.
 <table>
     <caption>The cities of WordCamp Europe</caption>
     <tr>
@@ -92,15 +92,26 @@ The rule of thumb is: the simpler, the better. If your table is going to be very
 
 ## Resources
 
+{: .resource-h3}
+### WCAG Success Criteria for semantic HTML
+
+[1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Semantic HTML]({{site.baseurl}}/docs/topics/code/semantics/) in Standards and best practice, Frontend code.
+
+{: .resource-h3}
+### Other resources
+
 - [Table element reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/table) on developer.mozilla.org
 - A good tutorial on [how to write complex tables](https://www.w3.org/WAI/tutorials/tables/) for the W3C is at WAI/tutorials
-- [Creating Accessible Tables](http://webaim.org/techniques/tables/)
-- [It’s OK to use tables](http://adrianroselli.com/2012/07/its-ok-to-use-tables.html)
+- [Creating Accessible Tables](http://webaim.org/techniques/tables/) on WebAIM.
+- [It’s OK to use tables](http://adrianroselli.com/2012/07/its-ok-to-use-tables.html) by Adrian Roselli.
 
-### Responsive tables
+One of the major limitations to tables is that they are difficult to make **responsive**. There are ways to do it while retaining accessibility:
 
-One of the major limitations to tables is that they are difficult to make responsive. There are ways to do it while retaining accessibility.
-
-- [Accessible, Simple, Responsive Tables](https://css-tricks.com/accessible-simple-responsive-tables/)
-- [A Responsive Accessible Table](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html), by Adrian Roselli
-- [Responsive Tables for Humans, Web Crawlers and Screen Readers](https://manu.ninja/responsive-tables-for-humans-web-crawlers-and-screen-readers)
+- [Accessible, Simple, Responsive Tables](https://css-tricks.com/accessible-simple-responsive-tables/) by Davide Rizzo on CSS Tricks.
+- [A Responsive Accessible Table](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html), by Adrian Roselli.
+- [Responsive Tables for Humans, Web Crawlers and Screen Readers](https://manu.ninja/responsive-tables-for-humans-web-crawlers-and-screen-readers) by Manuel Timelthaler.

@@ -109,6 +109,9 @@
 
         .nav-list-link {
           color: $nav-child-link-color;
+          min-height: 48px;
+          display: flex;
+          align-items: center;
 
           &.active {
             color: var(--color-wa11ypuu-yellow);
@@ -232,6 +235,30 @@
   > li.nav-list-item:nth-child(1)
   > ul.nav-list {
   display: block;
+}
+
+/* Sitemap. */
+.sitemap {
+  margin-top: 1em;
+
+  ul {
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  > ul {
+    padding-left: 0;
+    list-style: none;
+
+    > li > ul > li:last-child {
+      margin-bottom: 2.5em;
+    }
+  }
 }
 
 /* Text meant only for screen readers. */

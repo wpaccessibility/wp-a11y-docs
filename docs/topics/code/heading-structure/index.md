@@ -67,21 +67,27 @@ Using a meaningful heading structure is necessary to meet the WCAG success crite
 - [WCAG 2.4.10 Section Headings](https://www.w3.org/WAI/WCAG22/quickref/#section-headings) (**Level AAA**).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+- [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Using headings in content]({{site.baseurl}}/docs/topics/content/headings/) in Standards and best practice, Content and images.
+
+{: .resource-h3}
 ### Other resources
 
-#### Heading structure in WordPress
+Heading structure in WordPress:
 
 - [How to Properly Use Heading Tags in WordPress (H1-H6 Explained)](https://www.wpbeginner.com/wp-tutorials/how-to-properly-use-heading-tags-in-wordpress-explained/) by WPBeginner.
 - [The Heading Block](https://wordpress.org/documentation/article/heading-block/) on WordPress.org
 
-#### Resources on heading semantics
+Resources on heading semantics:
 
-- [Semantic Structure on WebAIM](https://webaim.org/techniques/semanticstructure/), by WebAIM.
-- [Web Accessibility Tutorials: Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/), by the W3C.
+- [Semantic Structure on WebAIM](https://webaim.org/techniques/semanticstructure/) by WebAIM.
+- [Web Accessibility Tutorials: Headings](https://www.w3.org/WAI/tutorials/page-structure/headings/) by the W3C.
 - [The HTML5 Document Outline](https://developer.paciellogroup.com/blog/2013/10/html5-document-outline/) by Steven Faulkner. 
 - [Accessible heading structure](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/) by Rian Rietveld on the A11y Project.
 
-#### Heading structure best practices
+Heading structure best practices:
 
-- [Web Accessibility Tutorials: Labeling Regions](https://www.w3.org/WAI/tutorials/page-structure/labels/#using-aria-labelledby), by the W3C.
-- [MRW web: Common heading-mistakes](https://mrwweb.com/common-heading-mistakes/), by Mark Root-Wiley.
+- [Web Accessibility Tutorials: Labeling Regions](https://www.w3.org/WAI/tutorials/page-structure/labels/#using-aria-labelledby) by the W3C.
+- [MRW web: Common heading-mistakes](https://mrwweb.com/common-heading-mistakes/) by Mark Root-Wiley.

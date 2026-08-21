@@ -79,14 +79,16 @@ Naming grouped form fields is necessary to meet the WCAG success criteria:
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [3.3.2 Labels or Instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level AA).
 
+{: .resource-h3}
 ### Related pages in this documentation
 
-- [Group form fields]({{site.baseurl}}/docs/topics/forms/fieldsets/).
-- [Fieldset description]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/).
+- [Group form fields]({{site.baseurl}}/docs/topics/forms/fieldsets/) in Standards and best practice, Web forms.
+- [Fieldset description]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/) in Standards and best practice, Web forms.
 
 {: .resource-h3}
 ### Other resources
 
-- W3C: [Grouping Controls](https://www.w3.org/WAI/tutorials/forms/grouping/)
-- NL Design System [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/).
-- MDN: [The Field Set Legend element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend).
+- [Grouping Controls](https://www.w3.org/WAI/tutorials/forms/grouping/) by the W3C.
+- [The Field Set Legend element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/legend) by MDN.
+- [Guidelines for web forms (Dutch content)](https://nldesignsystem.nl/richtlijnen/formulieren/) by the NL Design System.
+

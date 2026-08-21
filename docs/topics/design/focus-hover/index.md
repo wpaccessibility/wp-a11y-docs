@@ -55,6 +55,13 @@ The topic [Visibility of the keyboard focus]({{site.baseurl}}/docs/topics/code/f
 - [1.4.11 Non-Text Contrast](https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast) (Level AA).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+- [Keyboard navigation support]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Sufficient color contrast of text and UI controls]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Visibility of the keyboard focus]({{site.baseurl}}/docs/topics/code/focus-handling/visual-focus/) in Standards and best practice, Frontend code.
+
+{: .resource-h3}
 ### Other resources
 
 - [Beautiful focus outlines](https://medienbaecker.com/articles/focus-outlines) by Thomas Günther.

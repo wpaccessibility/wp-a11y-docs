@@ -33,13 +33,22 @@ In the _Web Accessibility Tutorials_ documentation of the W3C, the [alt text Dec
 
 ## Alt text in WordPress
 
-In WordPress, you an add `alt` text for an image in the Media Library, in the Attachment Details panel for an image. This alt text will be used by default when embedding this image in content.
+In WordPress, you can add the alt text for an image in the Media Library, in the Attachment Details panel for an image. This alt text will be used by default when embedding this image in content.
 
-![Screenshot of the attachment details of the WP A11y wapuu]({{site.baseurl}}/assets/images/attachment-details.png)
+![Screenshot of the attachment details of the WP A11y wapuu]({{site.baseurl}}/assets/images/attachment-details-wp-7-1.png)
 
 When you add an image in the content using the Image Block, make sure the alt text still matches the purpose of the image as you are using it. The alt text for the image can be altered in the Block Settings and will only be used for this block.
 
-![Screenshot of the Image block settings for alt text]({{site.baseurl}}/assets/images/img-block-alt-text.png)
+![Screenshot of the Image block settings for alt text]({{site.baseurl}}/assets/images/img-block-alt-text-wp-7-1.png)
+
+New in WordPress 7.1: When an image is purely decorative and adds no information to the content, you can label the image as decorative. This will prevent the image from being announced by a screen reader.
+
+![Screenshot of the Image block settings for alt text, with the setting checked]({{site.baseurl}}/assets/images/img-block-alt-text-decorative-wp-7-1.png)
+
+To pass WCAG, it's allowed to label an image as decorative if it adds no information to the content.
+The reason to do so is that a decorative image doesn't need to add to the overload of information for screen reader users. 
+
+However, some screen reader users also like to know what's on a decorative image if it adds to the mood of a page. Leonie Watson, a blind accessibility expert, wrote in [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-and-emotion-rich-images/) "emotion rich images are important to blind people, particularly those who once had sight (and that's most of us)".
 
 ## Overall benefits of using a proper alt text
 
@@ -83,8 +92,6 @@ The alt text for a photo of Jane, showing off her dress:
 The alt text for a photo of Jane in her garden:    
 "Jane, in her garden in full bloom.".  
 
-
-
 ## Resources
 
 {: .resource-h3}
@@ -93,11 +100,19 @@ The alt text for a photo of Jane in her garden:
 By giving a meaningful image the proper alternative text, you meet WCAG success criterion [1.1.1 Non-text Content](https://www.w3.org/WAI/WCAG22/quickref/#non-text-content) (level A).
 
 {: .resource-h3}
+### Related pages in this documentation
+
+- [Alternative text on images and graphics]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/alternative-text/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [7 Quick wins]({{site.baseurl}}/docs/start/quick-wins/) in Start with accessibility.
+- [Images as links]({{site.baseurl}}/docs/topics/content/links/link-image/) in Standards and best practice, Content and images.
+- [Alternative text for images, SVGs and icons in development]({{site.baseurl}}/docs/topics/code/images/alt-text/) in Standards and best practice, Frontend code.
+
+{: .resource-h3}
 ### Other resources
 
-- [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) by the W3C.
-- [Write helpful alt text](https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text) by Google.
+- [An alt Decision Tree](https://www.w3.org/WAI/tutorials/images/decision-tree/), by the W3C.
+- [Write helpful alt text](https://developers.google.com/tech-writing/accessibility/self-study/write-alt-text), by Google.
 - [Are alt attributes required? Always?](https://www.joedolson.com/2015/03/are-alt-attributes-required-always/), by Joe Dolson.
 - [Image SEO: alt tag and title tag optimization](https://yoast.com/image-seo-alt-tag-and-title-tag-optimization/), by Yoast.
-- [The Rules of ALT](https://html.com/images/rules-of-alt/) by Jon Penland.
-- [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-emotion-rich-images/) by Léonie Watson.
+- [The Rules of ALT](https://html.com/images/rules-of-alt/), by Jon Penland.
+- [Text descriptions and emotion rich images](https://tink.uk/text-descriptions-and-emotion-rich-images/), by Léonie Watson.

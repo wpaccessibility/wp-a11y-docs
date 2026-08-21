@@ -39,6 +39,14 @@ For every template being tested:
 
 The skip link must be tested on all page templates provided by the theme (home page, blog archive, post single, etc.), as its functionality on one page does not guarantee that it will work throughout the theme.  
 
-## WCAG resources
+## Resources
 
-* [Understanding: Bypass Blocks](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html)
+{: .resource-h3}
+### WCAG Success Criteria for skip links
+
+Adding a skip link is necessary to meet the WCAG success criterion [2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks) (Level A).
+
+{: .resource-h3}
+### Related pages in this documentation
+
+[Skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/) in Standards and best practice, Frontend code.

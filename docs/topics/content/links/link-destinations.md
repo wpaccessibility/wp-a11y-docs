@@ -53,6 +53,11 @@ By adding meaningful link text, you meet WCAG success criteria
 - [3.2.5 Change on Request](https://www.w3.org/WAI/WCAG22/quickref/#change-on-request) (level **AAA)**.
 
 {: .resource-h3}
+### Related pages in this documentation
+
+[No links opening new windows or tabs without warning]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/new-windows-tabs/) in the Theme guidelines for the WordPress accessibility-ready program.
+
+{: .resource-h3}
 ### Other resources
 
 - [Link Targets and 3.2.5](https://adrianroselli.com/2020/02/link-targets-and-3-2-5.html), by Adrian Roselli.

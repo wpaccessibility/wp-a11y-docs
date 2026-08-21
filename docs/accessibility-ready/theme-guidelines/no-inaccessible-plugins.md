@@ -22,8 +22,8 @@ Themes play a significant role in shaping how site owners build and extend their
 Accessibility Ready themes should guide users toward accessible choices by default, not place accessibility barriers directly in their recommended setup paths.
 
 Themes should either:
-1. Not recommend plugins at all or,
-2. If recommending plugins, only recommend plugins that similarly pass accessibility-ready requirements.
+1. Not recommend plugins at all or, 
+2. If recommending plugins, only recommend plugins that similarly pass `accessibility-ready` requirements.
 
 ### What is considered a plugin recommendation?
 
@@ -37,7 +37,7 @@ Declaring compatibility with a plugin is not considered a recommendation of that
 
 1. Look for admin banners or notices recommending or requiring plugins after activating the theme.
 2. If prompted to install "recommended" or "required" plugins, install and activate those plugins.
-3. Conduct all accessibility-ready tests with the "recommended" or "required" plugins active.
+3. Conduct all `accessibility-ready` tests with the "recommended" or "required" plugins active.
 4. If accessibility problems are identified related to the plugins, this is considered a failure.
 
 

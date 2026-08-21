@@ -13,60 +13,60 @@
 <details markdown="block">
 <summary>Content managers and writers</summary>
 
-- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/), in Start with accessibility.
-- [Content and images]({{site.baseurl}}/docs/topics/content/), in Standards and best practice.
-- [Content checks]({{site.baseurl}}/docs/testing/content/), in Checklists for accessibility testing.
-- [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/), in Test for accessibility.
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/) in Start with accessibility.
+- [Content and images]({{site.baseurl}}/docs/topics/content/) in Standards and best practice.
+- [Content checks]({{site.baseurl}}/docs/testing/content/) in Checklists for accessibility testing.
+- [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/) in Test for accessibility.
 
 </details>
 
 <details markdown="block">
 <summary>Design & user experience specialists</summary>
 
-- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/), in Start with accessibility.
-- [Design & user experience]({{site.baseurl}}/docs/topics/design/), in Standards and best practice.
-- [Web forms]({{site.baseurl}}/docs/topics/forms/input-label/placeholders/), in Standards and best practice. 
-- [Design checks]({{site.baseurl}}/docs/testing/checklists/design/), in Checklists for accessibility testing:
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/) in Start with accessibility.
+- [Design & user experience]({{site.baseurl}}/docs/topics/design/) in Standards and best practice.
+- [Web forms]({{site.baseurl}}/docs/topics/forms/input-label/placeholders/) in Standards and best practice. 
+- [Design checks]({{site.baseurl}}/docs/testing/checklists/design/) in Checklists for accessibility testing:
 
 </details>
 
 <details markdown="block">
 <summary>Website and plugin developers</summary>
 
-- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/), in Start with accessibility.
-- [Frontend code]({{site.baseurl}}/docs/topics/code/), in Standards and best practice.
-- [How to build accessible web forms]({{site.baseurl}}/docs/topics/forms/), in Standards and best practice.
-- [Frontend checks]({{site.baseurl}}/docs/testing/checklists/code), in Checklists for accessibility testing.
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/) in Start with accessibility.
+- [Frontend code]({{site.baseurl}}/docs/topics/code/) in Standards and best practice.
+- [How to build accessible web forms]({{site.baseurl}}/docs/topics/forms/) in Standards and best practice.
+- [Frontend checks]({{site.baseurl}}/docs/testing/checklists/code) in Checklists for accessibility testing.
 
 </details>
 
 <details markdown="block">
 <summary>Theme developers</summary>
 
-- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/), in Start with accessibility.
-- [Standards and best practice]({{site.baseurl}}docs/topics/).
-- [The accessibility-ready program for WordPress]({{site.baseurl}}/docs/accessibility-ready/)
-- [Set up testing for the WordPress themes accessibility-ready tag]({{site.baseurl}}/testing/testing-themes/), in Test for accessibility.
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/) in Start with accessibility.
+- [Standards and best practice]({{site.baseurl}}/docs/topics/).
+- [The accessibility-ready program for WordPress]({{site.baseurl}}/docs/accessibility-ready/).
+- [Set up testing for the WordPress themes accessibility-ready tag]({{site.baseurl}}/docs/accessibility-ready/testing-themes/) in Test for accessibility.
 
 </details>
 
 <details markdown="block">
 <summary>Quality assurance and auditing</summary>
 
-- [Documenting accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/), in Standards and best practice.
-- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/), in Standards and best practice.
+- [Documenting accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/) in Standards and best practice.
+- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/) in Standards and best practice.
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
 - [WordPress plugins for testing]({{site.baseurl}}/docs/testing/plugins/) in Test for accessibility.
-- [Accessibility for your business]({{site.baseurl}}/docs/start/business/), in Start with accessibility.
+- [Accessibility for your business]({{site.baseurl}}/docs/start/business/) in Start with accessibility.
 - [The accessibility-ready program for WordPress]({{site.baseurl}}/docs/accessibility-ready/).
-- [Set up testing for the WordPress themes accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/testing-themes/), in Test for accessibility.
+- [Set up testing for the WordPress themes accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/testing-themes/) in Test for accessibility.
 
 </details>
 
 <details markdown="block">
 <summary>WordPress core contributors</summary>
 
-- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/), in Start with accessibility.
+- [Find training that fits your needs]({{site.baseurl}}/docs/start/training/) in Start with accessibility.
 - [Standards and best practice]({{site.baseurl}}/docs/topics/).
 - [Test for accessibility]({{site.baseurl}}/docs/testing/).
 - [WordPress and accessibility]({{site.baseurl}}/docs/wp-a11y/).
@@ -82,8 +82,8 @@
   - [Accessibility for your business]({{site.baseurl}}/docs/start/business/).
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
   - [Overlays]({{site.baseurl}}/docs/start/overlays/) and why not to use them.
-- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/), in Standards and best practice.
-- [Documenting Accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/), including how to write an accessibility statement.
+- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/) in Standards and best practice.
+- [Documenting Accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/) including how to write an accessibility statement.
 
 </details>
 
@@ -96,7 +96,7 @@
   - [Accessibility for your business]({{site.baseurl}}/docs/start/business/).
   - [They’re not my visitors]({{site.baseurl}}/docs/start/business/personas/).
   - [Overlays]({{site.baseurl}}/docs/start/overlays/) and why not to use them.
-- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/), in Standards and best practice.
+- [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/) in Standards and best practice.
 - [Documenting Accessibility]({{site.baseurl}}/docs/topics/documenting-accessibility/), including how to write an accessibility statement.
 
 </details>

@@ -67,46 +67,57 @@ Not all semantic elements are directly interpreted by assistive technology, stro
 </button>
 ```
 
-Read more on the [.screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) CSS class.
+Read more on the [.screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) CSS class in the section Frontend code.
 
 ## Test Tools
 
 How do you test if the HTML you are using is valid? There are several tools for this:
 
-- [W3C Markup Validation Service](https://validator.w3.org/)
-- [W3C developers checkers](https://w3c.github.io/developers/tools/)
-- [aXe browser extension by Deque](https://www.deque.com/products/axe/)
-- [aXe-core npm module by Deque](https://www.deque.com/products/axe-core)
+- [W3C Markup Validation Service](https://validator.w3.org/).
+- [W3C developers tools](https://www.w3.org/developers/tools/).
+- [aXe browser extension by Deque](https://www.deque.com/products/axe/).
+- [aXe-core npm module by Deque](https://www.deque.com/products/axe-core).
 
-It’s harder to check if your HTML is meaningful, because this highly depends on the content of your web page. Use common sense: search for the right element for the content and [don’t suffer from Divitis](https://css-tricks.com/css-beginner-mistakes-1/).
+You can find a comprehensive list of how to do automated and frontend tests in the section [Test for accessibility]({{site.baseurl}}/docs/testing/) in this documentation.
 
+It’s harder to check if your HTML is meaningful because this highly depends on the content of your web page. Use common sense: search for the right element for the content and [don’t suffer from Divitus](https://css-tricks.com/css-beginner-mistakes-1/).
 
 ## Resources
 
-HTML is the foundation all web output. Take the time to study and learn HTML thoroughly. If you’re using a library that generates output for you, make sure you know what it is doing.
+{: .resource-h3}
+### WCAG Success Criteria for sematic HTML
+ 
+[1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 
-### A good overview of all HTML elements
+  {: .resource-h3}
+### Related pages in this documentation
 
-- [MDN web docs HTML developer guide about HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [HTML5doctor.com](http://html5doctor.com/)
-- [What are Markup Languages?](https://www.thoughtco.com/what-are-markup-languages-3468655)
-- [Screen Reader support for text level HTML semantics](https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/)
+- [Meaningful landmark roles and names]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Headings with meaningful structure]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/headings-structure/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [The CSS class screen-reader-text]({{site.baseurl}}/docs/topics/code/screen-reader-text/) in Standards and best practice, Frontend code.
 
-### Style guides for Markup for WordPress
+{: .resource-h3}
+### Other resources
 
-- [WordPress HTML Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/html/)
-- [Markup best practices by 10up](https://10up.github.io/Engineering-Best-Practices/markup/#top)
-- [Markup style guide by Human Made](https://engineering.hmn.md/how-we-work/style/markup/)
+HTML is the foundation of all web output. Take the time to study and learn HTML thoroughly. If you’re using a library that generates output for you, make sure you know what it is doing.
 
-### About the use of semantic HTML5
+- [MDN web docs HTML developer guide about HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) on MDN.
+- [Semantic HTML](https://web.dev/learn/html/semantic-html/) on web.dev.
+- [What are Markup Languages?](https://www.thoughtco.com/what-are-markup-languages-3468655) by Jennifer Kyrnin.
+- [Screen Reader support for text level HTML semantics](https://vispero.com/resources/screen-readers-support-for-text-level-html-semantics/) by Steve Faulkner.
 
-- [HTML5 semantic elements and Webflow: the essential guide](https://webflow.com/blog/html5-semantic-elements-and-webflow-the-essential-guide)
-- [Storytelling in HTML: practical accessibility](https://rianrietveld.com/2014/11/storytelling-html-practical-accessibility/)
-- [Accessible HTML5 heading structure in WordPress](https://rianrietveld.com/2014/11/html5-headings-in-wordpress-lets-fight/)
-- [Computer says NO to HTML5 document outline](http://html5doctor.com/computer-says-no-to-html5-document-outline/)
-- [Links are not buttons](http://www.karlgroves.com/2013/05/14/links-are-not-buttons-neither-are-divs-and-spans/)
+Style guides for Markup for WordPress:
 
-### Screen reader text class
+- [WordPress HTML Coding Standards](https://make.wordpress.org/core/handbook/best-practices/coding-standards/html/) in the WordPress core handbook.
+- [Markup best practices](https://10up.github.io/Engineering-Best-Practices/markup/) by 10up.
+- [Markup style guide](https://engineering.hmn.md/how-we-work/style/markup/) by Human Made.
 
-- [Hiding text for screen readers with WordPress Core](https://make.wordpress.org/accessibility/2015/02/09/hiding-text-for-screen-readers-with-wordpress-core/)
-- [The screen reader-text class, why and how](https://rianrietveld.com/2015/04/the-screen-reader-text-class-why-and-how/)# Semantic HTML
+About the use of semantic HTML:
+
+- [Semantic HTML5](https://www.w3.org/TR/html5/dom.html#semantics) by the W3C.
+- [HTML5 semantic elements and Webflow: the essential guide](https://webflow.com/blog/html5-semantic-elements-and-webflow-the-essential-guide) by Webflow.
+- [Computer says NO to HTML5 document outline](http://html5doctor.com/computer-says-no-to-html5-document-outline/) by Steve Faulkner.
+- [Can I use](https://caniuse.com/) by Alexis Deveria.
+- [Can I include](https://caninclude.onrender.com/) by CyberLight.
+- [A Web Developer’s Guide to Buttons vs Links](https://www.a11y-collective.com/blog/button-vs-link/) by The ALLY Collective.
+
