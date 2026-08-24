@@ -564,9 +564,19 @@
 
           <h1 id="digital-documents">Digital documents</h1>
 
-<h2 id="accessible-pdfs">Accessible PDFs</h2>
+<p>“Digital documents” refers to all digital documents that are not rendered as web pages. When you add a digital document as a download to your content, users must be able to access and read it.</p>
 
-<p>PDFs (Portable Document Format) are often referred as tagged PDFs. Similar accessibility rules applies for PDFs as HTML documents:</p>
+<p class="callout info"><strong>Note</strong>: This website is primarily about web accessibility. In this page we briefly explain what is important for PDFs (Portable Document Format) and point you to resources specialized in accessibility for digital documents.</p>
+
+<p>All <a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG success criteria for web content</a> also apply for digital documents if they are included in a website that needs to comply to WCAG.</p>
+
+<p>Additionally, for digital documents, the W3C publishes the WCAG2ICT: <a href="https://www.w3.org/TR/wcag2ict/">Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies</a>.</p>
+
+<p>The best advice is to avoid publishing important information only in digital downloads. A webpage is much easier to make accessible than a PDF. If you must, aim for the best of both worlds: publish the information on the website and also provide the PDF as a download. Then the user has a choice.</p>
+
+<h2 id="accessible-pdfs-in-short">Accessible PDFs in short</h2>
+
+<p>PDFs (Portable Document Format) are often referred to as tagged PDFs. Similar accessibility rules apply for PDFs as for HTML documents:</p>
 
 <ul>
   <li>headings structure.</li>
@@ -575,30 +585,44 @@
   <li>alternative text for images.</li>
 </ul>
 
-<h3 id="tagged-pdf">Tagged PDF</h3>
+<h3 id="what-is-a-tagged-pdf">What is a tagged PDF?</h3>
 
-<p>PDF tags are the semantic content marks and indicate the logical document structure and reading order. Compared to HTML tags, PDF tags look similar, but are not the same.</p>
+<p>PDF tags are the semantic content marks and indicate the logical document structure and reading order. They are similar to HTML tags but are not identical.</p>
 
-<p>In the source document (e.g. Microsoft Word, Adobe InDesign) you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside &lt;p&gt; tags. It also important to format your lists and tables correctly to get good results while exporting your PDF.</p>
+<p>In a source document created using common platforms like Microsoft Word or Adobe InDesign, you are able to set the tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside &lt;p&gt; tags.</p>
 
-<p>The Paciello Group has a good <a href="https://developer.paciellogroup.com/blog/2017/02/pdf-inaccessibility/">overview of PDF inaccessibility</a>.</p>
+<p>It is also important to format your lists and tables correctly to get the best results while exporting your PDF.</p>
 
 <h3 id="export-as-accessible-pdf">Export as accessible PDF</h3>
 
-<p>The list of software which are able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar.</p>
+<p>The list of software which is able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar.</p>
 
-<p class="callout warning"><strong>Warning</strong>: Google Docs doesn’t support the export of a tagged and accessible PDF yet without any help of a plugin.</p>
+<ul>
+  <li><a href="https://support.microsoft.com/en-us/accessibility/office-accessibility/create-accessible-pdfs">Create accessible PDFs</a> by Microsoft.</li>
+  <li><a href="https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html">Create and verify PDF accessibility (Acrobat Pro)</a> by Adobe for Acrobat Pro.</li>
+</ul>
+
+<p class="callout alert"><strong>Note</strong>: Google Docs doesn’t support the export of a tagged and accessible PDF natively; they will require the help of a plugin.</p>
 
 <h2 id="resources">Resources</h2>
 
+<h3 id="wcag-success-criteria-for-digital-documents">WCAG Success Criteria for digital documents</h3>
+
 <ul>
-  <li><a href="https://webaim.org/techniques/acrobat/">Defining PDF Accessibility</a> on WebAIM.</li>
-  <li><a href="https://developer.paciellogroup.com/blog/2017/02/pdf-inaccessibility/">Overview of PDF inaccessibility</a> by the Paciello Group.</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG success criteria for web content</a>.</li>
+  <li><a href="https://www.w3.org/TR/wcag2ict/">Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies</a>.</li>
+</ul>
+
+<h3 id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://webaim.org/techniques/acrobat/">PDF Accessibility</a> on WebAIM.</li>
+  <li><a href="https://pdfa.org/resource/pdfua-in-a-nutshell/">PDF/UA in a Nutshell</a> by the PDF association.</li>
   <li><a href="https://pdfa.org/techniques-for-accessible-pdf/">Techniques for Accessible PDF</a> by the PDF Association.</li>
+  <li><a href="https://support.microsoft.com/en-us/accessibility/office-accessibility/create-accessible-pdfs">Create accessible PDFs</a> by Microsoft.</li>
   <li><a href="https://www.adobe.com/accessibility/pdf/pdf-accessibility-overview.html">PDF Accessibility Overview</a> by Adobe.</li>
-  <li><a href="https://helpx.adobe.com/ie/acrobat/using/create-verify-pdf-accessibility.html">Create and verify PDF accessibility</a> by Acrobat Pro</li>
-  <li><a href="https://pdfa.org/wp-content/until2016_uploads/2013/08/PDFUA-in-a-Nutshell-PDFUA.pdf">PDF/UA in a Nutshell (PDF)</a> by the PDF association.</li>
-  <li><a href="https://taggedpdf.com/508-pdf-help-center/">Tagged PDF 508 help center</a> by Tagged PDF.</li>
+  <li><a href="https://helpx.adobe.com/ie/acrobat/using/create-verify-pdf-accessibility.html">Create and verify PDF accessibility</a> by Adobe for Acrobat Pro.</li>
+  <li><a href="https://taggedpdf.com/">Tagged PDF</a> by Tagged PDF.</li>
 </ul>
 
 
@@ -611,15 +635,28 @@
         <li><span>First published:</span> October 10, 2025</li>
         
 
-        <li><span>Last updated:</span> August 19, 2026</li>
+        <li><span>Last updated:</span> August 24, 2026</li>
 
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/content/docs.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/content/docs/index.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
         
 
+        
+        <li><span>Contributors:</span>
+            
+            Rian Rietveld,
+            
+            
+            Joe Dolson,
+            
+            
+            Ed Boon.
+            
+            
+        </li>
         
 
     </ul>
