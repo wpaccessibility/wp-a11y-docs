@@ -2,16 +2,17 @@
 title: Digital documents
 layout: default
 parent: Content and images
-description: Similar accessibility rules apply to both PDFs and HTML documents
+description: Similar accessibility rules apply to both digital documents and web pages.  When you add a digital document as a download to your content, users must be able to access and read it.
 nav_order: 6
 contributors:
   - Rian Rietveld
+  - Joe Dolson
   - Ed Boon
 ---
 
 # Digital documents
 
-Digital documents refers to all digital documents that are not rendered as web pages. When you add a digital document as a download to your content, users must be able to access and read it.
+"Digital documents" refers to all digital documents that are not rendered as web pages. When you add a digital document as a download to your content, users must be able to access and read it.
 
 {: .callout .info }
 **Note**: This website is primarily about web accessibility. In this page we briefly explain what is important for PDFs (Portable Document Format) and point you to resources specialized in accessibility for digital documents.
@@ -33,7 +34,7 @@ PDFs (Portable Document Format) are often referred to as tagged PDFs. Similar ac
 
 ### What is a tagged PDF?
 
-PDF tags are the semantic content marks and indicate the logical document structure and reading order. They are similar to HTML tags, but are not identical.
+PDF tags are the semantic content marks and indicate the logical document structure and reading order. They are similar to HTML tags but are not identical.
 
 In a source document created using common platforms like Microsoft Word or Adobe InDesign, you are able to set the tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside <p> tags. 
 
@@ -47,7 +48,7 @@ The list of software which is able to export a PDF is quite long. In the export 
 - [Create and verify PDF accessibility (Acrobat Pro)](https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html) by Adobe for Acrobat Pro.
 
 {: .callout .alert }
-**Note**: Google Docs doesn’t support the export of a tagged and accessible PDF natively; they will require help of a plugin.
+**Note**: Google Docs doesn’t support the export of a tagged and accessible PDF natively; they will require the help of a plugin.
 
 ## Resources
 
