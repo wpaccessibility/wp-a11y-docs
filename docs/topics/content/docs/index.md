@@ -11,16 +11,16 @@ contributors:
 
 # Digital documents
 
-With digital documents we mean all digital documents that are not rendered as web pages. When you add a digital document as a download to your content, users must be able to access and read it.
+Digital documents refers to all digital documents that are not rendered as web pages. When you add a digital document as a download to your content, users must be able to access and read it.
 
 {: .callout .info }
-**Note**: This website is about web accessibility. On this page we only briefly explain what is important for PDFs (Portable Document Format) and point you to resources specialized in accessibility for digital documents.
+**Note**: This website is primarily about web accessibility. In this page we briefly explain what is important for PDFs (Portable Document Format) and point you to resources specialized in accessibility for digital documents.
 
 All [WCAG success criteria for web content](https://www.w3.org/WAI/WCAG22/quickref/) also apply for digital documents if they are included in a website that needs to comply to WCAG. 
 
-Additionally, for digital documents, the W3C published the WCAG2ICT: [Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies](https://www.w3.org/TR/wcag2ict/).
+Additionally, for digital documents, the W3C publishes the WCAG2ICT: [Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies](https://www.w3.org/TR/wcag2ict/).
 
-But the best advice? Try to avoid important publishing information in digital downloads only. A webpage is so much easier to make accessible than a PDF. If you must, have the best of both worlds: publish the information on the website and also provide the PDF as a super fancy download. Then the user has a choice.
+The best advice is to avoid publishing important information only in digital downloads. A webpage is much easier to make accessible than a PDF. If you must, aim for the best of both worlds: publish the information on the website and also provide the PDF as a download. Then the user has a choice.
 
 ## Accessible PDFs in short
 
@@ -31,11 +31,11 @@ PDFs (Portable Document Format) are often referred to as tagged PDFs. Similar ac
 - color contrast.
 - alternative text for images.
 
-### Tagged PDF
+### What is a tagged PDF?
 
-PDF tags are the semantic content marks and indicate the logical document structure and reading order. Compared to HTML tags, PDF tags look similar but are different.
+PDF tags are the semantic content marks and indicate the logical document structure and reading order. They are similar to HTML tags, but are not identical.
 
-In the source document created with, for example, Microsoft Word or Adobe InDesign, you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside <p> tags. 
+In a source document created using common platforms like Microsoft Word or Adobe InDesign, you are able to set the tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside <p> tags. 
 
 It is also important to format your lists and tables correctly to get the best results while exporting your PDF.
 
@@ -47,7 +47,7 @@ The list of software which is able to export a PDF is quite long. In the export 
 - [Create and verify PDF accessibility (Acrobat Pro)](https://helpx.adobe.com/acrobat/using/create-verify-pdf-accessibility.html) by Adobe for Acrobat Pro.
 
 {: .callout .alert }
-**Note**: Google Docs doesn’t support the export of a tagged and accessible PDF yet without the help of a plugin.
+**Note**: Google Docs doesn’t support the export of a tagged and accessible PDF natively; they will require help of a plugin.
 
 ## Resources
 
