@@ -1630,30 +1630,30 @@
     "url": "/pr-preview/pr-405/docs/testing/screen-readers/",
     "relUrl": "/docs/testing/screen-readers/"
   },"233": {
-    "doc": "Frontend code checks",
-    "title": "Frontend checks for web accessibility",
-    "description": "Learn how to perform frontend code checks for web accessibility.",
+    "doc": "Front-end code checks",
+    "title": "Front-end checks for web accessibility",
+    "description": "Learn how to perform front-end code checks for web accessibility.",
     "content": "Testing for valid, semantic HTML is essential for the accessibility of your work. On this page we list some essential requirements and best resources. It gives you the minimum tests you need to do during development, preferably before you ever commit your work. Note: test web accessibility against the generated DOM and not only on the codebase itself. While you develop, always test the following items: . | Semantic Markup (HTML) to help your code work on every device and browser. | The generated DOM passes Web Content Accessibility Guidelines (WCAG) validation. | All functionality must work with keyboard only. | Dynamic changes in the DOM are properly announced for screen reader users. | . Most checks for valid HTML and WCAG can be done with automated accessibility testing in your browser or CLI suite, but most keyboard interaction and dynamic changes must be tested manually. For WordPress, we aim to meet WCAG accessibility guidelines version 2.2 at level AA and the WordPress Coding Standards. In the section Accessibility standards and best practice you’ll find documentation and resources. Note: automated testing is not perfect. Automated testing doesn’t catch all accessibility issues and can give false positives. Additional manual testing is always required. ",
-    "url": "/pr-preview/pr-405/docs/testing/code/#frontend-checks-for-web-accessibility",
-    "relUrl": "/docs/testing/code/#frontend-checks-for-web-accessibility"
+    "url": "/pr-preview/pr-405/docs/testing/code/#front-end-checks-for-web-accessibility",
+    "relUrl": "/docs/testing/code/#front-end-checks-for-web-accessibility"
   },"234": {
-    "doc": "Frontend code checks",
+    "doc": "Front-end code checks",
     "title": "The main topics to check",
-    "description": "Learn how to perform frontend code checks for web accessibility.",
+    "description": "Learn how to perform front-end code checks for web accessibility.",
     "content": ". | Make sure all interactive elements have an accessible name, so screen readers users know what the interaction is. | Write semantic, meaningful HTML. | Use a &lt;button&gt; to invoke an action and an &lt;a&gt; for a change of location. | A &lt;div&gt; or &lt;span&gt; doesn’t natively provide interactivity, and should not be used for links or buttons. | . | Heading text and level matter. | Use landmarks to group content and make sure they are properly announced by screen readers. | Write meaningful link and button texts. | Use the .screen-reader-text class, a CSS class to hide text visually while leaving it available to screen readers. | Always give images a proper alt attribute following the alt decision tree | Forms: . | always explicitly connect labels to an input control. If the label must be invisible for the design, hide it with the screen-reader-text class. | Wrap check box groups and radio buttons in a &lt;fieldset&gt; and add a &lt;legend&gt; describing the group of controls | . | Always define both a :hover and :focus states in your CSS, this is explained in Visibility of the keyboard focus. | Announce dynamic changes with aria-live or wp.a11y.speak(). | . The accessibility-ready program for WordPress provides you with the requirements for meeting the accessibility-ready tag for themes. Each requirement includes a detailed description of how to test for it. ",
     "url": "/pr-preview/pr-405/docs/testing/code/#the-main-topics-to-check",
     "relUrl": "/docs/testing/code/#the-main-topics-to-check"
   },"235": {
-    "doc": "Frontend code checks",
+    "doc": "Front-end code checks",
     "title": "Resources",
-    "description": "Learn how to perform frontend code checks for web accessibility.",
+    "description": "Learn how to perform front-end code checks for web accessibility.",
     "content": ". | 5 accessibility checks to run on every component by Hidde de Vries for zeroheight. | . ",
     "url": "/pr-preview/pr-405/docs/testing/code/#resources",
     "relUrl": "/docs/testing/code/#resources"
   },"236": {
-    "doc": "Frontend code checks",
-    "title": "Frontend code checks",
-    "description": "Learn how to perform frontend code checks for web accessibility.",
+    "doc": "Front-end code checks",
+    "title": "Front-end code checks",
+    "description": "Learn how to perform front-end code checks for web accessibility.",
     "content": " ",
     "url": "/pr-preview/pr-405/docs/testing/code/",
     "relUrl": "/docs/testing/code/"
@@ -2402,8 +2402,8 @@
   },"343": {
     "doc": "Frontend code",
     "title": "Frontend code",
-    "description": "How to keep the result of the frontend code of a plugin, theme and WordPress core accessible for everyone.",
-    "content": "These pages inform you about what is important to keep the result of the frontend code of a plugin, theme and WordPress core accessible for everyone. ",
+    "description": "How to keep the result of the front-end code of a plugin, theme and WordPress core accessible for everyone.",
+    "content": "These pages inform you about what is important to keep the result of the front-end code of a plugin, theme and WordPress core accessible for everyone. ",
     "url": "/pr-preview/pr-405/docs/topics/code/",
     "relUrl": "/docs/topics/code/"
   },"344": {
@@ -2501,14 +2501,14 @@
     "doc": "Digital documents",
     "title": "Digital documents",
     "description": "Similar accessibility rules apply to both PDFs and HTML documents",
-    "content": "With digital documents we mean all digital documents that are not rendered as web pages. When you add a digital document as a download to your content, users must be able to access and read it. Note: This website is about web accessibility. On this page we only briefly explain what is important for PDFs (Portable Document Format) and point you to resources specialized in accessibility for digital documents. All WCAG success criteria for web content also apply for digital documents if they are included in a website that needs to comply to WCAG. Additionally, for digital documents, the W3C published the WCAG2ICT: Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies. But the best advice? Try to avoid important publishing information in digital downloads only. A webpage is so much easier to make accessible than a PDF. If you must, have the best of both worlds: publish the information on the website and also provide the PDF as a super fancy download. Then the user has a choice. ",
+    "content": "Digital documents refers to all digital documents that are not rendered as web pages. When you add a digital document as a download to your content, users must be able to access and read it. Note: This website is primarily about web accessibility. In this page we briefly explain what is important for PDFs (Portable Document Format) and point you to resources specialized in accessibility for digital documents. All WCAG success criteria for web content also apply for digital documents if they are included in a website that needs to comply to WCAG. Additionally, for digital documents, the W3C publishes the WCAG2ICT: Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies. The best advice is to avoid publishing important information only in digital downloads. A webpage is much easier to make accessible than a PDF. If you must, aim for the best of both worlds: publish the information on the website and also provide the PDF as a download. Then the user has a choice. ",
     "url": "/pr-preview/pr-405/docs/topics/content/docs/",
     "relUrl": "/docs/topics/content/docs/"
   },"358": {
     "doc": "Digital documents",
     "title": "Accessible PDFs in short",
     "description": "Similar accessibility rules apply to both PDFs and HTML documents",
-    "content": "PDFs (Portable Document Format) are often referred to as tagged PDFs. Similar accessibility rules apply for PDFs as for HTML documents: . | headings structure. | appropriate link texts. | color contrast. | alternative text for images. | . Tagged PDF . PDF tags are the semantic content marks and indicate the logical document structure and reading order. Compared to HTML tags, PDF tags look similar but are different. In the source document created with, for example, Microsoft Word or Adobe InDesign, you are able to set the future tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside &lt;p&gt; tags. It is also important to format your lists and tables correctly to get the best results while exporting your PDF. Export as accessible PDF . The list of software which is able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar. | Create accessible PDFs by Microsoft. | Create and verify PDF accessibility (Acrobat Pro) by Adobe for Acrobat Pro. | . Note: Google Docs doesn’t support the export of a tagged and accessible PDF yet without the help of a plugin. ",
+    "content": "PDFs (Portable Document Format) are often referred to as tagged PDFs. Similar accessibility rules apply for PDFs as for HTML documents: . | headings structure. | appropriate link texts. | color contrast. | alternative text for images. | . What is a tagged PDF? . PDF tags are the semantic content marks and indicate the logical document structure and reading order. They are similar to HTML tags, but are not identical. In a source document created using common platforms like Microsoft Word or Adobe InDesign, you are able to set the tag structure. If you use document styles to set headings, rather than changing the font and sizes manually, then PDF tags will be set in the resulting document. General content will be inside &lt;p&gt; tags. It is also important to format your lists and tables correctly to get the best results while exporting your PDF. Export as accessible PDF . The list of software which is able to export a PDF is quite long. In the export settings of your software, you should watch for an option which is called Tagged PDF or similar. | Create accessible PDFs by Microsoft. | Create and verify PDF accessibility (Acrobat Pro) by Adobe for Acrobat Pro. | . Note: Google Docs doesn’t support the export of a tagged and accessible PDF natively; they will require help of a plugin. ",
     "url": "/pr-preview/pr-405/docs/topics/content/docs/#accessible-pdfs-in-short",
     "relUrl": "/docs/topics/content/docs/#accessible-pdfs-in-short"
   },"359": {
@@ -2942,7 +2942,7 @@
     "doc": "Contributors",
     "title": "A big thank you and props for:",
     "description": "Contributors of the WP Accessibility Knowledge Base.",
-    "content": "Content and reviews . Joe Dolson, Gary Jones, Amber Hinds, Wendie Huis in’t Veld and Rian Rietveld write and review the documentation. The content about web forms was taken, with permission, from the NL Design System and adjusted for WordPress and for a global audience. Website build and GitHub setup . People who build and maintain the Knowledge Base website, including the implementation on GitHub pages. Yoren Chang, Joe Dolson, Gary Jones and Rian Rietveld. Thank you, Just The Docs for providing the starter theme on which this site is build upon. Design website . Jeffrey Lauwers created the design of the Knowledge Base website including a new Wapuu as logo. Accessibility audit website . Florian Schroiff from Level Level Platforms and Accessibility conducted the WCAG-EM accessibility audit of the Knowledge Base website. Brainstorming . Many people gave their time to brainstorm about content structure, the set up and shared ideas: Paul van Buuren, Milana Cap. Virginia Ciambriello, Wendie Huis in’t Veld, Johan Huijkman, Jon Ang, Caitlin de Rooij, Savi Sinnema, Annelies Verhelst and Angela Willemsen. GitHub contributor list . People who contributed content and code for the Knowledge Base via GitHub. | | | | | | | | | | | | | | | | | . ",
+    "content": "Content and reviews . Joe Dolson, Gary Jones, Amber Hinds, Wendie Huis in’t Veld and Rian Rietveld write and review the documentation. The content about web forms was taken, with permission, from the NL Design System and adjusted for WordPress and for a global audience. Website build and GitHub setup . People who build and maintain the Knowledge Base website, including the implementation on GitHub pages. Yoren Chang, Joe Dolson, Gary Jones and Rian Rietveld. Thank you, Just The Docs for providing the starter theme on which this site is build upon. Design website . Jeffrey Lauwers created the design of the Knowledge Base website including a new Wapuu as logo. Accessibility audit website . Florian Schroiff from Level Level Platforms and Accessibility conducted the WCAG-EM accessibility audit of the Knowledge Base website. Brainstorming . Many people gave their time to brainstorm about content structure, the set up and shared ideas: Paul van Buuren, Milana Cap. Virginia Ciambriello, Wendie Huis in’t Veld, Johan Huijkman, Jon Ang, Caitlin de Rooij, Savi Sinnema, Annelies Verhelst and Angela Willemsen. GitHub contributor list . People who contributed content and code for the Knowledge Base via GitHub. | | | | | | | | | | | | | | | | | | . ",
     "url": "/pr-preview/pr-405/docs/about/contribute/contributors/#a-big-thank-you-and-props-for",
     "relUrl": "/docs/about/contribute/contributors/#a-big-thank-you-and-props-for"
   },"421": {
@@ -3576,23 +3576,23 @@
     "url": "/pr-preview/pr-405/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/#resources",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/#resources"
   },"511": {
-    "doc": "Must not recommend or require inaccessible plugins",
-    "title": "Must not recommend or require inaccessible plugins",
-    "description": "Accessibility-ready themes must not recommend or require inaccessible plugins.",
+    "doc": "Must not recommend inaccessible plugins",
+    "title": "Must not recommend inaccessible plugins",
+    "description": "Accessibility-ready themes must not recommend inaccessible plugins.",
     "content": " ",
     "url": "/pr-preview/pr-405/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/"
   },"512": {
-    "doc": "Must not recommend or require inaccessible plugins",
+    "doc": "Must not recommend inaccessible plugins",
     "title": "Basic principle",
-    "description": "Accessibility-ready themes must not recommend or require inaccessible plugins.",
-    "content": "Accessibility Ready themes must not recommend, promote, bundle, or require plugins that introduce known accessibility barriers as part of the theme’s setup process or ongoing use within the WordPress admin. Themes play a significant role in shaping how site owners build and extend their websites. When a theme directs users toward inaccessible plugins — whether through onboarding screens, admin notices, documentation, or demo imports — it undermines the goal of providing an accessible foundation and can result in inaccessible websites even when the theme itself meets accessibility requirements. Accessibility Ready themes should guide users toward accessible choices by default, not place accessibility barriers directly in their recommended setup paths. Themes should either: . | Not recommend plugins at all or, | If recommending plugins, only recommend plugins that similarly pass accessibility-ready requirements. | . ",
+    "description": "Accessibility-ready themes must not recommend inaccessible plugins.",
+    "content": "Accessibility Ready themes must not recommend plugins that introduce known accessibility barriers as part of the theme’s setup process or ongoing use within the WordPress admin. Themes play a significant role in shaping how site owners build and extend their websites. When a theme directs users toward inaccessible plugins — whether through onboarding screens, admin notices, documentation, or demo imports — it undermines the goal of providing an accessible foundation and can result in inaccessible websites even when the theme itself meets accessibility requirements. Accessibility Ready themes should guide users toward accessible choices by default, not place accessibility barriers directly in their recommended setup paths. Themes should either: . | Not recommend plugins at all or, | If recommending plugins, only recommend plugins that similarly pass accessibility-ready requirements. | . What is considered a plugin recommendation? . It is considered a recommendation to include language or prompts that actively suggest that a user install a plugin. Examples of this behavior could include (but is not limited to) having blocks in your starter content that contains links to install plugins or bundling packages like TGM Plugin Activation, or displaying admin notices recommending that user’s install specific plugins. Declaring compatibility with a plugin is not considered a recommendation of that plugin. ",
     "url": "/pr-preview/pr-405/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/#basic-principle",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/#basic-principle"
   },"513": {
-    "doc": "Must not recommend or require inaccessible plugins",
+    "doc": "Must not recommend inaccessible plugins",
     "title": "Testing",
-    "description": "Accessibility-ready themes must not recommend or require inaccessible plugins.",
+    "description": "Accessibility-ready themes must not recommend inaccessible plugins.",
     "content": "Tools: browser . | Look for admin banners or notices recommending or requiring plugins after activating the theme. | If prompted to install “recommended” or “required” plugins, install and activate those plugins. | Conduct all accessibility-ready tests with the “recommended” or “required” plugins active. | If accessibility problems are identified related to the plugins, this is considered a failure. | . Note: When evaluating accessibility, responsibility for the issue is not relevant to the review outcome. Testers are not required to determine whether an accessibility problem originates in the theme or in a plugin recommended by the theme. If an accessibility barrier is present, it should be reported. It is then up to the theme developer to determine whether the issue can be addressed within the theme, needs to be reported upstream, or requires removing the plugin recommendation altogether. ",
     "url": "/pr-preview/pr-405/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/#testing",
     "relUrl": "/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/#testing"
