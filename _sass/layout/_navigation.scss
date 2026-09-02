@@ -249,6 +249,10 @@
     a:hover {
       text-decoration: underline;
     }
+
+    a:visited {
+      color: $link-color-visited;
+    }
   }
 
   > ul {

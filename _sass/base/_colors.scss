@@ -13,6 +13,9 @@ $body-heading-color: var(--color-neutral-bg-document) !default;
 // Default link color
 $link-color: var(--color-informative-color-default) !default;
 
+// Default link color visited link
+$link-color-visited: var(--color-neutral-color-visited) !default;
+
 // Link color for nested navigation items
 $nav-child-link-color: var(--color-neutral-inverse-color-subtle) !default;
 
