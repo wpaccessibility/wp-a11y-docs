@@ -138,6 +138,7 @@
   --color-neutral-color-default: #606467;
   --color-neutral-color-hover: #565a5e;
   --color-neutral-color-active: #484c50;
+  --color-neutral-color-visited: #551a8b;
   --color-neutral-color-subtle: #3a3e43;
   --color-neutral-color-document: #23282d;
   --color-neutral-color-placeholder: #757575;
@@ -332,6 +333,7 @@ img.sponsor {
   margin-top: 2em;
   max-width: 30%;
   height: auto;
+  border: 0;
 }
 
 hr {
@@ -1068,6 +1070,9 @@ body {
 }
 .sitemap ul a:hover {
   text-decoration: underline;
+}
+.sitemap ul a:visited {
+  color: var(--color-neutral-color-visited);
 }
 .sitemap > ul {
   padding-left: 0;
