@@ -3,7 +3,7 @@ title: Digital documents
 layout: default
 parent: Content and images
 description: Similar accessibility rules apply to both digital documents and web pages.  When you add a digital document as a download to your content, users must be able to access and read it.
-nav_order: 6
+nav_order: 7
 contributors:
   - Rian Rietveld
   - Joe Dolson
