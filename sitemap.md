@@ -6,6 +6,6 @@ nav_exclude: true
 search_exclude: true
 ---
 
-# Sitemap of wpaccessibility.org
+# Sitemap wpaccessibility.org
 
 {% include components/sitemap.html %}

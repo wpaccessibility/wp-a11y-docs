@@ -6,7 +6,7 @@ layout: table_wrappers
 
 <html lang="en">
 {% include head.html %}
-<body id="top">
+<body id="top" class="page-{{ page.title | downcase | slugify }}">
   <a class="skip-to-main" href="#main-content">Skip menu</a>
   {% include icons/icons.html %}
   {% if page.nav_enabled == true %}
