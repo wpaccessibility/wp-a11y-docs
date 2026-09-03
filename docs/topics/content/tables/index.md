@@ -69,6 +69,8 @@ Step 5. Fill in the table headers and the cells.
 Step 6. Save the post and check the table on the webpage
 ![SCreenshot of the table in the web page]({{site.baseurl}}/assets/images/table-step-6.png)
 
+Read [Table block](https://wordpress.org/documentation/article/table-block/) in the WordPress documentation for more information about how to use the Table block in the Admin read.
+
 These are the current options to create an accessible table in the WordPress Admin. If you want more, try out one of the plugins that can add more features to the table block, like row headers and captions. Before using a plugin, make sure it creates accessible tables in the website. You can test this by using a test tool like the [WAVE Browser Extension](https://wave.webaim.org/) on the webpage with the table.
 
 Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub issue [Table V2: define accessibility requirements for table semantics and header associations](https://github.com/WordPress/gutenberg/issues/81722).
@@ -82,7 +84,7 @@ Work is currently underway to improve and enhance the table block in the WordPre
 
 ### Related pages in this documentation
 
-- [Tables in theme and plugin development](/docs/topics/code/tables/) in Frontend code.
+- [Tables in frontend development](/docs/topics/code/tables/) in Frontend code.
 - [Semantic HTML]({{site.baseurl}}/docs/topics/code/tables/) in Frontend code.
 
 ### Other resources
