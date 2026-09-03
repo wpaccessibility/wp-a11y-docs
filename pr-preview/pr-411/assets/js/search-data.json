@@ -2585,7 +2585,7 @@
     "doc": "Tables in the content",
     "title": "Resources",
     "description": "How to add a table to the content in an accessible way.",
-    "content": "Related WCAG success criteria for tables . | 1.3.1 Info and Relationships (Level A). | 1.3.2 Meaningful Sequence (Level A). | . Related pages in this documentation . | Tables in theme and plugin development in Frontend code. | Semantic HTML in Frontend code. | . Other resources . | Creating Accessible Tables, by WebAIM | How to Create Tables in WordPress Using the Block Editor, Plugins, and External Sources, by Jordana Alexandrea on Hostinger. | . ",
+    "content": "Related WCAG success criteria for tables . | 1.3.1 Info and Relationships (Level A). | 1.3.2 Meaningful Sequence (Level A). | . Related pages in this documentation . | Tables in theme and plugin development in Frontend code. | Semantic HTML in Frontend code. | . Other resources . | Creating Accessible Tables, by WebAIM. | Tables Tutorial, by the W3C. | How to Create Tables in WordPress Using the Block Editor, Plugins, and External Sources, by Jordana Alexandrea on Hostinger. | . ",
     "url": "/pr-preview/pr-411/docs/topics/content/tables/#resources",
     "relUrl": "/docs/topics/content/tables/#resources"
   },"370": {
