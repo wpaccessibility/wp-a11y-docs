@@ -41,9 +41,9 @@ When you want to show information in a structured way, a table made up of rows a
 
 A few things are important to make the data understandable for users that rely on assistive technology like a screen reader:
 
-- Make sure you use a real HTML table and not, for example, spaces or other dividers to separate the data.
-- Use table headers to describe the columns and rows.
-- If possible, give the table a caption to describe the purpose of the table. If that is not possible, add a heading just above the table with a heading level that fits within the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
+- Make sure you use a **real HTML table** and not, for example, spaces or other dividers to separate the data.
+- Use **table headers** to describe the columns and rows.
+- If possible, give the table a **caption** to describe the purpose of the table. If that is not possible, add a **heading** just above the table with a heading level that fits within the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
 
 When designing the structure of a table, keep in mind: when a complex table is hard to make accessible, it's probably also hard to understand for every reader. Best split up a complex table in multiple tables or use also, for example, unordered lists. Try to display the data as simple as possible, always keep your reader in mind.
 
@@ -87,5 +87,6 @@ Work is currently underway to improve and enhance the table block in the WordPre
 
 ### Other resources
 
-- [Creating Accessible Tables](https://webaim.org/techniques/tables/), by WebAIM
+- [Creating Accessible Tables](https://webaim.org/techniques/tables/), by WebAIM.
+- [Tables Tutorial](https://www.w3.org/WAI/tutorials/tables/), by the W3C.
 - [How to Create Tables in WordPress Using the Block Editor, Plugins, and External Sources](https://www.hostinger.com/tutorials/how-to-add-tables-in-wordpress/), by Jordana Alexandrea on Hostinger.
