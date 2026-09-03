@@ -3,7 +3,7 @@ title: Multiple ways to contact
 layout: default
 parent: Content and images
 description: It’s better to offer multiple ways to get in touch, so people can choose what suits them. Think about your visitors first, not just what’s easiest for you.
-nav_order: 4
+nav_order: 6
 contributors:
   - Rian Rietveld
   - Joe Dolson

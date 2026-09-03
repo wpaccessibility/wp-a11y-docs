@@ -10,7 +10,7 @@ contributors:
   - Gary Jones
 ---
 
-# Using headings in the content
+# Headings in the content
 
 ## What are headings?
 
