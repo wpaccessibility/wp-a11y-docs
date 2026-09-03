@@ -4,7 +4,7 @@ layout: default
 parent: Content and images
 description: How to add a table to the content in an accessible way.
 nav_order: 4
-date_created: September 02, 2026
+date_created: September 03, 2026
 ---
 
 # Tables in the content
@@ -43,9 +43,9 @@ A few things are important to make the data understandable for users that rely o
 
 - Make sure you use a real HTML table and not, for example, spaces or other dividers to separate the data.
 - Use table headers to describe the columns and rows.
-- If possible, give the table a caption to describe the purpose of the table. If that is not possible, give the table a heading that fits in the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
+- If possible, give the table a caption to describe the purpose of the table. If that is not possible, add a heading just above the table with a heading level that fits within the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
 
-When designing the structure of a table, keep in mind: when a complex table is hard to make accessible, it's probably also hard to understand for every reader. Best split up a complex table in multiple tables or use, for example, unordered lists. Keep it as simple as possible, always keep your reader in mind.
+When designing the structure of a table, keep in mind: when a complex table is hard to make accessible, it's probably also hard to understand for every reader. Best split up a complex table in multiple tables or use also, for example, unordered lists. Try to display the data as simple as possible, always keep your reader in mind.
 
 {: .callout .warning}
 **Warning:** Using a table only for layout and not for displaying data makes the content hard to understand for screen reader users. It is actually a WCAG violation to use a table for layout only. See [WCAG 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
@@ -77,7 +77,7 @@ Work is currently underway to improve and enhance the table block in the WordPre
 
 ### Related WCAG success criteria for tables
 
-- [WCAG 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+- [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [1.3.2 Meaningful Sequence](https://www.w3.org/WAI/WCAG22/quickref/#meaningful-sequence) (Level A).
 
 ### Related pages in this documentation
