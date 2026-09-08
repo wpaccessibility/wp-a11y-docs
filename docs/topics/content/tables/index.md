@@ -4,12 +4,19 @@ layout: default
 parent: Content and images
 description: How to add a table to the content in an accessible way.
 nav_order: 4
-date_created: September 03, 2026
+has_video: true
+date_created: September 08, 2026
 ---
 
 # Tables in the content
 
 When you want to show information in a structured way, a table made up of rows and columns is a clear way to present your data. How to do this in a way everyone understands the information?
+
+Important to make the data understandable for users that rely on assistive technology like a screen reader:
+
+- Make sure you use a **real HTML table** and not, for example, spaces or other dividers to separate the data.
+- Use **table headers** to describe the columns and rows.
+- If possible, give the table a **caption** to describe the purpose of the table. If that is not possible, add a **heading** just above the table with a heading level that fits within the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
 
 <table>
 <caption>The cities of WordCamp Europe</caption>
@@ -23,7 +30,7 @@ When you want to show information in a structured way, a table made up of rows a
   <tbody>
     <tr>
         <td>2026</td>
-        <td>Krakow</td>
+        <td>Kraków</td>
         <td>Poland</td>
     </tr>
     <tr>
@@ -33,17 +40,15 @@ When you want to show information in a structured way, a table made up of rows a
     </tr>
     <tr>
         <td>2024</td>
-        <td>Torino</td>
+        <td>Turin</td>
         <td>Italy</td>
     </tr>
 </tbody>
 </table>
 
-A few things are important to make the data understandable for users that rely on assistive technology like a screen reader:
+Entering the table, the caption is announced, then the table headers, and then with each cell the header is repeated with the cel data. In the table above "The cities of WordCamp Europe" is the caption. "Year", "City", and "Country" are the table headers.
 
-- Make sure you use a **real HTML table** and not, for example, spaces or other dividers to separate the data.
-- Use **table headers** to describe the columns and rows.
-- If possible, give the table a **caption** to describe the purpose of the table. If that is not possible, add a **heading** just above the table with a heading level that fits within the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
+<video data-able-player data-youtube-nocookie="true" data-youtube-id="HRubrn1T3xU" data-heading-level="0"></video>
 
 When designing the structure of a table, keep in mind: when a complex table is hard to make accessible, it's probably also hard to understand for every reader. Best split up a complex table in multiple tables or use also, for example, unordered lists. Try to display the data as simple as possible, always keep your reader in mind.
 
