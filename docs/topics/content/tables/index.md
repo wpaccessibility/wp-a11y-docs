@@ -10,7 +10,7 @@ date_created: September 08, 2026
 
 # Tables in the content
 
-When you want to show information in a structured way, a table made up of rows and columns is a clear way to present your data. How to do this in a way everyone understands the information?
+When you want to show information in a structured way, a table made up of rows and columns is a clear way to present your data. How do you do this so that everyone understands the information?
 
 Important to make the data understandable for users that rely on assistive technology like a screen reader:
 
@@ -50,14 +50,14 @@ Entering the table, the caption is announced, then the table headers, and then w
 
 <video data-able-player data-youtube-nocookie="true" data-youtube-id="HRubrn1T3xU" data-heading-level="0"></video>
 
-When designing the structure of a table, keep in mind: when a complex table is hard to make accessible, it's probably also hard to understand for every reader. Best split up a complex table in multiple tables or use also, for example, unordered lists. Try to display the data as simple as possible, always keep your reader in mind.
+When designing the structure of a table, keep in mind: when a complex table is hard to make accessible, it's probably also hard to understand for every reader. It's sometimes best to split up a complex table into multiple tables or use a different structure, such as unordered lists. Try to display the data as simply as possible, always keeping your reader in mind.
 
 {: .callout .warning}
 **Warning:** Using a table only for layout and not for displaying data makes the content hard to understand for screen reader users. It is actually a WCAG violation to use a table for layout only. See [WCAG 1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships).
 
 ## The table block in WordPress Admin
 
-With the default Table block you can create simple and accessible tables. This example is created with WordPress 7.1.
+With the default Table block you can create simple accessible tables. This example is created with WordPress 7.1.
 
 Step 1. When editing or adding a post, search for the table block and select it.
 ![Search for the table block]({{site.baseurl}}/assets/images/table-step-1.png)
