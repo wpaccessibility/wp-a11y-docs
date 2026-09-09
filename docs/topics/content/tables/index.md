@@ -93,7 +93,7 @@ Work is currently underway to improve and enhance the table block in the WordPre
 ### Related pages in this documentation
 
 - [Tables in frontend development](/docs/topics/code/tables/) in Frontend code.
-- [Semantic HTML]({{site.baseurl}}/docs/topics/code/tables/) in Frontend code.
+- [Semantic HTML]({{site.baseurl}}/docs/topics/code/semantics/) in Frontend code.
 
 ### Other resources
 
