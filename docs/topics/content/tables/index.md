@@ -18,6 +18,9 @@ Important to make the data understandable for users that rely on assistive techn
 - Use **table headers** to describe the columns and rows.
 - If possible, give the table a **caption** to describe the purpose of the table. If that is not possible, add a **heading** just above the table with a heading level that fits within the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
 
+{: .info .callout }
+How to create tables in frontend development is addressed in the “Frontend code” section [Tables in code]({{site.baseurl}}/docs/topics/code/tables/).
+
 <table>
 <caption>The cities of WordCamp Europe</caption>
   <thead>
@@ -78,7 +81,7 @@ Read [Table block](https://wordpress.org/documentation/article/table-block/) in 
 
 These are the current options to create an accessible table in the WordPress Admin. If you want more, try out one of the plugins that can add more features to the table block, like row headers and captions. Before using a plugin, make sure it creates accessible tables in the website. You can test this by using a test tool like the [WAVE Browser Extension](https://wave.webaim.org/) on the webpage with the table.
 
-Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub issue [Table V2: define accessibility requirements for table semantics and header associations](https://github.com/WordPress/gutenberg/issues/81722).
+Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub [issues labeled Block Table](https://github.com/WordPress/gutenberg/issues?q=state%3Aopen%20label%3A%22%5BBlock%5D%20Table%22). There are plans for expanding the capabilities of the table block, assistance is welcome in making this happen.
 
 ## Resources
 
