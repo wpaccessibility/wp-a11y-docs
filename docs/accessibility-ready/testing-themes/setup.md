@@ -27,6 +27,8 @@ Our InstaWP template has demo content including pages, posts, media, and navigat
 
 Additionally, specific pages and URLs from this site are referenced in the report template. For this reason, we recommend starting with an InstaWP testing site. If you prefer to test elsewhere, you can export the InstaWP content and import it into a different site using the [WordPress Importer plugin.](https://wordpress.org/plugins/wordpress-importer/)
 
+For theme developers testing your own themes locally, the same data set is available from the [WordPress Accessibility theme unit test repository](https://github.com/wpaccessibility/a11y-theme-unit-test).
+
 ### How to create your site
 
 {: .callout .alert }
