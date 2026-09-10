@@ -4,6 +4,9 @@ layout: default
 parent: Content and images
 description: How to add a table to the content in an accessible way.
 nav_order: 4
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 has_video: true
 date_created: September 08, 2026
 ---
