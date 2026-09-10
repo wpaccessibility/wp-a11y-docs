@@ -3,6 +3,7 @@ title: Frontend code
 layout: default
 parent: Standards and best practice
 description: How to keep the result of the front-end code of a plugin, theme and WordPress core accessible for everyone.
+meta_data: false
 nav_order: 3
 ---
 
