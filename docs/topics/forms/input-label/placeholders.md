@@ -32,6 +32,9 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 <label for="search">Search for a product:</label>
 <input type="search" id="search" name="s" placeholder="For example: apples">
 ```
+{: .callout .alert}
+*Note* Sufficient color contrast guidelines for text against the background also apply to placeholders. The topic [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) tells you more about this.
+
 
 ## Resources
 
@@ -39,6 +42,7 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 ### WCAG Success Criteria for placeholders
 
 - [1.3.1 Info and relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
+- [1.4.3 Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum) (Level AA).
 - [2.4.6 Headings and labels](https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels) (Level AA).
 - [3.3.2 Labels or instructions](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
 - [4.1.2 Name, role, value](https://www.w3.org/WAI/WCAG22/quickref/#labels-or-instructions) (Level A).
@@ -47,9 +51,11 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 ### Related pages in this documentation
 
 - [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
+- [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Standards and best practice, Design and user experience.
 - [Controls with accessible names, roles, and states]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/) in the Theme guidelines for the WordPress accessibility-ready program.
 - [Labeled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labeled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
 
+- 
 {: .resource-h3}
 ### Other resources
 
