@@ -3,7 +3,9 @@ title: Why accessibility should be your next priority
 layout: default
 parent: Accessibility, the business case
 description: Wendie Huis in't Veld gives her insights about why accessibility should be your next priority.
-nav_order: 2
+contributors:
+ - Wendie Huis in't Veld
+nav_order: 7
 ---
 
 # Why accessibility should be your next priority
@@ -59,5 +61,5 @@ Long-term actions:
 ## Final takeaway
 While full compliance may not be required by the June 28, '25 deadline or for smaller companies, now is a great time to start. 
 
-Track your progress and keep pushing forward. The more effort you put in, the more inclusive your website will become ultimately expanding your reach and growing your income.
+Track your progress and keep pushing forward. The more effort you put in, the more inclusive your website will become, ultimately expanding your reach and growing your income.
 
