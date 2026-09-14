@@ -574,7 +574,7 @@
 
           <h1 id="color-contrast-of-text-against-its-background">Color contrast of text against its background</h1>
 
-<p>Sufficient contrast between text and its background ensures that content is easy to read. This also applies when someone is visually impaired or when the sun is shining on your smartphone screen.</p>
+<p>Sufficient contrast between text and its background ensures that content is easier to read. This also applies when someone is visually impaired or when the sun is shining on your smartphone screen.</p>
 
 <p>For example:</p>
 <ul>
@@ -582,7 +582,7 @@
   <li><span style="color: #B5B5B5">Now you don’t</span>, color contrast 2:1.</li>
 </ul>
 
-<p>Good color contrast should be considered for the text color and background colors (or images), but also needs to be considered for dark mode, placeholders and hover or focus states of text in links and buttons.</p>
+<p>Good color contrast should be considered for the text color and background colors (or images), but also needs to be considered for dark mode, placeholders, and hover or focus states of text in links and buttons.</p>
 
 <p>The guidelines for <a href="https://www.w3.org/WAI/WCAG22/quickref/#distinguishable">WCAG 2.2 Level AA</a> require that the contrast between background and foreground colors for text has a luminosity contrast ratio of:</p>
 
@@ -592,7 +592,9 @@
   <li>3:1 contrast for bold text (bold and 19 pixels or larger).</li>
 </ul>
 
-<p class="callout tip"><strong>Tip:</strong> Logos and logotype are exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.</p>
+<p>The actual units mentioned in the <a href="https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum">WCAG guideline 1.4.3 Contrast (Minimum)</a> are in points (pt), and 24 pixels and 19 pixels are approximate conversions. The documentation about <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html">Understanding SC 1.4.3 Contrast (Minimum)</a>, by the W3C, explains this calculation in detail.</p>
+
+<p class="callout tip"><strong>Tip:</strong> Logos and logotypes are exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.</p>
 
 <p>Color contrast should be high enough for good readability but should not be too bright for people with sensitive eyes or cognitive problems. There are no WCAG criteria defining excessively high contrast, but very high contrast should be used selectively.</p>
 
@@ -600,16 +602,15 @@
 
 <h2 id="placeholders">Placeholders</h2>
 
-<p>Sufficient color contrast for text against the background also applies to <code class="language-plaintext highlighter-rouge">placeholder</code> attributes.
-Some browsers, such as Firefox, make placeholder text more transparent by default. Therefore, add <code class="language-plaintext highlighter-rouge">opacity: 1</code> in the CSS for the placeholder.</p>
+<p>Sufficient color contrast for text against the background also applies to <code class="language-plaintext highlighter-rouge">placeholder</code> attributes.</p>
 
+<p>Firefox used to make placeholder text more transparent by default. This is no longer the case, so <a href="https://core.trac.wordpress.org/ticket/63030">adding opacity: 1; to the placeholder CSS</a> is no longer necessary.</p>
+
+<p><strong>Tip</strong>: The lightest shade of gray you can use against a white background is #757575 or rgb(117, 117, 117).</p>
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">::placeholder</span> <span class="p">{</span>
- <span class="nl">opacity</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span>
  <span class="nl">color</span><span class="p">:</span> <span class="m">#757575</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-
-<p><strong>Tip</strong>: The lightest shade of gray you can use against a white background is #757575 or rgb(117, 117, 117).</p>
 
 <p>The topic <a href="/pr-preview/pr-414/docs/topics/forms/input-label/placeholders/">Placeholders in form fields</a> explains how and when to use placeholders.</p>
 
