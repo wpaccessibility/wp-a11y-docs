@@ -2,7 +2,7 @@
 title: Color contrast of text
 layout: default
 parent: Color
-description: Sufficient contrast between text and its background ensures that content is easy to read. Learn about color contrast and how to comply to accessibility guidelines.
+description: Sufficient contrast between text and its background ensures that content is easier to read. Learn about color contrast and how to comply to accessibility guidelines.
 nav_order: 2
 contributors:
   - Rian Rietveld
@@ -11,13 +11,13 @@ contributors:
 
 # Color contrast of text against its background
 
-Sufficient contrast between text and its background ensures that content is easy to read. This also applies when someone is visually impaired or when the sun is shining on your smartphone screen.
+Sufficient contrast between text and its background ensures that content is easier to read. This also applies when someone is visually impaired or when the sun is shining on your smartphone screen.
 
 For example:
 - <span style="color: #595959">Now you see me</span>, color contrast 7:1.
 - <span style="color: #B5B5B5">Now you don't</span>, color contrast 2:1.
 
-Good color contrast should be considered for the text color and background colors (or images), but also needs to be considered for dark mode, placeholders and hover or focus states of text in links and buttons.
+Good color contrast should be considered for the text color and background colors (or images), but also needs to be considered for dark mode, placeholders, and hover or focus states of text in links and buttons.
 
 The guidelines for [WCAG 2.2 Level AA](https://www.w3.org/WAI/WCAG22/quickref/#distinguishable) require that the contrast between background and foreground colors for text has a luminosity contrast ratio of:
 
@@ -25,8 +25,10 @@ The guidelines for [WCAG 2.2 Level AA](https://www.w3.org/WAI/WCAG22/quickref/#d
 - 3:1 contrast for larger text (24 pixels and up).
 - 3:1 contrast for bold text (bold and 19 pixels or larger).
 
+The actual units mentioned in the [WCAG guideline 1.4.3 Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimum) are in points (pt), and 24 pixels and 19 pixels are approximate conversions. The documentation about [Understanding SC 1.4.3 Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html), by the W3C, explains this calculation in detail.
+
 {: .callout .tip }
-**Tip:** Logos and logotype are exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
+**Tip:** Logos and logotypes are exceptions to accessibility guidelines, including color contrast rules. If you’re designing a new logo, however, it might be a good idea to consider them, anyway.
 
 Color contrast should be high enough for good readability but should not be too bright for people with sensitive eyes or cognitive problems. There are no WCAG criteria defining excessively high contrast, but very high contrast should be used selectively.
 
@@ -35,16 +37,15 @@ If you want to use text over an image, best the best method is to place a solid 
 ## Placeholders
 
 Sufficient color contrast for text against the background also applies to `placeholder` attributes.
-Some browsers, such as Firefox, make placeholder text more transparent by default. Therefore, add `opacity: 1` in the CSS for the placeholder.
 
+Firefox used to make placeholder text more transparent by default. This is no longer the case, so [adding opacity: 1; to the placeholder CSS](https://core.trac.wordpress.org/ticket/63030) is no longer necessary.
+
+**Tip**: The lightest shade of gray you can use against a white background is #757575 or rgb(117, 117, 117).
 ```css
 ::placeholder {
- opacity: 1;
  color: #757575;
 }
 ```
-
-**Tip**: The lightest shade of gray you can use against a white background is #757575 or rgb(117, 117, 117).
 
 The topic [Placeholders in form fields]({{site.baseurl}}/docs/topics/forms/input-label/placeholders/) explains how and when to use placeholders.
 

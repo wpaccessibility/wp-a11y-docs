@@ -32,9 +32,9 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 <label for="search">Search for a product:</label>
 <input type="search" id="search" name="s" placeholder="For example: apples">
 ```
-{: .callout .alert}
-*Note* Sufficient color contrast guidelines for text against the background also apply to placeholders. The topic [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) tells you more about this.
 
+{: .callout .tip }
+**Note**: Sufficient color contrast guidelines for text against the background also apply to placeholders. The topic [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) tells you more about this.
 
 ## Resources
 
@@ -55,7 +55,6 @@ In this case, use a [description]({{site.baseurl}}/docs/topics/forms/description
 - [Controls with accessible names, roles, and states]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/) in the Theme guidelines for the WordPress accessibility-ready program.
 - [Labeled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labeled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
 
-- 
 {: .resource-h3}
 ### Other resources
 
