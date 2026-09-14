@@ -5,6 +5,9 @@ parent: Frontend code
 description: How to create data tables in front-end development.
 has_video: true
 nav_order: 5
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
 # Tables in front-end development
@@ -106,13 +109,14 @@ The W3C published an excellent tutorial for more complex tables on [how to write
 
 Yes, you can use the ARIA attribute `role="presentation"` or `role="none"` to tell a screen reader user that this is not a data table and let it read out like it is text. [ARIA: presentation role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/presentation_role) on MDN gives more information.
 
+{: .info .callout }
 **Note**: removing the semantics from an HTML table can be done, but [don’t use ARIA to fix broken HTML](https://www.w3.org/TR/using-aria/#rule1). It’s a hack this way, not best practice. Use CSS instead for content layout. Adding the presentation role can be useful as a quick fix for legacy code, but not for new work.
 
 ## The Table block in WordPress
 
 The [Table block in the WordPress Admin](https://wordpress.org/documentation/article/table-block/) is, at the moment, limited to table headings at the top and rows for the data below. 
 
-Work is currently underway to improve and enhance the table block. You can follow this in the GitHub issue [Table V2: define accessibility requirements for table semantics and header associations](https://github.com/WordPress/gutenberg/issues/81722).
+Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub [issues labeled Block Table](https://github.com/WordPress/gutenberg/issues?q=state%3Aopen%20label%3A%22%5BBlock%5D%20Table%22). There are plans for expanding the capabilities of the table block, assistance is welcome in making this happen.
 
 ## Resources
 
