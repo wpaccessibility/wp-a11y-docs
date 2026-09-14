@@ -82,9 +82,9 @@ Check that text has sufficient color contrast against its background. People sho
 
 In WordPress, when you set a color and or background color in the editor, the software checks if the contrast meets accessibility guidelines.
 
-![Warning in the WP Editor: This color combination may be hard for people to read. Try using a brighter background color and/or a darker text color.]({{site.baseurl}}/assets/images/color-contrast-warning-editor.png)
+![Warning in the WP Editor: This color has poor contrast against the background. Consider increasing contrast.]({{site.baseurl}}/assets/images/color-contrast-warning.png)
 
-More about how to calculate and test the color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/).
+Learn more about how to calculate and test color contrast: [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/).
 
 ### 7: Add captions to videos
 
