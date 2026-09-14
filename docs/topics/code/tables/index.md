@@ -2,14 +2,14 @@
 title: Tables in code
 layout: default
 parent: Frontend code
-description: How to create data tables in frontend development.
+description: How to create data tables in front-end development.
 has_video: true
 nav_order: 5
 ---
 
-# Tables in frontend development
+# Tables in front-end development
 
-Tables are the recommended way to display tabular data. Tabular data is any data best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not a good idea for layout, however.
+Tables are the recommended way to display tabular data. Tabular data is any data best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not intended for layout, however, and can make non-tabular content considerably harder to navigate.
 
 Well-coded tables are important for screen reader users, so they can read, navigate, and understand the data.
 
@@ -17,16 +17,16 @@ This short video lets you listen to a screen reader announcing the information i
 <video data-able-player data-youtube-nocookie="true" data-youtube-id="HRubrn1T3xU" data-heading-level="0"></video>
 
 {: .info .callout }
-How to add tables in the content is addressed in the “Content and Images” section [Tables in the content]({{site.baseurl}}/docs/topics/content/tables/).
+How to add tables in WordPress content is addressed in the “Content and Images” section [Tables in the content]({{site.baseurl}}/docs/topics/content/tables/).
 
 ## The basics
 
 ### Use an HTML table
-Make sure you use an HTML`<table>`. Creating a pseudo-table for data by using divs and CSS will make the data much harder to understand for a screen reader user. The page [HTML table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table) on MDN explains in detail how to set up an HTML table.
+Make sure you use an HTML `<table>`. Creating a pseudo-table for data by using `div` or `li` elements and CSS will make the data much harder to understand for a screen reader user. The page [HTML table element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/table) on MDN explains in detail how to set up an HTML table.
 
 ### Name the table
 
-The `<caption>` describes the purpose of the table. It will be read out by screen readers, it gives the table its [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/). If you must, you can hide a caption with CSS like the [.screen-reader-text class]({{site.baseurl}}/docs/topics/code/screen-reader-text/).
+The `<caption>` describes the purpose of the table. It is read out by screen readers and gives the table its [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/). If you must, you can hide a caption visually with CSS like the [.screen-reader-text class]({{site.baseurl}}/docs/topics/code/screen-reader-text/).
 
 If a caption is not possible, add a heading just above the table with a heading level that fits within the [heading structure]({{site.baseurl}}/docs/topics/content/headings/) of the page.
 
@@ -35,12 +35,12 @@ If a caption is not possible, add a heading just above the table with a heading 
 
 ### Use table headers
 
-Use table headers to describe the columns and rows.  Header cells must be marked up with `<th>`, and data cells with `<td>`. For more complex tables, you may need `thead`, `colgroup`, `rowgroup`, `scope`, `id`, and headers attributes.
+Use table headers to describe the columns and rows.  Header cells must be marked up with `<th>`, and data cells with `<td>`. For more complex tables, you may need the `thead`, `colgroup` and `rowgroup`, elements and the  `scope`, `id`, and `headers` attributes.
 
 The W3C published an excellent tutorial for more complex tables on [how to write tables](https://www.w3.org/WAI/tutorials/tables/) at WAI/tutorials.
 
 {: .callout .info }
-**Note**: The rule of thumb is: the simpler, the better. If your table is going to be very complex, consider splitting it up into more tables or find a different way to organize your data. It will probably also be easier to read for all users.
+**Note**: The rule of thumb is "the simpler, the better." If your table is going to be very complex, consider splitting it up into more tables or find a different way to organize your data. It will probably also be easier to read for all users.
 
 ## Examples
 
