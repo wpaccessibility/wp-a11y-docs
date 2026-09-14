@@ -24,13 +24,9 @@ Find the documentation for your work role, work field and expertise.
 
 ## New and updated content
 
-In August 2026:
-
-The accessibility-ready program for WordPress:
-- [About the accessibility-ready program]({{site.baseurl}}/docs/accessibility-ready/about-accessibility-ready/).
+In September 2026:
 
 Standards and best practice:  
-- [Alternative text for images in the content]({{site.baseurl}}/docs/topics/content/alt-text/) in Content and images.
-- [Readability]({{site.baseurl}}/docs/topics/content/readability/) in Content and images.
-- [Digital documents]({{site.baseurl}}/docs/topics/content/docs/) in Content and images.
-- [Disappearing toast notifications]({{site.baseurl}}/docs/topics/design/avoid/toasts/) in Design patterns to avoid.
+- [Tables in the content]({{site.baseurl}}/docs/topics/content/tables/) in Content and images.
+- [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Design and user experience.
+- [Tables in front-end development]({{site.baseurl}}/docs/topics/code/tables/) in Frontend code.
