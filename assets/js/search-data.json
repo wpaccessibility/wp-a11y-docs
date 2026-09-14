@@ -2065,43 +2065,43 @@
     "relUrl": "/docs/topics/code/screen-reader-text/"
   },"295": {
     "doc": "Tables in code",
-    "title": "Tables in theme and plugin development",
-    "description": "Tables in theme and plugin development",
-    "content": "Tables are the recommended way to display tabular data. Tabular data is any data that is best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not a good idea for layout, however. Well-coded tables are important for screen reader users, so they can read, navigate, and understand the data. Creating a pseudo-table for data by using divs and CSS will make the data much harder to understand for a screen reader user. ",
-    "url": "/docs/topics/code/tables/#tables-in-theme-and-plugin-development",
-    "relUrl": "/docs/topics/code/tables/#tables-in-theme-and-plugin-development"
+    "title": "Tables in front-end development",
+    "description": "How to create data tables in front-end development.",
+    "content": "Tables are the recommended way to display tabular data. Tabular data is any data best navigated in two dimensions: where there are relationships both vertically along columns and horizontally in rows. Tables are not intended for layout, however, and can make non-tabular content considerably harder to navigate. Well-coded tables are important for screen reader users, so they can read, navigate, and understand the data. This short video lets you listen to a screen reader announcing the information in a simple but well-structured table: . How to add tables in WordPress content is addressed in the “Content and Images” section Tables in the content. ",
+    "url": "/docs/topics/code/tables/#tables-in-front-end-development",
+    "relUrl": "/docs/topics/code/tables/#tables-in-front-end-development"
   },"296": {
     "doc": "Tables in code",
-    "title": "Examples",
-    "description": "Tables in theme and plugin development",
-    "content": "Incorrect: a table purely for layout . // Incorrect: don’t use a table for layout only, for example in forms. &lt;table&gt; &lt;tr&gt; &lt;td&gt;&lt;label for=\"blogname\"&gt;Site Title&lt;/label&gt;&lt;/th&gt; &lt;td&gt;&lt;input name=\"blogname\" type=\"text\" id=\"blogname\" value=\"\" /&gt;&lt;/td&gt; &lt;/tr&gt; [...etc…] &lt;/table&gt; . Incorrect: divs show tabular information . // Incorrect: don’t use meaningless divs to display meaningful data. &lt;div&gt; &lt;div class=”row”&gt;The cities of WordCamp Europe&lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;&lt;strong&gt;Year&lt;/strong&gt;&lt;/div&gt; &lt;div class=”cell2”&gt;&lt;strong&gt;City&lt;/strong&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;2017&lt;/div&gt; &lt;div class=”cell2”&gt;Paris&lt;/div&gt; &lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;2018&lt;/div&gt; &lt;div class=”cell2”&gt;Belgrade&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; . Correct: a table to show tabular information . // A data table in its most basic form. &lt;table&gt; &lt;caption&gt;The cities of WordCamp Europe&lt;/caption&gt; &lt;tr&gt; &lt;th&gt;Year&lt;/th&gt; &lt;th&gt;City&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;2017&lt;/td&gt; &lt;td&gt;Paris&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;2018&lt;/td&gt; &lt;td&gt;Belgrade&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; . Header cells must be marked up with &lt;th&gt;, and data cells with &lt;td&gt;. For more complex tables, you may need thead, colgroup, rowgroup, scope, id, and headers attributes. The W3C WAI has a good and complete tutorial on how to do complex tables. Caption or summary? . | A caption functions like a heading for a table | Using &lt;summary&gt; in a &lt;table&gt; is deprecated in HTML5 and should no longer be used. | . ",
-    "url": "/docs/topics/code/tables/#examples",
-    "relUrl": "/docs/topics/code/tables/#examples"
+    "title": "The basics",
+    "description": "How to create data tables in front-end development.",
+    "content": "Use an HTML table . Make sure you use an HTML &lt;table&gt;. Creating a pseudo-table for data by using div or li elements and CSS will make the data much harder to understand for a screen reader user. The page HTML table element on MDN explains in detail how to set up an HTML table. Name the table . The &lt;caption&gt; describes the purpose of the table. It is read out by screen readers and gives the table its accessible name. If you must, you can hide a caption visually with CSS like the .screen-reader-text class. If a caption is not possible, add a heading just above the table with a heading level that fits within the heading structure of the page. Beware: Using &lt;summary&gt; in a table is deprecated in HTML5 and should no longer be used. Use table headers . Use table headers to describe the columns and rows. Header cells must be marked up with &lt;th&gt;, and data cells with &lt;td&gt;. For more complex tables, you may need the thead, colgroup and rowgroup, elements and the scope, id, and headers attributes. The W3C published an excellent tutorial for more complex tables on how to write tables at WAI/tutorials. Note: The rule of thumb is “the simpler, the better.” If your table is going to be very complex, consider splitting it up into more tables or find a different way to organize your data. It will probably also be easier to read for all users. ",
+    "url": "/docs/topics/code/tables/#the-basics",
+    "relUrl": "/docs/topics/code/tables/#the-basics"
   },"297": {
     "doc": "Tables in code",
-    "title": "Can we use role=presentation?",
-    "description": "Tables in theme and plugin development",
-    "content": "Yes, you can use the ARIA attribute role=presentation to tell a screen reader user that this is not a data table and let it read out like it is text. This works, but don’t use ARIA to fix broken HTML5. It’s a hack this way, not a best practice. ",
-    "url": "/docs/topics/code/tables/#can-we-use-rolepresentation",
-    "relUrl": "/docs/topics/code/tables/#can-we-use-rolepresentation"
+    "title": "Examples",
+    "description": "How to create data tables in front-end development.",
+    "content": "Don’t: use a table purely for layout. Using a table only for layout and not for displaying data makes the content hard to understand for screen reader user, because unrelated information about the table structure is also announced. // Incorrect: don’t use a table for layout only, for example, in forms. &lt;table&gt; &lt;tr&gt; &lt;td&gt;&lt;label for=\"blogname\"&gt;Site Title&lt;/label&gt;&lt;/th&gt; &lt;td&gt;&lt;input name=\"blogname\" type=\"text\" id=\"blogname\" value=\"\" /&gt;&lt;/td&gt; &lt;/tr&gt; [...etc…] &lt;/table&gt; . Don’t: use DIVs and CSS only to show tabular information. This way the HTML doesn’t give any semantic information to screen reader users about how the data is structured. This relates to the WCAG success criterion 1.3.1 Info and Relationships for more info. // Incorrect: don’t use meaningless divs to display meaningful data. &lt;div&gt; &lt;div class=”row”&gt;The cities of WordCamp Europe&lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;&lt;strong&gt;Year&lt;/strong&gt;&lt;/div&gt; &lt;div class=”cell2”&gt;&lt;strong&gt;City&lt;/strong&gt;&lt;/div&gt; &lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;2017&lt;/div&gt; &lt;div class=”cell2”&gt;Paris&lt;/div&gt; &lt;/div&gt; &lt;div class=”row”&gt; &lt;div class=”cell1”&gt;2018&lt;/div&gt; &lt;div class=”cell2”&gt;Belgrade&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; . Do: use an HTML table with table headers and table calls to show tabular information. With a caption to give the table its accessible name. // A data table in its most basic form. &lt;table&gt; &lt;caption&gt;The cities of WordCamp Europe&lt;/caption&gt; &lt;tr&gt; &lt;th&gt;Year&lt;/th&gt; &lt;th&gt;City&lt;/th&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;2017&lt;/td&gt; &lt;td&gt;Paris&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;2018&lt;/td&gt; &lt;td&gt;Belgrade&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; . Can we use role=”presentation”? . Yes, you can use the ARIA attribute role=\"presentation\" or role=\"none\" to tell a screen reader user that this is not a data table and let it read out like it is text. ARIA: presentation role on MDN gives more information. Note: removing the semantics from an HTML table can be done, but don’t use ARIA to fix broken HTML. It’s a hack this way, not best practice. Use CSS instead for content layout. Adding the presentation role can be useful as a quick fix for legacy code, but not for new work. ",
+    "url": "/docs/topics/code/tables/#examples",
+    "relUrl": "/docs/topics/code/tables/#examples"
   },"298": {
     "doc": "Tables in code",
-    "title": "Complexity",
-    "description": "Tables in theme and plugin development",
-    "content": "The rule of thumb is: the simpler, the better. If your table is going to be very complex, consider splitting it up into more tables or find a different way to organize your data. It will probably also be easier to read for sighted users. ",
-    "url": "/docs/topics/code/tables/#complexity",
-    "relUrl": "/docs/topics/code/tables/#complexity"
+    "title": "The Table block in WordPress",
+    "description": "How to create data tables in front-end development.",
+    "content": "The Table block in the WordPress Admin is, at the moment, limited to table headings at the top and rows for the data below. Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub issues labeled Block Table. There are plans for expanding the capabilities of the table block, assistance is welcome in making this happen. ",
+    "url": "/docs/topics/code/tables/#the-table-block-in-wordpress",
+    "relUrl": "/docs/topics/code/tables/#the-table-block-in-wordpress"
   },"299": {
     "doc": "Tables in code",
     "title": "Resources",
-    "description": "Tables in theme and plugin development",
-    "content": "WCAG Success Criteria for semantic HTML . 1.3.1 Info and Relationships (Level A). Related pages in this documentation . Semantic HTML in Standards and best practice, Frontend code. Other resources . | Table element reference on developer.mozilla.org | A good tutorial on how to write complex tables for the W3C is at WAI/tutorials | Creating Accessible Tables on WebAIM. | It’s OK to use tables by Adrian Roselli. | . One of the major limitations to tables is that they are difficult to make responsive. There are ways to do it while retaining accessibility: . | Accessible, Simple, Responsive Tables by Davide Rizzo on CSS Tricks. | A Responsive Accessible Table, by Adrian Roselli. | Responsive Tables for Humans, Web Crawlers and Screen Readers by Manuel Timelthaler. | . ",
+    "description": "How to create data tables in front-end development.",
+    "content": "Related WCAG success criteria for tables . | 1.3.1 Info and Relationships (Level A). | 1.3.2 Meaningful Sequence (Level A). | . Related pages in this documentation . | Tables in the content in Standards and best practice, Content and images. | Semantic HTML in Standards and best practice, Frontend code. | Accessible name in Standards and best practice, Frontend code. | . Other resources . | Table element reference on developer.mozilla.org | How to write tables for the W3C is at WAI/tutorials. | Creating Accessible Tables on WebAIM. | It’s OK to use tables by Adrian Roselli. | . Tables can be challenging to make responsive. There are ways to do it while retaining accessibility: . | Accessible Front-End Patterns For Responsive Tables, by Adrian Bece on Smashing Magazine. | A Responsive Accessible Table, by Adrian Roselli. | Responsive Tables for Humans, Web Crawlers, and Screen Readers by Manuel Timelthaler. | . ",
     "url": "/docs/topics/code/tables/#resources",
     "relUrl": "/docs/topics/code/tables/#resources"
   },"300": {
     "doc": "Tables in code",
     "title": "Tables in code",
-    "description": "Tables in theme and plugin development",
+    "description": "How to create data tables in front-end development.",
     "content": " ",
     "url": "/docs/topics/code/tables/",
     "relUrl": "/docs/topics/code/tables/"
@@ -3054,7 +3054,7 @@
     "doc": "Home",
     "title": "New and updated content",
     "description": "Accessibility Knowledge Base for WordPress users and creators.",
-    "content": "In August 2026: . The accessibility-ready program for WordPress: . | About the accessibility-ready program. | . Standards and best practice: . | Alternative text for images in the content in Content and images. | Readability in Content and images. | Digital documents in Content and images. | Disappearing toast notifications in Design patterns to avoid. | . ",
+    "content": "In September 2026: . Standards and best practice: . | Tables in the content in Content and images. | Color contrast of text against its background in Design and user experience. | Tables in front-end development in Frontend code. | . ",
     "url": "/#new-and-updated-content",
     "relUrl": "/#new-and-updated-content"
   },"437": {
