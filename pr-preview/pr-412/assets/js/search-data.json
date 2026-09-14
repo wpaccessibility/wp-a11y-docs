@@ -2088,7 +2088,7 @@
     "doc": "Tables in code",
     "title": "The Table block in WordPress",
     "description": "How to create data tables in front-end development.",
-    "content": "The Table block in the WordPress Admin is, at the moment, limited to table headings at the top and rows for the data below. Work is currently underway to improve and enhance the table block. You can follow this in the GitHub issue Table V2: define accessibility requirements for table semantics and header associations. ",
+    "content": "The Table block in the WordPress Admin is, at the moment, limited to table headings at the top and rows for the data below. Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub issues labeled Block Table. There are plans for expanding the capabilities of the table block, assistance is welcome in making this happen. ",
     "url": "/pr-preview/pr-412/docs/topics/code/tables/#the-table-block-in-wordpress",
     "relUrl": "/docs/topics/code/tables/#the-table-block-in-wordpress"
   },"299": {
@@ -3054,7 +3054,7 @@
     "doc": "Home",
     "title": "New and updated content",
     "description": "Accessibility Knowledge Base for WordPress users and creators.",
-    "content": "In August 2026: . The accessibility-ready program for WordPress: . | About the accessibility-ready program. | . Standards and best practice: . | Alternative text for images in the content in Content and images. | Readability in Content and images. | Digital documents in Content and images. | Disappearing toast notifications in Design patterns to avoid. | . ",
+    "content": "In September 2026: . Standards and best practice: . | Tables in the content in Content and images. | Color contrast of text against its background in Design and user experience. | Tables in front-end development in Frontend code. | . ",
     "url": "/pr-preview/pr-412/#new-and-updated-content",
     "relUrl": "/#new-and-updated-content"
   },"437": {
