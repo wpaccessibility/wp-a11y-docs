@@ -4,6 +4,9 @@ layout: default
 parent: Patterns to avoid
 description: Using infinite scroll is not recommended. 
 nav_order: 2
+contributors:
+  - Joe Dolson
+  - Rian Rietveld
 ---
 
 # Patterns to avoid: Infinite scroll
