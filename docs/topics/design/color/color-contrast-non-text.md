@@ -15,7 +15,7 @@ Maintain sufficient color contrast between interactive components that communica
 
 User interface components and graphical objects like icons, toggle switches, sliders/range indicators, progress bars, form elements or data visualizations like graph lines, legend markers or, trend indicators. 
 
-For these elements, the contrast ratio between foreground and surrounding colors should be **3:1 or higher**. The 3:1 contrast must be measured against **adjacent colors—the color(s)** immediately surrounding the element that help define its visibility.
+For these elements, the contrast ratio between foreground and surrounding colors should be **3:1 or higher**. The 3:1 contrast must be measured against **adjacent colors**, the color(s) immediately surrounding the element that help define its visibility.
 
 The topic "Color contrast of text" provides you with links to [Color contrast checkers]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/#color-contrast-checkers).
 
