@@ -30,7 +30,7 @@ Examples are:
 
 The shape of checkboxes and radio buttons should have a contrast ratio of at least 3:1 against their surrounding colors, also for their checked and focus state. 
 
-The border of input field and textarea elements should have a contrast ratio of at least 3:1 against their background but also against the inner color of the field. Ensure the focus state is clearly distinguishable form the normal state. For example, by making the border thicker or by using a different color with a higher contrast ratio.
+The border of input field and textarea elements should have a contrast ratio of at least 3:1 against their background but also against the inner color of the field. Ensure the focus state is clearly distinguishable from the normal state. For example, by making the border thicker or by using a different color with a higher contrast ratio.
 
 {: .callout .info }
 **Note**: The borders of controls, like buttons, with visible text or clear icons, don't need to meet color contrast requirements. The existing labels provide sufficient indication of their meaning. 
