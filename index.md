@@ -29,4 +29,5 @@ In September 2026:
 Standards and best practice:  
 - [Tables in the content]({{site.baseurl}}/docs/topics/content/tables/) in Content and images.
 - [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Design and user experience.
+- [Color contrast for non-text content]({{site.baseurl}}/docs/topics/design/color/color-contrast-non-text/) in Design and user experience.
 - [Tables in front-end development]({{site.baseurl}}/docs/topics/code/tables/) in Frontend code.
