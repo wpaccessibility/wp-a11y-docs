@@ -44,7 +44,7 @@ When additional content appears on hover or keyboard focus—such as tooltips, d
 {: .resource-h3}
 ### WCAG Success Criteria for content on hover or focus
 
-Accessibile content on hover or focus is necessary to meet the WCAG success criteria:
+Accessible content on hover or focus is necessary to meet the WCAG success criteria:
 
 * [1.4.13 Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus) (Level AA).
 * [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/quickref/#keyboard) (Level A).

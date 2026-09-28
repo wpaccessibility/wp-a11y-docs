@@ -43,7 +43,7 @@ The basic requirements are:
 {: .resource-h3}
 ### WCAG Success Criteria for audio, video, and animations
 
-Using accessibile audio, video, and animations is necessary to meet the WCAG success criteria:
+Using accessible audio, video, and animations is necessary to meet the WCAG success criteria:
 
 * [2.2.2 Pause, Stop and Hide](https://www.w3.org/WAI/WCAG22/quickref/#pause-stop-hide) (Level A).
 * [2.3.1 Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/quickref/#three-flashes-or-below-threshold) (Level A).

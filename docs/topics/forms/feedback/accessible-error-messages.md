@@ -126,7 +126,7 @@ This is far more helpful than a generic message.
 
 You click "Send" and… nothing happens. Or you're redirected to the homepage. Was the form actually sent? How do you know?
 
-Give users clear confirmation that their form has been submitted and what will happen next. You can also include this messsage in a confirmation email.
+Give users clear confirmation that their form has been submitted and what will happen next. You can also include this message in a confirmation email.
 
 {: .callout  .example }
 A confirmation text could be:  
