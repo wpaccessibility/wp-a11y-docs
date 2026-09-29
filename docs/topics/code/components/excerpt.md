@@ -57,7 +57,7 @@ For example:
 </a>
 ```
 
-Notice the blank space inside the `.screen-reader-text`? This separates teh words so the text is read out as “continue reading your” instead of “continue readingyour”.
+Notice the blank space inside the `.screen-reader-text`? This separates the words so the text is read out as “continue reading your” instead of “continue readingyour”.
 
 ### The alt text of the thumbnail
 

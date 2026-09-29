@@ -27,7 +27,7 @@ Find more information about the benefits of accessibility-ready themes and how t
 
 ## For theme developers
 
-As a theme deveoper you can add `accessibility-ready` to the theme tags (Tags) in the style.css file to indicate that it meets [accessibility-ready requirements](https://wpaccessibility.org/docs/accessibility-ready/theme-guidelines/). Next to the regular theme review, your theme will then also be reviewed against the
+As a theme developer you can add `accessibility-ready` to the theme tags (Tags) in the style.css file to indicate that it meets [accessibility-ready requirements](https://wpaccessibility.org/docs/accessibility-ready/theme-guidelines/). Next to the regular theme review, your theme will then also be reviewed against the
 [accessibility-ready requirements]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/) before it is approved to be listed in the WordPress theme directory. 
 
 The WordPress theme handbook describes the process for requesting a review in [How to be “Accessibility Ready"](https://make.wordpress.org/themes/handbook/review/accessibility/).
