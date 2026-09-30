@@ -12,7 +12,7 @@
 
 
 
-<title>Headings with meaningful structure, WP Accessibility Knowledge Base</title>
+<title>Color contrast of non-text, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-418/assets/css/styles.css">
@@ -25,7 +25,7 @@
 
 </head>
 
-<body id="top" class="page-headings-with-meaningful-structure">
+<body id="top" class="page-color-contrast-of-non-text">
   <a class="skip-to-main" href="#main-content">Skip menu</a>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
   <symbol id="svg-link" viewBox="0 0 24 24">
@@ -548,14 +548,24 @@
 
         
             
+            
+            
+        
+
+    
+
+        
+
+        
+            
 
 
 
 <nav class="breadcrumb-nav" aria-label="breadcrumbs">
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
-                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-418/docs/accessibility-ready/'>Accessibility-ready program</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/'>Theme accessibility-ready guidelines</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Headings with meaningful structure</li>
+                <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-418/docs/topics/'>Standards and best practice</a></li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-418/docs/topics/design/'>Design & user experience</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-418/docs/topics/design/color/'>Color</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Color contrast of non-text</li>
     </ol>
 </nav>
 
@@ -564,56 +574,54 @@
 
         <main>
 
-          <h1 id="headings-with-meaningful-structure">Headings with meaningful structure</h1>
+          <h1 id="color-contrast-for-non-text-content">Color contrast for non-text content</h1>
 
-<h2 id="basic-principle">Basic principle</h2>
+<p>Maintain sufficient color contrast between interactive components that communicate content or meaning and their backgrounds to ensure important visual information remains visible to all users, including those with visual impairments.</p>
 
-<p>Headings must follow a logical, nested order to convey the structure of content clearly to all users, including those using assistive technologies. Pages should begin with a single <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code>, and subsequent headings should not skip levels (e.g., jumping from <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code> to <code class="language-plaintext highlighter-rouge">&lt;h4&gt;</code>). Headings should describe the content that follows, and there should not be any empty heading tags.</p>
+<p>User interface components and graphical objects like icons, toggle switches, sliders/range indicators, progress bars, form elements or data visualizations like graph lines, legend markers or, trend indicators.</p>
 
-<p>Proper heading structure improves navigation and understanding for screen reader users and supports consistent styling and organization across the site.</p>
+<p>For these elements, the contrast ratio between foreground and surrounding colors should be <strong>3:1 or higher</strong>. The 3:1 contrast must be measured against <strong>adjacent colors</strong>, the color(s) immediately surrounding the element that help define its visibility.</p>
 
-<h2 id="testing">Testing</h2>
+<p>The topic “Color contrast of text” provides you with links to <a href="/pr-preview/pr-418/docs/topics/design/color/color-contrast-text/#color-contrast-checkers">Color contrast checkers</a>.</p>
 
-<p>Use the browser tool <strong>HeadingsMap</strong> to test the heading structure:</p>
+<p>Examples are:</p>
+
 <ul>
-  <li><a href="https://microsoftedge.microsoft.com/addons/detail/headingsmap/bokekiiaddinealohkmhjcgfanndmcgo">Headings Map toolbar for Edge</a></li>
-  <li><a href="https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=en">Headings Map toolbar for Chrome</a></li>
-  <li><a href="https://addons.mozilla.org/en-US/firefox/addon/headingsmap/">Headings Map toolbar for Firefox</a></li>
+  <li>Meaningful icons, such as the three lines for a menu or an arrow pointing right for the next page.</li>
+  <li>An icon that indicates the status of a message, such as an orange triangle for a warning and a green checkmark for success.</li>
+  <li>An indicator or line in a graph that shows the trend of a metric.</li>
+  <li>A red border indicating that an input field contains errors (in addition to the text error message).</li>
 </ul>
 
-<p>For each page template, assess the heading structure to confirm that it accurately reflects the hierarchy of content on the page.</p>
+<h3 id="form-elements">Form elements</h3>
 
-<ol>
-  <li>Install the HeadingsMap browser extension if you do not already have it.</li>
-  <li>Load the page you are going to test and click the button to open the HeadingsMap panel.</li>
-  <li>Verify that an <code class="language-plaintext highlighter-rouge">H1</code> element is present on the page.</li>
-  <li>Verify there is only one <code class="language-plaintext highlighter-rouge">H1</code> on the page.</li>
-  <li>Verify the <code class="language-plaintext highlighter-rouge">H1</code> is the page title (not the site title unless it is the Home page — <code class="language-plaintext highlighter-rouge">H1</code>s should not be identical on every page of the site).</li>
-  <li>Verify that there are no empty heading tags.</li>
-  <li>Verify headings do not skip levels when descending. <code class="language-plaintext highlighter-rouge">H1</code> cannot be followed by <code class="language-plaintext highlighter-rouge">H3</code>, etc.</li>
-  <li>Verify headings are not used for content that does not begin a content group (e.g., large text or blockquotes should not be marked as headings for styling purposes).</li>
-  <li>Verify that the content following a heading relates to that heading.</li>
-  <li>Verify that all sub-sections defined by the theme use heading elements (e.g., sidebars, footers, and widget areas or major sections must all have headings), unless the section has been created as a landmark region with an accessible name.</li>
-</ol>
+<p>The shape of checkboxes and radio buttons should have a contrast ratio of at least 3:1 against their surrounding colors, also for their checked and focus state.</p>
 
-<p>Note: Heading elements for structure may be positioned off-screen if they would appear redundant to sighted users. It is not a failure, for example, to have a screen-reader-only heading in the footer (<code class="language-plaintext highlighter-rouge">&lt;h2 class="screen-reader-text"&gt;Footer&lt;/h2&gt;</code>) if that helps structure the page content and provides meaning for screen reader users.</p>
+<p>The border of input field and textarea elements should have a contrast ratio of at least 3:1 against their background but also against the inner color of the field. Ensure the focus state is clearly distinguishable from the normal state. For example, by making the border thicker or by using a different color with a higher contrast ratio.</p>
+
+<p class="callout info"><strong>Note</strong>: The borders of controls, like buttons, with visible text or clear icons, don’t need to meet color contrast requirements. The existing labels provide sufficient indication of their meaning.</p>
 
 <h2 id="resources">Resources</h2>
 
-<h3 class="resource-h3" id="wcag-success-criteria-for-heading-structure">WCAG Success Criteria for heading structure</h3>
-
-<p>Using a meaningful heading structure is necessary to meet the WCAG success criteria:</p>
+<h3 class="resource-h3" id="wcag-success-criteria-for-color-contrast-of-non-text-content">WCAG Success Criteria for color contrast of non-text content</h3>
 
 <ul>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships">WCAG 1.3.1 Info and Relationships</a> (Level A).</li>
-  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#headings-and-labels">WCAG 2.4.6 Headings and Labels</a> (Level AA).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#use-of-color">1.4.1 Use of Color</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">1.4.11 Non-text Contrast</a> (Level AA).</li>
 </ul>
 
 <h3 class="resource-h3" id="related-pages-in-this-documentation">Related pages in this documentation</h3>
 
 <ul>
-  <li><a href="/pr-preview/pr-418/docs/topics/content/headings/">Using headings in the content</a> in Standards and best practice, Content and images.</li>
-  <li><a href="/pr-preview/pr-418/docs/topics/code/heading-structure/">Heading structure in theme development</a> in Standards and best practice, Frontend code.</li>
+  <li><a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/">Sufficient color contrast of text and UI controls</a> in the Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="{site.baseurl}}/docs/topics/forms/feedback/error-message-format/">Write out an error message in text</a> in Standards and best practice, Forms.</li>
+</ul>
+
+<h3 class="resource-h3" id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://www.properaccess.nl/en/blog/wcag-1-4-11-non-text-contrast/">SC 1.4.11 - What does “Non-text Contrast” mean?</a>, by Julia Tol for ProperAccess.</li>
+  <li><a href="https://medium.com/design-bootcamp/the-color-contrast-dilemma-of-disabled-buttons-in-accessible-design-59811fc89f62">The Color Contrast Dilemma of Disabled Buttons in Accessible Design</a>, by Salim Ansari.</li>
 </ul>
 
 
@@ -630,20 +638,20 @@
         
 
         
-        <li><span>Last updated:</span>  August 04, 2026</li>
+        <li><span>Last updated:</span>  September 26, 2026</li>
         
 
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/accessibility-ready/theme-guidelines/headings-structure.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/color/color-contrast-non-text.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
         
 
         
         <li><span>Contributors:</span>
             
-            Amber Hinds,
+            Rian Rietveld,
             
             
             Joe Dolson.
@@ -670,51 +678,15 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Theme accessibility-ready guidelines</h2>
+        <h2>Other pages in: Color</h2>
         <ul role="list">
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/skip-to-content/"> Skip to Content Link</a>
+                    <a href="/pr-preview/pr-418/docs/topics/design/color/color-contrast-text/"> Color contrast of text</a>
                 </h3>
-                <p>The requirements for a Skip to Content link on accessibility-ready themes.</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/"> Meaningful landmark roles and names</a>
-                </h3>
-                <p>Accessibility-ready themes requirements for meaningful landmark roles and names</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/keyboard-navigation-support/"> Keyboard navigation support</a>
-                </h3>
-                <p>The requirements for keyboard navigation in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/"> Controls with accessible names, roles, and states</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for accessible controls</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/labeled-form-fields/"> Labeled form fields</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for how to label form fields</p>
+                <p>Sufficient contrast between text and its background ensures that content is easier to read. Learn about color contrast and how to comply to accessibility guidelines.</p>
             </li>
             
             
@@ -723,108 +695,9 @@
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/underlined-links/"> Underlined links in text</a>
+                    <a href="/pr-preview/pr-418/docs/topics/design/color/use-of-color/"> Use of color</a>
                 </h3>
-                <p>Accessibility-ready theme requirements for how to indicate links in text</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/no-ambiguous-link-text/"> No ambiguous link text</a>
-                </h3>
-                <p>Accessibility-ready theme requirements for ambiguous link text</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/"> Sufficient color contrast of text and UI controls</a>
-                </h3>
-                <p>Color contrast requirements in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/alternative-text/"> Alternative text on images and graphics</a>
-                </h3>
-                <p>Use of alternative text requirements for accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/accessible-animation/"> Accessible audio, video, and animations</a>
-                </h3>
-                <p>Support for audio, video, and animations in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/reflow-resize/"> Support for reflow, resize, and text spacing changes</a>
-                </h3>
-                <p>Requirements for handling reflow, resize, and text spacing in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/"> No unexpected changes of context</a>
-                </h3>
-                <p>Requirements for changes of context in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/new-windows-tabs/"> No links opening new windows or tabs without warning</a>
-                </h3>
-                <p>Requirements for opening new windows or tabs in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/content-hover-focus/"> Content on hover or focus is accessible</a>
-                </h3>
-                <p>How to handle content revealed on hover or focus in accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/accessibility-statement/"> Accessibility statement</a>
-                </h3>
-                <p>Accessibility Statement requirements for Accessibility-ready themes</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/no-inaccessible-plugins/"> Must not recommend inaccessible plugins</a>
-                </h3>
-                <p>Accessibility-ready themes must not recommend inaccessible plugins.</p>
-            </li>
-            
-            
-            
-            <li>
-                <h3>
-                    <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/screen-reader-text/"> Screen reader text supported</a>
-                </h3>
-                <p>How screen reader text must be supported on an accessibility-ready theme</p>
+                <p>Learn best practices for how to use color while also considering accessibility.</p>
             </li>
             
             
@@ -832,7 +705,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-418/docs/accessibility-ready/theme-guidelines/">Back to: Theme accessibility-ready guidelines</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-418/docs/topics/design/color/">Back to: Color</a>
             </p>
 
         
