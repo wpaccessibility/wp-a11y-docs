@@ -31,5 +31,5 @@ Standards and best practice:
 - [Tables in front-end development]({{site.baseurl}}/docs/topics/code/tables/) in Frontend code.
 - [Color contrast for non-text content]({{site.baseurl}}/docs/topics/design/color/color-contrast-non-text/) in Design and user experience.
 - [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) in Design and user experience.
-- [Patterns to avoid: Infinite scroll]({{site.baseurl}}/docs/topics/design/avoid/infinite-scroll/) in Design and user experience, updated for WordPress 7.1
+- [Patterns to avoid: Infinite scroll]({{site.baseurl}}/docs/topics/design/avoid/infinite-scroll/) in Design and user experience, updated for WordPress 7.1.
 
