@@ -52,7 +52,7 @@ Or view the images in “**list view**” instead of “grid view”. The list v
 <figcaption>"List view" is the first icon in the options to change view.</figcaption>
 </figure>
 
-We are working on a more intuitive way to disable infinit scroll, read the trac ticket: [Add option to toggle infinite scroll in the media modal](https://core.trac.wordpress.org/ticket/65775) for the discussion.
+We are working on a more intuitive way to disable infinite scroll, read the trac ticket: [Add option to toggle infinite scroll in the media modal](https://core.trac.wordpress.org/ticket/65775) for the discussion.
 
 ## Resources
 
