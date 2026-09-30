@@ -44,7 +44,9 @@ In your **user profile** (Users > Profile > Your name), check the option “Disa
 
 <img src="{{site.baseurl}}/assets/images/media-load-more.png" alt="Load more button, with above the button the text Showing 80 of 2987 media items.">
 
-Or view the images in “**list view**” instead of “grid view”. The list view option has standard WordPress Admin pagination.
+Or view the images in the Media screen in “**list view**” instead of “grid view”. The list view option has standard WordPress Admin pagination. 
+
+**Note:** The "list view" solution only works for the Media screens; changing your user setting will also impact the Media modal for adding items to posts and pages.
 
 <figure>
 <img src="{{site.baseurl}}/assets/images/media-list-view.png" alt="Icons to select list or grid view, with the list view focussed.">
