@@ -12,7 +12,7 @@
 
 
 
-<title>Infinite scroll, WP Accessibility Knowledge Base</title>
+<title>Color contrast of non-text, WP Accessibility Knowledge Base</title>
 
 
   <link rel="stylesheet" href="/pr-preview/pr-416/assets/css/styles.css">
@@ -25,7 +25,7 @@
 
 </head>
 
-<body id="top" class="page-infinite-scroll">
+<body id="top" class="page-color-contrast-of-non-text">
   <a class="skip-to-main" href="#main-content">Skip menu</a>
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none" aria-hidden="true">
   <symbol id="svg-link" viewBox="0 0 24 24">
@@ -565,7 +565,7 @@
     <ol class="breadcrumb-nav-list">
         <li class="breadcrumb-nav-list-item"><a href="/">Home</a></li>
                 <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-416/docs/topics/'>Standards and best practice</a></li>
-                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-416/docs/topics/design/'>Design & user experience</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-416/docs/topics/design/avoid/'>Patterns to avoid</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Infinite scroll</li>
+                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-416/docs/topics/design/'>Design & user experience</a></li>                            <li class='breadcrumb-nav-list-item'><a href='/pr-preview/pr-416/docs/topics/design/color/'>Color</a></li>            <li class="breadcrumb-nav-list-item" aria-current="page">Color contrast of non-text</li>
     </ol>
 </nav>
 
@@ -574,70 +574,54 @@
 
         <main>
 
-          <h1 id="patterns-to-avoid-infinite-scroll">Patterns to avoid: Infinite scroll</h1>
+          <h1 id="color-contrast-for-non-text-content">Color contrast for non-text content</h1>
 
-<p>Infinite scroll is a front-end interaction pattern in which new content loads automatically as users reach the bottom of the page, eliminating the need to click through numbered pages.</p>
+<p>Maintain sufficient color contrast between interactive components that communicate content or meaning and their backgrounds to ensure important visual information remains visible to all users, including those with visual impairments.</p>
 
-<p>We don’t recommend using infinite scroll because it has many significant accessibility issues:</p>
+<p>User interface components and graphical objects like icons, toggle switches, sliders/range indicators, progress bars, form elements or data visualizations like graph lines, legend markers or, trend indicators.</p>
+
+<p>For these elements, the contrast ratio between foreground and surrounding colors should be <strong>3:1 or higher</strong>. The 3:1 contrast must be measured against <strong>adjacent colors</strong>, the color(s) immediately surrounding the element that help define its visibility.</p>
+
+<p>The topic “Color contrast of text” provides you with links to <a href="/pr-preview/pr-416/docs/topics/design/color/color-contrast-text/#color-contrast-checkers">Color contrast checkers</a>.</p>
+
+<p>Examples are:</p>
 
 <ul>
-  <li>You can’t go back to your previous place using browser “back” button.</li>
-  <li>You can’t easily get to the footer or the last items in the infinite scroll.</li>
-  <li>There is a large memory footprint if loading big images.</li>
-  <li>Unless a fallback mode is provided, it doesn’t work without JavaScript.</li>
-  <li>There is no standard model for interacting with infinite scroll, so every implementation requires a difficult phase of discovery for users of assistive technology.</li>
-  <li>There is no URL to a specific place on the page.</li>
-  <li>And the list goes on…</li>
+  <li>Meaningful icons, such as the three lines for a menu or an arrow pointing right for the next page.</li>
+  <li>An icon that indicates the status of a message, such as an orange triangle for a warning and a green checkmark for success.</li>
+  <li>An indicator or line in a graph that shows the trend of a metric.</li>
+  <li>A red border indicating that an input field contains errors (in addition to the text error message).</li>
 </ul>
 
-<p>There is a great summary of the disadvantages in the WordPress trac ticket <a href="https://core.trac.wordpress.org/ticket/40330">Reconsider the usage of infinite scrolling across the admin</a>.</p>
+<h3 id="form-elements">Form elements</h3>
 
-<h2 id="recommendations">Recommendations</h2>
+<p>The shape of checkboxes and radio buttons should have a contrast ratio of at least 3:1 against their surrounding colors, also for their checked and focus state.</p>
 
-<p>Pagination with page numbers removes all the issues mentioned above.</p>
+<p>The border of input field and textarea elements should have a contrast ratio of at least 3:1 against their background but also against the inner color of the field. Ensure the focus state is clearly distinguishable from the normal state. For example, by making the border thicker or by using a different color with a higher contrast ratio.</p>
 
-<p><img src="/pr-preview/pr-416/assets/images/pagination.png" alt="Pagination with page numbers from 1 to 9" /></p>
-
-<p>If the number of items to load is not too high, “Load more items” buttons could work as well. However, that option is limited to sequential usage and doesn’t provide any methods to access previously loaded items or the very last items to load.</p>
-
-<p class="callout info"><strong>Note</strong>: The ARIA role “feed” is intended to solve screen reader feedback and keyboard navigation issues, but it is not yet reliable enough for use, and it <a href="https://www.digitala11y.com/ok-aria-rolefeed-is-here-its-not-ready-for-prime-time/">doesn’t solve all the (usability) issues</a> mentioned above.</p>
-
-<h2 id="infinite-scroll-the-wordpress-media-library-grid-view">Infinite scroll the WordPress Media Library grid view</h2>
-
-<p>In WordPress 7.1, infinite scroll is added by default for the Media Library grid view.  There are 2 ways to disable this:</p>
-
-<p>In your <strong>user profile</strong> (Users &gt; Profile &gt; Your name), check the option “Disable infinite scrolling in the Media Library grid view”. Then, a message “Load more” appears in the Medial Library grid view to manually load more images.</p>
-
-<p><img src="/pr-preview/pr-416/assets/images/media-load-more.png" alt="Load more button, with above the button the text Showing 80 of 2987 media items." /></p>
-
-<p>Or view the images in the Media screen in “<strong>list view</strong>” instead of “grid view”. The list view option has standard WordPress Admin pagination.</p>
-
-<p><strong>Note:</strong> The “list view” solution only works for the Media screens; changing your user setting will also impact the Media modal for adding items to posts and pages.</p>
-
-<figure>
-<img src="/pr-preview/pr-416/assets/images/media-list-view.png" alt="Icons to select list or grid view, with the list view focussed." />
-<figcaption>"List view" is the first icon in the options to change view.</figcaption>
-</figure>
-
-<p>We are working on a more intuitive way to disable infinite scroll, read the trac ticket: <a href="https://core.trac.wordpress.org/ticket/65775">Add option to toggle infinite scroll in the media modal</a> for the discussion.</p>
+<p class="callout info"><strong>Note</strong>: The borders of controls, like buttons, with visible text or clear icons, don’t need to meet color contrast requirements. The existing labels provide sufficient indication of their meaning.</p>
 
 <h2 id="resources">Resources</h2>
 
-<h3 id="resources-mostly-focused-on-accessibility">Resources mostly focused on accessibility</h3>
+<h3 class="resource-h3" id="wcag-success-criteria-for-color-contrast-of-non-text-content">WCAG Success Criteria for color contrast of non-text content</h3>
 
 <ul>
-  <li><a href="http://adrianroselli.com/2014/05/so-you-think-you-built-good-infinite.html">So You Think You’ve Built a Good Infinite Scroll</a>, by Adrian Roselli.</li>
-  <li><a href="https://www.digitala11y.com/infinite-scroll-accessibility-is-it-any-good/">Infinite Scroll &amp; Accessibility! Is It Any Good?</a>, from a screen reader user’s point of view, by Raghavendra Satish Peri on DigitalaA11Y.</li>
-  <li><a href="https://www.digitala11y.com/ok-aria-rolefeed-is-here-its-not-ready-for-prime-time/">OK ARIA! Role=feed is here &amp; it’s not ready for prime time</a>, by Raghavendra Satish Peri for DigitalaA11Y.</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#use-of-color">1.4.1 Use of Color</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">1.4.11 Non-text Contrast</a> (Level AA).</li>
 </ul>
 
-<h3 id="resources-mostly-focused-on-usability">Resources mostly focused on usability</h3>
+<h3 class="resource-h3" id="related-pages-in-this-documentation">Related pages in this documentation</h3>
 
 <ul>
-  <li><a href="https://www.sitepoint.com/ux-infinite-scroll-good-bad-maybe/">The UX of Infinite Scroll: The Good, the Bad, and the Maybe</a>, by Christian Leeds for Sitepoint.</li>
-  <li><a href="https://www.smashingmagazine.com/2016/03/pagination-infinite-scrolling-load-more-buttons/">Infinite Scrolling, Pagination Or “Load More” Buttons?</a>, by Christian Holst for Smashing Magazine.</li>
-  <li><a href="https://www.smashingmagazine.com/2013/05/infinite-scrolling-lets-get-to-the-bottom-of-this/">Infinite Scroll: Let’s Get To The Bottom Of This</a>, by Yogev Ahuvia for Smashing Magazine.</li>
-  <li><a href="https://www.nngroup.com/articles/infinite-scrolling/">Infinite scrolling</a>, by Hoa Loranger for the Nielsen Norman Group.</li>
+  <li><a href="/pr-preview/pr-416/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/">Sufficient color contrast of text and UI controls</a> in the Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="{site.baseurl}}/docs/topics/forms/feedback/error-message-format/">Write out an error message in text</a> in Standards and best practice, Forms.</li>
+</ul>
+
+<h3 class="resource-h3" id="other-resources">Other resources</h3>
+
+<ul>
+  <li><a href="https://www.properaccess.nl/en/blog/wcag-1-4-11-non-text-contrast/">SC 1.4.11 - What does “Non-text Contrast” mean?</a>, by Julia Tol for ProperAccess.</li>
+  <li><a href="https://medium.com/design-bootcamp/the-color-contrast-dilemma-of-disabled-buttons-in-accessible-design-59811fc89f62">The Color Contrast Dilemma of Disabled Buttons in Accessible Design</a>, by Salim Ansari.</li>
 </ul>
 
 
@@ -654,23 +638,23 @@
         
 
         
-        <li><span>Last updated:</span>  September 30, 2026</li>
+        <li><span>Last updated:</span>  September 26, 2026</li>
         
 
         
 
         <li><span>Edit article:</span>
-        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/avoid/infinite-scroll.md" id="edit-this-page">Improve it on GitHub</a>
+        <a href="https://github.com/wpaccessibility/wp-a11y-docs/tree/main/docs/topics/design/color/color-contrast-non-text.md" id="edit-this-page">Improve it on GitHub</a>
         </li>
         
 
         
         <li><span>Contributors:</span>
             
-            Joe Dolson,
+            Rian Rietveld,
             
             
-            Rian Rietveld.
+            Joe Dolson.
             
             
         </li>
@@ -694,17 +678,26 @@
 
 
     <nav class="siblings" aria-label="Related content">
-        <h2>Other pages in: Patterns to avoid</h2>
+        <h2>Other pages in: Color</h2>
         <ul role="list">
+            
+            
+            <li>
+                <h3>
+                    <a href="/pr-preview/pr-416/docs/topics/design/color/color-contrast-text/"> Color contrast of text</a>
+                </h3>
+                <p>Sufficient contrast between text and its background ensures that content is easier to read. Learn about color contrast and how to comply to accessibility guidelines.</p>
+            </li>
+            
             
             
             
             
             <li>
                 <h3>
-                    <a href="/pr-preview/pr-416/docs/topics/design/avoid/toasts/"> Disappearing toast notifications</a>
+                    <a href="/pr-preview/pr-416/docs/topics/design/color/use-of-color/"> Use of color</a>
                 </h3>
-                <p>In order to understand the message on a toast notification, the user must discover the message appears on the screen and have enough time to read it. This may not work for all users.</p>
+                <p>Learn best practices for how to use color while also considering accessibility.</p>
             </li>
             
             
@@ -712,7 +705,7 @@
         
 
             <p>
-                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-416/docs/topics/design/avoid/">Back to: Patterns to avoid</a>
+                <span aria-hidden="true">&larr;</span> <a href="/pr-preview/pr-416/docs/topics/design/color/">Back to: Color</a>
             </p>
 
         
