@@ -12,35 +12,35 @@ contributors:
 
 # The use of color
 
-Color is a powerful way to give meaning to elements on a page. Make sure color is not the **only way** users get the information you want to share. 
+Color is a powerful way to add meaning to elements on a page. However, you need to make sure color is not the **only way** users can get this additional information. 
 
-Users who are colorblind, are visual impaired or just don't get the meaning of the color miss the info otherwise. A certain color may not have the same meaning in every culture. Always add addition information when you use color in a meaningful way.
+Users who are colorblind, are visually impaired, or who don't understand the intention of the color you chose will otherwise miss the information. A color may not have the same meaning in every culture. Always add additional information when you use color in a meaningful way.
 
-![Two forms, one with the error only indicated by a red bvorder and one with additional text to explain the error]({{site.baseurl}}/assets/images/use-of-color-form-erorr.png)
+![Two forms, one with the error only indicated by a red border and one with additional text to explain the error]({{site.baseurl}}/assets/images/use-of-color-form-erorr.png)
 
-Use, next to color, also another way to give information, for example:
+In addition to color, use another way to add information. For example:
 
-- Underline links in the content, more info in [Styling links]({site.baseurl}}/docs/topics/design/links/).
+- Underline links in the content. More info in [Styling links]({site.baseurl}}/docs/topics/design/links/).
 - Add an icon and additional text with status messages.
-- Always add additional text with form errors, more info in [Write out an error message in text]({site.baseurl}}/docs/topics/forms/feedback/error-message-format/).
-- Style hover and focus states of links and buttons not only by a slight change of color, more info in [Styling focus and hover states of interactive HTML elements]({site.baseurl}}/docs/topics/design/focus-hover/).
+- Always add additional text with form errors. More info in [Write out an error message in text]({site.baseurl}}/docs/topics/forms/feedback/error-message-format/).
+- Style hover and focus states of links and buttons using more than just color changes. More info in [Styling focus and hover states of interactive HTML elements]({site.baseurl}}/docs/topics/design/focus-hover/).
 
 ## Examples
 
 {: .callout .dont }
 **Don't**: Use only color to distinguish the different items in a graph.
 
-![graph of CMS usage with only colored lines to show the data.]({{site.baseurl}}/assets/images/use-of-color-graph-only-lines.png)
+![graph of CMS usage with colored lines to show the data.]({{site.baseurl}}/assets/images/use-of-color-graph-only-lines.png)
 
 Source data: [Historical yearly trends in the usage statistics of content management systems](https://w3techs.com/technologies/history_overview/content_management/all/y) by W3Techs.
 
 {: .callout .do }
-**Do**: Next to lines, also use line shapes and/or symbols, then colorblind users can read the data too.
+**Do**: In addition to colors, use line shapes and/or symbols, so colorblind users can understand the data too.
 
 ![graph of CMS usage with differently shaped symbols for the data.]({{site.baseurl}}/assets/images/use-of-color-graph-lines-and-icons.png)
 
 {: .callout .dont }
-**Don't**: Use only another color to indicate a link in a paragraph of text. Visitors may miss important links.
+**Don't**: Use only color to indicate a link in a paragraph of text. Visitors may miss important links.
 
 <p>Forgotten vegetables are those <a href="https://en.wikipedia.org/wiki/Neglected_and_underutilized_crop" style="color: green; text-decoration: none;">once-common crops</a> that have largely disappeared from modern diets. They were very common before, but now our food choices have changed.</p>
 
@@ -51,7 +51,7 @@ Source data: [Historical yearly trends in the usage statistics of content manage
 
 ## Check your design in gray scale
 
-To check if your website works for colorblind users, view it in gray scale. Without the color information, you can see better if your site is still easy to understand.
+To check if your website works for colorblind users, you can view it in grayscale. Without color information, you get a better sense for whether your site is easy to understand.
 
 Some tools to emulate how colorblind visitors view your website:
 - [Sim Daltonism](https://michelf.ca/projects/sim-daltonism/), an open source color-blindness simulator for macOS and iOS.
@@ -72,6 +72,6 @@ Some tools to emulate how colorblind visitors view your website:
 
 - [Sufficient color contrast of text and UI controls]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/) in the Theme guidelines for the WordPress accessibility-ready program.
 - [Underlined links in text]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/underlined-links/) in the Theme guidelines for the WordPress accessibility-ready program.
-- [Styling links]({site.baseurl}}/docs/topics/design/links/) in Standards and best practise, Design & user experience.
-- [Styling focus and hover states of interactive HTML elements]({site.baseurl}}/docs/topics/design/focus-hover/) in Standards and best practise, Design & user experience.
-- [Write out an error message in text]({site.baseurl}/docs/topics/forms/feedback/error-message-format/) in Standards and best practise, Web forms.
+- [Styling links]({site.baseurl}}/docs/topics/design/links/) in Standards and best practice, Design & user experience.
+- [Styling focus and hover states of interactive HTML elements]({site.baseurl}}/docs/topics/design/focus-hover/) in Standards and best practice, Design & user experience.
+- [Write out an error message in text]({site.baseurl}/docs/topics/forms/feedback/error-message-format/) in Standards and best practice, Web forms.
