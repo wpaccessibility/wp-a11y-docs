@@ -85,7 +85,7 @@ It’s harder to check if your HTML is meaningful because this highly depends on
 ## Resources
 
 {: .resource-h3}
-### WCAG Success Criteria for sematic HTML
+### WCAG Success Criteria for semantic HTML
  
 [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 
