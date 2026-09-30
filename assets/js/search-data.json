@@ -4424,131 +4424,138 @@
     "relUrl": "/docs/accessibility-ready/theme-guidelines/unexpected-changes-of-context/#resources"
   },"632": {
     "doc": "Use of color",
-    "title": "Using color",
+    "title": "The use of color",
     "description": "Learn best practices for how to use color while also considering accessibility.",
-    "content": "Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page. For example, . | Error, success, or notification messages, more info in Write out an error message in text. | Links in the content, more info in Styling links. | Active, hover or focus states, more info in Styling focus and hover states of interactive HTML elements. | Display information updates. | . Use additional styling to indicate types of information including a change of shape or decoration. ",
-    "url": "/docs/topics/design/color/use-of-color/#using-color",
-    "relUrl": "/docs/topics/design/color/use-of-color/#using-color"
+    "content": "Color is a powerful way to add meaning to elements on a page. However, you need to make sure color is not the only way users can get this additional information. Users who are colorblind, are visually impaired, or who don’t understand the intention of the color you chose, will otherwise miss the information. A color may not have the same meaning in every culture. Always add additional information when you use color in a meaningful way. In addition to color, use another way to add information. For example: . | Underline links in the content. More info in Styling links. | Add an icon and additional text with status messages. | Always add additional text with form errors. More info in Write out an error message in text. | Style hover and focus states of links and buttons using more than just color changes. More info in Styling focus and hover states of interactive HTML elements. | . ",
+    "url": "/docs/topics/design/color/use-of-color/#the-use-of-color",
+    "relUrl": "/docs/topics/design/color/use-of-color/#the-use-of-color"
   },"633": {
     "doc": "Use of color",
     "title": "Examples",
     "description": "Learn best practices for how to use color while also considering accessibility.",
-    "content": "Correct . Use symbols and colors in graphics. Graphic with differently shaped symbols in black in white: . Incorrect . Color used as the only indicator for information or functionality: . The easiest way to check whether your website may be usable by color-blind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable. ",
+    "content": "Don’t: Use only color to distinguish the different items in a graph. Source data: Historical yearly trends in the usage statistics of content management systems by W3Techs. Do: In addition to colors, use line shapes and/or symbols, so colorblind users can understand the data too. Don’t: Use only color to indicate a link in a paragraph of text. Visitors may miss important links. Forgotten vegetables are those once-common crops that have largely disappeared from modern diets. They were very common before, but now our food choices have changed. Do: Underline the link a paragraph of text. Forgotten vegetables are those once-common crops that have largely disappeared from modern diets. They were very common before, but now our food choices have changed. ",
     "url": "/docs/topics/design/color/use-of-color/#examples",
     "relUrl": "/docs/topics/design/color/use-of-color/#examples"
   },"634": {
     "doc": "Use of color",
+    "title": "Check your design in gray scale",
+    "description": "Learn best practices for how to use color while also considering accessibility.",
+    "content": "To check if your website works for colorblind users, you can view it in grayscale. Without color information, you get a better sense for whether your site is easy to understand. Some tools to emulate how colorblind visitors view your website: . | Sim Daltonism, an open source color-blindness simulator for macOS and iOS. | Colorblind Web Page Filter, a color-blindness emulating filter for a web page, by TopTal. | . ",
+    "url": "/docs/topics/design/color/use-of-color/#check-your-design-in-gray-scale",
+    "relUrl": "/docs/topics/design/color/use-of-color/#check-your-design-in-gray-scale"
+  },"635": {
+    "doc": "Use of color",
     "title": "Resources",
     "description": "Learn best practices for how to use color while also considering accessibility.",
-    "content": "WCAG Success Criteria for the use of color . | 1.4.1 Use of Color (level A). | 1.4.11 Non-text Contrast (level AA). | . Related pages in this documentation . | Sufficient color contrast of text and UI controls in the Theme guidelines for the WordPress accessibility-ready program. | Underlined links in text in the Theme guidelines for the WordPress accessibility-ready program. | . ",
+    "content": "WCAG Success Criteria for the use of color . | 1.3.3 Sensory Characteristics (level A). | 1.4.1 Use of Color (level A). | 1.4.3 Contrast (Minimum) (level AA). | 1.4.11 Non-text Contrast (level AA). | . Related pages in this documentation . | Sufficient color contrast of text and UI controls in the Theme guidelines for the WordPress accessibility-ready program. | Underlined links in text in the Theme guidelines for the WordPress accessibility-ready program. | Styling links in Standards and best practice, Design &amp; user experience. | Styling focus and hover states of interactive HTML elements in Standards and best practice, Design &amp; user experience. | Write out an error message in text in Standards and best practice, Web forms. | . ",
     "url": "/docs/topics/design/color/use-of-color/#resources",
     "relUrl": "/docs/topics/design/color/use-of-color/#resources"
-  },"635": {
+  },"636": {
     "doc": "Use of color",
     "title": "Use of color",
     "description": "Learn best practices for how to use color while also considering accessibility.",
     "content": " ",
     "url": "/docs/topics/design/color/use-of-color/",
     "relUrl": "/docs/topics/design/color/use-of-color/"
-  },"636": {
+  },"637": {
     "doc": "Provide valid values",
     "title": "Provide valid values for a form field",
     "description": "Provide valid values for an input field in the description.",
     "content": "Provide valid values for an input field (for example, date or password requirements) in the description and not only in the placeholder. Also consider whether it is really important that, for example, a date of birth or phone number must meet exact input requirements. If you can reformat the value provided to meet your internal needs, then it should not matter how the user formats the data. ",
     "url": "/docs/topics/forms/help/valid-values/#provide-valid-values-for-a-form-field",
     "relUrl": "/docs/topics/forms/help/valid-values/#provide-valid-values-for-a-form-field"
-  },"637": {
+  },"638": {
     "doc": "Provide valid values",
     "title": "Resources",
     "description": "Provide valid values for an input field in the description.",
     "content": "WCAG Success Criteria for helpful instructions . Helping users to understand better what they need to fill out is necessary to meet the WCAG success criterion 3.3.2 Labels or Instructions (Level AA). Related documentation . | Placeholders | Input field and description | Description with a fieldset | . Other resources . | NL Design System Guidelines for web forms (Dutch content). | . ",
     "url": "/docs/topics/forms/help/valid-values/#resources",
     "relUrl": "/docs/topics/forms/help/valid-values/#resources"
-  },"638": {
+  },"639": {
     "doc": "Provide valid values",
     "title": "Provide valid values",
     "description": "Provide valid values for an input field in the description.",
     "content": " ",
     "url": "/docs/topics/forms/help/valid-values/",
     "relUrl": "/docs/topics/forms/help/valid-values/"
-  },"639": {
+  },"640": {
     "doc": "Visual focus",
     "title": "Visibility of the keyboard focus",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Make sure a keyboard user can clearly see where the focus is while navigating through a web page. Without a visible focus indication, it is very easy for a sighted user to get lost and abandon the page. There are two ways to show an interactive HTML element has keyboard focus: . | keep the default outline added by the browser intact; | design your own focus indicator. | . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#visibility-of-the-keyboard-focus",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#visibility-of-the-keyboard-focus"
-  },"640": {
+  },"641": {
     "doc": "Visual focus",
     "title": "Keep the outline of the browser intact",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Most modern browsers have strong default :focus styling, making it easy for a user to tab from control to control and see clearly where they are on the page. The advantage of keeping that outline is that you don’t have to do anything. The browser handles it all. This also passes WCAG Success criterion 2.4.7 Focus Visible, as explained in Technique G149: Using user interface components that are highlighted by the user agent when they receive focus. The disadvantage of using the native outline is that each browser displays the outline differently, and that outline may be hard to see with your design. ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#keep-the-outline-of-the-browser-intact",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#keep-the-outline-of-the-browser-intact"
-  },"641": {
+  },"642": {
     "doc": "Visual focus",
     "title": "Design your own focus indicator",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "A more reliable way to add a focus indicator is by designing your own. Then the visual representation is consistent and independent of the browser. This also gives you the opportunity to design the outline differently for dark and light mode. When you use a custom design, the color contrast criteria of WCAG apply. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. The contrast should apply against the background, and also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color. Provide an outline or border with: . | a thickness of at least 2 CSS pixels; | a color contrast ratio of at least 3:1 against adjacent colors; | a color contrast ratio of at least 3:1 between the same pixels in the focused and unfocused states. | . The topic Styling hover and focus, in the section Design and user experience of this documentation, also addresses the design guidelines of keyboard focus and mouse hover. ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#design-your-own-focus-indicator",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#design-your-own-focus-indicator"
-  },"642": {
+  },"643": {
     "doc": "Visual focus",
     "title": "CSS :focus-visible",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": ":focus-visible is a CSS pseudo-class that only applies focus styles when users navigate with the keyboard. Mouse users won’t see a focus outline when they click on an element. Read more in MDN: focus-visible. button:focus-visible { outline: 2px solid #757575; } . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#css-focus-visible",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#css-focus-visible"
-  },"643": {
+  },"644": {
     "doc": "Visual focus",
     "title": "How to test for visual focus",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Tab through your pages and check if the keyboard focus is visible. If the visual focus indicator is created with custom CSS, check the color contrast. The color contrast the focus outline or border color should have a contrast ratio of at least 3:1. Against the background, but also against the background color of the focusable element itself. How to test with a keyboard is described with Keyboard navigation testing in this documentation. ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#how-to-test-for-visual-focus",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#how-to-test-for-visual-focus"
-  },"644": {
+  },"645": {
     "doc": "Visual focus",
     "title": "Examples",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "Don’t: remove the outline without adding custom styling. button { outline: 0; } . Do: add custom styling when you remove the default outline. button { outline: 0; } button:focus-visible { border: 2px solid #757575; } . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#examples",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#examples"
-  },"645": {
+  },"646": {
     "doc": "Visual focus",
     "title": "Resources",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": "WCAG Success Criteria for visual focus . | 2.4.7 Focus Visible, (Level AA). | 2.4.13 Focus Appearance (Level AAA). | 1.4.11 Non-Text Contrast (Level AA). | . Related pages in this documentation . | Keyboard navigation support in the Theme guidelines for the WordPress accessibility-ready program. | Styling focus and hover states of interactive HTML elements in Standards and best practice, Design and user experience. | . Other resources . | Beautiful focus outlines by Thomas Günther. | WCAG 2.2 misses the mark on defining visible focus by Eric Eggert. | Avoid Default Browser Focus Styles by Adrian Roselli. | A guide to designing accessible, WCAG-conformant focus indicators by Sara Soueidan. | Managing Focus and Visible Focus Indicators: Practical Accessibility Guidance for the Web by Kirby Tucker. | . ",
     "url": "/docs/topics/code/focus-handling/visual-focus/#resources",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/#resources"
-  },"646": {
+  },"647": {
     "doc": "Visual focus",
     "title": "Visual focus",
     "description": "Make sure keyboard focus is clearly visible while navigating through a web page.",
     "content": " ",
     "url": "/docs/topics/code/focus-handling/visual-focus/",
     "relUrl": "/docs/topics/code/focus-handling/visual-focus/"
-  },"647": {
+  },"648": {
     "doc": "Write documentation",
     "title": "Write documentation",
     "description": "How to write new content for this documentation.",
     "content": "Alert: Before you start writing new documentation, please let us know that you’d like to work on it, so we can assign the task to you. Content written without contacting the project leads first, will not be reviewed. We keep track of the work on the documentation in the project board WP A11y docs. Tip: Please write the content yourself and use AI (artificial intelligence) only to translate or to check the quality of your English. To keep all pages in the same structure, please stick to the following formats for a blogpost or an accessibility topic. ",
     "url": "/docs/about/contribute/write/",
     "relUrl": "/docs/about/contribute/write/"
-  },"648": {
+  },"649": {
     "doc": "Write documentation",
     "title": "Content structure of a blogpost",
     "description": "How to write new content for this documentation.",
     "content": ". | Title (65 charters or less) | A short summary in one or two paragraphs | The main content of the blogpost | . ",
     "url": "/docs/about/contribute/write/#content-structure-of-a-blogpost",
     "relUrl": "/docs/about/contribute/write/#content-structure-of-a-blogpost"
-  },"649": {
+  },"650": {
     "doc": "Write documentation",
     "title": "Content structure of an accessibility topic",
     "description": "How to write new content for this documentation.",
     "content": "One page per topic. This makes it easier to read and also to refer to in other documentation. | Title, if possible 65 characters or fewer, including spaces | A short summary in one or two paragraphs | Main content describing what, why, who benefits and how to do this in WordPress (if applicable) | Additional content, depending on the topic, like for example: . | User experience with demos | Quick wins and workarounds | Code examples | Supporting images | Video/Audio with demos | Dos/don’ts | Frequently made mistakes and how to fix them | How to test or refer to checklist | . | Resources . | Related WCAG Success Criteria | Related info in this documentation | Other relevant resources | . | . ",
     "url": "/docs/about/contribute/write/#content-structure-of-an-accessibility-topic",
     "relUrl": "/docs/about/contribute/write/#content-structure-of-an-accessibility-topic"
-  },"650": {
+  },"651": {
     "doc": "Write documentation",
     "title": "Share for review",
     "description": "How to write new content for this documentation.",

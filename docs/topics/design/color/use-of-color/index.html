@@ -576,45 +576,61 @@
 
         <main>
 
-          <h1 id="using-color">Using color</h1>
+          <h1 id="the-use-of-color">The use of color</h1>
 
-<p>Using color to differentiate between elements on a page is fine. However, you should avoid using color as the only visual means to differentiate parts of a page.</p>
+<p>Color is a powerful way to add meaning to elements on a page. However, you need to make sure color is not the <strong>only way</strong> users can get this additional information.</p>
 
-<p>For example,</p>
+<p>Users who are colorblind, are visually impaired, or who don’t understand the intention of the color you chose, will otherwise miss the information. A color may not have the same meaning in every culture. Always add additional information when you use color in a meaningful way.</p>
+
+<p><img src="/assets/images/use-of-color-form-erorr.png" alt="Two forms, one with the error only indicated by a red border and one with additional text to explain the error" /></p>
+
+<p>In addition to color, use another way to add information. For example:</p>
 
 <ul>
-  <li>Error, success, or notification messages, more info in <a href="{site.baseurl}}/docs/topics/forms/feedback/error-message-format/">Write out an error message in text</a>.</li>
-  <li>Links in the content, more info in <a href="{site.baseurl}}/docs/topics/design/links/">Styling links</a>.</li>
-  <li>Active, hover or focus states, more info in <a href="{site.baseurl}}/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a>.</li>
-  <li>Display information updates.</li>
+  <li>Underline links in the content. More info in <a href="{site.baseurl}}/docs/topics/design/links/">Styling links</a>.</li>
+  <li>Add an icon and additional text with status messages.</li>
+  <li>Always add additional text with form errors. More info in <a href="{site.baseurl}}/docs/topics/forms/feedback/error-message-format/">Write out an error message in text</a>.</li>
+  <li>Style hover and focus states of links and buttons using more than just color changes. More info in <a href="{site.baseurl}}/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a>.</li>
 </ul>
-
-<p>Use additional styling to indicate types of information including a change of shape or decoration.</p>
 
 <h2 id="examples">Examples</h2>
 
-<h3 id="correct">Correct</h3>
+<p class="callout dont"><strong>Don’t</strong>: Use only color to distinguish the different items in a graph.</p>
 
-<p>Use symbols and colors in graphics.</p>
+<p><img src="/assets/images/use-of-color-graph-only-lines.png" alt="graph of CMS usage with colored lines to show the data." /></p>
 
-<p>Graphic with differently shaped symbols in black in white:
-<img src="/assets/images/Bildschirmfoto-2017-08-16-um-10.27.20-768x588.png" alt="graphic in color with differently shaped symbols" />
-<img src="/assets/images/Bildschirmfoto-2017-08-16-um-10.33.58-Kopie-768x629.png" alt="Graphic with differently shaped symbols in black in white" /></p>
+<p>Source data: <a href="https://w3techs.com/technologies/history_overview/content_management/all/y">Historical yearly trends in the usage statistics of content management systems</a> by W3Techs.</p>
 
-<h3 id="incorrect">Incorrect</h3>
+<p class="callout do"><strong>Do</strong>: In addition to colors, use line shapes and/or symbols, so colorblind users can understand the data too.</p>
 
-<p>Color used as the only indicator for information or functionality:
-<img src="/assets/images/Bildschirmfoto-2017-08-16-um-10.34.46-768x646.png" alt="Graphic: only color used (no symbols)" />
-<img src="/assets/images/Bildschirmfoto-2017-08-16-um-10.34.46-Kopie-768x646.png" alt="Graphic: only color used (in black and white)" /></p>
+<p><img src="/assets/images/use-of-color-graph-lines-and-icons.png" alt="graph of CMS usage with differently shaped symbols for the data." /></p>
 
-<p>The easiest way to check whether your website may be usable by color-blind people is to test it in grayscale. When the color information is extracted, you can more easily see whether your website is still understandable.</p>
+<p class="callout dont"><strong>Don’t</strong>: Use only color to indicate a link in a paragraph of text. Visitors may miss important links.</p>
+
+<p>Forgotten vegetables are those <a href="https://en.wikipedia.org/wiki/Neglected_and_underutilized_crop" style="color: green; text-decoration: none;">once-common crops</a> that have largely disappeared from modern diets. They were very common before, but now our food choices have changed.</p>
+
+<p class="callout do"><strong>Do</strong>: Underline the link a paragraph of text.</p>
+
+<p>Forgotten vegetables are those <a href="https://en.wikipedia.org/wiki/Neglected_and_underutilized_crop" style="color: green;">once-common crops</a> that have largely disappeared from modern diets. They were very common before, but now our food choices have changed.</p>
+
+<h2 id="check-your-design-in-gray-scale">Check your design in gray scale</h2>
+
+<p>To check if your website works for colorblind users, you can view it in grayscale. Without color information, you get a better sense for whether your site is easy to understand.</p>
+
+<p>Some tools to emulate how colorblind visitors view your website:</p>
+<ul>
+  <li><a href="https://michelf.ca/projects/sim-daltonism/">Sim Daltonism</a>, an open source color-blindness simulator for macOS and iOS.</li>
+  <li><a href="https://www.toptal.com/designers/colorfilter">Colorblind Web Page Filter</a>, a color-blindness emulating filter for a web page, by TopTal.</li>
+</ul>
 
 <h2 id="resources">Resources</h2>
 
 <h3 class="resource-h3" id="wcag-success-criteria-for-the-use-of-color">WCAG Success Criteria for the use of color</h3>
 
 <ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#sensory-characteristics">1.3.3 Sensory Characteristics</a> (level A).</li>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#use-of-color">1.4.1 Use of Color</a> (level A).</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#contrast-minimumt">1.4.3 Contrast (Minimum)</a> (level AA).</li>
   <li><a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">1.4.11 Non-text Contrast</a> (level AA).</li>
 </ul>
 
@@ -623,6 +639,9 @@
 <ul>
   <li><a href="/docs/accessibility-ready/theme-guidelines/sufficient-color-contrast/">Sufficient color contrast of text and UI controls</a> in the Theme guidelines for the WordPress accessibility-ready program.</li>
   <li><a href="/docs/accessibility-ready/theme-guidelines/underlined-links/">Underlined links in text</a> in the Theme guidelines for the WordPress accessibility-ready program.</li>
+  <li><a href="{site.baseurl}}/docs/topics/design/links/">Styling links</a> in Standards and best practice, Design &amp; user experience.</li>
+  <li><a href="{site.baseurl}}/docs/topics/design/focus-hover/">Styling focus and hover states of interactive HTML elements</a> in Standards and best practice, Design &amp; user experience.</li>
+  <li><a href="{site.baseurl}/docs/topics/forms/feedback/error-message-format/">Write out an error message in text</a> in Standards and best practice, Web forms.</li>
 </ul>
 
 
@@ -639,7 +658,7 @@
         
 
         
-        <li><span>Last updated:</span>  August 04, 2026</li>
+        <li><span>Last updated:</span>  September 30, 2026</li>
         
 
         
