@@ -52,7 +52,7 @@ How to create tables in frontend development is addressed in the “Frontend cod
 </tbody>
 </table>
 
-Entering the table, the caption is announced, then the table headers, and then with each cell the header is repeated with the cel data. In the table above "The cities of WordCamp Europe" is the caption. "Year", "City", and "Country" are the table headers.
+Entering the table, the caption is announced, then the table headers, and then with each cell the header is repeated with the cell data. In the table above "The cities of WordCamp Europe" is the caption. "Year", "City", and "Country" are the table headers.
 
 <video data-able-player data-youtube-nocookie="true" data-youtube-id="HRubrn1T3xU" data-heading-level="0"></video>
 

@@ -26,4 +26,4 @@ Fill out [our contact form](https://make.wordpress.org/accessibility/accessibili
 
 Share your thoughts in the Make WordPress [#accessibility-docs Slack channel](https://wordpress.slack.com/archives/C6PK2QCTY). You need a [WordPress.org account](https://login.wordpress.org/register) for this and after that you can register for a [WordPress Slack account](https://make.wordpress.org/chat/).
 
-Join the work on GitHub in the repository [wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/). Please read [How to help on GitHub]({{site.baseurl}}/docs/contribute/github/). A GitHub account is free.
+Join the work on GitHub in the repository [wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/). Please read [How to help on GitHub]({{site.baseurl}}/docs/about/contribute/github/). A GitHub account is free.

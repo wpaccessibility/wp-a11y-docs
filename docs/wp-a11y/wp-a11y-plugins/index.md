@@ -49,11 +49,11 @@ Multi-purpose accessibility plugins that are not easily placed in another catego
 The plugin:
 
 - has a free level of service that does not require registration and provides enough functionality to be testable by the WordPress Accessibility Team
-- is not primarily dedicated to accessibility testing. Testing plugins are listed in [WordPress plugins for accessibility testing]().
+- is not primarily dedicated to accessibility testing. Testing plugins are listed in [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/).
 - doesn't provide [overlay functionality](https://overlayfactsheet.com/en/) that cannot be fully disabled.
 - has an accessible admin interface
 - has been updated within the last year
 
 {: .callout  .info }
 Do you want to add your plugin to this list?
-Please [contact the Documentation Team]({{site.baseurl}}/docs/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.
+Please [contact the Documentation Team]({{site.baseurl}}/docs/about/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.

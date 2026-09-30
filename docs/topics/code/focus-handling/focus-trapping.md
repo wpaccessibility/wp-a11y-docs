@@ -8,7 +8,7 @@ description: Constrain focus within a responsive menu or dialog component.
 
 # Constrain keyboard focus within a responsive menu or dialog component
 
-When moving keyboard focus inside a component like a responsive menu or modal, make sure that the focus doesn't drop out of the modal when the user tabs past the last focusable element. This is called **focus trapping**, and unlike a [keyboard trap]({{site.baseurl}}/docs/code/focus-handling/keyboard-trap/), it gives the user a way out of the component.
+When moving keyboard focus inside a component like a responsive menu or modal, make sure that the focus doesn't drop out of the modal when the user tabs past the last focusable element. This is called **focus trapping**, and unlike a [keyboard trap]({{site.baseurl}}/docs/topics/code/focus-handling/keyboard-trap/), it gives the user a way out of the component.
 
 When focus trapping fails, the component stays open while keyboard focus moves out of the component to the underlying content. The focus location may then be invisible or unfindable to the user. 
 

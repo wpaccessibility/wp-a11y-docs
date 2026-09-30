@@ -17,7 +17,7 @@ Copyright (c) 2016 Patrick Marsceill.
 
 In this initial release the theme is renamed into WP A11y Docs.
 
-The URL for the GitHib pages is [wpaccessibility.org](https://wpaccessibility.org/).
+The URL for the GitHub pages is [wpaccessibility.org](https://wpaccessibility.org/).
 
 ### File organisation
 This will be a one design theme only, so all the changes will be done directly in the files itself. This simplifies the code and makes the theme better maintainable. 
@@ -41,7 +41,7 @@ For this the following changes were made:
 - Replaced deprecated global built-in functions by Sass values (sass:map, sass:color, sass:list etc.).
 
 ### CSS color contrast issue
-- Placeholder: fixt color contrast and opacity.
+- Placeholder: fixed color contrast and opacity.
 - Fixed color contrast issues for text and non-text meaningful elements.
 
 ### Search at the top of the page

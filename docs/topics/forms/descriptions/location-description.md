@@ -16,7 +16,7 @@ Users read from the top down in a form. Place descriptions in a consistent locat
 This also reduces the chance of the information overlapping with browser and browser toolbar popups. For more information and user research, read the article [Avoid Messages Under Fields](https://adrianroselli.com/2017/01/avoid-messages-under-fields.html) by Adrian Roselli.
 
 For checkboxes and radio button groups, place the description between the legend and form fields.
-This is explained on the page about [Descriptions in fieldsets]({{site.baseurl}}/docs/topics/forms/descriptions/fieldset-description/).
+This is explained on the page about [Descriptions in fieldsets]({{site.baseurl}}/docs/topics/forms/fieldsets/fieldset-descriptions/).
 
 Also check the [description decision tree]({{site.baseurl}}/docs/topics/forms/descriptions/) about how to handle more complex descriptions.
 
@@ -123,7 +123,7 @@ Read more on: [Gravity Forms Accessibility Guide for Content Providers](https://
 
 {: .callout .info }
 We'd like to invite people familiar with other plugins to add instructions for those plugins.
-Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with additional content.
+Please [contact us]({{site.baseurl}}/docs/about/contact/) if you want to help us with additional content.
 
 
 ## Resources

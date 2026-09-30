@@ -24,7 +24,7 @@ The structure is as follows:
 
 GOV.UK provides several clear examples of the [Error summary component](https://design-system.service.gov.uk/components/error-summary/).
 
-![Screenshot of an error summary of the GOC.UK pattern library]({{site.baseurl}}/assets/images/error-summary.png)
+![Screenshot of an error summary of the GOV.UK pattern library]({{site.baseurl}}/assets/images/error-summary.png)
 
 {: .callout .info }
 For very short forms with one or two fields, this way of error indication may be overkill. But always make sure [screen reader users know there is an error]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/) and the keyboard focus is placed in a convenient spot.
@@ -41,7 +41,7 @@ For a newly created form, go to the Form Settings tab and check Validation Summa
 
 {: .callout .info }
 We'd like to invite people familiar with other plugins to add instructions for those plugins.
-Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with additional content.
+Please [contact us]({{site.baseurl}}/docs/about/contact/) if you want to help us with additional content.
 
 ## Resources
 

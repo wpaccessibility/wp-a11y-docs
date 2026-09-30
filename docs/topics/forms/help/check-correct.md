@@ -30,7 +30,7 @@ For example:
 
 Validate the entered data during completion and give the user the opportunity to correct any input errors.
 
-Good error handling while filling out a form helps users prevent and correct mistakes. Read also the documentation about [feedback on form errors]({{site.baseurl}}/docs/topics/forms/feedback/) and our blog post [Accessible error messages in forms]({{site.baseurl}}/blog/2025/accessible-error-messages-forms/).
+Good error handling while filling out a form helps users prevent and correct mistakes. Read also the documentation about [feedback on form errors]({{site.baseurl}}/docs/topics/forms/feedback/) and [Accessible feedback in forms]({{site.baseurl}}/docs/topics/forms/feedback/accessible-error-messages/).
 
 
 ## Confirmed

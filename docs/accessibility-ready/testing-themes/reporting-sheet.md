@@ -29,7 +29,7 @@ This tab is intended to:
 
 ### Theme test metadata section
 
-The top section captures identifying information for the review, when it was completed and who by. This information is filled in during the test setup process and is described in greater detail in [setup documentation]({{site.baseurl}}/docs/accessibility-ready/testing-process/setup/).
+The top section captures identifying information for the review, when it was completed and who by. This information is filled in during the test setup process and is described in greater detail in [setup documentation]({{site.baseurl}}/docs/accessibility-ready/testing-themes/setup/).
 
 ### Status explanation section
 

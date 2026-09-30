@@ -3,10 +3,10 @@
 <summary>Getting Started</summary>
 
 - [Start with accessibility]({{site.baseurl}}/docs/start/).
-- [Checklists for accessibility testing]({{site.baseurl}}/docs/testing/checklists/).
+- [Checklists for accessibility testing]({{site.baseurl}}/docs/testing/).
 - [WordPress plugins for accessibility testing]({{site.baseurl}}/docs/testing/plugins/).
 - [Accessibility legislation]({{site.baseurl}}/docs/topics/legislation/).
-- [Find accessible WordPress themes]({{site.baseurl}}/docs/wp-a11y/wp-themes/).
+- [Find accessible WordPress themes]({{site.baseurl}}/docs/accessibility-ready/themes/).
 
 </details>
 
@@ -26,7 +26,7 @@
 - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/) in Start with accessibility.
 - [Design & user experience]({{site.baseurl}}/docs/topics/design/) in Standards and best practice.
 - [Web forms]({{site.baseurl}}/docs/topics/forms/input-label/placeholders/) in Standards and best practice. 
-- [Design checks]({{site.baseurl}}/docs/testing/checklists/design/) in Checklists for accessibility testing:
+- [Design checks]({{site.baseurl}}/docs/testing/design/) in Checklists for accessibility testing.
 
 </details>
 
@@ -36,7 +36,7 @@
 - [Find training that fits your needs]({{site.baseurl}}/docs/start/training/) in Start with accessibility.
 - [Frontend code]({{site.baseurl}}/docs/topics/code/) in Standards and best practice.
 - [How to build accessible web forms]({{site.baseurl}}/docs/topics/forms/) in Standards and best practice.
-- [Frontend checks]({{site.baseurl}}/docs/testing/checklists/code) in Checklists for accessibility testing.
+- [Frontend checks]({{site.baseurl}}/docs/testing/code/) in Checklists for accessibility testing.
 
 </details>
 
