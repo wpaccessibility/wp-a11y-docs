@@ -14,7 +14,7 @@ contributors:
 
 Color is a powerful way to add meaning to elements on a page. However, you need to make sure color is not the **only way** users can get this additional information. 
 
-Users who are colorblind, are visually impaired, or who don't understand the intention of the color you chose will otherwise miss the information. A color may not have the same meaning in every culture. Always add additional information when you use color in a meaningful way.
+Users who are colorblind, are visually impaired, or who don't understand the intention of the color you chose, will otherwise miss the information. A color may not have the same meaning in every culture. Always add additional information when you use color in a meaningful way.
 
 ![Two forms, one with the error only indicated by a red border and one with additional text to explain the error]({{site.baseurl}}/assets/images/use-of-color-form-erorr.png)
 
