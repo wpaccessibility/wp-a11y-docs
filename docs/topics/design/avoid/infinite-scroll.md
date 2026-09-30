@@ -18,9 +18,8 @@ We don’t recommend using infinite scroll because it has many significant acces
 - You can’t go back to your previous place using browser “back” button.
 - You can’t easily get to the footer or the last items in the infinite scroll.
 - There is a large memory footprint if loading big images.
-- It doesn’t work without JavaScript.
-- You can’t access elements with keyboard only.
-- There is no consistent audible feedback or instructions about how infinite scrolling works for assistive technologies.
+- Unless a fallback mode is provided, it doesn't work without JavaScript.
+- There is no standard model for interacting with infinite scroll, so every implementation requires a difficult phase of discovery for users of assistive technology.
 - There is no URL to a specific place on the page.
 - And the list goes on…
 
@@ -35,7 +34,7 @@ Pagination with page numbers removes all the issues mentioned above.
 If the number of items to load is not too high, “Load more items” buttons could work as well. However, that option is limited to sequential usage and doesn’t provide any methods to access previously loaded items or the very last items to load.
 
 {: .callout .info }
-**Note**: [role="feed"](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/feed_role), that should solve the screenreader feedback and keyboard navigation issues, isn't at this moment reliable enough for screen reader support, and it also [doesn't solve all the (usability) issues](https://www.digitala11y.com/ok-aria-rolefeed-is-here-its-not-ready-for-prime-time/) mentioned above.
+**Note**: The ARIA role "feed" is intended to solve screen reader feedback and keyboard navigation issues, but it is not yet reliable enough for use, and it [doesn't solve all the (usability) issues](https://www.digitala11y.com/ok-aria-rolefeed-is-here-its-not-ready-for-prime-time/) mentioned above.
 
 ## Infinite scroll the WordPress Media Library grid view
 
