@@ -49,7 +49,7 @@ Gravity Forms adds the possibility to select "Required" with each form field. In
 
 {: .callout .info }
 **Help wanted:** We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
-Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
+Please [contact us]({{site.baseurl}}/docs/about/contact/) if you want to help us with this additional content.
 
 {: .resource-h3}
 ### Other resources

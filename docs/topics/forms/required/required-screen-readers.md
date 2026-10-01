@@ -76,7 +76,7 @@ Gravity Forms adds `aria-required="true"` to required fields.
 
 {: .callout .info }
 **Help wanted:** We'd like to invite people familiar with form plugins to help us add instructions for WordPress form plugins. Like possibilities, settings and screenshots.
-Please [contact us]({{site.baseurl}}/docs/contact/) if you want to help us with this additional content.
+Please [contact us]({{site.baseurl}}/docs/about/contact/) if you want to help us with this additional content.
 
 {: .resource-h3}
 ### Other resources

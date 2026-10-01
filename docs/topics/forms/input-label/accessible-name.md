@@ -164,7 +164,7 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 
 - [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
 - [Controls with accessible names, roles, and states]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/) in the Theme guidelines for the WordPress accessibility-ready program.
-- [Labelled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labeled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Labeled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labeled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Accessible names in WP Form plugins
@@ -174,7 +174,6 @@ Gravity Forms accessibility documentation: [Labels and Placeholders](https://doc
 {: .callout .info }
 **Help wanted:** We want to invite people familiar with form plugins to help us add instructions for WordPress form plugins, including options, settings, and screenshots.
 Please [contact us]({{site.baseurl}}/docs/about/contact/) if you want to help us with this additional content.
-
 
 {: .resource-h3}
 ### Other resources

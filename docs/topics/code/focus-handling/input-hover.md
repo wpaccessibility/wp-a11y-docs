@@ -20,7 +20,7 @@ A **context** change unexpectedly changes the layout, information, keyboard focu
 **Context** change is not the same as **content** change. Instantly adjusting search results, while keeping the user on the same page, is perfectly fine because it's expected.
 
 {: .info .callout}
-**Note**: When a dialog opens unexpectedly without any user interaction, is is not a WCAG violation. For example, a popup with an advertisement or a request to sign up for a newsletter. But it's still confusing for screen reader users and annoying for everyone.
+**Note**: When a dialog opens unexpectedly without any user interaction, it is not a WCAG violation. For example, a popup with an advertisement or a request to sign up for a newsletter. But it's still confusing for screen reader users and annoying for everyone.
 
 ## How to test for behavior on input and on hover
 

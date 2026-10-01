@@ -26,8 +26,8 @@ There are several easy ways to help:
 - **Suggest a topic or report an issue**  
   Open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) if you find an error, want to suggest improvements, or see a missing topic.
 - **Write or edit documentation**  
-  You can contribute content by creating or editing Markdown (`.md`) files in [this repository](https://github.com/wpaccessibility/wp-a11y-docs/issues).  
-  If you’re new to GitHub, see our [guide on how to contribute]({{site.baseurl}}/docs/contribute/).
+  You can contribute content by creating or editing Markdown (`.md`) files in [this repository](https://github.com/wpaccessibility/wp-a11y-docs/).  
+  If you’re new to GitHub, see our [guide on how to contribute]({{site.baseurl}}/docs/about/contribute/).
 - **Accessibility reviews**  
   Help by testing the site for accessibility issues. Report findings in [GitHub issues](https://github.com/wpaccessibility/wp-a11y-docs/issues).
 - **Improve examples**  

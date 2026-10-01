@@ -32,11 +32,11 @@ This page lists the options and code available for creating content in this docu
 ###### This is an H6 heading
 
 {: .callout  .alert }
-**Alert:** In blog posts the H1 is added by the template: [Add a blog post]({{site.baseurl}}/docs/contribute/github/blog-post/).
+**Alert:** In blog posts the H1 is added by the template (see [Write or edit documentation]({{site.baseurl}}/docs/about/contribute/write/#content-structure-of-a-blogpost)).
 
 ## Summary in a larger text font.
 
-Start the paragraph with an H2 named "Summary, or introduction and the callout {: .lead }`
+Start the paragraph with an H2 named "Summary", or introduction and the callout `{: .lead }`
 
 
 ```markdown

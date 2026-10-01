@@ -42,7 +42,7 @@ If you are interested in our work, [click here](#dummy-link) to subscribe to our
 
 {: .callout .do }
 **Do**: write helpful (descriptive) link text:  
-[Subscribe to our newsletter](#dummy-link) if you are interested in our work. You can download the [manual as a PDF]((#dummy-link) ) of the espresso machine, or [contact us](#dummy-link) for more info.
+[Subscribe to our newsletter](#dummy-link) if you are interested in our work. You can download the [manual as a PDF](#dummy-link) of the espresso machine, or [contact us](#dummy-link) for more info.
 
 ## Avoid fancy character combinations in your links
 

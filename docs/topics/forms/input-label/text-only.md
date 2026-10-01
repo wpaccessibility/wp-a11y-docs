@@ -35,9 +35,8 @@ Example implicit form field:
 
 Read [MDN about label accessibility](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label#accessibility).
 
-{: {: .callout .info }
-The popular [WordPress form plugin Contact Form 7](https://wordpress.org/plugins/contact-form-7/)
-uses implicitly associated form fields as its default template to create a form. Joe Dolson created the plugin [Contact Form 7: Accessible Defaults](https://wordpress.org/plugins/contact-form-7-accessible-defaults/) that provides an accessible template for your form.
+{: .callout .info }
+The popular [WordPress form plugin Contact Form 7](https://wordpress.org/plugins/contact-form-7/) uses implicitly associated form fields as its default template to create a form. Joe Dolson created the plugin [Contact Form 7: Accessible Defaults](https://wordpress.org/plugins/contact-form-7-accessible-defaults/) that provides an accessible template for your form.
 
 
 ## Examples
@@ -87,7 +86,7 @@ Giving a form control an accessible name is necessary to meet the WCAG success c
 
 - [Accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
 - [Controls with accessible names, roles, and states]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/controls-with-accessible-names/) in the Theme guidelines for the WordPress accessibility-ready program.
-- [Labelled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labeled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
+- [Labeled form fields]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/labeled-form-fields/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources

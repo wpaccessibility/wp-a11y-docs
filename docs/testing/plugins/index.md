@@ -33,7 +33,7 @@ These are tools built to offer in-editor or content-specific accessibility suppo
 
 {: .callout .info }
 Do you want to add your plugin to this list?
-Please [contact the Documentation Team]({{site.baseurl}}/docs/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.
+Please [contact the Documentation Team]({{site.baseurl}}/docs/about/contact/) or open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) with your request.
 
 The plugin:
 

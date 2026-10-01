@@ -21,4 +21,4 @@ For a more in depth understanding of how to create an accessible design and user
 - [Inclusive Design Checklist](https://github.com/Heydon/inclusive-design-checklist), a checklist on GitHub by Heydon Pickering.
 - [Designing For Accessibility And Inclusion](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/) by Steven Lambert.
 - [Five myths about accessible design](https://www.a11y-collective.com/blog/five-myths-about-accessible-design/) by Andrée Lange.
-- [Laws of UX](https://lawsofux.com/) byJon Yablonski.
+- [Laws of UX](https://lawsofux.com/) by Jon Yablonski.

@@ -40,14 +40,14 @@ The `nav_order` determines the location of the topic in the menu.
 
 ## The content of the post
 
-The page [Content kitchen sink]({{site.baseurl}}/docs/contribute/github/content-kitchen-sink/) describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text.
+The page [Content kitchen sink]({{site.baseurl}}/docs/about/contribute/github/content-kitchen-sink/) describes and displays all options for the content, like: markdown, images, videos, code, callouts and how to indicate a different language in the text.
 
 ## How to start
 
 If you have an idea for a topic, please open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) and share your idea first.
 If you want to work on a topic (yay!) please let us know by adding a comment with the issue.
 
-Need help? Feel free to [contact us]({{site.baseurl}}/docs/contact/).
+Need help? Feel free to [contact us]({{site.baseurl}}/docs/about/contact/).
 
 
 

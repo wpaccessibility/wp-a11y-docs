@@ -30,7 +30,7 @@ A more reliable way to add an outline or border of hover or focus is by designin
 
 A custom focus or hover indicator should have a contrast ratio of at least 3:1.  The contrast applies against the background, but also against the background color of the focusable element itself. For example, for a button or input field that has a custom background color.
 
-Best practice is to follow [WGAC 2.4.13 Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance)] level **AAA**.
+Best practice is to follow [WCAG 2.4.13 Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance) level **AAA**.
 
 Provide the outline or border with:
 
