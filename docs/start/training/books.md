@@ -22,6 +22,6 @@ Recommended books about web accessibility.
 - [Giving a Damn About Accessibility](https://www.a11ybookclub.com/books/giving-a-damn-about-accessibility) by **Sheri Byrne-Haber**. A candid and practical handbook for designers.
 - [A11y Unraveled: Become a Web Accessibility Ninja](https://www.oreilly.com/library/view/a11y-unraveled-become/9781484290859/) by **Dimitris Georgakas**. Covering web accessibility and WCAG 2.1 and 2.2 guidelines — what they are, who they're for, and how designers can apply them to create better experiences.
 
-The Accessibility Book Club maintains an [Annual reading lists](https://www.a11ybookclub.com/annual-book-lists), with books that dive into accessibility, inclusive design, and firsthand perspectives from people with disabilities.
+The Accessibility Book Club maintains an [annual reading list](https://www.a11ybookclub.com/annual-book-lists), with books that dive into accessibility, inclusive design, and firsthand perspectives from people with disabilities.
 
 Do you know a good resource to add to this list? Please [let us know]({{site.baseurl}}/docs/about/contact/).

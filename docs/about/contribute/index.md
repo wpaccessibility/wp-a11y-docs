@@ -2,7 +2,7 @@
 title: How to contribute
 parent: About this documentation
 layout: default
-description: How to help improve and extend to this documentation.
+description: How to help improve and extend this documentation.
 nav_order: 2
 ---
 
@@ -15,8 +15,8 @@ There are several ways you can contribute:
 - [Suggest]({{site.baseurl}}/docs/about/contribute/suggest/) new content or resources
 - [Write]({{site.baseurl}}/docs/about/contribute/write/) new content, contact us first before starting to write.
 - [Review]({{site.baseurl}}/docs/about/contribute/review/) content someone else wrote
-- [Report]({{site.baseurl}}/docs/about/contribute/report-error) an error
-- [Fix code]({{site.baseurl}}/docs/about/contribute/improve-website) issues in wpaccessibility.org
+- [Report]({{site.baseurl}}/docs/about/contribute/report-error/) an error
+- [Fix code]({{site.baseurl}}/docs/about/contribute/improve-website/) issues in wpaccessibility.org
 
 Respect our [Code of Conduct]({{site.baseurl}}/docs/about/contribute/CODE_OF_CONDUCT/).
 
