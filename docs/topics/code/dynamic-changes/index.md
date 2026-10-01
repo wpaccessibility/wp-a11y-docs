@@ -10,7 +10,7 @@ nav_order: 7
 
 ## Using ARIA Live in WordPress
 
-`wp.a11y.speak()` is a JavaScript method included into WordPress core as off version 4.2.
+`wp.a11y.speak()` is a JavaScript method included into WordPress core as of version 4.2.
 
 When content changes dynamically in a web page, `wp.a11y.speak()` can announce a message using [aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions). Then users who depend on a screen reader will be notified of any change to the content on the page.
 
@@ -41,7 +41,7 @@ function yourprefix_ajax() {
 
     // Localization.
     wp_localize_script( 'your-prefix-ajax', 'yourData', array(
-        strings' => array(
+        'strings' => array(
             'resultsFound' => esc_html__( 'New results found and displayed in the table below', 'your-theme' )
         ),
     ) );
@@ -96,7 +96,7 @@ speak( 'The message you want to send to the ARIA live region', 'assertive' );
 ### Related pages in this documentation
 
 - [Provide feedback to screen reader users on form errors]({{site.baseurl}}/docs/topics/forms/feedback/screen-reader-feedback/#screen-reader-feedback-after-submit) in Standards and best practice, Webforms.
-- [Disappearing toast notifications]({site.baseurl}}/docs/topics/design/avoid/toasts/) in Standards and best practice, Design & user experience.
+- [Disappearing toast notifications]({{site.baseurl}}/docs/topics/design/avoid/toasts/) in Standards and best practice, Design & user experience.
 - [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/) in Test for accessibility.
 
 {: .resource-h3}

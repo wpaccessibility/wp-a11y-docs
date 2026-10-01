@@ -31,7 +31,7 @@ In the section [Accessibility standards and best practice]({{site.baseurl}}/docs
 
 ## The main topics to check
 
-- Make sure all interactive elements have an [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/), so screen readers users know what the interaction is.
+- Make sure all interactive elements have an [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/), so screen reader users know what the interaction is.
 - [Write semantic, meaningful HTML]({{site.baseurl}}/docs/topics/code/semantics/).
     - Use a `<button>` to invoke an action and an `<a>` for a change of location.
     - A `<div>` or `<span>` doesn’t natively provide interactivity, and should not be used for links or buttons.
@@ -43,7 +43,7 @@ In the section [Accessibility standards and best practice]({{site.baseurl}}/docs
 - Forms:
     - always explicitly connect [labels to an input control]({{site.baseurl}}/docs/topics/forms/input-label/accessible-name/). If the label must be invisible for the design, hide it with the screen-reader-text class.
     - Wrap check box groups and radio buttons in a [`<fieldset>`]({{site.baseurl}}/docs/topics/forms/fieldsets/) and add a `<legend>` describing the group of controls
-- Always define both a `:hover` and `:focus` states in your CSS, this is explained in [Visibility of the keyboard focus]({{site.baseurl}}/docs/topics/code/focus-handling/visual-focus/).
+- Always define both :hover and :focus states in your CSS, this is explained in [Visibility of the keyboard focus]({{site.baseurl}}/docs/topics/code/focus-handling/visual-focus/).
 - Announce dynamic changes with [aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions) or [wp.a11y.speak()]({{site.baseurl}}/docs/topics/code/dynamic-changes/).
 
 The [accessibility-ready program for WordPress]({{site.baseurl}}/docs/accessibility-ready/) provides you with the requirements for meeting the accessibility-ready tag for themes. Each requirement includes a detailed description of how to test for it.

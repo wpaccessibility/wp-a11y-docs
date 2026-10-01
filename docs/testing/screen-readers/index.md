@@ -35,7 +35,7 @@ Verification methods:
 
 [VoiceOver](https://www.apple.com/voiceover/) is built into macOS and iOS. Use VoiceOver in the browser Safari for website testing. While we know that many developers work primarily on macOS, testing only with Apple’s VoiceOver is not enough in some cases. VoiceOver, while fairly common, has some non-standard interpretations of accessibility interactions that aren’t the most accurate representation of average user experience.
 
-The screen readers [ChromeVox for Chromebook](https://support.google.com/chromebook/answer/7031755?hl=en) and [Orca](https://orca.gnome.org/) for GNOME don’t perform well enough as a screen reader, at this moment, to give representative test information.
+The screen readers [ChromeVox for Chromebook](https://support.google.com/chromebook/answer/7031755?hl=en) and [Orca](https://orca.gnome.org/) for GNOME don’t perform well enough as screen readers, at this moment, to give representative test information.
 
 {: .info .callout }
 **Note**: Although this page is about web content, a quick note for PDF tests: results can differ between screen readers in combination with PDF readers. For example, the NVDA/Acrobat combination announces more information than Preview/VoiceOver. Investigate this before you test PDFs with a screen reader.

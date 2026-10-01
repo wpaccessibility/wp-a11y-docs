@@ -11,7 +11,7 @@ description: Options and code available for creating content in this documentati
 This page lists the options and code available for creating content in this documentation.
 
 {: .callout  .info }
-**Please note:** WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional](docs/contribute/CODE_OF_CONDUCT.md) in your text and please write the text yourself or make sure the reader knows who you are citing.
+**Please note:** WordPress.org provides a lot of style guides for documentation: [WordPress Style Guides - highlights](https://make.wordpress.org/docs/style-guide/welcome/highlights/). We value most of all: be [kind and professional]({{site.baseurl}}/docs/about/contribute/CODE_OF_CONDUCT/) in your text and please write the text yourself or make sure the reader knows who you are citing.
 
 ## Headings
 ```markdown

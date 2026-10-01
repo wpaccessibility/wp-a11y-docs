@@ -26,7 +26,7 @@ Find the documentation for your work role, work field and expertise.
 
 In September 2026:
 
-Standards and best practice:  
+Standards and best practices:  
 - [Tables in the content]({{site.baseurl}}/docs/topics/content/tables/) in Content and images.
 - [Tables in front-end development]({{site.baseurl}}/docs/topics/code/tables/) in Frontend code.
 - [Color contrast for non-text content]({{site.baseurl}}/docs/topics/design/color/color-contrast-non-text/) in Design and user experience.

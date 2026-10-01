@@ -24,9 +24,9 @@ Automated accessibility testing cannot catch all accessibility errors, so additi
 
 [Playwright Accessibility testing](https://playwright.dev/docs/accessibility-testing) uses Axe. Accessibility tests work just like any other Playwright test. You can either create separate test cases or integrate accessibility scans and assertions into your existing test cases. NPM package: [@axe-core/playwright](https://www.npmjs.com/package/@axe-core/playwright).
 
-Axe is also available as [aXe Devtools browser addon](https://www.deque.com/axe/devtools/extension/). The addon adds a tab to your inspector with a "validate" button. After validating you see the errors and warnings for that particular webpage and how to fix them. Available as a free limited version and as a paid Pro version. 
+Axe is also available as [axe DevTools browser add-on](https://www.deque.com/axe/devtools/extension/). The addon adds a tab to your inspector with a "validate" button. After validating you see the errors and warnings for that particular webpage and how to fix them. Available as a free limited version and as a paid Pro version. 
 
-[Google LightHouse for Chrome](https://developer.chrome.com/docs/lighthouse) uses axe-core under the hood.
+[Google Lighthouse for Chrome](https://developer.chrome.com/docs/lighthouse) uses axe-core under the hood.
 
 ### IBM Equal Access Accessibility Checker
 

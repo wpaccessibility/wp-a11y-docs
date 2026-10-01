@@ -121,13 +121,13 @@ There are 3 levels of accessibility:
 - AA (the global accessibility standard)
 - AAA (for dedicated assistive support)
 
-The success criteria can have one of 3 levels, A, AA or AAA. In general, level A criteria consist of basic rules that should lead to a technically functional website or app. Level AA consist of criteria that, if you follow them correctly, will lead to a website or app that works for most known assistive devices.
+The success criteria can have one of 3 levels, A, AA or AAA. In general, level A criteria consist of basic rules that should lead to a technically functional website or app. Level AA consists of criteria that, if you follow them correctly, will lead to a website or app that works for most known assistive devices.
 
 It is implied that when you need to comply with level AA, you automatically need to comply with level A as well.
 
 Passing tests for the success criteria of level A and AA is what most legislation asks of you, and is what is meant when people say you are WCAG compliant. Level AAA adds additional success criteria that are necessary to expand the number of people with disabilities who can use your website or app.
 
-They're not necessarily harder to implement, but they're useful for a smaller group and sometimes require more work to maintain. Also, it is implied that when you say you (need to) comply with level AA, you automatically comply with A as well.
+They're not necessarily harder to implement, but they're useful for a smaller group and sometimes require more work to maintain.
 
 ### WCAG Versions
 
@@ -150,7 +150,7 @@ When designing, writing or coding, keep asking yourself if what you're doing con
 
 You may have seen audit reports in which a website was tested for accessibility.
 
-One method of reporting an accessibility audit is using the [WCAG-EM Report Tool](https://www.w3.org/WAI/eval/report-tool/), the evaluation methodology published by the W3C. This tool turns your accessibility evaluation findings into a report. [More about testing]({{site.baseurl}}/docs/testing).
+One method of reporting an accessibility audit is using the [WCAG-EM Report Tool](https://www.w3.org/WAI/eval/report-tool/), the evaluation methodology published by the W3C. This tool turns your accessibility evaluation findings into a report. [More about testing]({{site.baseurl}}/docs/testing/).
 
 Many findings can be reported for each success criterion in the report. That can make a report overwhelming! It's recommended that you try and implement best practice accessibility techniques and follow the guidelines to the best of your abilities before getting an audit.
 

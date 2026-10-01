@@ -23,9 +23,9 @@ There is a lot you can do to improve a website without digging into code. Simple
 
 Check if the site language is set correctly. The correct site language setting helps tell screen readers how to pronounce the text.
 
-In the WordPress Admin. go to: Settings > General and look for the dropdown Site Language. Select the language of the website. 
+In the WordPress Admin, go to: Settings > General and look for the dropdown Site Language. Select the language of the website. 
 
-If the language is spoken in multiple countries, select the language variation for the country. For example English (United Stated) for US English, and English (UK) if the site is written in British English.
+If the language is spoken in multiple countries, select the language variation for the country. For example English (United States) for US English, and English (UK) if the site is written in British English.
 
 ![Screenshot of the language settings in the WordPress Admin]({{site.baseurl}}/assets/images/language-settings.png)
 
@@ -44,7 +44,7 @@ The page title is the first text that is announced by a screen reader after a pa
 ### 3: Use headings in a structured way
 
 Structure content with proper heading levels (H1, H2, H3) in logical order. 
-One H1 that tells what the page is about, the rest of the headings structure the content. Do not use headings to style text (for example to make text stand out visually, use headings to describe the text that follows after.
+One H1 that tells what the page is about, the rest of the headings structure the content. Do not use headings to style text (for example, to make text stand out visually); use headings to describe the text that follows.
 
 In WordPress, you can check the heading structure in the  "Outline" tab. The outline tab is visible after clicking the button "Document Overview" in the top bar of the editor.
 
@@ -111,4 +111,4 @@ The most made errors reported in the yearly report [WebAIM Million](https://weba
 - Empty [buttons]({{site.baseurl}}/docs/topics/code/accessible-name/)
 - Missing [language in the `<html>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/lang)
 
-96% Of all errors detected fall into these six categories. So: if these errors are all sorted, you are already better than 96% of the rest of the web.
+96% of all errors detected fall into these six categories. So: if these errors are all sorted, you are already better than 96% of the rest of the web.
