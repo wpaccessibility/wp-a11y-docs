@@ -50,7 +50,7 @@ Mostly, responsive websites handle this well, but check if no functionality gets
 
 ### Multidimensional scrolling
 
-Enlarging the font size or view can result in a horizontal scroll bar. Then the user has 2 scrollbars to handle, which can be hard to navigatie or understand. Avoid multidimensional scrolling. 
+Enlarging the font size or view can result in a horizontal scroll bar. Then the user has 2 scrollbars to handle, which can be hard to navigate or understand. Avoid multidimensional scrolling. 
 
 But there are exceptions. according to [Understanding SC 1.4.10 Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html) by the W3C: 
 
@@ -58,7 +58,7 @@ But there are exceptions. according to [Understanding SC 1.4.10 Reflow](https://
 
 ### Viewport
 
-Always give the user the opportunity to scale the display themselves. So, never set the viewport to `user-scalable=no;` this setting prevents the user from using the browser’s zoom on mobile devices. Many mobile devices will ignore this meta setting because of its accessibility impact.
+Always give the user the opportunity to scale the display themselves. So, never set the viewport to `user-scalable=no;`. This setting prevents the user from using the browser’s zoom on mobile devices. Many mobile devices will ignore this meta setting due to its impact on accessibility.
 
 {: .callout .dont }
 **Don't**: Prevent users to alter the text size in a webpage.
@@ -83,7 +83,7 @@ The following settings must be supported:
 - Letter spacing of at least 0.12 times the font size;
 - Word spacing of at least 0.16 times the font size.
 
-In practice: when a user adds custom CSS the content should adjust to this and still be readable. Like for example:
+In practice, when a user adds custom CSS, the content should adapt to it and remain readable. For example:
 
 ```css
 {
