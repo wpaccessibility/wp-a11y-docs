@@ -19,7 +19,7 @@ For accessibility, it's important that a user should be able to:
 - **zoom** in the whole view up to 400%, or 
 - change the **text style properties** like line height and spacing.
 
-And do so without the loss of content and functionality. This means after resize, zoom or changing the text style properties, no text or focusable elements overlap or get unreachable for a mouse or keyboard. This is further explained in the text below.
+And do so without losing content or functionality. This means that after resizing, zooming, or changing the text style properties, no text or focusable elements overlap or become unreachable by mouse or keyboard. This is further explained in the text below.
 
 For readability, it's important to provide fonts in sizes and shapes that are easy to read. WCAG 2 doesn't provide guidelines for font size or shape, but it's best practice to offer font that is easy to read.
 
