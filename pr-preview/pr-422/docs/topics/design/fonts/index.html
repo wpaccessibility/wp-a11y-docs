@@ -571,42 +571,41 @@
 <p>For accessibility, it’s important that a user should be able to:</p>
 
 <ul>
-  <li><strong>resize</strong> only the text up to 200% or</li>
-  <li><strong>zoom</strong> in the whole view up to 400% or</li>
+  <li><strong>resize</strong> only the text up to 200%, or</li>
+  <li><strong>zoom</strong> in the whole view up to 400%, or</li>
   <li>change the <strong>text style properties</strong> like line height and spacing.</li>
 </ul>
 
-<p>And do so without the loss of content and functionality. This means after resize, zoom or changing the text style properties, no text or focusable elements overlap or get unreachable for a mouse or keyboard. This is further explained in the text below.</p>
+<p>And do so without losing content or functionality. This means that after resizing, zooming, or changing the text style properties, no text or focusable elements overlap or become unreachable by mouse or keyboard. This is further explained in the text below.</p>
 
-<p>For readability, it’s important to provide fonts in sizes and shapes that are easy to read. WCAG 2 doesn’t provide guidelines for font size or shape, but it’s best practice to offer font that is easy to read.</p>
+<p>For readability, it’s important to provide fonts in sizes and shapes that are easy to read. WCAG 2 doesn’t provide guidelines for font size or shape, but it’s best practice to offer fonts that are easy to read.</p>
 
 <p class="callout info"><strong>Note</strong>: Text should also have a good color contrast to be readable. The topic <a href="/pr-preview/pr-422/docs/topics/design/color/color-contrast-text/">Color contrast of text against its background</a> addresses this.</p>
 
 <h2 id="resize-text-and-reflow">Resize text and reflow</h2>
 
-<p>The difference between resize and reflow: resize addresses only the text itself, reflow is about the zooming whole view of a web page.</p>
+<p>The difference between resize and reflow: resize affects only the text itself; reflow zooms the entire view of a web page.</p>
 
-<p>Both can be executed by using Press <code class="language-plaintext highlighter-rouge">Ctrl +</code> (Windows) or <code class="language-plaintext highlighter-rouge">Cmd +</code> (Mac). How you zoom depends on the browser settings. How to test for resize and zoom in detail is described in <a href="/pr-preview/pr-422/docs/accessibility-ready/theme-guidelines/reflow-resize/">Support for reflow, resize, and text spacing changes</a> in the Theme guidelines for the WordPress accessibility-ready program.</p>
+<p>Both can be executed by pressing <code class="language-plaintext highlighter-rouge">Ctrl +</code> (Windows) or <code class="language-plaintext highlighter-rouge">Cmd +</code> (Mac). How you zoom depends on the browser settings. How to test for resize and zoom in detail is described in <a href="/pr-preview/pr-422/docs/accessibility-ready/theme-guidelines/reflow-resize/">Support for reflow, resize, and text spacing changes</a> in the Theme guidelines for the WordPress accessibility-ready program.</p>
 
 <h3 id="resize-text">Resize text</h3>
 
-<p>The <a href="https://www.w3.org/WAI/WCAG22/quickref/#resize-text">WCAG guideline 1.4.4 for resizing text</a> summarized: users must be able to double the font size without loss of content or functionality.</p>
+<p>The <a href="https://www.w3.org/WAI/WCAG22/quickref/#resize-text">WCAG guideline 1.4.4 for resizing text</a> is summarized as follows: users must be able to double the font size without loss of content or functionality.</p>
 
 <p>Exceptions are captions and images of text, although it’s still a fail if the text in the image gets cut off.</p>
 
-<p>The quickest way to test this is by using the browser FireFox and in the toolbar select: View &gt; Zoom &gt; Check <strong>Text only</strong>. And the use <code class="language-plaintext highlighter-rouge">Ctrl +</code> (Windows) or <code class="language-plaintext highlighter-rouge">Cmd +</code> (Mac) to zoom in up to 200%.</p>
+<p>The quickest way to test this is to use the Firefox browser and, in the toolbar, select View &gt; Zoom &gt; Check <strong>Text only</strong>. Then use <code class="language-plaintext highlighter-rouge">Ctrl +</code> (Windows) or <code class="language-plaintext highlighter-rouge">Cmd +</code> (Mac) to zoom in up to 200%.</p>
 
 <h3 id="reflow">Reflow</h3>
 
-<p>The <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">WCAG guideline 1.4.10 for reflow</a> summarized: users must be able to zoom in up to 400% to enlarge the whole view without loss of content or functionality and without requiring scrolling in two dimensions.</p>
+<p>The <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">WCAG guideline 1.4.10 for reflow</a> is summarized as follows: users must be able to zoom in up to 400% to enlarge the whole view without loss of content or functionality and without requiring scrolling in two dimensions.
+This is the most common way to enlarge text. Use <code class="language-plaintext highlighter-rouge">Ctrl +</code> (Windows) or <code class="language-plaintext highlighter-rouge">Cmd +</code> (Mac) to zoom in up to 400% to enlarge the whole view. Note: 400% is a lot.</p>
 
-<p>This the most common way to enlarge text. Use <code class="language-plaintext highlighter-rouge">Ctrl +</code> (Windows) or <code class="language-plaintext highlighter-rouge">Cmd +</code> (Mac) to zoom in up to 400% to enlarge the whole view. Note: 400% is a lot.</p>
-
-<p>Mostly, responsive websites handle this well, but check if no functionality gets lost, is hidden or overlapped by other elements. Don’t assume these views only appear on mobile, users that are visually impaired may zoom in on a large screen.</p>
+<p>Mostly, responsive websites handle this well, but check that no functionality is lost, hidden, or overlapped by other elements. Don’t assume these views only appear on mobile; users who are visually impaired may zoom in on a large screen.</p>
 
 <h3 id="multidimensional-scrolling">Multidimensional scrolling</h3>
 
-<p>Enlarging the font size or view can result in a horizontal scroll bar. Then the user has 2 scrollbars to handle, which can be hard to navigatie or understand. Avoid multidimensional scrolling.</p>
+<p>Enlarging the font size or view can result in a horizontal scroll bar. Then the user has 2 scrollbars to handle, which can be hard to navigate or understand. Avoid multidimensional scrolling.</p>
 
 <p>But there are exceptions. according to <a href="https://www.w3.org/WAI/WCAG21/Understanding/reflow.html">Understanding SC 1.4.10 Reflow</a> by the W3C:</p>
 
@@ -616,7 +615,7 @@
 
 <h3 id="viewport">Viewport</h3>
 
-<p>Always give the user the opportunity to scale the display themselves. So, never set the viewport to <code class="language-plaintext highlighter-rouge">user-scalable=no;</code> this setting prevents the user from using the browser’s zoom on mobile devices. Many mobile devices will ignore this meta setting because of its accessibility impact.</p>
+<p>Always give the user the opportunity to scale the display themselves. So, never set the viewport to <code class="language-plaintext highlighter-rouge">user-scalable=no;</code>. This setting prevents the user from using the browser’s zoom on mobile devices. Many mobile devices will ignore this meta setting due to its impact on accessibility.</p>
 
 <p class="callout dont"><strong>Don’t</strong>: Prevent users to alter the text size in a webpage.</p>
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1, user-scalable=no"</span><span class="nt">&gt;</span>
@@ -639,7 +638,7 @@
   <li>Word spacing of at least 0.16 times the font size.</li>
 </ul>
 
-<p>In practice: when a user adds custom CSS the content should adjust to this and still be readable. Like for example:</p>
+<p>In practice, when a user adds custom CSS, the content should adapt to it and remain readable. For example:</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
     <span class="nl">line-height</span><span class="p">:</span> <span class="m">1.5</span> <span class="cp">!important</span><span class="p">;</span>
@@ -668,21 +667,21 @@
   <li>1 (one), l, L (capital l) and I (capital i).</li>
 </ul>
 
-<p>The topic <a href="/pr-preview/pr-422/docs/topics/content/readability/">Readability</a> in the Content and images section addresses best practice for Text style and layout. For example:</p>
+<p>The topic <a href="/pr-preview/pr-422/docs/topics/content/readability/">Readability</a> in the Content and images section addresses best practices for Text style and layout. For example:</p>
 
 <ul>
   <li>Use <strong>uppercase</strong> carefully. Uppercase obscures the shape of the word and can make it harder to understand. Screen readers will announce some short words as abbreviations.</li>
   <li>Use <strong>italic</strong> and <strong>bold</strong> text carefully, as it interrupts the reading flow. If the information is important, think about making it stand alone.</li>
-  <li>Use enough <strong>line-height</strong> and a large enough <strong>font-size</strong>. A font size of at least 16 pixels is works well for body copy.</li>
+  <li>Use enough <strong>line-height</strong> and a large enough <strong>font-size</strong>. A font size of at least 16 pixels works well for body copy.</li>
 </ul>
 
 <h3 id="relative-units-vs-absolute-units">Relative units vs. absolute units</h3>
 
-<p>Whether a font size is defined in pixels, em, rem or % units for resizing doesn’t really matter. Modern browsers adequately resize text regardless of how the size has been defined.</p>
+<p>Whether a font size is defined in pixels, em, rem, or % units for resizing doesn’t really matter. Modern browsers adequately resize text regardless of how its size is defined.</p>
 
-<p>There is much research and debate about whether text elements should be defined in pixels, em, rem or % units for resizing, and whether only the text or also other elements on a page should scale.</p>
+<p>There is much research and debate about whether text elements should be defined in pixels, em, rem, or % units for resizing, and whether only the text or also other elements on a page should scale.</p>
 
-<p>Operating systems, browsers and devices have various ways to enlarge text:</p>
+<p>Operating systems, browsers, and devices have various ways to enlarge text:</p>
 
 <ul>
   <li>with the OS settings,</li>
