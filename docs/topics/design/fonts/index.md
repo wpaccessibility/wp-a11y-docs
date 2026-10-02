@@ -15,8 +15,8 @@ Sighted visitors should be able to see, read, and understand the content on a we
 
 For accessibility, it's important that a user should be able to: 
 
-- **resize** only the text up to 200% or
-- **zoom** in the whole view up to 400% or 
+- **resize** only the text up to 200%, or
+- **zoom** in the whole view up to 400%, or 
 - change the **text style properties** like line height and spacing.
 
 And do so without the loss of content and functionality. This means after resize, zoom or changing the text style properties, no text or focusable elements overlap or get unreachable for a mouse or keyboard. This is further explained in the text below.
