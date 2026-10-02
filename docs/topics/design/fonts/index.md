@@ -11,7 +11,7 @@ contributors:
 
 # Readable and adjustable fonts
 
-Visitors should be able to see, read and understand the content on a webpage or view with ease. Additionally, they should be able to adjust the text appearance without the use of assistive technology.
+Sighted visitors should be able to see, read, and understand the content on a webpage or view with ease. Additionally, they should be able to adjust the text appearance without the use of assistive technology.
 
 For accessibility, it's important that a user should be able to: 
 
