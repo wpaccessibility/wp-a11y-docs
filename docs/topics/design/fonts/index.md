@@ -112,19 +112,19 @@ One takeaway for choosing a good font: make sure there is a visual difference be
 - 0 (zero) and O (capital o),
 - 1 (one), l, L (capital l) and I (capital i).
 
-The topic [Readability]({{site.baseurl}}/docs/topics/content/readability/) in the Content and images section addresses best practice for Text style and layout. For example:
+The topic [Readability]({{site.baseurl}}/docs/topics/content/readability/) in the Content and images section addresses best practices for Text style and layout. For example:
 
 - Use **uppercase** carefully. Uppercase obscures the shape of the word and can make it harder to understand. Screen readers will announce some short words as abbreviations.
 - Use **italic** and **bold** text carefully, as it interrupts the reading flow. If the information is important, think about making it stand alone.
-- Use enough **line-height** and a large enough **font-size**. A font size of at least 16 pixels is works well for body copy.
+- Use enough **line-height** and a large enough **font-size**. A font size of at least 16 pixels works well for body copy.
 
 ### Relative units vs. absolute units
 
-Whether a font size is defined in pixels, em, rem or % units for resizing doesn’t really matter. Modern browsers adequately resize text regardless of how the size has been defined.
+Whether a font size is defined in pixels, em, rem, or % units for resizing doesn’t really matter. Modern browsers adequately resize text regardless of how its size is defined.
 
-There is much research and debate about whether text elements should be defined in pixels, em, rem or % units for resizing, and whether only the text or also other elements on a page should scale.
+There is much research and debate about whether text elements should be defined in pixels, em, rem, or % units for resizing, and whether only the text or also other elements on a page should scale.
 
-Operating systems, browsers and devices have various ways to enlarge text:
+Operating systems, browsers, and devices have various ways to enlarge text:
 
 - with the OS settings,
 - with assistive technology, like Zoom Text,
