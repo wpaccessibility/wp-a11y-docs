@@ -30,7 +30,7 @@ For readability, it's important to provide fonts in sizes and shapes that are ea
 
 The difference between resize and reflow: resize affects only the text itself; reflow zooms the entire view of a web page. 
 
-Both can be executed by using Press `Ctrl +` (Windows) or `Cmd +` (Mac). How you zoom depends on the browser settings. How to test for resize and zoom in detail is described in [Support for reflow, resize, and text spacing changes]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/reflow-resize/) in the Theme guidelines for the WordPress accessibility-ready program.
+Both can be executed by pressing `Ctrl +` (Windows) or `Cmd +` (Mac). How you zoom depends on the browser settings. How to test for resize and zoom in detail is described in [Support for reflow, resize, and text spacing changes]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/reflow-resize/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 ### Resize text
 
@@ -43,10 +43,9 @@ The quickest way to test this is to use the Firefox browser and, in the toolbar,
 ### Reflow
 
 The [WCAG guideline 1.4.10 for reflow](https://www.w3.org/WAI/WCAG22/quickref/#reflow) is summarized as follows: users must be able to zoom in up to 400% to enlarge the whole view without loss of content or functionality and without requiring scrolling in two dimensions.
+This is the most common way to enlarge text. Use `Ctrl +` (Windows) or `Cmd +` (Mac) to zoom in up to 400% to enlarge the whole view. Note: 400% is a lot.
 
-This the most common way to enlarge text. Use `Ctrl +` (Windows) or `Cmd +` (Mac) to zoom in up to 400% to enlarge the whole view. Note: 400% is a lot.
-
-Mostly, responsive websites handle this well, but check if no functionality gets lost, is hidden or overlapped by other elements. Don't assume these views only appear on mobile, users that are visually impaired may zoom in on a large screen.
+Mostly, responsive websites handle this well, but check that no functionality is lost, hidden, or overlapped by other elements. Don't assume these views only appear on mobile; users who are visually impaired may zoom in on a large screen.
 
 ### Multidimensional scrolling
 
