@@ -21,14 +21,14 @@ For accessibility, it's important that a user should be able to:
 
 And do so without losing content or functionality. This means that after resizing, zooming, or changing the text style properties, no text or focusable elements overlap or become unreachable by mouse or keyboard. This is further explained in the text below.
 
-For readability, it's important to provide fonts in sizes and shapes that are easy to read. WCAG 2 doesn't provide guidelines for font size or shape, but it's best practice to offer font that is easy to read.
+For readability, it's important to provide fonts in sizes and shapes that are easy to read. WCAG 2 doesn't provide guidelines for font size or shape, but it's best practice to offer fonts that are easy to read.
 
 {: .callout .info }
 **Note**: Text should also have a good color contrast to be readable. The topic [Color contrast of text against its background]({{site.baseurl}}/docs/topics/design/color/color-contrast-text/) addresses this.
 
 ## Resize text and reflow
 
-The difference between resize and reflow: resize addresses only the text itself, reflow is about the zooming whole view of a web page. 
+The difference between resize and reflow: resize affects only the text itself; reflow zooms the entire view of a web page. 
 
 Both can be executed by using Press `Ctrl +` (Windows) or `Cmd +` (Mac). How you zoom depends on the browser settings. How to test for resize and zoom in detail is described in [Support for reflow, resize, and text spacing changes]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/reflow-resize/) in the Theme guidelines for the WordPress accessibility-ready program.
 
