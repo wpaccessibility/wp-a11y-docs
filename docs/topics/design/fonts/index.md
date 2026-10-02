@@ -34,15 +34,15 @@ Both can be executed by using Press `Ctrl +` (Windows) or `Cmd +` (Mac). How you
 
 ### Resize text
 
-The [WCAG guideline 1.4.4 for resizing text](https://www.w3.org/WAI/WCAG22/quickref/#resize-text) summarized: users must be able to double the font size without loss of content or functionality.
+The [WCAG guideline 1.4.4 for resizing text](https://www.w3.org/WAI/WCAG22/quickref/#resize-text) is summarized as follows: users must be able to double the font size without loss of content or functionality.
 
 Exceptions are captions and images of text, although it's still a fail if the text in the image gets cut off. 
 
-The quickest way to test this is by using the browser FireFox and in the toolbar select: View > Zoom > Check **Text only**. And the use `Ctrl +` (Windows) or `Cmd +` (Mac) to zoom in up to 200%.
+The quickest way to test this is to use the Firefox browser and, in the toolbar, select View > Zoom > Check **Text only**. Then use `Ctrl +` (Windows) or `Cmd +` (Mac) to zoom in up to 200%.
 
 ### Reflow
 
-The [WCAG guideline 1.4.10 for reflow](https://www.w3.org/WAI/WCAG22/quickref/#reflow) summarized: users must be able to zoom in up to 400% to enlarge the whole view without loss of content or functionality and without requiring scrolling in two dimensions.
+The [WCAG guideline 1.4.10 for reflow](https://www.w3.org/WAI/WCAG22/quickref/#reflow) is summarized as follows: users must be able to zoom in up to 400% to enlarge the whole view without loss of content or functionality and without requiring scrolling in two dimensions.
 
 This the most common way to enlarge text. Use `Ctrl +` (Windows) or `Cmd +` (Mac) to zoom in up to 400% to enlarge the whole view. Note: 400% is a lot.
 
