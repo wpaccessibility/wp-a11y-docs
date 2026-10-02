@@ -96,10 +96,10 @@ p {
 } 
 ```
 
-The common way to test this by viewing the webpage while using the [text spacing bookmarklet](https://codepen.io/stevef/full/YLMqbo) by Steven Faulkner. 
+The common way to test this is to view the webpage using the [text spacing bookmarklet](https://codepen.io/stevef/full/YLMqbo) by Steven Faulkner. 
 
 {: .callout .info :}
-**Please note**: The website **doesn't** need to offer settings to customize this in a toolbar. The settings only need to be supported in the HTML/CSS, when the user sets them themselves.
+**Please note**: The website **doesn't** need to offer settings to customize this in a toolbar. The settings only need to be supported in HTML/CSS when the user sets them.
 
 How to test text spacing in detail is described in [Support for reflow, resize, and text spacing changes]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/reflow-resize/) in the Theme guidelines for the WordPress accessibility-ready program.
 
@@ -129,7 +129,7 @@ Operating systems, browsers, and devices have various ways to enlarge text:
 - with assistive technology, like Zoom Text,
 - browser settings to enlarge text,
 - a plugin that changes the default text size,
-- zoom in and out with they keys Control plus and minus in the browser,
+- zoom in and out with the keys Control plus and minus in the browser,
 - using your fingers on touch devices,
 - reader view in browsers.
 
