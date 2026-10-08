@@ -8,9 +8,17 @@ nav_order: 7
 
 # Screen reader testing
 
-Important content that changes dynamically, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!
+Screenreader testing is important to know if the screen reader user gets the same infomation ans a signted user.
+
+A few topics to look out for:
+ - [Feedback on dynamic changes]({{site.baseurl}}/docs/topics/code/dynamic-changes/), the notification of content that changes dynamically.
+ - [Meaningful reading sequence]({{site.baseurl}}/docs/topics/code/meaningful-sequence/), the meaningful order of information.
+ - [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/), the proper announcement of the name of (interactive) HTML elements.
+
 
 ## Test feedback on dynamic changes
+
+Important content that changes dynamically, like JavaScript generated error messages or content, must also be announced for screen readers. The best way is to test this with a screen reader like Apple VoiceOver (for Mac) or NVDA (for Windows). Listen to your website!
 
 When using interactive scripts to update content or states of interactive elements, check:
 
