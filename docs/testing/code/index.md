@@ -31,7 +31,7 @@ In the section [Accessibility standards and best practice]({{site.baseurl}}/docs
 
 ## The main topics to check
 
-- Make sure all interactive elements have an [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/), so screen readers users know what the interaction is.
+- Make sure all interactive elements have an [accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/), so screen reader users know what the interaction is.
 - [Write semantic, meaningful HTML]({{site.baseurl}}/docs/topics/code/semantics/).
     - Use a `<button>` to invoke an action and an `<a>` for a change of location.
     - A `<div>` or `<span>` doesn’t natively provide interactivity, and should not be used for links or buttons.

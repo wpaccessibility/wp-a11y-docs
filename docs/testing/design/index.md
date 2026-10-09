@@ -14,7 +14,7 @@ contributors:
 
 The most common design elements to check for are color contrast between text / background and the use of color to present information. But these aren’t the only things to take into consideration to improve your design.
 
-Read the detailed documentation accessible design in [Design and user experience]({{site.baseurl}}/docs/topics/design/) in the section Standard and best practice of this documentation.
+Read the detailed documentation on accessible design in [Design and user experience]({{site.baseurl}}/docs/topics/design/) in the section Standard and best practice of this documentation.
 
 Listed below are the major issues to address. 
 
@@ -24,7 +24,7 @@ Check the color contrast ratio between **text** and its **background**. The crit
 - the color contrast ratio between text and background must be 4.5 or more for normal text and 
 - 3.1 or more for text of at least 24 pixels or 19 pixels bold.
 
-Text in logos and logotypes are excluded from this guideline.
+Text in logos and logotypes is excluded from this guideline.
 
 **Non-text elements** that have meaning should have a color contrast of 3.1 or more against its **background**.
 For example, icons used functionally or informationally, borders of input fields, checkboxes, or radio buttons.
@@ -99,7 +99,7 @@ Make the order of content logical when read from the top down. For example, do n
 
 ## Animation
 
-- Users must be able to pause animations, or the animations must automatically stop after 3 seconds
+- Users must be able to pause animations, or the animations must automatically stop after 5 seconds
 - Avoid using too many elements that distract the user from reading the text or using the navigation.
 
 Related documentation: 
