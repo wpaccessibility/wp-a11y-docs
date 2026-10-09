@@ -5,6 +5,7 @@ parent: Frontend code
 description: A screen reader user hears page content in the HTML order, which should correspond to what a sighted visitor sees on screen. Ensure everyone understands which information belongs to which section regardless of how they use the page.
 nav_order: 5
 has_video: true
+date_created: October 09, 2026
 contributors:
   - Rian Rietveld
   - Joe Dolson
