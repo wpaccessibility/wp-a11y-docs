@@ -127,7 +127,7 @@ It is implied that when you need to comply with level AA, you automatically need
 
 Passing tests for the success criteria of level A and AA is what most legislation asks of you, and is what is meant when people say you are WCAG compliant. Level AAA adds additional success criteria that are necessary to expand the number of people with disabilities who can use your website or app.
 
-They're not necessarily harder to implement, but they're useful for a smaller group and sometimes require more work to maintain.
+They're not necessarily harder to implement, but they're useful for a smaller group and sometimes require more work to maintain. Also, it is implied that when you say you (need to) comply with level AA, you automatically comply with A as well.
 
 ### WCAG Versions
 
