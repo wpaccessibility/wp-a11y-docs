@@ -49,7 +49,7 @@ If the theme does not open links in new tabs, this requirement is not applicable
 {: .resource-h3}
 ### WCAG Success Criteria for link behavior
 
-Consistent and predictable behavior of links is necessary to meet the WCAG success criterion [3.2.4 Consistent Identification](https://www.w3.org/WAI/WCAG22/quickref/#consistent-navigation) (Level AA).
+Consistent and predictable behavior of links is necessary to meet the WCAG success criterion [3.2.4 Consistent Identification](https://www.w3.org/WAI/WCAG22/quickref/#consistent-identification) (Level AA).
 
 {: .resource-h3}
 ### Related pages in this documentation

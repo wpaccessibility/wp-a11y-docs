@@ -10,8 +10,7 @@ nav_order: 5
 
 The text of the documentation is created by the WordPress and Accessibility community worldwide.
 
-This documentation is licenced as [Creative Commons Zero 1.0 Universal (CC0-1.0)](
-https://creativecommons.org/publicdomain/zero/1.0/).
+This documentation is licensed under [Creative Commons Zero 1.0 Universal (CC0-1.0)](https://creativecommons.org/publicdomain/zero/1.0/).
 
 The licence under which the WordPress software is released is the GPLv2 (or later) from the [Free Software Foundation](https://www.fsf.org/).
 

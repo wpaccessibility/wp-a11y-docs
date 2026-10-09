@@ -28,7 +28,7 @@ For this the following changes were made:
 - Removed the nav-footer: took up too much space and added a second `<footer>`.
 - Added option for posts and post pagination.
 - Refactored the breadcrumbs for the posts.
-- Removed Just the Docs info pages and create placeholder text to match the actual site structure.
+- Removed Just the Docs info pages and created placeholder text to match the actual site structure.
 - Set Ruby to 3.3.6.
 - Added option to add a canonical URL.
 
@@ -36,8 +36,8 @@ For this the following changes were made:
 
 - Refactoring directory structure.
 - Removed the dark theme for now, that will be restored when the theme is finished and stable.
-- Replaced `@import` for `@use`, for compatibility with Dart Sass 3.0.0.
-- Replaced `darken` by `color.scale` and `color.adjust`, for compatibility with Dart Sass 3.0.0.
+- Replaced `@import` with `@use`, for compatibility with Dart Sass 3.0.0.
+- Replaced `darken` with `color.scale` and `color.adjust`, for compatibility with Dart Sass 3.0.0.
 - Replaced deprecated global built-in functions by Sass values (sass:map, sass:color, sass:list etc.).
 
 ### CSS color contrast issue
@@ -51,14 +51,14 @@ For this the following changes were made:
 ### _config.yml
 
 - Removed Google Analytics Tracking settings.
-- Removed most variable because this is a static site.
+- Removed most variables because this is a static site.
 - Changed names and colours of the callouts to match those used in [WordPress documentation style guide](https://make.wordpress.org/docs/handbook/documentation-team-handbook/handbooks-style-and-formatting-guide/)
 
 ### Accessibility improvements
 
 - Moved the button to expand the submenus to after the submenu link, so the tab order is meaningful.
-- Changed aria-pressed by aria-expanded, see also issue [Change aria-pressed into aria-expanded for buttons connected to expandable content](https://github.com/just-the-docs/just-the-docs/issues/1680).
+- Changed aria-pressed to aria-expanded, see also issue [Change aria-pressed into aria-expanded for buttons connected to expandable content](https://github.com/just-the-docs/just-the-docs/issues/1680).
 - Added `aria-current="page"` to links to the current page.
 - Removed anchor links before headings. The link was inside the heading, resulting in announcing the heading text twice. Maybe we find an accessible way later on.
-- Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screenreader feedback.
+- Copy code button is now always visible (not only on hover) and has a larger clickable area. The copy action has now also screen reader feedback.
 - The code blocks now have a tabindex="0".
