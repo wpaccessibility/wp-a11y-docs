@@ -18,13 +18,13 @@ Automated accessibility testing cannot catch all accessibility errors, so additi
 
 ### Axe-core
 
-[Axe-core](https://github.com/dequelabs/axe-core-npm) by Deque is an accessibility testing engine for websites and other HTML-based user interfaces.
+Axe-core API for [Web Testing](https://github.com/dequelabs/axe-core) and [Windows Testing](https://github.com/microsoft/axe-windows), by Deque Systems Inc. An accessibility testing engine for websites and other HTML-based user interfaces.
 
 [axe-core-npm](https://github.com/dequelabs/axe-core-npm) offers packages like @axe-core/cli and @axe-core/react, which can be used for automated accessibility testing powered by axe core.
 
 [Playwright Accessibility testing](https://playwright.dev/docs/accessibility-testing) uses Axe. Accessibility tests work just like any other Playwright test. You can either create separate test cases or integrate accessibility scans and assertions into your existing test cases. NPM package: [@axe-core/playwright](https://www.npmjs.com/package/@axe-core/playwright).
 
-Axe is also available as [aXe Devtools browser addon](https://www.deque.com/axe/devtools/extension/). The addon adds a tab to your inspector with a "validate" button. After validating you see the errors and warnings for that particular webpage and how to fix them. Available as a free limited version and as a paid Pro version. 
+Axe is also available as browser extension Axe DevTools for [Chrome](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/?utm_campaign=axe&utm_content=axe), and [Edge](https://microsoftedge.microsoft.com/addons/detail/axe-devtools-web-access/kcenlimkmjjkdfcaleembgmldmnnlfkn?utm_campaign=axe&utm_content=axe). The addon adds a tab to your inspector with a "validate" button. After validating you see the errors and warnings for that particular webpage and how to fix them. Available as a free limited version and as a paid Pro version. 
 
 [Google LightHouse for Chrome](https://developer.chrome.com/docs/lighthouse) uses axe-core under the hood.
 
@@ -38,7 +38,7 @@ Axe is also available as [aXe Devtools browser addon](https://www.deque.com/axe/
 
 ### W3C Validators and tools
 
-The W3C maintains a page with [links to the test tools](https://www.w3.org/developers/tools/) they provide, like the Nu HTML Checker, CSS Validator, and Link Checker. Their information includes the W3C API, providing consistent access to specifications and other W3C data.
+The W3C maintains a page with [Validators and tools](https://www.w3.org/developers/tools/) they provide, like the Nu HTML Checker, CSS Validator, and Link Checker. Their information includes the W3C API, providing consistent access to specifications and other W3C data.
 
 ### Pa11y
 [Pa11y](https://github.com/pa11y/pa11y), runs accessibility tests on your pages via the command line or Node.js, so you can automate your testing process. 
