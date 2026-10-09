@@ -43,7 +43,7 @@ Documentation and test tools for the heading structure:
 ## Link texts
 
 - Use meaningful link text that describes the content being linked to.
-- Avoid “click here”, “read more”, ”download”, ”continue reading” or equivalent phrases as link text. It’s meaningless and people have to read around the link to see what’s it about.
+- Avoid “click here”, “read more”, ”download”, ”continue reading” or equivalent phrases as link text. It’s meaningless and people have to read around the link to see what it’s about.
 - If you use an image as a link, use the alternative text as link text.
 
 Documentation about link texts:
@@ -58,7 +58,7 @@ Documentation about link texts:
 - Make sure video has closed captions.
 - Make sure audio has transcriptions.
 - Don’t autoplay video and audio.
-- Avoiding using video with rapid flashing content, or provide content warnings.
+- Avoid using video with rapid flashing content, or provide content warnings.
 
 Documentation about video and audio:
 - [Accessible audio, video, and animations]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/accessible-animation/) in Theme guidelines for the WordPress `accessibility-ready` program.

@@ -107,7 +107,7 @@ With those aria-label attributes, screen readers will announce **Top navigation*
 
 ![Top and bottom navigation added using aria labels]({{site.baseurl}}/assets/images/aria-landmarks-with-aria-label.png)
 
-Note that the word navigation is already announced by assistive technologies. Therefore, avoid using landmark names like “navigation” in youraria-label content.
+Note that the word navigation is already announced by assistive technologies. Therefore, avoid using landmark names like “navigation” in your aria-label content.
 
 `<header>` and `<footer>` elements can also be inside other elements like `<article>`. But only elements which are direct descendants of the `<body>` tag will be exposed as `header`, `footer`, `banner` and `ContentInfo` landmarks respectively.
 

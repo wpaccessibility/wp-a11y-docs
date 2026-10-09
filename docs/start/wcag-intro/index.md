@@ -121,7 +121,7 @@ There are 3 levels of accessibility:
 - AA (the global accessibility standard)
 - AAA (for dedicated assistive support)
 
-The success criteria can have one of 3 levels, A, AA or AAA. In general, level A criteria consist of basic rules that should lead to a technically functional website or app. Level AA consist of criteria that, if you follow them correctly, will lead to a website or app that works for most known assistive devices.
+The success criteria can have one of 3 levels, A, AA or AAA. In general, level A criteria consist of basic rules that should lead to a technically functional website or app. Level AA consists of criteria that, if you follow them correctly, will lead to a website or app that works for most known assistive devices.
 
 It is implied that when you need to comply with level AA, you automatically need to comply with level A as well.
 
@@ -150,7 +150,7 @@ When designing, writing or coding, keep asking yourself if what you're doing con
 
 You may have seen audit reports in which a website was tested for accessibility.
 
-One method of reporting an accessibility audit is using the [WCAG-EM Report Tool](https://www.w3.org/WAI/eval/report-tool/), the evaluation methodology published by the W3C. This tool turns your accessibility evaluation findings into a report. [More about testing]({{site.baseurl}}/docs/testing).
+One method of reporting an accessibility audit is using the [WCAG-EM Report Tool](https://www.w3.org/WAI/eval/report-tool/), the evaluation methodology published by the W3C. This tool turns your accessibility evaluation findings into a report. [More about testing]({{site.baseurl}}/docs/testing/).
 
 Many findings can be reported for each success criterion in the report. That can make a report overwhelming! It's recommended that you try and implement best practice accessibility techniques and follow the guidelines to the best of your abilities before getting an audit.
 
