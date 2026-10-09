@@ -22,7 +22,7 @@ Three exceptional talks stand out this year that explore this topic from differe
  Watch Virginia’s talk: [What if we choose accessibility over beauty? My story with epilepsy](https://europe.wordcamp.org/2025/session/what-if-we-choose-accessibility-over-beauty-my-story-with-epilepsy/).
 - **Annelies’ Expert Insights**: As someone who works with agencies and businesses, Annelies broke down practical steps for implementing accessibility both for your website clients and your own company’s site.  
 Watch Annelies’ talk [Prepare for the EAA in less than 3 weeks](https://europe.wordcamp.org/2025/session/prepare-for-the-eaa-in-less-than-3-weeks/)
-- J**eff’s Real-World Example**: Jeff shared a compelling case study of a fully accessible website his company created, showing how accessibility can be seamlessly integrated into any project.  
+- **Jeff’s Real-World Example**: Jeff shared a compelling case study of a fully accessible website his company created, showing how accessibility can be seamlessly integrated into any project.  
 Watch Jeff’s talk  [Accessibility in Reality: Pro Helvetia, a Swiss case study](https://europe.wordcamp.org/2025/session/accessibility-in-reality-pro-helvetia-a-swiss-case-study/).
 
 You might be wondering, “Why should I care about accessibility? My audience doesn’t have any disabilities.” The answer is simple: accessibility benefits everybody.
@@ -36,7 +36,7 @@ The same principle applies to your website. By making it more accessible, you’
 Here are the key takeaways from these sessions:
 
 - **It’s About People**: The EAA is a set of regulations designed to improve the lives of real people. By prioritizing accessibility, you're not just making the world a better place, you're also expanding your customer base.
-- **A Significant Need**: In the EU, 27% of people have a permanent disability, with even more experiencing temporary or situational disabilities. Can you imagine have a store and keeping 27% of your potential customers from coming in and buying something?
+- **A Significant Need**: In the EU, 27% of people have a permanent disability, with even more experiencing temporary or situational disabilities. Can you imagine having a store and keeping 27% of your potential customers from coming in and buying something?
 - **Non-Compliance is Widespread**: A staggering 96% of websites still fail to meet current accessibility standards. That means when your website is accessible the people that need it will have an extra reason to give you their money.
 - **Learn by Doing**: You don’t need to get it perfect on your first try. The key is to start, make improvements along the way, and refine as you go.
 - **Every Step Counts**: Small changes, made over time, will build momentum and lead to a more accessible site.

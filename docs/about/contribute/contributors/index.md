@@ -24,7 +24,7 @@ The content about [web forms]({{site.baseurl}}/docs/topics/forms/) was taken, wi
 People who build and maintain the Knowledge Base website, including the implementation on GitHub pages.
 [Yoren Chang](https://github.com/yoren), [Joe Dolson](https://joedolson.com), [Gary Jones](https://garyjones.io/) and [Rian Rietveld](https://rianrietveld.com).
 
-Thank you, [Just The Docs](https://just-the-docs.com/) for providing the starter theme on which this site is build upon.
+Thank you, [Just The Docs](https://just-the-docs.com/) for providing the starter theme on which this site is built.
 
 ### Design website
 
@@ -36,8 +36,8 @@ Florian Schroiff from [Level Level Platforms and Accessibility](https://level-le
 
 ### Brainstorming
 
-Many people gave their time to brainstorm about content structure, the set up and shared ideas:
-[Paul van Buuren](https://wbvb.nl/), [Milana Cap](https://profiles.wordpress.org/milana_cap/). [Virginia Ciambriello](https://profiles.wordpress.org/virginiaciambriello/), [Wendie Huis in't Veld](https://wendiehuisintveld.nl/), [Johan Huijkman](https://www.linkedin.com/in/johanhuijkman/), [Jon Ang](https://profiles.wordpress.org/kenshino/), [Caitlin de Rooij](https://www.caitlinderooij.com/), Savi Sinnema, [Annelies Verhelst](https://linkedin.com/in/anneliesverhelst) and [Angela Willemsen](https://www.linkedin.com/in/angela-willemsen-986674195/).
+Many people gave their time to brainstorm about content structure, the setup and shared ideas:
+[Paul van Buuren](https://wbvb.nl/), [Milana Cap](https://profiles.wordpress.org/milana_cap/), [Virginia Ciambriello](https://profiles.wordpress.org/virginiaciambriello/), [Wendie Huis in't Veld](https://wendiehuisintveld.nl/), [Johan Huijkman](https://www.linkedin.com/in/johanhuijkman/), [Jon Ang](https://profiles.wordpress.org/kenshino/), [Caitlin de Rooij](https://www.caitlinderooij.com/), Savi Sinnema, [Annelies Verhelst](https://linkedin.com/in/anneliesverhelst) and [Angela Willemsen](https://www.linkedin.com/in/angela-willemsen-986674195/).
 
 ### GitHub contributor list
 

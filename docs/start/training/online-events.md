@@ -10,7 +10,7 @@ nav_order: 3
 
 ## WP Accessibility Day
 
-[WP Accessibility Day](https://wpaccessibility.day/) (#WPA11yDay) is a streamed conference featuring twenty-four hours of free accessibility content, focused on WordPress and content management. Talks range widely across all aspects of accessibility, from the most basic to deep dives on difficult topics. All talks from previous years are archived and captioned. Talks from 2023 forward also include American Sign Language interpretation. Translations of past talks is in progress.
+[WP Accessibility Day](https://wpaccessibility.day/) (#WPA11yDay) is a streamed conference featuring twenty-four hours of free accessibility content, focused on WordPress and content management. Talks range widely across all aspects of accessibility, from the most basic to deep dives on difficult topics. All talks from previous years are archived and captioned. Talks from 2023 forward also include American Sign Language interpretation. Translations of past talks are in progress.
 
 ## WordPress Accessibility Meetup
 

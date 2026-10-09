@@ -12,7 +12,7 @@ The website includes the guidelines for meeting `accessibility-ready` requiremen
 
 Did you find an error or have a great idea? Create an issue on our [GitHub repository wpaccessibility/wp-a11y-docs](https://github.com/wpaccessibility/wp-a11y-docs/issues/).
 
-We would like to invite you [to contribute](https://wpaccessibility.org/docs/contribute/) to this documentation. Open an issue or add a pull request with your changes. If you want to add new pages to the documentation, please contact a project lead first.
+We would like to invite you [to contribute](https://wpaccessibility.org/docs/about/contribute/) to this documentation. Open an issue or add a pull request with your changes. If you want to add new pages to the documentation, please contact a project lead first.
 
 ## Pull Request Previews
 
@@ -55,8 +55,8 @@ Before submitting a Pull Request, please make sure:
 
 If you submit code or documentation using a local build:
 - [ ] Your code builds clean without any errors or warnings while running `npm run test`.
-- [ ] You read the documentation in [How to help on GitHub](https://wpaccessibility.org/docs/contribute/github/).
-- [ ] You checked the modified pages with an accessibility tool like [Axe Devtools](https://www.deque.com/axe/devtools/edge-browser-extension/) or [WAVE](https://wave.webaim.org/).
+- [ ] You read the documentation in [How to help on GitHub](https://wpaccessibility.org/docs/about/contribute/github/).
+- [ ] You checked the modified pages with an accessibility tool like [axe DevTools](https://www.deque.com/axe/devtools/edge-browser-extension/) or [WAVE](https://wave.webaim.org/).
 
-For more information, see the [How to contribute to this documentation](https://wpaccessibility.org/docs/contribute/) guide.
+For more information, see the [How to contribute to this documentation](https://wpaccessibility.org/docs/about/contribute/) guide.
 
