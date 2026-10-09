@@ -7,7 +7,7 @@ This project is community-driven and relies on contributions from people like yo
 
 There are several ways you can help improve this project:
 
-## Contributing without coding
+### Contributing without coding
 
 You don’t need to know Git, GitHub, or coding to contribute to this project.  
 There are several easy ways to help:
@@ -21,7 +21,7 @@ There are several easy ways to help:
 - **Give Accessibility Feedback**  
   Testing the site, pointing out unclear documentation, or sharing examples (dos and don’ts) is a valuable contribution.
 
-## Contributing with Code
+### Contributing with code
 
 - **Suggest a topic or report an issue**  
   Open an [issue on GitHub](https://github.com/wpaccessibility/wp-a11y-docs/issues) if you find an error, want to suggest improvements, or see a missing topic.
@@ -41,9 +41,9 @@ There are several easy ways to help:
 2. **Create a branch**
    ```bash
    git checkout -b my-contribution
+   ```
 
-
-For more details, see the [Contribute pages](https://wpaccessibility.org/docs/contribute/).  
-All contributors will also be listed on the [**Contributors page**](https://wpaccessibility.org/docs/contributors/) as a thank you for their help.
+For more details, see the [Contribute pages](https://wpaccessibility.org/docs/about/contribute/).  
+All contributors will also be listed on the [**Contributors page**](https://wpaccessibility.org/docs/about/contribute/contributors/) as a thank you for their help.
 
 *In short: if you can write, review, or test, you can contribute — no coding required!*
