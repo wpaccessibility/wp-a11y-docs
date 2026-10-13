@@ -13,8 +13,6 @@ contributors:
 
 Landmark roles in HTML help people screen readers user move around a website more easily. Some HTML elements act as landmarks, they mark important sections like headers, navigation bars (menus and breadcrumbs), main content, and footers so users can jump to them quickly.
 
-Preferably, all content should be inside these semantically meaningful elements, so the user does not miss content when navigating by landmarks.
-
 {: .callout .info }
 This page gives you a brief introduction. For more in depth documentation please read [ARIA: landmark role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/landmark_role) on MDN. You can also review the WordPress theme accessibility guidelines, as [WordPress themes are required to use landmark roles]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/).
 
@@ -123,6 +121,9 @@ In VoiceOver the landmark with the added aria-labels list will look like this:
 
 `<header>` and `<footer>` elements can also be inside other elements like `<article>`. But only elements which are direct descendants of the `<body>` tag will be exposed as `header`, `footer`, `banner` and `contentinfo` landmarks respectively.
 
+{: .callout .info }
+**Note about themes**: Preferably, all content should be inside these semantically meaningful elements, so the user does not miss content when navigating by landmarks. Some themes place the [skip link]({{site.baseurl}}/docs/topics/code/components/skip-links/) above the `header` landmark. This is **not** a WCAG violation, but considered against best practice.
+
 ## Resources
 
 {: .resource-h3}
@@ -138,6 +139,7 @@ Providing meaningful landmark roles and names is necessary to meet the WCAG succ
 ### Related pages in this documentation
 
 - [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
+- [Skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/) in Standards and best practice, Frontend code, Components.
 - [Meaningful landmark roles and names]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
