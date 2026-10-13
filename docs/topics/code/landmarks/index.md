@@ -115,6 +115,18 @@ If the same role appears on more than one element on a page, add an aria-label a
 
 With those aria-label attributes, screen readers will announce **Main navigation** and **Footer navigation**, rather than **navigation** and **navigation**. Note that the word navigation is already announced by assistive technologies for `<nav>`. Therefore, avoid adding landmark names like “navigation” in your aria-label content.
 
+Other examples:
+
+- breadcrumbs: `<nav aria-label="Breadcrumbs">`.
+- pagination: `<nav aria-label="Pagination">`.
+- a sidebar with the latest news `<aside aria-label="Latest news">`.
+
+Make sure the aria-labels are translatable if you use them in a WordPress theme.
+```php
+<nav aria-label="<?php esc_attr_e( 'Post navigation', 'twentytwentyfive' ); ?>"
+```
+
+
 In VoiceOver the landmark with the added aria-labels list will look like this:
 
 ![Multiple nav landmarks with different aria-labels for navigation in the VoiceOver web rotor.]({{site.baseurl}}/assets/images/aria-landmarks-with-aria-label.png)
