@@ -667,6 +667,18 @@
 
 <p>With those aria-label attributes, screen readers will announce <strong>Main navigation</strong> and <strong>Footer navigation</strong>, rather than <strong>navigation</strong> and <strong>navigation</strong>. Note that the word navigation is already announced by assistive technologies for <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>. Therefore, avoid adding landmark names like “navigation” in your aria-label content.</p>
 
+<p>Other examples:</p>
+
+<ul>
+  <li>breadcrumbs: <code class="language-plaintext highlighter-rouge">&lt;nav aria-label="Breadcrumbs"&gt;</code>.</li>
+  <li>pagination: <code class="language-plaintext highlighter-rouge">&lt;nav aria-label="Pagination"&gt;</code>.</li>
+  <li>a sidebar with the latest news <code class="language-plaintext highlighter-rouge">&lt;aside aria-label="Latest news"&gt;</code>.</li>
+</ul>
+
+<p>Make sure the aria-labels are translatable if you use them in a WordPress theme.</p>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"</span><span class="cp">&lt;?php</span> <span class="nf">esc_attr_e</span><span class="p">(</span> <span class="s1">'Post navigation'</span><span class="p">,</span> <span class="s1">'twentytwentyfive'</span> <span class="p">);</span> <span class="cp">?&gt;</span><span class="s">"</span>
+</code></pre></div></div>
+
 <p>In VoiceOver the landmark with the added aria-labels list will look like this:</p>
 
 <p><img src="/pr-preview/pr-426/assets/images/aria-landmarks-with-aria-label.png" alt="Multiple nav landmarks with different aria-labels for navigation in the VoiceOver web rotor." /></p>
