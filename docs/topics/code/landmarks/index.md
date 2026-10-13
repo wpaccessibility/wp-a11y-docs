@@ -2,7 +2,7 @@
 title: Landmarks
 layout: default
 parent: Frontend code
-description: Learn what ARIA landmarks are and how to use them.
+description: Learn what landmarks in HTML are and how to use them.
 nav_order: 4
 contributors:
   - Rian Rietveld
@@ -11,49 +11,54 @@ contributors:
 
 # ARIA Landmarks
 
-ARIA landmark roles provide a method for screen reader users to navigate structural regions of a site. By default, many HTML elements define ARIA landmark roles which identify these regions.
+Landmark roles in HTML help people screen readers user move around a website more easily. Some HTML elements act as landmarks, they mark important sections like headers, navigation bars (menus and breadcrumbs), main content, and footers so users can jump to them quickly.
 
-All content should be inside these semantically meaningful elements, so the user does not miss content.
+{: .callout .info }
+This page gives you a brief introduction. For more in depth documentation please read [ARIA: landmark role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/landmark_role) on MDN. You can also review the WordPress theme accessibility guidelines, as [WordPress themes are required to use landmark roles]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/).
 
 ## Most common landmark elements
 
 <table>
     <caption>HTML sectioning elements</caption>
     <tr>
-        <th>HTML5 element</th>
+        <th>HTML element</th>
         <th>Default landmark role</th>
+        <th>Purpose</th>
     </tr>
     <tr>
-        <td>&lt;header&gt;</td>
+        <td>header</td>
         <td>banner</td>
+        <td>Site-oriented content at the beginning of each page within a website.</td>
     </tr>
     <tr>
-        <td>&lt;nav&gt;</td>
+        <td>nav</td>
         <td>navigation</td>
+        <td>Groups (e.g. lists) of links for website or page content navigation.</td>
     </tr>
     <tr>
-        <td>&lt;main&gt;</td>
         <td>main</td>
+        <td>main</td>
+        <td>The primary content of the page.</td>
     </tr>
     <tr>
-        <td>&lt;aside&gt;</td>
+        <td>aside</td>
         <td>complementary</td>
+        <td>Content, complementary to the main content but meaningful when separated from the main content.</td>
     </tr>
     <tr>
-        <td>&lt;footer&gt;</td>
+        <td>footer</td>
         <td>contentinfo</td>
+        <td>Common information at the bottom of each page within a website</td>
     </tr>
 </table>
 
-More information can be found at the W3C [ARIA Landmarks Example](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html). You can also review the WordPress theme accessibility guidelines, as [WordPress themes are required to use landmark roles]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/) in order to apply the accessibility-ready tag.
-
-## Good example of HTML5 sectional elements
+## Good example of HTML landmarks
 
 A basic example of a page structure can look like this:
 
 ```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Semantic HTML</title>
     <meta charset="utf-8">
@@ -61,7 +66,7 @@ A basic example of a page structure can look like this:
   <body>
 
     <header>
-      <img src="logo.png" alt="We the people">
+        <img src="/assets/images/logo.png" alt="WP Accessibility logo">
     </header>
   
     <nav>
@@ -90,26 +95,46 @@ A basic example of a page structure can look like this:
 </html>
 ```
 
-Using this markup, screen reader users can navigate using mapped ARIA landmark roles. For example, in VoiceOver the landmark list will look like this:
+In VoiceOver the landmark list will look like this:
 
-![List of aria landmarks in VoiceOver: banner, navigation, main, complementary]({{site.baseurl}}/assets/images/aria-landmarks-in-voiceover.png)
+![List of landmarks on a page in the VoiceOver web rotor: banner, navigation, main, complementary.]({{site.baseurl}}/assets/images/aria-landmarks-in-voiceover.png)
 
-Note that the `contentinfo` role is missing. This is because of a VoiceOver bug. Life isn’t perfect. You can add this role manually: `<footer role="contentinfo">`.
+## Name multiple of the same landmarks
 
-## Notes
+If the same role appears on more than one element on a page, add an aria-label attribute on each of those elements to tell them apart. For example in the case of two navigation landmarks:
 
-If the same role appears on more than one element on a page, there should be an aria-label attribute on each of those elements. This will distinguish different landmarks. Navigation is the most common example:
+```html
+    [...]
+<nav aria-label="Main">  
+    [...]
+<footer>
+    <nav aria-label="Footer">
+</footer>
+    [...]
+```
 
-`<nav aria-label="Top">`  
-`<nav aria-label="Bottom">`
+With those aria-label attributes, screen readers will announce **Main navigation** and **Footer navigation**, rather than **navigation** and **navigation**. Note that the word navigation is already announced by assistive technologies for `<nav>`. Therefore, avoid adding landmark names like “navigation” in your aria-label content.
 
-With those aria-label attributes, screen readers will announce **Top navigation** and **Bottom navigation**, rather than **navigation** and **navigation**.
+Other examples:
 
-![Top and bottom navigation added using aria labels]({{site.baseurl}}/assets/images/aria-landmarks-with-aria-label.png)
+- breadcrumbs: `<nav aria-label="Breadcrumbs">`.
+- pagination: `<nav aria-label="Pagination">`.
+- a sidebar with the latest news `<aside aria-label="Latest news">`.
 
-Note that the word navigation is already announced by assistive technologies. Therefore, avoid using landmark names like “navigation” in your aria-label content.
+Make sure the aria-labels are translatable if you use them in a WordPress theme.
+```php
+<nav aria-label="<?php esc_attr_e( 'Post navigation', 'twentytwentyfive' ); ?>"
+```
 
-`<header>` and `<footer>` elements can also be inside other elements like `<article>`. But only elements which are direct descendants of the `<body>` tag will be exposed as `header`, `footer`, `banner` and `ContentInfo` landmarks respectively.
+
+In VoiceOver the landmark with the added aria-labels list will look like this:
+
+![Multiple nav landmarks with different aria-labels for navigation in the VoiceOver web rotor.]({{site.baseurl}}/assets/images/aria-landmarks-with-aria-label.png)
+
+`<header>` and `<footer>` elements can also be inside other elements like `<article>`. But only elements which are direct descendants of the `<body>` tag will be exposed as `header`, `footer`, `banner` and `contentinfo` landmarks respectively.
+
+{: .callout .info }
+**Note about themes**: Preferably, all content should be inside these semantically meaningful elements, so the user does not miss content when navigating by landmarks. Some themes place the [skip link]({{site.baseurl}}/docs/topics/code/components/skip-links/) above the `header` landmark. This is **not** a WCAG violation, but considered against best practice.
 
 ## Resources
 
@@ -120,20 +145,18 @@ Providing meaningful landmark roles and names is necessary to meet the WCAG succ
 
 - [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/quickref/#info-and-relationships) (Level A).
 - [1.3.6 Identify Purpose](https://www.w3.org/WAI/WCAG22/quickref/#identify-purpose) (Level **AAA**).
+- [2.4.1 Bypass Blocks](https://www.w3.org/WAI/WCAG22/quickref/#bypass-blocks) (Level A).
 
 {: .resource-h3}
 ### Related pages in this documentation
 
 - [The accessible name]({{site.baseurl}}/docs/topics/code/accessible-name/) in Standards and best practice, Frontend code.
+- [Skip links]({{site.baseurl}}/docs/topics/code/components/skip-links/) in Standards and best practice, Frontend code, Components.
 - [Meaningful landmark roles and names]({{site.baseurl}}/docs/accessibility-ready/theme-guidelines/meaningful-landmark-roles/) in the Theme guidelines for the WordPress accessibility-ready program.
 
 {: .resource-h3}
 ### Other resources
 
-- [W3C ARIA landmark example page](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html) by the W3C.
-- [Tutorial of page regions](https://www.w3.org/WAI/tutorials/page-structure/regions/) by the W3C
-
-**Note on the W3C techniques below**: while the guidance regarding why and how to use these examples is good, some of the code examples pre-date wide availability of native roles for HTML5 elements. It is preferred to use the HTML elements directly for landmarks, not the role attributes.
-
-- [Technique: Grouping related links using the nav element](https://www.w3.org/WAI/WCAG22/Techniques/html/H97.html) by the W3C.
-- [Technique: Using ARIA landmarks to identify regions of a page](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA11) by the W3C.
+- [ARIA: landmark role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Roles/landmark_role), by the MDN.
+- [W3C ARIA landmark example page](https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html), by the W3C.
+- [Tutorial of page regions](https://www.w3.org/WAI/tutorials/page-structure/regions/), by the W3C
