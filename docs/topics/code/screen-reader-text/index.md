@@ -4,6 +4,9 @@ layout: default
 parent: Frontend code
 description: Learn about the CSS class screen-reader-text and how to use it.
 nav_order: 6
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
 # The CSS class screen-reader-text
