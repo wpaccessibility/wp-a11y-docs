@@ -2,27 +2,97 @@
 title: Feedback on dynamic changes
 layout: default
 parent: Frontend code
-description: The explanation of wp.a11y.speak.
+description: How and when to announce dynamically generated notifications and changes for screenreader users in WordPress.
 nav_order: 7
+contributors:
+  - Rian Rietveld
+  - Joe Dolson
 ---
 
 # Feedback on dynamic changes
 
-## Using ARIA Live in WordPress
+All users should get the same information, also information given in messages that are dynamically created, without a page reload. A message didn't exist until the moment it was needed, and its content depends on the situation at that moment.
 
-`wp.a11y.speak()` is a JavaScript method included into WordPress core as of version 4.2.
+If a message is dynamically generated and visible but doesn't receive keyboard focus, the notification should be announced for screen reader users to import them too.
 
-When content changes dynamically in a web page, `wp.a11y.speak()` can announce a message using [aria-live](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions). Then users who depend on a screen reader will be notified of any change to the content on the page.
+Use [ARIA live-regions](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Guides/Live_regions) for this. Screenreaders announce changes within these regions. To work properly, the live-region must already be present in the DOM (the HTML processed by the browser) before you put anything in it. Often, the browser will only process changes in already-existing live-regions.
 
-Joe Dolson and Andrea Fercia wrote a clear introduction and manual on the method in [Let WordPress Speak](https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/), new in WordPress 4.2
+WordPress uses the JavaScript function [wp.a11y.speak](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-a11y/#speak) to generate live-regions.
 
-### Example of a `wp.a11y.speak()` implementation
+## Live-regions with role="alert" or aria-live="assertive"
 
-In this example a table with data is displayed. The user can select for example a category and the table with the data below will be updated dynamically.
+Use `role="alert"` to inform the screen reader user of important and/or time-sensitive messages.
+
+An element with `role="alert"` is an assertive live region and is functionally equivalent to using the combination `aria-live="assertive"` plus `aria-atomic="true"`. It interrupts what the user is doing and delivers the message immediately.
+
+For example:
+
+- Your login session is about to expire.
+- The connection to the server was lost; local changes are now not being saved.
+- You have 20 seconds remaining to submit the form.
+
+```html
+<div role="alert">
+    Warning: You have 20 seconds remaining to submit the form.
+</div>
+// or
+<div aria-live="assertive" aria-atomic="true">
+    Warning: You have 20 seconds remaining to submit the form.
+</div>
+
+```
+
+**Note**: Use alerts sparingly, only in situations where the user's immediate attention is required.
+
+## Live-region with role="status" or aria-live="polite"
+
+A live-region with role="status" provides the user with information that isn't important enough to warrant an 'alert'.
+
+Setting `role="status"` is equivalent to setting `aria-live="polite"` plus `aria-atomic="true"`.
+
+For example:
+
+- The contact form was successfully submitted.
+- You now have 3 products in your shopping cart.
+- There are 5 search results found for 'caterpillar'.
+
+```html
+<div role="status">
+    There are 5 search results found for 'caterpillar'.
+</div>
+// or 
+<div aria-live="polite" aria-atomic="true">
+    There are 5 search results found for 'caterpillar'.
+</div>
+```
+
+This `role="status"` does not interrupt the user, but the notification is only delivered when the user is no longer interacting with the assistive technology.
+
+In other words, "status" waits its turn and "alert" cuts in front.
+
+Most content management systems and frameworks include built-in features to simplify screen reader feedback. WordPress implements this functionality through the JavaScript method `wp.a11y.speak()`. It places fixed, visually hidden, live regions at the bottom of the page where developers can insert notifications that will then be announced to users.
+
+## Using aria-live in WordPress with wp.a11y.speak
+
+The JavaScript method `wp.a11y.speak` reserves two spots at the bottom of the page for the announcement, one for `aria-live="assertive"` and one for `aria-live="polite"`. What needs to be announced can be injected in one of these regions.
+
+```html
+<!-- example of the live regions created by wp.a11y.speak -->
+<div id="a11y-speak-assertive" class="screen-reader-text wp-a11y-speak-region" aria-live="assertive" aria-relevant="additions text" aria-atomic="true"></div>
+
+<div id="a11y-speak-polite" class="screen-reader-text wp-a11y-speak-region" aria-live="polite" aria-relevant="additions text" aria-atomic="true"></div>
+```
+
+Joe Dolson and Andrea Fercia wrote a clear introduction and manual on the method in [Let WordPress Speak](https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/), for its introduction in WordPress 4.2.
+
+### Example of a wp.a11y.speak implementation
+
+In this example a table with data is displayed. The user can select a category, and the table with the data below will be updated dynamically.
 
 With `wp.a11y.speak()` we can announce that the table has been updated with new data.
 
-**Note**: `wp.a11y.speak()` is only available after DOM ready, so be sure not to call it earlier!
+{: .callout .alert}
+**Note**: `wp.a11y.speak()` is only available after "DOM ready", so be sure not to call it earlier!
 
 ### In functions.php
 
@@ -62,15 +132,13 @@ wp.a11y.speak( yourData.strings.resultsFound, 'polite' );
 
 ```html
 <div id="wp-a11y-speak-polite" aria-live="polite" aria-relevant="additions text" aria-atomic="true" class="screen-reader-text wp-a11y-speak-region">
-New results found and displayed in the table below
+    New results found and displayed in the table below.
 </div>
 ```
 
-This `<div>` will be added to the bottom of the web page.
-
 ## Using the npm package
 
-The `wp.a11y.speak()` functionality is also available from the NPM package `@wordpress/a11y`.
+The `wp.a11y.speak()` functionality is also available from the NPM package `@wordpress/a11y`. This module is inspired by the speak function in wp-a11y.js.
 
 Install the module:
 
@@ -102,9 +170,10 @@ speak( 'The message you want to send to the ARIA live region', 'assertive' );
 {: .resource-h3}
 ### Other resources
 
-- The NPM Module [@wordpress/a11y](https://www.npmjs.com/package/@wordpress/a11y) on npmjs.com. The “speak” method that allows you to easily announce dynamic interface updates to screen readers using ARIA live regions. This module is inspired by the speak function in wp-a11y.js.
+- The NPM Module [@wordpress/a11y](https://www.npmjs.com/package/@wordpress/a11y) on npmjs.com. 
 - [@wordpress/a11y package](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-a11y/) in Accessibility utilities for WordPress, Block Editor Handbook.
 - [Let WordPress Speak, new in WordPress 4.2](https://make.wordpress.org/accessibility/2015/04/15/let-wordpress-speak-new-in-wordpress-4-2/) by Joe Dolson and Andrea Fercia, introducing and explaining the method.
 - [WordPress speaks with wp.a11y.speak](https://foxland.fi/wordpress-speaks-wp-a11y-speak/) by Sami Keijonen, explanation, examples in GitHub and a demo site.
+- [Why are my live regions not working?](https://tetralogical.com/blog/2024/05/01/why-are-my-live-regions-not-working/) by Patrick H. Lauke.
 - [Live Region Support](https://adrianroselli.com/2026/01/live-region-support.html) by Adrian Roselli.
 
