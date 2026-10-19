@@ -160,6 +160,11 @@ speak( 'The message you want to send to the ARIA live region', 'assertive' );
 
 ## Resources
 
+### WCAG Success Criteria for the announcement of dynamic changes
+
+- [3.3.1 Error Identification](https://www.w3.org/WAI/WCAG22/quickref/#error-identification) (Level A).
+- [4.1.3 Status messages](https://www.w3.org/WAI/WCAG22/quickref/#status-messages) (Level AA).
+
 {: .resource-h3}
 ### Related pages in this documentation
 
