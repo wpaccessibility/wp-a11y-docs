@@ -4,6 +4,9 @@ layout: default
 parent: Components
 description: How to set up an accessible skip link.
 nav_order: 2
+contributors:
+  - Joe Dolson
+  - Rian Rietveld
 ---
 
 # Skip links
@@ -114,5 +117,5 @@ For implementing a skip link in classic themes, please read the guide by Carolin
 {: .resource-h3}
 ### Other resources
 
- - [Skip navigation links](https://webaim.org/techniques/skipnav/) by WebAIM. In this article there is also information about having multiple skip links and the most common wording for skip to content.
+- [Skip navigation links](https://webaim.org/techniques/skipnav/) by WebAIM. In this article there is also information about having multiple skip links and the most common wording for skip to content.
 - [How–to: Use Skip Navigation links](https://www.a11yproject.com/posts/2013-05-11-skip-nav-links/) by Cameron Cundiff on the A11y Project.
