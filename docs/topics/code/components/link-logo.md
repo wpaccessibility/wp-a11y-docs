@@ -9,7 +9,7 @@ contributors:
   - Rian Rietveld
 ---
 
-# The accessible name of the link to home in the Header
+# The accessible name of the link to home in the header
 
 How do you give a link on a logo in the header a good accessible name? There are two options for adding the accessible name: via the alt attribute of the logo-image or via an aria-label on the link. Which option you choose depends on the framework, CMS, or design system you're using your preference or theme.
 
