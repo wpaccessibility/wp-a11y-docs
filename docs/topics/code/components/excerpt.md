@@ -23,16 +23,18 @@ This component has different names and purposes, but all share a common structur
 
 For convenience, in this topic we will refer to them as a "card" pointing to a "page".
 
+![3 cards on the homepage of wordpress.org.]({{site.baseurl}}/assets/images/cards-wp-org-homepage.png)
+
 ## Cards and accessibility
 
 There are a few things to keep in mind to make a card usable by everyone. They are further explained in examples later in this topic.
 
-- Link texts: make sure the link texts are meaningful, do not wrap the whole card inside a link.
-- Link target: use only one link to the page, avoid duplicate links to the same target within the card.
-- Image link: If the image is a link, make sure the link has an appropriate link text.
-- Image alternative text: If the image is not a link, make sure it has an appropriate alt text or is indicated as decorative.
-- Headings: if you use headings in a card, make sure the heading level fits the heading structure of the page.
-- Order of the items: make sure the order of the items makes sense if you read the card from the top down.
+- **Link text**: make sure the link texts are meaningful, do not wrap the whole card inside a link.
+- **Link target**: use only one link to the page, avoid duplicate links to the same target within the card.
+- **Image link**: If the image is a link, make sure the link has an appropriate link text.
+- **Image alternative text**: If the image isn't a link, make sure it has an appropriate alt text or is indicated as decorative.
+- **Headings**: if you use headings in a card, make sure the heading level fits the heading structure of the page.
+- **Order of the items**: make sure the order of the items makes sense if you read the card from the top down. 
 
 ### Meaningful link texts
 
@@ -46,7 +48,7 @@ For example:
 </a>
 ```
 
-### Use only one link to the page
+### Use only one meaningful link to the page
 
 Create a usable card for screen reader and keyboard users by offering only one relevant link per card.
 
@@ -68,7 +70,9 @@ The link text of the code construction below will be:
 > "Quick wins to improve the accessibility of your website
 What to do first when you want to make your site more accessible? Start with the low-hanging fruit like sufficient color contrast of text against its background. Last updated: October 01, 2026." 
 
-Instead of just "Quick wins to improve the accessibility of your website".
+Instead of just:
+
+> "Quick wins to improve the accessibility of your website".
 
 ```html
 <!-- Don't copy, this is an inaccessible construction -->
@@ -176,7 +180,7 @@ Find more information about alt texts in the topics [Alternative text for images
 
 ### Headings in cards
 
-If you use headings in a card, make sure the heading level fits the heading structure of the entire webpage. It may be necessary to give the content manager the possibility to change the heading level used in a card. The heading level can be dependent of how and where the card is used on a page. Read about semantic heading levels in: [Headings in the content]({{site.baseurl}}/docs/topics/content/headings/) and [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/).
+If you use headings in a card, make sure the heading level fits the heading structure of the entire webpage. It may be necessary to give the content manager the possibility to change the heading level used in a card. The heading level can be dependent of how and where the card is used on a page. Read about semantic heading levels in: [Headings in the content]({{site.baseurl}}/docs/topics/content/headings/) and [Heading structure in theme development]({{site.baseurl}}/docs/topics/code/heading-structure/) in this documentation.
 
 ### Meaningful sequence of the card items
 
@@ -186,7 +190,7 @@ Screen reader users read a page from to top down, and a populair way to navigate
 
 ## Cards in WordPress
 
-There are many blocks and patterns for card components within WordPress, created by WordPress core and by third parties. Please check the accessibility before you use them on your website. 
+There are many blocks and patterns for card components within WordPress, created by WordPress core and by third parties. Please check the accessibility before you use them on your website. Now you know where to look out for.
 
 ## Resources
 
@@ -219,7 +223,6 @@ In standards and best practice:
 In Test for accessibility:
 - [Keyboard navigation testing]({{site.baseurl}}/docs/testing/keyboard/).
 - [Screen reader testing]({{site.baseurl}}/docs/testing/screen-readers/).
-
 
 {: .resource-h3}
 ### Other resources
