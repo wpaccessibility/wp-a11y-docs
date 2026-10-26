@@ -2,7 +2,7 @@
 title: Difference standard and best practice
 layout: default
 parent: Standards and best practice
-description: Learn the difference between an accessibility standard and "best practice"?
+description: Learn the difference between an accessibility standard and "best practice".
 nav_order: 8
 date_created: October 26, 2026
 contributors:
