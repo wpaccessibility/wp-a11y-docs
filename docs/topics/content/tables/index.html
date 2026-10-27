@@ -645,6 +645,16 @@
 
 <p>Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub <a href="https://github.com/WordPress/gutenberg/issues?q=state%3Aopen%20label%3A%22%5BBlock%5D%20Table%22">issues labeled Block Table</a>. There are plans for expanding the capabilities of the table block, assistance is welcome in making this happen.</p>
 
+<h2 id="tables-copied-from-other-sources">Tables copied from other sources</h2>
+
+<p>Tables copied from spreadsheets or other applications can look correct while missing the structure that assistive technologies need. Bold text or visual formatting does not make a row a table header, and a screenshot of a table is not accessible table data.</p>
+
+<p>When you paste a table into WordPress, check that it has a real header row. If the first row contains column headings but is not marked as a header, recreate the table with the Table block, enable the Header section, and enter the headings there. If the table was pasted as an image or screenshot, recreate it as a real table instead of using the image as a replacement.</p>
+
+<p>For complex tables, consider simplifying the data or splitting it into several smaller tables. This makes the relationships between headers and data clearer for everyone, especially people using screen readers.</p>
+
+<p>See the <a href="https://wordpress.org/documentation/article/table-block/">Table block documentation</a> and the <a href="https://www.w3.org/WAI/tutorials/tables/">W3C Tables Tutorial</a> for more information.</p>
+
 <h2 id="resources">Resources</h2>
 
 <h3 id="related-wcag-success-criteria-for-tables">Related WCAG success criteria for tables</h3>
@@ -683,7 +693,7 @@
         
 
         
-        <li><span>Last updated:</span>  September 30, 2026</li>
+        <li><span>Last updated:</span>  October 27, 2026</li>
         
 
         
@@ -699,7 +709,10 @@
             Rian Rietveld,
             
             
-            Joe Dolson.
+            Joe Dolson,
+            
+            
+            Saeed Piri.
             
             
         </li>
