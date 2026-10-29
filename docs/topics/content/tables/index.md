@@ -7,6 +7,7 @@ nav_order: 4
 contributors:
   - Rian Rietveld
   - Joe Dolson
+  - Saeed Piri
 has_video: true
 date_created: September 08, 2026
 ---
@@ -85,6 +86,16 @@ Read [Table block](https://wordpress.org/documentation/article/table-block/) in 
 These are the current options to create an accessible table in the WordPress Admin. If you want more, try out one of the plugins that can add more features to the table block, like row headers and captions. Before using a plugin, make sure it creates accessible tables in the website. You can test this by using a test tool like the [WAVE Browser Extension](https://wave.webaim.org/) on the webpage with the table.
 
 Work is currently underway to improve and enhance the table block in the WordPress Admin. You can follow this in the GitHub [issues labeled Block Table](https://github.com/WordPress/gutenberg/issues?q=state%3Aopen%20label%3A%22%5BBlock%5D%20Table%22). There are plans for expanding the capabilities of the table block, assistance is welcome in making this happen.
+
+## Tables copied from other sources
+
+Tables copied from spreadsheets or other applications can look correct while missing the structure that assistive technologies need. Bold text or visual formatting does not make a row a table header, and a screenshot of a table is not accessible table data.
+
+When you paste a table into WordPress, check that it has a real header row. If the first row contains column headings but is not marked as a header, recreate the table with the Table block, enable the Header section, and enter the headings there. If the table was pasted as an image or screenshot, recreate it as a real table instead of using the image as a replacement.
+
+For complex tables, consider simplifying the data or splitting it into several smaller tables. This makes the relationships between headers and data clearer for everyone, especially people using screen readers.
+
+See the [Table block documentation](https://wordpress.org/documentation/article/table-block/) and the [W3C Tables Tutorial](https://www.w3.org/WAI/tutorials/tables/) for more information.
 
 ## Resources
 
