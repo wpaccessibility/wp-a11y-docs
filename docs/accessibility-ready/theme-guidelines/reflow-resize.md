@@ -51,4 +51,4 @@ Support for reflow, resize, and text spacing is necessary to meet the WCAG succe
 {: .resource-h3}
 ### Related pages in this documentation
 
-[Font sizes and resize text]({{site.baseurl}}/docs/topics/design/fonts/#font-sizes-and-resize-text) in Standards and best practice, Design and user experience. 
+[Readable and adjustable fonts]({{site.baseurl}}/docs/topics/design/fonts/) in Standards and best practice, Design and user experience. 
