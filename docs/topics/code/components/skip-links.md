@@ -43,7 +43,7 @@ Skip links should be the first focusable element on a page. In this example, the
 </body>
 ```
 
-Read more about the [.screen-reader-text class]({{site.baseurl}}/docs/topics/code/screen-reader-text/).
+Read more about how to implement this in your CSS in the topic [.screen-reader-text class]({{site.baseurl}}/docs/topics/code/screen-reader-text/).
 
 ## Example: Skip link in wrong place
 
