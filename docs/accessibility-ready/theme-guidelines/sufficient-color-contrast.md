@@ -25,7 +25,7 @@ User interface element contrast must meet the WCAG 2.2 Level AA "non-text contra
 
 ## Testing
 
-**Tools:** [WAVE by WebAIM](https://wave.webaim.org/extension/), [axe DevTools](https://www.deque.com/axe-accessibility-testing-tools/), browser inspector. 
+**Tools:** [WAVE by WebAIM](https://wave.webaim.org/extension/), Axe DevTools browser extensions for [Chrome](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd), [Firefox](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/?utm_campaign=axe&utm_content=axe), and [Edge](https://microsoftedge.microsoft.com/addons/detail/axe-devtools-web-access/kcenlimkmjjkdfcaleembgmldmnnlfkn?utm_campaign=axe&utm_content=axe) by Deque Systems Inc., browser inspector. 
 
 It can be advantageous to use a tool that will check all contrasts on a page at once, like WAVE or axe. You can also check color contrast within the browser inspector. Tools do not generally test `hover` and `focus` states, so these need to be tested separately. All states must meet color contrast.
 
